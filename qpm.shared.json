@@ -11,7 +11,12 @@
       "url": "https://github.com/pl2w/gt-cordl",
       "additionalData": {
         "headersOnly": true,
-        "branchName": "main"
+        "branchName": "main",
+        "compileOptions": {
+          "includePaths": [
+            "include"
+          ]
+        }
       }
     },
     "workspace": {
