@@ -1,0 +1,147 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/StartDragArgs.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/UIElements/zzzz__DragVisualMode_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstddef>
+CORDL_MODULE_EXPORT(StartDragArgs)
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections {
+class Hashtable;
+}
+namespace System {
+class Object;
+}
+namespace UnityEngine::UIElements {
+struct DragVisualMode;
+}
+namespace UnityEngine {
+class Object;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+struct StartDragArgs;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::UIElements::StartDragArgs);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::StartDragArgs, "UnityEngine.UIElements", "StartDragArgs");
+// Dependencies UnityEngine.UIElements.DragVisualMode
+namespace UnityEngine::UIElements {
+// Is value type: true
+// CS Name: UnityEngine.UIElements.StartDragArgs
+struct CORDL_TYPE StartDragArgs {
+public:
+// Declarations
+ __declspec(property(get=get_assetPaths, put=set_assetPaths)) ::ArrayW<::StringW>  assetPaths;
+
+ __declspec(property(get=get_genericData, put=set_genericData)) ::System::Collections::Hashtable*  genericData;
+
+ __declspec(property(get=get_title)) ::StringW  title;
+
+ __declspec(property(get=get_unityObjectReferences, put=set_unityObjectReferences)) ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*  unityObjectReferences;
+
+ __declspec(property(get=get_visualMode)) ::UnityEngine::UIElements::DragVisualMode  visualMode;
+
+/// @brief Method SetGenericData, addr 0xb8830e4, size 0x9c, virtual false, abstract: false, final false
+inline void SetGenericData(::StringW  key, ::System::Object*  data) ;
+
+/// @brief Method .ctor, addr 0xb880f50, size 0x54, virtual false, abstract: false, final false
+inline void _ctor(::StringW  title, ::UnityEngine::UIElements::DragVisualMode  visualMode) ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_assetPaths, addr 0xb8830d4, size 0x8, virtual false, abstract: false, final false
+inline ::ArrayW<::StringW> get_assetPaths() ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_genericData, addr 0xb8830b4, size 0x8, virtual false, abstract: false, final false
+inline ::System::Collections::Hashtable* get_genericData() ;
+
+/// [CompilerGenerated]
+/// [IsReadOnly]
+/// @brief Method get_title, addr 0xb8830a4, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_title() ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_unityObjectReferences, addr 0xb8830c4, size 0x8, virtual false, abstract: false, final false
+inline ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>* get_unityObjectReferences() ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_visualMode, addr 0xb8830ac, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::DragVisualMode get_visualMode() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_assetPaths, addr 0xb8830dc, size 0x8, virtual false, abstract: false, final false
+inline void set_assetPaths(::ArrayW<::StringW>  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_genericData, addr 0xb8830bc, size 0x8, virtual false, abstract: false, final false
+inline void set_genericData(::System::Collections::Hashtable*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_unityObjectReferences, addr 0xb8830cc, size 0x8, virtual false, abstract: false, final false
+inline void set_unityObjectReferences(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr StartDragArgs() ;
+
+// Ctor Parameters [CppParam { name: "_title_k__BackingField", ty: "::StringW", modifiers: "", def_value: None, comment: None }, CppParam { name: "_visualMode_k__BackingField", ty: "::UnityEngine::UIElements::DragVisualMode", modifiers: "", def_value: None, comment: None }, CppParam { name: "_genericData_k__BackingField", ty: "::System::Collections::Hashtable*", modifiers: "", def_value: None, comment: None }, CppParam { name: "_unityObjectReferences_k__BackingField", ty: "::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*", modifiers: "", def_value: None, comment: None }, CppParam { name: "_assetPaths_k__BackingField", ty: "::ArrayW<::StringW>", modifiers: "", def_value: None, comment: None }]
+constexpr StartDragArgs(::StringW  _title_k__BackingField, ::UnityEngine::UIElements::DragVisualMode  _visualMode_k__BackingField, ::System::Collections::Hashtable*  _genericData_k__BackingField, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*  _unityObjectReferences_k__BackingField, ::ArrayW<::StringW>  _assetPaths_k__BackingField) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7553};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x28};
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <title>k__BackingField, offset: 0x0, size: 0x8, def value: None
+ ::StringW  _title_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <visualMode>k__BackingField, offset: 0x8, size: 0x4, def value: None
+ ::UnityEngine::UIElements::DragVisualMode  _visualMode_k__BackingField;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <genericData>k__BackingField, offset: 0x10, size: 0x8, def value: None
+ ::System::Collections::Hashtable*  _genericData_k__BackingField;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <unityObjectReferences>k__BackingField, offset: 0x18, size: 0x8, def value: None
+ ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*  _unityObjectReferences_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <assetPaths>k__BackingField, offset: 0x20, size: 0x8, def value: None
+ ::ArrayW<::StringW>  _assetPaths_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::UIElements::StartDragArgs, _title_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::StartDragArgs, _visualMode_k__BackingField) == 0x8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::StartDragArgs, _genericData_k__BackingField) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::StartDragArgs, _unityObjectReferences_k__BackingField) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::StartDragArgs, _assetPaths_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::UIElements::StartDragArgs) == 0x28, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

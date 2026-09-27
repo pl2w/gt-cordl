@@ -1,0 +1,195 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/TestSceneUsage.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__MonoBehaviour_def.hpp"
+#include "UnityEngine/zzzz__Pose_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+#include <cmath>
+CORDL_MODULE_EXPORT(TestSceneUsage)
+namespace GlobalNamespace {
+class OVREyeGaze;
+}
+namespace System {
+template<typename T1,typename T2>
+class Tuple_2;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class TestSceneUsage;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::TestSceneUsage*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::TestSceneUsage*, "", "TestSceneUsage");
+// [RequireComponent(typeof(OVREyeGaze))]
+// Dependencies UnityEngine.MonoBehaviour, UnityEngine.Pose, UnityEngine.Vector3
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: TestSceneUsage
+class CORDL_TYPE TestSceneUsage : public ::UnityEngine::MonoBehaviour {
+public:
+// Declarations
+/// @brief Field _confidence, offset 0x58, size 0x4 
+ __declspec(property(get=__cordl_internal_get__confidence, put=__cordl_internal_set__confidence)) float_t  _confidence;
+
+/// @brief Field _eyeGazeComponent, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__eyeGazeComponent, put=__cordl_internal_set__eyeGazeComponent)) ::UnityW<::GlobalNamespace::OVREyeGaze>  _eyeGazeComponent;
+
+/// @brief Field _eyeGazeDirection, offset 0x50, size 0x8 
+ __declspec(property(get=__cordl_internal_get__eyeGazeDirection, put=__cordl_internal_set__eyeGazeDirection)) ::System::Tuple_2<::UnityEngine::Vector3,::UnityEngine::Vector3>*  _eyeGazeDirection;
+
+/// @brief Field _eyeGazePose, offset 0x28, size 0x1c 
+ __declspec(property(get=__cordl_internal_get__eyeGazePose, put=__cordl_internal_set__eyeGazePose)) ::UnityEngine::Pose  _eyeGazePose;
+
+/// @brief Field _eyeGazePosition, offset 0x44, size 0xc 
+ __declspec(property(get=__cordl_internal_get__eyeGazePosition, put=__cordl_internal_set__eyeGazePosition)) ::UnityEngine::Vector3  _eyeGazePosition;
+
+/// @brief Field drawingLineWidth, offset 0x5c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_drawingLineWidth, put=__cordl_internal_set_drawingLineWidth)) float_t  drawingLineWidth;
+
+/// @brief Field passthroughEnabled, offset 0x60, size 0x1 
+ __declspec(property(get=__cordl_internal_get_passthroughEnabled, put=__cordl_internal_set_passthroughEnabled)) bool  passthroughEnabled;
+
+/// @brief Field previousPassthroughEnabled, offset 0x61, size 0x1 
+ __declspec(property(get=__cordl_internal_get_previousPassthroughEnabled, put=__cordl_internal_set_previousPassthroughEnabled)) bool  previousPassthroughEnabled;
+
+static inline ::GlobalNamespace::TestSceneUsage* New_ctor() ;
+
+/// @brief Method Start, addr 0x9ecda14, size 0x58, virtual false, abstract: false, final false
+inline void Start() ;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1)]
+/// @brief Method TogglePassthrough, addr 0x9ecdc94, size 0x4, virtual false, abstract: false, final false
+inline void TogglePassthrough() ;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1)]
+/// @brief Method TogglePassthroughStatic, addr 0x9ecdc98, size 0x9c, virtual false, abstract: false, final false
+static inline void TogglePassthroughStatic() ;
+
+/// @brief Method Update, addr 0x9ecda6c, size 0x228, virtual false, abstract: false, final false
+inline void Update() ;
+
+constexpr float_t const& __cordl_internal_get__confidence() const;
+
+constexpr float_t& __cordl_internal_get__confidence() ;
+
+constexpr ::UnityW<::GlobalNamespace::OVREyeGaze> const& __cordl_internal_get__eyeGazeComponent() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVREyeGaze>& __cordl_internal_get__eyeGazeComponent() ;
+
+constexpr ::System::Tuple_2<::UnityEngine::Vector3,::UnityEngine::Vector3>* const& __cordl_internal_get__eyeGazeDirection() const;
+
+constexpr ::System::Tuple_2<::UnityEngine::Vector3,::UnityEngine::Vector3>*& __cordl_internal_get__eyeGazeDirection() ;
+
+constexpr ::UnityEngine::Pose const& __cordl_internal_get__eyeGazePose() const;
+
+constexpr ::UnityEngine::Pose& __cordl_internal_get__eyeGazePose() ;
+
+constexpr ::UnityEngine::Vector3 const& __cordl_internal_get__eyeGazePosition() const;
+
+constexpr ::UnityEngine::Vector3& __cordl_internal_get__eyeGazePosition() ;
+
+constexpr float_t const& __cordl_internal_get_drawingLineWidth() const;
+
+constexpr float_t& __cordl_internal_get_drawingLineWidth() ;
+
+constexpr bool const& __cordl_internal_get_passthroughEnabled() const;
+
+constexpr bool& __cordl_internal_get_passthroughEnabled() ;
+
+constexpr bool const& __cordl_internal_get_previousPassthroughEnabled() const;
+
+constexpr bool& __cordl_internal_get_previousPassthroughEnabled() ;
+
+constexpr void __cordl_internal_set__confidence(float_t  value) ;
+
+constexpr void __cordl_internal_set__eyeGazeComponent(::UnityW<::GlobalNamespace::OVREyeGaze>  value) ;
+
+constexpr void __cordl_internal_set__eyeGazeDirection(::System::Tuple_2<::UnityEngine::Vector3,::UnityEngine::Vector3>*  value) ;
+
+constexpr void __cordl_internal_set__eyeGazePose(::UnityEngine::Pose  value) ;
+
+constexpr void __cordl_internal_set__eyeGazePosition(::UnityEngine::Vector3  value) ;
+
+constexpr void __cordl_internal_set_drawingLineWidth(float_t  value) ;
+
+constexpr void __cordl_internal_set_passthroughEnabled(bool  value) ;
+
+constexpr void __cordl_internal_set_previousPassthroughEnabled(bool  value) ;
+
+/// @brief Method .ctor, addr 0x9ecdd34, size 0x1c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr TestSceneUsage() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "TestSceneUsage", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+TestSceneUsage(TestSceneUsage && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "TestSceneUsage", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+TestSceneUsage(TestSceneUsage const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27384};
+
+/// @brief Field _eyeGazeComponent, offset: 0x20, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVREyeGaze>  ____eyeGazeComponent;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1, GizmoType = (Meta.XR.ImmersiveDebugger.DebugGizmoType)1)]
+/// @brief Field _eyeGazePose, offset: 0x28, size: 0x1c, def value: None
+ ::UnityEngine::Pose  ____eyeGazePose;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1, GizmoType = (Meta.XR.ImmersiveDebugger.DebugGizmoType)2)]
+/// @brief Field _eyeGazePosition, offset: 0x44, size: 0xc, def value: None
+ ::UnityEngine::Vector3  ____eyeGazePosition;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1, GizmoType = (Meta.XR.ImmersiveDebugger.DebugGizmoType)3)]
+/// @brief Field _eyeGazeDirection, offset: 0x50, size: 0x8, def value: None
+ ::System::Tuple_2<::UnityEngine::Vector3,::UnityEngine::Vector3>*  ____eyeGazeDirection;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1)]
+/// @brief Field _confidence, offset: 0x58, size: 0x4, def value: None
+ float_t  ____confidence;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1, Tweakable = true, Min = 0.1, Max = 1)]
+/// @brief Field drawingLineWidth, offset: 0x5c, size: 0x4, def value: None
+ float_t  ___drawingLineWidth;
+
+/// [DebugMember((Meta.XR.ImmersiveDebugger.DebugColor)1, Tweakable = true)]
+/// @brief Field passthroughEnabled, offset: 0x60, size: 0x1, def value: None
+ bool  ___passthroughEnabled;
+
+/// @brief Field previousPassthroughEnabled, offset: 0x61, size: 0x1, def value: None
+ bool  ___previousPassthroughEnabled;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ____eyeGazeComponent) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ____eyeGazePose) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ____eyeGazePosition) == 0x44, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ____eyeGazeDirection) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ____confidence) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ___drawingLineWidth) == 0x5c, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ___passthroughEnabled) == 0x60, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::TestSceneUsage, ___previousPassthroughEnabled) == 0x61, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::TestSceneUsage) == 0x68, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

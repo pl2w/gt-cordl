@@ -1,0 +1,103 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/Serialization/SchemaExporter.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+CORDL_MODULE_EXPORT(SchemaExporter)
+namespace System::Xml::Schema {
+class XmlSchemaAnnotation;
+}
+namespace System::Xml::Schema {
+class XmlSchemaComplexType;
+}
+namespace System::Xml::Schema {
+class XmlSchemaSet;
+}
+namespace System::Xml::Schema {
+class XmlSchemaType;
+}
+namespace System::Xml {
+class XmlDocument;
+}
+namespace System::Xml {
+class XmlElement;
+}
+namespace System::Xml {
+class XmlNode;
+}
+namespace System::Xml {
+class XmlQualifiedName;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System::Runtime::Serialization {
+class SchemaExporter;
+}
+// Write type traits
+MARK_REF_T(::System::Runtime::Serialization::SchemaExporter*);
+DEFINE_IL2CPP_CLASS(::System::Runtime::Serialization::SchemaExporter*, "System.Runtime.Serialization", "SchemaExporter");
+// Dependencies System.Object
+namespace System::Runtime::Serialization {
+// Is value type: false
+// CS Name: System.Runtime.Serialization.SchemaExporter
+class CORDL_TYPE SchemaExporter : public ::System::Object {
+public:
+// Declarations
+/// @brief Field actualTypeAnnotationName, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_actualTypeAnnotationName, put=setStaticF_actualTypeAnnotationName)) ::System::Xml::XmlQualifiedName*  actualTypeAnnotationName;
+
+/// @brief Method CreateAnyElementType, addr 0xaa68a04, size 0x184, virtual false, abstract: false, final false
+static inline ::System::Xml::Schema::XmlSchemaComplexType* CreateAnyElementType() ;
+
+/// @brief Method CreateAnyType, addr 0xaa68c70, size 0x238, virtual false, abstract: false, final false
+static inline ::System::Xml::Schema::XmlSchemaComplexType* CreateAnyType() ;
+
+/// @brief Method ExportActualType, addr 0xaa677e8, size 0x13c, virtual false, abstract: false, final false
+static inline ::System::Xml::XmlElement* ExportActualType(::System::Xml::XmlQualifiedName*  typeName, ::System::Xml::XmlDocument*  xmlDoc) ;
+
+/// @brief Method GetSchemaAnnotation, addr 0xaa68b88, size 0xe8, virtual false, abstract: false, final false
+static inline ::System::Xml::Schema::XmlSchemaAnnotation* GetSchemaAnnotation(/* [ParamArray] */ ::ArrayW<::System::Xml::XmlNode*>  nodes) ;
+
+/// @brief Method GetXmlTypeInfo, addr 0xaa67a18, size 0x174, virtual false, abstract: false, final false
+static inline void GetXmlTypeInfo(::System::Type*  type, ::by_ref<::System::Xml::XmlQualifiedName*>  stableName, ::by_ref<::System::Xml::Schema::XmlSchemaType*>  xsdType, ::by_ref<bool>  hasRoot) ;
+
+/// @brief Method InvokeSchemaProviderMethod, addr 0xaa67d94, size 0xc70, virtual false, abstract: false, final false
+static inline bool InvokeSchemaProviderMethod(::System::Type*  clrType, ::System::Xml::Schema::XmlSchemaSet*  schemas, ::by_ref<::System::Xml::XmlQualifiedName*>  stableName, ::by_ref<::System::Xml::Schema::XmlSchemaType*>  xsdType, ::by_ref<bool>  hasRoot) ;
+
+/// @brief Method IsSpecialXmlType, addr 0xaa67b8c, size 0x208, virtual false, abstract: false, final false
+static inline bool IsSpecialXmlType(::System::Type*  type, ::by_ref<::System::Xml::XmlQualifiedName*>  typeName, ::by_ref<::System::Xml::Schema::XmlSchemaType*>  xsdType, ::by_ref<bool>  hasRoot) ;
+
+static inline ::System::Xml::XmlQualifiedName* getStaticF_actualTypeAnnotationName() ;
+
+/// @brief Method get_ActualTypeAnnotationName, addr 0xaa67924, size 0xf4, virtual false, abstract: false, final false
+static inline ::System::Xml::XmlQualifiedName* get_ActualTypeAnnotationName() ;
+
+static inline void setStaticF_actualTypeAnnotationName(::System::Xml::XmlQualifiedName*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SchemaExporter() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SchemaExporter", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SchemaExporter(SchemaExporter && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SchemaExporter", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SchemaExporter(SchemaExporter const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24585};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Runtime::Serialization::SchemaExporter) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Runtime::Serialization

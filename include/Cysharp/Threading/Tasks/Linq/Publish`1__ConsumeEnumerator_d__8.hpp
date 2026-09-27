@@ -1,0 +1,7 @@
+#pragma once
+// IWYU pragma: begin_exports
+#include "Cysharp/Threading/Tasks/Linq/zzzz__Publish`1__ConsumeEnumerator_d__8_def.hpp"
+#ifndef CORDL_NO_IMPL_INCLUDE
+#include "Cysharp/Threading/Tasks/Linq/zzzz__Publish`1__ConsumeEnumerator_d__8_impl.hpp"
+#endif
+// IWYU pragma: end_exports

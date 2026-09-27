@@ -1,0 +1,2910 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/XmlBaseReader.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Xml/zzzz__ReadState_def.hpp"
+#include "System/Xml/zzzz__XmlBaseReader_QNameType_def.hpp"
+#include "System/Xml/zzzz__XmlDictionaryReader_def.hpp"
+#include "System/Xml/zzzz__XmlNameTable_def.hpp"
+#include "System/Xml/zzzz__XmlNodeType_def.hpp"
+#include "System/Xml/zzzz__XmlSpace_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(XmlBaseReader)
+namespace GlobalNamespace {
+struct XmlBaseReader_QNameType;
+}
+namespace GlobalNamespace {
+struct XmlNode_XmlBaseReader_XmlNodeFlags;
+}
+namespace System::Collections {
+class IComparer;
+}
+namespace System::Text {
+class Base64Encoding;
+}
+namespace System::Text {
+class BinHexEncoding;
+}
+namespace System::Text {
+class Encoding;
+}
+namespace System::Xml {
+class IXmlNamespaceResolver;
+}
+namespace System::Xml {
+class NamespaceManager_XmlBaseReader_XmlAttribute;
+}
+namespace System::Xml {
+struct PrefixHandleType;
+}
+namespace System::Xml {
+class PrefixHandle;
+}
+namespace System::Xml {
+struct ReadState;
+}
+namespace System::Xml {
+class StringHandle;
+}
+namespace System::Xml {
+class UniqueId;
+}
+namespace System::Xml {
+class ValueHandle;
+}
+namespace System::Xml {
+class XmlBaseReader_AttributeSorter;
+}
+namespace System::Xml {
+class XmlBaseReader_NamespaceManager;
+}
+namespace System::Xml {
+class XmlBaseReader_Namespace;
+}
+namespace System::Xml {
+class XmlBaseReader_QuotaNameTable;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlAtomicTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlAttributeNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlAttributeTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlCDataNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlClosedNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlCommentNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlComplexTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlDeclarationNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlElementNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlEndElementNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlEndOfFileNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlInitialNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlWhitespaceTextNode;
+}
+namespace System::Xml {
+class XmlBufferReader;
+}
+namespace System::Xml {
+class XmlDictionaryReaderQuotas;
+}
+namespace System::Xml {
+class XmlDictionaryReader;
+}
+namespace System::Xml {
+class XmlDictionaryString;
+}
+namespace System::Xml {
+class XmlNameTable;
+}
+namespace System::Xml {
+struct XmlNodeType;
+}
+namespace System::Xml {
+class XmlSigningNodeWriter;
+}
+namespace System::Xml {
+struct XmlSpace;
+}
+namespace System {
+struct DateTime;
+}
+namespace System {
+struct Decimal;
+}
+namespace System {
+struct Guid;
+}
+namespace System {
+class Object;
+}
+namespace System {
+struct TimeSpan;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System::Xml {
+class NamespaceManager_XmlBaseReader_XmlAttribute;
+}
+namespace System::Xml {
+class XmlBaseReader;
+}
+namespace System::Xml {
+class XmlBaseReader_AttributeSorter;
+}
+namespace System::Xml {
+class XmlBaseReader_Namespace;
+}
+namespace System::Xml {
+class XmlBaseReader_NamespaceManager;
+}
+namespace System::Xml {
+class XmlBaseReader_QuotaNameTable;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlAtomicTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlAttributeNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlAttributeTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlCDataNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlClosedNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlCommentNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlComplexTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlDeclarationNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlElementNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlEndElementNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlEndOfFileNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlInitialNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlTextNode;
+}
+namespace System::Xml {
+class XmlBaseReader_XmlWhitespaceTextNode;
+}
+// Write type traits
+MARK_REF_T(::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute*);
+MARK_REF_T(::System::Xml::XmlBaseReader*);
+MARK_REF_T(::System::Xml::XmlBaseReader_AttributeSorter*);
+MARK_REF_T(::System::Xml::XmlBaseReader_Namespace*);
+MARK_REF_T(::System::Xml::XmlBaseReader_NamespaceManager*);
+MARK_REF_T(::System::Xml::XmlBaseReader_QuotaNameTable*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlAtomicTextNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlAttributeNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlAttributeTextNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlCDataNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlClosedNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlCommentNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlComplexTextNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlDeclarationNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlElementNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlEndElementNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlEndOfFileNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlInitialNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlTextNode*);
+MARK_REF_T(::System::Xml::XmlBaseReader_XmlWhitespaceTextNode*);
+DEFINE_IL2CPP_CLASS(::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute*, "System.Xml", "XmlBaseReader/NamespaceManager/XmlAttribute");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader*, "System.Xml", "XmlBaseReader");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_AttributeSorter*, "System.Xml", "XmlBaseReader/AttributeSorter");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_Namespace*, "System.Xml", "XmlBaseReader/Namespace");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_NamespaceManager*, "System.Xml", "XmlBaseReader/NamespaceManager");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_QuotaNameTable*, "System.Xml", "XmlBaseReader/QuotaNameTable");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlAtomicTextNode*, "System.Xml", "XmlBaseReader/XmlAtomicTextNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlAttributeNode*, "System.Xml", "XmlBaseReader/XmlAttributeNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlAttributeTextNode*, "System.Xml", "XmlBaseReader/XmlAttributeTextNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlCDataNode*, "System.Xml", "XmlBaseReader/XmlCDataNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlClosedNode*, "System.Xml", "XmlBaseReader/XmlClosedNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlCommentNode*, "System.Xml", "XmlBaseReader/XmlCommentNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlComplexTextNode*, "System.Xml", "XmlBaseReader/XmlComplexTextNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlDeclarationNode*, "System.Xml", "XmlBaseReader/XmlDeclarationNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlElementNode*, "System.Xml", "XmlBaseReader/XmlElementNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlEndElementNode*, "System.Xml", "XmlBaseReader/XmlEndElementNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlEndOfFileNode*, "System.Xml", "XmlBaseReader/XmlEndOfFileNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlInitialNode*, "System.Xml", "XmlBaseReader/XmlInitialNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlNode*, "System.Xml", "XmlBaseReader/XmlNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlTextNode*, "System.Xml", "XmlBaseReader/XmlTextNode");
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBaseReader_XmlWhitespaceTextNode*, "System.Xml", "XmlBaseReader/XmlWhitespaceTextNode");
+// [DefaultMember("Item")]
+// Dependencies System.Xml.XmlBaseReader::XmlAttributeNode, System.Xml.XmlBaseReader::XmlElementNode, System.Xml.XmlDictionaryReader
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader
+class CORDL_TYPE XmlBaseReader : public ::System::Xml::XmlDictionaryReader {
+public:
+// Declarations
+using QNameType = ::GlobalNamespace::XmlBaseReader_QNameType;
+
+using AttributeSorter = ::System::Xml::XmlBaseReader_AttributeSorter;
+
+using Namespace = ::System::Xml::XmlBaseReader_Namespace;
+
+using NamespaceManager = ::System::Xml::XmlBaseReader_NamespaceManager;
+
+using QuotaNameTable = ::System::Xml::XmlBaseReader_QuotaNameTable;
+
+using XmlAtomicTextNode = ::System::Xml::XmlBaseReader_XmlAtomicTextNode;
+
+using XmlAttributeNode = ::System::Xml::XmlBaseReader_XmlAttributeNode;
+
+using XmlAttributeTextNode = ::System::Xml::XmlBaseReader_XmlAttributeTextNode;
+
+using XmlCDataNode = ::System::Xml::XmlBaseReader_XmlCDataNode;
+
+using XmlClosedNode = ::System::Xml::XmlBaseReader_XmlClosedNode;
+
+using XmlCommentNode = ::System::Xml::XmlBaseReader_XmlCommentNode;
+
+using XmlComplexTextNode = ::System::Xml::XmlBaseReader_XmlComplexTextNode;
+
+using XmlDeclarationNode = ::System::Xml::XmlBaseReader_XmlDeclarationNode;
+
+using XmlElementNode = ::System::Xml::XmlBaseReader_XmlElementNode;
+
+using XmlEndElementNode = ::System::Xml::XmlBaseReader_XmlEndElementNode;
+
+using XmlEndOfFileNode = ::System::Xml::XmlBaseReader_XmlEndOfFileNode;
+
+using XmlInitialNode = ::System::Xml::XmlBaseReader_XmlInitialNode;
+
+using XmlNode = ::System::Xml::XmlBaseReader_XmlNode;
+
+using XmlTextNode = ::System::Xml::XmlBaseReader_XmlTextNode;
+
+using XmlWhitespaceTextNode = ::System::Xml::XmlBaseReader_XmlWhitespaceTextNode;
+
+ __declspec(property(get=get_AttributeCount)) int32_t  AttributeCount;
+
+ __declspec(property(get=get_BaseURI)) ::StringW  BaseURI;
+
+ __declspec(property(get=get_BufferReader)) ::System::Xml::XmlBufferReader*  BufferReader;
+
+ __declspec(property(get=get_CanReadValueChunk)) bool  CanReadValueChunk;
+
+ __declspec(property(get=get_Depth)) int32_t  Depth;
+
+ __declspec(property(get=get_ElementNode)) ::System::Xml::XmlBaseReader_XmlElementNode*  ElementNode;
+
+ __declspec(property(get=get_IsDefault)) bool  IsDefault;
+
+ __declspec(property(get=get_IsEmptyElement)) bool  IsEmptyElement;
+
+ __declspec(property(get=get_LocalName)) ::StringW  LocalName;
+
+ __declspec(property(get=get_NameTable)) ::System::Xml::XmlNameTable*  NameTable;
+
+ __declspec(property(get=get_NamespaceURI)) ::StringW  NamespaceURI;
+
+ __declspec(property(get=get_Node)) ::System::Xml::XmlBaseReader_XmlNode*  Node;
+
+ __declspec(property(get=get_NodeType)) ::System::Xml::XmlNodeType  NodeType;
+
+ __declspec(property(get=get_OutsideRootElement)) bool  OutsideRootElement;
+
+ __declspec(property(get=get_Prefix)) ::StringW  Prefix;
+
+ __declspec(property(get=get_Quotas)) ::System::Xml::XmlDictionaryReaderQuotas*  Quotas;
+
+ __declspec(property(get=get_QuoteChar)) char16_t  QuoteChar;
+
+ __declspec(property(get=get_ReadState)) ::System::Xml::ReadState  ReadState;
+
+ __declspec(property(get=get_Value)) ::StringW  Value;
+
+ __declspec(property(get=get_ValueType)) ::System::Type*  ValueType;
+
+ __declspec(property(get=get_XmlLang)) ::StringW  XmlLang;
+
+ __declspec(property(get=get_XmlSpace)) ::System::Xml::XmlSpace  XmlSpace;
+
+ __declspec(property(get=get_EOF)) bool  _cordl_EOF;
+
+/// @brief Field atomicTextNode, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_atomicTextNode, put=__cordl_internal_set_atomicTextNode)) ::System::Xml::XmlBaseReader_XmlAtomicTextNode*  atomicTextNode;
+
+/// @brief Field attributeCount, offset 0x44, size 0x4 
+ __declspec(property(get=__cordl_internal_get_attributeCount, put=__cordl_internal_set_attributeCount)) int32_t  attributeCount;
+
+/// @brief Field attributeIndex, offset 0x90, size 0x4 
+ __declspec(property(get=__cordl_internal_get_attributeIndex, put=__cordl_internal_set_attributeIndex)) int32_t  attributeIndex;
+
+/// @brief Field attributeNodes, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_attributeNodes, put=__cordl_internal_set_attributeNodes)) ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  attributeNodes;
+
+/// @brief Field attributeSorter, offset 0xf0, size 0x8 
+ __declspec(property(get=__cordl_internal_get_attributeSorter, put=__cordl_internal_set_attributeSorter)) ::System::Xml::XmlBaseReader_AttributeSorter*  attributeSorter;
+
+/// @brief Field attributeStart, offset 0x48, size 0x4 
+ __declspec(property(get=__cordl_internal_get_attributeStart, put=__cordl_internal_set_attributeStart)) int32_t  attributeStart;
+
+/// @brief Field base64Encoding, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_base64Encoding, put=setStaticF_base64Encoding)) ::System::Text::Base64Encoding*  base64Encoding;
+
+/// @brief Field binhexEncoding, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_binhexEncoding, put=setStaticF_binhexEncoding)) ::System::Text::BinHexEncoding*  binhexEncoding;
+
+/// @brief Field bufferReader, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_bufferReader, put=__cordl_internal_set_bufferReader)) ::System::Xml::XmlBufferReader*  bufferReader;
+
+/// @brief Field cdataNode, offset 0x78, size 0x8 
+ __declspec(property(get=__cordl_internal_get_cdataNode, put=__cordl_internal_set_cdataNode)) ::System::Xml::XmlBaseReader_XmlCDataNode*  cdataNode;
+
+/// @brief Field chars, offset 0x98, size 0x8 
+ __declspec(property(get=__cordl_internal_get_chars, put=__cordl_internal_set_chars)) ::ArrayW<char16_t>  chars;
+
+/// @brief Field closedNode, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_closedNode, put=setStaticF_closedNode)) ::System::Xml::XmlBaseReader_XmlClosedNode*  closedNode;
+
+/// @brief Field commentNode, offset 0x80, size 0x8 
+ __declspec(property(get=__cordl_internal_get_commentNode, put=__cordl_internal_set_commentNode)) ::System::Xml::XmlBaseReader_XmlCommentNode*  commentNode;
+
+/// @brief Field complexTextNode, offset 0x68, size 0x8 
+ __declspec(property(get=__cordl_internal_get_complexTextNode, put=__cordl_internal_set_complexTextNode)) ::System::Xml::XmlBaseReader_XmlComplexTextNode*  complexTextNode;
+
+/// @brief Field declarationNode, offset 0x60, size 0x8 
+ __declspec(property(get=__cordl_internal_get_declarationNode, put=__cordl_internal_set_declarationNode)) ::System::Xml::XmlBaseReader_XmlDeclarationNode*  declarationNode;
+
+/// @brief Field depth, offset 0x40, size 0x4 
+ __declspec(property(get=__cordl_internal_get_depth, put=__cordl_internal_set_depth)) int32_t  depth;
+
+/// @brief Field elementNodes, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_elementNodes, put=__cordl_internal_set_elementNodes)) ::ArrayW<::System::Xml::XmlBaseReader_XmlElementNode*>  elementNodes;
+
+/// @brief Field endOfFileNode, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_endOfFileNode, put=setStaticF_endOfFileNode)) ::System::Xml::XmlBaseReader_XmlEndOfFileNode*  endOfFileNode;
+
+/// @brief Field initialNode, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_initialNode, put=setStaticF_initialNode)) ::System::Xml::XmlBaseReader_XmlInitialNode*  initialNode;
+
+/// @brief Field localName, offset 0xa8, size 0x8 
+ __declspec(property(get=__cordl_internal_get_localName, put=__cordl_internal_set_localName)) ::StringW  localName;
+
+/// @brief Field nameTable, offset 0x58, size 0x8 
+ __declspec(property(get=__cordl_internal_get_nameTable, put=__cordl_internal_set_nameTable)) ::System::Xml::XmlNameTable*  nameTable;
+
+/// @brief Field node, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_node, put=__cordl_internal_set_node)) ::System::Xml::XmlBaseReader_XmlNode*  node;
+
+/// @brief Field ns, offset 0xb0, size 0x8 
+ __declspec(property(get=__cordl_internal_get_ns, put=__cordl_internal_set_ns)) ::StringW  ns;
+
+/// @brief Field nsMgr, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_nsMgr, put=__cordl_internal_set_nsMgr)) ::System::Xml::XmlBaseReader_NamespaceManager*  nsMgr;
+
+/// @brief Field prefix, offset 0xa0, size 0x8 
+ __declspec(property(get=__cordl_internal_get_prefix, put=__cordl_internal_set_prefix)) ::StringW  prefix;
+
+/// @brief Field quotas, offset 0x50, size 0x8 
+ __declspec(property(get=__cordl_internal_get_quotas, put=__cordl_internal_set_quotas)) ::System::Xml::XmlDictionaryReaderQuotas*  quotas;
+
+/// @brief Field readingElement, offset 0xd9, size 0x1 
+ __declspec(property(get=__cordl_internal_get_readingElement, put=__cordl_internal_set_readingElement)) bool  readingElement;
+
+/// @brief Field rootElement, offset 0xd8, size 0x1 
+ __declspec(property(get=__cordl_internal_get_rootElement, put=__cordl_internal_set_rootElement)) bool  rootElement;
+
+/// @brief Field rootElementNode, offset 0x88, size 0x8 
+ __declspec(property(get=__cordl_internal_get_rootElementNode, put=__cordl_internal_set_rootElementNode)) ::System::Xml::XmlBaseReader_XmlElementNode*  rootElementNode;
+
+/// @brief Field signing, offset 0xe8, size 0x1 
+ __declspec(property(get=__cordl_internal_get_signing, put=__cordl_internal_set_signing)) bool  signing;
+
+/// @brief Field signingWriter, offset 0xe0, size 0x8 
+ __declspec(property(get=__cordl_internal_get_signingWriter, put=__cordl_internal_set_signingWriter)) ::System::Xml::XmlSigningNodeWriter*  signingWriter;
+
+/// @brief Field trailByteCount, offset 0xc4, size 0x4 
+ __declspec(property(get=__cordl_internal_get_trailByteCount, put=__cordl_internal_set_trailByteCount)) int32_t  trailByteCount;
+
+/// @brief Field trailBytes, offset 0xd0, size 0x8 
+ __declspec(property(get=__cordl_internal_get_trailBytes, put=__cordl_internal_set_trailBytes)) ::ArrayW<uint8_t>  trailBytes;
+
+/// @brief Field trailCharCount, offset 0xc0, size 0x4 
+ __declspec(property(get=__cordl_internal_get_trailCharCount, put=__cordl_internal_set_trailCharCount)) int32_t  trailCharCount;
+
+/// @brief Field trailChars, offset 0xc8, size 0x8 
+ __declspec(property(get=__cordl_internal_get_trailChars, put=__cordl_internal_set_trailChars)) ::ArrayW<char16_t>  trailChars;
+
+/// @brief Field value, offset 0xb8, size 0x8 
+ __declspec(property(get=__cordl_internal_get_value, put=__cordl_internal_set_value)) ::StringW  value;
+
+/// @brief Field whitespaceTextNode, offset 0x70, size 0x8 
+ __declspec(property(get=__cordl_internal_get_whitespaceTextNode, put=__cordl_internal_set_whitespaceTextNode)) ::System::Xml::XmlBaseReader_XmlWhitespaceTextNode*  whitespaceTextNode;
+
+/// @brief Method AddAttribute, addr 0xaa0ee7c, size 0xc, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeNode* AddAttribute() ;
+
+/// @brief Method AddAttribute, addr 0xaa0ea48, size 0x194, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeNode* AddAttribute(::GlobalNamespace::XmlBaseReader_QNameType  qnameType, bool  isAtomicValue) ;
+
+/// @brief Method AddNamespace, addr 0xaa0ece4, size 0x14, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* AddNamespace() ;
+
+/// @brief Method AddXmlAttribute, addr 0xaa0ee88, size 0xc, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeNode* AddXmlAttribute() ;
+
+/// @brief Method AddXmlnsAttribute, addr 0xaa0ee94, size 0x2e0, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeNode* AddXmlnsAttribute(::System::Xml::XmlBaseReader_Namespace*  ns) ;
+
+/// @brief Method CheckAttributes, addr 0xaa10694, size 0x1dc, virtual false, abstract: false, final false
+inline void CheckAttributes(::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  attributeNodes, int32_t  attributeCount) ;
+
+/// @brief Method CheckDeclAttribute, addr 0xaa0d9e0, size 0x198, virtual false, abstract: false, final false
+inline bool CheckDeclAttribute(int32_t  index, ::StringW  localName, ::StringW  value, bool  checkLower, ::StringW  valueSR) ;
+
+/// @brief Method CheckStandalone, addr 0xaa0db78, size 0x1dc, virtual false, abstract: false, final false
+inline bool CheckStandalone(int32_t  attr) ;
+
+/// @brief Method Close, addr 0xaa0f4bc, size 0x120, virtual true, abstract: false, final false
+inline void Close() ;
+
+/// @brief Method EnterScope, addr 0xaa0e6c8, size 0x1e0, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlElementNode* EnterScope() ;
+
+/// @brief Method ExitScope, addr 0xaa0e8b8, size 0x3c, virtual false, abstract: false, final false
+inline void ExitScope() ;
+
+/// @brief Method FixXmlAttribute, addr 0xaa0f228, size 0x1e4, virtual false, abstract: false, final false
+inline void FixXmlAttribute(::System::Xml::XmlBaseReader_XmlAttributeNode*  attributeNode) ;
+
+/// @brief Method GetAttribute, addr 0xaa0fd48, size 0x18, virtual true, abstract: false, final false
+inline ::StringW GetAttribute(int32_t  index) ;
+
+/// @brief Method GetAttribute, addr 0xaa0fdb4, size 0x1c, virtual true, abstract: false, final false
+inline ::StringW GetAttribute(::StringW  localName, ::StringW  namespaceUri) ;
+
+/// @brief Method GetAttribute, addr 0xaa0fd98, size 0x1c, virtual true, abstract: false, final false
+inline ::StringW GetAttribute(::StringW  name) ;
+
+/// @brief Method GetAttributeNode, addr 0xaa0f6b0, size 0x158, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeNode* GetAttributeNode(int32_t  index) ;
+
+/// @brief Method GetAttributeNode, addr 0xaa0fb00, size 0x130, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeNode* GetAttributeNode(::StringW  localName, ::StringW  namespaceUri) ;
+
+/// @brief Method GetAttributeNode, addr 0xaa0f808, size 0x1c4, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeNode* GetAttributeNode(::StringW  name) ;
+
+/// @brief Method GetCharBuffer, addr 0xaa12cb4, size 0x94, virtual false, abstract: false, final false
+inline ::ArrayW<char16_t> GetCharBuffer(int32_t  count) ;
+
+/// @brief Method GetLocalName, addr 0xaa0fe2c, size 0x114, virtual false, abstract: false, final false
+inline ::StringW GetLocalName(bool  enforceAtomization) ;
+
+/// @brief Method GetNamespaceUri, addr 0xaa10c04, size 0xc4, virtual false, abstract: false, final false
+inline ::StringW GetNamespaceUri(bool  enforceAtomization) ;
+
+/// @brief Method GetOpenElements, addr 0xaa14050, size 0xe0, virtual false, abstract: false, final false
+inline ::StringW GetOpenElements() ;
+
+/// @brief Method IndexOfLocalName, addr 0xaa11660, size 0x23c, virtual true, abstract: false, final false
+inline int32_t IndexOfLocalName(::ArrayW<::System::Xml::XmlDictionaryString*>  localNames, ::System::Xml::XmlDictionaryString*  namespaceUri) ;
+
+/// @brief Method IsLocalName, addr 0xaa11014, size 0x74, virtual true, abstract: false, final false
+inline bool IsLocalName(::StringW  localName) ;
+
+/// @brief Method IsLocalName, addr 0xaa11140, size 0x74, virtual true, abstract: false, final false
+inline bool IsLocalName(::System::Xml::XmlDictionaryString*  localName) ;
+
+/// @brief Method IsNamespaceUri, addr 0xaa11268, size 0x4c, virtual true, abstract: false, final false
+inline bool IsNamespaceUri(::StringW  namespaceUri) ;
+
+/// @brief Method IsNamespaceUri, addr 0xaa11328, size 0x4c, virtual true, abstract: false, final false
+inline bool IsNamespaceUri(::System::Xml::XmlDictionaryString*  namespaceUri) ;
+
+/// @brief Method IsStartElement, addr 0xaa113ec, size 0x88, virtual true, abstract: false, final true
+inline bool IsStartElement() ;
+
+/// @brief Method IsStartElement, addr 0xaa11474, size 0xd8, virtual true, abstract: false, final false
+inline bool IsStartElement(::StringW  localName, ::StringW  namespaceUri) ;
+
+/// @brief Method IsStartElement, addr 0xaa1154c, size 0x114, virtual true, abstract: false, final false
+inline bool IsStartElement(::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri) ;
+
+/// @brief Method LookupNamespace, addr 0xaa0ff40, size 0xbc, virtual true, abstract: false, final false
+inline ::StringW LookupNamespace(::StringW  prefix) ;
+
+/// @brief Method LookupNamespace, addr 0xaa10148, size 0x54, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* LookupNamespace(::System::Xml::PrefixHandle*  prefix) ;
+
+/// @brief Method MoveToAtomicText, addr 0xaa0e1e4, size 0x1c, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAtomicTextNode* MoveToAtomicText() ;
+
+/// @brief Method MoveToAttribute, addr 0xaa10958, size 0x40, virtual true, abstract: false, final false
+inline bool MoveToAttribute(::StringW  localName, ::StringW  namespaceUri) ;
+
+/// @brief Method MoveToAttribute, addr 0xaa10918, size 0x40, virtual true, abstract: false, final false
+inline bool MoveToAttribute(::StringW  name) ;
+
+/// @brief Method MoveToAttribute, addr 0xaa108e8, size 0x30, virtual true, abstract: false, final false
+inline void MoveToAttribute(int32_t  index) ;
+
+/// @brief Method MoveToCData, addr 0xaa0e030, size 0x8c, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlCDataNode* MoveToCData() ;
+
+/// @brief Method MoveToComment, addr 0xaa0de7c, size 0x8c, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlCommentNode* MoveToComment() ;
+
+/// @brief Method MoveToComplexText, addr 0xaa0e200, size 0x8c, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlComplexTextNode* MoveToComplexText() ;
+
+/// @brief Method MoveToContent, addr 0xaa10a10, size 0xf4, virtual true, abstract: false, final false
+inline ::System::Xml::XmlNodeType MoveToContent() ;
+
+/// @brief Method MoveToDeclaration, addr 0xaa0d714, size 0x2cc, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlDeclarationNode* MoveToDeclaration() ;
+
+/// @brief Method MoveToElement, addr 0xaa10998, size 0x78, virtual true, abstract: false, final false
+inline bool MoveToElement() ;
+
+/// @brief Method MoveToEndElement, addr 0xaa0e5dc, size 0x78, virtual false, abstract: false, final false
+inline void MoveToEndElement() ;
+
+/// @brief Method MoveToEndOfFile, addr 0xaa0e654, size 0x74, virtual false, abstract: false, final false
+inline void MoveToEndOfFile() ;
+
+/// @brief Method MoveToFirstAttribute, addr 0xaa10b04, size 0x54, virtual true, abstract: false, final false
+inline bool MoveToFirstAttribute() ;
+
+/// @brief Method MoveToInitial, addr 0xaa0d50c, size 0xe0, virtual false, abstract: false, final false
+inline void MoveToInitial(::System::Xml::XmlDictionaryReaderQuotas*  quotas) ;
+
+/// @brief Method MoveToNextAttribute, addr 0xaa10b58, size 0x68, virtual true, abstract: false, final false
+inline bool MoveToNextAttribute() ;
+
+/// @brief Method MoveToNode, addr 0xaa0d4b8, size 0x54, virtual false, abstract: false, final false
+inline void MoveToNode(::System::Xml::XmlBaseReader_XmlNode*  node) ;
+
+/// @brief Method MoveToWhitespaceText, addr 0xaa0e3b4, size 0xbc, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlTextNode* MoveToWhitespaceText() ;
+
+static inline ::System::Xml::XmlBaseReader* New_ctor() ;
+
+/// @brief Method ProcessAttributes, addr 0xaa102c4, size 0x18, virtual false, abstract: false, final false
+inline void ProcessAttributes() ;
+
+/// @brief Method ProcessAttributes, addr 0xaa102dc, size 0x3b8, virtual false, abstract: false, final false
+inline void ProcessAttributes(::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  attributeNodes, int32_t  attributeCount) ;
+
+/// @brief Method ReadAttributeValue, addr 0xaa11eac, size 0x30, virtual true, abstract: false, final false
+inline bool ReadAttributeValue() ;
+
+/// @brief Method ReadBytes, addr 0xaa1240c, size 0x5c4, virtual false, abstract: false, final false
+inline int32_t ReadBytes(::System::Text::Encoding*  encoding, int32_t  byteBlock, int32_t  charBlock, ::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  byteCount, bool  readContent) ;
+
+/// @brief Method ReadContentAs, addr 0xaa136c0, size 0x5f4, virtual true, abstract: false, final false
+inline ::System::Object* ReadContentAs(::System::Type*  type, ::System::Xml::IXmlNamespaceResolver*  namespaceResolver) ;
+
+/// @brief Method ReadContentAsBase64, addr 0xaa11f8c, size 0xf8, virtual true, abstract: false, final false
+inline ::ArrayW<uint8_t> ReadContentAsBase64() ;
+
+/// @brief Method ReadContentAsBase64, addr 0xaa12084, size 0x388, virtual true, abstract: false, final false
+inline int32_t ReadContentAsBase64(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count) ;
+
+/// @brief Method ReadContentAsBinHex, addr 0xaa129d0, size 0x2e4, virtual true, abstract: false, final false
+inline int32_t ReadContentAsBinHex(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count) ;
+
+/// @brief Method ReadContentAsBoolean, addr 0xaa12e20, size 0xcc, virtual true, abstract: false, final false
+inline bool ReadContentAsBoolean() ;
+
+/// @brief Method ReadContentAsDateTime, addr 0xaa13084, size 0xcc, virtual true, abstract: false, final false
+inline ::System::DateTime ReadContentAsDateTime() ;
+
+/// @brief Method ReadContentAsDecimal, addr 0xaa13300, size 0xd4, virtual true, abstract: false, final false
+inline ::System::Decimal ReadContentAsDecimal() ;
+
+/// @brief Method ReadContentAsDouble, addr 0xaa13150, size 0xd8, virtual true, abstract: false, final false
+inline double_t ReadContentAsDouble() ;
+
+/// @brief Method ReadContentAsFloat, addr 0xaa13228, size 0xd8, virtual true, abstract: false, final false
+inline float_t ReadContentAsFloat() ;
+
+/// @brief Method ReadContentAsGuid, addr 0xaa1356c, size 0xd4, virtual true, abstract: false, final false
+inline ::System::Guid ReadContentAsGuid() ;
+
+/// @brief Method ReadContentAsInt, addr 0xaa12fb8, size 0xcc, virtual true, abstract: false, final false
+inline int32_t ReadContentAsInt() ;
+
+/// @brief Method ReadContentAsLong, addr 0xaa12eec, size 0xcc, virtual true, abstract: false, final false
+inline int64_t ReadContentAsLong() ;
+
+/// @brief Method ReadContentAsObject, addr 0xaa13640, size 0x80, virtual true, abstract: false, final false
+inline ::System::Object* ReadContentAsObject() ;
+
+/// @brief Method ReadContentAsString, addr 0xaa12d48, size 0xd8, virtual true, abstract: false, final false
+inline ::StringW ReadContentAsString() ;
+
+/// @brief Method ReadContentAsTimeSpan, addr 0xaa134a0, size 0xcc, virtual true, abstract: false, final false
+inline ::System::TimeSpan ReadContentAsTimeSpan() ;
+
+/// @brief Method ReadContentAsUniqueId, addr 0xaa133d4, size 0xcc, virtual true, abstract: false, final false
+inline ::System::Xml::UniqueId* ReadContentAsUniqueId() ;
+
+/// @brief Method ReadElementContentAsString, addr 0xaa11bd8, size 0xb0, virtual true, abstract: false, final false
+inline ::StringW ReadElementContentAsString() ;
+
+/// @brief Method ReadElementString, addr 0xaa11c88, size 0xa0, virtual true, abstract: false, final false
+inline ::StringW ReadElementString() ;
+
+/// @brief Method ReadEndElement, addr 0xaa11d74, size 0x138, virtual true, abstract: false, final false
+inline void ReadEndElement() ;
+
+/// @brief Method ReadStartElement, addr 0xaa11d28, size 0x4c, virtual true, abstract: false, final false
+inline void ReadStartElement() ;
+
+/// @brief Method ReadValueChunk, addr 0xaa1189c, size 0x33c, virtual true, abstract: false, final false
+inline int32_t ReadValueChunk(::ArrayW<char16_t>  chars, int32_t  offset, int32_t  count) ;
+
+/// @brief Method ResolveEntity, addr 0xaa13cb4, size 0x68, virtual true, abstract: false, final false
+inline void ResolveEntity() ;
+
+/// @brief Method SignAttribute, addr 0xaa141b8, size 0x124, virtual false, abstract: false, final false
+inline void SignAttribute(::System::Xml::XmlSigningNodeWriter*  writer, ::System::Xml::XmlBaseReader_XmlAttributeNode*  attributeNode) ;
+
+/// @brief Method SignEndElement, addr 0xaa142dc, size 0x8c, virtual false, abstract: false, final false
+inline void SignEndElement(::System::Xml::XmlSigningNodeWriter*  writer) ;
+
+/// @brief Method SignNode, addr 0xaa14514, size 0x14, virtual false, abstract: false, final false
+inline void SignNode() ;
+
+/// @brief Method SignNode, addr 0xaa14368, size 0x1ac, virtual false, abstract: false, final false
+inline void SignNode(::System::Xml::XmlSigningNodeWriter*  writer) ;
+
+/// @brief Method SignStartElement, addr 0xaa14130, size 0x88, virtual false, abstract: false, final false
+inline void SignStartElement(::System::Xml::XmlSigningNodeWriter*  writer) ;
+
+/// @brief Method Skip, addr 0xaa13d1c, size 0xe0, virtual true, abstract: false, final false
+inline void Skip() ;
+
+/// @brief Method SkipValue, addr 0xaa11ef4, size 0x28, virtual false, abstract: false, final false
+inline void SkipValue(::System::Xml::XmlBaseReader_XmlNode*  node) ;
+
+/// @brief Method TryGetBase64ContentLength, addr 0xaa11f1c, size 0x70, virtual true, abstract: false, final false
+inline bool TryGetBase64ContentLength(::by_ref<int32_t>  length) ;
+
+/// @brief Method TryGetLocalNameAsDictionaryString, addr 0xaa13f58, size 0x14, virtual true, abstract: false, final false
+inline bool TryGetLocalNameAsDictionaryString(::by_ref<::System::Xml::XmlDictionaryString*>  localName) ;
+
+/// @brief Method TryGetNamespaceUriAsDictionaryString, addr 0xaa13fa8, size 0x14, virtual true, abstract: false, final false
+inline bool TryGetNamespaceUriAsDictionaryString(::by_ref<::System::Xml::XmlDictionaryString*>  localName) ;
+
+/// @brief Method TryGetValueAsDictionaryString, addr 0xaa14000, size 0x14, virtual true, abstract: false, final false
+inline bool TryGetValueAsDictionaryString(::by_ref<::System::Xml::XmlDictionaryString*>  value) ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlAtomicTextNode* const& __cordl_internal_get_atomicTextNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlAtomicTextNode*& __cordl_internal_get_atomicTextNode() ;
+
+constexpr int32_t const& __cordl_internal_get_attributeCount() const;
+
+constexpr int32_t& __cordl_internal_get_attributeCount() ;
+
+constexpr int32_t const& __cordl_internal_get_attributeIndex() const;
+
+constexpr int32_t& __cordl_internal_get_attributeIndex() ;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*> const& __cordl_internal_get_attributeNodes() const;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>& __cordl_internal_get_attributeNodes() ;
+
+constexpr ::System::Xml::XmlBaseReader_AttributeSorter* const& __cordl_internal_get_attributeSorter() const;
+
+constexpr ::System::Xml::XmlBaseReader_AttributeSorter*& __cordl_internal_get_attributeSorter() ;
+
+constexpr int32_t const& __cordl_internal_get_attributeStart() const;
+
+constexpr int32_t& __cordl_internal_get_attributeStart() ;
+
+constexpr ::System::Xml::XmlBufferReader* const& __cordl_internal_get_bufferReader() const;
+
+constexpr ::System::Xml::XmlBufferReader*& __cordl_internal_get_bufferReader() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlCDataNode* const& __cordl_internal_get_cdataNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlCDataNode*& __cordl_internal_get_cdataNode() ;
+
+constexpr ::ArrayW<char16_t> const& __cordl_internal_get_chars() const;
+
+constexpr ::ArrayW<char16_t>& __cordl_internal_get_chars() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlCommentNode* const& __cordl_internal_get_commentNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlCommentNode*& __cordl_internal_get_commentNode() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlComplexTextNode* const& __cordl_internal_get_complexTextNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlComplexTextNode*& __cordl_internal_get_complexTextNode() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlDeclarationNode* const& __cordl_internal_get_declarationNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlDeclarationNode*& __cordl_internal_get_declarationNode() ;
+
+constexpr int32_t const& __cordl_internal_get_depth() const;
+
+constexpr int32_t& __cordl_internal_get_depth() ;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_XmlElementNode*> const& __cordl_internal_get_elementNodes() const;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_XmlElementNode*>& __cordl_internal_get_elementNodes() ;
+
+constexpr ::StringW const& __cordl_internal_get_localName() const;
+
+constexpr ::StringW& __cordl_internal_get_localName() ;
+
+constexpr ::System::Xml::XmlNameTable* const& __cordl_internal_get_nameTable() const;
+
+constexpr ::System::Xml::XmlNameTable*& __cordl_internal_get_nameTable() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlNode* const& __cordl_internal_get_node() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlNode*& __cordl_internal_get_node() ;
+
+constexpr ::StringW const& __cordl_internal_get_ns() const;
+
+constexpr ::StringW& __cordl_internal_get_ns() ;
+
+constexpr ::System::Xml::XmlBaseReader_NamespaceManager* const& __cordl_internal_get_nsMgr() const;
+
+constexpr ::System::Xml::XmlBaseReader_NamespaceManager*& __cordl_internal_get_nsMgr() ;
+
+constexpr ::StringW const& __cordl_internal_get_prefix() const;
+
+constexpr ::StringW& __cordl_internal_get_prefix() ;
+
+constexpr ::System::Xml::XmlDictionaryReaderQuotas* const& __cordl_internal_get_quotas() const;
+
+constexpr ::System::Xml::XmlDictionaryReaderQuotas*& __cordl_internal_get_quotas() ;
+
+constexpr bool const& __cordl_internal_get_readingElement() const;
+
+constexpr bool& __cordl_internal_get_readingElement() ;
+
+constexpr bool const& __cordl_internal_get_rootElement() const;
+
+constexpr bool& __cordl_internal_get_rootElement() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlElementNode* const& __cordl_internal_get_rootElementNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlElementNode*& __cordl_internal_get_rootElementNode() ;
+
+constexpr bool const& __cordl_internal_get_signing() const;
+
+constexpr bool& __cordl_internal_get_signing() ;
+
+constexpr ::System::Xml::XmlSigningNodeWriter* const& __cordl_internal_get_signingWriter() const;
+
+constexpr ::System::Xml::XmlSigningNodeWriter*& __cordl_internal_get_signingWriter() ;
+
+constexpr int32_t const& __cordl_internal_get_trailByteCount() const;
+
+constexpr int32_t& __cordl_internal_get_trailByteCount() ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_trailBytes() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_trailBytes() ;
+
+constexpr int32_t const& __cordl_internal_get_trailCharCount() const;
+
+constexpr int32_t& __cordl_internal_get_trailCharCount() ;
+
+constexpr ::ArrayW<char16_t> const& __cordl_internal_get_trailChars() const;
+
+constexpr ::ArrayW<char16_t>& __cordl_internal_get_trailChars() ;
+
+constexpr ::StringW const& __cordl_internal_get_value() const;
+
+constexpr ::StringW& __cordl_internal_get_value() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlWhitespaceTextNode* const& __cordl_internal_get_whitespaceTextNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlWhitespaceTextNode*& __cordl_internal_get_whitespaceTextNode() ;
+
+constexpr void __cordl_internal_set_atomicTextNode(::System::Xml::XmlBaseReader_XmlAtomicTextNode*  value) ;
+
+constexpr void __cordl_internal_set_attributeCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_attributeIndex(int32_t  value) ;
+
+constexpr void __cordl_internal_set_attributeNodes(::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  value) ;
+
+constexpr void __cordl_internal_set_attributeSorter(::System::Xml::XmlBaseReader_AttributeSorter*  value) ;
+
+constexpr void __cordl_internal_set_attributeStart(int32_t  value) ;
+
+constexpr void __cordl_internal_set_bufferReader(::System::Xml::XmlBufferReader*  value) ;
+
+constexpr void __cordl_internal_set_cdataNode(::System::Xml::XmlBaseReader_XmlCDataNode*  value) ;
+
+constexpr void __cordl_internal_set_chars(::ArrayW<char16_t>  value) ;
+
+constexpr void __cordl_internal_set_commentNode(::System::Xml::XmlBaseReader_XmlCommentNode*  value) ;
+
+constexpr void __cordl_internal_set_complexTextNode(::System::Xml::XmlBaseReader_XmlComplexTextNode*  value) ;
+
+constexpr void __cordl_internal_set_declarationNode(::System::Xml::XmlBaseReader_XmlDeclarationNode*  value) ;
+
+constexpr void __cordl_internal_set_depth(int32_t  value) ;
+
+constexpr void __cordl_internal_set_elementNodes(::ArrayW<::System::Xml::XmlBaseReader_XmlElementNode*>  value) ;
+
+constexpr void __cordl_internal_set_localName(::StringW  value) ;
+
+constexpr void __cordl_internal_set_nameTable(::System::Xml::XmlNameTable*  value) ;
+
+constexpr void __cordl_internal_set_node(::System::Xml::XmlBaseReader_XmlNode*  value) ;
+
+constexpr void __cordl_internal_set_ns(::StringW  value) ;
+
+constexpr void __cordl_internal_set_nsMgr(::System::Xml::XmlBaseReader_NamespaceManager*  value) ;
+
+constexpr void __cordl_internal_set_prefix(::StringW  value) ;
+
+constexpr void __cordl_internal_set_quotas(::System::Xml::XmlDictionaryReaderQuotas*  value) ;
+
+constexpr void __cordl_internal_set_readingElement(bool  value) ;
+
+constexpr void __cordl_internal_set_rootElement(bool  value) ;
+
+constexpr void __cordl_internal_set_rootElementNode(::System::Xml::XmlBaseReader_XmlElementNode*  value) ;
+
+constexpr void __cordl_internal_set_signing(bool  value) ;
+
+constexpr void __cordl_internal_set_signingWriter(::System::Xml::XmlSigningNodeWriter*  value) ;
+
+constexpr void __cordl_internal_set_trailByteCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_trailBytes(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_trailCharCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_trailChars(::ArrayW<char16_t>  value) ;
+
+constexpr void __cordl_internal_set_value(::StringW  value) ;
+
+constexpr void __cordl_internal_set_whitespaceTextNode(::System::Xml::XmlBaseReader_XmlWhitespaceTextNode*  value) ;
+
+/// @brief Method .ctor, addr 0xaa0cde4, size 0x1b4, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::System::Text::Base64Encoding* getStaticF_base64Encoding() ;
+
+static inline ::System::Text::BinHexEncoding* getStaticF_binhexEncoding() ;
+
+static inline ::System::Xml::XmlBaseReader_XmlClosedNode* getStaticF_closedNode() ;
+
+static inline ::System::Xml::XmlBaseReader_XmlEndOfFileNode* getStaticF_endOfFileNode() ;
+
+static inline ::System::Xml::XmlBaseReader_XmlInitialNode* getStaticF_initialNode() ;
+
+/// @brief Method get_AttributeCount, addr 0xaa0f494, size 0x28, virtual true, abstract: false, final false
+inline int32_t get_AttributeCount() ;
+
+/// @brief Method get_Base64Encoding, addr 0xaa0d3dc, size 0xc4, virtual false, abstract: false, final false
+static inline ::System::Text::Base64Encoding* get_Base64Encoding() ;
+
+/// @brief Method get_BaseURI, addr 0xaa0f474, size 0x18, virtual true, abstract: false, final false
+inline ::StringW get_BaseURI() ;
+
+/// @brief Method get_BinHexEncoding, addr 0xaa0d318, size 0xc4, virtual false, abstract: false, final false
+static inline ::System::Text::BinHexEncoding* get_BinHexEncoding() ;
+
+/// @brief Method get_BufferReader, addr 0xaa0d4a0, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBufferReader* get_BufferReader() ;
+
+/// @brief Method get_CanReadValueChunk, addr 0xaa0f46c, size 0x8, virtual true, abstract: false, final false
+inline bool get_CanReadValueChunk() ;
+
+/// @brief Method get_Depth, addr 0xaa0f670, size 0x20, virtual true, abstract: false, final true
+inline int32_t get_Depth() ;
+
+/// @brief Method get_EOF, addr 0xaa0f690, size 0x20, virtual true, abstract: false, final false
+inline bool get_EOF() ;
+
+/// @brief Method get_ElementNode, addr 0xaa0e598, size 0x44, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlElementNode* get_ElementNode() ;
+
+/// @brief Method get_IsDefault, addr 0xaa0f48c, size 0x8, virtual true, abstract: false, final false
+inline bool get_IsDefault() ;
+
+/// @brief Method get_IsEmptyElement, addr 0xaa0fdd0, size 0x18, virtual true, abstract: false, final true
+inline bool get_IsEmptyElement() ;
+
+/// @brief Method get_LocalName, addr 0xaa0fde8, size 0x44, virtual true, abstract: false, final false
+inline ::StringW get_LocalName() ;
+
+/// @brief Method get_NameTable, addr 0xaa10cc8, size 0x198, virtual true, abstract: false, final false
+inline ::System::Xml::XmlNameTable* get_NameTable() ;
+
+/// @brief Method get_NamespaceURI, addr 0xaa10bc0, size 0x44, virtual true, abstract: false, final false
+inline ::StringW get_NamespaceURI() ;
+
+/// @brief Method get_Node, addr 0xaa0d4b0, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlNode* get_Node() ;
+
+/// @brief Method get_NodeType, addr 0xaa10ef4, size 0x18, virtual true, abstract: false, final true
+inline ::System::Xml::XmlNodeType get_NodeType() ;
+
+/// @brief Method get_OutsideRootElement, addr 0xaa0f45c, size 0x10, virtual false, abstract: false, final false
+inline bool get_OutsideRootElement() ;
+
+/// @brief Method get_Prefix, addr 0xaa10f0c, size 0xf0, virtual true, abstract: false, final false
+inline ::StringW get_Prefix() ;
+
+/// @brief Method get_Quotas, addr 0xaa0d4a8, size 0x8, virtual true, abstract: false, final false
+inline ::System::Xml::XmlDictionaryReaderQuotas* get_Quotas() ;
+
+/// @brief Method get_QuoteChar, addr 0xaa10ffc, size 0x18, virtual true, abstract: false, final false
+inline char16_t get_QuoteChar() ;
+
+/// @brief Method get_ReadState, addr 0xaa11edc, size 0x18, virtual true, abstract: false, final false
+inline ::System::Xml::ReadState get_ReadState() ;
+
+/// @brief Method get_Value, addr 0xaa13dfc, size 0x40, virtual true, abstract: false, final false
+inline ::StringW get_Value() ;
+
+/// @brief Method get_ValueType, addr 0xaa13e3c, size 0xec, virtual true, abstract: false, final false
+inline ::System::Type* get_ValueType() ;
+
+/// @brief Method get_XmlLang, addr 0xaa13f28, size 0x18, virtual true, abstract: false, final false
+inline ::StringW get_XmlLang() ;
+
+/// @brief Method get_XmlSpace, addr 0xaa13f40, size 0x18, virtual true, abstract: false, final false
+inline ::System::Xml::XmlSpace get_XmlSpace() ;
+
+static inline void setStaticF_base64Encoding(::System::Text::Base64Encoding*  value) ;
+
+static inline void setStaticF_binhexEncoding(::System::Text::BinHexEncoding*  value) ;
+
+static inline void setStaticF_closedNode(::System::Xml::XmlBaseReader_XmlClosedNode*  value) ;
+
+static inline void setStaticF_endOfFileNode(::System::Xml::XmlBaseReader_XmlEndOfFileNode*  value) ;
+
+static inline void setStaticF_initialNode(::System::Xml::XmlBaseReader_XmlInitialNode*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader(XmlBaseReader && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader(XmlBaseReader const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24438};
+
+/// @brief Field bufferReader, offset: 0x10, size: 0x8, def value: None
+ ::System::Xml::XmlBufferReader*  ___bufferReader;
+
+/// @brief Field node, offset: 0x18, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlNode*  ___node;
+
+/// @brief Field nsMgr, offset: 0x20, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_NamespaceManager*  ___nsMgr;
+
+/// @brief Field elementNodes, offset: 0x28, size: 0x8, def value: None
+ ::ArrayW<::System::Xml::XmlBaseReader_XmlElementNode*>  ___elementNodes;
+
+/// @brief Field attributeNodes, offset: 0x30, size: 0x8, def value: None
+ ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  ___attributeNodes;
+
+/// @brief Field atomicTextNode, offset: 0x38, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlAtomicTextNode*  ___atomicTextNode;
+
+/// @brief Field depth, offset: 0x40, size: 0x4, def value: None
+ int32_t  ___depth;
+
+/// @brief Field attributeCount, offset: 0x44, size: 0x4, def value: None
+ int32_t  ___attributeCount;
+
+/// @brief Field attributeStart, offset: 0x48, size: 0x4, def value: None
+ int32_t  ___attributeStart;
+
+/// @brief Field quotas, offset: 0x50, size: 0x8, def value: None
+ ::System::Xml::XmlDictionaryReaderQuotas*  ___quotas;
+
+/// @brief Field nameTable, offset: 0x58, size: 0x8, def value: None
+ ::System::Xml::XmlNameTable*  ___nameTable;
+
+/// @brief Field declarationNode, offset: 0x60, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlDeclarationNode*  ___declarationNode;
+
+/// @brief Field complexTextNode, offset: 0x68, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlComplexTextNode*  ___complexTextNode;
+
+/// @brief Field whitespaceTextNode, offset: 0x70, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlWhitespaceTextNode*  ___whitespaceTextNode;
+
+/// @brief Field cdataNode, offset: 0x78, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlCDataNode*  ___cdataNode;
+
+/// @brief Field commentNode, offset: 0x80, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlCommentNode*  ___commentNode;
+
+/// @brief Field rootElementNode, offset: 0x88, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlElementNode*  ___rootElementNode;
+
+/// @brief Field attributeIndex, offset: 0x90, size: 0x4, def value: None
+ int32_t  ___attributeIndex;
+
+/// @brief Field chars, offset: 0x98, size: 0x8, def value: None
+ ::ArrayW<char16_t>  ___chars;
+
+/// @brief Field prefix, offset: 0xa0, size: 0x8, def value: None
+ ::StringW  ___prefix;
+
+/// @brief Field localName, offset: 0xa8, size: 0x8, def value: None
+ ::StringW  ___localName;
+
+/// @brief Field ns, offset: 0xb0, size: 0x8, def value: None
+ ::StringW  ___ns;
+
+/// @brief Field value, offset: 0xb8, size: 0x8, def value: None
+ ::StringW  ___value;
+
+/// @brief Field trailCharCount, offset: 0xc0, size: 0x4, def value: None
+ int32_t  ___trailCharCount;
+
+/// @brief Field trailByteCount, offset: 0xc4, size: 0x4, def value: None
+ int32_t  ___trailByteCount;
+
+/// @brief Field trailChars, offset: 0xc8, size: 0x8, def value: None
+ ::ArrayW<char16_t>  ___trailChars;
+
+/// @brief Field trailBytes, offset: 0xd0, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___trailBytes;
+
+/// @brief Field rootElement, offset: 0xd8, size: 0x1, def value: None
+ bool  ___rootElement;
+
+/// @brief Field readingElement, offset: 0xd9, size: 0x1, def value: None
+ bool  ___readingElement;
+
+/// @brief Field signingWriter, offset: 0xe0, size: 0x8, def value: None
+ ::System::Xml::XmlSigningNodeWriter*  ___signingWriter;
+
+/// @brief Field signing, offset: 0xe8, size: 0x1, def value: None
+ bool  ___signing;
+
+/// @brief Field attributeSorter, offset: 0xf0, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_AttributeSorter*  ___attributeSorter;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___bufferReader) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___node) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___nsMgr) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___elementNodes) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___attributeNodes) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___atomicTextNode) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___depth) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___attributeCount) == 0x44, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___attributeStart) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___quotas) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___nameTable) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___declarationNode) == 0x60, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___complexTextNode) == 0x68, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___whitespaceTextNode) == 0x70, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___cdataNode) == 0x78, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___commentNode) == 0x80, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___rootElementNode) == 0x88, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___attributeIndex) == 0x90, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___chars) == 0x98, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___prefix) == 0xa0, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___localName) == 0xa8, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___ns) == 0xb0, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___value) == 0xb8, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___trailCharCount) == 0xc0, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___trailByteCount) == 0xc4, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___trailChars) == 0xc8, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___trailBytes) == 0xd0, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___rootElement) == 0xd8, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___readingElement) == 0xd9, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___signingWriter) == 0xe0, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___signing) == 0xe8, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader, ___attributeSorter) == 0xf0, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBaseReader) == 0xf8, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlNameTable
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/QuotaNameTable
+class CORDL_TYPE XmlBaseReader_QuotaNameTable : public ::System::Xml::XmlNameTable {
+public:
+// Declarations
+/// @brief Field charCount, offset 0x24, size 0x4 
+ __declspec(property(get=__cordl_internal_get_charCount, put=__cordl_internal_set_charCount)) int32_t  charCount;
+
+/// @brief Field maxCharCount, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_maxCharCount, put=__cordl_internal_set_maxCharCount)) int32_t  maxCharCount;
+
+/// @brief Field nameTable, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_nameTable, put=__cordl_internal_set_nameTable)) ::System::Xml::XmlNameTable*  nameTable;
+
+/// @brief Field reader, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_reader, put=__cordl_internal_set_reader)) ::System::Xml::XmlDictionaryReader*  reader;
+
+/// @brief Method Add, addr 0xaa15b04, size 0x9c, virtual true, abstract: false, final false
+inline ::StringW Add(::ArrayW<char16_t>  chars, int32_t  offset, int32_t  count) ;
+
+/// @brief Method Add, addr 0xaa15ba0, size 0x88, virtual true, abstract: false, final false
+inline ::StringW Add(::StringW  value) ;
+
+/// @brief Method Add, addr 0xaa15ac0, size 0x44, virtual false, abstract: false, final false
+inline void Add(int32_t  charCount) ;
+
+/// @brief Method Get, addr 0xaa15a88, size 0x1c, virtual true, abstract: false, final false
+inline ::StringW Get(::ArrayW<char16_t>  chars, int32_t  offset, int32_t  count) ;
+
+/// @brief Method Get, addr 0xaa15aa4, size 0x1c, virtual true, abstract: false, final false
+inline ::StringW Get(::StringW  value) ;
+
+static inline ::System::Xml::XmlBaseReader_QuotaNameTable* New_ctor(::System::Xml::XmlDictionaryReader*  reader, int32_t  maxCharCount) ;
+
+constexpr int32_t const& __cordl_internal_get_charCount() const;
+
+constexpr int32_t& __cordl_internal_get_charCount() ;
+
+constexpr int32_t const& __cordl_internal_get_maxCharCount() const;
+
+constexpr int32_t& __cordl_internal_get_maxCharCount() ;
+
+constexpr ::System::Xml::XmlNameTable* const& __cordl_internal_get_nameTable() const;
+
+constexpr ::System::Xml::XmlNameTable*& __cordl_internal_get_nameTable() ;
+
+constexpr ::System::Xml::XmlDictionaryReader* const& __cordl_internal_get_reader() const;
+
+constexpr ::System::Xml::XmlDictionaryReader*& __cordl_internal_get_reader() ;
+
+constexpr void __cordl_internal_set_charCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_maxCharCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_nameTable(::System::Xml::XmlNameTable*  value) ;
+
+constexpr void __cordl_internal_set_reader(::System::Xml::XmlDictionaryReader*  value) ;
+
+/// @brief Method .ctor, addr 0xaa10e60, size 0x94, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlDictionaryReader*  reader, int32_t  maxCharCount) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_QuotaNameTable() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_QuotaNameTable", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_QuotaNameTable(XmlBaseReader_QuotaNameTable && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_QuotaNameTable", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_QuotaNameTable(XmlBaseReader_QuotaNameTable const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24437};
+
+/// @brief Field reader, offset: 0x10, size: 0x8, def value: None
+ ::System::Xml::XmlDictionaryReader*  ___reader;
+
+/// @brief Field nameTable, offset: 0x18, size: 0x8, def value: None
+ ::System::Xml::XmlNameTable*  ___nameTable;
+
+/// @brief Field maxCharCount, offset: 0x20, size: 0x4, def value: None
+ int32_t  ___maxCharCount;
+
+/// @brief Field charCount, offset: 0x24, size: 0x4, def value: None
+ int32_t  ___charCount;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBaseReader_QuotaNameTable, ___reader) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_QuotaNameTable, ___nameTable) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_QuotaNameTable, ___maxCharCount) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_QuotaNameTable, ___charCount) == 0x24, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBaseReader_QuotaNameTable) == 0x28, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Object, System.Xml.XmlBaseReader::Namespace, System.Xml.XmlBaseReader::NamespaceManager::XmlAttribute, System.Xml.XmlSpace
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/NamespaceManager
+class CORDL_TYPE XmlBaseReader_NamespaceManager : public ::System::Object {
+public:
+// Declarations
+using XmlAttribute = ::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute;
+
+ __declspec(property(get=get_XmlLang)) ::StringW  XmlLang;
+
+ __declspec(property(get=get_XmlSpace)) ::System::Xml::XmlSpace  XmlSpace;
+
+/// @brief Field attributeCount, offset 0x38, size 0x4 
+ __declspec(property(get=__cordl_internal_get_attributeCount, put=__cordl_internal_set_attributeCount)) int32_t  attributeCount;
+
+/// @brief Field attributes, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_attributes, put=__cordl_internal_set_attributes)) ::ArrayW<::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute*>  attributes;
+
+/// @brief Field bufferReader, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_bufferReader, put=__cordl_internal_set_bufferReader)) ::System::Xml::XmlBufferReader*  bufferReader;
+
+/// @brief Field depth, offset 0x24, size 0x4 
+ __declspec(property(get=__cordl_internal_get_depth, put=__cordl_internal_set_depth)) int32_t  depth;
+
+/// @brief Field emptyNamespace, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_emptyNamespace, put=setStaticF_emptyNamespace)) ::System::Xml::XmlBaseReader_Namespace*  emptyNamespace;
+
+/// @brief Field lang, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_lang, put=__cordl_internal_set_lang)) ::StringW  lang;
+
+/// @brief Field namespaces, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_namespaces, put=__cordl_internal_set_namespaces)) ::ArrayW<::System::Xml::XmlBaseReader_Namespace*>  namespaces;
+
+/// @brief Field nsCount, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_nsCount, put=__cordl_internal_set_nsCount)) int32_t  nsCount;
+
+/// @brief Field shortPrefixUri, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_shortPrefixUri, put=__cordl_internal_set_shortPrefixUri)) ::ArrayW<::System::Xml::XmlBaseReader_Namespace*>  shortPrefixUri;
+
+/// @brief Field space, offset 0x3c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_space, put=__cordl_internal_set_space)) ::System::Xml::XmlSpace  space;
+
+/// @brief Field xmlNamespace, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_xmlNamespace, put=setStaticF_xmlNamespace)) ::System::Xml::XmlBaseReader_Namespace*  xmlNamespace;
+
+/// @brief Method AddAttribute, addr 0xaa156d8, size 0x184, virtual false, abstract: false, final false
+inline void AddAttribute() ;
+
+/// @brief Method AddLangAttribute, addr 0xaa0f40c, size 0x2c, virtual false, abstract: false, final false
+inline void AddLangAttribute(::StringW  lang) ;
+
+/// @brief Method AddNamespace, addr 0xaa0ecf8, size 0x184, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* AddNamespace() ;
+
+/// @brief Method AddSpaceAttribute, addr 0xaa0f438, size 0x24, virtual false, abstract: false, final false
+inline void AddSpaceAttribute(::System::Xml::XmlSpace  space) ;
+
+/// @brief Method Clear, addr 0xaa0d5ec, size 0x128, virtual false, abstract: false, final false
+inline void Clear() ;
+
+/// @brief Method Close, addr 0xaa0f5dc, size 0x70, virtual false, abstract: false, final false
+inline void Close() ;
+
+/// @brief Method EnterScope, addr 0xaa0e8a8, size 0x10, virtual false, abstract: false, final false
+inline void EnterScope() ;
+
+/// @brief Method ExitScope, addr 0xaa0e8f4, size 0x154, virtual false, abstract: false, final false
+inline void ExitScope() ;
+
+/// @brief Method LookupNamespace, addr 0xaa0fffc, size 0x14c, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* LookupNamespace(::StringW  prefix) ;
+
+/// @brief Method LookupNamespace, addr 0xaa1019c, size 0x128, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* LookupNamespace(::System::Xml::PrefixHandle*  prefix) ;
+
+/// @brief Method LookupNamespace, addr 0xaa15870, size 0x30, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* LookupNamespace(::System::Xml::PrefixHandleType  prefix) ;
+
+static inline ::System::Xml::XmlBaseReader_NamespaceManager* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method Register, addr 0xaa0f174, size 0xb4, virtual false, abstract: false, final false
+inline void Register(::System::Xml::XmlBaseReader_Namespace*  nameSpace) ;
+
+/// @brief Method TryGetShortPrefix, addr 0xaa158a0, size 0xac, virtual false, abstract: false, final false
+inline bool TryGetShortPrefix(::StringW  s, ::by_ref<::System::Xml::PrefixHandleType>  shortPrefix) ;
+
+constexpr int32_t const& __cordl_internal_get_attributeCount() const;
+
+constexpr int32_t& __cordl_internal_get_attributeCount() ;
+
+constexpr ::ArrayW<::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute*> const& __cordl_internal_get_attributes() const;
+
+constexpr ::ArrayW<::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute*>& __cordl_internal_get_attributes() ;
+
+constexpr ::System::Xml::XmlBufferReader* const& __cordl_internal_get_bufferReader() const;
+
+constexpr ::System::Xml::XmlBufferReader*& __cordl_internal_get_bufferReader() ;
+
+constexpr int32_t const& __cordl_internal_get_depth() const;
+
+constexpr int32_t& __cordl_internal_get_depth() ;
+
+constexpr ::StringW const& __cordl_internal_get_lang() const;
+
+constexpr ::StringW& __cordl_internal_get_lang() ;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_Namespace*> const& __cordl_internal_get_namespaces() const;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_Namespace*>& __cordl_internal_get_namespaces() ;
+
+constexpr int32_t const& __cordl_internal_get_nsCount() const;
+
+constexpr int32_t& __cordl_internal_get_nsCount() ;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_Namespace*> const& __cordl_internal_get_shortPrefixUri() const;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_Namespace*>& __cordl_internal_get_shortPrefixUri() ;
+
+constexpr ::System::Xml::XmlSpace const& __cordl_internal_get_space() const;
+
+constexpr ::System::Xml::XmlSpace& __cordl_internal_get_space() ;
+
+constexpr void __cordl_internal_set_attributeCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_attributes(::ArrayW<::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute*>  value) ;
+
+constexpr void __cordl_internal_set_bufferReader(::System::Xml::XmlBufferReader*  value) ;
+
+constexpr void __cordl_internal_set_depth(int32_t  value) ;
+
+constexpr void __cordl_internal_set_lang(::StringW  value) ;
+
+constexpr void __cordl_internal_set_namespaces(::ArrayW<::System::Xml::XmlBaseReader_Namespace*>  value) ;
+
+constexpr void __cordl_internal_set_nsCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_shortPrefixUri(::ArrayW<::System::Xml::XmlBaseReader_Namespace*>  value) ;
+
+constexpr void __cordl_internal_set_space(::System::Xml::XmlSpace  value) ;
+
+/// @brief Method .ctor, addr 0xaa0cf98, size 0x150, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+static inline ::System::Xml::XmlBaseReader_Namespace* getStaticF_emptyNamespace() ;
+
+static inline ::System::Xml::XmlBaseReader_Namespace* getStaticF_xmlNamespace() ;
+
+/// @brief Method get_EmptyNamespace, addr 0xaa15670, size 0x58, virtual false, abstract: false, final false
+static inline ::System::Xml::XmlBaseReader_Namespace* get_EmptyNamespace() ;
+
+/// @brief Method get_XmlLang, addr 0xaa156c8, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_XmlLang() ;
+
+/// @brief Method get_XmlNamespace, addr 0xaa153d0, size 0x1a4, virtual false, abstract: false, final false
+static inline ::System::Xml::XmlBaseReader_Namespace* get_XmlNamespace() ;
+
+/// @brief Method get_XmlSpace, addr 0xaa156d0, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlSpace get_XmlSpace() ;
+
+static inline void setStaticF_emptyNamespace(::System::Xml::XmlBaseReader_Namespace*  value) ;
+
+static inline void setStaticF_xmlNamespace(::System::Xml::XmlBaseReader_Namespace*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_NamespaceManager() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_NamespaceManager", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_NamespaceManager(XmlBaseReader_NamespaceManager && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_NamespaceManager", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_NamespaceManager(XmlBaseReader_NamespaceManager const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24435};
+
+/// @brief Field bufferReader, offset: 0x10, size: 0x8, def value: None
+ ::System::Xml::XmlBufferReader*  ___bufferReader;
+
+/// @brief Field namespaces, offset: 0x18, size: 0x8, def value: None
+ ::ArrayW<::System::Xml::XmlBaseReader_Namespace*>  ___namespaces;
+
+/// @brief Field nsCount, offset: 0x20, size: 0x4, def value: None
+ int32_t  ___nsCount;
+
+/// @brief Field depth, offset: 0x24, size: 0x4, def value: None
+ int32_t  ___depth;
+
+/// @brief Field shortPrefixUri, offset: 0x28, size: 0x8, def value: None
+ ::ArrayW<::System::Xml::XmlBaseReader_Namespace*>  ___shortPrefixUri;
+
+/// @brief Field attributes, offset: 0x30, size: 0x8, def value: None
+ ::ArrayW<::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute*>  ___attributes;
+
+/// @brief Field attributeCount, offset: 0x38, size: 0x4, def value: None
+ int32_t  ___attributeCount;
+
+/// @brief Field space, offset: 0x3c, size: 0x4, def value: None
+ ::System::Xml::XmlSpace  ___space;
+
+/// @brief Field lang, offset: 0x40, size: 0x8, def value: None
+ ::StringW  ___lang;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___bufferReader) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___namespaces) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___nsCount) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___depth) == 0x24, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___shortPrefixUri) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___attributes) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___attributeCount) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___space) == 0x3c, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_NamespaceManager, ___lang) == 0x40, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBaseReader_NamespaceManager) == 0x48, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Object
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/Namespace
+class CORDL_TYPE XmlBaseReader_Namespace : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Depth, put=set_Depth)) int32_t  Depth;
+
+ __declspec(property(get=get_OuterUri, put=set_OuterUri)) ::System::Xml::XmlBaseReader_Namespace*  OuterUri;
+
+ __declspec(property(get=get_Prefix)) ::System::Xml::PrefixHandle*  Prefix;
+
+ __declspec(property(get=get_Uri)) ::System::Xml::StringHandle*  Uri;
+
+/// @brief Field depth, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_depth, put=__cordl_internal_set_depth)) int32_t  depth;
+
+/// @brief Field outerUri, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_outerUri, put=__cordl_internal_set_outerUri)) ::System::Xml::XmlBaseReader_Namespace*  outerUri;
+
+/// @brief Field prefix, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_prefix, put=__cordl_internal_set_prefix)) ::System::Xml::PrefixHandle*  prefix;
+
+/// @brief Field uri, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_uri, put=__cordl_internal_set_uri)) ::System::Xml::StringHandle*  uri;
+
+/// @brief Field uriString, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_uriString, put=__cordl_internal_set_uriString)) ::StringW  uriString;
+
+/// @brief Method Clear, addr 0xaa15864, size 0xc, virtual false, abstract: false, final false
+inline void Clear() ;
+
+/// @brief Method IsUri, addr 0xaa14ca8, size 0x9c, virtual false, abstract: false, final false
+inline bool IsUri(::StringW  s) ;
+
+/// @brief Method IsUri, addr 0xaa14d44, size 0xa4, virtual false, abstract: false, final false
+inline bool IsUri(::System::Xml::XmlDictionaryString*  s) ;
+
+static inline ::System::Xml::XmlBaseReader_Namespace* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+constexpr int32_t const& __cordl_internal_get_depth() const;
+
+constexpr int32_t& __cordl_internal_get_depth() ;
+
+constexpr ::System::Xml::XmlBaseReader_Namespace* const& __cordl_internal_get_outerUri() const;
+
+constexpr ::System::Xml::XmlBaseReader_Namespace*& __cordl_internal_get_outerUri() ;
+
+constexpr ::System::Xml::PrefixHandle* const& __cordl_internal_get_prefix() const;
+
+constexpr ::System::Xml::PrefixHandle*& __cordl_internal_get_prefix() ;
+
+constexpr ::System::Xml::StringHandle* const& __cordl_internal_get_uri() const;
+
+constexpr ::System::Xml::StringHandle*& __cordl_internal_get_uri() ;
+
+constexpr ::StringW const& __cordl_internal_get_uriString() const;
+
+constexpr ::StringW& __cordl_internal_get_uriString() ;
+
+constexpr void __cordl_internal_set_depth(int32_t  value) ;
+
+constexpr void __cordl_internal_set_outerUri(::System::Xml::XmlBaseReader_Namespace*  value) ;
+
+constexpr void __cordl_internal_set_prefix(::System::Xml::PrefixHandle*  value) ;
+
+constexpr void __cordl_internal_set_uri(::System::Xml::StringHandle*  value) ;
+
+constexpr void __cordl_internal_set_uriString(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0xaa15574, size 0xfc, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method get_Depth, addr 0xaa15a58, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_Depth() ;
+
+/// @brief Method get_OuterUri, addr 0xaa15a78, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* get_OuterUri() ;
+
+/// @brief Method get_Prefix, addr 0xaa15a68, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::PrefixHandle* get_Prefix() ;
+
+/// @brief Method get_Uri, addr 0xaa15a70, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::StringHandle* get_Uri() ;
+
+/// @brief Method set_Depth, addr 0xaa15a60, size 0x8, virtual false, abstract: false, final false
+inline void set_Depth(int32_t  value) ;
+
+/// @brief Method set_OuterUri, addr 0xaa15a80, size 0x8, virtual false, abstract: false, final false
+inline void set_OuterUri(::System::Xml::XmlBaseReader_Namespace*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_Namespace() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_Namespace", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_Namespace(XmlBaseReader_Namespace && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_Namespace", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_Namespace(XmlBaseReader_Namespace const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24436};
+
+/// @brief Field prefix, offset: 0x10, size: 0x8, def value: None
+ ::System::Xml::PrefixHandle*  ___prefix;
+
+/// @brief Field uri, offset: 0x18, size: 0x8, def value: None
+ ::System::Xml::StringHandle*  ___uri;
+
+/// @brief Field depth, offset: 0x20, size: 0x4, def value: None
+ int32_t  ___depth;
+
+/// @brief Field outerUri, offset: 0x28, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_Namespace*  ___outerUri;
+
+/// @brief Field uriString, offset: 0x30, size: 0x8, def value: None
+ ::StringW  ___uriString;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBaseReader_Namespace, ___prefix) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_Namespace, ___uri) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_Namespace, ___depth) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_Namespace, ___outerUri) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_Namespace, ___uriString) == 0x30, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBaseReader_Namespace) == 0x38, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Object, System.Xml.XmlSpace
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/NamespaceManager/XmlAttribute
+class CORDL_TYPE NamespaceManager_XmlBaseReader_XmlAttribute : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Depth, put=set_Depth)) int32_t  Depth;
+
+ __declspec(property(get=get_XmlLang, put=set_XmlLang)) ::StringW  XmlLang;
+
+ __declspec(property(get=get_XmlSpace, put=set_XmlSpace)) ::System::Xml::XmlSpace  XmlSpace;
+
+/// @brief Field depth, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_depth, put=__cordl_internal_set_depth)) int32_t  depth;
+
+/// @brief Field lang, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_lang, put=__cordl_internal_set_lang)) ::StringW  lang;
+
+/// @brief Field space, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get_space, put=__cordl_internal_set_space)) ::System::Xml::XmlSpace  space;
+
+static inline ::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute* New_ctor() ;
+
+constexpr int32_t const& __cordl_internal_get_depth() const;
+
+constexpr int32_t& __cordl_internal_get_depth() ;
+
+constexpr ::StringW const& __cordl_internal_get_lang() const;
+
+constexpr ::StringW& __cordl_internal_get_lang() ;
+
+constexpr ::System::Xml::XmlSpace const& __cordl_internal_get_space() const;
+
+constexpr ::System::Xml::XmlSpace& __cordl_internal_get_space() ;
+
+constexpr void __cordl_internal_set_depth(int32_t  value) ;
+
+constexpr void __cordl_internal_set_lang(::StringW  value) ;
+
+constexpr void __cordl_internal_set_space(::System::Xml::XmlSpace  value) ;
+
+/// @brief Method .ctor, addr 0xaa1585c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_Depth, addr 0xaa15a28, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_Depth() ;
+
+/// @brief Method get_XmlLang, addr 0xaa15a38, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_XmlLang() ;
+
+/// @brief Method get_XmlSpace, addr 0xaa15a48, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlSpace get_XmlSpace() ;
+
+/// @brief Method set_Depth, addr 0xaa15a30, size 0x8, virtual false, abstract: false, final false
+inline void set_Depth(int32_t  value) ;
+
+/// @brief Method set_XmlLang, addr 0xaa15a40, size 0x8, virtual false, abstract: false, final false
+inline void set_XmlLang(::StringW  value) ;
+
+/// @brief Method set_XmlSpace, addr 0xaa15a50, size 0x8, virtual false, abstract: false, final false
+inline void set_XmlSpace(::System::Xml::XmlSpace  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr NamespaceManager_XmlBaseReader_XmlAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "NamespaceManager_XmlBaseReader_XmlAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+NamespaceManager_XmlBaseReader_XmlAttribute(NamespaceManager_XmlBaseReader_XmlAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "NamespaceManager_XmlBaseReader_XmlAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+NamespaceManager_XmlBaseReader_XmlAttribute(NamespaceManager_XmlBaseReader_XmlAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24434};
+
+/// @brief Field space, offset: 0x10, size: 0x4, def value: None
+ ::System::Xml::XmlSpace  ___space;
+
+/// @brief Field lang, offset: 0x18, size: 0x8, def value: None
+ ::StringW  ___lang;
+
+/// @brief Field depth, offset: 0x20, size: 0x4, def value: None
+ int32_t  ___depth;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute, ___space) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute, ___lang) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute, ___depth) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::NamespaceManager_XmlBaseReader_XmlAttribute) == 0x28, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Object, System.Xml.XmlBaseReader::XmlAttributeNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/AttributeSorter
+class CORDL_TYPE XmlBaseReader_AttributeSorter : public ::System::Object {
+public:
+// Declarations
+/// @brief Field attributeCount, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_attributeCount, put=__cordl_internal_set_attributeCount)) int32_t  attributeCount;
+
+/// @brief Field attributeIndex1, offset 0x24, size 0x4 
+ __declspec(property(get=__cordl_internal_get_attributeIndex1, put=__cordl_internal_set_attributeIndex1)) int32_t  attributeIndex1;
+
+/// @brief Field attributeIndex2, offset 0x28, size 0x4 
+ __declspec(property(get=__cordl_internal_get_attributeIndex2, put=__cordl_internal_set_attributeIndex2)) int32_t  attributeIndex2;
+
+/// @brief Field attributeNodes, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_attributeNodes, put=__cordl_internal_set_attributeNodes)) ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  attributeNodes;
+
+/// @brief Field indeces, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_indeces, put=__cordl_internal_set_indeces)) ::ArrayW<::System::Object*>  indeces;
+
+/// @brief Convert operator to "::System::Collections::IComparer"
+constexpr operator  ::System::Collections::IComparer*() noexcept;
+
+/// @brief Method Close, addr 0xaa0f64c, size 0x24, virtual false, abstract: false, final false
+inline void Close() ;
+
+/// @brief Method Compare, addr 0xaa1528c, size 0x13c, virtual true, abstract: false, final true
+inline int32_t Compare(::System::Object*  obj1, ::System::Object*  obj2) ;
+
+/// @brief Method CompareQNameType, addr 0xaa153c8, size 0x8, virtual false, abstract: false, final false
+inline int32_t CompareQNameType(::GlobalNamespace::XmlBaseReader_QNameType  type1, ::GlobalNamespace::XmlBaseReader_QNameType  type2) ;
+
+/// @brief Method GetIndeces, addr 0xaa108d4, size 0x14, virtual false, abstract: false, final false
+inline void GetIndeces(::by_ref<int32_t>  attributeIndex1, ::by_ref<int32_t>  attributeIndex2) ;
+
+/// @brief Method IsSorted, addr 0xaa15170, size 0x11c, virtual false, abstract: false, final false
+inline bool IsSorted() ;
+
+static inline ::System::Xml::XmlBaseReader_AttributeSorter* New_ctor() ;
+
+/// @brief Method Sort, addr 0xaa15010, size 0x160, virtual false, abstract: false, final false
+inline bool Sort() ;
+
+/// @brief Method Sort, addr 0xaa10878, size 0x5c, virtual false, abstract: false, final false
+inline bool Sort(::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  attributeNodes, int32_t  attributeCount) ;
+
+constexpr int32_t const& __cordl_internal_get_attributeCount() const;
+
+constexpr int32_t& __cordl_internal_get_attributeCount() ;
+
+constexpr int32_t const& __cordl_internal_get_attributeIndex1() const;
+
+constexpr int32_t& __cordl_internal_get_attributeIndex1() ;
+
+constexpr int32_t const& __cordl_internal_get_attributeIndex2() const;
+
+constexpr int32_t& __cordl_internal_get_attributeIndex2() ;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*> const& __cordl_internal_get_attributeNodes() const;
+
+constexpr ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>& __cordl_internal_get_attributeNodes() ;
+
+constexpr ::ArrayW<::System::Object*> const& __cordl_internal_get_indeces() const;
+
+constexpr ::ArrayW<::System::Object*>& __cordl_internal_get_indeces() ;
+
+constexpr void __cordl_internal_set_attributeCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_attributeIndex1(int32_t  value) ;
+
+constexpr void __cordl_internal_set_attributeIndex2(int32_t  value) ;
+
+constexpr void __cordl_internal_set_attributeNodes(::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  value) ;
+
+constexpr void __cordl_internal_set_indeces(::ArrayW<::System::Object*>  value) ;
+
+/// @brief Method .ctor, addr 0xaa10870, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Convert to "::System::Collections::IComparer"
+constexpr ::System::Collections::IComparer* i___System__Collections__IComparer() noexcept;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_AttributeSorter() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_AttributeSorter", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_AttributeSorter(XmlBaseReader_AttributeSorter && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_AttributeSorter", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_AttributeSorter(XmlBaseReader_AttributeSorter const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24433};
+
+/// @brief Field indeces, offset: 0x10, size: 0x8, def value: None
+ ::ArrayW<::System::Object*>  ___indeces;
+
+/// @brief Field attributeNodes, offset: 0x18, size: 0x8, def value: None
+ ::ArrayW<::System::Xml::XmlBaseReader_XmlAttributeNode*>  ___attributeNodes;
+
+/// @brief Field attributeCount, offset: 0x20, size: 0x4, def value: None
+ int32_t  ___attributeCount;
+
+/// @brief Field attributeIndex1, offset: 0x24, size: 0x4, def value: None
+ int32_t  ___attributeIndex1;
+
+/// @brief Field attributeIndex2, offset: 0x28, size: 0x4, def value: None
+ int32_t  ___attributeIndex2;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBaseReader_AttributeSorter, ___indeces) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_AttributeSorter, ___attributeNodes) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_AttributeSorter, ___attributeCount) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_AttributeSorter, ___attributeIndex1) == 0x24, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_AttributeSorter, ___attributeIndex2) == 0x28, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBaseReader_AttributeSorter) == 0x30, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlClosedNode
+class CORDL_TYPE XmlBaseReader_XmlClosedNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlClosedNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa14944, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlClosedNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlClosedNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlClosedNode(XmlBaseReader_XmlClosedNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlClosedNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlClosedNode(XmlBaseReader_XmlClosedNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24432};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlClosedNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlEndOfFileNode
+class CORDL_TYPE XmlBaseReader_XmlEndOfFileNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlEndOfFileNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa1481c, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlEndOfFileNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlEndOfFileNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlEndOfFileNode(XmlBaseReader_XmlEndOfFileNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlEndOfFileNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlEndOfFileNode(XmlBaseReader_XmlEndOfFileNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24431};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlEndOfFileNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlCommentNode
+class CORDL_TYPE XmlBaseReader_XmlCommentNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlCommentNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa0df08, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlCommentNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlCommentNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlCommentNode(XmlBaseReader_XmlCommentNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlCommentNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlCommentNode(XmlBaseReader_XmlCommentNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24430};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlCommentNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlDeclarationNode
+class CORDL_TYPE XmlBaseReader_XmlDeclarationNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlDeclarationNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa0dd54, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlDeclarationNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlDeclarationNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlDeclarationNode(XmlBaseReader_XmlDeclarationNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlDeclarationNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlDeclarationNode(XmlBaseReader_XmlDeclarationNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24429};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlDeclarationNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlInitialNode
+class CORDL_TYPE XmlBaseReader_XmlInitialNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlInitialNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa146f4, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlInitialNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlInitialNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlInitialNode(XmlBaseReader_XmlInitialNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlInitialNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlInitialNode(XmlBaseReader_XmlInitialNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24428};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlInitialNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlTextNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlAttributeTextNode
+class CORDL_TYPE XmlBaseReader_XmlAttributeTextNode : public ::System::Xml::XmlBaseReader_XmlTextNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlAttributeTextNode* New_ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method .ctor, addr 0xaa14fc8, size 0x3c, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlAttributeTextNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlAttributeTextNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlAttributeTextNode(XmlBaseReader_XmlAttributeTextNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlAttributeTextNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlAttributeTextNode(XmlBaseReader_XmlAttributeTextNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24427};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlAttributeTextNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlTextNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlCDataNode
+class CORDL_TYPE XmlBaseReader_XmlCDataNode : public ::System::Xml::XmlBaseReader_XmlTextNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlCDataNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa0e0bc, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlCDataNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlCDataNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlCDataNode(XmlBaseReader_XmlCDataNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlCDataNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlCDataNode(XmlBaseReader_XmlCDataNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24426};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlCDataNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlTextNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlWhitespaceTextNode
+class CORDL_TYPE XmlBaseReader_XmlWhitespaceTextNode : public ::System::Xml::XmlBaseReader_XmlTextNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlWhitespaceTextNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa0e470, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlWhitespaceTextNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlWhitespaceTextNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlWhitespaceTextNode(XmlBaseReader_XmlWhitespaceTextNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlWhitespaceTextNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlWhitespaceTextNode(XmlBaseReader_XmlWhitespaceTextNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24425};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlWhitespaceTextNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlTextNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlComplexTextNode
+class CORDL_TYPE XmlBaseReader_XmlComplexTextNode : public ::System::Xml::XmlBaseReader_XmlTextNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlComplexTextNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa0e28c, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlComplexTextNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlComplexTextNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlComplexTextNode(XmlBaseReader_XmlComplexTextNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlComplexTextNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlComplexTextNode(XmlBaseReader_XmlComplexTextNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24424};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlComplexTextNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlTextNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlAtomicTextNode
+class CORDL_TYPE XmlBaseReader_XmlAtomicTextNode : public ::System::Xml::XmlBaseReader_XmlTextNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlAtomicTextNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa0d1f0, size 0x128, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlAtomicTextNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlAtomicTextNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlAtomicTextNode(XmlBaseReader_XmlAtomicTextNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlAtomicTextNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlAtomicTextNode(XmlBaseReader_XmlAtomicTextNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24423};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlAtomicTextNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlTextNode
+class CORDL_TYPE XmlBaseReader_XmlTextNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlTextNode* New_ctor(::System::Xml::XmlNodeType  nodeType, ::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value, ::GlobalNamespace::XmlNode_XmlBaseReader_XmlNodeFlags  nodeFlags, ::System::Xml::ReadState  readState, ::System::Xml::XmlBaseReader_XmlAttributeTextNode*  attributeTextNode, int32_t  depthDelta) ;
+
+/// @brief Method .ctor, addr 0xaa15004, size 0xc, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlNodeType  nodeType, ::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value, ::GlobalNamespace::XmlNode_XmlBaseReader_XmlNodeFlags  nodeFlags, ::System::Xml::ReadState  readState, ::System::Xml::XmlBaseReader_XmlAttributeTextNode*  attributeTextNode, int32_t  depthDelta) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlTextNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlTextNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlTextNode(XmlBaseReader_XmlTextNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlTextNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlTextNode(XmlBaseReader_XmlTextNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24422};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlTextNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlEndElementNode
+class CORDL_TYPE XmlBaseReader_XmlEndElementNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlEndElementNode* New_ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method .ctor, addr 0xaa14eb4, size 0x3c, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlEndElementNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlEndElementNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlEndElementNode(XmlBaseReader_XmlEndElementNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlEndElementNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlEndElementNode(XmlBaseReader_XmlEndElementNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24421};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlEndElementNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlAttributeNode
+class CORDL_TYPE XmlBaseReader_XmlAttributeNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+static inline ::System::Xml::XmlBaseReader_XmlAttributeNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+static inline ::System::Xml::XmlBaseReader_XmlAttributeNode* New_ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method .ctor, addr 0xaa0ebdc, size 0x108, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa14f08, size 0xc0, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlAttributeNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlAttributeNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlAttributeNode(XmlBaseReader_XmlAttributeNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlAttributeNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlAttributeNode(XmlBaseReader_XmlAttributeNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24420};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlAttributeNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Xml.XmlBaseReader::XmlNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlElementNode
+class CORDL_TYPE XmlBaseReader_XmlElementNode : public ::System::Xml::XmlBaseReader_XmlNode {
+public:
+// Declarations
+ __declspec(property(get=get_BufferOffset, put=set_BufferOffset)) int32_t  BufferOffset;
+
+ __declspec(property(get=get_EndElement)) ::System::Xml::XmlBaseReader_XmlEndElementNode*  EndElement;
+
+/// @brief Field NameLength, offset 0x70, size 0x4 
+ __declspec(property(get=__cordl_internal_get_NameLength, put=__cordl_internal_set_NameLength)) int32_t  NameLength;
+
+/// @brief Field NameOffset, offset 0x6c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_NameOffset, put=__cordl_internal_set_NameOffset)) int32_t  NameOffset;
+
+/// @brief Field bufferOffset, offset 0x68, size 0x4 
+ __declspec(property(get=__cordl_internal_get_bufferOffset, put=__cordl_internal_set_bufferOffset)) int32_t  bufferOffset;
+
+/// @brief Field endElementNode, offset 0x60, size 0x8 
+ __declspec(property(get=__cordl_internal_get_endElementNode, put=__cordl_internal_set_endElementNode)) ::System::Xml::XmlBaseReader_XmlEndElementNode*  endElementNode;
+
+static inline ::System::Xml::XmlBaseReader_XmlElementNode* New_ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+static inline ::System::Xml::XmlBaseReader_XmlElementNode* New_ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+constexpr int32_t const& __cordl_internal_get_NameLength() const;
+
+constexpr int32_t& __cordl_internal_get_NameLength() ;
+
+constexpr int32_t const& __cordl_internal_get_NameOffset() const;
+
+constexpr int32_t& __cordl_internal_get_NameOffset() ;
+
+constexpr int32_t const& __cordl_internal_get_bufferOffset() const;
+
+constexpr int32_t& __cordl_internal_get_bufferOffset() ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlEndElementNode* const& __cordl_internal_get_endElementNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlEndElementNode*& __cordl_internal_get_endElementNode() ;
+
+constexpr void __cordl_internal_set_NameLength(int32_t  value) ;
+
+constexpr void __cordl_internal_set_NameOffset(int32_t  value) ;
+
+constexpr void __cordl_internal_set_bufferOffset(int32_t  value) ;
+
+constexpr void __cordl_internal_set_endElementNode(::System::Xml::XmlBaseReader_XmlEndElementNode*  value) ;
+
+/// @brief Method .ctor, addr 0xaa0d0e8, size 0x108, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlBufferReader*  bufferReader) ;
+
+/// @brief Method .ctor, addr 0xaa14de8, size 0xcc, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method get_BufferOffset, addr 0xaa14ef8, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_BufferOffset() ;
+
+/// @brief Method get_EndElement, addr 0xaa14ef0, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlEndElementNode* get_EndElement() ;
+
+/// @brief Method set_BufferOffset, addr 0xaa14f00, size 0x8, virtual false, abstract: false, final false
+inline void set_BufferOffset(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlElementNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlElementNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlElementNode(XmlBaseReader_XmlElementNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlElementNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlElementNode(XmlBaseReader_XmlElementNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24419};
+
+/// @brief Field endElementNode, offset: 0x60, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlEndElementNode*  ___endElementNode;
+
+/// @brief Field bufferOffset, offset: 0x68, size: 0x4, def value: None
+ int32_t  ___bufferOffset;
+
+/// @brief Field NameOffset, offset: 0x6c, size: 0x4, def value: None
+ int32_t  ___NameOffset;
+
+/// @brief Field NameLength, offset: 0x70, size: 0x4, def value: None
+ int32_t  ___NameLength;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlElementNode, ___endElementNode) == 0x60, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlElementNode, ___bufferOffset) == 0x68, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlElementNode, ___NameOffset) == 0x6c, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlElementNode, ___NameLength) == 0x70, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlElementNode) == 0x78, "Size mismatch!");
+
+} // namespace end def System::Xml
+// Dependencies System.Object, System.Xml.ReadState, System.Xml.XmlBaseReader::QNameType, System.Xml.XmlNodeType
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBaseReader/XmlNode
+class CORDL_TYPE XmlBaseReader_XmlNode : public ::System::Object {
+public:
+// Declarations
+using XmlNodeFlags = ::GlobalNamespace::XmlNode_XmlBaseReader_XmlNodeFlags;
+
+ __declspec(property(get=get_AttributeText)) ::System::Xml::XmlBaseReader_XmlAttributeTextNode*  AttributeText;
+
+ __declspec(property(get=get_CanGetAttribute)) bool  CanGetAttribute;
+
+ __declspec(property(get=get_CanMoveToElement)) bool  CanMoveToElement;
+
+ __declspec(property(get=get_DepthDelta)) int32_t  DepthDelta;
+
+ __declspec(property(get=get_ExitScope, put=set_ExitScope)) bool  ExitScope;
+
+ __declspec(property(get=get_HasContent)) bool  HasContent;
+
+ __declspec(property(get=get_IsAtomicValue, put=set_IsAtomicValue)) bool  IsAtomicValue;
+
+ __declspec(property(get=get_IsEmptyElement, put=set_IsEmptyElement)) bool  IsEmptyElement;
+
+ __declspec(property(get=get_LocalName)) ::System::Xml::StringHandle*  LocalName;
+
+ __declspec(property(get=get_Namespace, put=set_Namespace)) ::System::Xml::XmlBaseReader_Namespace*  Namespace;
+
+ __declspec(property(get=get_NodeType, put=set_NodeType)) ::System::Xml::XmlNodeType  NodeType;
+
+ __declspec(property(get=get_Prefix)) ::System::Xml::PrefixHandle*  Prefix;
+
+ __declspec(property(get=get_QNameType, put=set_QNameType)) ::GlobalNamespace::XmlBaseReader_QNameType  QNameType;
+
+ __declspec(property(get=get_QuoteChar, put=set_QuoteChar)) char16_t  QuoteChar;
+
+ __declspec(property(get=get_ReadState)) ::System::Xml::ReadState  ReadState;
+
+ __declspec(property(get=get_SkipValue)) bool  SkipValue;
+
+ __declspec(property(get=get_Value)) ::System::Xml::ValueHandle*  Value;
+
+ __declspec(property(get=get_ValueAsString)) ::StringW  ValueAsString;
+
+/// @brief Field attributeTextNode, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_attributeTextNode, put=__cordl_internal_set_attributeTextNode)) ::System::Xml::XmlBaseReader_XmlAttributeTextNode*  attributeTextNode;
+
+/// @brief Field canGetAttribute, offset 0x39, size 0x1 
+ __declspec(property(get=__cordl_internal_get_canGetAttribute, put=__cordl_internal_set_canGetAttribute)) bool  canGetAttribute;
+
+/// @brief Field canMoveToElement, offset 0x3a, size 0x1 
+ __declspec(property(get=__cordl_internal_get_canMoveToElement, put=__cordl_internal_set_canMoveToElement)) bool  canMoveToElement;
+
+/// @brief Field depthDelta, offset 0x4c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_depthDelta, put=__cordl_internal_set_depthDelta)) int32_t  depthDelta;
+
+/// @brief Field exitScope, offset 0x48, size 0x1 
+ __declspec(property(get=__cordl_internal_get_exitScope, put=__cordl_internal_set_exitScope)) bool  exitScope;
+
+/// @brief Field hasContent, offset 0x58, size 0x1 
+ __declspec(property(get=__cordl_internal_get_hasContent, put=__cordl_internal_set_hasContent)) bool  hasContent;
+
+/// @brief Field hasValue, offset 0x38, size 0x1 
+ __declspec(property(get=__cordl_internal_get_hasValue, put=__cordl_internal_set_hasValue)) bool  hasValue;
+
+/// @brief Field isAtomicValue, offset 0x50, size 0x1 
+ __declspec(property(get=__cordl_internal_get_isAtomicValue, put=__cordl_internal_set_isAtomicValue)) bool  isAtomicValue;
+
+/// @brief Field isEmptyElement, offset 0x59, size 0x1 
+ __declspec(property(get=__cordl_internal_get_isEmptyElement, put=__cordl_internal_set_isEmptyElement)) bool  isEmptyElement;
+
+/// @brief Field localName, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_localName, put=__cordl_internal_set_localName)) ::System::Xml::StringHandle*  localName;
+
+/// @brief Field nodeType, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get_nodeType, put=__cordl_internal_set_nodeType)) ::System::Xml::XmlNodeType  nodeType;
+
+/// @brief Field ns, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_ns, put=__cordl_internal_set_ns)) ::System::Xml::XmlBaseReader_Namespace*  ns;
+
+/// @brief Field prefix, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_prefix, put=__cordl_internal_set_prefix)) ::System::Xml::PrefixHandle*  prefix;
+
+/// @brief Field qnameType, offset 0x54, size 0x4 
+ __declspec(property(get=__cordl_internal_get_qnameType, put=__cordl_internal_set_qnameType)) ::GlobalNamespace::XmlBaseReader_QNameType  qnameType;
+
+/// @brief Field quoteChar, offset 0x5a, size 0x2 
+ __declspec(property(get=__cordl_internal_get_quoteChar, put=__cordl_internal_set_quoteChar)) char16_t  quoteChar;
+
+/// @brief Field readState, offset 0x3c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_readState, put=__cordl_internal_set_readState)) ::System::Xml::ReadState  readState;
+
+/// @brief Field skipValue, offset 0x51, size 0x1 
+ __declspec(property(get=__cordl_internal_get_skipValue, put=__cordl_internal_set_skipValue)) bool  skipValue;
+
+/// @brief Field value, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_value, put=__cordl_internal_set_value)) ::System::Xml::ValueHandle*  value;
+
+/// @brief Method IsLocalName, addr 0xaa11088, size 0xb8, virtual false, abstract: false, final false
+inline bool IsLocalName(::StringW  localName) ;
+
+/// @brief Method IsLocalName, addr 0xaa111b4, size 0xb4, virtual false, abstract: false, final false
+inline bool IsLocalName(::System::Xml::XmlDictionaryString*  localName) ;
+
+/// @brief Method IsLocalNameAndNamespaceUri, addr 0xaa0fc30, size 0x118, virtual false, abstract: false, final false
+inline bool IsLocalNameAndNamespaceUri(::StringW  localName, ::StringW  ns) ;
+
+/// @brief Method IsNamespaceUri, addr 0xaa112b4, size 0x74, virtual false, abstract: false, final false
+inline bool IsNamespaceUri(::StringW  ns) ;
+
+/// @brief Method IsNamespaceUri, addr 0xaa11374, size 0x78, virtual false, abstract: false, final false
+inline bool IsNamespaceUri(::System::Xml::XmlDictionaryString*  ns) ;
+
+/// @brief Method IsPrefixAndLocalName, addr 0xaa0f9cc, size 0x134, virtual false, abstract: false, final false
+inline bool IsPrefixAndLocalName(::StringW  prefix, ::StringW  localName) ;
+
+static inline ::System::Xml::XmlBaseReader_XmlNode* New_ctor(::System::Xml::XmlNodeType  nodeType, ::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value, ::GlobalNamespace::XmlNode_XmlBaseReader_XmlNodeFlags  nodeFlags, ::System::Xml::ReadState  readState, ::System::Xml::XmlBaseReader_XmlAttributeTextNode*  attributeTextNode, int32_t  depthDelta) ;
+
+/// @brief Method TryGetLocalNameAsDictionaryString, addr 0xaa13f6c, size 0x3c, virtual false, abstract: false, final false
+inline bool TryGetLocalNameAsDictionaryString(::by_ref<::System::Xml::XmlDictionaryString*>  localName) ;
+
+/// @brief Method TryGetNamespaceUriAsDictionaryString, addr 0xaa13fbc, size 0x44, virtual false, abstract: false, final false
+inline bool TryGetNamespaceUriAsDictionaryString(::by_ref<::System::Xml::XmlDictionaryString*>  ns) ;
+
+/// @brief Method TryGetValueAsDictionaryString, addr 0xaa14014, size 0x3c, virtual false, abstract: false, final false
+inline bool TryGetValueAsDictionaryString(::by_ref<::System::Xml::XmlDictionaryString*>  value) ;
+
+constexpr ::System::Xml::XmlBaseReader_XmlAttributeTextNode* const& __cordl_internal_get_attributeTextNode() const;
+
+constexpr ::System::Xml::XmlBaseReader_XmlAttributeTextNode*& __cordl_internal_get_attributeTextNode() ;
+
+constexpr bool const& __cordl_internal_get_canGetAttribute() const;
+
+constexpr bool& __cordl_internal_get_canGetAttribute() ;
+
+constexpr bool const& __cordl_internal_get_canMoveToElement() const;
+
+constexpr bool& __cordl_internal_get_canMoveToElement() ;
+
+constexpr int32_t const& __cordl_internal_get_depthDelta() const;
+
+constexpr int32_t& __cordl_internal_get_depthDelta() ;
+
+constexpr bool const& __cordl_internal_get_exitScope() const;
+
+constexpr bool& __cordl_internal_get_exitScope() ;
+
+constexpr bool const& __cordl_internal_get_hasContent() const;
+
+constexpr bool& __cordl_internal_get_hasContent() ;
+
+constexpr bool const& __cordl_internal_get_hasValue() const;
+
+constexpr bool& __cordl_internal_get_hasValue() ;
+
+constexpr bool const& __cordl_internal_get_isAtomicValue() const;
+
+constexpr bool& __cordl_internal_get_isAtomicValue() ;
+
+constexpr bool const& __cordl_internal_get_isEmptyElement() const;
+
+constexpr bool& __cordl_internal_get_isEmptyElement() ;
+
+constexpr ::System::Xml::StringHandle* const& __cordl_internal_get_localName() const;
+
+constexpr ::System::Xml::StringHandle*& __cordl_internal_get_localName() ;
+
+constexpr ::System::Xml::XmlNodeType const& __cordl_internal_get_nodeType() const;
+
+constexpr ::System::Xml::XmlNodeType& __cordl_internal_get_nodeType() ;
+
+constexpr ::System::Xml::XmlBaseReader_Namespace* const& __cordl_internal_get_ns() const;
+
+constexpr ::System::Xml::XmlBaseReader_Namespace*& __cordl_internal_get_ns() ;
+
+constexpr ::System::Xml::PrefixHandle* const& __cordl_internal_get_prefix() const;
+
+constexpr ::System::Xml::PrefixHandle*& __cordl_internal_get_prefix() ;
+
+constexpr ::GlobalNamespace::XmlBaseReader_QNameType const& __cordl_internal_get_qnameType() const;
+
+constexpr ::GlobalNamespace::XmlBaseReader_QNameType& __cordl_internal_get_qnameType() ;
+
+constexpr char16_t const& __cordl_internal_get_quoteChar() const;
+
+constexpr char16_t& __cordl_internal_get_quoteChar() ;
+
+constexpr ::System::Xml::ReadState const& __cordl_internal_get_readState() const;
+
+constexpr ::System::Xml::ReadState& __cordl_internal_get_readState() ;
+
+constexpr bool const& __cordl_internal_get_skipValue() const;
+
+constexpr bool& __cordl_internal_get_skipValue() ;
+
+constexpr ::System::Xml::ValueHandle* const& __cordl_internal_get_value() const;
+
+constexpr ::System::Xml::ValueHandle*& __cordl_internal_get_value() ;
+
+constexpr void __cordl_internal_set_attributeTextNode(::System::Xml::XmlBaseReader_XmlAttributeTextNode*  value) ;
+
+constexpr void __cordl_internal_set_canGetAttribute(bool  value) ;
+
+constexpr void __cordl_internal_set_canMoveToElement(bool  value) ;
+
+constexpr void __cordl_internal_set_depthDelta(int32_t  value) ;
+
+constexpr void __cordl_internal_set_exitScope(bool  value) ;
+
+constexpr void __cordl_internal_set_hasContent(bool  value) ;
+
+constexpr void __cordl_internal_set_hasValue(bool  value) ;
+
+constexpr void __cordl_internal_set_isAtomicValue(bool  value) ;
+
+constexpr void __cordl_internal_set_isEmptyElement(bool  value) ;
+
+constexpr void __cordl_internal_set_localName(::System::Xml::StringHandle*  value) ;
+
+constexpr void __cordl_internal_set_nodeType(::System::Xml::XmlNodeType  value) ;
+
+constexpr void __cordl_internal_set_ns(::System::Xml::XmlBaseReader_Namespace*  value) ;
+
+constexpr void __cordl_internal_set_prefix(::System::Xml::PrefixHandle*  value) ;
+
+constexpr void __cordl_internal_set_qnameType(::GlobalNamespace::XmlBaseReader_QNameType  value) ;
+
+constexpr void __cordl_internal_set_quoteChar(char16_t  value) ;
+
+constexpr void __cordl_internal_set_readState(::System::Xml::ReadState  value) ;
+
+constexpr void __cordl_internal_set_skipValue(bool  value) ;
+
+constexpr void __cordl_internal_set_value(::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method .ctor, addr 0xaa14a6c, size 0x17c, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlNodeType  nodeType, ::System::Xml::PrefixHandle*  prefix, ::System::Xml::StringHandle*  localName, ::System::Xml::ValueHandle*  value, ::GlobalNamespace::XmlNode_XmlBaseReader_XmlNodeFlags  nodeFlags, ::System::Xml::ReadState  readState, ::System::Xml::XmlBaseReader_XmlAttributeTextNode*  attributeTextNode, int32_t  depthDelta) ;
+
+/// @brief Method get_AttributeText, addr 0xaa14c10, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_XmlAttributeTextNode* get_AttributeText() ;
+
+/// @brief Method get_CanGetAttribute, addr 0xaa14c00, size 0x8, virtual false, abstract: false, final false
+inline bool get_CanGetAttribute() ;
+
+/// @brief Method get_CanMoveToElement, addr 0xaa14c08, size 0x8, virtual false, abstract: false, final false
+inline bool get_CanMoveToElement() ;
+
+/// @brief Method get_DepthDelta, addr 0xaa14c28, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_DepthDelta() ;
+
+/// @brief Method get_ExitScope, addr 0xaa14c78, size 0x8, virtual false, abstract: false, final false
+inline bool get_ExitScope() ;
+
+/// @brief Method get_HasContent, addr 0xaa14c30, size 0x8, virtual false, abstract: false, final false
+inline bool get_HasContent() ;
+
+/// @brief Method get_IsAtomicValue, addr 0xaa14c68, size 0x8, virtual false, abstract: false, final false
+inline bool get_IsAtomicValue() ;
+
+/// @brief Method get_IsEmptyElement, addr 0xaa14c88, size 0x8, virtual false, abstract: false, final false
+inline bool get_IsEmptyElement() ;
+
+/// @brief Method get_LocalName, addr 0xaa14bf0, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::StringHandle* get_LocalName() ;
+
+/// @brief Method get_Namespace, addr 0xaa14c58, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBaseReader_Namespace* get_Namespace() ;
+
+/// @brief Method get_NodeType, addr 0xaa14c38, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::XmlNodeType get_NodeType() ;
+
+/// @brief Method get_Prefix, addr 0xaa14bf8, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::PrefixHandle* get_Prefix() ;
+
+/// @brief Method get_QNameType, addr 0xaa14c48, size 0x8, virtual false, abstract: false, final false
+inline ::GlobalNamespace::XmlBaseReader_QNameType get_QNameType() ;
+
+/// @brief Method get_QuoteChar, addr 0xaa14c98, size 0x8, virtual false, abstract: false, final false
+inline char16_t get_QuoteChar() ;
+
+/// @brief Method get_ReadState, addr 0xaa14be8, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::ReadState get_ReadState() ;
+
+/// @brief Method get_SkipValue, addr 0xaa14c18, size 0x8, virtual false, abstract: false, final false
+inline bool get_SkipValue() ;
+
+/// @brief Method get_Value, addr 0xaa14c20, size 0x8, virtual false, abstract: false, final false
+inline ::System::Xml::ValueHandle* get_Value() ;
+
+/// @brief Method get_ValueAsString, addr 0xaa0fd60, size 0x38, virtual false, abstract: false, final false
+inline ::StringW get_ValueAsString() ;
+
+/// @brief Method set_ExitScope, addr 0xaa14c80, size 0x8, virtual false, abstract: false, final false
+inline void set_ExitScope(bool  value) ;
+
+/// @brief Method set_IsAtomicValue, addr 0xaa14c70, size 0x8, virtual false, abstract: false, final false
+inline void set_IsAtomicValue(bool  value) ;
+
+/// @brief Method set_IsEmptyElement, addr 0xaa14c90, size 0x8, virtual false, abstract: false, final false
+inline void set_IsEmptyElement(bool  value) ;
+
+/// @brief Method set_Namespace, addr 0xaa14c60, size 0x8, virtual false, abstract: false, final false
+inline void set_Namespace(::System::Xml::XmlBaseReader_Namespace*  value) ;
+
+/// @brief Method set_NodeType, addr 0xaa14c40, size 0x8, virtual false, abstract: false, final false
+inline void set_NodeType(::System::Xml::XmlNodeType  value) ;
+
+/// @brief Method set_QNameType, addr 0xaa14c50, size 0x8, virtual false, abstract: false, final false
+inline void set_QNameType(::GlobalNamespace::XmlBaseReader_QNameType  value) ;
+
+/// @brief Method set_QuoteChar, addr 0xaa14ca0, size 0x8, virtual false, abstract: false, final false
+inline void set_QuoteChar(char16_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBaseReader_XmlNode() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlNode", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBaseReader_XmlNode(XmlBaseReader_XmlNode && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBaseReader_XmlNode", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBaseReader_XmlNode(XmlBaseReader_XmlNode const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24418};
+
+/// @brief Field nodeType, offset: 0x10, size: 0x4, def value: None
+ ::System::Xml::XmlNodeType  ___nodeType;
+
+/// @brief Field prefix, offset: 0x18, size: 0x8, def value: None
+ ::System::Xml::PrefixHandle*  ___prefix;
+
+/// @brief Field localName, offset: 0x20, size: 0x8, def value: None
+ ::System::Xml::StringHandle*  ___localName;
+
+/// @brief Field value, offset: 0x28, size: 0x8, def value: None
+ ::System::Xml::ValueHandle*  ___value;
+
+/// @brief Field ns, offset: 0x30, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_Namespace*  ___ns;
+
+/// @brief Field hasValue, offset: 0x38, size: 0x1, def value: None
+ bool  ___hasValue;
+
+/// @brief Field canGetAttribute, offset: 0x39, size: 0x1, def value: None
+ bool  ___canGetAttribute;
+
+/// @brief Field canMoveToElement, offset: 0x3a, size: 0x1, def value: None
+ bool  ___canMoveToElement;
+
+/// @brief Field readState, offset: 0x3c, size: 0x4, def value: None
+ ::System::Xml::ReadState  ___readState;
+
+/// @brief Field attributeTextNode, offset: 0x40, size: 0x8, def value: None
+ ::System::Xml::XmlBaseReader_XmlAttributeTextNode*  ___attributeTextNode;
+
+/// @brief Field exitScope, offset: 0x48, size: 0x1, def value: None
+ bool  ___exitScope;
+
+/// @brief Field depthDelta, offset: 0x4c, size: 0x4, def value: None
+ int32_t  ___depthDelta;
+
+/// @brief Field isAtomicValue, offset: 0x50, size: 0x1, def value: None
+ bool  ___isAtomicValue;
+
+/// @brief Field skipValue, offset: 0x51, size: 0x1, def value: None
+ bool  ___skipValue;
+
+/// @brief Field qnameType, offset: 0x54, size: 0x4, def value: None
+ ::GlobalNamespace::XmlBaseReader_QNameType  ___qnameType;
+
+/// @brief Field hasContent, offset: 0x58, size: 0x1, def value: None
+ bool  ___hasContent;
+
+/// @brief Field isEmptyElement, offset: 0x59, size: 0x1, def value: None
+ bool  ___isEmptyElement;
+
+/// @brief Field quoteChar, offset: 0x5a, size: 0x2, def value: None
+ char16_t  ___quoteChar;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___nodeType) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___prefix) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___localName) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___value) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___ns) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___hasValue) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___canGetAttribute) == 0x39, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___canMoveToElement) == 0x3a, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___readState) == 0x3c, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___attributeTextNode) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___exitScope) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___depthDelta) == 0x4c, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___isAtomicValue) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___skipValue) == 0x51, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___qnameType) == 0x54, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___hasContent) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___isEmptyElement) == 0x59, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBaseReader_XmlNode, ___quoteChar) == 0x5a, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBaseReader_XmlNode) == 0x60, "Size mismatch!");
+
+} // namespace end def System::Xml

@@ -1,0 +1,609 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/AddressableAssets/Initialization/ResourceManagerRuntimeData.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/ResourceManagement/Util/zzzz__SerializedType_impl.hpp"
+#include "UnityEngine/AddressableAssets/Initialization/zzzz__ResourceManagerRuntimeData_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+#include "UnityEngine/AddressableAssets/ResourceLocators/zzzz__ResourceLocationData_def.hpp"
+#include "UnityEngine/ResourceManagement/Util/zzzz__ObjectInitializationData_def.hpp"
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_BuildTarget
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_BuildTarget)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_BuildTarget", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_BuildTarget
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(::StringW)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_BuildTarget)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_BuildTarget", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_SettingsHash
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_SettingsHash)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_SettingsHash", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_SettingsHash
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(::StringW)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_SettingsHash)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_SettingsHash", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_CatalogLocations
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData*>* (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_CatalogLocations)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_CatalogLocations", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_LogResourceManagerExceptions
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_LogResourceManagerExceptions)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_LogResourceManagerExceptions", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_LogResourceManagerExceptions
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(bool)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_LogResourceManagerExceptions)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_LogResourceManagerExceptions", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_InitializationObjects
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::ObjectInitializationData>* (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_InitializationObjects)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_InitializationObjects", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_DisableCatalogUpdateOnStartup
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_DisableCatalogUpdateOnStartup)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_DisableCatalogUpdateOnStartup", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_DisableCatalogUpdateOnStartup
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(bool)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_DisableCatalogUpdateOnStartup)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae721f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_DisableCatalogUpdateOnStartup", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_IsLocalCatalogInBundle
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_IsLocalCatalogInBundle)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae72200;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_IsLocalCatalogInBundle", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_IsLocalCatalogInBundle
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(bool)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_IsLocalCatalogInBundle)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae72208;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_IsLocalCatalogInBundle", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_CertificateHandlerType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Type* (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_CertificateHandlerType)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xae70960;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_CertificateHandlerType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_CertificateHandlerType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(::System::Type*)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_CertificateHandlerType)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xae72210;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_CertificateHandlerType", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_AddressablesVersion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_AddressablesVersion)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae7221c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_AddressablesVersion", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_AddressablesVersion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(::StringW)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_AddressablesVersion)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae72224;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_AddressablesVersion", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_MaxConcurrentWebRequests
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_MaxConcurrentWebRequests)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae7222c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_MaxConcurrentWebRequests", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_MaxConcurrentWebRequests
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(int32_t)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_MaxConcurrentWebRequests)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xae72234;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_MaxConcurrentWebRequests", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.get_CatalogRequestsTimeout
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_CatalogRequestsTimeout)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xae72250;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_CatalogRequestsTimeout", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData.set_CatalogRequestsTimeout
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)(int32_t)>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_CatalogRequestsTimeout)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xae72258;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_CatalogRequestsTimeout", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::*)()>(&::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::_ctor)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xae72270;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_buildTarget()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_buildTarget;
+}
+constexpr ::StringW const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_buildTarget() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_buildTarget;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_buildTarget(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_buildTarget = value;
+}
+constexpr ::StringW& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_SettingsHash()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_SettingsHash;
+}
+constexpr ::StringW const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_SettingsHash() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_SettingsHash;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_SettingsHash(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_SettingsHash = value;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData*>*& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_CatalogLocations()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CatalogLocations;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData*>* const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_CatalogLocations() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CatalogLocations;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_CatalogLocations(::System::Collections::Generic::List_1<::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CatalogLocations = value;
+}
+constexpr bool& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_LogResourceManagerExceptions()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LogResourceManagerExceptions;
+}
+constexpr bool const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_LogResourceManagerExceptions() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LogResourceManagerExceptions;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_LogResourceManagerExceptions(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_LogResourceManagerExceptions = value;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::ObjectInitializationData>*& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_ExtraInitializationData()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExtraInitializationData;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::ObjectInitializationData>* const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_ExtraInitializationData() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExtraInitializationData;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_ExtraInitializationData(::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::ObjectInitializationData>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ExtraInitializationData = value;
+}
+constexpr bool& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_DisableCatalogUpdateOnStart()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_DisableCatalogUpdateOnStart;
+}
+constexpr bool const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_DisableCatalogUpdateOnStart() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_DisableCatalogUpdateOnStart;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_DisableCatalogUpdateOnStart(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_DisableCatalogUpdateOnStart = value;
+}
+constexpr bool& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_IsLocalCatalogInBundle()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IsLocalCatalogInBundle;
+}
+constexpr bool const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_IsLocalCatalogInBundle() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IsLocalCatalogInBundle;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_IsLocalCatalogInBundle(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_IsLocalCatalogInBundle = value;
+}
+constexpr ::UnityEngine::ResourceManagement::Util::SerializedType& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_CertificateHandlerType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CertificateHandlerType;
+}
+constexpr ::UnityEngine::ResourceManagement::Util::SerializedType const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_CertificateHandlerType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CertificateHandlerType;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_CertificateHandlerType(::UnityEngine::ResourceManagement::Util::SerializedType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CertificateHandlerType = value;
+}
+constexpr ::StringW& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_AddressablesVersion()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_AddressablesVersion;
+}
+constexpr ::StringW const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_AddressablesVersion() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_AddressablesVersion;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_AddressablesVersion(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_AddressablesVersion = value;
+}
+constexpr int32_t& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_maxConcurrentWebRequests()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_maxConcurrentWebRequests;
+}
+constexpr int32_t const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_maxConcurrentWebRequests() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_maxConcurrentWebRequests;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_maxConcurrentWebRequests(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_maxConcurrentWebRequests = value;
+}
+constexpr int32_t& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_CatalogRequestsTimeout()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CatalogRequestsTimeout;
+}
+constexpr int32_t const& UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_get_m_CatalogRequestsTimeout() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CatalogRequestsTimeout;
+}
+constexpr void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::__cordl_internal_set_m_CatalogRequestsTimeout(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CatalogRequestsTimeout = value;
+}
+inline ::StringW UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_BuildTarget()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_BuildTarget", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_BuildTarget(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_BuildTarget", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::StringW UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_SettingsHash()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_SettingsHash", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_SettingsHash(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_SettingsHash", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData*>* UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_CatalogLocations()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_CatalogLocations", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData*>*>(this, ___internal_method);
+}
+inline bool UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_LogResourceManagerExceptions()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_LogResourceManagerExceptions", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_LogResourceManagerExceptions(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_LogResourceManagerExceptions", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::ObjectInitializationData>* UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_InitializationObjects()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_InitializationObjects", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::ObjectInitializationData>*>(this, ___internal_method);
+}
+inline bool UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_DisableCatalogUpdateOnStartup()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_DisableCatalogUpdateOnStartup", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_DisableCatalogUpdateOnStartup(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_DisableCatalogUpdateOnStartup", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_IsLocalCatalogInBundle()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_IsLocalCatalogInBundle", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_IsLocalCatalogInBundle(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_IsLocalCatalogInBundle", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Type* UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_CertificateHandlerType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_CertificateHandlerType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Type*>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_CertificateHandlerType(::System::Type*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_CertificateHandlerType", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::StringW UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_AddressablesVersion()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_AddressablesVersion", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_AddressablesVersion(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_AddressablesVersion", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline int32_t UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_MaxConcurrentWebRequests()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_MaxConcurrentWebRequests", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_MaxConcurrentWebRequests(int32_t  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_MaxConcurrentWebRequests", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline int32_t UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::get_CatalogRequestsTimeout()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"get_CatalogRequestsTimeout", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::set_CatalogRequestsTimeout(int32_t  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {"set_CatalogRequestsTimeout", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData* UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData::ResourceManagerRuntimeData()   {
+}

@@ -1,0 +1,593 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/TerrainData.hpp"
+#include "UnityEngine/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__TerrainData_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/Bindings/zzzz__BlittableArrayWrapper_def.hpp"
+#include "UnityEngine/zzzz__Bounds_def.hpp"
+#include "UnityEngine/zzzz__RenderTexture_def.hpp"
+#include "UnityEngine/zzzz__TerrainData_BoundaryValueType_def.hpp"
+#include "UnityEngine/zzzz__Terrain_def.hpp"
+#include "UnityEngine/zzzz__TreeInstance_def.hpp"
+#include "UnityEngine/zzzz__TreePrototype_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::UnityEngine::TerrainData.GetBoundaryValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::GlobalNamespace::TerrainData_BoundaryValueType)>(&::UnityEngine::TerrainData::GetBoundaryValue)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb6b0560;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetBoundaryValue", {}, {::i2c::type_of<::GlobalNamespace::TerrainData_BoundaryValueType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_heightmapTexture
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::RenderTexture> (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_heightmapTexture)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xb6b059c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapTexture", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_heightmapResolution
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_heightmapResolution)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb6b0690;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapResolution", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_internalHeightmapResolution
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_internalHeightmapResolution)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xb6b0694;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_internalHeightmapResolution", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_heightmapScale
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Vector3 (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_heightmapScale)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xb6b076c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapScale", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_size
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Vector3 (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_size)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xb6b086c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_size", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_bounds
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Bounds (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_bounds)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xb6b096c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_bounds", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.GetHeights
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::UnityEngine::TerrainData::*)(int32_t, int32_t, int32_t, int32_t)>(&::UnityEngine::TerrainData::GetHeights)> {
+  constexpr static std::size_t size = 0xc8;
+  constexpr static std::size_t addrs = 0xb6b0a7c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetHeights", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.Internal_GetHeights
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::UnityEngine::TerrainData::*)(int32_t, int32_t, int32_t, int32_t)>(&::UnityEngine::TerrainData::Internal_GetHeights)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xb6b0b44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetHeights", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_treeInstances
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::TreeInstance> (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_treeInstances)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb6b0c7c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_treeInstances", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.Internal_GetTreeInstances
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::TreeInstance> (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::Internal_GetTreeInstances)> {
+  constexpr static std::size_t size = 0x178;
+  constexpr static std::size_t addrs = 0xb6b0c80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetTreeInstances", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_treePrototypes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::TreePrototype*> (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_treePrototypes)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xb6b0e3c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_treePrototypes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.GetAlphamapResolutionInternal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::GetAlphamapResolutionInternal)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xb6b0f14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetAlphamapResolutionInternal", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_users
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityW<::UnityEngine::Terrain>> (::UnityEngine::TerrainData::*)()>(&::UnityEngine::TerrainData::get_users)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xb6b023c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_users", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_heightmapTexture_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IntPtr (*)(::System::IntPtr)>(&::UnityEngine::TerrainData::get_heightmapTexture_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb6b0654;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapTexture_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_internalHeightmapResolution_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::System::IntPtr)>(&::UnityEngine::TerrainData::get_internalHeightmapResolution_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb6b0730;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_internalHeightmapResolution_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_heightmapScale_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, ::by_ref<::UnityEngine::Vector3>)>(&::UnityEngine::TerrainData::get_heightmapScale_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb6b0828;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapScale_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Vector3>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_size_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, ::by_ref<::UnityEngine::Vector3>)>(&::UnityEngine::TerrainData::get_size_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb6b0928;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_size_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Vector3>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_bounds_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, ::by_ref<::UnityEngine::Bounds>)>(&::UnityEngine::TerrainData::get_bounds_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb6b0a38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_bounds_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Bounds>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.Internal_GetHeights_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (*)(::System::IntPtr, int32_t, int32_t, int32_t, int32_t)>(&::UnityEngine::TerrainData::Internal_GetHeights_Injected)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xb6b0c10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetHeights_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.Internal_GetTreeInstances_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, ::by_ref<::UnityEngine::Bindings::BlittableArrayWrapper>)>(&::UnityEngine::TerrainData::Internal_GetTreeInstances_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb6b0df8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetTreeInstances_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Bindings::BlittableArrayWrapper>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_treePrototypes_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::TreePrototype*> (*)(::System::IntPtr)>(&::UnityEngine::TerrainData::get_treePrototypes_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb6b0ed8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_treePrototypes_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.GetAlphamapResolutionInternal_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (*)(::System::IntPtr)>(&::UnityEngine::TerrainData::GetAlphamapResolutionInternal_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb6b0fb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetAlphamapResolutionInternal_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::TerrainData.get_users_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityW<::UnityEngine::Terrain>> (*)(::System::IntPtr)>(&::UnityEngine::TerrainData::get_users_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb6b0fec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_users_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::TerrainData::setStaticF_k_MaximumResolution(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MaximumResolution", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MaximumResolution()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MaximumResolution", ::UnityEngine::TerrainData*>();
+}
+inline void UnityEngine::TerrainData::setStaticF_k_MinimumDetailResolutionPerPatch(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MinimumDetailResolutionPerPatch", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MinimumDetailResolutionPerPatch()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MinimumDetailResolutionPerPatch", ::UnityEngine::TerrainData*>();
+}
+inline void UnityEngine::TerrainData::setStaticF_k_MaximumDetailResolutionPerPatch(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MaximumDetailResolutionPerPatch", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MaximumDetailResolutionPerPatch()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MaximumDetailResolutionPerPatch", ::UnityEngine::TerrainData*>();
+}
+inline void UnityEngine::TerrainData::setStaticF_k_MaximumDetailPatchCount(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MaximumDetailPatchCount", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MaximumDetailPatchCount()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MaximumDetailPatchCount", ::UnityEngine::TerrainData*>();
+}
+inline void UnityEngine::TerrainData::setStaticF_k_MinimumAlphamapResolution(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MinimumAlphamapResolution", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MinimumAlphamapResolution()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MinimumAlphamapResolution", ::UnityEngine::TerrainData*>();
+}
+inline void UnityEngine::TerrainData::setStaticF_k_MaximumAlphamapResolution(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MaximumAlphamapResolution", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MaximumAlphamapResolution()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MaximumAlphamapResolution", ::UnityEngine::TerrainData*>();
+}
+inline void UnityEngine::TerrainData::setStaticF_k_MinimumBaseMapResolution(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MinimumBaseMapResolution", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MinimumBaseMapResolution()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MinimumBaseMapResolution", ::UnityEngine::TerrainData*>();
+}
+inline void UnityEngine::TerrainData::setStaticF_k_MaximumBaseMapResolution(int32_t  value)  {
+::cordl_internals::setStaticField<int32_t, "k_MaximumBaseMapResolution", ::UnityEngine::TerrainData*>(std::forward<int32_t>(value));
+}
+inline int32_t UnityEngine::TerrainData::getStaticF_k_MaximumBaseMapResolution()  {
+return ::cordl_internals::getStaticField<int32_t, "k_MaximumBaseMapResolution", ::UnityEngine::TerrainData*>();
+}
+inline int32_t UnityEngine::TerrainData::GetBoundaryValue(::GlobalNamespace::TerrainData_BoundaryValueType  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetBoundaryValue", {}, {::i2c::type_of<::GlobalNamespace::TerrainData_BoundaryValueType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, type);
+}
+inline ::UnityW<::UnityEngine::RenderTexture> UnityEngine::TerrainData::get_heightmapTexture()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapTexture", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::RenderTexture>>(this, ___internal_method);
+}
+inline int32_t UnityEngine::TerrainData::get_heightmapResolution()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapResolution", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline int32_t UnityEngine::TerrainData::get_internalHeightmapResolution()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_internalHeightmapResolution", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline ::UnityEngine::Vector3 UnityEngine::TerrainData::get_heightmapScale()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapScale", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Vector3>(this, ___internal_method);
+}
+inline ::UnityEngine::Vector3 UnityEngine::TerrainData::get_size()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_size", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Vector3>(this, ___internal_method);
+}
+inline ::UnityEngine::Bounds UnityEngine::TerrainData::get_bounds()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_bounds", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Bounds>(this, ___internal_method);
+}
+inline ::System::Object* UnityEngine::TerrainData::GetHeights(int32_t  xBase, int32_t  yBase, int32_t  width, int32_t  height)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetHeights", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method, xBase, yBase, width, height);
+}
+inline ::System::Object* UnityEngine::TerrainData::Internal_GetHeights(int32_t  xBase, int32_t  yBase, int32_t  width, int32_t  height)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetHeights", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method, xBase, yBase, width, height);
+}
+inline ::ArrayW<::UnityEngine::TreeInstance> UnityEngine::TerrainData::get_treeInstances()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_treeInstances", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::TreeInstance>>(this, ___internal_method);
+}
+inline ::ArrayW<::UnityEngine::TreeInstance> UnityEngine::TerrainData::Internal_GetTreeInstances()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetTreeInstances", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::TreeInstance>>(this, ___internal_method);
+}
+inline ::ArrayW<::UnityEngine::TreePrototype*> UnityEngine::TerrainData::get_treePrototypes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_treePrototypes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::TreePrototype*>>(this, ___internal_method);
+}
+inline float_t UnityEngine::TerrainData::GetAlphamapResolutionInternal()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetAlphamapResolutionInternal", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline ::ArrayW<::UnityW<::UnityEngine::Terrain>> UnityEngine::TerrainData::get_users()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_users", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityW<::UnityEngine::Terrain>>>(this, ___internal_method);
+}
+inline ::System::IntPtr UnityEngine::TerrainData::get_heightmapTexture_Injected(::System::IntPtr  _unity_self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapTexture_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::IntPtr>(nullptr, ___internal_method, _unity_self);
+}
+inline int32_t UnityEngine::TerrainData::get_internalHeightmapResolution_Injected(::System::IntPtr  _unity_self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_internalHeightmapResolution_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, _unity_self);
+}
+inline void UnityEngine::TerrainData::get_heightmapScale_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Vector3>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_heightmapScale_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Vector3>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, ret);
+}
+inline void UnityEngine::TerrainData::get_size_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Vector3>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_size_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Vector3>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, ret);
+}
+inline void UnityEngine::TerrainData::get_bounds_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bounds>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_bounds_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Bounds>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, ret);
+}
+inline ::System::Object* UnityEngine::TerrainData::Internal_GetHeights_Injected(::System::IntPtr  _unity_self, int32_t  xBase, int32_t  yBase, int32_t  width, int32_t  height)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetHeights_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(nullptr, ___internal_method, _unity_self, xBase, yBase, width, height);
+}
+inline void UnityEngine::TerrainData::Internal_GetTreeInstances_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::BlittableArrayWrapper>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"Internal_GetTreeInstances_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Bindings::BlittableArrayWrapper>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, ret);
+}
+inline ::ArrayW<::UnityEngine::TreePrototype*> UnityEngine::TerrainData::get_treePrototypes_Injected(::System::IntPtr  _unity_self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_treePrototypes_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::TreePrototype*>>(nullptr, ___internal_method, _unity_self);
+}
+inline float_t UnityEngine::TerrainData::GetAlphamapResolutionInternal_Injected(::System::IntPtr  _unity_self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"GetAlphamapResolutionInternal_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(nullptr, ___internal_method, _unity_self);
+}
+inline ::ArrayW<::UnityW<::UnityEngine::Terrain>> UnityEngine::TerrainData::get_users_Injected(::System::IntPtr  _unity_self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::TerrainData*>(),
+                        {"get_users_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityW<::UnityEngine::Terrain>>>(nullptr, ___internal_method, _unity_self);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::TerrainData::TerrainData()   {
+}

@@ -1,0 +1,57 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/MeshExtensions_SplitJob_Bucket.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Unity/Mathematics/zzzz__float3_def.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(MeshExtensions_SplitJob_Bucket)
+// Forward declare root types
+namespace GlobalNamespace {
+struct SplitJob_MeshExtensions_Bucket;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::SplitJob_MeshExtensions_Bucket);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::SplitJob_MeshExtensions_Bucket, "", "MeshExtensions/SplitJob/Bucket");
+// Dependencies Unity.Mathematics.float3
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: MeshExtensions/SplitJob/Bucket
+struct CORDL_TYPE SplitJob_MeshExtensions_Bucket {
+public:
+// Declarations
+// Ctor Parameters []
+// @brief default ctor
+constexpr SplitJob_MeshExtensions_Bucket() ;
+
+// Ctor Parameters [CppParam { name: "next", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "newIdx", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "repN", ty: "::Unity::Mathematics::float3", modifiers: "", def_value: None, comment: None }]
+constexpr SplitJob_MeshExtensions_Bucket(int32_t  next, int32_t  newIdx, ::Unity::Mathematics::float3  repN) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{480};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x14};
+
+/// @brief Field next, offset: 0x0, size: 0x4, def value: None
+ int32_t  next;
+
+/// @brief Field newIdx, offset: 0x4, size: 0x4, def value: None
+ int32_t  newIdx;
+
+/// @brief Field repN, offset: 0x8, size: 0xc, def value: None
+ ::Unity::Mathematics::float3  repN;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::SplitJob_MeshExtensions_Bucket, next) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::SplitJob_MeshExtensions_Bucket, newIdx) == 0x4, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::SplitJob_MeshExtensions_Bucket, repN) == 0x8, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::SplitJob_MeshExtensions_Bucket) == 0x14, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

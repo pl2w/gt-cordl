@@ -1,0 +1,58 @@
+#pragma once
+// IWYU pragma private; include "Newtonsoft/Json/Serialization/SerializationErrorCallback.hpp"
+#include "System/zzzz__MulticastDelegate_impl.hpp"
+#include "Newtonsoft/Json/Serialization/zzzz__SerializationErrorCallback_def.hpp"
+#include "Newtonsoft/Json/Serialization/zzzz__ErrorContext_def.hpp"
+#include "System/Runtime/Serialization/zzzz__StreamingContext_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+//  Writing Method size for method: ::Newtonsoft::Json::Serialization::SerializationErrorCallback._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Newtonsoft::Json::Serialization::SerializationErrorCallback::*)(::System::Object*, ::System::IntPtr)>(&::Newtonsoft::Json::Serialization::SerializationErrorCallback::_ctor)> {
+  constexpr static std::size_t size = 0x10c;
+  constexpr static std::size_t addrs = 0xa3b358c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Object*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Newtonsoft::Json::Serialization::SerializationErrorCallback.Invoke
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Newtonsoft::Json::Serialization::SerializationErrorCallback::*)(::System::Object*, ::System::Runtime::Serialization::StreamingContext, ::Newtonsoft::Json::Serialization::ErrorContext*)>(&::Newtonsoft::Json::Serialization::SerializationErrorCallback::Invoke)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xa3b3698;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>(),
+                    {::i2c::class_of<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+inline void Newtonsoft::Json::Serialization::SerializationErrorCallback::_ctor(::System::Object*  object, ::System::IntPtr  method)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Object*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, object, method);
+}
+inline void Newtonsoft::Json::Serialization::SerializationErrorCallback::Invoke(::System::Object*  o, ::System::Runtime::Serialization::StreamingContext  context, ::Newtonsoft::Json::Serialization::ErrorContext*  errorContext)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, o, context, errorContext);
+}
+inline ::Newtonsoft::Json::Serialization::SerializationErrorCallback* Newtonsoft::Json::Serialization::SerializationErrorCallback::New_ctor(::System::Object*  object, ::System::IntPtr  method)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>(object, method));
+}
+// Ctor Parameters []
+constexpr ::Newtonsoft::Json::Serialization::SerializationErrorCallback::SerializationErrorCallback()   {
+}

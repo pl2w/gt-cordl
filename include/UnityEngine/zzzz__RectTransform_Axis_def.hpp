@@ -1,0 +1,70 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/RectTransform_Axis.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(RectTransform_Axis)
+// Forward declare root types
+namespace GlobalNamespace {
+struct RectTransform_Axis;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::RectTransform_Axis);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::RectTransform_Axis, "UnityEngine", "RectTransform/Axis");
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: UnityEngine.RectTransform/Axis
+struct CORDL_TYPE RectTransform_Axis {
+public:
+// Declarations
+using __CORDL_BACKING_ENUM_TYPE = int32_t;
+
+/// @brief Nested struct __RectTransform_Axis_Unwrapped
+enum struct __RectTransform_Axis_Unwrapped : int32_t {
+__E_Horizontal = static_cast<int32_t>(0x0),
+__E_Vertical = static_cast<int32_t>(0x1),
+};
+
+/// @brief Conversion into unwrapped enum value
+constexpr operator __RectTransform_Axis_Unwrapped () const noexcept {
+return static_cast<__RectTransform_Axis_Unwrapped>(this->value__);
+}
+
+/// @brief Conversion into unwrapped enum value
+constexpr explicit operator int32_t () const noexcept {
+return static_cast<int32_t>(this->value__);
+}
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr RectTransform_Axis() ;
+
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr RectTransform_Axis(int32_t  value__) noexcept;
+
+/// @brief Field Horizontal value: I32(0)
+static ::GlobalNamespace::RectTransform_Axis const Horizontal;
+
+/// @brief Field Vertical value: I32(1)
+static ::GlobalNamespace::RectTransform_Axis const Vertical;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15156};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field value__, offset: 0x0, size: 0x4, def value: None
+ int32_t  value__;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::RectTransform_Axis, value__) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::RectTransform_Axis) == 0x4, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

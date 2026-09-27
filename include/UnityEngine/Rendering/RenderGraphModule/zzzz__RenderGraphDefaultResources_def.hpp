@@ -1,0 +1,361 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/RenderGraphModule/RenderGraphDefaultResources.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/Rendering/RenderGraphModule/zzzz__TextureHandle_def.hpp"
+CORDL_MODULE_EXPORT(RenderGraphDefaultResources)
+namespace UnityEngine::Rendering::RenderGraphModule {
+class RenderGraph;
+}
+namespace UnityEngine::Rendering::RenderGraphModule {
+struct TextureHandle;
+}
+namespace UnityEngine::Rendering {
+class RTHandle;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering::RenderGraphModule {
+class RenderGraphDefaultResources;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources*, "UnityEngine.Rendering.RenderGraphModule", "RenderGraphDefaultResources");
+// [MovedFrom(true, "UnityEngine.Experimental.Rendering.RenderGraphModule", "UnityEngine.Rendering.RenderGraphModule", null)]
+// Dependencies System.Object, UnityEngine.Rendering.RenderGraphModule.TextureHandle
+namespace UnityEngine::Rendering::RenderGraphModule {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.RenderGraphModule.RenderGraphDefaultResources
+class CORDL_TYPE RenderGraphDefaultResources : public ::System::Object {
+public:
+// Declarations
+/// @brief Field <blackTexture3DXR>k__BackingField, offset 0x98, size 0x10 
+ __declspec(property(get=__cordl_internal_get__blackTexture3DXR_k__BackingField, put=__cordl_internal_set__blackTexture3DXR_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _blackTexture3DXR_k__BackingField;
+
+/// @brief Field <blackTextureArrayXR>k__BackingField, offset 0x78, size 0x10 
+ __declspec(property(get=__cordl_internal_get__blackTextureArrayXR_k__BackingField, put=__cordl_internal_set__blackTextureArrayXR_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _blackTextureArrayXR_k__BackingField;
+
+/// @brief Field <blackTextureXR>k__BackingField, offset 0x68, size 0x10 
+ __declspec(property(get=__cordl_internal_get__blackTextureXR_k__BackingField, put=__cordl_internal_set__blackTextureXR_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _blackTextureXR_k__BackingField;
+
+/// @brief Field <blackTexture>k__BackingField, offset 0x28, size 0x10 
+ __declspec(property(get=__cordl_internal_get__blackTexture_k__BackingField, put=__cordl_internal_set__blackTexture_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _blackTexture_k__BackingField;
+
+/// @brief Field <blackUIntTextureXR>k__BackingField, offset 0x88, size 0x10 
+ __declspec(property(get=__cordl_internal_get__blackUIntTextureXR_k__BackingField, put=__cordl_internal_set__blackUIntTextureXR_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _blackUIntTextureXR_k__BackingField;
+
+/// @brief Field <clearTextureXR>k__BackingField, offset 0x48, size 0x10 
+ __declspec(property(get=__cordl_internal_get__clearTextureXR_k__BackingField, put=__cordl_internal_set__clearTextureXR_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _clearTextureXR_k__BackingField;
+
+/// @brief Field <defaultShadowTexture>k__BackingField, offset 0xb8, size 0x10 
+ __declspec(property(get=__cordl_internal_get__defaultShadowTexture_k__BackingField, put=__cordl_internal_set__defaultShadowTexture_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _defaultShadowTexture_k__BackingField;
+
+/// @brief Field <magentaTextureXR>k__BackingField, offset 0x58, size 0x10 
+ __declspec(property(get=__cordl_internal_get__magentaTextureXR_k__BackingField, put=__cordl_internal_set__magentaTextureXR_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _magentaTextureXR_k__BackingField;
+
+/// @brief Field <whiteTextureXR>k__BackingField, offset 0xa8, size 0x10 
+ __declspec(property(get=__cordl_internal_get__whiteTextureXR_k__BackingField, put=__cordl_internal_set__whiteTextureXR_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _whiteTextureXR_k__BackingField;
+
+/// @brief Field <whiteTexture>k__BackingField, offset 0x38, size 0x10 
+ __declspec(property(get=__cordl_internal_get__whiteTexture_k__BackingField, put=__cordl_internal_set__whiteTexture_k__BackingField)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  _whiteTexture_k__BackingField;
+
+ __declspec(property(get=get_blackTexture, put=set_blackTexture)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  blackTexture;
+
+ __declspec(property(get=get_blackTexture3DXR, put=set_blackTexture3DXR)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  blackTexture3DXR;
+
+ __declspec(property(get=get_blackTextureArrayXR, put=set_blackTextureArrayXR)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  blackTextureArrayXR;
+
+ __declspec(property(get=get_blackTextureXR, put=set_blackTextureXR)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  blackTextureXR;
+
+ __declspec(property(get=get_blackUIntTextureXR, put=set_blackUIntTextureXR)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  blackUIntTextureXR;
+
+ __declspec(property(get=get_clearTextureXR, put=set_clearTextureXR)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  clearTextureXR;
+
+ __declspec(property(get=get_defaultShadowTexture, put=set_defaultShadowTexture)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  defaultShadowTexture;
+
+/// @brief Field m_BlackTexture2D, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_BlackTexture2D, put=__cordl_internal_set_m_BlackTexture2D)) ::UnityEngine::Rendering::RTHandle*  m_BlackTexture2D;
+
+/// @brief Field m_ShadowTexture2D, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_ShadowTexture2D, put=__cordl_internal_set_m_ShadowTexture2D)) ::UnityEngine::Rendering::RTHandle*  m_ShadowTexture2D;
+
+/// @brief Field m_WhiteTexture2D, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_WhiteTexture2D, put=__cordl_internal_set_m_WhiteTexture2D)) ::UnityEngine::Rendering::RTHandle*  m_WhiteTexture2D;
+
+ __declspec(property(get=get_magentaTextureXR, put=set_magentaTextureXR)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  magentaTextureXR;
+
+ __declspec(property(get=get_whiteTexture, put=set_whiteTexture)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  whiteTexture;
+
+ __declspec(property(get=get_whiteTextureXR, put=set_whiteTextureXR)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  whiteTextureXR;
+
+/// @brief Method Cleanup, addr 0xb1a7af4, size 0x7c, virtual false, abstract: false, final false
+inline void Cleanup() ;
+
+/// @brief Method InitDefaultResourcesIfNeeded, addr 0xb1b71d4, size 0x2c8, virtual false, abstract: false, final false
+inline void InitDefaultResourcesIfNeeded() ;
+
+/// @brief Method InitializeForRendering, addr 0xb1a948c, size 0x1d8, virtual false, abstract: false, final false
+inline void InitializeForRendering(::UnityEngine::Rendering::RenderGraphModule::RenderGraph*  renderGraph) ;
+
+static inline ::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources* New_ctor() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__blackTexture3DXR_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__blackTexture3DXR_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__blackTextureArrayXR_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__blackTextureArrayXR_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__blackTextureXR_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__blackTextureXR_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__blackTexture_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__blackTexture_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__blackUIntTextureXR_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__blackUIntTextureXR_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__clearTextureXR_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__clearTextureXR_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__defaultShadowTexture_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__defaultShadowTexture_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__magentaTextureXR_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__magentaTextureXR_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__whiteTextureXR_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__whiteTextureXR_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get__whiteTexture_k__BackingField() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get__whiteTexture_k__BackingField() ;
+
+constexpr ::UnityEngine::Rendering::RTHandle* const& __cordl_internal_get_m_BlackTexture2D() const;
+
+constexpr ::UnityEngine::Rendering::RTHandle*& __cordl_internal_get_m_BlackTexture2D() ;
+
+constexpr ::UnityEngine::Rendering::RTHandle* const& __cordl_internal_get_m_ShadowTexture2D() const;
+
+constexpr ::UnityEngine::Rendering::RTHandle*& __cordl_internal_get_m_ShadowTexture2D() ;
+
+constexpr ::UnityEngine::Rendering::RTHandle* const& __cordl_internal_get_m_WhiteTexture2D() const;
+
+constexpr ::UnityEngine::Rendering::RTHandle*& __cordl_internal_get_m_WhiteTexture2D() ;
+
+constexpr void __cordl_internal_set__blackTexture3DXR_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__blackTextureArrayXR_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__blackTextureXR_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__blackTexture_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__blackUIntTextureXR_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__clearTextureXR_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__defaultShadowTexture_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__magentaTextureXR_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__whiteTextureXR_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set__whiteTexture_k__BackingField(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set_m_BlackTexture2D(::UnityEngine::Rendering::RTHandle*  value) ;
+
+constexpr void __cordl_internal_set_m_ShadowTexture2D(::UnityEngine::Rendering::RTHandle*  value) ;
+
+constexpr void __cordl_internal_set_m_WhiteTexture2D(::UnityEngine::Rendering::RTHandle*  value) ;
+
+/// @brief Method .ctor, addr 0xb1a782c, size 0x1c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_blackTexture, addr 0xb1b710c, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_blackTexture() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_blackTexture3DXR, addr 0xb1b7198, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_blackTexture3DXR() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_blackTextureArrayXR, addr 0xb1b7170, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_blackTextureArrayXR() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_blackTextureXR, addr 0xb1b715c, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_blackTextureXR() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_blackUIntTextureXR, addr 0xb1b7184, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_blackUIntTextureXR() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_clearTextureXR, addr 0xb1b7134, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_clearTextureXR() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_defaultShadowTexture, addr 0xb1b71c0, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_defaultShadowTexture() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_magentaTextureXR, addr 0xb1b7148, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_magentaTextureXR() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_whiteTexture, addr 0xb1b7120, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_whiteTexture() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_whiteTextureXR, addr 0xb1b71ac, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RenderGraphModule::TextureHandle get_whiteTextureXR() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_blackTexture, addr 0xb1b7118, size 0x8, virtual false, abstract: false, final false
+inline void set_blackTexture(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_blackTexture3DXR, addr 0xb1b71a4, size 0x8, virtual false, abstract: false, final false
+inline void set_blackTexture3DXR(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_blackTextureArrayXR, addr 0xb1b717c, size 0x8, virtual false, abstract: false, final false
+inline void set_blackTextureArrayXR(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_blackTextureXR, addr 0xb1b7168, size 0x8, virtual false, abstract: false, final false
+inline void set_blackTextureXR(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_blackUIntTextureXR, addr 0xb1b7190, size 0x8, virtual false, abstract: false, final false
+inline void set_blackUIntTextureXR(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_clearTextureXR, addr 0xb1b7140, size 0x8, virtual false, abstract: false, final false
+inline void set_clearTextureXR(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_defaultShadowTexture, addr 0xb1b71cc, size 0x8, virtual false, abstract: false, final false
+inline void set_defaultShadowTexture(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_magentaTextureXR, addr 0xb1b7154, size 0x8, virtual false, abstract: false, final false
+inline void set_magentaTextureXR(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_whiteTexture, addr 0xb1b712c, size 0x8, virtual false, abstract: false, final false
+inline void set_whiteTexture(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_whiteTextureXR, addr 0xb1b71b8, size 0x8, virtual false, abstract: false, final false
+inline void set_whiteTextureXR(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr RenderGraphDefaultResources() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "RenderGraphDefaultResources", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+RenderGraphDefaultResources(RenderGraphDefaultResources && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "RenderGraphDefaultResources", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+RenderGraphDefaultResources(RenderGraphDefaultResources const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{17161};
+
+/// @brief Field m_BlackTexture2D, offset: 0x10, size: 0x8, def value: None
+ ::UnityEngine::Rendering::RTHandle*  ___m_BlackTexture2D;
+
+/// @brief Field m_WhiteTexture2D, offset: 0x18, size: 0x8, def value: None
+ ::UnityEngine::Rendering::RTHandle*  ___m_WhiteTexture2D;
+
+/// @brief Field m_ShadowTexture2D, offset: 0x20, size: 0x8, def value: None
+ ::UnityEngine::Rendering::RTHandle*  ___m_ShadowTexture2D;
+
+/// [CompilerGenerated]
+/// @brief Field <blackTexture>k__BackingField, offset: 0x28, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____blackTexture_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <whiteTexture>k__BackingField, offset: 0x38, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____whiteTexture_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <clearTextureXR>k__BackingField, offset: 0x48, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____clearTextureXR_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <magentaTextureXR>k__BackingField, offset: 0x58, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____magentaTextureXR_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <blackTextureXR>k__BackingField, offset: 0x68, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____blackTextureXR_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <blackTextureArrayXR>k__BackingField, offset: 0x78, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____blackTextureArrayXR_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <blackUIntTextureXR>k__BackingField, offset: 0x88, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____blackUIntTextureXR_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <blackTexture3DXR>k__BackingField, offset: 0x98, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____blackTexture3DXR_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <whiteTextureXR>k__BackingField, offset: 0xa8, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____whiteTextureXR_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <defaultShadowTexture>k__BackingField, offset: 0xb8, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ____defaultShadowTexture_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ___m_BlackTexture2D) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ___m_WhiteTexture2D) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ___m_ShadowTexture2D) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____blackTexture_k__BackingField) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____whiteTexture_k__BackingField) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____clearTextureXR_k__BackingField) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____magentaTextureXR_k__BackingField) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____blackTextureXR_k__BackingField) == 0x68, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____blackTextureArrayXR_k__BackingField) == 0x78, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____blackUIntTextureXR_k__BackingField) == 0x88, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____blackTexture3DXR_k__BackingField) == 0x98, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____whiteTextureXR_k__BackingField) == 0xa8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources, ____defaultShadowTexture_k__BackingField) == 0xb8, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::RenderGraphModule::RenderGraphDefaultResources) == 0xc8, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering::RenderGraphModule

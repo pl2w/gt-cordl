@@ -1,0 +1,141 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/XR/Interaction/Toolkit/FocusExitEventArgs.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/XR/Interaction/Toolkit/zzzz__BaseInteractionEventArgs_def.hpp"
+CORDL_MODULE_EXPORT(FocusExitEventArgs)
+namespace UnityEngine::XR::Interaction::Toolkit::Interactables {
+class IXRFocusInteractable;
+}
+namespace UnityEngine::XR::Interaction::Toolkit::Interactors {
+class IXRInteractionGroup;
+}
+namespace UnityEngine::XR::Interaction::Toolkit {
+class XRInteractionManager;
+}
+// Forward declare root types
+namespace UnityEngine::XR::Interaction::Toolkit {
+class FocusExitEventArgs;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::XR::Interaction::Toolkit::FocusExitEventArgs*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::XR::Interaction::Toolkit::FocusExitEventArgs*, "UnityEngine.XR.Interaction.Toolkit", "FocusExitEventArgs");
+// Dependencies UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs
+namespace UnityEngine::XR::Interaction::Toolkit {
+// Is value type: false
+// CS Name: UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs
+class CORDL_TYPE FocusExitEventArgs : public ::UnityEngine::XR::Interaction::Toolkit::BaseInteractionEventArgs {
+public:
+// Declarations
+/// @brief Field <interactionGroup>k__BackingField, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__interactionGroup_k__BackingField, put=__cordl_internal_set__interactionGroup_k__BackingField)) ::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup*  _interactionGroup_k__BackingField;
+
+/// @brief Field <isCanceled>k__BackingField, offset 0x30, size 0x1 
+ __declspec(property(get=__cordl_internal_get__isCanceled_k__BackingField, put=__cordl_internal_set__isCanceled_k__BackingField)) bool  _isCanceled_k__BackingField;
+
+/// @brief Field <manager>k__BackingField, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get__manager_k__BackingField, put=__cordl_internal_set__manager_k__BackingField)) ::UnityW<::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager>  _manager_k__BackingField;
+
+ __declspec(property(get=get_interactableObject, put=set_interactableObject)) ::UnityEngine::XR::Interaction::Toolkit::Interactables::IXRFocusInteractable*  interactableObject;
+
+ __declspec(property(get=get_interactionGroup, put=set_interactionGroup)) ::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup*  interactionGroup;
+
+ __declspec(property(get=get_isCanceled, put=set_isCanceled)) bool  isCanceled;
+
+ __declspec(property(get=get_manager, put=set_manager)) ::UnityW<::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager>  manager;
+
+static inline ::UnityEngine::XR::Interaction::Toolkit::FocusExitEventArgs* New_ctor() ;
+
+constexpr ::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup* const& __cordl_internal_get__interactionGroup_k__BackingField() const;
+
+constexpr ::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup*& __cordl_internal_get__interactionGroup_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__isCanceled_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__isCanceled_k__BackingField() ;
+
+constexpr ::UnityW<::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager> const& __cordl_internal_get__manager_k__BackingField() const;
+
+constexpr ::UnityW<::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager>& __cordl_internal_get__manager_k__BackingField() ;
+
+constexpr void __cordl_internal_set__interactionGroup_k__BackingField(::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup*  value) ;
+
+constexpr void __cordl_internal_set__isCanceled_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__manager_k__BackingField(::UnityW<::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager>  value) ;
+
+/// @brief Method .ctor, addr 0xb408324, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_interactableObject, addr 0xb408290, size 0x6c, virtual false, abstract: false, final false
+inline ::UnityEngine::XR::Interaction::Toolkit::Interactables::IXRFocusInteractable* get_interactableObject() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_interactionGroup, addr 0xb408280, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup* get_interactionGroup() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_isCanceled, addr 0xb408314, size 0x8, virtual false, abstract: false, final false
+inline bool get_isCanceled() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_manager, addr 0xb408304, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager> get_manager() ;
+
+/// @brief Method set_interactableObject, addr 0xb4082fc, size 0x8, virtual false, abstract: false, final false
+inline void set_interactableObject(::UnityEngine::XR::Interaction::Toolkit::Interactables::IXRFocusInteractable*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_interactionGroup, addr 0xb408288, size 0x8, virtual false, abstract: false, final false
+inline void set_interactionGroup(::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_isCanceled, addr 0xb40831c, size 0x8, virtual false, abstract: false, final false
+inline void set_isCanceled(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_manager, addr 0xb40830c, size 0x8, virtual false, abstract: false, final false
+inline void set_manager(::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr FocusExitEventArgs() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "FocusExitEventArgs", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+FocusExitEventArgs(FocusExitEventArgs && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "FocusExitEventArgs", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+FocusExitEventArgs(FocusExitEventArgs const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{11093};
+
+/// [CompilerGenerated]
+/// @brief Field <interactionGroup>k__BackingField, offset: 0x20, size: 0x8, def value: None
+ ::UnityEngine::XR::Interaction::Toolkit::Interactors::IXRInteractionGroup*  ____interactionGroup_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <manager>k__BackingField, offset: 0x28, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager>  ____manager_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <isCanceled>k__BackingField, offset: 0x30, size: 0x1, def value: None
+ bool  ____isCanceled_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::XR::Interaction::Toolkit::FocusExitEventArgs, ____interactionGroup_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::Interaction::Toolkit::FocusExitEventArgs, ____manager_k__BackingField) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::Interaction::Toolkit::FocusExitEventArgs, ____isCanceled_k__BackingField) == 0x30, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::XR::Interaction::Toolkit::FocusExitEventArgs) == 0x38, "Size mismatch!");
+
+} // namespace end def UnityEngine::XR::Interaction::Toolkit

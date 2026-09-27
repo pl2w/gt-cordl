@@ -1,0 +1,201 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ScriptableObject.hpp"
+#include "UnityEngine/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__ScriptableObject_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+#include "UnityEngine/Bindings/zzzz__ManagedSpanWrapper_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ScriptableObject._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ScriptableObject::*)()>(&::UnityEngine::ScriptableObject::_ctor)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xb5e4954;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ScriptableObject.CreateInstance
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::ScriptableObject> (*)(::StringW)>(&::UnityEngine::ScriptableObject::CreateInstance)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb5e4a10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateInstance", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ScriptableObject.CreateInstance
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::ScriptableObject> (*)(::System::Type*)>(&::UnityEngine::ScriptableObject::CreateInstance)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb5e4c10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateInstance", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ScriptableObject.CreateScriptableObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ScriptableObject*)>(&::UnityEngine::ScriptableObject::CreateScriptableObject)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb5e49d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObject", {}, {::i2c::type_of<::UnityEngine::ScriptableObject*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ScriptableObject.CreateScriptableObjectInstanceFromName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::ScriptableObject> (*)(::StringW)>(&::UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromName)> {
+  constexpr static std::size_t size = 0x1fc;
+  constexpr static std::size_t addrs = 0xb5e4a14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ScriptableObject.CreateScriptableObjectInstanceFromType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::ScriptableObject> (*)(::System::Type*, bool)>(&::UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromType)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xb5e4c18;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromType", {}, {::i2c::type_of<::System::Type*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ScriptableObject.CreateScriptableObjectInstanceFromName_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IntPtr (*)(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>)>(&::UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromName_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb5e4c94;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromName_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ScriptableObject.CreateScriptableObjectInstanceFromType_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IntPtr (*)(::System::Type*, bool)>(&::UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromType_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb5e4cd0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromType_Injected", {}, {::i2c::type_of<::System::Type*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::ScriptableObject::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::ScriptableObject> UnityEngine::ScriptableObject::CreateInstance(::StringW  className)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateInstance", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::ScriptableObject>>(nullptr, ___internal_method, className);
+}
+inline ::UnityW<::UnityEngine::ScriptableObject> UnityEngine::ScriptableObject::CreateInstance(::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateInstance", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::ScriptableObject>>(nullptr, ___internal_method, type);
+}
+template<typename T>
+inline T UnityEngine::ScriptableObject::CreateInstance()  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                    {"CreateInstance", {::i2c::class_of<T>()}, {}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<T>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<T>(nullptr, ___internal_method);
+}
+inline void UnityEngine::ScriptableObject::CreateScriptableObject(/* [Writable] */ ::UnityEngine::ScriptableObject*  self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObject", {}, {::i2c::type_of<::UnityEngine::ScriptableObject*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, self);
+}
+inline ::UnityW<::UnityEngine::ScriptableObject> UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromName(::StringW  className)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::ScriptableObject>>(nullptr, ___internal_method, className);
+}
+inline ::UnityW<::UnityEngine::ScriptableObject> UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromType(::System::Type*  type, bool  applyDefaultsAndReset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromType", {}, {::i2c::type_of<::System::Type*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::ScriptableObject>>(nullptr, ___internal_method, type, applyDefaultsAndReset);
+}
+inline ::System::IntPtr UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromName_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  className)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromName_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::IntPtr>(nullptr, ___internal_method, className);
+}
+inline ::System::IntPtr UnityEngine::ScriptableObject::CreateScriptableObjectInstanceFromType_Injected(::System::Type*  type, bool  applyDefaultsAndReset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ScriptableObject*>(),
+                        {"CreateScriptableObjectInstanceFromType_Injected", {}, {::i2c::type_of<::System::Type*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::IntPtr>(nullptr, ___internal_method, type, applyDefaultsAndReset);
+}
+inline ::UnityEngine::ScriptableObject* UnityEngine::ScriptableObject::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::ScriptableObject*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ScriptableObject::ScriptableObject()   {
+}

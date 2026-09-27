@@ -1,0 +1,279 @@
+#pragma once
+// IWYU pragma private; include "Unity/Collections/FixedList512Bytes_1.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Unity/Collections/zzzz__FixedBytes512Align8_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(FixedList512Bytes_1)
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerator_1;
+}
+namespace System::Collections {
+class IEnumerable;
+}
+namespace System::Collections {
+class IEnumerator;
+}
+namespace System {
+template<typename T>
+class IComparable_1;
+}
+namespace System {
+template<typename T>
+class IEquatable_1;
+}
+namespace System {
+class Object;
+}
+namespace Unity::Collections {
+template<typename T>
+struct FixedList128Bytes_1;
+}
+namespace Unity::Collections {
+template<typename T>
+struct FixedList32Bytes_1;
+}
+namespace Unity::Collections {
+template<typename T>
+struct FixedList4096Bytes_1;
+}
+namespace Unity::Collections {
+template<typename T>
+struct FixedList64Bytes_1;
+}
+namespace Unity::Collections {
+template<typename T>
+class IIndexable_1;
+}
+namespace Unity::Collections {
+template<typename T>
+class INativeList_1;
+}
+// Forward declare root types
+namespace Unity::Collections {
+template<typename T>
+struct FixedList512Bytes_1;
+}
+// Write type traits
+MARK_GEN_VAL_T(::Unity::Collections::FixedList512Bytes_1);
+DEFINE_IL2CPP_GEN_CLASS(::Unity::Collections::FixedList512Bytes_1, "Unity.Collections", "FixedList512Bytes`1");
+// [DefaultMember("Item")]
+// [DebuggerTypeProxy(typeof(Unity.Collections.FixedList512BytesDebugView`1<T>))]
+// [GenerateTestsForBurstCompatibility(GenericTypeArguments = new[] { typeof(System.Int32) })]
+// Dependencies Unity.Collections.FixedBytes512Align8
+namespace Unity::Collections {
+// cpp template
+template<typename T>
+// Is value type: true
+// CS Name: Unity.Collections.FixedList512Bytes`1<T>
+struct CORDL_TYPE FixedList512Bytes_1 {
+public:
+// Declarations
+ __declspec(property(get=get_Buffer)) uint8_t*  Buffer;
+
+ __declspec(property(get=get_Capacity)) int32_t  Capacity;
+
+/// @brief [CreateProperty]
+ __declspec(property(get=get_Elements)) ::System::Collections::Generic::IEnumerable_1<T>*  Elements;
+
+/// @brief [CreateProperty]
+ __declspec(property(get=get_Length, put=set_Length)) int32_t  Length;
+
+ __declspec(property(get=get_LengthInBytes)) int32_t  LengthInBytes;
+
+ __declspec(property(get=get_buffer)) uint8_t*  buffer;
+
+ __declspec(property(get=get_length, put=set_length)) uint16_t  length;
+
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerable_1<T>"
+constexpr operator  ::System::Collections::Generic::IEnumerable_1<T>*() ;
+
+/// @brief Convert operator to "::System::Collections::IEnumerable"
+constexpr operator  ::System::Collections::IEnumerable*() ;
+
+/// @brief Convert operator to "::System::IComparable_1<::Unity::Collections::FixedList128Bytes_1<T>>"
+constexpr operator  ::System::IComparable_1<::Unity::Collections::FixedList128Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IComparable_1<::Unity::Collections::FixedList32Bytes_1<T>>"
+constexpr operator  ::System::IComparable_1<::Unity::Collections::FixedList32Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IComparable_1<::Unity::Collections::FixedList4096Bytes_1<T>>"
+constexpr operator  ::System::IComparable_1<::Unity::Collections::FixedList4096Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IComparable_1<::Unity::Collections::FixedList512Bytes_1<T>>"
+constexpr operator  ::System::IComparable_1<::Unity::Collections::FixedList512Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IComparable_1<::Unity::Collections::FixedList64Bytes_1<T>>"
+constexpr operator  ::System::IComparable_1<::Unity::Collections::FixedList64Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IEquatable_1<::Unity::Collections::FixedList128Bytes_1<T>>"
+constexpr operator  ::System::IEquatable_1<::Unity::Collections::FixedList128Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IEquatable_1<::Unity::Collections::FixedList32Bytes_1<T>>"
+constexpr operator  ::System::IEquatable_1<::Unity::Collections::FixedList32Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IEquatable_1<::Unity::Collections::FixedList4096Bytes_1<T>>"
+constexpr operator  ::System::IEquatable_1<::Unity::Collections::FixedList4096Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IEquatable_1<::Unity::Collections::FixedList512Bytes_1<T>>"
+constexpr operator  ::System::IEquatable_1<::Unity::Collections::FixedList512Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::System::IEquatable_1<::Unity::Collections::FixedList64Bytes_1<T>>"
+constexpr operator  ::System::IEquatable_1<::Unity::Collections::FixedList64Bytes_1<T>>*() ;
+
+/// @brief Convert operator to "::Unity::Collections::IIndexable_1<T>"
+constexpr operator  ::Unity::Collections::IIndexable_1<T>*() ;
+
+/// @brief Convert operator to "::Unity::Collections::INativeList_1<T>"
+constexpr operator  ::Unity::Collections::INativeList_1<T>*() ;
+
+/// @brief Method CompareTo, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline int32_t CompareTo(::Unity::Collections::FixedList128Bytes_1<T>  other) ;
+
+/// @brief Method CompareTo, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline int32_t CompareTo(::Unity::Collections::FixedList32Bytes_1<T>  other) ;
+
+/// @brief Method CompareTo, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline int32_t CompareTo(::Unity::Collections::FixedList4096Bytes_1<T>  other) ;
+
+/// @brief Method CompareTo, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline int32_t CompareTo(::Unity::Collections::FixedList512Bytes_1<T>  other) ;
+
+/// @brief Method CompareTo, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline int32_t CompareTo(::Unity::Collections::FixedList64Bytes_1<T>  other) ;
+
+/// [ExcludeFromBurstCompatTesting("Takes managed object")]
+/// @brief Method Equals, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final false
+inline bool Equals(::System::Object*  obj) ;
+
+/// @brief Method Equals, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline bool Equals(::Unity::Collections::FixedList128Bytes_1<T>  other) ;
+
+/// @brief Method Equals, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline bool Equals(::Unity::Collections::FixedList32Bytes_1<T>  other) ;
+
+/// @brief Method Equals, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline bool Equals(::Unity::Collections::FixedList4096Bytes_1<T>  other) ;
+
+/// @brief Method Equals, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline bool Equals(::Unity::Collections::FixedList512Bytes_1<T>  other) ;
+
+/// @brief Method Equals, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline bool Equals(::Unity::Collections::FixedList64Bytes_1<T>  other) ;
+
+/// @brief Method GetHashCode, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final false
+inline int32_t GetHashCode() ;
+
+/// @brief Method System.Collections.Generic.IEnumerable<T>.GetEnumerator, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline ::System::Collections::Generic::IEnumerator_1<T>* System_Collections_Generic_IEnumerable_T__GetEnumerator() ;
+
+/// @brief Method System.Collections.IEnumerable.GetEnumerator, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator() ;
+
+/// [ExcludeFromBurstCompatTesting("Returns managed array")]
+/// @brief Method ToArray, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::ArrayW<T> ToArray() ;
+
+/// [IsReadOnly]
+/// @brief Method get_Buffer, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline uint8_t* get_Buffer() ;
+
+/// [IsReadOnly]
+/// @brief Method get_Capacity, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline int32_t get_Capacity() ;
+
+/// @brief Method get_Elements, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::System::Collections::Generic::IEnumerable_1<T>* get_Elements() ;
+
+/// [IsReadOnly]
+/// @brief Method get_Length, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline int32_t get_Length() ;
+
+/// @brief Method get_LengthInBytes, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline int32_t get_LengthInBytes() ;
+
+/// [IsReadOnly]
+/// @brief Method get_buffer, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline uint8_t* get_buffer() ;
+
+/// [IsReadOnly]
+/// @brief Method get_length, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline uint16_t get_length() ;
+
+/// @brief Convert to "::System::Collections::Generic::IEnumerable_1<T>"
+constexpr ::System::Collections::Generic::IEnumerable_1<T>* i___System__Collections__Generic__IEnumerable_1_T_() ;
+
+/// @brief Convert to "::System::Collections::IEnumerable"
+constexpr ::System::Collections::IEnumerable* i___System__Collections__IEnumerable() ;
+
+/// @brief Convert to "::System::IComparable_1<::Unity::Collections::FixedList128Bytes_1<T>>"
+constexpr ::System::IComparable_1<::Unity::Collections::FixedList128Bytes_1<T>>* i___System__IComparable_1___Unity__Collections__FixedList128Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IComparable_1<::Unity::Collections::FixedList32Bytes_1<T>>"
+constexpr ::System::IComparable_1<::Unity::Collections::FixedList32Bytes_1<T>>* i___System__IComparable_1___Unity__Collections__FixedList32Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IComparable_1<::Unity::Collections::FixedList4096Bytes_1<T>>"
+constexpr ::System::IComparable_1<::Unity::Collections::FixedList4096Bytes_1<T>>* i___System__IComparable_1___Unity__Collections__FixedList4096Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IComparable_1<::Unity::Collections::FixedList512Bytes_1<T>>"
+constexpr ::System::IComparable_1<::Unity::Collections::FixedList512Bytes_1<T>>* i___System__IComparable_1___Unity__Collections__FixedList512Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IComparable_1<::Unity::Collections::FixedList64Bytes_1<T>>"
+constexpr ::System::IComparable_1<::Unity::Collections::FixedList64Bytes_1<T>>* i___System__IComparable_1___Unity__Collections__FixedList64Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IEquatable_1<::Unity::Collections::FixedList128Bytes_1<T>>"
+constexpr ::System::IEquatable_1<::Unity::Collections::FixedList128Bytes_1<T>>* i___System__IEquatable_1___Unity__Collections__FixedList128Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IEquatable_1<::Unity::Collections::FixedList32Bytes_1<T>>"
+constexpr ::System::IEquatable_1<::Unity::Collections::FixedList32Bytes_1<T>>* i___System__IEquatable_1___Unity__Collections__FixedList32Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IEquatable_1<::Unity::Collections::FixedList4096Bytes_1<T>>"
+constexpr ::System::IEquatable_1<::Unity::Collections::FixedList4096Bytes_1<T>>* i___System__IEquatable_1___Unity__Collections__FixedList4096Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IEquatable_1<::Unity::Collections::FixedList512Bytes_1<T>>"
+constexpr ::System::IEquatable_1<::Unity::Collections::FixedList512Bytes_1<T>>* i___System__IEquatable_1___Unity__Collections__FixedList512Bytes_1_T__() ;
+
+/// @brief Convert to "::System::IEquatable_1<::Unity::Collections::FixedList64Bytes_1<T>>"
+constexpr ::System::IEquatable_1<::Unity::Collections::FixedList64Bytes_1<T>>* i___System__IEquatable_1___Unity__Collections__FixedList64Bytes_1_T__() ;
+
+/// @brief Convert to "::Unity::Collections::IIndexable_1<T>"
+constexpr ::Unity::Collections::IIndexable_1<T>* i___Unity__Collections__IIndexable_1_T_() ;
+
+/// @brief Convert to "::Unity::Collections::INativeList_1<T>"
+constexpr ::Unity::Collections::INativeList_1<T>* i___Unity__Collections__INativeList_1_T_() ;
+
+/// @brief Method set_Length, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline void set_Length(int32_t  value) ;
+
+/// @brief Method set_length, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline void set_length(uint16_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr FixedList512Bytes_1() ;
+
+// Ctor Parameters [CppParam { name: "data", ty: "::Unity::Collections::FixedBytes512Align8", modifiers: "", def_value: None, comment: None }]
+constexpr FixedList512Bytes_1(::Unity::Collections::FixedBytes512Align8  data) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30127};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x200};
+
+/// [SerializeField]
+/// @brief Field data, offset: 0x0, size: 0x200, def value: None
+ ::Unity::Collections::FixedBytes512Align8  data;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+} // namespace end def Unity::Collections

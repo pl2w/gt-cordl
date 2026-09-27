@@ -1,0 +1,1340 @@
+#pragma once
+// IWYU pragma private; include "System/IO/BufferedStream.hpp"
+#include "System/IO/zzzz__Stream_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/IO/zzzz__BufferedStream_def.hpp"
+#include "System/IO/zzzz__BufferedStream__CopyToAsyncCore_d__71_def.hpp"
+#include "System/IO/zzzz__BufferedStream__DisposeAsync_d__34_def.hpp"
+#include "System/IO/zzzz__BufferedStream__FlushAsyncInternal_d__38_def.hpp"
+#include "System/IO/zzzz__BufferedStream__FlushWriteAsync_d__42_def.hpp"
+#include "System/IO/zzzz__BufferedStream__ReadFromUnderlyingStreamAsync_d__51_def.hpp"
+#include "System/IO/zzzz__BufferedStream__WriteToUnderlyingStreamAsync_d__63_def.hpp"
+#include "System/IO/zzzz__BufferedStream_def.hpp"
+#include "System/IO/zzzz__SeekOrigin_def.hpp"
+#include "System/IO/zzzz__Stream_def.hpp"
+#include "System/Threading/Tasks/zzzz__Task_1_def.hpp"
+#include "System/Threading/Tasks/zzzz__Task_def.hpp"
+#include "System/Threading/Tasks/zzzz__ValueTask_1_def.hpp"
+#include "System/Threading/Tasks/zzzz__ValueTask_def.hpp"
+#include "System/Threading/zzzz__CancellationToken_def.hpp"
+#include "System/Threading/zzzz__SemaphoreSlim_def.hpp"
+#include "System/zzzz__AsyncCallback_def.hpp"
+#include "System/zzzz__Exception_def.hpp"
+#include "System/zzzz__Func_1_def.hpp"
+#include "System/zzzz__IAsyncResult_def.hpp"
+#include "System/zzzz__Memory_1_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "System/zzzz__ReadOnlyMemory_1_def.hpp"
+#include "System/zzzz__ReadOnlySpan_1_def.hpp"
+#include "System/zzzz__Span_1_def.hpp"
+//  Writing Method size for method: ::System::IO::BufferedStream.LazyEnsureAsyncActiveSemaphoreInitialized
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::SemaphoreSlim* (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::LazyEnsureAsyncActiveSemaphoreInitialized)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xa29c31c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"LazyEnsureAsyncActiveSemaphoreInitialized", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(::System::IO::Stream*)>(&::System::IO::BufferedStream::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa29c414;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IO::Stream*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(::System::IO::Stream*, int32_t)>(&::System::IO::BufferedStream::_ctor)> {
+  constexpr static std::size_t size = 0x1e4;
+  constexpr static std::size_t addrs = 0xa29c41c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EnsureNotClosed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::EnsureNotClosed)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa29c600;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureNotClosed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EnsureCanSeek
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::EnsureCanSeek)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xa29c65c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureCanSeek", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EnsureCanRead
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::EnsureCanRead)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xa29c6cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureCanRead", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EnsureCanWrite
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::EnsureCanWrite)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xa29c73c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureCanWrite", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EnsureShadowBufferAllocated
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::EnsureShadowBufferAllocated)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xa29c7ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureShadowBufferAllocated", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EnsureBufferAllocated
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::EnsureBufferAllocated)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xa29c898;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureBufferAllocated", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.get_CanRead
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::get_CanRead)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xa29c908;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 8}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.get_CanWrite
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::get_CanWrite)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xa29c920;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 11}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.get_CanSeek
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::get_CanSeek)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xa29c938;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 9}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.get_Length
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::get_Length)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xa29c950;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 12}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.get_Position
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::get_Position)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa29c9dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.set_Position
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(int64_t)>(&::System::IO::BufferedStream::set_Position)> {
+  constexpr static std::size_t size = 0xc0;
+  constexpr static std::size_t addrs = 0xa29ca28;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 14}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.DisposeAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::ValueTask (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::DisposeAsync)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xa29cae8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 41}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(bool)>(&::System::IO::BufferedStream::Dispose)> {
+  constexpr static std::size_t size = 0x160;
+  constexpr static std::size_t addrs = 0xa29cbe0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 22}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.Flush
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::Flush)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xa29cd40;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 23}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.FlushAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::BufferedStream::*)(::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::FlushAsync)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xa29ce48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 24}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.FlushAsyncInternal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::BufferedStream::*)(::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::FlushAsyncInternal)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xa29cf14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushAsyncInternal", {}, {::i2c::type_of<::System::Threading::CancellationToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.FlushRead
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::FlushRead)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xa29ce04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushRead", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ClearReadBufferBeforeWrite
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::ClearReadBufferBeforeWrite)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa29d00c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ClearReadBufferBeforeWrite", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.FlushWrite
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::FlushWrite)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa29c98c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushWrite", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.FlushWriteAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::BufferedStream::*)(::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::FlushWriteAsync)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xa29d09c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushWriteAsync", {}, {::i2c::type_of<::System::Threading::CancellationToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadFromBuffer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::System::IO::BufferedStream::ReadFromBuffer)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xa29d194;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromBuffer", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadFromBuffer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)(::System::Span_1<uint8_t>)>(&::System::IO::BufferedStream::ReadFromBuffer)> {
+  constexpr static std::size_t size = 0x134;
+  constexpr static std::size_t addrs = 0xa29d1f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromBuffer", {}, {::i2c::type_of<::System::Span_1<uint8_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadFromBuffer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::by_ref<::System::Exception*>)>(&::System::IO::BufferedStream::ReadFromBuffer)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xa29d32c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromBuffer", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::System::Exception*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.Read
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::System::IO::BufferedStream::Read)> {
+  constexpr static std::size_t size = 0x218;
+  constexpr static std::size_t addrs = 0xa29d40c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 35}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.Read
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)(::System::Span_1<uint8_t>)>(&::System::IO::BufferedStream::Read)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xa29d624;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 36}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.LastSyncCompletedReadTask
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task_1<int32_t>* (::System::IO::BufferedStream::*)(int32_t)>(&::System::IO::BufferedStream::LastSyncCompletedReadTask)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xa29d788;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"LastSyncCompletedReadTask", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task_1<int32_t>* (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::ReadAsync)> {
+  constexpr static std::size_t size = 0x408;
+  constexpr static std::size_t addrs = 0xa29d844;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 27}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::ValueTask_1<int32_t> (::System::IO::BufferedStream::*)(::System::Memory_1<uint8_t>, ::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::ReadAsync)> {
+  constexpr static std::size_t size = 0x360;
+  constexpr static std::size_t addrs = 0xa29dddc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 28}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadFromUnderlyingStreamAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::ValueTask_1<int32_t> (::System::IO::BufferedStream::*)(::System::Memory_1<uint8_t>, ::System::Threading::CancellationToken, int32_t, ::System::Threading::Tasks::Task*)>(&::System::IO::BufferedStream::ReadFromUnderlyingStreamAsync)> {
+  constexpr static std::size_t size = 0x190;
+  constexpr static std::size_t addrs = 0xa29dc4c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromUnderlyingStreamAsync", {}, {::i2c::type_of<::System::Memory_1<uint8_t>>(), ::i2c::type_of<::System::Threading::CancellationToken>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Threading::Tasks::Task*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.BeginRead
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IAsyncResult* (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::System::AsyncCallback*, ::System::Object*)>(&::System::IO::BufferedStream::BeginRead)> {
+  constexpr static std::size_t size = 0xb4;
+  constexpr static std::size_t addrs = 0xa29e13c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 25}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EndRead
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)(::System::IAsyncResult*)>(&::System::IO::BufferedStream::EndRead)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xa29e1f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 26}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadByte
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::ReadByte)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa29e238;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 37}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.ReadByteSlow
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)()>(&::System::IO::BufferedStream::ReadByteSlow)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa29e288;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadByteSlow", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.WriteToBuffer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, ::by_ref<int32_t>, ::by_ref<int32_t>)>(&::System::IO::BufferedStream::WriteToBuffer)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xa29e318;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"WriteToBuffer", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<::by_ref<int32_t>>(), ::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.WriteToBuffer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::BufferedStream::*)(::System::ReadOnlySpan_1<uint8_t>)>(&::System::IO::BufferedStream::WriteToBuffer)> {
+  constexpr static std::size_t size = 0x174;
+  constexpr static std::size_t addrs = 0xa29e3f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"WriteToBuffer", {}, {::i2c::type_of<::System::ReadOnlySpan_1<uint8_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.Write
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::System::IO::BufferedStream::Write)> {
+  constexpr static std::size_t size = 0x310;
+  constexpr static std::size_t addrs = 0xa29e568;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 38}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.Write
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(::System::ReadOnlySpan_1<uint8_t>)>(&::System::IO::BufferedStream::Write)> {
+  constexpr static std::size_t size = 0x2ac;
+  constexpr static std::size_t addrs = 0xa29e878;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 39}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.WriteAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::WriteAsync)> {
+  constexpr static std::size_t size = 0x1f4;
+  constexpr static std::size_t addrs = 0xa29eb24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 31}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.WriteAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::ValueTask (::System::IO::BufferedStream::*)(::System::ReadOnlyMemory_1<uint8_t>, ::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::WriteAsync)> {
+  constexpr static std::size_t size = 0x298;
+  constexpr static std::size_t addrs = 0xa29ed18;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 32}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.WriteToUnderlyingStreamAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::BufferedStream::*)(::System::ReadOnlyMemory_1<uint8_t>, ::System::Threading::CancellationToken, ::System::Threading::Tasks::Task*)>(&::System::IO::BufferedStream::WriteToUnderlyingStreamAsync)> {
+  constexpr static std::size_t size = 0x13c;
+  constexpr static std::size_t addrs = 0xa29efb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"WriteToUnderlyingStreamAsync", {}, {::i2c::type_of<::System::ReadOnlyMemory_1<uint8_t>>(), ::i2c::type_of<::System::Threading::CancellationToken>(), ::i2c::type_of<::System::Threading::Tasks::Task*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.BeginWrite
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IAsyncResult* (::System::IO::BufferedStream::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::System::AsyncCallback*, ::System::Object*)>(&::System::IO::BufferedStream::BeginWrite)> {
+  constexpr static std::size_t size = 0xb4;
+  constexpr static std::size_t addrs = 0xa29f0ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 29}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.EndWrite
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(::System::IAsyncResult*)>(&::System::IO::BufferedStream::EndWrite)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xa29f1a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 30}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.WriteByte
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(uint8_t)>(&::System::IO::BufferedStream::WriteByte)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xa29f1ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 40}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.Seek
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::IO::BufferedStream::*)(int64_t, ::System::IO::SeekOrigin)>(&::System::IO::BufferedStream::Seek)> {
+  constexpr static std::size_t size = 0x124;
+  constexpr static std::size_t addrs = 0xa29f238;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 33}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.SetLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(int64_t)>(&::System::IO::BufferedStream::SetLength)> {
+  constexpr static std::size_t size = 0xc0;
+  constexpr static std::size_t addrs = 0xa29f35c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 34}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.CopyTo
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream::*)(::System::IO::Stream*, int32_t)>(&::System::IO::BufferedStream::CopyTo)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xa29f41c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 20}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.CopyToAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::BufferedStream::*)(::System::IO::Stream*, int32_t, ::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::CopyToAsync)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xa29f4a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::BufferedStream*>(),
+                    {::i2c::class_of<::System::IO::BufferedStream*>(), 19}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream.CopyToAsyncCore
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::BufferedStream::*)(::System::IO::Stream*, int32_t, ::System::Threading::CancellationToken)>(&::System::IO::BufferedStream::CopyToAsyncCore)> {
+  constexpr static std::size_t size = 0x3dc;
+  constexpr static std::size_t addrs = 0xa29f594;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"CopyToAsyncCore", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Threading::CancellationToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::IO::Stream*& System::IO::BufferedStream::__cordl_internal_get__stream()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stream;
+}
+constexpr ::System::IO::Stream* const& System::IO::BufferedStream::__cordl_internal_get__stream() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stream;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__stream(::System::IO::Stream*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____stream = value;
+}
+constexpr ::ArrayW<uint8_t>& System::IO::BufferedStream::__cordl_internal_get__buffer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____buffer;
+}
+constexpr ::ArrayW<uint8_t> const& System::IO::BufferedStream::__cordl_internal_get__buffer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____buffer;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__buffer(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____buffer = value;
+}
+constexpr int32_t& System::IO::BufferedStream::__cordl_internal_get__bufferSize()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bufferSize;
+}
+constexpr int32_t const& System::IO::BufferedStream::__cordl_internal_get__bufferSize() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bufferSize;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__bufferSize(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____bufferSize = value;
+}
+constexpr int32_t& System::IO::BufferedStream::__cordl_internal_get__readPos()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____readPos;
+}
+constexpr int32_t const& System::IO::BufferedStream::__cordl_internal_get__readPos() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____readPos;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__readPos(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____readPos = value;
+}
+constexpr int32_t& System::IO::BufferedStream::__cordl_internal_get__readLen()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____readLen;
+}
+constexpr int32_t const& System::IO::BufferedStream::__cordl_internal_get__readLen() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____readLen;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__readLen(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____readLen = value;
+}
+constexpr int32_t& System::IO::BufferedStream::__cordl_internal_get__writePos()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____writePos;
+}
+constexpr int32_t const& System::IO::BufferedStream::__cordl_internal_get__writePos() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____writePos;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__writePos(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____writePos = value;
+}
+constexpr ::System::Threading::Tasks::Task_1<int32_t>*& System::IO::BufferedStream::__cordl_internal_get__lastSyncCompletedReadTask()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastSyncCompletedReadTask;
+}
+constexpr ::System::Threading::Tasks::Task_1<int32_t>* const& System::IO::BufferedStream::__cordl_internal_get__lastSyncCompletedReadTask() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastSyncCompletedReadTask;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__lastSyncCompletedReadTask(::System::Threading::Tasks::Task_1<int32_t>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____lastSyncCompletedReadTask = value;
+}
+constexpr ::System::Threading::SemaphoreSlim*& System::IO::BufferedStream::__cordl_internal_get__asyncActiveSemaphore()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____asyncActiveSemaphore;
+}
+constexpr ::System::Threading::SemaphoreSlim* const& System::IO::BufferedStream::__cordl_internal_get__asyncActiveSemaphore() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____asyncActiveSemaphore;
+}
+constexpr void System::IO::BufferedStream::__cordl_internal_set__asyncActiveSemaphore(::System::Threading::SemaphoreSlim*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____asyncActiveSemaphore = value;
+}
+inline ::System::Threading::SemaphoreSlim* System::IO::BufferedStream::LazyEnsureAsyncActiveSemaphoreInitialized()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"LazyEnsureAsyncActiveSemaphoreInitialized", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::SemaphoreSlim*>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::_ctor(::System::IO::Stream*  stream)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IO::Stream*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, stream);
+}
+inline void System::IO::BufferedStream::_ctor(::System::IO::Stream*  stream, int32_t  bufferSize)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, stream, bufferSize);
+}
+inline void System::IO::BufferedStream::EnsureNotClosed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureNotClosed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::EnsureCanSeek()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureCanSeek", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::EnsureCanRead()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureCanRead", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::EnsureCanWrite()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureCanWrite", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::EnsureShadowBufferAllocated()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureShadowBufferAllocated", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::EnsureBufferAllocated()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"EnsureBufferAllocated", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool System::IO::BufferedStream::get_CanRead()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 8}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::IO::BufferedStream::get_CanWrite()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 11}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::IO::BufferedStream::get_CanSeek()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 9}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline int64_t System::IO::BufferedStream::get_Length()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 12}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method);
+}
+inline int64_t System::IO::BufferedStream::get_Position()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::set_Position(int64_t  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 14}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Threading::Tasks::ValueTask System::IO::BufferedStream::DisposeAsync()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 41}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::ValueTask>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::Dispose(bool  disposing)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 22}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, disposing);
+}
+inline void System::IO::BufferedStream::Flush()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 23}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Threading::Tasks::Task* System::IO::BufferedStream::FlushAsync(::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 24}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, cancellationToken);
+}
+inline ::System::Threading::Tasks::Task* System::IO::BufferedStream::FlushAsyncInternal(::System::Threading::CancellationToken  cancellationToken)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushAsyncInternal", {}, {::i2c::type_of<::System::Threading::CancellationToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, cancellationToken);
+}
+inline void System::IO::BufferedStream::FlushRead()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushRead", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::ClearReadBufferBeforeWrite()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ClearReadBufferBeforeWrite", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::FlushWrite()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushWrite", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Threading::Tasks::Task* System::IO::BufferedStream::FlushWriteAsync(::System::Threading::CancellationToken  cancellationToken)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"FlushWriteAsync", {}, {::i2c::type_of<::System::Threading::CancellationToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, cancellationToken);
+}
+inline int32_t System::IO::BufferedStream::ReadFromBuffer(::ArrayW<uint8_t>  array, int32_t  offset, int32_t  count)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromBuffer", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, array, offset, count);
+}
+inline int32_t System::IO::BufferedStream::ReadFromBuffer(::System::Span_1<uint8_t>  destination)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromBuffer", {}, {::i2c::type_of<::System::Span_1<uint8_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, destination);
+}
+inline int32_t System::IO::BufferedStream::ReadFromBuffer(::ArrayW<uint8_t>  array, int32_t  offset, int32_t  count, ::by_ref<::System::Exception*>  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromBuffer", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::System::Exception*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, array, offset, count, error);
+}
+inline int32_t System::IO::BufferedStream::Read(::ArrayW<uint8_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 35}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, array, offset, count);
+}
+inline int32_t System::IO::BufferedStream::Read(::System::Span_1<uint8_t>  destination)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 36}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, destination);
+}
+inline ::System::Threading::Tasks::Task_1<int32_t>* System::IO::BufferedStream::LastSyncCompletedReadTask(int32_t  val)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"LastSyncCompletedReadTask", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task_1<int32_t>*>(this, ___internal_method, val);
+}
+inline ::System::Threading::Tasks::Task_1<int32_t>* System::IO::BufferedStream::ReadAsync(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 27}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task_1<int32_t>*>(this, ___internal_method, buffer, offset, count, cancellationToken);
+}
+inline ::System::Threading::Tasks::ValueTask_1<int32_t> System::IO::BufferedStream::ReadAsync(::System::Memory_1<uint8_t>  buffer, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 28}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::ValueTask_1<int32_t>>(this, ___internal_method, buffer, cancellationToken);
+}
+inline ::System::Threading::Tasks::ValueTask_1<int32_t> System::IO::BufferedStream::ReadFromUnderlyingStreamAsync(::System::Memory_1<uint8_t>  buffer, ::System::Threading::CancellationToken  cancellationToken, int32_t  bytesAlreadySatisfied, ::System::Threading::Tasks::Task*  semaphoreLockTask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadFromUnderlyingStreamAsync", {}, {::i2c::type_of<::System::Memory_1<uint8_t>>(), ::i2c::type_of<::System::Threading::CancellationToken>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Threading::Tasks::Task*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::ValueTask_1<int32_t>>(this, ___internal_method, buffer, cancellationToken, bytesAlreadySatisfied, semaphoreLockTask);
+}
+inline ::System::IAsyncResult* System::IO::BufferedStream::BeginRead(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::System::AsyncCallback*  callback, ::System::Object*  state)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 25}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::IAsyncResult*>(this, ___internal_method, buffer, offset, count, callback, state);
+}
+inline int32_t System::IO::BufferedStream::EndRead(::System::IAsyncResult*  asyncResult)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 26}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, asyncResult);
+}
+inline int32_t System::IO::BufferedStream::ReadByte()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 37}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline int32_t System::IO::BufferedStream::ReadByteSlow()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"ReadByteSlow", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline void System::IO::BufferedStream::WriteToBuffer(::ArrayW<uint8_t>  array, ::by_ref<int32_t>  offset, ::by_ref<int32_t>  count)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"WriteToBuffer", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<::by_ref<int32_t>>(), ::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, array, offset, count);
+}
+inline int32_t System::IO::BufferedStream::WriteToBuffer(::System::ReadOnlySpan_1<uint8_t>  buffer)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"WriteToBuffer", {}, {::i2c::type_of<::System::ReadOnlySpan_1<uint8_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, buffer);
+}
+inline void System::IO::BufferedStream::Write(::ArrayW<uint8_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 38}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, array, offset, count);
+}
+inline void System::IO::BufferedStream::Write(::System::ReadOnlySpan_1<uint8_t>  buffer)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 39}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, buffer);
+}
+inline ::System::Threading::Tasks::Task* System::IO::BufferedStream::WriteAsync(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 31}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, buffer, offset, count, cancellationToken);
+}
+inline ::System::Threading::Tasks::ValueTask System::IO::BufferedStream::WriteAsync(::System::ReadOnlyMemory_1<uint8_t>  buffer, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 32}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::ValueTask>(this, ___internal_method, buffer, cancellationToken);
+}
+inline ::System::Threading::Tasks::Task* System::IO::BufferedStream::WriteToUnderlyingStreamAsync(::System::ReadOnlyMemory_1<uint8_t>  buffer, ::System::Threading::CancellationToken  cancellationToken, ::System::Threading::Tasks::Task*  semaphoreLockTask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"WriteToUnderlyingStreamAsync", {}, {::i2c::type_of<::System::ReadOnlyMemory_1<uint8_t>>(), ::i2c::type_of<::System::Threading::CancellationToken>(), ::i2c::type_of<::System::Threading::Tasks::Task*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, buffer, cancellationToken, semaphoreLockTask);
+}
+inline ::System::IAsyncResult* System::IO::BufferedStream::BeginWrite(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::System::AsyncCallback*  callback, ::System::Object*  state)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 29}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::IAsyncResult*>(this, ___internal_method, buffer, offset, count, callback, state);
+}
+inline void System::IO::BufferedStream::EndWrite(::System::IAsyncResult*  asyncResult)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 30}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, asyncResult);
+}
+inline void System::IO::BufferedStream::WriteByte(uint8_t  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 40}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline int64_t System::IO::BufferedStream::Seek(int64_t  offset, ::System::IO::SeekOrigin  origin)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 33}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method, offset, origin);
+}
+inline void System::IO::BufferedStream::SetLength(int64_t  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 34}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::IO::BufferedStream::CopyTo(::System::IO::Stream*  destination, int32_t  bufferSize)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 20}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, destination, bufferSize);
+}
+inline ::System::Threading::Tasks::Task* System::IO::BufferedStream::CopyToAsync(::System::IO::Stream*  destination, int32_t  bufferSize, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::BufferedStream*>(), 19}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, destination, bufferSize, cancellationToken);
+}
+inline ::System::Threading::Tasks::Task* System::IO::BufferedStream::CopyToAsyncCore(::System::IO::Stream*  destination, int32_t  bufferSize, ::System::Threading::CancellationToken  cancellationToken)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream*>(),
+                        {"CopyToAsyncCore", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Threading::CancellationToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, destination, bufferSize, cancellationToken);
+}
+inline ::System::IO::BufferedStream* System::IO::BufferedStream::New_ctor(::System::IO::Stream*  stream)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::IO::BufferedStream*>(stream));
+}
+inline ::System::IO::BufferedStream* System::IO::BufferedStream::New_ctor(::System::IO::Stream*  stream, int32_t  bufferSize)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::IO::BufferedStream*>(stream, bufferSize));
+}
+// Ctor Parameters []
+constexpr ::System::IO::BufferedStream::BufferedStream()   {
+}
+//  Writing Method size for method: ::System::IO::BufferedStream___c._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::BufferedStream___c::*)()>(&::System::IO::BufferedStream___c::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa29f9d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::BufferedStream___c._LazyEnsureAsyncActiveSemaphoreInitialized_b__10_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::SemaphoreSlim* (::System::IO::BufferedStream___c::*)()>(&::System::IO::BufferedStream___c::_LazyEnsureAsyncActiveSemaphoreInitialized_b__10_0)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa29f9e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream___c*>(),
+                        {"<LazyEnsureAsyncActiveSemaphoreInitialized>b__10_0", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void System::IO::BufferedStream___c::setStaticF___9(::System::IO::BufferedStream___c*  value)  {
+::cordl_internals::setStaticField<::System::IO::BufferedStream___c*, "<>9", ::System::IO::BufferedStream___c*>(std::forward<::System::IO::BufferedStream___c*>(value));
+}
+inline ::System::IO::BufferedStream___c* System::IO::BufferedStream___c::getStaticF___9()  {
+return ::cordl_internals::getStaticField<::System::IO::BufferedStream___c*, "<>9", ::System::IO::BufferedStream___c*>();
+}
+inline void System::IO::BufferedStream___c::setStaticF___9__10_0(::System::Func_1<::System::Threading::SemaphoreSlim*>*  value)  {
+::cordl_internals::setStaticField<::System::Func_1<::System::Threading::SemaphoreSlim*>*, "<>9__10_0", ::System::IO::BufferedStream___c*>(std::forward<::System::Func_1<::System::Threading::SemaphoreSlim*>*>(value));
+}
+inline ::System::Func_1<::System::Threading::SemaphoreSlim*>* System::IO::BufferedStream___c::getStaticF___9__10_0()  {
+return ::cordl_internals::getStaticField<::System::Func_1<::System::Threading::SemaphoreSlim*>*, "<>9__10_0", ::System::IO::BufferedStream___c*>();
+}
+inline void System::IO::BufferedStream___c::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Threading::SemaphoreSlim* System::IO::BufferedStream___c::_LazyEnsureAsyncActiveSemaphoreInitialized_b__10_0()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::BufferedStream___c*>(),
+                        {"<LazyEnsureAsyncActiveSemaphoreInitialized>b__10_0", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::SemaphoreSlim*>(this, ___internal_method);
+}
+inline ::System::IO::BufferedStream___c* System::IO::BufferedStream___c::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::IO::BufferedStream___c*>());
+}
+// Ctor Parameters []
+constexpr ::System::IO::BufferedStream___c::BufferedStream___c()   {
+}

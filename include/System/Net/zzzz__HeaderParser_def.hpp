@@ -1,0 +1,72 @@
+#pragma once
+// IWYU pragma private; include "System/Net/HeaderParser.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__MulticastDelegate_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(HeaderParser)
+namespace System {
+class AsyncCallback;
+}
+namespace System {
+class IAsyncResult;
+}
+namespace System {
+struct IntPtr;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace System::Net {
+class HeaderParser;
+}
+// Write type traits
+MARK_REF_T(::System::Net::HeaderParser*);
+DEFINE_IL2CPP_CLASS(::System::Net::HeaderParser*, "System.Net", "HeaderParser");
+// Dependencies System.MulticastDelegate
+namespace System::Net {
+// Is value type: false
+// CS Name: System.Net.HeaderParser
+class CORDL_TYPE HeaderParser : public ::System::MulticastDelegate {
+public:
+// Declarations
+/// @brief Method BeginInvoke, addr 0xac6ff3c, size 0x20, virtual true, abstract: false, final false
+inline ::System::IAsyncResult* BeginInvoke(::StringW  value, ::System::AsyncCallback*  callback, ::System::Object*  object) ;
+
+/// @brief Method EndInvoke, addr 0xac6ff5c, size 0xc, virtual true, abstract: false, final false
+inline ::ArrayW<::StringW> EndInvoke(::System::IAsyncResult*  result) ;
+
+/// @brief Method Invoke, addr 0xac6ff28, size 0x14, virtual true, abstract: false, final false
+inline ::ArrayW<::StringW> Invoke(::StringW  value) ;
+
+static inline ::System::Net::HeaderParser* New_ctor(::System::Object*  object, ::System::IntPtr  method) ;
+
+/// @brief Method .ctor, addr 0xac6fe78, size 0xb0, virtual false, abstract: false, final false
+inline void _ctor(::System::Object*  object, ::System::IntPtr  method) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr HeaderParser() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "HeaderParser", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+HeaderParser(HeaderParser && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "HeaderParser", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+HeaderParser(HeaderParser const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10584};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Net::HeaderParser) == 0x80, "Size mismatch!");
+
+} // namespace end def System::Net

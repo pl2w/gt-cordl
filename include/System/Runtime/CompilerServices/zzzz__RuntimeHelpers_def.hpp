@@ -1,0 +1,107 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/CompilerServices/RuntimeHelpers.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(RuntimeHelpers)
+namespace System {
+class Array;
+}
+namespace System {
+struct IntPtr;
+}
+namespace System {
+class Object;
+}
+namespace System {
+struct Range;
+}
+namespace System {
+struct RuntimeFieldHandle;
+}
+namespace System {
+struct RuntimeTypeHandle;
+}
+// Forward declare root types
+namespace System::Runtime::CompilerServices {
+class RuntimeHelpers;
+}
+// Write type traits
+MARK_REF_T(::System::Runtime::CompilerServices::RuntimeHelpers*);
+DEFINE_IL2CPP_CLASS(::System::Runtime::CompilerServices::RuntimeHelpers*, "System.Runtime.CompilerServices", "RuntimeHelpers");
+// Dependencies System.Object
+namespace System::Runtime::CompilerServices {
+// Is value type: false
+// CS Name: System.Runtime.CompilerServices.RuntimeHelpers
+class CORDL_TYPE RuntimeHelpers : public ::System::Object {
+public:
+// Declarations
+/// [ReliabilityContract((System.Runtime.ConstrainedExecution.Consistency)3, (System.Runtime.ConstrainedExecution.Cer)2)]
+/// @brief Method EnsureSufficientExecutionStack, addr 0xa1e8620, size 0x48, virtual false, abstract: false, final false
+static inline void EnsureSufficientExecutionStack() ;
+
+/// @brief Method GetHashCode, addr 0xa1e85a0, size 0x8, virtual false, abstract: false, final false
+static inline int32_t GetHashCode(::System::Object*  o) ;
+
+/// @brief Method GetObjectValue, addr 0xa1e85a8, size 0x4, virtual false, abstract: false, final false
+static inline ::System::Object* GetObjectValue(::System::Object*  obj) ;
+
+/// @brief Method GetSubArray, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline ::ArrayW<T> GetSubArray(::ArrayW<T>  array, ::System::Range  range) ;
+
+/// @brief Method InitializeArray, addr 0xa1e8554, size 0x4, virtual false, abstract: false, final false
+static inline void InitializeArray(::System::Array*  array, ::System::IntPtr  fldHandle) ;
+
+/// @brief Method InitializeArray, addr 0xa1e8558, size 0x44, virtual false, abstract: false, final false
+static inline void InitializeArray(::System::Array*  array, ::System::RuntimeFieldHandle  fldHandle) ;
+
+/// @brief Method IsReferenceOrContainsReferences, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline bool IsReferenceOrContainsReferences() ;
+
+/// [ReliabilityContract((System.Runtime.ConstrainedExecution.Consistency)3, (System.Runtime.ConstrainedExecution.Cer)1)]
+/// @brief Method PrepareConstrainedRegions, addr 0xa1e866c, size 0x4, virtual false, abstract: false, final false
+static inline void PrepareConstrainedRegions() ;
+
+/// @brief Method RunClassConstructor, addr 0xa1e85ac, size 0x4, virtual false, abstract: false, final false
+static inline void RunClassConstructor(::System::IntPtr  type) ;
+
+/// @brief Method RunClassConstructor, addr 0xa1e85b0, size 0x6c, virtual false, abstract: false, final false
+static inline void RunClassConstructor(::System::RuntimeTypeHandle  type) ;
+
+/// @brief Method SufficientExecutionStack, addr 0xa1e861c, size 0x4, virtual false, abstract: false, final false
+static inline bool SufficientExecutionStack() ;
+
+/// @brief Method TryEnsureSufficientExecutionStack, addr 0xa1e8668, size 0x4, virtual false, abstract: false, final false
+static inline bool TryEnsureSufficientExecutionStack() ;
+
+/// @brief Method get_OffsetToStringData, addr 0xa1e859c, size 0x4, virtual false, abstract: false, final false
+static inline int32_t get_OffsetToStringData() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr RuntimeHelpers() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "RuntimeHelpers", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+RuntimeHelpers(RuntimeHelpers && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "RuntimeHelpers", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+RuntimeHelpers(RuntimeHelpers const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6562};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Runtime::CompilerServices::RuntimeHelpers) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Runtime::CompilerServices

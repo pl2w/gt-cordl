@@ -1,0 +1,71 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/GraphicsBuffer_UsageFlags.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(GraphicsBuffer_UsageFlags)
+// Forward declare root types
+namespace GlobalNamespace {
+struct GraphicsBuffer_UsageFlags;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::GraphicsBuffer_UsageFlags);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::GraphicsBuffer_UsageFlags, "UnityEngine", "GraphicsBuffer/UsageFlags");
+// [Flags]
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: UnityEngine.GraphicsBuffer/UsageFlags
+struct CORDL_TYPE GraphicsBuffer_UsageFlags {
+public:
+// Declarations
+using __CORDL_BACKING_ENUM_TYPE = int32_t;
+
+/// @brief Nested struct __GraphicsBuffer_UsageFlags_Unwrapped
+enum struct __GraphicsBuffer_UsageFlags_Unwrapped : int32_t {
+__E_None = static_cast<int32_t>(0x0),
+__E_LockBufferForWrite = static_cast<int32_t>(0x1),
+};
+
+/// @brief Conversion into unwrapped enum value
+constexpr operator __GraphicsBuffer_UsageFlags_Unwrapped () const noexcept {
+return static_cast<__GraphicsBuffer_UsageFlags_Unwrapped>(this->value__);
+}
+
+/// @brief Conversion into unwrapped enum value
+constexpr explicit operator int32_t () const noexcept {
+return static_cast<int32_t>(this->value__);
+}
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr GraphicsBuffer_UsageFlags() ;
+
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr GraphicsBuffer_UsageFlags(int32_t  value__) noexcept;
+
+/// @brief Field LockBufferForWrite value: I32(1)
+static ::GlobalNamespace::GraphicsBuffer_UsageFlags const LockBufferForWrite;
+
+/// @brief Field None value: I32(0)
+static ::GlobalNamespace::GraphicsBuffer_UsageFlags const None;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14887};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field value__, offset: 0x0, size: 0x4, def value: None
+ int32_t  value__;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::GraphicsBuffer_UsageFlags, value__) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::GraphicsBuffer_UsageFlags) == 0x4, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

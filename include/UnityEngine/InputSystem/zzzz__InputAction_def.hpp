@@ -1,0 +1,635 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/InputAction.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Nullable_1_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "Unity/Profiling/zzzz__ProfilerMarker_def.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__CallbackArray_1_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionType_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputAction_ActionFlags_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputBinding_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(InputAction)
+namespace GlobalNamespace {
+struct InputActionState_TriggerState;
+}
+namespace GlobalNamespace {
+struct InputAction_ActionFlags;
+}
+namespace GlobalNamespace {
+struct InputAction_CallbackContext;
+}
+namespace System {
+template<typename T>
+class Action_1;
+}
+namespace System {
+struct Guid;
+}
+namespace System {
+class ICloneable;
+}
+namespace System {
+class IDisposable;
+}
+namespace System {
+template<typename T>
+struct Nullable_1;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+namespace UnityEngine::InputSystem::Utilities {
+template<typename TValue>
+struct ReadOnlyArray_1;
+}
+namespace UnityEngine::InputSystem {
+class InputActionMap;
+}
+namespace UnityEngine::InputSystem {
+struct InputActionPhase;
+}
+namespace UnityEngine::InputSystem {
+struct InputActionType;
+}
+namespace UnityEngine::InputSystem {
+struct InputBinding;
+}
+namespace UnityEngine::InputSystem {
+class InputControl;
+}
+// Forward declare root types
+namespace UnityEngine::InputSystem {
+class InputAction;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::InputAction*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::InputAction*, "UnityEngine.InputSystem", "InputAction");
+// Dependencies System.Nullable`1<T>, System.Object, Unity.Profiling.ProfilerMarker, UnityEngine.InputSystem.InputAction::ActionFlags, UnityEngine.InputSystem.InputActionType, UnityEngine.InputSystem.InputBinding, UnityEngine.InputSystem.Utilities.CallbackArray`1<TDelegate>
+namespace UnityEngine::InputSystem {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.InputAction
+class CORDL_TYPE InputAction : public ::System::Object {
+public:
+// Declarations
+using ActionFlags = ::GlobalNamespace::InputAction_ActionFlags;
+
+using CallbackContext = ::GlobalNamespace::InputAction_CallbackContext;
+
+ __declspec(property(get=get_actionMap)) ::UnityEngine::InputSystem::InputActionMap*  actionMap;
+
+ __declspec(property(get=get_activeControl)) ::UnityEngine::InputSystem::InputControl*  activeControl;
+
+ __declspec(property(get=get_activeValueType)) ::System::Type*  activeValueType;
+
+ __declspec(property(get=get_bindingMask, put=set_bindingMask)) ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>  bindingMask;
+
+ __declspec(property(get=get_bindings)) ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<::UnityEngine::InputSystem::InputBinding>  bindings;
+
+ __declspec(property(get=get_controls)) ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<::UnityEngine::InputSystem::InputControl*>  controls;
+
+ __declspec(property(get=get_currentState)) ::GlobalNamespace::InputActionState_TriggerState  currentState;
+
+ __declspec(property(get=get_enabled)) bool  enabled;
+
+ __declspec(property(get=get_expectedControlType, put=set_expectedControlType)) ::StringW  expectedControlType;
+
+ __declspec(property(get=get_id)) ::System::Guid  id;
+
+ __declspec(property(get=get_idDontGenerate)) ::System::Guid  idDontGenerate;
+
+ __declspec(property(get=get_inProgress)) bool  inProgress;
+
+ __declspec(property(get=get_interactions)) ::StringW  interactions;
+
+ __declspec(property(get=get_isSingletonAction)) bool  isSingletonAction;
+
+/// @brief Field k_InputActionDisableProfilerMarker, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_InputActionDisableProfilerMarker, put=setStaticF_k_InputActionDisableProfilerMarker)) ::Unity::Profiling::ProfilerMarker  k_InputActionDisableProfilerMarker;
+
+/// @brief Field k_InputActionEnableProfilerMarker, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_InputActionEnableProfilerMarker, put=setStaticF_k_InputActionEnableProfilerMarker)) ::Unity::Profiling::ProfilerMarker  k_InputActionEnableProfilerMarker;
+
+/// @brief Field m_ActionIndexInState, offset 0x70, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_ActionIndexInState, put=__cordl_internal_set_m_ActionIndexInState)) int32_t  m_ActionIndexInState;
+
+/// @brief Field m_ActionMap, offset 0x78, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_ActionMap, put=__cordl_internal_set_m_ActionMap)) ::UnityEngine::InputSystem::InputActionMap*  m_ActionMap;
+
+/// @brief Field m_BindingMask, offset 0x50, size 0x10 
+ __declspec(property(get=__cordl_internal_get_m_BindingMask, put=__cordl_internal_set_m_BindingMask)) ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>  m_BindingMask;
+
+/// @brief Field m_BindingsCount, offset 0x64, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_BindingsCount, put=__cordl_internal_set_m_BindingsCount)) int32_t  m_BindingsCount;
+
+/// @brief Field m_BindingsStartIndex, offset 0x60, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_BindingsStartIndex, put=__cordl_internal_set_m_BindingsStartIndex)) int32_t  m_BindingsStartIndex;
+
+/// @brief Field m_ControlCount, offset 0x6c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_ControlCount, put=__cordl_internal_set_m_ControlCount)) int32_t  m_ControlCount;
+
+/// @brief Field m_ControlStartIndex, offset 0x68, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_ControlStartIndex, put=__cordl_internal_set_m_ControlStartIndex)) int32_t  m_ControlStartIndex;
+
+/// @brief Field m_ExpectedControlType, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_ExpectedControlType, put=__cordl_internal_set_m_ExpectedControlType)) ::StringW  m_ExpectedControlType;
+
+/// @brief Field m_Flags, offset 0x48, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_Flags, put=__cordl_internal_set_m_Flags)) ::GlobalNamespace::InputAction_ActionFlags  m_Flags;
+
+/// @brief Field m_Id, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Id, put=__cordl_internal_set_m_Id)) ::StringW  m_Id;
+
+/// @brief Field m_Interactions, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Interactions, put=__cordl_internal_set_m_Interactions)) ::StringW  m_Interactions;
+
+/// @brief Field m_Name, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Name, put=__cordl_internal_set_m_Name)) ::StringW  m_Name;
+
+/// @brief Field m_OnCanceled, offset 0xd0, size 0x50 
+ __declspec(property(get=__cordl_internal_get_m_OnCanceled, put=__cordl_internal_set_m_OnCanceled)) ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  m_OnCanceled;
+
+/// @brief Field m_OnPerformed, offset 0x120, size 0x50 
+ __declspec(property(get=__cordl_internal_get_m_OnPerformed, put=__cordl_internal_set_m_OnPerformed)) ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  m_OnPerformed;
+
+/// @brief Field m_OnStarted, offset 0x80, size 0x50 
+ __declspec(property(get=__cordl_internal_get_m_OnStarted, put=__cordl_internal_set_m_OnStarted)) ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  m_OnStarted;
+
+/// @brief Field m_Processors, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Processors, put=__cordl_internal_set_m_Processors)) ::StringW  m_Processors;
+
+/// @brief Field m_SingletonActionBindings, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_SingletonActionBindings, put=__cordl_internal_set_m_SingletonActionBindings)) ::ArrayW<::UnityEngine::InputSystem::InputBinding>  m_SingletonActionBindings;
+
+/// @brief Field m_Type, offset 0x18, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_Type, put=__cordl_internal_set_m_Type)) ::UnityEngine::InputSystem::InputActionType  m_Type;
+
+ __declspec(property(get=get_name)) ::StringW  name;
+
+ __declspec(property(get=get_phase)) ::UnityEngine::InputSystem::InputActionPhase  phase;
+
+ __declspec(property(get=get_processors)) ::StringW  processors;
+
+ __declspec(property(get=get_triggered)) bool  triggered;
+
+ __declspec(property(get=get_type)) ::UnityEngine::InputSystem::InputActionType  type;
+
+ __declspec(property(get=get_wantsInitialStateCheck, put=set_wantsInitialStateCheck)) bool  wantsInitialStateCheck;
+
+/// @brief Convert operator to "::System::ICloneable"
+constexpr operator  ::System::ICloneable*() noexcept;
+
+/// @brief Convert operator to "::System::IDisposable"
+constexpr operator  ::System::IDisposable*() noexcept;
+
+/// @brief Method ActiveControlIsValid, addr 0xaf0d604, size 0xf4, virtual false, abstract: false, final false
+inline bool ActiveControlIsValid(::UnityEngine::InputSystem::InputControl*  control) ;
+
+/// @brief Method BindingIndexOnActionToBindingIndexOnMap, addr 0xaf0d85c, size 0x194, virtual false, abstract: false, final false
+inline int32_t BindingIndexOnActionToBindingIndexOnMap(int32_t  indexOfBindingOnAction) ;
+
+/// @brief Method BindingIndexOnMapToBindingIndexOnAction, addr 0xaf0d9f0, size 0xc8, virtual false, abstract: false, final false
+inline int32_t BindingIndexOnMapToBindingIndexOnAction(int32_t  indexOfBindingOnMap) ;
+
+/// @brief Method Clone, addr 0xaf0cbdc, size 0x110, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::InputAction* Clone() ;
+
+/// @brief Method CreateInternalActionMapForSingletonAction, addr 0xaf0d470, size 0xe0, virtual false, abstract: false, final false
+inline void CreateInternalActionMapForSingletonAction() ;
+
+/// @brief Method Disable, addr 0xaf0ca4c, size 0x190, virtual false, abstract: false, final false
+inline void Disable() ;
+
+/// @brief Method Dispose, addr 0xaf0c5b0, size 0x1c, virtual true, abstract: false, final true
+inline void Dispose() ;
+
+/// @brief Method Enable, addr 0xaf0c89c, size 0x1b0, virtual false, abstract: false, final false
+inline void Enable() ;
+
+/// @brief Method ExpectedFrame, addr 0xaf0cf70, size 0x74, virtual false, abstract: false, final false
+inline int32_t ExpectedFrame() ;
+
+/// @brief Method FindEffectiveBindingMask, addr 0xaf0d7cc, size 0x90, virtual false, abstract: false, final false
+inline ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> FindEffectiveBindingMask() ;
+
+/// @brief Method GenerateId, addr 0xaf0d42c, size 0x44, virtual false, abstract: false, final false
+inline void GenerateId() ;
+
+/// @brief Method GetControlMagnitude, addr 0xaf0cd8c, size 0x6c, virtual false, abstract: false, final false
+inline float_t GetControlMagnitude() ;
+
+/// @brief Method GetOrCreateActionMap, addr 0xaf0bb84, size 0x24, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::InputActionMap* GetOrCreateActionMap() ;
+
+/// @brief Method GetTimeoutCompletionPercentage, addr 0xaf0d30c, size 0x120, virtual false, abstract: false, final false
+inline float_t GetTimeoutCompletionPercentage() ;
+
+/// @brief Method IsInProgress, addr 0xaf0cf18, size 0x58, virtual false, abstract: false, final false
+inline bool IsInProgress() ;
+
+/// @brief Method IsPressed, addr 0xaf0cec4, size 0x54, virtual false, abstract: false, final false
+inline bool IsPressed() ;
+
+/// @brief Method MakeSureIdIsInPlace, addr 0xaf0b8a0, size 0x2c, virtual false, abstract: false, final false
+inline ::StringW MakeSureIdIsInPlace() ;
+
+static inline ::UnityEngine::InputSystem::InputAction* New_ctor() ;
+
+static inline ::UnityEngine::InputSystem::InputAction* New_ctor(::StringW  name, ::UnityEngine::InputSystem::InputActionType  type, ::StringW  binding, ::StringW  interactions, ::StringW  processors, ::StringW  expectedControlType) ;
+
+/// @brief Method ReadValue, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename TValue>
+requires(::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+inline TValue ReadValue() ;
+
+/// @brief Method ReadValueAsObject, addr 0xaf0ccf0, size 0x9c, virtual false, abstract: false, final false
+inline ::System::Object* ReadValueAsObject() ;
+
+/// @brief Method RequestInitialStateCheckOnEnabledAction, addr 0xaf0d5c4, size 0x40, virtual false, abstract: false, final false
+inline void RequestInitialStateCheckOnEnabledAction() ;
+
+/// @brief Method Reset, addr 0xaf0cdf8, size 0xcc, virtual false, abstract: false, final false
+inline void Reset() ;
+
+/// @brief Method System.ICloneable.Clone, addr 0xaf0ccec, size 0x4, virtual true, abstract: false, final true
+inline ::System::Object* System_ICloneable_Clone() ;
+
+/// @brief Method ToString, addr 0xaf0c5cc, size 0x2d0, virtual true, abstract: false, final false
+inline ::StringW ToString() ;
+
+/// @brief Method WasCompletedThisDynamicUpdate, addr 0xaf0d2b4, size 0x58, virtual false, abstract: false, final false
+inline bool WasCompletedThisDynamicUpdate() ;
+
+/// @brief Method WasCompletedThisFrame, addr 0xaf0d21c, size 0x98, virtual false, abstract: false, final false
+inline bool WasCompletedThisFrame() ;
+
+/// @brief Method WasPerformedThisDynamicUpdate, addr 0xaf0d1c4, size 0x58, virtual false, abstract: false, final false
+inline bool WasPerformedThisDynamicUpdate() ;
+
+/// @brief Method WasPerformedThisFrame, addr 0xaf0c180, size 0x98, virtual false, abstract: false, final false
+inline bool WasPerformedThisFrame() ;
+
+/// @brief Method WasPressedThisDynamicUpdate, addr 0xaf0d07c, size 0x58, virtual false, abstract: false, final false
+inline bool WasPressedThisDynamicUpdate() ;
+
+/// @brief Method WasPressedThisFrame, addr 0xaf0cfe4, size 0x98, virtual false, abstract: false, final false
+inline bool WasPressedThisFrame() ;
+
+/// @brief Method WasReleasedThisDynamicUpdate, addr 0xaf0d16c, size 0x58, virtual false, abstract: false, final false
+inline bool WasReleasedThisDynamicUpdate() ;
+
+/// @brief Method WasReleasedThisFrame, addr 0xaf0d0d4, size 0x98, virtual false, abstract: false, final false
+inline bool WasReleasedThisFrame() ;
+
+constexpr int32_t const& __cordl_internal_get_m_ActionIndexInState() const;
+
+constexpr int32_t& __cordl_internal_get_m_ActionIndexInState() ;
+
+constexpr ::UnityEngine::InputSystem::InputActionMap* const& __cordl_internal_get_m_ActionMap() const;
+
+constexpr ::UnityEngine::InputSystem::InputActionMap*& __cordl_internal_get_m_ActionMap() ;
+
+constexpr ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> const& __cordl_internal_get_m_BindingMask() const;
+
+constexpr ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>& __cordl_internal_get_m_BindingMask() ;
+
+constexpr int32_t const& __cordl_internal_get_m_BindingsCount() const;
+
+constexpr int32_t& __cordl_internal_get_m_BindingsCount() ;
+
+constexpr int32_t const& __cordl_internal_get_m_BindingsStartIndex() const;
+
+constexpr int32_t& __cordl_internal_get_m_BindingsStartIndex() ;
+
+constexpr int32_t const& __cordl_internal_get_m_ControlCount() const;
+
+constexpr int32_t& __cordl_internal_get_m_ControlCount() ;
+
+constexpr int32_t const& __cordl_internal_get_m_ControlStartIndex() const;
+
+constexpr int32_t& __cordl_internal_get_m_ControlStartIndex() ;
+
+constexpr ::StringW const& __cordl_internal_get_m_ExpectedControlType() const;
+
+constexpr ::StringW& __cordl_internal_get_m_ExpectedControlType() ;
+
+constexpr ::GlobalNamespace::InputAction_ActionFlags const& __cordl_internal_get_m_Flags() const;
+
+constexpr ::GlobalNamespace::InputAction_ActionFlags& __cordl_internal_get_m_Flags() ;
+
+constexpr ::StringW const& __cordl_internal_get_m_Id() const;
+
+constexpr ::StringW& __cordl_internal_get_m_Id() ;
+
+constexpr ::StringW const& __cordl_internal_get_m_Interactions() const;
+
+constexpr ::StringW& __cordl_internal_get_m_Interactions() ;
+
+constexpr ::StringW const& __cordl_internal_get_m_Name() const;
+
+constexpr ::StringW& __cordl_internal_get_m_Name() ;
+
+constexpr ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*> const& __cordl_internal_get_m_OnCanceled() const;
+
+constexpr ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>& __cordl_internal_get_m_OnCanceled() ;
+
+constexpr ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*> const& __cordl_internal_get_m_OnPerformed() const;
+
+constexpr ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>& __cordl_internal_get_m_OnPerformed() ;
+
+constexpr ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*> const& __cordl_internal_get_m_OnStarted() const;
+
+constexpr ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>& __cordl_internal_get_m_OnStarted() ;
+
+constexpr ::StringW const& __cordl_internal_get_m_Processors() const;
+
+constexpr ::StringW& __cordl_internal_get_m_Processors() ;
+
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputBinding> const& __cordl_internal_get_m_SingletonActionBindings() const;
+
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputBinding>& __cordl_internal_get_m_SingletonActionBindings() ;
+
+constexpr ::UnityEngine::InputSystem::InputActionType const& __cordl_internal_get_m_Type() const;
+
+constexpr ::UnityEngine::InputSystem::InputActionType& __cordl_internal_get_m_Type() ;
+
+constexpr void __cordl_internal_set_m_ActionIndexInState(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_ActionMap(::UnityEngine::InputSystem::InputActionMap*  value) ;
+
+constexpr void __cordl_internal_set_m_BindingMask(::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>  value) ;
+
+constexpr void __cordl_internal_set_m_BindingsCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_BindingsStartIndex(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_ControlCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_ControlStartIndex(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_ExpectedControlType(::StringW  value) ;
+
+constexpr void __cordl_internal_set_m_Flags(::GlobalNamespace::InputAction_ActionFlags  value) ;
+
+constexpr void __cordl_internal_set_m_Id(::StringW  value) ;
+
+constexpr void __cordl_internal_set_m_Interactions(::StringW  value) ;
+
+constexpr void __cordl_internal_set_m_Name(::StringW  value) ;
+
+constexpr void __cordl_internal_set_m_OnCanceled(::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  value) ;
+
+constexpr void __cordl_internal_set_m_OnPerformed(::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  value) ;
+
+constexpr void __cordl_internal_set_m_OnStarted(::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  value) ;
+
+constexpr void __cordl_internal_set_m_Processors(::StringW  value) ;
+
+constexpr void __cordl_internal_set_m_SingletonActionBindings(::ArrayW<::UnityEngine::InputSystem::InputBinding>  value) ;
+
+constexpr void __cordl_internal_set_m_Type(::UnityEngine::InputSystem::InputActionType  value) ;
+
+/// @brief Method .ctor, addr 0xaf0c358, size 0x54, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xaf0c3ac, size 0x204, virtual false, abstract: false, final false
+inline void _ctor(::StringW  name, ::UnityEngine::InputSystem::InputActionType  type, ::StringW  binding, ::StringW  interactions, ::StringW  processors, ::StringW  expectedControlType) ;
+
+/// @brief Method add_canceled, addr 0xaf0c01c, size 0x58, virtual false, abstract: false, final false
+inline void add_canceled(::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*  value) ;
+
+/// @brief Method add_performed, addr 0xaf0c0cc, size 0x58, virtual false, abstract: false, final false
+inline void add_performed(::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*  value) ;
+
+/// @brief Method add_started, addr 0xaf0bf6c, size 0x58, virtual false, abstract: false, final false
+inline void add_started(::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*  value) ;
+
+static inline ::Unity::Profiling::ProfilerMarker getStaticF_k_InputActionDisableProfilerMarker() ;
+
+static inline ::Unity::Profiling::ProfilerMarker getStaticF_k_InputActionEnableProfilerMarker() ;
+
+/// @brief Method get_actionMap, addr 0xaf0b934, size 0x20, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::InputActionMap* get_actionMap() ;
+
+/// @brief Method get_activeControl, addr 0xaf0c218, size 0x8c, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::InputControl* get_activeControl() ;
+
+/// @brief Method get_activeValueType, addr 0xaf0c2a4, size 0x88, virtual false, abstract: false, final false
+inline ::System::Type* get_activeValueType() ;
+
+/// @brief Method get_bindingMask, addr 0xaf0b974, size 0x10, virtual false, abstract: false, final false
+inline ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> get_bindingMask() ;
+
+/// @brief Method get_bindings, addr 0xaf0bc98, size 0x30, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<::UnityEngine::InputSystem::InputBinding> get_bindings() ;
+
+/// @brief Method get_controls, addr 0xaf0bd48, size 0x44, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<::UnityEngine::InputSystem::InputControl*> get_controls() ;
+
+/// @brief Method get_currentState, addr 0xaf0be80, size 0x60, virtual false, abstract: false, final false
+inline ::GlobalNamespace::InputActionState_TriggerState get_currentState() ;
+
+/// @brief Method get_enabled, addr 0xaf0bf24, size 0x48, virtual false, abstract: false, final false
+inline bool get_enabled() ;
+
+/// @brief Method get_expectedControlType, addr 0xaf0b914, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_expectedControlType() ;
+
+/// @brief Method get_id, addr 0xaf0b86c, size 0x34, virtual false, abstract: false, final false
+inline ::System::Guid get_id() ;
+
+/// @brief Method get_idDontGenerate, addr 0xaf0b8cc, size 0x48, virtual false, abstract: false, final false
+inline ::System::Guid get_idDontGenerate() ;
+
+/// @brief Method get_inProgress, addr 0xaf0bee0, size 0x44, virtual false, abstract: false, final false
+inline bool get_inProgress() ;
+
+/// @brief Method get_interactions, addr 0xaf0b92c, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_interactions() ;
+
+/// @brief Method get_isSingletonAction, addr 0xaf0b954, size 0x20, virtual false, abstract: false, final false
+inline bool get_isSingletonAction() ;
+
+/// @brief Method get_name, addr 0xaf0b85c, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_name() ;
+
+/// @brief Method get_phase, addr 0xaf0be40, size 0x40, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::InputActionPhase get_phase() ;
+
+/// @brief Method get_processors, addr 0xaf0b924, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_processors() ;
+
+/// @brief Method get_triggered, addr 0xaf0c17c, size 0x4, virtual false, abstract: false, final false
+inline bool get_triggered() ;
+
+/// @brief Method get_type, addr 0xaf0b864, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::InputActionType get_type() ;
+
+/// @brief Method get_wantsInitialStateCheck, addr 0xaf0c32c, size 0x1c, virtual false, abstract: false, final false
+inline bool get_wantsInitialStateCheck() ;
+
+/// @brief Convert to "::System::ICloneable"
+constexpr ::System::ICloneable* i___System__ICloneable() noexcept;
+
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* i___System__IDisposable() noexcept;
+
+/// @brief Method remove_canceled, addr 0xaf0c074, size 0x58, virtual false, abstract: false, final false
+inline void remove_canceled(::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*  value) ;
+
+/// @brief Method remove_performed, addr 0xaf0c124, size 0x58, virtual false, abstract: false, final false
+inline void remove_performed(::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*  value) ;
+
+/// @brief Method remove_started, addr 0xaf0bfc4, size 0x58, virtual false, abstract: false, final false
+inline void remove_started(::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*  value) ;
+
+static inline void setStaticF_k_InputActionDisableProfilerMarker(::Unity::Profiling::ProfilerMarker  value) ;
+
+static inline void setStaticF_k_InputActionEnableProfilerMarker(::Unity::Profiling::ProfilerMarker  value) ;
+
+/// @brief Method set_bindingMask, addr 0xaf0b984, size 0x200, virtual false, abstract: false, final false
+inline void set_bindingMask(::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>  value) ;
+
+/// @brief Method set_expectedControlType, addr 0xaf0b91c, size 0x8, virtual false, abstract: false, final false
+inline void set_expectedControlType(::StringW  value) ;
+
+/// @brief Method set_wantsInitialStateCheck, addr 0xaf0c348, size 0x10, virtual false, abstract: false, final false
+inline void set_wantsInitialStateCheck(bool  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr InputAction() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "InputAction", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+InputAction(InputAction && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "InputAction", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+InputAction(InputAction const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13341};
+
+/// [Tooltip("Human readable name of the action. Must be unique within its action map (case is ignored). Can be changed without breaking references to the action.")]
+/// [SerializeField]
+/// @brief Field m_Name, offset: 0x10, size: 0x8, def value: None
+ ::StringW  ___m_Name;
+
+/// [Tooltip("Determines how the action triggers.\n\nA Value action will start and perform when a control moves from its default value and then perform on every value change. It will cancel when controls go back to default value. Also, when enabled, a Value action will respond right away to a control\'s current value.\n\nA Button action will start when a button is pressed and perform when the press threshold (see \'Default Button Press Point\' in settings) is reached. It will cancel when the button is going below the release threshold (see \'Button Release Threshold\' in settings). Also, if a button is already pressed when the action is enabled, the button has to be released first.\n\nA Pass-Through action will not explicitly start and will never cancel. Instead, for every value change on any bound control, the action will perform.")]
+/// [SerializeField]
+/// @brief Field m_Type, offset: 0x18, size: 0x4, def value: None
+ ::UnityEngine::InputSystem::InputActionType  ___m_Type;
+
+/// [FormerlySerializedAs("m_ExpectedControlLayout")]
+/// [Tooltip("The type of control expected by the action (e.g. \"Button\" or \"Stick\"). This will limit the controls shown when setting up bindings in the UI and will also limit which controls can be bound interactively to the action.")]
+/// [SerializeField]
+/// @brief Field m_ExpectedControlType, offset: 0x20, size: 0x8, def value: None
+ ::StringW  ___m_ExpectedControlType;
+
+/// [Tooltip("Unique ID of the action (GUID). Used to reference the action from bindings such that actions can be renamed without breaking references.")]
+/// [SerializeField]
+/// @brief Field m_Id, offset: 0x28, size: 0x8, def value: None
+ ::StringW  ___m_Id;
+
+/// [SerializeField]
+/// @brief Field m_Processors, offset: 0x30, size: 0x8, def value: None
+ ::StringW  ___m_Processors;
+
+/// [SerializeField]
+/// @brief Field m_Interactions, offset: 0x38, size: 0x8, def value: None
+ ::StringW  ___m_Interactions;
+
+/// [SerializeField]
+/// @brief Field m_SingletonActionBindings, offset: 0x40, size: 0x8, def value: None
+ ::ArrayW<::UnityEngine::InputSystem::InputBinding>  ___m_SingletonActionBindings;
+
+/// [SerializeField]
+/// @brief Field m_Flags, offset: 0x48, size: 0x4, def value: None
+ ::GlobalNamespace::InputAction_ActionFlags  ___m_Flags;
+
+/// @brief Field m_BindingMask, offset: 0x50, size: 0x10, def value: None
+ ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>  ___m_BindingMask;
+
+/// @brief Field m_BindingsStartIndex, offset: 0x60, size: 0x4, def value: None
+ int32_t  ___m_BindingsStartIndex;
+
+/// @brief Field m_BindingsCount, offset: 0x64, size: 0x4, def value: None
+ int32_t  ___m_BindingsCount;
+
+/// @brief Field m_ControlStartIndex, offset: 0x68, size: 0x4, def value: None
+ int32_t  ___m_ControlStartIndex;
+
+/// @brief Field m_ControlCount, offset: 0x6c, size: 0x4, def value: None
+ int32_t  ___m_ControlCount;
+
+/// @brief Field m_ActionIndexInState, offset: 0x70, size: 0x4, def value: None
+ int32_t  ___m_ActionIndexInState;
+
+/// @brief Field m_ActionMap, offset: 0x78, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::InputActionMap*  ___m_ActionMap;
+
+/// @brief Field m_OnStarted, offset: 0x80, size: 0x50, def value: None
+ ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  ___m_OnStarted;
+
+/// @brief Field m_OnCanceled, offset: 0xd0, size: 0x50, def value: None
+ ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  ___m_OnCanceled;
+
+/// @brief Field m_OnPerformed, offset: 0x120, size: 0x50, def value: None
+ ::UnityEngine::InputSystem::Utilities::CallbackArray_1<::System::Action_1<::GlobalNamespace::InputAction_CallbackContext>*>  ___m_OnPerformed;
+
+/// @brief Size padding 0x1c0 - 0x170 = 0x50, packed as 0x50
+ uint8_t  _cordl_size_padding[0x50];
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_Name) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_Type) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_ExpectedControlType) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_Id) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_Processors) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_Interactions) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_SingletonActionBindings) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_Flags) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_BindingMask) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_BindingsStartIndex) == 0x60, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_BindingsCount) == 0x64, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_ControlStartIndex) == 0x68, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_ControlCount) == 0x6c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_ActionIndexInState) == 0x70, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_ActionMap) == 0x78, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_OnStarted) == 0x80, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_OnCanceled) == 0xd0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::InputAction, ___m_OnPerformed) == 0x120, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::InputSystem::InputAction) == 0x1c0, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputSystem

@@ -1,0 +1,38 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Scripting/APIUpdating/MovedFromAttributeData.hpp"
+#include "UnityEngine/Scripting/APIUpdating/zzzz__MovedFromAttributeData_def.hpp"
+//  Writing Method size for method: ::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData.Set
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData::*)(bool, ::StringW, ::StringW, ::StringW)>(&::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData::Set)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xb5fb8ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData>(),
+                        {"Set", {}, {::i2c::type_of<bool>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::Scripting::APIUpdating::MovedFromAttributeData::Set(bool  autoUpdateAPI, ::StringW  sourceNamespace, ::StringW  sourceAssembly, ::StringW  sourceClassName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData>(),
+                        {"Set", {}, {::i2c::type_of<bool>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, autoUpdateAPI, sourceNamespace, sourceAssembly, sourceClassName);
+}
+// Ctor Parameters [CppParam { name: "className", ty: "::StringW", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "nameSpace", ty: "::StringW", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "assembly", ty: "::StringW", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "classHasChanged", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "nameSpaceHasChanged", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "assemblyHasChanged", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "autoUdpateAPI", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData::MovedFromAttributeData(::StringW  className, ::StringW  nameSpace, ::StringW  assembly, bool  classHasChanged, bool  nameSpaceHasChanged, bool  assemblyHasChanged, bool  autoUdpateAPI) noexcept  {
+this->className = className;
+this->nameSpace = nameSpace;
+this->assembly = assembly;
+this->classHasChanged = classHasChanged;
+this->nameSpaceHasChanged = nameSpaceHasChanged;
+this->assemblyHasChanged = assemblyHasChanged;
+this->autoUdpateAPI = autoUdpateAPI;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData::MovedFromAttributeData()   {
+}

@@ -1,0 +1,37 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/Utilities/ISavedState.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(ISavedState)
+// Forward declare root types
+namespace UnityEngine::InputSystem::Utilities {
+class ISavedState;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::Utilities::ISavedState*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::Utilities::ISavedState*, "UnityEngine.InputSystem.Utilities", "ISavedState");
+// Dependencies 
+namespace UnityEngine::InputSystem::Utilities {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.Utilities.ISavedState
+class CORDL_TYPE ISavedState {
+public:
+// Declarations
+/// @brief Method RestoreSavedState, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void RestoreSavedState() ;
+
+/// @brief Method StaticDisposeCurrentState, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void StaticDisposeCurrentState() ;
+
+// Ctor Parameters [CppParam { name: "", ty: "ISavedState", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ISavedState(ISavedState const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13927};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::InputSystem::Utilities

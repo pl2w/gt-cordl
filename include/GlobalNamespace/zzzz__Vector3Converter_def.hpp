@@ -1,0 +1,73 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/Vector3Converter.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Newtonsoft/Json/zzzz__JsonConverter_def.hpp"
+CORDL_MODULE_EXPORT(Vector3Converter)
+namespace Newtonsoft::Json {
+class JsonReader;
+}
+namespace Newtonsoft::Json {
+class JsonSerializer;
+}
+namespace Newtonsoft::Json {
+class JsonWriter;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class Vector3Converter;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::Vector3Converter*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::Vector3Converter*, "", "Vector3Converter");
+// Dependencies Newtonsoft.Json.JsonConverter
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: Vector3Converter
+class CORDL_TYPE Vector3Converter : public ::Newtonsoft::Json::JsonConverter {
+public:
+// Declarations
+/// @brief Method CanConvert, addr 0x5b08758, size 0x74, virtual true, abstract: false, final false
+inline bool CanConvert(::System::Type*  objectType) ;
+
+static inline ::GlobalNamespace::Vector3Converter* New_ctor() ;
+
+/// @brief Method ReadJson, addr 0x5b0861c, size 0x13c, virtual true, abstract: false, final false
+inline ::System::Object* ReadJson(::Newtonsoft::Json::JsonReader*  reader, ::System::Type*  objectType, ::System::Object*  existingValue, ::Newtonsoft::Json::JsonSerializer*  serializer) ;
+
+/// @brief Method WriteJson, addr 0x5b084a0, size 0x17c, virtual true, abstract: false, final false
+inline void WriteJson(::Newtonsoft::Json::JsonWriter*  writer, ::System::Object*  value, ::Newtonsoft::Json::JsonSerializer*  serializer) ;
+
+/// @brief Method .ctor, addr 0x5b087cc, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Vector3Converter() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Vector3Converter", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Vector3Converter(Vector3Converter && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Vector3Converter", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Vector3Converter(Vector3Converter const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{3506};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::Vector3Converter) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

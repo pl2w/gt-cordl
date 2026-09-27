@@ -1,0 +1,349 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/Texture2DAtlas.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/Experimental/Rendering/zzzz__GraphicsFormat_def.hpp"
+#include "UnityEngine/zzzz__Vector4_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(Texture2DAtlas)
+namespace GlobalNamespace {
+struct Texture2DAtlas_BlitType;
+}
+namespace System::Collections::Generic {
+template<typename TKey,typename TValue>
+class Dictionary_2;
+}
+namespace System {
+template<typename T1,typename T2>
+struct ValueTuple_2;
+}
+namespace UnityEngine::Experimental::Rendering {
+struct GraphicsFormat;
+}
+namespace UnityEngine::Rendering {
+class AtlasAllocator;
+}
+namespace UnityEngine::Rendering {
+class CommandBuffer;
+}
+namespace UnityEngine::Rendering {
+class RTHandle;
+}
+namespace UnityEngine {
+struct FilterMode;
+}
+namespace UnityEngine {
+class Texture;
+}
+namespace UnityEngine {
+struct Vector2Int;
+}
+namespace UnityEngine {
+struct Vector4;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering {
+class Texture2DAtlas;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::Texture2DAtlas*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::Texture2DAtlas*, "UnityEngine.Rendering", "Texture2DAtlas");
+// Dependencies System.Object, UnityEngine.Experimental.Rendering.GraphicsFormat, UnityEngine.Vector4
+namespace UnityEngine::Rendering {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.Texture2DAtlas
+class CORDL_TYPE Texture2DAtlas : public ::System::Object {
+public:
+// Declarations
+using BlitType = ::GlobalNamespace::Texture2DAtlas_BlitType;
+
+ __declspec(property(get=get_AtlasTexture)) ::UnityEngine::Rendering::RTHandle*  AtlasTexture;
+
+/// @brief Field fullScaleOffset, offset 0xffffffff, size 0x10 
+ __declspec(property(get=getStaticF_fullScaleOffset, put=setStaticF_fullScaleOffset)) ::UnityEngine::Vector4  fullScaleOffset;
+
+/// @brief Field m_AllocationCache, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_AllocationCache, put=__cordl_internal_set_m_AllocationCache)) ::System::Collections::Generic::Dictionary_2<int32_t,::System::ValueTuple_2<::UnityEngine::Vector4,::UnityEngine::Vector2Int>>*  m_AllocationCache;
+
+/// @brief Field m_AtlasAllocator, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_AtlasAllocator, put=__cordl_internal_set_m_AtlasAllocator)) ::UnityEngine::Rendering::AtlasAllocator*  m_AtlasAllocator;
+
+/// @brief Field m_AtlasTexture, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_AtlasTexture, put=__cordl_internal_set_m_AtlasTexture)) ::UnityEngine::Rendering::RTHandle*  m_AtlasTexture;
+
+/// @brief Field m_Format, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_Format, put=__cordl_internal_set_m_Format)) ::UnityEngine::Experimental::Rendering::GraphicsFormat  m_Format;
+
+/// @brief Field m_Height, offset 0x1c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_Height, put=__cordl_internal_set_m_Height)) int32_t  m_Height;
+
+/// @brief Field m_IsAtlasTextureOwner, offset 0x25, size 0x1 
+ __declspec(property(get=__cordl_internal_get_m_IsAtlasTextureOwner, put=__cordl_internal_set_m_IsAtlasTextureOwner)) bool  m_IsAtlasTextureOwner;
+
+/// @brief Field m_IsGPUTextureUpToDate, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_IsGPUTextureUpToDate, put=__cordl_internal_set_m_IsGPUTextureUpToDate)) ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*  m_IsGPUTextureUpToDate;
+
+/// @brief Field m_TextureHashes, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_TextureHashes, put=__cordl_internal_set_m_TextureHashes)) ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*  m_TextureHashes;
+
+/// @brief Field m_UseMipMaps, offset 0x24, size 0x1 
+ __declspec(property(get=__cordl_internal_get_m_UseMipMaps, put=__cordl_internal_set_m_UseMipMaps)) bool  m_UseMipMaps;
+
+/// @brief Field m_Width, offset 0x18, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_Width, put=__cordl_internal_set_m_Width)) int32_t  m_Width;
+
+/// @brief Field s_MaxMipLevelPadding, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_s_MaxMipLevelPadding, put=setStaticF_s_MaxMipLevelPadding)) int32_t  s_MaxMipLevelPadding;
+
+/// @brief Method AddTexture, addr 0xb1850b4, size 0xa0, virtual true, abstract: false, final false
+inline bool AddTexture(::UnityEngine::Rendering::CommandBuffer*  cmd, ::by_ref<::UnityEngine::Vector4>  scaleOffset, ::UnityEngine::Texture*  texture) ;
+
+/// @brief Method AllocateTexture, addr 0xb17c8fc, size 0x1d4, virtual true, abstract: false, final false
+inline bool AllocateTexture(::UnityEngine::Rendering::CommandBuffer*  cmd, ::by_ref<::UnityEngine::Vector4>  scaleOffset, ::UnityEngine::Texture*  texture, int32_t  width, int32_t  height, int32_t  overrideInstanceID) ;
+
+/// @brief Method AllocateTextureWithoutBlit, addr 0xb184700, size 0x188, virtual true, abstract: false, final false
+inline bool AllocateTextureWithoutBlit(int32_t  instanceId, int32_t  width, int32_t  height, ::by_ref<::UnityEngine::Vector4>  scaleOffset) ;
+
+/// @brief Method AllocateTextureWithoutBlit, addr 0xb1846a4, size 0x5c, virtual false, abstract: false, final false
+inline bool AllocateTextureWithoutBlit(::UnityEngine::Texture*  texture, int32_t  width, int32_t  height, ::by_ref<::UnityEngine::Vector4>  scaleOffset) ;
+
+/// @brief Method Blit2DTexture, addr 0xb18399c, size 0x284, virtual false, abstract: false, final false
+inline void Blit2DTexture(::UnityEngine::Rendering::CommandBuffer*  cmd, ::UnityEngine::Vector4  scaleOffset, ::UnityEngine::Texture*  texture, ::UnityEngine::Vector4  sourceScaleOffset, bool  blitMips, ::GlobalNamespace::Texture2DAtlas_BlitType  blitType) ;
+
+/// @brief Method BlitCubeTexture2D, addr 0xb184524, size 0x180, virtual true, abstract: false, final false
+inline void BlitCubeTexture2D(::UnityEngine::Rendering::CommandBuffer*  cmd, ::UnityEngine::Vector4  scaleOffset, ::UnityEngine::Texture*  texture, bool  blitMips, int32_t  overrideInstanceID) ;
+
+/// @brief Method BlitOctahedralTexture, addr 0xb184518, size 0xc, virtual true, abstract: false, final false
+inline void BlitOctahedralTexture(::UnityEngine::Rendering::CommandBuffer*  cmd, ::UnityEngine::Vector4  scaleOffset, ::UnityEngine::Texture*  texture, ::UnityEngine::Vector4  sourceScaleOffset, bool  blitMips, int32_t  overrideInstanceID) ;
+
+/// @brief Method BlitTexture, addr 0xb18437c, size 0x19c, virtual true, abstract: false, final false
+inline void BlitTexture(::UnityEngine::Rendering::CommandBuffer*  cmd, ::UnityEngine::Vector4  scaleOffset, ::UnityEngine::Texture*  texture, ::UnityEngine::Vector4  sourceScaleOffset, bool  blitMips, int32_t  overrideInstanceID) ;
+
+/// @brief Method ClearTarget, addr 0xb18339c, size 0x1b8, virtual false, abstract: false, final false
+inline void ClearTarget(::UnityEngine::Rendering::CommandBuffer*  cmd) ;
+
+/// @brief Method EnsureTextureSlot, addr 0xb185384, size 0x170, virtual false, abstract: false, final false
+inline bool EnsureTextureSlot(::by_ref<bool>  isUploadNeeded, ::by_ref<::UnityEngine::Vector4>  scaleBias, int32_t  key, int32_t  width, int32_t  height) ;
+
+/// @brief Method GetCachedTextureSize, addr 0xb17cd74, size 0x74, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector2Int GetCachedTextureSize(int32_t  id) ;
+
+/// @brief Method GetTextureHash, addr 0xb184888, size 0x80, virtual false, abstract: false, final false
+inline int32_t GetTextureHash(::UnityEngine::Texture*  textureA, ::UnityEngine::Texture*  textureB) ;
+
+/// @brief Method GetTextureID, addr 0xb17cbbc, size 0x18, virtual false, abstract: false, final false
+inline int32_t GetTextureID(::UnityEngine::Texture*  texture) ;
+
+/// @brief Method GetTextureID, addr 0xb17cd2c, size 0x48, virtual false, abstract: false, final false
+inline int32_t GetTextureID(::UnityEngine::Texture*  textureA, ::UnityEngine::Texture*  textureB) ;
+
+/// @brief Method GetTextureMipmapCount, addr 0xb17b6bc, size 0x8c, virtual false, abstract: false, final false
+inline int32_t GetTextureMipmapCount(int32_t  width, int32_t  height) ;
+
+/// @brief Method Is2D, addr 0xb17c260, size 0xcc, virtual false, abstract: false, final false
+inline bool Is2D(::UnityEngine::Texture*  texture) ;
+
+/// @brief Method IsCached, addr 0xb17cde8, size 0x88, virtual false, abstract: false, final false
+inline bool IsCached(::by_ref<::UnityEngine::Vector4>  scaleOffset, int32_t  id) ;
+
+/// @brief Method IsCached, addr 0xb18493c, size 0x3c, virtual false, abstract: false, final false
+inline bool IsCached(::by_ref<::UnityEngine::Vector4>  scaleOffset, ::UnityEngine::Texture*  texture) ;
+
+/// @brief Method IsCached, addr 0xb184908, size 0x34, virtual false, abstract: false, final false
+inline bool IsCached(::by_ref<::UnityEngine::Vector4>  scaleOffset, ::UnityEngine::Texture*  textureA, ::UnityEngine::Texture*  textureB) ;
+
+/// @brief Method IsSingleChannelBlit, addr 0xb183754, size 0x248, virtual false, abstract: false, final false
+inline bool IsSingleChannelBlit(::UnityEngine::Texture*  source, ::UnityEngine::Texture*  destination) ;
+
+/// @brief Method MarkGPUTextureInvalid, addr 0xb184320, size 0x5c, virtual false, abstract: false, final false
+inline void MarkGPUTextureInvalid(int32_t  instanceId) ;
+
+/// @brief Method MarkGPUTextureValid, addr 0xb17c32c, size 0x70, virtual false, abstract: false, final false
+inline void MarkGPUTextureValid(int32_t  instanceId, bool  mipAreValid) ;
+
+/// @brief Method NeedsUpdate, addr 0xb184bec, size 0xbc, virtual true, abstract: false, final false
+inline bool NeedsUpdate(int32_t  id, int32_t  updateCount, bool  needMips) ;
+
+/// @brief Method NeedsUpdate, addr 0xb184978, size 0x274, virtual true, abstract: false, final false
+inline bool NeedsUpdate(::UnityEngine::Texture*  texture, bool  needMips) ;
+
+/// @brief Method NeedsUpdate, addr 0xb184ca8, size 0x40c, virtual true, abstract: false, final false
+inline bool NeedsUpdate(::UnityEngine::Texture*  textureA, ::UnityEngine::Texture*  textureB, bool  needMips) ;
+
+static inline ::UnityEngine::Rendering::Texture2DAtlas* New_ctor(int32_t  width, int32_t  height, ::UnityEngine::Experimental::Rendering::GraphicsFormat  format, ::UnityEngine::FilterMode  filterMode, bool  powerOfTwoPadding, ::StringW  name, bool  useMipMap) ;
+
+/// @brief Method Release, addr 0xb183328, size 0x74, virtual false, abstract: false, final false
+inline void Release() ;
+
+/// @brief Method ResetAllocator, addr 0xb17d2d0, size 0x80, virtual false, abstract: false, final false
+inline void ResetAllocator() ;
+
+/// @brief Method UpdateTexture, addr 0xb185154, size 0x17c, virtual true, abstract: false, final false
+inline bool UpdateTexture(::UnityEngine::Rendering::CommandBuffer*  cmd, ::UnityEngine::Texture*  oldTexture, ::UnityEngine::Texture*  newTexture, ::by_ref<::UnityEngine::Vector4>  scaleOffset, ::UnityEngine::Vector4  sourceScaleOffset, bool  updateIfNeeded, bool  blitMips) ;
+
+/// @brief Method UpdateTexture, addr 0xb1852d0, size 0xb4, virtual true, abstract: false, final false
+inline bool UpdateTexture(::UnityEngine::Rendering::CommandBuffer*  cmd, ::UnityEngine::Texture*  texture, ::by_ref<::UnityEngine::Vector4>  scaleOffset, bool  updateIfNeeded, bool  blitMips) ;
+
+constexpr ::System::Collections::Generic::Dictionary_2<int32_t,::System::ValueTuple_2<::UnityEngine::Vector4,::UnityEngine::Vector2Int>>* const& __cordl_internal_get_m_AllocationCache() const;
+
+constexpr ::System::Collections::Generic::Dictionary_2<int32_t,::System::ValueTuple_2<::UnityEngine::Vector4,::UnityEngine::Vector2Int>>*& __cordl_internal_get_m_AllocationCache() ;
+
+constexpr ::UnityEngine::Rendering::AtlasAllocator* const& __cordl_internal_get_m_AtlasAllocator() const;
+
+constexpr ::UnityEngine::Rendering::AtlasAllocator*& __cordl_internal_get_m_AtlasAllocator() ;
+
+constexpr ::UnityEngine::Rendering::RTHandle* const& __cordl_internal_get_m_AtlasTexture() const;
+
+constexpr ::UnityEngine::Rendering::RTHandle*& __cordl_internal_get_m_AtlasTexture() ;
+
+constexpr ::UnityEngine::Experimental::Rendering::GraphicsFormat const& __cordl_internal_get_m_Format() const;
+
+constexpr ::UnityEngine::Experimental::Rendering::GraphicsFormat& __cordl_internal_get_m_Format() ;
+
+constexpr int32_t const& __cordl_internal_get_m_Height() const;
+
+constexpr int32_t& __cordl_internal_get_m_Height() ;
+
+constexpr bool const& __cordl_internal_get_m_IsAtlasTextureOwner() const;
+
+constexpr bool& __cordl_internal_get_m_IsAtlasTextureOwner() ;
+
+constexpr ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>* const& __cordl_internal_get_m_IsGPUTextureUpToDate() const;
+
+constexpr ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*& __cordl_internal_get_m_IsGPUTextureUpToDate() ;
+
+constexpr ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>* const& __cordl_internal_get_m_TextureHashes() const;
+
+constexpr ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*& __cordl_internal_get_m_TextureHashes() ;
+
+constexpr bool const& __cordl_internal_get_m_UseMipMaps() const;
+
+constexpr bool& __cordl_internal_get_m_UseMipMaps() ;
+
+constexpr int32_t const& __cordl_internal_get_m_Width() const;
+
+constexpr int32_t& __cordl_internal_get_m_Width() ;
+
+constexpr void __cordl_internal_set_m_AllocationCache(::System::Collections::Generic::Dictionary_2<int32_t,::System::ValueTuple_2<::UnityEngine::Vector4,::UnityEngine::Vector2Int>>*  value) ;
+
+constexpr void __cordl_internal_set_m_AtlasAllocator(::UnityEngine::Rendering::AtlasAllocator*  value) ;
+
+constexpr void __cordl_internal_set_m_AtlasTexture(::UnityEngine::Rendering::RTHandle*  value) ;
+
+constexpr void __cordl_internal_set_m_Format(::UnityEngine::Experimental::Rendering::GraphicsFormat  value) ;
+
+constexpr void __cordl_internal_set_m_Height(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_IsAtlasTextureOwner(bool  value) ;
+
+constexpr void __cordl_internal_set_m_IsGPUTextureUpToDate(::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*  value) ;
+
+constexpr void __cordl_internal_set_m_TextureHashes(::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*  value) ;
+
+constexpr void __cordl_internal_set_m_UseMipMaps(bool  value) ;
+
+constexpr void __cordl_internal_set_m_Width(int32_t  value) ;
+
+/// @brief Method .ctor, addr 0xb17ae78, size 0x2b4, virtual false, abstract: false, final false
+inline void _ctor(int32_t  width, int32_t  height, ::UnityEngine::Experimental::Rendering::GraphicsFormat  format, ::UnityEngine::FilterMode  filterMode, bool  powerOfTwoPadding, ::StringW  name, bool  useMipMap) ;
+
+static inline ::UnityEngine::Vector4 getStaticF_fullScaleOffset() ;
+
+static inline int32_t getStaticF_s_MaxMipLevelPadding() ;
+
+/// @brief Method get_AtlasTexture, addr 0xb183320, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::RTHandle* get_AtlasTexture() ;
+
+/// @brief Method get_maxMipLevelPadding, addr 0xb1832c8, size 0x58, virtual false, abstract: false, final false
+static inline int32_t get_maxMipLevelPadding() ;
+
+static inline void setStaticF_fullScaleOffset(::UnityEngine::Vector4  value) ;
+
+static inline void setStaticF_s_MaxMipLevelPadding(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Texture2DAtlas() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Texture2DAtlas", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Texture2DAtlas(Texture2DAtlas && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Texture2DAtlas", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Texture2DAtlas(Texture2DAtlas const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{16978};
+
+/// @brief Field kGPUTexInvalid offset 0xffffffff size 0x4
+static constexpr int32_t  kGPUTexInvalid{static_cast<int32_t>(0x0)};
+
+/// @brief Field kGPUTexValidMip0 offset 0xffffffff size 0x4
+static constexpr int32_t  kGPUTexValidMip0{static_cast<int32_t>(0x1)};
+
+/// @brief Field kGPUTexValidMipAll offset 0xffffffff size 0x4
+static constexpr int32_t  kGPUTexValidMipAll{static_cast<int32_t>(0x2)};
+
+/// @brief Field m_AtlasTexture, offset: 0x10, size: 0x8, def value: None
+ ::UnityEngine::Rendering::RTHandle*  ___m_AtlasTexture;
+
+/// @brief Field m_Width, offset: 0x18, size: 0x4, def value: None
+ int32_t  ___m_Width;
+
+/// @brief Field m_Height, offset: 0x1c, size: 0x4, def value: None
+ int32_t  ___m_Height;
+
+/// @brief Field m_Format, offset: 0x20, size: 0x4, def value: None
+ ::UnityEngine::Experimental::Rendering::GraphicsFormat  ___m_Format;
+
+/// @brief Field m_UseMipMaps, offset: 0x24, size: 0x1, def value: None
+ bool  ___m_UseMipMaps;
+
+/// @brief Field m_IsAtlasTextureOwner, offset: 0x25, size: 0x1, def value: None
+ bool  ___m_IsAtlasTextureOwner;
+
+/// @brief Field m_AtlasAllocator, offset: 0x28, size: 0x8, def value: None
+ ::UnityEngine::Rendering::AtlasAllocator*  ___m_AtlasAllocator;
+
+/// [TupleElementNames(new[] { "scaleOffset", "size" })]
+/// @brief Field m_AllocationCache, offset: 0x30, size: 0x8, def value: None
+ ::System::Collections::Generic::Dictionary_2<int32_t,::System::ValueTuple_2<::UnityEngine::Vector4,::UnityEngine::Vector2Int>>*  ___m_AllocationCache;
+
+/// @brief Field m_IsGPUTextureUpToDate, offset: 0x38, size: 0x8, def value: None
+ ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*  ___m_IsGPUTextureUpToDate;
+
+/// @brief Field m_TextureHashes, offset: 0x40, size: 0x8, def value: None
+ ::System::Collections::Generic::Dictionary_2<int32_t,int32_t>*  ___m_TextureHashes;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_AtlasTexture) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_Width) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_Height) == 0x1c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_Format) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_UseMipMaps) == 0x24, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_IsAtlasTextureOwner) == 0x25, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_AtlasAllocator) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_AllocationCache) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_IsGPUTextureUpToDate) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Texture2DAtlas, ___m_TextureHashes) == 0x40, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::Texture2DAtlas) == 0x48, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

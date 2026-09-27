@@ -1,0 +1,118 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/U2D/SpriteAtlas.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(SpriteAtlas)
+namespace System {
+struct IntPtr;
+}
+namespace UnityEngine::Bindings {
+struct ManagedSpanWrapper;
+}
+namespace UnityEngine {
+class Sprite;
+}
+// Forward declare root types
+namespace UnityEngine::U2D {
+class SpriteAtlas;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::U2D::SpriteAtlas*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::U2D::SpriteAtlas*, "UnityEngine.U2D", "SpriteAtlas");
+// [NativeType(Header = "Runtime/2D/SpriteAtlas/SpriteAtlas.h")]
+// [NativeHeader("Runtime/Graphics/SpriteFrame.h")]
+// Dependencies UnityEngine.Object
+namespace UnityEngine::U2D {
+// Is value type: false
+// CS Name: UnityEngine.U2D.SpriteAtlas
+class CORDL_TYPE SpriteAtlas : public ::UnityEngine::Object {
+public:
+// Declarations
+ __declspec(property(get=get_isVariant)) bool  isVariant;
+
+ __declspec(property(get=get_spriteCount)) int32_t  spriteCount;
+
+ __declspec(property(get=get_tag)) ::StringW  tag;
+
+/// @brief Method CanBindTo, addr 0xb6305c4, size 0xe4, virtual false, abstract: false, final false
+inline bool CanBindTo(/* [NotNull] */ ::UnityEngine::Sprite*  sprite) ;
+
+/// @brief Method CanBindTo_Injected, addr 0xb6306a8, size 0x44, virtual false, abstract: false, final false
+static inline bool CanBindTo_Injected(::System::IntPtr  _unity_self, ::System::IntPtr  sprite) ;
+
+/// @brief Method GetSprite, addr 0xb6306ec, size 0x218, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Sprite> GetSprite(::StringW  name) ;
+
+/// @brief Method GetSprite_Injected, addr 0xb630904, size 0x44, virtual false, abstract: false, final false
+static inline ::System::IntPtr GetSprite_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name) ;
+
+/// @brief Method GetSprites, addr 0xb630948, size 0x4, virtual false, abstract: false, final false
+inline int32_t GetSprites(::ArrayW<::UnityEngine::Sprite*>  sprites) ;
+
+/// @brief Method GetSprites, addr 0xb6309cc, size 0x4, virtual false, abstract: false, final false
+inline int32_t GetSprites(::ArrayW<::UnityEngine::Sprite*>  sprites, ::StringW  name) ;
+
+/// @brief Method GetSpritesScripting, addr 0xb63094c, size 0x80, virtual false, abstract: false, final false
+inline int32_t GetSpritesScripting(/* [Unmarshalled] */ ::ArrayW<::UnityEngine::Sprite*>  sprites) ;
+
+/// @brief Method GetSpritesScripting_Injected, addr 0xb630b88, size 0x44, virtual false, abstract: false, final false
+static inline int32_t GetSpritesScripting_Injected(::System::IntPtr  _unity_self, ::ArrayW<::UnityEngine::Sprite*>  sprites) ;
+
+/// @brief Method GetSpritesWithNameScripting, addr 0xb6309d0, size 0x1b8, virtual false, abstract: false, final false
+inline int32_t GetSpritesWithNameScripting(/* [Unmarshalled] */ ::ArrayW<::UnityEngine::Sprite*>  sprites, ::StringW  name) ;
+
+/// @brief Method GetSpritesWithNameScripting_Injected, addr 0xb630bcc, size 0x54, virtual false, abstract: false, final false
+static inline int32_t GetSpritesWithNameScripting_Injected(::System::IntPtr  _unity_self, ::ArrayW<::UnityEngine::Sprite*>  sprites, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name) ;
+
+static inline ::UnityEngine::U2D::SpriteAtlas* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb630c20, size 0x58, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [NativeMethod("IsVariant")]
+/// @brief Method get_isVariant, addr 0xb6302ec, size 0x78, virtual false, abstract: false, final false
+inline bool get_isVariant() ;
+
+/// @brief Method get_isVariant_Injected, addr 0xb630364, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_isVariant_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_spriteCount, addr 0xb630510, size 0x78, virtual false, abstract: false, final false
+inline int32_t get_spriteCount() ;
+
+/// @brief Method get_spriteCount_Injected, addr 0xb630588, size 0x3c, virtual false, abstract: false, final false
+static inline int32_t get_spriteCount_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_tag, addr 0xb6303a0, size 0x12c, virtual false, abstract: false, final false
+inline ::StringW get_tag() ;
+
+/// @brief Method get_tag_Injected, addr 0xb6304cc, size 0x44, virtual false, abstract: false, final false
+static inline void get_tag_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  ret) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SpriteAtlas() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SpriteAtlas", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SpriteAtlas(SpriteAtlas && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SpriteAtlas", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SpriteAtlas(SpriteAtlas const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15672};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::U2D::SpriteAtlas) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine::U2D

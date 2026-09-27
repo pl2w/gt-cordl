@@ -1,0 +1,70 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/BetterDayNightManager_RPC.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(BetterDayNightManager_RPC)
+// Forward declare root types
+namespace GlobalNamespace {
+struct BetterDayNightManager_RPC;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::BetterDayNightManager_RPC);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::BetterDayNightManager_RPC, "", "BetterDayNightManager/RPC");
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: BetterDayNightManager/RPC
+struct CORDL_TYPE BetterDayNightManager_RPC {
+public:
+// Declarations
+using __CORDL_BACKING_ENUM_TYPE = int32_t;
+
+/// @brief Nested struct __BetterDayNightManager_RPC_Unwrapped
+enum struct __BetterDayNightManager_RPC_Unwrapped : int32_t {
+__E_ChangeFixedWeather = static_cast<int32_t>(0x0),
+__E_ChangeTimeOfDay = static_cast<int32_t>(0x1),
+};
+
+/// @brief Conversion into unwrapped enum value
+constexpr operator __BetterDayNightManager_RPC_Unwrapped () const noexcept {
+return static_cast<__BetterDayNightManager_RPC_Unwrapped>(this->value__);
+}
+
+/// @brief Conversion into unwrapped enum value
+constexpr explicit operator int32_t () const noexcept {
+return static_cast<int32_t>(this->value__);
+}
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr BetterDayNightManager_RPC() ;
+
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr BetterDayNightManager_RPC(int32_t  value__) noexcept;
+
+/// @brief Field ChangeFixedWeather value: I32(0)
+static ::GlobalNamespace::BetterDayNightManager_RPC const ChangeFixedWeather;
+
+/// @brief Field ChangeTimeOfDay value: I32(1)
+static ::GlobalNamespace::BetterDayNightManager_RPC const ChangeTimeOfDay;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{2582};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field value__, offset: 0x0, size: 0x4, def value: None
+ int32_t  value__;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::BetterDayNightManager_RPC, value__) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::BetterDayNightManager_RPC) == 0x4, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

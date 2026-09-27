@@ -1,0 +1,399 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Matrix4x4.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cmath>
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(Matrix4x4)
+namespace System {
+template<typename T>
+class IEquatable_1;
+}
+namespace System {
+class IFormatProvider;
+}
+namespace System {
+class IFormattable;
+}
+namespace System {
+class Object;
+}
+namespace UnityEngine {
+struct FrustumPlanes;
+}
+namespace UnityEngine {
+struct Quaternion;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+namespace UnityEngine {
+struct Vector4;
+}
+// Forward declare root types
+namespace UnityEngine {
+struct Matrix4x4;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::Matrix4x4);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Matrix4x4, "UnityEngine", "Matrix4x4");
+// [DefaultMember("Item")]
+// [NativeClass("Matrix4x4f")]
+// [Il2CppEagerStaticClassConstruction]
+// [NativeHeader("Runtime/Math/MathScripting.h")]
+// [NativeType(Header = "Runtime/Math/Matrix4x4.h")]
+// [RequiredByNativeCode(Optional = true, GenerateProxy = true)]
+// Dependencies 
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.Matrix4x4
+struct CORDL_TYPE Matrix4x4 {
+public:
+// Declarations
+ __declspec(property(get=get_Item, put=set_Item)) float_t  Item[];
+
+ __declspec(property(get=get_Item, put=set_Item)) float_t  Item[];
+
+ __declspec(property(get=get_decomposeProjection)) ::UnityEngine::FrustumPlanes  decomposeProjection;
+
+/// @brief Field identityMatrix, offset 0xffffffff, size 0x40 
+ __declspec(property(get=getStaticF_identityMatrix, put=setStaticF_identityMatrix)) ::UnityEngine::Matrix4x4  identityMatrix;
+
+ __declspec(property(get=get_inverse)) ::UnityEngine::Matrix4x4  inverse;
+
+ __declspec(property(get=get_isIdentity)) bool  isIdentity;
+
+ __declspec(property(get=get_lossyScale)) ::UnityEngine::Vector3  lossyScale;
+
+ __declspec(property(get=get_rotation)) ::UnityEngine::Quaternion  rotation;
+
+ __declspec(property(get=get_transpose)) ::UnityEngine::Matrix4x4  transpose;
+
+/// @brief Field zeroMatrix, offset 0xffffffff, size 0x40 
+ __declspec(property(get=getStaticF_zeroMatrix, put=setStaticF_zeroMatrix)) ::UnityEngine::Matrix4x4  zeroMatrix;
+
+/// @brief Convert operator to "::System::IEquatable_1<::UnityEngine::Matrix4x4>"
+constexpr operator  ::System::IEquatable_1<::UnityEngine::Matrix4x4>*() ;
+
+/// @brief Convert operator to "::System::IFormattable"
+constexpr operator  ::System::IFormattable*() ;
+
+/// [ThreadSafe]
+/// @brief Method DecomposeProjection, addr 0xb5c9068, size 0x68, virtual false, abstract: false, final false
+inline ::UnityEngine::FrustumPlanes DecomposeProjection() ;
+
+/// @brief Method DecomposeProjection_Injected, addr 0xb5c90d0, size 0x44, virtual false, abstract: false, final false
+static inline void DecomposeProjection_Injected(::by_ref<::UnityEngine::Matrix4x4>  _unity_self, ::by_ref<::UnityEngine::FrustumPlanes>  ret) ;
+
+/// @brief Method Equals, addr 0xb5c9eb0, size 0xf8, virtual true, abstract: false, final false
+inline bool Equals(::System::Object*  other) ;
+
+/// @brief Method Equals, addr 0xb5c9fa8, size 0x9c, virtual true, abstract: false, final true
+inline bool Equals(::UnityEngine::Matrix4x4  other) ;
+
+/// @brief Method Frustum, addr 0xb5c9a78, size 0xb0, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Frustum(::UnityEngine::FrustumPlanes  fp) ;
+
+/// [FreeFunction("MatrixScripting::Frustum", IsThreadSafe = true)]
+/// @brief Method Frustum, addr 0xb5c9948, size 0xac, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Frustum(float_t  left, float_t  right, float_t  bottom, float_t  top, float_t  zNear, float_t  zFar) ;
+
+/// @brief Method Frustum_Injected, addr 0xb5c99f4, size 0x84, virtual false, abstract: false, final false
+static inline void Frustum_Injected(float_t  left, float_t  right, float_t  bottom, float_t  top, float_t  zNear, float_t  zFar, ::by_ref<::UnityEngine::Matrix4x4>  ret) ;
+
+/// @brief Method GetColumn, addr 0xb5c9de0, size 0xd0, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 GetColumn(int32_t  index) ;
+
+/// @brief Method GetHashCode, addr 0xb5c9c40, size 0x1a0, virtual true, abstract: false, final false
+inline int32_t GetHashCode() ;
+
+/// [ThreadSafe]
+/// @brief Method GetLossyScale, addr 0xb5c8f8c, size 0x5c, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector3 GetLossyScale() ;
+
+/// @brief Method GetLossyScale_Injected, addr 0xb5c8fe8, size 0x44, virtual false, abstract: false, final false
+static inline void GetLossyScale_Injected(::by_ref<::UnityEngine::Matrix4x4>  _unity_self, ::by_ref<::UnityEngine::Vector3>  ret) ;
+
+/// @brief Method GetPosition, addr 0xb5ca318, size 0xc, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector3 GetPosition() ;
+
+/// [ThreadSafe]
+/// @brief Method GetRotation, addr 0xb5c8ef0, size 0x58, virtual false, abstract: false, final false
+inline ::UnityEngine::Quaternion GetRotation() ;
+
+/// @brief Method GetRotation_Injected, addr 0xb5c8f48, size 0x44, virtual false, abstract: false, final false
+static inline void GetRotation_Injected(::by_ref<::UnityEngine::Matrix4x4>  _unity_self, ::by_ref<::UnityEngine::Quaternion>  ret) ;
+
+/// @brief Method GetRow, addr 0xb5ca248, size 0xd0, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 GetRow(int32_t  index) ;
+
+/// [FreeFunction("MatrixScripting::Inverse", IsThreadSafe = true)]
+/// @brief Method Inverse, addr 0xb5c93bc, size 0x6c, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Inverse(::UnityEngine::Matrix4x4  m) ;
+
+/// [FreeFunction("MatrixScripting::Inverse3DAffine", IsThreadSafe = true)]
+/// @brief Method Inverse3DAffine, addr 0xb5c9334, size 0x44, virtual false, abstract: false, final false
+static inline bool Inverse3DAffine(::UnityEngine::Matrix4x4  input, ::by_ref<::UnityEngine::Matrix4x4>  result) ;
+
+/// @brief Method Inverse3DAffine_Injected, addr 0xb5c9378, size 0x44, virtual false, abstract: false, final false
+static inline bool Inverse3DAffine_Injected(::by_ref<::UnityEngine::Matrix4x4>  input, ::by_ref<::UnityEngine::Matrix4x4>  result) ;
+
+/// @brief Method Inverse_Injected, addr 0xb5c9428, size 0x44, virtual false, abstract: false, final false
+static inline void Inverse_Injected(::by_ref<::UnityEngine::Matrix4x4>  m, ::by_ref<::UnityEngine::Matrix4x4>  ret) ;
+
+/// [ThreadSafe]
+/// @brief Method IsIdentity, addr 0xb5c902c, size 0x3c, virtual false, abstract: false, final false
+inline bool IsIdentity() ;
+
+/// [FreeFunction("MatrixScripting::LookAt", IsThreadSafe = true)]
+/// @brief Method LookAt, addr 0xb5c985c, size 0x90, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 LookAt(::UnityEngine::Vector3  from, ::UnityEngine::Vector3  to, ::UnityEngine::Vector3  up) ;
+
+/// @brief Method LookAt_Injected, addr 0xb5c98ec, size 0x5c, virtual false, abstract: false, final false
+static inline void LookAt_Injected(::by_ref<::UnityEngine::Vector3>  from, ::by_ref<::UnityEngine::Vector3>  to, ::by_ref<::UnityEngine::Vector3>  up, ::by_ref<::UnityEngine::Matrix4x4>  ret) ;
+
+/// @brief Method MultiplyPoint, addr 0xb5ca39c, size 0x8c, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector3 MultiplyPoint(::UnityEngine::Vector3  point) ;
+
+/// @brief Method MultiplyPoint3x4, addr 0xb5ca428, size 0x58, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector3 MultiplyPoint3x4(::UnityEngine::Vector3  point) ;
+
+/// @brief Method MultiplyVector, addr 0xb5ca480, size 0x48, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector3 MultiplyVector(::UnityEngine::Vector3  vector) ;
+
+/// [FreeFunction("MatrixScripting::Ortho", IsThreadSafe = true)]
+/// @brief Method Ortho, addr 0xb5c962c, size 0xac, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Ortho(float_t  left, float_t  right, float_t  bottom, float_t  top, float_t  zNear, float_t  zFar) ;
+
+/// @brief Method Ortho_Injected, addr 0xb5c96d8, size 0x84, virtual false, abstract: false, final false
+static inline void Ortho_Injected(float_t  left, float_t  right, float_t  bottom, float_t  top, float_t  zNear, float_t  zFar, ::by_ref<::UnityEngine::Matrix4x4>  ret) ;
+
+/// [FreeFunction("MatrixScripting::Perspective", IsThreadSafe = true)]
+/// @brief Method Perspective, addr 0xb5c975c, size 0x94, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Perspective(float_t  fov, float_t  aspect, float_t  zNear, float_t  zFar) ;
+
+/// @brief Method Perspective_Injected, addr 0xb5c97f0, size 0x6c, virtual false, abstract: false, final false
+static inline void Perspective_Injected(float_t  fov, float_t  aspect, float_t  zNear, float_t  zFar, ::by_ref<::UnityEngine::Matrix4x4>  ret) ;
+
+/// @brief Method Rotate, addr 0xb5ca528, size 0x98, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Rotate(::UnityEngine::Quaternion  q) ;
+
+/// @brief Method Scale, addr 0xb5ca4c8, size 0x2c, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Scale(::UnityEngine::Vector3  vector) ;
+
+/// @brief Method SetColumn, addr 0xb5ca324, size 0x78, virtual false, abstract: false, final false
+inline void SetColumn(int32_t  index, ::UnityEngine::Vector4  column) ;
+
+/// @brief Method SetTRS, addr 0xb5c92f4, size 0x40, virtual false, abstract: false, final false
+inline void SetTRS(::UnityEngine::Vector3  pos, ::UnityEngine::Quaternion  q, ::UnityEngine::Vector3  s) ;
+
+/// [FreeFunction("MatrixScripting::TRS", IsThreadSafe = true)]
+/// @brief Method TRS, addr 0xb5c9208, size 0x90, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 TRS(::UnityEngine::Vector3  pos, ::UnityEngine::Quaternion  q, ::UnityEngine::Vector3  s) ;
+
+/// @brief Method TRS_Injected, addr 0xb5c9298, size 0x5c, virtual false, abstract: false, final false
+static inline void TRS_Injected(::by_ref<::UnityEngine::Vector3>  pos, ::by_ref<::UnityEngine::Quaternion>  q, ::by_ref<::UnityEngine::Vector3>  s, ::by_ref<::UnityEngine::Matrix4x4>  ret) ;
+
+/// @brief Method ToString, addr 0xb5ca670, size 0x10, virtual true, abstract: false, final false
+inline ::StringW ToString() ;
+
+/// @brief Method ToString, addr 0xb5ca680, size 0x5c8, virtual true, abstract: false, final true
+inline ::StringW ToString(::StringW  format, ::System::IFormatProvider*  formatProvider) ;
+
+/// @brief Method Translate, addr 0xb5ca4f4, size 0x34, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Translate(::UnityEngine::Vector3  vector) ;
+
+/// [FreeFunction("MatrixScripting::Transpose", IsThreadSafe = true)]
+/// @brief Method Transpose, addr 0xb5c94f4, size 0x6c, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 Transpose(::UnityEngine::Matrix4x4  m) ;
+
+/// @brief Method Transpose_Injected, addr 0xb5c9560, size 0x44, virtual false, abstract: false, final false
+static inline void Transpose_Injected(::by_ref<::UnityEngine::Matrix4x4>  m, ::by_ref<::UnityEngine::Matrix4x4>  ret) ;
+
+/// [ThreadSafe]
+/// @brief Method ValidTRS, addr 0xb5c91cc, size 0x3c, virtual false, abstract: false, final false
+inline bool ValidTRS() ;
+
+/// @brief Method .ctor, addr 0xb5c9b28, size 0x1c, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Vector4  column0, ::UnityEngine::Vector4  column1, ::UnityEngine::Vector4  column2, ::UnityEngine::Vector4  column3) ;
+
+static inline ::UnityEngine::Matrix4x4 getStaticF_identityMatrix() ;
+
+static inline ::UnityEngine::Matrix4x4 getStaticF_zeroMatrix() ;
+
+/// @brief Method get_Item, addr 0xb5c41d0, size 0xec, virtual false, abstract: false, final false
+inline float_t get_Item(int32_t  index) ;
+
+/// @brief Method get_Item, addr 0xb5c9b44, size 0x8, virtual false, abstract: false, final false
+inline float_t get_Item(int32_t  row, int32_t  column) ;
+
+/// @brief Method get_decomposeProjection, addr 0xb5c9158, size 0x74, virtual false, abstract: false, final false
+inline ::UnityEngine::FrustumPlanes get_decomposeProjection() ;
+
+/// @brief Method get_identity, addr 0xb5ca618, size 0x58, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 get_identity() ;
+
+/// @brief Method get_inverse, addr 0xb5c946c, size 0x88, virtual false, abstract: false, final false
+inline ::UnityEngine::Matrix4x4 get_inverse() ;
+
+/// @brief Method get_isIdentity, addr 0xb5c911c, size 0x3c, virtual false, abstract: false, final false
+inline bool get_isIdentity() ;
+
+/// @brief Method get_lossyScale, addr 0xb5c9118, size 0x4, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector3 get_lossyScale() ;
+
+/// @brief Method get_rotation, addr 0xb5c9114, size 0x4, virtual false, abstract: false, final false
+inline ::UnityEngine::Quaternion get_rotation() ;
+
+/// @brief Method get_transpose, addr 0xb5c95a4, size 0x88, virtual false, abstract: false, final false
+inline ::UnityEngine::Matrix4x4 get_transpose() ;
+
+/// @brief Method get_zero, addr 0xb5ca5c0, size 0x58, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 get_zero() ;
+
+/// @brief Convert to "::System::IEquatable_1<::UnityEngine::Matrix4x4>"
+constexpr ::System::IEquatable_1<::UnityEngine::Matrix4x4>* i___System__IEquatable_1___UnityEngine__Matrix4x4_() ;
+
+/// @brief Convert to "::System::IFormattable"
+constexpr ::System::IFormattable* i___System__IFormattable() ;
+
+/// @brief Method op_Equality, addr 0xb5ca11c, size 0xe4, virtual false, abstract: false, final false
+static inline bool op_Equality(::UnityEngine::Matrix4x4  lhs, ::UnityEngine::Matrix4x4  rhs) ;
+
+/// @brief Method op_Inequality, addr 0xb5ca200, size 0x48, virtual false, abstract: false, final false
+static inline bool op_Inequality(::UnityEngine::Matrix4x4  lhs, ::UnityEngine::Matrix4x4  rhs) ;
+
+/// @brief Method op_Multiply, addr 0xb5ca044, size 0xa4, virtual false, abstract: false, final false
+static inline ::UnityEngine::Matrix4x4 op_Multiply(::UnityEngine::Matrix4x4  lhs, ::UnityEngine::Matrix4x4  rhs) ;
+
+/// @brief Method op_Multiply, addr 0xb5ca0e8, size 0x34, virtual false, abstract: false, final false
+static inline ::UnityEngine::Vector4 op_Multiply(::UnityEngine::Matrix4x4  lhs, ::UnityEngine::Vector4  vector) ;
+
+static inline void setStaticF_identityMatrix(::UnityEngine::Matrix4x4  value) ;
+
+static inline void setStaticF_zeroMatrix(::UnityEngine::Matrix4x4  value) ;
+
+/// @brief Method set_Item, addr 0xb5c9b54, size 0xec, virtual false, abstract: false, final false
+inline void set_Item(int32_t  index, float_t  value) ;
+
+/// @brief Method set_Item, addr 0xb5c9b4c, size 0x8, virtual false, abstract: false, final false
+inline void set_Item(int32_t  row, int32_t  column, float_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr Matrix4x4() ;
+
+// Ctor Parameters [CppParam { name: "m00", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m10", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m20", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m30", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m01", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m11", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m21", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m31", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m02", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m12", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m22", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m32", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m03", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m13", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m23", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m33", ty: "float_t", modifiers: "", def_value: None, comment: None }]
+constexpr Matrix4x4(float_t  m00, float_t  m10, float_t  m20, float_t  m30, float_t  m01, float_t  m11, float_t  m21, float_t  m31, float_t  m02, float_t  m12, float_t  m22, float_t  m32, float_t  m03, float_t  m13, float_t  m23, float_t  m33) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14983};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x40};
+
+/// [NativeName("m_Data[0]")]
+/// @brief Field m00, offset: 0x0, size: 0x4, def value: None
+ float_t  m00;
+
+/// [NativeName("m_Data[1]")]
+/// @brief Field m10, offset: 0x4, size: 0x4, def value: None
+ float_t  m10;
+
+/// [NativeName("m_Data[2]")]
+/// @brief Field m20, offset: 0x8, size: 0x4, def value: None
+ float_t  m20;
+
+/// [NativeName("m_Data[3]")]
+/// @brief Field m30, offset: 0xc, size: 0x4, def value: None
+ float_t  m30;
+
+/// [NativeName("m_Data[4]")]
+/// @brief Field m01, offset: 0x10, size: 0x4, def value: None
+ float_t  m01;
+
+/// [NativeName("m_Data[5]")]
+/// @brief Field m11, offset: 0x14, size: 0x4, def value: None
+ float_t  m11;
+
+/// [NativeName("m_Data[6]")]
+/// @brief Field m21, offset: 0x18, size: 0x4, def value: None
+ float_t  m21;
+
+/// [NativeName("m_Data[7]")]
+/// @brief Field m31, offset: 0x1c, size: 0x4, def value: None
+ float_t  m31;
+
+/// [NativeName("m_Data[8]")]
+/// @brief Field m02, offset: 0x20, size: 0x4, def value: None
+ float_t  m02;
+
+/// [NativeName("m_Data[9]")]
+/// @brief Field m12, offset: 0x24, size: 0x4, def value: None
+ float_t  m12;
+
+/// [NativeName("m_Data[10]")]
+/// @brief Field m22, offset: 0x28, size: 0x4, def value: None
+ float_t  m22;
+
+/// [NativeName("m_Data[11]")]
+/// @brief Field m32, offset: 0x2c, size: 0x4, def value: None
+ float_t  m32;
+
+/// [NativeName("m_Data[12]")]
+/// @brief Field m03, offset: 0x30, size: 0x4, def value: None
+ float_t  m03;
+
+/// [NativeName("m_Data[13]")]
+/// @brief Field m13, offset: 0x34, size: 0x4, def value: None
+ float_t  m13;
+
+/// [NativeName("m_Data[14]")]
+/// @brief Field m23, offset: 0x38, size: 0x4, def value: None
+ float_t  m23;
+
+/// [NativeName("m_Data[15]")]
+/// @brief Field m33, offset: 0x3c, size: 0x4, def value: None
+ float_t  m33;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Matrix4x4, m00) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m10) == 0x4, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m20) == 0x8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m30) == 0xc, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m01) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m11) == 0x14, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m21) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m31) == 0x1c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m02) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m12) == 0x24, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m22) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m32) == 0x2c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m03) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m13) == 0x34, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m23) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Matrix4x4, m33) == 0x3c, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Matrix4x4) == 0x40, "Size mismatch!");
+
+} // namespace end def UnityEngine

@@ -1,0 +1,1133 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Timeline/ControlPlayableAsset.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableAsset_impl.hpp"
+#include "UnityEngine/Timeline/zzzz__ActivationControlPlayable_PostPlaybackState_impl.hpp"
+#include "UnityEngine/Timeline/zzzz__DirectorControlPlayable_PauseAction_impl.hpp"
+#include "UnityEngine/zzzz__ExposedReference_1_impl.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "UnityEngine/Timeline/zzzz__ControlPlayableAsset_def.hpp"
+#include "System/Collections/Generic/zzzz__HashSet_1_def.hpp"
+#include "System/Collections/Generic/zzzz__ICollection_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerable_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerator_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IList_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/Collections/zzzz__IEnumerable_def.hpp"
+#include "System/Collections/zzzz__IEnumerator_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableAsset_def.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableDirector_def.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableGraph_def.hpp"
+#include "UnityEngine/Playables/zzzz__Playable_def.hpp"
+#include "UnityEngine/Timeline/zzzz__ClipCaps_def.hpp"
+#include "UnityEngine/Timeline/zzzz__ControlPlayableAsset_def.hpp"
+#include "UnityEngine/Timeline/zzzz__IPropertyCollector_def.hpp"
+#include "UnityEngine/Timeline/zzzz__IPropertyPreview_def.hpp"
+#include "UnityEngine/Timeline/zzzz__ITimelineClipAsset_def.hpp"
+#include "UnityEngine/zzzz__GameObject_def.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_def.hpp"
+#include "UnityEngine/zzzz__ParticleSystem_def.hpp"
+#include "UnityEngine/zzzz__Transform_def.hpp"
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.get_controllingDirectors
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Timeline::ControlPlayableAsset::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset::get_controllingDirectors)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3c34e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"get_controllingDirectors", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.set_controllingDirectors
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)(bool)>(&::UnityEngine::Timeline::ControlPlayableAsset::set_controllingDirectors)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3c34f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"set_controllingDirectors", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.get_controllingParticles
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Timeline::ControlPlayableAsset::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset::get_controllingParticles)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3c34f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"get_controllingParticles", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.set_controllingParticles
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)(bool)>(&::UnityEngine::Timeline::ControlPlayableAsset::set_controllingParticles)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3c3500;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"set_controllingParticles", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.OnEnable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset::OnEnable)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xb3c3508;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"OnEnable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.get_duration
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<double_t (::UnityEngine::Timeline::ControlPlayableAsset::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset::get_duration)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3c3538;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                    {::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(), 7}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.get_clipCaps
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Timeline::ClipCaps (::UnityEngine::Timeline::ControlPlayableAsset::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset::get_clipCaps)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb3c3540;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"get_clipCaps", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.CreatePlayable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::Playable (::UnityEngine::Timeline::ControlPlayableAsset::*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*)>(&::UnityEngine::Timeline::ControlPlayableAsset::CreatePlayable)> {
+  constexpr static std::size_t size = 0x844;
+  constexpr static std::size_t addrs = 0xb3c354c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                    {::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(), 6}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.ConnectPlayablesToMixer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::Playable (*)(::UnityEngine::Playables::PlayableGraph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::ConnectPlayablesToMixer)> {
+  constexpr static std::size_t size = 0x168;
+  constexpr static std::size_t addrs = 0xb3c55c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"ConnectPlayablesToMixer", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.CreateActivationPlayable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)(::UnityEngine::GameObject*, ::UnityEngine::Playables::PlayableGraph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::CreateActivationPlayable)> {
+  constexpr static std::size_t size = 0x154;
+  constexpr static std::size_t addrs = 0xb3c476c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"CreateActivationPlayable", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.SearchHierarchyAndConnectParticleSystem
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*, ::UnityEngine::Playables::PlayableGraph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::SearchHierarchyAndConnectParticleSystem)> {
+  constexpr static std::size_t size = 0x3f8;
+  constexpr static std::size_t addrs = 0xb3c4d5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"SearchHierarchyAndConnectParticleSystem", {}, {::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.SearchHierarchyAndConnectDirector
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*, ::UnityEngine::Playables::PlayableGraph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*, bool)>(&::UnityEngine::Timeline::ControlPlayableAsset::SearchHierarchyAndConnectDirector)> {
+  constexpr static std::size_t size = 0x49c;
+  constexpr static std::size_t addrs = 0xb3c48c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"SearchHierarchyAndConnectDirector", {}, {::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.SearchHierarchyAndConnectControlableScripts
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*, ::UnityEngine::Playables::PlayableGraph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::SearchHierarchyAndConnectControlableScripts)> {
+  constexpr static std::size_t size = 0x3ec;
+  constexpr static std::size_t addrs = 0xb3c51d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"SearchHierarchyAndConnectControlableScripts", {}, {::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.ConnectMixerAndPlayable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::Playable, int32_t)>(&::UnityEngine::Timeline::ControlPlayableAsset::ConnectMixerAndPlayable)> {
+  constexpr static std::size_t size = 0xc8;
+  constexpr static std::size_t addrs = 0xb3c5728;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"ConnectMixerAndPlayable", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::UnityEngine::Playables::Playable>(), ::i2c::type_of<::UnityEngine::Playables::Playable>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.GetControlableScripts
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>* (*)(::UnityEngine::GameObject*)>(&::UnityEngine::Timeline::ControlPlayableAsset::GetControlableScripts)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xb3c5154;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GetControlableScripts", {}, {::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.UpdateDurationAndLoopFlag
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)(::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*, ::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::ParticleSystem>>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::UpdateDurationAndLoopFlag)> {
+  constexpr static std::size_t size = 0x870;
+  constexpr static std::size_t addrs = 0xb3c3efc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"UpdateDurationAndLoopFlag", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.GetControllableParticleSystems
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::ParticleSystem>>* (::UnityEngine::Timeline::ControlPlayableAsset::*)(::UnityEngine::GameObject*)>(&::UnityEngine::Timeline::ControlPlayableAsset::GetControllableParticleSystems)> {
+  constexpr static std::size_t size = 0x16c;
+  constexpr static std::size_t addrs = 0xb3c3d90;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GetControllableParticleSystems", {}, {::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.GetControllableParticleSystems
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Transform*, ::System::Collections::Generic::ICollection_1<::UnityW<::UnityEngine::ParticleSystem>>*, ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::GetControllableParticleSystems)> {
+  constexpr static std::size_t size = 0x1e8;
+  constexpr static std::size_t addrs = 0xb3c5ab8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GetControllableParticleSystems", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<::System::Collections::Generic::ICollection_1<::UnityW<::UnityEngine::ParticleSystem>>*>(), ::i2c::type_of<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.CacheSubEmitters
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ParticleSystem*, ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::CacheSubEmitters)> {
+  constexpr static std::size_t size = 0x114;
+  constexpr static std::size_t addrs = 0xb3c5ca0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"CacheSubEmitters", {}, {::i2c::type_of<::UnityEngine::ParticleSystem*>(), ::i2c::type_of<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.GatherProperties
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)(::UnityEngine::Playables::PlayableDirector*, ::UnityEngine::Timeline::IPropertyCollector*)>(&::UnityEngine::Timeline::ControlPlayableAsset::GatherProperties)> {
+  constexpr static std::size_t size = 0x2f4;
+  constexpr static std::size_t addrs = 0xb3c5db4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GatherProperties", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableDirector*>(), ::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.PreviewParticles
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Timeline::IPropertyCollector*, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::PreviewParticles)> {
+  constexpr static std::size_t size = 0x420;
+  constexpr static std::size_t addrs = 0xb3c60a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewParticles", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.PreviewActivation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Timeline::IPropertyCollector*, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::GameObject>>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::PreviewActivation)> {
+  constexpr static std::size_t size = 0x344;
+  constexpr static std::size_t addrs = 0xb3c64c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewActivation", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::GameObject>>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.PreviewTimeControl
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Timeline::IPropertyCollector*, ::UnityEngine::Playables::PlayableDirector*, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::PreviewTimeControl)> {
+  constexpr static std::size_t size = 0x3e4;
+  constexpr static std::size_t addrs = 0xb3c680c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewTimeControl", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableDirector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset.PreviewDirectors
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Timeline::IPropertyCollector*, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*)>(&::UnityEngine::Timeline::ControlPlayableAsset::PreviewDirectors)> {
+  constexpr static std::size_t size = 0x394;
+  constexpr static std::size_t addrs = 0xb3c6bf0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewDirectors", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset::_ctor)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xb3c6f84;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::ExposedReference_1<::UnityW<::UnityEngine::GameObject>>& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_sourceGameObject()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___sourceGameObject;
+}
+constexpr ::UnityEngine::ExposedReference_1<::UnityW<::UnityEngine::GameObject>> const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_sourceGameObject() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___sourceGameObject;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_sourceGameObject(::UnityEngine::ExposedReference_1<::UnityW<::UnityEngine::GameObject>>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___sourceGameObject = value;
+}
+constexpr ::UnityW<::UnityEngine::GameObject>& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_prefabGameObject()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prefabGameObject;
+}
+constexpr ::UnityW<::UnityEngine::GameObject> const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_prefabGameObject() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prefabGameObject;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_prefabGameObject(::UnityW<::UnityEngine::GameObject>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___prefabGameObject = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_updateParticle()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___updateParticle;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_updateParticle() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___updateParticle;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_updateParticle(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___updateParticle = value;
+}
+constexpr uint32_t& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_particleRandomSeed()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___particleRandomSeed;
+}
+constexpr uint32_t const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_particleRandomSeed() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___particleRandomSeed;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_particleRandomSeed(uint32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___particleRandomSeed = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_updateDirector()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___updateDirector;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_updateDirector() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___updateDirector;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_updateDirector(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___updateDirector = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_updateITimeControl()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___updateITimeControl;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_updateITimeControl() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___updateITimeControl;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_updateITimeControl(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___updateITimeControl = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_searchHierarchy()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___searchHierarchy;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_searchHierarchy() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___searchHierarchy;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_searchHierarchy(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___searchHierarchy = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_active()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___active;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_active() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___active;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_active(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___active = value;
+}
+constexpr ::GlobalNamespace::ActivationControlPlayable_PostPlaybackState& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_postPlayback()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___postPlayback;
+}
+constexpr ::GlobalNamespace::ActivationControlPlayable_PostPlaybackState const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_postPlayback() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___postPlayback;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_postPlayback(::GlobalNamespace::ActivationControlPlayable_PostPlaybackState  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___postPlayback = value;
+}
+constexpr ::GlobalNamespace::DirectorControlPlayable_PauseAction& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_directorOnClipEnd()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___directorOnClipEnd;
+}
+constexpr ::GlobalNamespace::DirectorControlPlayable_PauseAction const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_directorOnClipEnd() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___directorOnClipEnd;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_directorOnClipEnd(::GlobalNamespace::DirectorControlPlayable_PauseAction  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___directorOnClipEnd = value;
+}
+constexpr ::UnityW<::UnityEngine::Playables::PlayableAsset>& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_m_ControlDirectorAsset()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ControlDirectorAsset;
+}
+constexpr ::UnityW<::UnityEngine::Playables::PlayableAsset> const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_m_ControlDirectorAsset() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ControlDirectorAsset;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_m_ControlDirectorAsset(::UnityW<::UnityEngine::Playables::PlayableAsset>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ControlDirectorAsset = value;
+}
+constexpr double_t& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_m_Duration()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Duration;
+}
+constexpr double_t const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_m_Duration() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Duration;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_m_Duration(double_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Duration = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_m_SupportLoop()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_SupportLoop;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get_m_SupportLoop() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_SupportLoop;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set_m_SupportLoop(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_SupportLoop = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get__controllingDirectors_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____controllingDirectors_k__BackingField;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get__controllingDirectors_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____controllingDirectors_k__BackingField;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set__controllingDirectors_k__BackingField(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____controllingDirectors_k__BackingField = value;
+}
+constexpr bool& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get__controllingParticles_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____controllingParticles_k__BackingField;
+}
+constexpr bool const& UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_get__controllingParticles_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____controllingParticles_k__BackingField;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset::__cordl_internal_set__controllingParticles_k__BackingField(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____controllingParticles_k__BackingField = value;
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::setStaticF_k_EmptyDirectorsList(::System::Collections::Generic::List_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*, "k_EmptyDirectorsList", ::UnityEngine::Timeline::ControlPlayableAsset*>(std::forward<::System::Collections::Generic::List_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>* UnityEngine::Timeline::ControlPlayableAsset::getStaticF_k_EmptyDirectorsList()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*, "k_EmptyDirectorsList", ::UnityEngine::Timeline::ControlPlayableAsset*>();
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::setStaticF_k_EmptyParticlesList(::System::Collections::Generic::List_1<::UnityW<::UnityEngine::ParticleSystem>>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::UnityW<::UnityEngine::ParticleSystem>>*, "k_EmptyParticlesList", ::UnityEngine::Timeline::ControlPlayableAsset*>(std::forward<::System::Collections::Generic::List_1<::UnityW<::UnityEngine::ParticleSystem>>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::ParticleSystem>>* UnityEngine::Timeline::ControlPlayableAsset::getStaticF_k_EmptyParticlesList()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::UnityW<::UnityEngine::ParticleSystem>>*, "k_EmptyParticlesList", ::UnityEngine::Timeline::ControlPlayableAsset*>();
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::setStaticF_s_SubEmitterCollector(::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*, "s_SubEmitterCollector", ::UnityEngine::Timeline::ControlPlayableAsset*>(std::forward<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*>(value));
+}
+inline ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>* UnityEngine::Timeline::ControlPlayableAsset::getStaticF_s_SubEmitterCollector()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*, "s_SubEmitterCollector", ::UnityEngine::Timeline::ControlPlayableAsset*>();
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::setStaticF_s_ProcessedDirectors(::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*, "s_ProcessedDirectors", ::UnityEngine::Timeline::ControlPlayableAsset*>(std::forward<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>(value));
+}
+inline ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>* UnityEngine::Timeline::ControlPlayableAsset::getStaticF_s_ProcessedDirectors()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*, "s_ProcessedDirectors", ::UnityEngine::Timeline::ControlPlayableAsset*>();
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::setStaticF_s_CreatedPrefabs(::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::GameObject>>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::GameObject>>*, "s_CreatedPrefabs", ::UnityEngine::Timeline::ControlPlayableAsset*>(std::forward<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::GameObject>>*>(value));
+}
+inline ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::GameObject>>* UnityEngine::Timeline::ControlPlayableAsset::getStaticF_s_CreatedPrefabs()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::GameObject>>*, "s_CreatedPrefabs", ::UnityEngine::Timeline::ControlPlayableAsset*>();
+}
+inline bool UnityEngine::Timeline::ControlPlayableAsset::get_controllingDirectors()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"get_controllingDirectors", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::set_controllingDirectors(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"set_controllingDirectors", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::Timeline::ControlPlayableAsset::get_controllingParticles()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"get_controllingParticles", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::set_controllingParticles(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"set_controllingParticles", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::OnEnable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"OnEnable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline double_t UnityEngine::Timeline::ControlPlayableAsset::get_duration()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(), 7}
+                        )));
+return ::cordl_internals::RunMethodRethrow<double_t>(this, ___internal_method);
+}
+inline ::UnityEngine::Timeline::ClipCaps UnityEngine::Timeline::ControlPlayableAsset::get_clipCaps()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"get_clipCaps", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Timeline::ClipCaps>(this, ___internal_method);
+}
+inline ::UnityEngine::Playables::Playable UnityEngine::Timeline::ControlPlayableAsset::CreatePlayable(::UnityEngine::Playables::PlayableGraph  graph, ::UnityEngine::GameObject*  go)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(), 6}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::Playable>(this, ___internal_method, graph, go);
+}
+inline ::UnityEngine::Playables::Playable UnityEngine::Timeline::ControlPlayableAsset::ConnectPlayablesToMixer(::UnityEngine::Playables::PlayableGraph  graph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*  playables)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"ConnectPlayablesToMixer", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::Playable>(nullptr, ___internal_method, graph, playables);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::CreateActivationPlayable(::UnityEngine::GameObject*  root, ::UnityEngine::Playables::PlayableGraph  graph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*  outplayables)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"CreateActivationPlayable", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, root, graph, outplayables);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::SearchHierarchyAndConnectParticleSystem(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*  particleSystems, ::UnityEngine::Playables::PlayableGraph  graph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*  outplayables)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"SearchHierarchyAndConnectParticleSystem", {}, {::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, particleSystems, graph, outplayables);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::SearchHierarchyAndConnectDirector(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*  directors, ::UnityEngine::Playables::PlayableGraph  graph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*  outplayables, bool  disableSelfReferences)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"SearchHierarchyAndConnectDirector", {}, {::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, directors, graph, outplayables, disableSelfReferences);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::SearchHierarchyAndConnectControlableScripts(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*  controlableScripts, ::UnityEngine::Playables::PlayableGraph  graph, ::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*  outplayables)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"SearchHierarchyAndConnectControlableScripts", {}, {::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::Playables::Playable>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, controlableScripts, graph, outplayables);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::ConnectMixerAndPlayable(::UnityEngine::Playables::PlayableGraph  graph, ::UnityEngine::Playables::Playable  mixer, ::UnityEngine::Playables::Playable  playable, int32_t  portIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"ConnectMixerAndPlayable", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableGraph>(), ::i2c::type_of<::UnityEngine::Playables::Playable>(), ::i2c::type_of<::UnityEngine::Playables::Playable>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, graph, mixer, playable, portIndex);
+}
+template<typename T>
+inline ::System::Collections::Generic::IList_1<T>* UnityEngine::Timeline::ControlPlayableAsset::GetComponent(::UnityEngine::GameObject*  gameObject)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                    {"GetComponent", {::i2c::class_of<T>()}, {::i2c::type_of<::UnityEngine::GameObject*>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<T>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IList_1<T>*>(this, ___internal_method, gameObject);
+}
+inline ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>* UnityEngine::Timeline::ControlPlayableAsset::GetControlableScripts(::UnityEngine::GameObject*  root)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GetControlableScripts", {}, {::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(nullptr, ___internal_method, root);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::UpdateDurationAndLoopFlag(::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*  directors, ::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::ParticleSystem>>*  particleSystems)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"UpdateDurationAndLoopFlag", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, directors, particleSystems);
+}
+inline ::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::ParticleSystem>>* UnityEngine::Timeline::ControlPlayableAsset::GetControllableParticleSystems(::UnityEngine::GameObject*  go)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GetControllableParticleSystems", {}, {::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IList_1<::UnityW<::UnityEngine::ParticleSystem>>*>(this, ___internal_method, go);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::GetControllableParticleSystems(::UnityEngine::Transform*  t, ::System::Collections::Generic::ICollection_1<::UnityW<::UnityEngine::ParticleSystem>>*  roots, ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*  subEmitters)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GetControllableParticleSystems", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<::System::Collections::Generic::ICollection_1<::UnityW<::UnityEngine::ParticleSystem>>*>(), ::i2c::type_of<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, t, roots, subEmitters);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::CacheSubEmitters(::UnityEngine::ParticleSystem*  ps, ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*  subEmitters)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"CacheSubEmitters", {}, {::i2c::type_of<::UnityEngine::ParticleSystem*>(), ::i2c::type_of<::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, ps, subEmitters);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::GatherProperties(::UnityEngine::Playables::PlayableDirector*  director, ::UnityEngine::Timeline::IPropertyCollector*  driver)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"GatherProperties", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableDirector*>(), ::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, director, driver);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::PreviewParticles(::UnityEngine::Timeline::IPropertyCollector*  driver, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*  particles)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewParticles", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::ParticleSystem>>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, driver, particles);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::PreviewActivation(::UnityEngine::Timeline::IPropertyCollector*  driver, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::GameObject>>*  objects)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewActivation", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::GameObject>>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, driver, objects);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::PreviewTimeControl(::UnityEngine::Timeline::IPropertyCollector*  driver, ::UnityEngine::Playables::PlayableDirector*  director, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*  scripts)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewTimeControl", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::UnityEngine::Playables::PlayableDirector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, driver, director, scripts);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::PreviewDirectors(::UnityEngine::Timeline::IPropertyCollector*  driver, ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*  directors)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {"PreviewDirectors", {}, {::i2c::type_of<::UnityEngine::Timeline::IPropertyCollector*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Playables::PlayableDirector>>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, driver, directors);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::Timeline::ControlPlayableAsset* UnityEngine::Timeline::ControlPlayableAsset::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::Timeline::ControlPlayableAsset*>());
+}
+/// @brief Convert operator to "::UnityEngine::Timeline::IPropertyPreview"
+constexpr  UnityEngine::Timeline::ControlPlayableAsset::operator ::UnityEngine::Timeline::IPropertyPreview*() noexcept {
+return static_cast<::UnityEngine::Timeline::IPropertyPreview*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::UnityEngine::Timeline::IPropertyPreview"
+constexpr ::UnityEngine::Timeline::IPropertyPreview* UnityEngine::Timeline::ControlPlayableAsset::i___UnityEngine__Timeline__IPropertyPreview() noexcept {
+return static_cast<::UnityEngine::Timeline::IPropertyPreview*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::UnityEngine::Timeline::ITimelineClipAsset"
+constexpr  UnityEngine::Timeline::ControlPlayableAsset::operator ::UnityEngine::Timeline::ITimelineClipAsset*() noexcept {
+return static_cast<::UnityEngine::Timeline::ITimelineClipAsset*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::UnityEngine::Timeline::ITimelineClipAsset"
+constexpr ::UnityEngine::Timeline::ITimelineClipAsset* UnityEngine::Timeline::ControlPlayableAsset::i___UnityEngine__Timeline__ITimelineClipAsset() noexcept {
+return static_cast<::UnityEngine::Timeline::ITimelineClipAsset*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Timeline::ControlPlayableAsset::ControlPlayableAsset()   {
+}
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)(int32_t)>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::_ctor)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xb3c5a78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40.System_IDisposable_Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_IDisposable_Dispose)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb3c7200;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40.MoveNext
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::MoveNext)> {
+  constexpr static std::size_t size = 0x158;
+  constexpr static std::size_t addrs = 0xb3c7204;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40.System_Collections_Generic_IEnumerator_UnityEngine_MonoBehaviour__get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::MonoBehaviour> (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_Generic_IEnumerator_UnityEngine_MonoBehaviour__get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3c735c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.Generic.IEnumerator<UnityEngine.MonoBehaviour>.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40.System_Collections_IEnumerator_Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_IEnumerator_Reset)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xb3c7364;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40.System_Collections_IEnumerator_get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_IEnumerator_get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3c739c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40.System_Collections_Generic_IEnumerable_UnityEngine_MonoBehaviour__GetEnumerator
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>* (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_Generic_IEnumerable_UnityEngine_MonoBehaviour__GetEnumerator)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xb3c73a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.Generic.IEnumerable<UnityEngine.MonoBehaviour>.GetEnumerator", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40.System_Collections_IEnumerable_GetEnumerator
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::IEnumerator* (::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::*)()>(&::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_IEnumerable_GetEnumerator)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb3c7448;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.IEnumerable.GetEnumerator", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___1__state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr int32_t const& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___1__state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_set___1__state(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____1__state = value;
+}
+constexpr ::UnityW<::UnityEngine::MonoBehaviour>& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___2__current()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr ::UnityW<::UnityEngine::MonoBehaviour> const& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___2__current() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_set___2__current(::UnityW<::UnityEngine::MonoBehaviour>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____2__current = value;
+}
+constexpr int32_t& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___l__initialThreadId()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____l__initialThreadId;
+}
+constexpr int32_t const& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___l__initialThreadId() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____l__initialThreadId;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_set___l__initialThreadId(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____l__initialThreadId = value;
+}
+constexpr ::UnityW<::UnityEngine::GameObject>& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get_root()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___root;
+}
+constexpr ::UnityW<::UnityEngine::GameObject> const& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get_root() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___root;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_set_root(::UnityW<::UnityEngine::GameObject>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___root = value;
+}
+constexpr ::UnityW<::UnityEngine::GameObject>& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___3__root()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____3__root;
+}
+constexpr ::UnityW<::UnityEngine::GameObject> const& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___3__root() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____3__root;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_set___3__root(::UnityW<::UnityEngine::GameObject>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____3__root = value;
+}
+constexpr ::ArrayW<::UnityW<::UnityEngine::MonoBehaviour>>& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___7__wrap1()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap1;
+}
+constexpr ::ArrayW<::UnityW<::UnityEngine::MonoBehaviour>> const& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___7__wrap1() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap1;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_set___7__wrap1(::ArrayW<::UnityW<::UnityEngine::MonoBehaviour>>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____7__wrap1 = value;
+}
+constexpr int32_t& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___7__wrap2()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap2;
+}
+constexpr int32_t const& UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_get___7__wrap2() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap2;
+}
+constexpr void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::__cordl_internal_set___7__wrap2(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____7__wrap2 = value;
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::_ctor(int32_t  __1__state)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, __1__state);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_IDisposable_Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::MonoBehaviour> UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_Generic_IEnumerator_UnityEngine_MonoBehaviour__get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.Generic.IEnumerator<UnityEngine.MonoBehaviour>.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::MonoBehaviour>>(this, ___internal_method);
+}
+inline void UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_IEnumerator_Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Object* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_IEnumerator_get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_Generic_IEnumerable_UnityEngine_MonoBehaviour__GetEnumerator()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.Generic.IEnumerable<UnityEngine.MonoBehaviour>.GetEnumerator", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(this, ___internal_method);
+}
+inline ::System::Collections::IEnumerator* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::System_Collections_IEnumerable_GetEnumerator()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(),
+                        {"System.Collections.IEnumerable.GetEnumerator", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::IEnumerator*>(this, ___internal_method);
+}
+/// @brief [DebuggerHidden]
+inline ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::New_ctor(int32_t  __1__state)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40*>(__1__state));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>"
+constexpr  UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::operator ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>"
+constexpr ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::i___System__Collections__Generic__IEnumerable_1___UnityW___UnityEngine__MonoBehaviour__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerable"
+constexpr  UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::operator ::System::Collections::IEnumerable*() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerable"
+constexpr ::System::Collections::IEnumerable* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::i___System__Collections__IEnumerable() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>"
+constexpr  UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::operator ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>"
+constexpr ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::i___System__Collections__Generic__IEnumerator_1___UnityW___UnityEngine__MonoBehaviour__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::MonoBehaviour>>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerator"
+constexpr  UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::operator ::System::Collections::IEnumerator*() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerator"
+constexpr ::System::Collections::IEnumerator* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::i___System__Collections__IEnumerator() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__40::ControlPlayableAsset__GetControlableScripts_d__40()   {
+}

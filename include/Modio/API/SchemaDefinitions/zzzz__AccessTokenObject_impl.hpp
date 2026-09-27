@@ -1,0 +1,34 @@
+#pragma once
+// IWYU pragma private; include "Modio/API/SchemaDefinitions/AccessTokenObject.hpp"
+#include "Modio/API/SchemaDefinitions/zzzz__AccessTokenObject_def.hpp"
+//  Writing Method size for method: ::Modio::API::SchemaDefinitions::AccessTokenObject._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Modio::API::SchemaDefinitions::AccessTokenObject::*)(int64_t, ::StringW, int64_t)>(&::Modio::API::SchemaDefinitions::AccessTokenObject::_ctor)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0x9fec3a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Modio::API::SchemaDefinitions::AccessTokenObject>(),
+                        {".ctor", {}, {::i2c::type_of<int64_t>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int64_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void Modio::API::SchemaDefinitions::AccessTokenObject::_ctor(int64_t  code, ::StringW  access_token, int64_t  date_expires)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Modio::API::SchemaDefinitions::AccessTokenObject>(),
+                        {".ctor", {}, {::i2c::type_of<int64_t>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int64_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, code, access_token, date_expires);
+}
+// Ctor Parameters [CppParam { name: "Code", ty: "int64_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "AccessToken", ty: "::StringW", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "DateExpires", ty: "int64_t", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::Modio::API::SchemaDefinitions::AccessTokenObject::AccessTokenObject(int64_t  Code, ::StringW  AccessToken, int64_t  DateExpires) noexcept  {
+this->Code = Code;
+this->AccessToken = AccessToken;
+this->DateExpires = DateExpires;
+}
+// Ctor Parameters []
+constexpr ::Modio::API::SchemaDefinitions::AccessTokenObject::AccessTokenObject()   {
+}

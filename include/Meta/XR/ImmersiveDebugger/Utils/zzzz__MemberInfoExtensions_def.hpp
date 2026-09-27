@@ -1,0 +1,95 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/Utils/MemberInfoExtensions.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(MemberInfoExtensions)
+namespace System::Reflection {
+class MemberInfo;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger::Utils {
+class MemberInfoExtensions;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Utils::MemberInfoExtensions*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Utils::MemberInfoExtensions*, "Meta.XR.ImmersiveDebugger.Utils", "MemberInfoExtensions");
+// [Extension]
+// Dependencies System.Object
+namespace Meta::XR::ImmersiveDebugger::Utils {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Utils.MemberInfoExtensions
+class CORDL_TYPE MemberInfoExtensions : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method BuildSignatureForDebugInspector, addr 0x9ed6f40, size 0x604, virtual false, abstract: false, final false
+static inline ::StringW BuildSignatureForDebugInspector(::System::Reflection::MemberInfo*  memberInfo) ;
+
+/// [Extension]
+/// @brief Method CanBeChanged, addr 0x9ed76c4, size 0x2c, virtual false, abstract: false, final false
+static inline bool CanBeChanged(::System::Reflection::MemberInfo*  memberInfo) ;
+
+/// [Extension]
+/// @brief Method GetDataType, addr 0x9ed6a4c, size 0x140, virtual false, abstract: false, final false
+static inline ::System::Type* GetDataType(::System::Reflection::MemberInfo*  memberInfo) ;
+
+/// [Extension]
+/// @brief Method GetValue, addr 0x9ed670c, size 0x198, virtual false, abstract: false, final false
+static inline ::System::Object* GetValue(::System::Reflection::MemberInfo*  memberInfo, ::System::Object*  instance) ;
+
+/// [Extension]
+/// @brief Method IsBaseTypeEqual, addr 0x9ed7544, size 0x180, virtual false, abstract: false, final false
+static inline bool IsBaseTypeEqual(::System::Reflection::MemberInfo*  member, ::System::Type*  type) ;
+
+/// [Extension]
+/// @brief Method IsCompatibleWithDebugInspector, addr 0x9ed03e8, size 0x218, virtual false, abstract: false, final false
+static inline bool IsCompatibleWithDebugInspector(::System::Reflection::MemberInfo*  memberInfo) ;
+
+/// [Extension]
+/// @brief Method IsPublic, addr 0x9ed6d88, size 0x1b8, virtual false, abstract: false, final false
+static inline bool IsPublic(::System::Reflection::MemberInfo*  memberInfo) ;
+
+/// [Extension]
+/// @brief Method IsStatic, addr 0x9ed6b8c, size 0x1fc, virtual false, abstract: false, final false
+static inline bool IsStatic(::System::Reflection::MemberInfo*  memberInfo) ;
+
+/// [Extension]
+/// @brief Method IsTypeEqual, addr 0x9ed0cd4, size 0x154, virtual false, abstract: false, final false
+static inline bool IsTypeEqual(::System::Reflection::MemberInfo*  member, ::System::Type*  type) ;
+
+/// [Extension]
+/// @brief Method SetValue, addr 0x9ed68a4, size 0x1a8, virtual false, abstract: false, final false
+static inline void SetValue(::System::Reflection::MemberInfo*  memberInfo, ::System::Object*  instance, ::System::Object*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MemberInfoExtensions() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MemberInfoExtensions", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MemberInfoExtensions(MemberInfoExtensions && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MemberInfoExtensions", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MemberInfoExtensions(MemberInfoExtensions const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27415};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Utils::MemberInfoExtensions) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger::Utils

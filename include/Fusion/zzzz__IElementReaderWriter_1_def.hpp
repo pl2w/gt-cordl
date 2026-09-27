@@ -1,0 +1,50 @@
+#pragma once
+// IWYU pragma private; include "Fusion/IElementReaderWriter_1.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstdint>
+CORDL_MODULE_EXPORT(IElementReaderWriter_1)
+// Forward declare root types
+namespace Fusion {
+template<typename T>
+class IElementReaderWriter_1;
+}
+// Write type traits
+MARK_GEN_REF_T_PTR(::Fusion::IElementReaderWriter_1);
+DEFINE_IL2CPP_GEN_CLASS_PTR(::Fusion::IElementReaderWriter_1, "Fusion", "IElementReaderWriter`1");
+// Dependencies 
+namespace Fusion {
+// cpp template
+template<typename T>
+// Is value type: false
+// CS Name: Fusion.IElementReaderWriter`1<T>
+class CORDL_TYPE IElementReaderWriter_1 {
+public:
+// Declarations
+/// @brief Method GetElementHashCode, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline int32_t GetElementHashCode(T  element) ;
+
+/// @brief Method GetElementWordCount, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline int32_t GetElementWordCount() ;
+
+/// @brief Method Read, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline T Read(uint8_t*  data, int32_t  index) ;
+
+/// @brief Method ReadRef, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::by_ref<T> ReadRef(uint8_t*  data, int32_t  index) ;
+
+/// @brief Method Write, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void Write(uint8_t*  data, int32_t  index, T  element) ;
+
+// Ctor Parameters [CppParam { name: "", ty: "IElementReaderWriter_1", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IElementReaderWriter_1(IElementReaderWriter_1 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{19050};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def Fusion

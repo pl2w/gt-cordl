@@ -1,0 +1,77 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/IncrementalReadDummyDecoder.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Xml/zzzz__IncrementalReadDecoder_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(IncrementalReadDummyDecoder)
+namespace System {
+class Array;
+}
+// Forward declare root types
+namespace System::Xml {
+class IncrementalReadDummyDecoder;
+}
+// Write type traits
+MARK_REF_T(::System::Xml::IncrementalReadDummyDecoder*);
+DEFINE_IL2CPP_CLASS(::System::Xml::IncrementalReadDummyDecoder*, "System.Xml", "IncrementalReadDummyDecoder");
+// Dependencies System.Xml.IncrementalReadDecoder
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.IncrementalReadDummyDecoder
+class CORDL_TYPE IncrementalReadDummyDecoder : public ::System::Xml::IncrementalReadDecoder {
+public:
+// Declarations
+ __declspec(property(get=get_DecodedCount)) int32_t  DecodedCount;
+
+ __declspec(property(get=get_IsFull)) bool  IsFull;
+
+/// @brief Method Decode, addr 0xaabb7b8, size 0x8, virtual true, abstract: false, final false
+inline int32_t Decode(::ArrayW<char16_t>  chars, int32_t  startPos, int32_t  len) ;
+
+/// @brief Method Decode, addr 0xaabb7c0, size 0x8, virtual true, abstract: false, final false
+inline int32_t Decode(::StringW  str, int32_t  startPos, int32_t  len) ;
+
+static inline ::System::Xml::IncrementalReadDummyDecoder* New_ctor() ;
+
+/// @brief Method Reset, addr 0xaabb7c8, size 0x4, virtual true, abstract: false, final false
+inline void Reset() ;
+
+/// @brief Method SetNextOutputBuffer, addr 0xaabb7b4, size 0x4, virtual true, abstract: false, final false
+inline void SetNextOutputBuffer(::System::Array*  array, int32_t  offset, int32_t  len) ;
+
+/// @brief Method .ctor, addr 0xaabb7cc, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_DecodedCount, addr 0xaabb7a4, size 0x8, virtual true, abstract: false, final false
+inline int32_t get_DecodedCount() ;
+
+/// @brief Method get_IsFull, addr 0xaabb7ac, size 0x8, virtual true, abstract: false, final false
+inline bool get_IsFull() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr IncrementalReadDummyDecoder() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "IncrementalReadDummyDecoder", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+IncrementalReadDummyDecoder(IncrementalReadDummyDecoder && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "IncrementalReadDummyDecoder", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IncrementalReadDummyDecoder(IncrementalReadDummyDecoder const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14015};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::IncrementalReadDummyDecoder) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Xml

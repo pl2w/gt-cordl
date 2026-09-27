@@ -1,0 +1,214 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/AddressableAssets/ResourceLocators/ContentCatalogDataEntry.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(ContentCatalogDataEntry)
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace UnityEngine::AddressableAssets::ResourceLocators {
+class ContentCatalogDataEntry;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry*, "UnityEngine.AddressableAssets.ResourceLocators", "ContentCatalogDataEntry");
+// Dependencies System.Object
+namespace UnityEngine::AddressableAssets::ResourceLocators {
+// Is value type: false
+// CS Name: UnityEngine.AddressableAssets.ResourceLocators.ContentCatalogDataEntry
+class CORDL_TYPE ContentCatalogDataEntry : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Data, put=set_Data)) ::System::Object*  Data;
+
+ __declspec(property(get=get_Dependencies, put=set_Dependencies)) ::System::Collections::Generic::List_1<::System::Object*>*  Dependencies;
+
+ __declspec(property(get=get_InternalId, put=set_InternalId)) ::StringW  InternalId;
+
+ __declspec(property(get=get_Keys, put=set_Keys)) ::System::Collections::Generic::List_1<::System::Object*>*  Keys;
+
+ __declspec(property(get=get_Provider, put=set_Provider)) ::StringW  Provider;
+
+ __declspec(property(get=get_ResourceType, put=set_ResourceType)) ::System::Type*  ResourceType;
+
+/// @brief Field <Data>k__BackingField, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Data_k__BackingField, put=__cordl_internal_set__Data_k__BackingField)) ::System::Object*  _Data_k__BackingField;
+
+/// @brief Field <Dependencies>k__BackingField, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Dependencies_k__BackingField, put=__cordl_internal_set__Dependencies_k__BackingField)) ::System::Collections::Generic::List_1<::System::Object*>*  _Dependencies_k__BackingField;
+
+/// @brief Field <InternalId>k__BackingField, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get__InternalId_k__BackingField, put=__cordl_internal_set__InternalId_k__BackingField)) ::StringW  _InternalId_k__BackingField;
+
+/// @brief Field <Keys>k__BackingField, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Keys_k__BackingField, put=__cordl_internal_set__Keys_k__BackingField)) ::System::Collections::Generic::List_1<::System::Object*>*  _Keys_k__BackingField;
+
+/// @brief Field <Provider>k__BackingField, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Provider_k__BackingField, put=__cordl_internal_set__Provider_k__BackingField)) ::StringW  _Provider_k__BackingField;
+
+/// @brief Field <ResourceType>k__BackingField, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get__ResourceType_k__BackingField, put=__cordl_internal_set__ResourceType_k__BackingField)) ::System::Type*  _ResourceType_k__BackingField;
+
+static inline ::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry* New_ctor(::System::Type*  type, ::StringW  internalId, ::StringW  provider, ::System::Collections::Generic::IEnumerable_1<::System::Object*>*  keys, ::System::Collections::Generic::IEnumerable_1<::System::Object*>*  dependencies, ::System::Object*  extraData) ;
+
+constexpr ::System::Object* const& __cordl_internal_get__Data_k__BackingField() const;
+
+constexpr ::System::Object*& __cordl_internal_get__Data_k__BackingField() ;
+
+constexpr ::System::Collections::Generic::List_1<::System::Object*>* const& __cordl_internal_get__Dependencies_k__BackingField() const;
+
+constexpr ::System::Collections::Generic::List_1<::System::Object*>*& __cordl_internal_get__Dependencies_k__BackingField() ;
+
+constexpr ::StringW const& __cordl_internal_get__InternalId_k__BackingField() const;
+
+constexpr ::StringW& __cordl_internal_get__InternalId_k__BackingField() ;
+
+constexpr ::System::Collections::Generic::List_1<::System::Object*>* const& __cordl_internal_get__Keys_k__BackingField() const;
+
+constexpr ::System::Collections::Generic::List_1<::System::Object*>*& __cordl_internal_get__Keys_k__BackingField() ;
+
+constexpr ::StringW const& __cordl_internal_get__Provider_k__BackingField() const;
+
+constexpr ::StringW& __cordl_internal_get__Provider_k__BackingField() ;
+
+constexpr ::System::Type* const& __cordl_internal_get__ResourceType_k__BackingField() const;
+
+constexpr ::System::Type*& __cordl_internal_get__ResourceType_k__BackingField() ;
+
+constexpr void __cordl_internal_set__Data_k__BackingField(::System::Object*  value) ;
+
+constexpr void __cordl_internal_set__Dependencies_k__BackingField(::System::Collections::Generic::List_1<::System::Object*>*  value) ;
+
+constexpr void __cordl_internal_set__InternalId_k__BackingField(::StringW  value) ;
+
+constexpr void __cordl_internal_set__Keys_k__BackingField(::System::Collections::Generic::List_1<::System::Object*>*  value) ;
+
+constexpr void __cordl_internal_set__Provider_k__BackingField(::StringW  value) ;
+
+constexpr void __cordl_internal_set__ResourceType_k__BackingField(::System::Type*  value) ;
+
+/// @brief Method .ctor, addr 0xae690ec, size 0x150, virtual false, abstract: false, final false
+inline void _ctor(::System::Type*  type, ::StringW  internalId, ::StringW  provider, ::System::Collections::Generic::IEnumerable_1<::System::Object*>*  keys, ::System::Collections::Generic::IEnumerable_1<::System::Object*>*  dependencies, ::System::Object*  extraData) ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Data, addr 0xae690cc, size 0x8, virtual false, abstract: false, final false
+inline ::System::Object* get_Data() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Dependencies, addr 0xae690bc, size 0x8, virtual false, abstract: false, final false
+inline ::System::Collections::Generic::List_1<::System::Object*>* get_Dependencies() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_InternalId, addr 0xae6908c, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_InternalId() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Keys, addr 0xae690ac, size 0x8, virtual false, abstract: false, final false
+inline ::System::Collections::Generic::List_1<::System::Object*>* get_Keys() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Provider, addr 0xae6909c, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_Provider() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_ResourceType, addr 0xae690dc, size 0x8, virtual false, abstract: false, final false
+inline ::System::Type* get_ResourceType() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Data, addr 0xae690d4, size 0x8, virtual false, abstract: false, final false
+inline void set_Data(::System::Object*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Dependencies, addr 0xae690c4, size 0x8, virtual false, abstract: false, final false
+inline void set_Dependencies(::System::Collections::Generic::List_1<::System::Object*>*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_InternalId, addr 0xae69094, size 0x8, virtual false, abstract: false, final false
+inline void set_InternalId(::StringW  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Keys, addr 0xae690b4, size 0x8, virtual false, abstract: false, final false
+inline void set_Keys(::System::Collections::Generic::List_1<::System::Object*>*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Provider, addr 0xae690a4, size 0x8, virtual false, abstract: false, final false
+inline void set_Provider(::StringW  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_ResourceType, addr 0xae690e4, size 0x8, virtual false, abstract: false, final false
+inline void set_ResourceType(::System::Type*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ContentCatalogDataEntry() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ContentCatalogDataEntry", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ContentCatalogDataEntry(ContentCatalogDataEntry && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ContentCatalogDataEntry", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ContentCatalogDataEntry(ContentCatalogDataEntry const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{29272};
+
+/// [CompilerGenerated]
+/// @brief Field <InternalId>k__BackingField, offset: 0x10, size: 0x8, def value: None
+ ::StringW  ____InternalId_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Provider>k__BackingField, offset: 0x18, size: 0x8, def value: None
+ ::StringW  ____Provider_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Keys>k__BackingField, offset: 0x20, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::System::Object*>*  ____Keys_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Dependencies>k__BackingField, offset: 0x28, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::System::Object*>*  ____Dependencies_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Data>k__BackingField, offset: 0x30, size: 0x8, def value: None
+ ::System::Object*  ____Data_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <ResourceType>k__BackingField, offset: 0x38, size: 0x8, def value: None
+ ::System::Type*  ____ResourceType_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry, ____InternalId_k__BackingField) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry, ____Provider_k__BackingField) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry, ____Keys_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry, ____Dependencies_k__BackingField) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry, ____Data_k__BackingField) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry, ____ResourceType_k__BackingField) == 0x38, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry) == 0x40, "Size mismatch!");
+
+} // namespace end def UnityEngine::AddressableAssets::ResourceLocators

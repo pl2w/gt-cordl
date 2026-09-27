@@ -1,0 +1,60 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/Controls/TouchPressControl.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/InputSystem/Controls/zzzz__ButtonControl_def.hpp"
+#include <cmath>
+CORDL_MODULE_EXPORT(TouchPressControl)
+// Forward declare root types
+namespace UnityEngine::InputSystem::Controls {
+class TouchPressControl;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::Controls::TouchPressControl*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::Controls::TouchPressControl*, "UnityEngine.InputSystem.Controls", "TouchPressControl");
+// [InputControlLayout(hideInUI = true)]
+// Dependencies UnityEngine.InputSystem.Controls.ButtonControl
+namespace UnityEngine::InputSystem::Controls {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.Controls.TouchPressControl
+class CORDL_TYPE TouchPressControl : public ::UnityEngine::InputSystem::Controls::ButtonControl {
+public:
+// Declarations
+/// @brief Method FinishSetup, addr 0xaf380a0, size 0xfc, virtual true, abstract: false, final false
+inline void FinishSetup() ;
+
+static inline ::UnityEngine::InputSystem::Controls::TouchPressControl* New_ctor() ;
+
+/// @brief Method ReadUnprocessedValueFromState, addr 0xaf3819c, size 0x138, virtual true, abstract: false, final false
+inline float_t ReadUnprocessedValueFromState(void*  statePtr) ;
+
+/// @brief Method WriteValueIntoState, addr 0xaf38438, size 0x38, virtual true, abstract: false, final false
+inline void WriteValueIntoState(float_t  value, void*  statePtr) ;
+
+/// @brief Method .ctor, addr 0xaf38470, size 0x4, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr TouchPressControl() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "TouchPressControl", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+TouchPressControl(TouchPressControl && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "TouchPressControl", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+TouchPressControl(TouchPressControl const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13867};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::InputSystem::Controls::TouchPressControl) == 0x140, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputSystem::Controls

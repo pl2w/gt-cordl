@@ -1,0 +1,42 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/ITickSystemTick.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(ITickSystemTick)
+// Forward declare root types
+namespace GlobalNamespace {
+class ITickSystemTick;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::ITickSystemTick*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::ITickSystemTick*, "", "ITickSystemTick");
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: ITickSystemTick
+class CORDL_TYPE ITickSystemTick {
+public:
+// Declarations
+ __declspec(property(get=get_TickRunning, put=set_TickRunning)) bool  TickRunning;
+
+/// @brief Method Tick, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void Tick() ;
+
+/// @brief Method get_TickRunning, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline bool get_TickRunning() ;
+
+/// @brief Method set_TickRunning, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void set_TickRunning(bool  value) ;
+
+// Ctor Parameters [CppParam { name: "", ty: "ITickSystemTick", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ITickSystemTick(ITickSystemTick const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{3411};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def GlobalNamespace

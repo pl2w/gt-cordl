@@ -1,0 +1,93 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/InputActions/RuntimeSettings.hpp"
+#include "GlobalNamespace/zzzz__OVRRuntimeAssetsBase_impl.hpp"
+#include "Meta/XR/InputActions/zzzz__RuntimeSettings_def.hpp"
+#include "Meta/XR/InputActions/zzzz__InputActionSet_def.hpp"
+#include "Meta/XR/InputActions/zzzz__UserInputActionSet_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+//  Writing Method size for method: ::Meta::XR::InputActions::RuntimeSettings.get_Instance
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::Meta::XR::InputActions::RuntimeSettings> (*)()>(&::Meta::XR::InputActions::RuntimeSettings::get_Instance)> {
+  constexpr static std::size_t size = 0x108;
+  constexpr static std::size_t addrs = 0xa5b8114;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::InputActions::RuntimeSettings*>(),
+                        {"get_Instance", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::InputActions::RuntimeSettings._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::InputActions::RuntimeSettings::*)()>(&::Meta::XR::InputActions::RuntimeSettings::_ctor)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xa5b821c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::InputActions::RuntimeSettings*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::Collections::Generic::List_1<::Meta::XR::InputActions::UserInputActionSet*>*& Meta::XR::InputActions::RuntimeSettings::__cordl_internal_get_InputActionDefinitions()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___InputActionDefinitions;
+}
+constexpr ::System::Collections::Generic::List_1<::Meta::XR::InputActions::UserInputActionSet*>* const& Meta::XR::InputActions::RuntimeSettings::__cordl_internal_get_InputActionDefinitions() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___InputActionDefinitions;
+}
+constexpr void Meta::XR::InputActions::RuntimeSettings::__cordl_internal_set_InputActionDefinitions(::System::Collections::Generic::List_1<::Meta::XR::InputActions::UserInputActionSet*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___InputActionDefinitions = value;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityW<::Meta::XR::InputActions::InputActionSet>>*& Meta::XR::InputActions::RuntimeSettings::__cordl_internal_get_InputActionSets()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___InputActionSets;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityW<::Meta::XR::InputActions::InputActionSet>>* const& Meta::XR::InputActions::RuntimeSettings::__cordl_internal_get_InputActionSets() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___InputActionSets;
+}
+constexpr void Meta::XR::InputActions::RuntimeSettings::__cordl_internal_set_InputActionSets(::System::Collections::Generic::List_1<::UnityW<::Meta::XR::InputActions::InputActionSet>>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___InputActionSets = value;
+}
+inline void Meta::XR::InputActions::RuntimeSettings::setStaticF_InstanceAssetName(::StringW  value)  {
+::cordl_internals::setStaticField<::StringW, "InstanceAssetName", ::Meta::XR::InputActions::RuntimeSettings*>(std::forward<::StringW>(value));
+}
+inline ::StringW Meta::XR::InputActions::RuntimeSettings::getStaticF_InstanceAssetName()  {
+return ::cordl_internals::getStaticField<::StringW, "InstanceAssetName", ::Meta::XR::InputActions::RuntimeSettings*>();
+}
+inline void Meta::XR::InputActions::RuntimeSettings::setStaticF__instance(::UnityW<::Meta::XR::InputActions::RuntimeSettings>  value)  {
+::cordl_internals::setStaticField<::UnityW<::Meta::XR::InputActions::RuntimeSettings>, "_instance", ::Meta::XR::InputActions::RuntimeSettings*>(std::forward<::UnityW<::Meta::XR::InputActions::RuntimeSettings>>(value));
+}
+inline ::UnityW<::Meta::XR::InputActions::RuntimeSettings> Meta::XR::InputActions::RuntimeSettings::getStaticF__instance()  {
+return ::cordl_internals::getStaticField<::UnityW<::Meta::XR::InputActions::RuntimeSettings>, "_instance", ::Meta::XR::InputActions::RuntimeSettings*>();
+}
+inline ::UnityW<::Meta::XR::InputActions::RuntimeSettings> Meta::XR::InputActions::RuntimeSettings::get_Instance()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::InputActions::RuntimeSettings*>(),
+                        {"get_Instance", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::Meta::XR::InputActions::RuntimeSettings>>(nullptr, ___internal_method);
+}
+inline void Meta::XR::InputActions::RuntimeSettings::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::InputActions::RuntimeSettings*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::Meta::XR::InputActions::RuntimeSettings* Meta::XR::InputActions::RuntimeSettings::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Meta::XR::InputActions::RuntimeSettings*>());
+}
+// Ctor Parameters []
+constexpr ::Meta::XR::InputActions::RuntimeSettings::RuntimeSettings()   {
+}

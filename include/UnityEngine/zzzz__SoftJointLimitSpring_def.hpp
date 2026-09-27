@@ -1,0 +1,56 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/SoftJointLimitSpring.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cmath>
+#include <cstddef>
+CORDL_MODULE_EXPORT(SoftJointLimitSpring)
+// Forward declare root types
+namespace UnityEngine {
+struct SoftJointLimitSpring;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::SoftJointLimitSpring);
+DEFINE_IL2CPP_CLASS(::UnityEngine::SoftJointLimitSpring, "UnityEngine", "SoftJointLimitSpring");
+// Dependencies 
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.SoftJointLimitSpring
+struct CORDL_TYPE SoftJointLimitSpring {
+public:
+// Declarations
+ __declspec(property(put=set_spring)) float_t  spring;
+
+/// @brief Method set_spring, addr 0xb67f264, size 0x8, virtual false, abstract: false, final false
+inline void set_spring(float_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr SoftJointLimitSpring() ;
+
+// Ctor Parameters [CppParam { name: "m_Spring", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m_Damper", ty: "float_t", modifiers: "", def_value: None, comment: None }]
+constexpr SoftJointLimitSpring(float_t  m_Spring, float_t  m_Damper) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30554};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x8};
+
+/// @brief Field m_Spring, offset: 0x0, size: 0x4, def value: None
+ float_t  m_Spring;
+
+/// @brief Field m_Damper, offset: 0x4, size: 0x4, def value: None
+ float_t  m_Damper;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::SoftJointLimitSpring, m_Spring) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::SoftJointLimitSpring, m_Damper) == 0x4, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::SoftJointLimitSpring) == 0x8, "Size mismatch!");
+
+} // namespace end def UnityEngine

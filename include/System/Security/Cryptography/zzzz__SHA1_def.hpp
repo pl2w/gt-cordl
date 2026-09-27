@@ -1,0 +1,57 @@
+#pragma once
+// IWYU pragma private; include "System/Security/Cryptography/SHA1.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Security/Cryptography/zzzz__HashAlgorithm_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(SHA1)
+// Forward declare root types
+namespace System::Security::Cryptography {
+class SHA1;
+}
+// Write type traits
+MARK_REF_T(::System::Security::Cryptography::SHA1*);
+DEFINE_IL2CPP_CLASS(::System::Security::Cryptography::SHA1*, "System.Security.Cryptography", "SHA1");
+// [ComVisible(true)]
+// Dependencies System.Security.Cryptography.HashAlgorithm
+namespace System::Security::Cryptography {
+// Is value type: false
+// CS Name: System.Security.Cryptography.SHA1
+class CORDL_TYPE SHA1 : public ::System::Security::Cryptography::HashAlgorithm {
+public:
+// Declarations
+/// @brief Method Create, addr 0xa176008, size 0x54, virtual false, abstract: false, final false
+static inline ::System::Security::Cryptography::SHA1* Create() ;
+
+/// @brief Method Create, addr 0xa1780a8, size 0xa0, virtual false, abstract: false, final false
+static inline ::System::Security::Cryptography::SHA1* Create(::StringW  hashName) ;
+
+static inline ::System::Security::Cryptography::SHA1* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xa178088, size 0x20, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SHA1() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SHA1", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SHA1(SHA1 && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SHA1", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SHA1(SHA1 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6122};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Security::Cryptography::SHA1) == 0x28, "Size mismatch!");
+
+} // namespace end def System::Security::Cryptography

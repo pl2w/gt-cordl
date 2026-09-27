@@ -1,0 +1,270 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/Pointer.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/InputSystem/zzzz__InputDevice_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(Pointer)
+namespace UnityEngine::InputSystem::Controls {
+class AxisControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class ButtonControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class DeltaControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class IntegerControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class Vector2Control;
+}
+namespace UnityEngine::InputSystem::LowLevel {
+class IInputStateCallbackReceiver;
+}
+namespace UnityEngine::InputSystem::LowLevel {
+struct InputEventPtr;
+}
+namespace UnityEngine::InputSystem {
+class InputControl;
+}
+// Forward declare root types
+namespace UnityEngine::InputSystem {
+class Pointer;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::Pointer*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::Pointer*, "UnityEngine.InputSystem", "Pointer");
+// [InputControlLayout(stateType = typeof(UnityEngine.InputSystem.LowLevel.PointerState), isGenericTypeOfDevice = true)]
+// Dependencies UnityEngine.InputSystem.InputDevice
+namespace UnityEngine::InputSystem {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.Pointer
+class CORDL_TYPE Pointer : public ::UnityEngine::InputSystem::InputDevice {
+public:
+// Declarations
+/// @brief Field <current>k__BackingField, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF__current_k__BackingField, put=setStaticF__current_k__BackingField)) ::UnityEngine::InputSystem::Pointer*  _current_k__BackingField;
+
+/// @brief Field <delta>k__BackingField, offset 0x190, size 0x8 
+ __declspec(property(get=__cordl_internal_get__delta_k__BackingField, put=__cordl_internal_set__delta_k__BackingField)) ::UnityEngine::InputSystem::Controls::DeltaControl*  _delta_k__BackingField;
+
+/// @brief Field <displayIndex>k__BackingField, offset 0x1b0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__displayIndex_k__BackingField, put=__cordl_internal_set__displayIndex_k__BackingField)) ::UnityEngine::InputSystem::Controls::IntegerControl*  _displayIndex_k__BackingField;
+
+/// @brief Field <position>k__BackingField, offset 0x188, size 0x8 
+ __declspec(property(get=__cordl_internal_get__position_k__BackingField, put=__cordl_internal_set__position_k__BackingField)) ::UnityEngine::InputSystem::Controls::Vector2Control*  _position_k__BackingField;
+
+/// @brief Field <press>k__BackingField, offset 0x1a8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__press_k__BackingField, put=__cordl_internal_set__press_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _press_k__BackingField;
+
+/// @brief Field <pressure>k__BackingField, offset 0x1a0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__pressure_k__BackingField, put=__cordl_internal_set__pressure_k__BackingField)) ::UnityEngine::InputSystem::Controls::AxisControl*  _pressure_k__BackingField;
+
+/// @brief Field <radius>k__BackingField, offset 0x198, size 0x8 
+ __declspec(property(get=__cordl_internal_get__radius_k__BackingField, put=__cordl_internal_set__radius_k__BackingField)) ::UnityEngine::InputSystem::Controls::Vector2Control*  _radius_k__BackingField;
+
+ __declspec(property(get=get_delta, put=set_delta)) ::UnityEngine::InputSystem::Controls::DeltaControl*  delta;
+
+ __declspec(property(get=get_displayIndex, put=set_displayIndex)) ::UnityEngine::InputSystem::Controls::IntegerControl*  displayIndex;
+
+ __declspec(property(get=get_position, put=set_position)) ::UnityEngine::InputSystem::Controls::Vector2Control*  position;
+
+ __declspec(property(get=get_press, put=set_press)) ::UnityEngine::InputSystem::Controls::ButtonControl*  press;
+
+ __declspec(property(get=get_pressure, put=set_pressure)) ::UnityEngine::InputSystem::Controls::AxisControl*  pressure;
+
+ __declspec(property(get=get_radius, put=set_radius)) ::UnityEngine::InputSystem::Controls::Vector2Control*  radius;
+
+/// @brief Convert operator to "::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver"
+constexpr operator  ::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*() noexcept;
+
+/// @brief Method FinishSetup, addr 0xaf60734, size 0x1f0, virtual true, abstract: false, final false
+inline void FinishSetup() ;
+
+/// @brief Method MakeCurrent, addr 0xaf6024c, size 0x60, virtual true, abstract: false, final false
+inline void MakeCurrent() ;
+
+static inline ::UnityEngine::InputSystem::Pointer* New_ctor() ;
+
+/// @brief Method OnNextUpdate, addr 0xaf609b4, size 0x88, virtual false, abstract: false, final false
+inline void OnNextUpdate() ;
+
+/// @brief Method OnRemoved, addr 0xaf603c4, size 0x9c, virtual true, abstract: false, final false
+inline void OnRemoved() ;
+
+/// @brief Method OnStateEvent, addr 0xaf60a80, size 0x4c, virtual false, abstract: false, final false
+inline void OnStateEvent(::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr) ;
+
+/// @brief Method UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.GetStateOffsetForEvent, addr 0xaf61248, size 0x8, virtual true, abstract: false, final true
+inline bool UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_GetStateOffsetForEvent(::UnityEngine::InputSystem::InputControl*  control, ::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr, ::by_ref<uint32_t>  offset) ;
+
+/// @brief Method UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnNextUpdate, addr 0xaf61240, size 0x4, virtual true, abstract: false, final true
+inline void UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnNextUpdate() ;
+
+/// @brief Method UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnStateEvent, addr 0xaf61244, size 0x4, virtual true, abstract: false, final true
+inline void UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent(::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr) ;
+
+constexpr ::UnityEngine::InputSystem::Controls::DeltaControl* const& __cordl_internal_get__delta_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::DeltaControl*& __cordl_internal_get__delta_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl* const& __cordl_internal_get__displayIndex_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl*& __cordl_internal_get__displayIndex_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector2Control* const& __cordl_internal_get__position_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector2Control*& __cordl_internal_get__position_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__press_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__press_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl* const& __cordl_internal_get__pressure_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl*& __cordl_internal_get__pressure_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector2Control* const& __cordl_internal_get__radius_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector2Control*& __cordl_internal_get__radius_k__BackingField() ;
+
+constexpr void __cordl_internal_set__delta_k__BackingField(::UnityEngine::InputSystem::Controls::DeltaControl*  value) ;
+
+constexpr void __cordl_internal_set__displayIndex_k__BackingField(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+constexpr void __cordl_internal_set__position_k__BackingField(::UnityEngine::InputSystem::Controls::Vector2Control*  value) ;
+
+constexpr void __cordl_internal_set__press_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__pressure_k__BackingField(::UnityEngine::InputSystem::Controls::AxisControl*  value) ;
+
+constexpr void __cordl_internal_set__radius_k__BackingField(::UnityEngine::InputSystem::Controls::Vector2Control*  value) ;
+
+/// @brief Method .ctor, addr 0xaf60adc, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::InputSystem::Pointer* getStaticF__current_k__BackingField() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_current, addr 0xaf611a0, size 0x48, virtual false, abstract: false, final false
+static inline ::UnityEngine::InputSystem::Pointer* get_current() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_delta, addr 0xaf61128, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::DeltaControl* get_delta() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_displayIndex, addr 0xaf61188, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::IntegerControl* get_displayIndex() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_position, addr 0xaf61110, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::Vector2Control* get_position() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_press, addr 0xaf61170, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_press() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_pressure, addr 0xaf61158, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::AxisControl* get_pressure() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_radius, addr 0xaf61140, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::Vector2Control* get_radius() ;
+
+/// @brief Convert to "::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver"
+constexpr ::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver* i___UnityEngine__InputSystem__LowLevel__IInputStateCallbackReceiver() noexcept;
+
+static inline void setStaticF__current_k__BackingField(::UnityEngine::InputSystem::Pointer*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_current, addr 0xaf611e8, size 0x58, virtual false, abstract: false, final false
+static inline void set_current(::UnityEngine::InputSystem::Pointer*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_delta, addr 0xaf61130, size 0x10, virtual false, abstract: false, final false
+inline void set_delta(::UnityEngine::InputSystem::Controls::DeltaControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_displayIndex, addr 0xaf61190, size 0x10, virtual false, abstract: false, final false
+inline void set_displayIndex(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_position, addr 0xaf61118, size 0x10, virtual false, abstract: false, final false
+inline void set_position(::UnityEngine::InputSystem::Controls::Vector2Control*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_press, addr 0xaf61178, size 0x10, virtual false, abstract: false, final false
+inline void set_press(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_pressure, addr 0xaf61160, size 0x10, virtual false, abstract: false, final false
+inline void set_pressure(::UnityEngine::InputSystem::Controls::AxisControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_radius, addr 0xaf61148, size 0x10, virtual false, abstract: false, final false
+inline void set_radius(::UnityEngine::InputSystem::Controls::Vector2Control*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Pointer() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Pointer", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Pointer(Pointer && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Pointer", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Pointer(Pointer const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13460};
+
+/// [CompilerGenerated]
+/// @brief Field <position>k__BackingField, offset: 0x188, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::Vector2Control*  ____position_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <delta>k__BackingField, offset: 0x190, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::DeltaControl*  ____delta_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <radius>k__BackingField, offset: 0x198, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::Vector2Control*  ____radius_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <pressure>k__BackingField, offset: 0x1a0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::AxisControl*  ____pressure_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <press>k__BackingField, offset: 0x1a8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____press_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <displayIndex>k__BackingField, offset: 0x1b0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::IntegerControl*  ____displayIndex_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::InputSystem::Pointer, ____position_k__BackingField) == 0x188, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Pointer, ____delta_k__BackingField) == 0x190, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Pointer, ____radius_k__BackingField) == 0x198, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Pointer, ____pressure_k__BackingField) == 0x1a0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Pointer, ____press_k__BackingField) == 0x1a8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Pointer, ____displayIndex_k__BackingField) == 0x1b0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::InputSystem::Pointer) == 0x1b8, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputSystem

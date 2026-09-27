@@ -1,0 +1,215 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/UIR/OpacityIdAccelerator.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Unity/Collections/zzzz__NativeArray_1_impl.hpp"
+#include "Unity/Jobs/zzzz__JobHandle_impl.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__OpacityIdAccelerator_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "Unity/Collections/zzzz__NativeSlice_1_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__OpacityIdAccelerator_OpacityIdUpdateJob_def.hpp"
+#include "UnityEngine/UIElements/zzzz__Vertex_def.hpp"
+#include "UnityEngine/zzzz__Color32_def.hpp"
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::OpacityIdAccelerator.CreateJob
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::OpacityIdAccelerator::*)(::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>, ::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>, ::UnityEngine::Color32, int32_t)>(&::UnityEngine::UIElements::UIR::OpacityIdAccelerator::CreateJob)> {
+  constexpr static std::size_t size = 0xf4;
+  constexpr static std::size_t addrs = 0xb7df86c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"CreateJob", {}, {::i2c::type_of<::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>>(), ::i2c::type_of<::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>>(), ::i2c::type_of<::UnityEngine::Color32>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::OpacityIdAccelerator.CompleteJobs
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::OpacityIdAccelerator::*)()>(&::UnityEngine::UIElements::UIR::OpacityIdAccelerator::CompleteJobs)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xb7df960;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"CompleteJobs", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::OpacityIdAccelerator.get_disposed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::UIR::OpacityIdAccelerator::*)()>(&::UnityEngine::UIElements::UIR::OpacityIdAccelerator::get_disposed)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7df9f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"get_disposed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::OpacityIdAccelerator.set_disposed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::OpacityIdAccelerator::*)(bool)>(&::UnityEngine::UIElements::UIR::OpacityIdAccelerator::set_disposed)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7dfa00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"set_disposed", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::OpacityIdAccelerator.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::OpacityIdAccelerator::*)()>(&::UnityEngine::UIElements::UIR::OpacityIdAccelerator::Dispose)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xb7dfa08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::OpacityIdAccelerator.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::OpacityIdAccelerator::*)(bool)>(&::UnityEngine::UIElements::UIR::OpacityIdAccelerator::Dispose)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xb7dfa74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                    {::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::OpacityIdAccelerator._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::OpacityIdAccelerator::*)()>(&::UnityEngine::UIElements::UIR::OpacityIdAccelerator::_ctor)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xb7dfad8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::Unity::Collections::NativeArray_1<::Unity::Jobs::JobHandle>& UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_get_m_Jobs()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Jobs;
+}
+constexpr ::Unity::Collections::NativeArray_1<::Unity::Jobs::JobHandle> const& UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_get_m_Jobs() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Jobs;
+}
+constexpr void UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_set_m_Jobs(::Unity::Collections::NativeArray_1<::Unity::Jobs::JobHandle>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Jobs = value;
+}
+constexpr int32_t& UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_get_m_NextJobIndex()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_NextJobIndex;
+}
+constexpr int32_t const& UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_get_m_NextJobIndex() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_NextJobIndex;
+}
+constexpr void UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_set_m_NextJobIndex(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_NextJobIndex = value;
+}
+constexpr bool& UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_get__disposed_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____disposed_k__BackingField;
+}
+constexpr bool const& UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_get__disposed_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____disposed_k__BackingField;
+}
+constexpr void UnityEngine::UIElements::UIR::OpacityIdAccelerator::__cordl_internal_set__disposed_k__BackingField(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____disposed_k__BackingField = value;
+}
+inline void UnityEngine::UIElements::UIR::OpacityIdAccelerator::CreateJob(::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>  oldVerts, ::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>  newVerts, ::UnityEngine::Color32  opacityData, int32_t  vertexCount)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"CreateJob", {}, {::i2c::type_of<::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>>(), ::i2c::type_of<::Unity::Collections::NativeSlice_1<::UnityEngine::UIElements::Vertex>>(), ::i2c::type_of<::UnityEngine::Color32>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, oldVerts, newVerts, opacityData, vertexCount);
+}
+inline void UnityEngine::UIElements::UIR::OpacityIdAccelerator::CompleteJobs()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"CompleteJobs", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::UIElements::UIR::OpacityIdAccelerator::get_disposed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"get_disposed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIR::OpacityIdAccelerator::set_disposed(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"set_disposed", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::UIElements::UIR::OpacityIdAccelerator::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIR::OpacityIdAccelerator::Dispose(bool  disposing)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, disposing);
+}
+inline void UnityEngine::UIElements::UIR::OpacityIdAccelerator::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::UIR::OpacityIdAccelerator* UnityEngine::UIElements::UIR::OpacityIdAccelerator::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::UIR::OpacityIdAccelerator*>());
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::UIElements::UIR::OpacityIdAccelerator::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::UIElements::UIR::OpacityIdAccelerator::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::UIR::OpacityIdAccelerator::OpacityIdAccelerator()   {
+}

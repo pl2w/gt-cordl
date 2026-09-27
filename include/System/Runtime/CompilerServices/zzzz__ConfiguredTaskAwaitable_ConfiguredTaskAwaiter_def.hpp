@@ -1,0 +1,93 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/CompilerServices/ConfiguredTaskAwaitable_ConfiguredTaskAwaiter.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+CORDL_MODULE_EXPORT(ConfiguredTaskAwaitable_ConfiguredTaskAwaiter)
+namespace System::Runtime::CompilerServices {
+class ICriticalNotifyCompletion;
+}
+namespace System::Runtime::CompilerServices {
+class INotifyCompletion;
+}
+namespace System::Threading::Tasks {
+class Task;
+}
+namespace System {
+class Action;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+struct ConfiguredTaskAwaitable_ConfiguredTaskAwaiter;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter, "System.Runtime.CompilerServices", "ConfiguredTaskAwaitable/ConfiguredTaskAwaiter");
+// [IsReadOnly]
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: System.Runtime.CompilerServices.ConfiguredTaskAwaitable/ConfiguredTaskAwaiter
+struct CORDL_TYPE ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
+public:
+// Declarations
+ __declspec(property(get=get_IsCompleted)) bool  IsCompleted;
+
+/// @brief Convert operator to "::System::Runtime::CompilerServices::ICriticalNotifyCompletion"
+constexpr operator  ::System::Runtime::CompilerServices::ICriticalNotifyCompletion*() ;
+
+/// @brief Convert operator to "::System::Runtime::CompilerServices::INotifyCompletion"
+constexpr operator  ::System::Runtime::CompilerServices::INotifyCompletion*() ;
+
+/// [StackTraceHidden]
+/// @brief Method GetResult, addr 0xa1e68e0, size 0xc, virtual false, abstract: false, final false
+inline void GetResult() ;
+
+/// @brief Method OnCompleted, addr 0xa1e68b0, size 0x18, virtual true, abstract: false, final true
+inline void OnCompleted(::System::Action*  continuation) ;
+
+/// @brief Method UnsafeOnCompleted, addr 0xa1e68c8, size 0x18, virtual true, abstract: false, final true
+inline void UnsafeOnCompleted(::System::Action*  continuation) ;
+
+/// @brief Method .ctor, addr 0xa1e6864, size 0x28, virtual false, abstract: false, final false
+inline void _ctor(::System::Threading::Tasks::Task*  task, bool  continueOnCapturedContext) ;
+
+/// @brief Method get_IsCompleted, addr 0xa1e6898, size 0x18, virtual false, abstract: false, final false
+inline bool get_IsCompleted() ;
+
+/// @brief Convert to "::System::Runtime::CompilerServices::ICriticalNotifyCompletion"
+constexpr ::System::Runtime::CompilerServices::ICriticalNotifyCompletion* i___System__Runtime__CompilerServices__ICriticalNotifyCompletion() ;
+
+/// @brief Convert to "::System::Runtime::CompilerServices::INotifyCompletion"
+constexpr ::System::Runtime::CompilerServices::INotifyCompletion* i___System__Runtime__CompilerServices__INotifyCompletion() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr ConfiguredTaskAwaitable_ConfiguredTaskAwaiter() ;
+
+// Ctor Parameters [CppParam { name: "m_task", ty: "::System::Threading::Tasks::Task*", modifiers: "", def_value: None, comment: None }, CppParam { name: "m_continueOnCapturedContext", ty: "bool", modifiers: "", def_value: None, comment: None }]
+constexpr ConfiguredTaskAwaitable_ConfiguredTaskAwaiter(::System::Threading::Tasks::Task*  m_task, bool  m_continueOnCapturedContext) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6531};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// @brief Field m_task, offset: 0x0, size: 0x8, def value: None
+ ::System::Threading::Tasks::Task*  m_task;
+
+/// @brief Field m_continueOnCapturedContext, offset: 0x8, size: 0x1, def value: None
+ bool  m_continueOnCapturedContext;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter, m_task) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter, m_continueOnCapturedContext) == 0x8, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

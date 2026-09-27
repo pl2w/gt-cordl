@@ -1,0 +1,71 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/LowLevel/PointerState.hpp"
+#include "UnityEngine/zzzz__Vector2_impl.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__PointerState_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__IInputStateTypeInfo_def.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__FourCC_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::PointerState.get_kFormat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Utilities::FourCC (*)()>(&::UnityEngine::InputSystem::LowLevel::PointerState::get_kFormat)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xafee0b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::PointerState>(),
+                        {"get_kFormat", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::PointerState.get_format
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Utilities::FourCC (::UnityEngine::InputSystem::LowLevel::PointerState::*)()>(&::UnityEngine::InputSystem::LowLevel::PointerState::get_format)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xafee0e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::PointerState>(),
+                        {"get_format", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::UnityEngine::InputSystem::Utilities::FourCC UnityEngine::InputSystem::LowLevel::PointerState::get_kFormat()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::PointerState>(),
+                        {"get_kFormat", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Utilities::FourCC>(nullptr, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::Utilities::FourCC UnityEngine::InputSystem::LowLevel::PointerState::get_format()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::PointerState>(),
+                        {"get_format", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Utilities::FourCC>(*this, ___internal_method);
+}
+/// @brief Convert operator to "::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo"
+constexpr  UnityEngine::InputSystem::LowLevel::PointerState::operator ::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo*()  {
+return static_cast<::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+/// @brief Convert to "::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo"
+constexpr ::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo* UnityEngine::InputSystem::LowLevel::PointerState::i___UnityEngine__InputSystem__LowLevel__IInputStateTypeInfo()  {
+return static_cast<::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+// Ctor Parameters [CppParam { name: "pointerId", ty: "uint32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "position", ty: "::UnityEngine::Vector2", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "delta", ty: "::UnityEngine::Vector2", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "pressure", ty: "float_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "radius", ty: "::UnityEngine::Vector2", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "buttons", ty: "uint16_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "displayIndex", ty: "uint16_t", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::InputSystem::LowLevel::PointerState::PointerState(uint32_t  pointerId, ::UnityEngine::Vector2  position, ::UnityEngine::Vector2  delta, float_t  pressure, ::UnityEngine::Vector2  radius, uint16_t  buttons, uint16_t  displayIndex) noexcept  {
+this->pointerId = pointerId;
+this->position = position;
+this->delta = delta;
+this->pressure = pressure;
+this->radius = radius;
+this->buttons = buttons;
+this->displayIndex = displayIndex;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::LowLevel::PointerState::PointerState()   {
+}

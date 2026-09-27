@@ -1,0 +1,75 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/GuidArrayHelperWithString.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Xml/zzzz__ArrayHelper_2_def.hpp"
+#include "System/zzzz__Guid_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(GuidArrayHelperWithString)
+namespace System::Xml {
+class XmlDictionaryReader;
+}
+namespace System::Xml {
+class XmlDictionaryWriter;
+}
+namespace System {
+struct Guid;
+}
+// Forward declare root types
+namespace System::Xml {
+class GuidArrayHelperWithString;
+}
+// Write type traits
+MARK_REF_T(::System::Xml::GuidArrayHelperWithString*);
+DEFINE_IL2CPP_CLASS(::System::Xml::GuidArrayHelperWithString*, "System.Xml", "GuidArrayHelperWithString");
+// Dependencies System.Guid, System.Xml.ArrayHelper`2<TArgument, TArray>
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.GuidArrayHelperWithString
+class CORDL_TYPE GuidArrayHelperWithString : public ::System::Xml::ArrayHelper_2<::StringW,::System::Guid> {
+public:
+// Declarations
+/// @brief Field Instance, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_Instance, put=setStaticF_Instance)) ::System::Xml::GuidArrayHelperWithString*  Instance;
+
+static inline ::System::Xml::GuidArrayHelperWithString* New_ctor() ;
+
+/// @brief Method ReadArray, addr 0xaa0487c, size 0x38, virtual true, abstract: false, final false
+inline int32_t ReadArray(::System::Xml::XmlDictionaryReader*  reader, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<::System::Guid>  array, int32_t  offset, int32_t  count) ;
+
+/// @brief Method WriteArray, addr 0xaa048b4, size 0x3c, virtual true, abstract: false, final false
+inline void WriteArray(::System::Xml::XmlDictionaryWriter*  writer, ::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<::System::Guid>  array, int32_t  offset, int32_t  count) ;
+
+/// @brief Method .ctor, addr 0xaa048f0, size 0x48, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::System::Xml::GuidArrayHelperWithString* getStaticF_Instance() ;
+
+static inline void setStaticF_Instance(::System::Xml::GuidArrayHelperWithString*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr GuidArrayHelperWithString() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "GuidArrayHelperWithString", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+GuidArrayHelperWithString(GuidArrayHelperWithString && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "GuidArrayHelperWithString", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+GuidArrayHelperWithString(GuidArrayHelperWithString const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24402};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::GuidArrayHelperWithString) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Xml

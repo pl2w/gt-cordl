@@ -1,0 +1,881 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/XmlDictionaryWriter.hpp"
+#include "System/Xml/zzzz__XmlWriter_impl.hpp"
+#include "System/Xml/zzzz__XmlDictionaryWriter_def.hpp"
+#include "System/IO/zzzz__Stream_def.hpp"
+#include "System/Text/zzzz__Encoding_def.hpp"
+#include "System/Xml/zzzz__XmlDictionaryReader_def.hpp"
+#include "System/Xml/zzzz__XmlDictionaryString_def.hpp"
+#include "System/Xml/zzzz__XmlDictionaryWriter_XmlWrappedWriter_def.hpp"
+#include "System/Xml/zzzz__XmlReader_def.hpp"
+#include "System/Xml/zzzz__XmlWriter_def.hpp"
+#include "System/zzzz__Array_def.hpp"
+#include "System/zzzz__DateTime_def.hpp"
+#include "System/zzzz__Decimal_def.hpp"
+#include "System/zzzz__Guid_def.hpp"
+#include "System/zzzz__TimeSpan_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.CreateTextWriter
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlDictionaryWriter* (*)(::System::IO::Stream*, ::System::Text::Encoding*, bool)>(&::System::Xml::XmlDictionaryWriter::CreateTextWriter)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xaa2af30;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"CreateTextWriter", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<::System::Text::Encoding*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.CreateDictionaryWriter
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlDictionaryWriter* (*)(::System::Xml::XmlWriter*)>(&::System::Xml::XmlDictionaryWriter::CreateDictionaryWriter)> {
+  constexpr static std::size_t size = 0xe4;
+  constexpr static std::size_t addrs = 0xaa2afb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"CreateDictionaryWriter", {}, {::i2c::type_of<::System::Xml::XmlWriter*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteStartElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*)>(&::System::Xml::XmlDictionaryWriter::WriteStartElement)> {
+  constexpr static std::size_t size = 0xa0;
+  constexpr static std::size_t addrs = 0xaa2b0d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 45}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteStartAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*)>(&::System::Xml::XmlDictionaryWriter::WriteStartAttribute)> {
+  constexpr static std::size_t size = 0xa0;
+  constexpr static std::size_t addrs = 0xaa2b174;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 46}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteXmlnsAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW)>(&::System::Xml::XmlDictionaryWriter::WriteXmlnsAttribute)> {
+  constexpr static std::size_t size = 0x134;
+  constexpr static std::size_t addrs = 0xaa2b214;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 47}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteXmlnsAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*)>(&::System::Xml::XmlDictionaryWriter::WriteXmlnsAttribute)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xaa2b348;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 48}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryString*)>(&::System::Xml::XmlDictionaryWriter::WriteString)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xaa2b3d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 49}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteQualifiedName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*)>(&::System::Xml::XmlDictionaryWriter::WriteQualifiedName)> {
+  constexpr static std::size_t size = 0xe8;
+  constexpr static std::size_t addrs = 0xaa2b450;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 50}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Guid)>(&::System::Xml::XmlDictionaryWriter::WriteValue)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xaa2b538;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 51}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::TimeSpan)>(&::System::Xml::XmlDictionaryWriter::WriteValue)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xaa2b578;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 52}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteElementNode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryReader*, bool)>(&::System::Xml::XmlDictionaryWriter::WriteElementNode)> {
+  constexpr static std::size_t size = 0x384;
+  constexpr static std::size_t addrs = 0xaa2b5f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteElementNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArrayNode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryReader*, ::StringW, ::StringW, ::StringW, ::System::Type*)>(&::System::Xml::XmlDictionaryWriter::WriteArrayNode)> {
+  constexpr static std::size_t size = 0x790;
+  constexpr static std::size_t addrs = 0xaa2b978;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteArrayNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArrayNode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryReader*, ::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::System::Type*)>(&::System::Xml::XmlDictionaryWriter::WriteArrayNode)> {
+  constexpr static std::size_t size = 0x790;
+  constexpr static std::size_t addrs = 0xaa2c108;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteArrayNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Xml::XmlDictionaryString*>(), ::i2c::type_of<::System::Xml::XmlDictionaryString*>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArrayNode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryReader*, ::System::Type*)>(&::System::Xml::XmlDictionaryWriter::WriteArrayNode)> {
+  constexpr static std::size_t size = 0xf4;
+  constexpr static std::size_t addrs = 0xaa2c898;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteArrayNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteTextNode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryReader*, bool)>(&::System::Xml::XmlDictionaryWriter::WriteTextNode)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xaa2c98c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 53}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteNode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlReader*, bool)>(&::System::Xml::XmlDictionaryWriter::WriteNode)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xaa2ca30;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 43}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteNode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Xml::XmlDictionaryReader*, bool)>(&::System::Xml::XmlDictionaryWriter::WriteNode)> {
+  constexpr static std::size_t size = 0x3bc;
+  constexpr static std::size_t addrs = 0xaa2cae8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 54}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.CheckArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::System::Array*, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::CheckArray)> {
+  constexpr static std::size_t size = 0x25c;
+  constexpr static std::size_t addrs = 0xaa2cea4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"CheckArray", {}, {::i2c::type_of<::System::Array*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<bool>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2d100;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 55}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<bool>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2d1e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 56}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<int16_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2d2a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 57}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<int16_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2d384;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 58}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<int32_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2d448;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 59}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<int32_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2d528;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 60}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<int64_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2d5ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 61}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<int64_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2d6cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 62}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<float_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2d790;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 63}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<float_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2d870;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 64}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<double_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2d934;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 65}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<double_t>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2da14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 66}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<::System::Decimal>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2dad8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 67}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<::System::Decimal>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2dbb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 68}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<::System::DateTime>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2dc7c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 69}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<::System::DateTime>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2dd5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 70}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<::System::Guid>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2de20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 71}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<::System::Guid>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2df00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 72}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::StringW, ::StringW, ::ArrayW<::System::TimeSpan>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaa2dfc4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 73}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter.WriteArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)(::StringW, ::System::Xml::XmlDictionaryString*, ::System::Xml::XmlDictionaryString*, ::ArrayW<::System::TimeSpan>, int32_t, int32_t)>(&::System::Xml::XmlDictionaryWriter::WriteArray)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaa2e0a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                    {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 74}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlDictionaryWriter._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlDictionaryWriter::*)()>(&::System::Xml::XmlDictionaryWriter::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaa2e168;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::System::Xml::XmlDictionaryWriter* System::Xml::XmlDictionaryWriter::CreateTextWriter(::System::IO::Stream*  stream, ::System::Text::Encoding*  encoding, bool  ownsStream)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"CreateTextWriter", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<::System::Text::Encoding*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlDictionaryWriter*>(nullptr, ___internal_method, stream, encoding, ownsStream);
+}
+inline ::System::Xml::XmlDictionaryWriter* System::Xml::XmlDictionaryWriter::CreateDictionaryWriter(::System::Xml::XmlWriter*  writer)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"CreateDictionaryWriter", {}, {::i2c::type_of<::System::Xml::XmlWriter*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlDictionaryWriter*>(nullptr, ___internal_method, writer);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteStartElement(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 45}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteStartAttribute(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 46}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteXmlnsAttribute(::StringW  prefix, ::StringW  namespaceUri)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 47}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, namespaceUri);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteXmlnsAttribute(::StringW  prefix, ::System::Xml::XmlDictionaryString*  namespaceUri)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 48}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, namespaceUri);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteString(::System::Xml::XmlDictionaryString*  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 49}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteQualifiedName(::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 50}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, localName, namespaceUri);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteValue(::System::Guid  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 51}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteValue(::System::TimeSpan  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 52}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteElementNode(::System::Xml::XmlDictionaryReader*  reader, bool  defattr)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteElementNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader, defattr);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArrayNode(::System::Xml::XmlDictionaryReader*  reader, ::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteArrayNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader, prefix, localName, namespaceUri, type);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArrayNode(::System::Xml::XmlDictionaryReader*  reader, ::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteArrayNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Xml::XmlDictionaryString*>(), ::i2c::type_of<::System::Xml::XmlDictionaryString*>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader, prefix, localName, namespaceUri, type);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArrayNode(::System::Xml::XmlDictionaryReader*  reader, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"WriteArrayNode", {}, {::i2c::type_of<::System::Xml::XmlDictionaryReader*>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader, type);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteTextNode(::System::Xml::XmlDictionaryReader*  reader, bool  isAttribute)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 53}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader, isAttribute);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteNode(::System::Xml::XmlReader*  reader, bool  defattr)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 43}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader, defattr);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteNode(::System::Xml::XmlDictionaryReader*  reader, bool  defattr)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 54}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader, defattr);
+}
+inline void System::Xml::XmlDictionaryWriter::CheckArray(::System::Array*  array, int32_t  offset, int32_t  count)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {"CheckArray", {}, {::i2c::type_of<::System::Array*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<bool>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 55}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<bool>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 56}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<int16_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 57}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<int16_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 58}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<int32_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 59}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<int32_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 60}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<int64_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 61}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<int64_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 62}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<float_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 63}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<float_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 64}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<double_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 65}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<double_t>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 66}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<::System::Decimal>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 67}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<::System::Decimal>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 68}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<::System::DateTime>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 69}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<::System::DateTime>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 70}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<::System::Guid>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 71}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<::System::Guid>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 72}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::StringW  localName, ::StringW  namespaceUri, ::ArrayW<::System::TimeSpan>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 73}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::WriteArray(::StringW  prefix, ::System::Xml::XmlDictionaryString*  localName, ::System::Xml::XmlDictionaryString*  namespaceUri, ::ArrayW<::System::TimeSpan>  array, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(), 74}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, localName, namespaceUri, array, offset, count);
+}
+inline void System::Xml::XmlDictionaryWriter::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlDictionaryWriter*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Xml::XmlDictionaryWriter* System::Xml::XmlDictionaryWriter::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Xml::XmlDictionaryWriter*>());
+}
+// Ctor Parameters []
+constexpr ::System::Xml::XmlDictionaryWriter::XmlDictionaryWriter()   {
+}

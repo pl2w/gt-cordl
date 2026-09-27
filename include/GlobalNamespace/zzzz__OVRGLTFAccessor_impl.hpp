@@ -1,0 +1,666 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRGLTFAccessor.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFAccessor_GLTFAccessor_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFAccessor_GLTFBufferView_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFAccessor_GLTFBuffer_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFAccessor_def.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFAccessor_GLTFAccessor_def.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFAccessor_GLTFBufferView_def.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFAccessor_GLTFBuffer_def.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFComponentType_def.hpp"
+#include "GlobalNamespace/zzzz__OVRGLTFType_def.hpp"
+#include "OVRSimpleJSON/zzzz__JSONNode_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/IO/zzzz__BinaryReader_def.hpp"
+#include "System/IO/zzzz__Stream_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "UnityEngine/zzzz__BoneWeight_def.hpp"
+#include "UnityEngine/zzzz__Color_def.hpp"
+#include "UnityEngine/zzzz__Matrix4x4_def.hpp"
+#include "UnityEngine/zzzz__Quaternion_def.hpp"
+#include "UnityEngine/zzzz__Vector2_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+#include "UnityEngine/zzzz__Vector4_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.TryCreate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::OVRSimpleJSON::JSONNode*, ::OVRSimpleJSON::JSONNode*, ::OVRSimpleJSON::JSONNode*, ::System::IO::Stream*, ::by_ref<::GlobalNamespace::OVRGLTFAccessor*>)>(&::GlobalNamespace::OVRGLTFAccessor::TryCreate)> {
+  constexpr static std::size_t size = 0x1a8;
+  constexpr static std::size_t addrs = 0xa585f44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"TryCreate", {}, {::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<::by_ref<::GlobalNamespace::OVRGLTFAccessor*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGLTFAccessor::*)(::OVRSimpleJSON::JSONNode*, ::OVRSimpleJSON::JSONNode*, ::OVRSimpleJSON::JSONNode*, ::System::IO::BinaryReader*, int32_t, int32_t)>(&::GlobalNamespace::OVRGLTFAccessor::_ctor)> {
+  constexpr static std::size_t size = 0x10c4;
+  constexpr static std::size_t addrs = 0xa5860ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {".ctor", {}, {::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::System::IO::BinaryReader*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ToOVRType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRGLTFType (*)(::StringW)>(&::GlobalNamespace::OVRGLTFAccessor::ToOVRType)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xa5872a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ToOVRType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.Seek
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGLTFAccessor::*)(int32_t, bool)>(&::GlobalNamespace::OVRGLTFAccessor::Seek)> {
+  constexpr static std::size_t size = 0x1b4;
+  constexpr static std::size_t addrs = 0xa58740c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"Seek", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.SeekStride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGLTFAccessor::*)(int32_t)>(&::GlobalNamespace::OVRGLTFAccessor::SeekStride)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xa5875c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"SeekStride", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadFloat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<float_t> (::GlobalNamespace::OVRGLTFAccessor::*)()>(&::GlobalNamespace::OVRGLTFAccessor::ReadFloat)> {
+  constexpr static std::size_t size = 0x180;
+  constexpr static std::size_t addrs = 0xa58768c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadFloat", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadInt
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<int32_t> (::GlobalNamespace::OVRGLTFAccessor::*)()>(&::GlobalNamespace::OVRGLTFAccessor::ReadInt)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xa5879a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadInt", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadVector2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::Vector2> (::GlobalNamespace::OVRGLTFAccessor::*)()>(&::GlobalNamespace::OVRGLTFAccessor::ReadVector2)> {
+  constexpr static std::size_t size = 0x1b4;
+  constexpr static std::size_t addrs = 0xa587be0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadVector2", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadVector3
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::Vector3> (::GlobalNamespace::OVRGLTFAccessor::*)(::UnityEngine::Vector3)>(&::GlobalNamespace::OVRGLTFAccessor::ReadVector3)> {
+  constexpr static std::size_t size = 0x274;
+  constexpr static std::size_t addrs = 0xa587d94;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadVector3", {}, {::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadVector4
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::Vector4> (::GlobalNamespace::OVRGLTFAccessor::*)(::UnityEngine::Vector4)>(&::GlobalNamespace::OVRGLTFAccessor::ReadVector4)> {
+  constexpr static std::size_t size = 0x288;
+  constexpr static std::size_t addrs = 0xa588008;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadVector4", {}, {::i2c::type_of<::UnityEngine::Vector4>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadAsInt
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::System::IO::BinaryReader*, ::GlobalNamespace::OVRGLTFComponentType)>(&::GlobalNamespace::OVRGLTFAccessor::ReadAsInt)> {
+  constexpr static std::size_t size = 0x19c;
+  constexpr static std::size_t addrs = 0xa587a44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadAsInt", {}, {::i2c::type_of<::System::IO::BinaryReader*>(), ::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadAsFloat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (*)(::System::IO::BinaryReader*, ::GlobalNamespace::OVRGLTFComponentType)>(&::GlobalNamespace::OVRGLTFAccessor::ReadAsFloat)> {
+  constexpr static std::size_t size = 0x194;
+  constexpr static std::size_t addrs = 0xa58780c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadAsFloat", {}, {::i2c::type_of<::System::IO::BinaryReader*>(), ::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadColor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::Color> (::GlobalNamespace::OVRGLTFAccessor::*)()>(&::GlobalNamespace::OVRGLTFAccessor::ReadColor)> {
+  constexpr static std::size_t size = 0x404;
+  constexpr static std::size_t addrs = 0xa588290;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadColor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadWeights
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGLTFAccessor::*)(::by_ref<::ArrayW<::UnityEngine::BoneWeight>>)>(&::GlobalNamespace::OVRGLTFAccessor::ReadWeights)> {
+  constexpr static std::size_t size = 0x3f4;
+  constexpr static std::size_t addrs = 0xa58878c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadWeights", {}, {::i2c::type_of<::by_ref<::ArrayW<::UnityEngine::BoneWeight>>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadJoints
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGLTFAccessor::*)(::by_ref<::ArrayW<::UnityEngine::BoneWeight>>)>(&::GlobalNamespace::OVRGLTFAccessor::ReadJoints)> {
+  constexpr static std::size_t size = 0x1dc;
+  constexpr static std::size_t addrs = 0xa588b80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadJoints", {}, {::i2c::type_of<::by_ref<::ArrayW<::UnityEngine::BoneWeight>>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadQuaterion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::Quaternion> (::GlobalNamespace::OVRGLTFAccessor::*)(::UnityEngine::Vector4)>(&::GlobalNamespace::OVRGLTFAccessor::ReadQuaterion)> {
+  constexpr static std::size_t size = 0x334;
+  constexpr static std::size_t addrs = 0xa588d5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadQuaterion", {}, {::i2c::type_of<::UnityEngine::Vector4>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadMatrix4x4
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::Matrix4x4> (::GlobalNamespace::OVRGLTFAccessor::*)(::UnityEngine::Vector3)>(&::GlobalNamespace::OVRGLTFAccessor::ReadMatrix4x4)> {
+  constexpr static std::size_t size = 0x46c;
+  constexpr static std::size_t addrs = 0xa589090;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadMatrix4x4", {}, {::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.GetStrideForType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::GlobalNamespace::OVRGLTFAccessor::*)(::GlobalNamespace::OVRGLTFComponentType)>(&::GlobalNamespace::OVRGLTFAccessor::GetStrideForType)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xa5871b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"GetStrideForType", {}, {::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.GetMaxValueForType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::GlobalNamespace::OVRGLTFAccessor::*)(::GlobalNamespace::OVRGLTFComponentType)>(&::GlobalNamespace::OVRGLTFAccessor::GetMaxValueForType)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xa588694;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"GetMaxValueForType", {}, {::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.ReadBuffer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<uint8_t> (::GlobalNamespace::OVRGLTFAccessor::*)(int32_t)>(&::GlobalNamespace::OVRGLTFAccessor::ReadBuffer)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xa5894fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadBuffer", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGLTFAccessor::*)()>(&::GlobalNamespace::OVRGLTFAccessor::Dispose)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xa5895e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGLTFAccessor.GetDataCount
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::GlobalNamespace::OVRGLTFAccessor::*)()>(&::GlobalNamespace::OVRGLTFAccessor::GetDataCount)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa589600;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"GetDataCount", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor>*& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__accessors()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____accessors;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor>* const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__accessors() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____accessors;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__accessors(::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____accessors = value;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView>*& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__bufferViews()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bufferViews;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView>* const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__bufferViews() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bufferViews;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__bufferViews(::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____bufferViews = value;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer>*& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__buffers()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____buffers;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer>* const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__buffers() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____buffers;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__buffers(::System::Collections::Generic::List_1<::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____buffers = value;
+}
+constexpr ::System::IO::Stream*& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__binaryChunk()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____binaryChunk;
+}
+constexpr ::System::IO::Stream* const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__binaryChunk() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____binaryChunk;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__binaryChunk(::System::IO::Stream*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____binaryChunk = value;
+}
+constexpr int32_t& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__binaryChunkLength()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____binaryChunkLength;
+}
+constexpr int32_t const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__binaryChunkLength() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____binaryChunkLength;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__binaryChunkLength(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____binaryChunkLength = value;
+}
+constexpr int32_t& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__binaryChunkStart()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____binaryChunkStart;
+}
+constexpr int32_t const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__binaryChunkStart() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____binaryChunkStart;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__binaryChunkStart(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____binaryChunkStart = value;
+}
+constexpr ::System::IO::BinaryReader*& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__reader()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____reader;
+}
+constexpr ::System::IO::BinaryReader* const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__reader() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____reader;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__reader(::System::IO::BinaryReader*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____reader = value;
+}
+constexpr ::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeGltfAccessor()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeGltfAccessor;
+}
+constexpr ::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeGltfAccessor() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeGltfAccessor;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__activeGltfAccessor(::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____activeGltfAccessor = value;
+}
+constexpr ::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeBufferView()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeBufferView;
+}
+constexpr ::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeBufferView() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeBufferView;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__activeBufferView(::GlobalNamespace::OVRGLTFAccessor_GLTFBufferView  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____activeBufferView = value;
+}
+constexpr ::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeBuffer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeBuffer;
+}
+constexpr ::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeBuffer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeBuffer;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__activeBuffer(::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____activeBuffer = value;
+}
+constexpr int32_t& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeBufferOffset()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeBufferOffset;
+}
+constexpr int32_t const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__activeBufferOffset() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____activeBufferOffset;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__activeBufferOffset(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____activeBufferOffset = value;
+}
+constexpr bool& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__requireStrideSeek()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____requireStrideSeek;
+}
+constexpr bool const& GlobalNamespace::OVRGLTFAccessor::__cordl_internal_get__requireStrideSeek() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____requireStrideSeek;
+}
+constexpr void GlobalNamespace::OVRGLTFAccessor::__cordl_internal_set__requireStrideSeek(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____requireStrideSeek = value;
+}
+inline bool GlobalNamespace::OVRGLTFAccessor::TryCreate(::OVRSimpleJSON::JSONNode*  accessorsRoot, ::OVRSimpleJSON::JSONNode*  bufferViewsRoot, ::OVRSimpleJSON::JSONNode*  buffersRoot, ::System::IO::Stream*  binaryChunk, ::by_ref<::GlobalNamespace::OVRGLTFAccessor*>  dataAccessor)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"TryCreate", {}, {::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<::by_ref<::GlobalNamespace::OVRGLTFAccessor*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, accessorsRoot, bufferViewsRoot, buffersRoot, binaryChunk, dataAccessor);
+}
+inline void GlobalNamespace::OVRGLTFAccessor::_ctor(::OVRSimpleJSON::JSONNode*  accessorsRoot, ::OVRSimpleJSON::JSONNode*  bufferViewsRoot, ::OVRSimpleJSON::JSONNode*  buffersRoot, ::System::IO::BinaryReader*  binaryChunkReader, int32_t  binaryChinkStart, int32_t  binaryChunkLength)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {".ctor", {}, {::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::OVRSimpleJSON::JSONNode*>(), ::i2c::type_of<::System::IO::BinaryReader*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, accessorsRoot, bufferViewsRoot, buffersRoot, binaryChunkReader, binaryChinkStart, binaryChunkLength);
+}
+inline ::GlobalNamespace::OVRGLTFType GlobalNamespace::OVRGLTFAccessor::ToOVRType(::StringW  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ToOVRType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRGLTFType>(nullptr, ___internal_method, type);
+}
+inline void GlobalNamespace::OVRGLTFAccessor::Seek(int32_t  accessorIndex, bool  onlyBufferView)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"Seek", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, accessorIndex, onlyBufferView);
+}
+inline void GlobalNamespace::OVRGLTFAccessor::SeekStride(int32_t  strideIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"SeekStride", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, strideIndex);
+}
+inline ::ArrayW<float_t> GlobalNamespace::OVRGLTFAccessor::ReadFloat()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadFloat", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<float_t>>(this, ___internal_method);
+}
+inline ::ArrayW<int32_t> GlobalNamespace::OVRGLTFAccessor::ReadInt()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadInt", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<int32_t>>(this, ___internal_method);
+}
+inline ::ArrayW<::UnityEngine::Vector2> GlobalNamespace::OVRGLTFAccessor::ReadVector2()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadVector2", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::Vector2>>(this, ___internal_method);
+}
+inline ::ArrayW<::UnityEngine::Vector3> GlobalNamespace::OVRGLTFAccessor::ReadVector3(::UnityEngine::Vector3  conversionScale)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadVector3", {}, {::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::Vector3>>(this, ___internal_method, conversionScale);
+}
+inline ::ArrayW<::UnityEngine::Vector4> GlobalNamespace::OVRGLTFAccessor::ReadVector4(::UnityEngine::Vector4  conversionScale)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadVector4", {}, {::i2c::type_of<::UnityEngine::Vector4>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::Vector4>>(this, ___internal_method, conversionScale);
+}
+inline int32_t GlobalNamespace::OVRGLTFAccessor::ReadAsInt(::System::IO::BinaryReader*  reader, ::GlobalNamespace::OVRGLTFComponentType  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadAsInt", {}, {::i2c::type_of<::System::IO::BinaryReader*>(), ::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, reader, type);
+}
+inline float_t GlobalNamespace::OVRGLTFAccessor::ReadAsFloat(::System::IO::BinaryReader*  reader, ::GlobalNamespace::OVRGLTFComponentType  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadAsFloat", {}, {::i2c::type_of<::System::IO::BinaryReader*>(), ::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(nullptr, ___internal_method, reader, type);
+}
+inline ::ArrayW<::UnityEngine::Color> GlobalNamespace::OVRGLTFAccessor::ReadColor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadColor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::Color>>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGLTFAccessor::ReadWeights(::by_ref<::ArrayW<::UnityEngine::BoneWeight>>  resultsBoneWeights)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadWeights", {}, {::i2c::type_of<::by_ref<::ArrayW<::UnityEngine::BoneWeight>>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, resultsBoneWeights);
+}
+inline void GlobalNamespace::OVRGLTFAccessor::ReadJoints(::by_ref<::ArrayW<::UnityEngine::BoneWeight>>  resultsBoneWeights)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadJoints", {}, {::i2c::type_of<::by_ref<::ArrayW<::UnityEngine::BoneWeight>>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, resultsBoneWeights);
+}
+inline ::ArrayW<::UnityEngine::Quaternion> GlobalNamespace::OVRGLTFAccessor::ReadQuaterion(::UnityEngine::Vector4  gltfToUnitySpaceRotation)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadQuaterion", {}, {::i2c::type_of<::UnityEngine::Vector4>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::Quaternion>>(this, ___internal_method, gltfToUnitySpaceRotation);
+}
+inline ::ArrayW<::UnityEngine::Matrix4x4> GlobalNamespace::OVRGLTFAccessor::ReadMatrix4x4(::UnityEngine::Vector3  conversionScale)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadMatrix4x4", {}, {::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::Matrix4x4>>(this, ___internal_method, conversionScale);
+}
+inline int32_t GlobalNamespace::OVRGLTFAccessor::GetStrideForType(::GlobalNamespace::OVRGLTFComponentType  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"GetStrideForType", {}, {::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, type);
+}
+inline float_t GlobalNamespace::OVRGLTFAccessor::GetMaxValueForType(::GlobalNamespace::OVRGLTFComponentType  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"GetMaxValueForType", {}, {::i2c::type_of<::GlobalNamespace::OVRGLTFComponentType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method, type);
+}
+inline ::ArrayW<uint8_t> GlobalNamespace::OVRGLTFAccessor::ReadBuffer(int32_t  bufferViewIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"ReadBuffer", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<uint8_t>>(this, ___internal_method, bufferViewIndex);
+}
+inline void GlobalNamespace::OVRGLTFAccessor::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline int32_t GlobalNamespace::OVRGLTFAccessor::GetDataCount()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGLTFAccessor*>(),
+                        {"GetDataCount", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRGLTFAccessor* GlobalNamespace::OVRGLTFAccessor::New_ctor(::OVRSimpleJSON::JSONNode*  accessorsRoot, ::OVRSimpleJSON::JSONNode*  bufferViewsRoot, ::OVRSimpleJSON::JSONNode*  buffersRoot, ::System::IO::BinaryReader*  binaryChunkReader, int32_t  binaryChinkStart, int32_t  binaryChunkLength)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRGLTFAccessor*>(accessorsRoot, bufferViewsRoot, buffersRoot, binaryChunkReader, binaryChinkStart, binaryChunkLength));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  GlobalNamespace::OVRGLTFAccessor::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* GlobalNamespace::OVRGLTFAccessor::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRGLTFAccessor::OVRGLTFAccessor()   {
+}

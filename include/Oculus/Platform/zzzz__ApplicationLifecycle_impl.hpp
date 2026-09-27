@@ -1,0 +1,76 @@
+#pragma once
+// IWYU pragma private; include "Oculus/Platform/ApplicationLifecycle.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Oculus/Platform/zzzz__ApplicationLifecycle_def.hpp"
+#include "Oculus/Platform/Models/zzzz__LaunchDetails_def.hpp"
+#include "Oculus/Platform/zzzz__LaunchResult_def.hpp"
+#include "Oculus/Platform/zzzz__Message_1_def.hpp"
+//  Writing Method size for method: ::Oculus::Platform::ApplicationLifecycle.GetLaunchDetails
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Oculus::Platform::Models::LaunchDetails* (*)()>(&::Oculus::Platform::ApplicationLifecycle::GetLaunchDetails)> {
+  constexpr static std::size_t size = 0xac;
+  constexpr static std::size_t addrs = 0xa541b40;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::ApplicationLifecycle*>(),
+                        {"GetLaunchDetails", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Oculus::Platform::ApplicationLifecycle.LogDeeplinkResult
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::StringW, ::Oculus::Platform::LaunchResult)>(&::Oculus::Platform::ApplicationLifecycle::LogDeeplinkResult)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xa541bec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::ApplicationLifecycle*>(),
+                        {"LogDeeplinkResult", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::Oculus::Platform::LaunchResult>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Oculus::Platform::ApplicationLifecycle.SetLaunchIntentChangedNotificationCallback
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::Oculus::Platform::Message_1_Callback<::StringW>*)>(&::Oculus::Platform::ApplicationLifecycle::SetLaunchIntentChangedNotificationCallback)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xa541c74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::ApplicationLifecycle*>(),
+                        {"SetLaunchIntentChangedNotificationCallback", {}, {::i2c::type_of<::Oculus::Platform::Message_1_Callback<::StringW>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::Oculus::Platform::Models::LaunchDetails* Oculus::Platform::ApplicationLifecycle::GetLaunchDetails()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::ApplicationLifecycle*>(),
+                        {"GetLaunchDetails", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Oculus::Platform::Models::LaunchDetails*>(nullptr, ___internal_method);
+}
+inline void Oculus::Platform::ApplicationLifecycle::LogDeeplinkResult(::StringW  trackingID, ::Oculus::Platform::LaunchResult  result)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::ApplicationLifecycle*>(),
+                        {"LogDeeplinkResult", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::Oculus::Platform::LaunchResult>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, trackingID, result);
+}
+inline void Oculus::Platform::ApplicationLifecycle::SetLaunchIntentChangedNotificationCallback(::Oculus::Platform::Message_1_Callback<::StringW>*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::ApplicationLifecycle*>(),
+                        {"SetLaunchIntentChangedNotificationCallback", {}, {::i2c::type_of<::Oculus::Platform::Message_1_Callback<::StringW>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, callback);
+}
+// Ctor Parameters []
+constexpr ::Oculus::Platform::ApplicationLifecycle::ApplicationLifecycle()   {
+}

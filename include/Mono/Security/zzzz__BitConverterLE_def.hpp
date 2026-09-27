@@ -1,0 +1,73 @@
+#pragma once
+// IWYU pragma private; include "Mono/Security/BitConverterLE.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(BitConverterLE)
+// Forward declare root types
+namespace Mono::Security {
+class BitConverterLE;
+}
+// Write type traits
+MARK_REF_T(::Mono::Security::BitConverterLE*);
+DEFINE_IL2CPP_CLASS(::Mono::Security::BitConverterLE*, "Mono.Security", "BitConverterLE");
+// Dependencies System.Object
+namespace Mono::Security {
+// Is value type: false
+// CS Name: Mono.Security.BitConverterLE
+class CORDL_TYPE BitConverterLE : public ::System::Object {
+public:
+// Declarations
+/// @brief Method GetBytes, addr 0xa0da8cc, size 0x18, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> GetBytes(int32_t  value) ;
+
+/// @brief Method GetBytes, addr 0xa0db580, size 0x14, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> GetBytes(int64_t  value) ;
+
+/// @brief Method GetUIntBytes, addr 0xa0db410, size 0x98, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> GetUIntBytes(uint8_t*  bytes) ;
+
+/// @brief Method GetULongBytes, addr 0xa0db4a8, size 0xd8, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> GetULongBytes(uint8_t*  bytes) ;
+
+/// @brief Method ToInt32, addr 0xa0db664, size 0x24, virtual false, abstract: false, final false
+static inline int32_t ToInt32(::ArrayW<uint8_t>  value, int32_t  startIndex) ;
+
+/// @brief Method ToUInt16, addr 0xa0db688, size 0x24, virtual false, abstract: false, final false
+static inline uint16_t ToUInt16(::ArrayW<uint8_t>  value, int32_t  startIndex) ;
+
+/// @brief Method ToUInt32, addr 0xa0db6ac, size 0x24, virtual false, abstract: false, final false
+static inline uint32_t ToUInt32(::ArrayW<uint8_t>  value, int32_t  startIndex) ;
+
+/// @brief Method UIntFromBytes, addr 0xa0db5e0, size 0x84, virtual false, abstract: false, final false
+static inline void UIntFromBytes(uint8_t*  dst, ::ArrayW<uint8_t>  src, int32_t  startIndex) ;
+
+/// @brief Method UShortFromBytes, addr 0xa0db594, size 0x4c, virtual false, abstract: false, final false
+static inline void UShortFromBytes(uint8_t*  dst, ::ArrayW<uint8_t>  src, int32_t  startIndex) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BitConverterLE() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BitConverterLE", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BitConverterLE(BitConverterLE && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BitConverterLE", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BitConverterLE(BitConverterLE const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27799};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Mono::Security::BitConverterLE) == 0x10, "Size mismatch!");
+
+} // namespace end def Mono::Security

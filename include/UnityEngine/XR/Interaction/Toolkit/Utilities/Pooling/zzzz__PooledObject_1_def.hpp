@@ -1,0 +1,67 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/XR/Interaction/Toolkit/Utilities/Pooling/PooledObject_1.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+CORDL_MODULE_EXPORT(PooledObject_1)
+namespace System {
+class IDisposable;
+}
+namespace UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling {
+template<typename T>
+class LinkedPool_1;
+}
+// Forward declare root types
+namespace UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling {
+template<typename T>
+struct PooledObject_1;
+}
+// Write type traits
+MARK_GEN_VAL_T(::UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling::PooledObject_1);
+DEFINE_IL2CPP_GEN_CLASS(::UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling::PooledObject_1, "UnityEngine.XR.Interaction.Toolkit.Utilities.Pooling", "PooledObject`1");
+// [IsReadOnly]
+// Dependencies 
+namespace UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling {
+// cpp template
+template<typename T>
+// Is value type: true
+// CS Name: UnityEngine.XR.Interaction.Toolkit.Utilities.Pooling.PooledObject`1<T>
+struct CORDL_TYPE PooledObject_1 {
+public:
+// Declarations
+/// @brief Convert operator to "::System::IDisposable"
+constexpr operator  ::System::IDisposable*() ;
+
+/// @brief Method System.IDisposable.Dispose, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline void System_IDisposable_Dispose() ;
+
+/// @brief Method .ctor, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline void _ctor(T  value, ::UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling::LinkedPool_1<T>*  pool) ;
+
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* i___System__IDisposable() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr PooledObject_1() ;
+
+// Ctor Parameters [CppParam { name: "m_ToReturn", ty: "T", modifiers: "", def_value: None, comment: None }, CppParam { name: "m_Pool", ty: "::UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling::LinkedPool_1<T>*", modifiers: "", def_value: None, comment: None }]
+constexpr PooledObject_1(T  m_ToReturn, ::UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling::LinkedPool_1<T>*  m_Pool) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{11250};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// @brief Field m_ToReturn, offset: 0x0, size: 0x8, def value: None
+ T  m_ToReturn;
+
+/// @brief Field m_Pool, offset: 0x8, size: 0x8, def value: None
+ ::UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling::LinkedPool_1<T>*  m_Pool;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::XR::Interaction::Toolkit::Utilities::Pooling

@@ -1,0 +1,73 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/BuildingBlocks/Telemetry.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(Telemetry)
+namespace GlobalNamespace {
+struct OVRTelemetryMarker;
+}
+namespace Meta::XR::BuildingBlocks {
+class BuildingBlock;
+}
+namespace Meta::XR::BuildingBlocks {
+class InstallationRoutineCheckpoint;
+}
+namespace UnityEngine::SceneManagement {
+struct Scene;
+}
+// Forward declare root types
+namespace Meta::XR::BuildingBlocks {
+class Telemetry;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::BuildingBlocks::Telemetry*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::BuildingBlocks::Telemetry*, "Meta.XR.BuildingBlocks", "Telemetry");
+// [Extension]
+// Dependencies System.Object
+namespace Meta::XR::BuildingBlocks {
+// Is value type: false
+// CS Name: Meta.XR.BuildingBlocks.Telemetry
+class CORDL_TYPE Telemetry : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method AddBlockInfo, addr 0x9ec1f24, size 0x194, virtual false, abstract: false, final false
+static inline ::GlobalNamespace::OVRTelemetryMarker AddBlockInfo(::GlobalNamespace::OVRTelemetryMarker  marker, ::Meta::XR::BuildingBlocks::BuildingBlock*  block) ;
+
+/// [Extension]
+/// @brief Method AddBlockVariantInfo, addr 0x9eca54c, size 0xd4, virtual false, abstract: false, final false
+static inline ::GlobalNamespace::OVRTelemetryMarker AddBlockVariantInfo(::GlobalNamespace::OVRTelemetryMarker  marker, ::Meta::XR::BuildingBlocks::BuildingBlock*  block) ;
+
+/// [Extension]
+/// @brief Method AddInstallationRoutineInfo, addr 0x9eca620, size 0x358, virtual false, abstract: false, final false
+static inline ::GlobalNamespace::OVRTelemetryMarker AddInstallationRoutineInfo(::GlobalNamespace::OVRTelemetryMarker  marker, ::Meta::XR::BuildingBlocks::InstallationRoutineCheckpoint*  checkpoint) ;
+
+/// [Extension]
+/// @brief Method AddSceneInfo, addr 0x9eca978, size 0x100, virtual false, abstract: false, final false
+static inline ::GlobalNamespace::OVRTelemetryMarker AddSceneInfo(::GlobalNamespace::OVRTelemetryMarker  marker, ::UnityEngine::SceneManagement::Scene  scene) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Telemetry() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Telemetry(Telemetry && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Telemetry(Telemetry const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{31465};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::BuildingBlocks::Telemetry) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::BuildingBlocks

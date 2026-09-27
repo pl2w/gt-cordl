@@ -1,0 +1,180 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/Serialization/SurrogateDataContract.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Runtime/Serialization/zzzz__DataContract_def.hpp"
+CORDL_MODULE_EXPORT(SurrogateDataContract)
+namespace System::Runtime::Serialization {
+class IObjectReference;
+}
+namespace System::Runtime::Serialization {
+class ISerializationSurrogate;
+}
+namespace System::Runtime::Serialization {
+class SerializationInfo;
+}
+namespace System::Runtime::Serialization {
+struct StreamingContext;
+}
+namespace System::Runtime::Serialization {
+class SurrogateDataContract_SurrogateDataContractCriticalHelper;
+}
+namespace System::Runtime::Serialization {
+class XmlObjectSerializerReadContext;
+}
+namespace System::Runtime::Serialization {
+class XmlObjectSerializerWriteContext;
+}
+namespace System::Runtime::Serialization {
+class XmlReaderDelegator;
+}
+namespace System::Runtime::Serialization {
+class XmlWriterDelegator;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System::Runtime::Serialization {
+class SurrogateDataContract;
+}
+namespace System::Runtime::Serialization {
+class SurrogateDataContract_SurrogateDataContractCriticalHelper;
+}
+// Write type traits
+MARK_REF_T(::System::Runtime::Serialization::SurrogateDataContract*);
+MARK_REF_T(::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper*);
+DEFINE_IL2CPP_CLASS(::System::Runtime::Serialization::SurrogateDataContract*, "System.Runtime.Serialization", "SurrogateDataContract");
+DEFINE_IL2CPP_CLASS(::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper*, "System.Runtime.Serialization", "SurrogateDataContract/SurrogateDataContractCriticalHelper");
+// Dependencies System.Runtime.Serialization.DataContract
+namespace System::Runtime::Serialization {
+// Is value type: false
+// CS Name: System.Runtime.Serialization.SurrogateDataContract
+class CORDL_TYPE SurrogateDataContract : public ::System::Runtime::Serialization::DataContract {
+public:
+// Declarations
+using SurrogateDataContractCriticalHelper = ::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper;
+
+ __declspec(property(get=get_SerializationSurrogate)) ::System::Runtime::Serialization::ISerializationSurrogate*  SerializationSurrogate;
+
+/// @brief Field helper, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_helper, put=__cordl_internal_set_helper)) ::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper*  helper;
+
+/// @brief Method GetRealObject, addr 0xaa698d4, size 0xb4, virtual false, abstract: false, final false
+static inline ::System::Object* GetRealObject(::System::Runtime::Serialization::IObjectReference*  obj, ::System::Runtime::Serialization::StreamingContext  context) ;
+
+/// @brief Method GetUninitializedObject, addr 0xaa69988, size 0x58, virtual false, abstract: false, final false
+inline ::System::Object* GetUninitializedObject(::System::Type*  objType) ;
+
+static inline ::System::Runtime::Serialization::SurrogateDataContract* New_ctor(::System::Type*  type, ::System::Runtime::Serialization::ISerializationSurrogate*  serializationSurrogate) ;
+
+/// @brief Method ReadXmlValue, addr 0xaa699e0, size 0x244, virtual true, abstract: false, final false
+inline ::System::Object* ReadXmlValue(::System::Runtime::Serialization::XmlReaderDelegator*  xmlReader, ::System::Runtime::Serialization::XmlObjectSerializerReadContext*  context) ;
+
+/// @brief Method SerializationSurrogateGetObjectData, addr 0xaa6944c, size 0xd8, virtual false, abstract: false, final false
+inline void SerializationSurrogateGetObjectData(::System::Object*  obj, ::System::Runtime::Serialization::SerializationInfo*  serInfo, ::System::Runtime::Serialization::StreamingContext  context) ;
+
+/// @brief Method SerializationSurrogateSetObjectData, addr 0xaa697f4, size 0xe0, virtual false, abstract: false, final false
+inline ::System::Object* SerializationSurrogateSetObjectData(::System::Object*  obj, ::System::Runtime::Serialization::SerializationInfo*  serInfo, ::System::Runtime::Serialization::StreamingContext  context) ;
+
+/// @brief Method WriteXmlValue, addr 0xaa692d0, size 0xe0, virtual true, abstract: false, final false
+inline void WriteXmlValue(::System::Runtime::Serialization::XmlWriterDelegator*  xmlWriter, ::System::Object*  obj, ::System::Runtime::Serialization::XmlObjectSerializerWriteContext*  context) ;
+
+constexpr ::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper* const& __cordl_internal_get_helper() const;
+
+constexpr ::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper*& __cordl_internal_get_helper() ;
+
+constexpr void __cordl_internal_set_helper(::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper*  value) ;
+
+/// @brief Method .ctor, addr 0xaa61d88, size 0xf4, virtual false, abstract: false, final false
+inline void _ctor(::System::Type*  type, ::System::Runtime::Serialization::ISerializationSurrogate*  serializationSurrogate) ;
+
+/// @brief Method get_SerializationSurrogate, addr 0xaa692b8, size 0x18, virtual false, abstract: false, final false
+inline ::System::Runtime::Serialization::ISerializationSurrogate* get_SerializationSurrogate() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SurrogateDataContract() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SurrogateDataContract", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SurrogateDataContract(SurrogateDataContract && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SurrogateDataContract", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SurrogateDataContract(SurrogateDataContract const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24591};
+
+/// @brief Field helper, offset: 0x28, size: 0x8, def value: None
+ ::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper*  ___helper;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Runtime::Serialization::SurrogateDataContract, ___helper) == 0x28, "Offset mismatch!");
+
+static_assert(sizeof(::System::Runtime::Serialization::SurrogateDataContract) == 0x30, "Size mismatch!");
+
+} // namespace end def System::Runtime::Serialization
+// Dependencies System.Runtime.Serialization.DataContract::DataContractCriticalHelper
+namespace System::Runtime::Serialization {
+// Is value type: false
+// CS Name: System.Runtime.Serialization.SurrogateDataContract/SurrogateDataContractCriticalHelper
+class CORDL_TYPE SurrogateDataContract_SurrogateDataContractCriticalHelper : public ::System::Runtime::Serialization::DataContract_DataContractCriticalHelper {
+public:
+// Declarations
+ __declspec(property(get=get_SerializationSurrogate)) ::System::Runtime::Serialization::ISerializationSurrogate*  SerializationSurrogate;
+
+/// @brief Field serializationSurrogate, offset 0x48, size 0x8 
+ __declspec(property(get=__cordl_internal_get_serializationSurrogate, put=__cordl_internal_set_serializationSurrogate)) ::System::Runtime::Serialization::ISerializationSurrogate*  serializationSurrogate;
+
+static inline ::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper* New_ctor(::System::Type*  type, ::System::Runtime::Serialization::ISerializationSurrogate*  serializationSurrogate) ;
+
+constexpr ::System::Runtime::Serialization::ISerializationSurrogate* const& __cordl_internal_get_serializationSurrogate() const;
+
+constexpr ::System::Runtime::Serialization::ISerializationSurrogate*& __cordl_internal_get_serializationSurrogate() ;
+
+constexpr void __cordl_internal_set_serializationSurrogate(::System::Runtime::Serialization::ISerializationSurrogate*  value) ;
+
+/// @brief Method .ctor, addr 0xaa691f4, size 0xc4, virtual false, abstract: false, final false
+inline void _ctor(::System::Type*  type, ::System::Runtime::Serialization::ISerializationSurrogate*  serializationSurrogate) ;
+
+/// @brief Method get_SerializationSurrogate, addr 0xaa6a0b0, size 0x8, virtual false, abstract: false, final false
+inline ::System::Runtime::Serialization::ISerializationSurrogate* get_SerializationSurrogate() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SurrogateDataContract_SurrogateDataContractCriticalHelper() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SurrogateDataContract_SurrogateDataContractCriticalHelper", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SurrogateDataContract_SurrogateDataContractCriticalHelper(SurrogateDataContract_SurrogateDataContractCriticalHelper && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SurrogateDataContract_SurrogateDataContractCriticalHelper", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SurrogateDataContract_SurrogateDataContractCriticalHelper(SurrogateDataContract_SurrogateDataContractCriticalHelper const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24590};
+
+/// @brief Field serializationSurrogate, offset: 0x48, size: 0x8, def value: None
+ ::System::Runtime::Serialization::ISerializationSurrogate*  ___serializationSurrogate;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper, ___serializationSurrogate) == 0x48, "Offset mismatch!");
+
+static_assert(sizeof(::System::Runtime::Serialization::SurrogateDataContract_SurrogateDataContractCriticalHelper) == 0x50, "Size mismatch!");
+
+} // namespace end def System::Runtime::Serialization

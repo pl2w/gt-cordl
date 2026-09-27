@@ -1,0 +1,545 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/UIR/RenderTree.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Unity/Profiling/zzzz__ProfilerMarker_impl.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__DepthOrderedDirtyTracking_impl.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__RenderTree_AllowedClasses_impl.hpp"
+#include "UnityEngine/UIElements/zzzz__TextureId_impl.hpp"
+#include "UnityEngine/zzzz__RectInt_impl.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__RenderTree_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__ChainBuilderStats_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__DepthOrderedDirtyTracking_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__RenderChainCommand_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__RenderData_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__RenderTreeManager_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__RenderTree_AllowedClasses_def.hpp"
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.get_renderTreeManager
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::UIR::RenderTreeManager* (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::get_renderTreeManager)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7e684c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_renderTreeManager", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.get_rootRenderData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::UIR::RenderData* (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::get_rootRenderData)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7e6854;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_rootRenderData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.get_dirtyTracker
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::by_ref<::UnityEngine::UIElements::UIR::DepthOrderedDirtyTracking> (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::get_dirtyTracker)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7e685c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_dirtyTracker", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.get_firstCommand
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::UIR::RenderChainCommand* (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::get_firstCommand)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7e6864;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_firstCommand", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.get_isRootRenderTree
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::get_isRootRenderTree)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb7e686c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_isRootRenderTree", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.Init
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderTreeManager*, ::UnityEngine::UIElements::UIR::RenderData*)>(&::UnityEngine::UIElements::UIR::RenderTree::Init)> {
+  constexpr static std::size_t size = 0x1a0;
+  constexpr static std::size_t addrs = 0xb7e68b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"Init", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderTreeManager*>(), ::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::Reset)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xb7e6a58;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::Dispose)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb7e6ab0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.DepthFirstResetTextures
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderData*)>(&::UnityEngine::UIElements::UIR::RenderTree::DepthFirstResetTextures)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb7e6ac0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"DepthFirstResetTextures", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.OnRenderDataTransformOrSizeChanged
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderData*, bool, bool)>(&::UnityEngine::UIElements::UIR::RenderTree::OnRenderDataTransformOrSizeChanged)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xb7e6c24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderDataTransformOrSizeChanged", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>(), ::i2c::type_of<bool>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.OnRenderDataOpacityIdChanged
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderData*)>(&::UnityEngine::UIElements::UIR::RenderTree::OnRenderDataOpacityIdChanged)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xb7e6cbc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderDataOpacityIdChanged", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.OnRenderDataVisualsChanged
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderData*, bool)>(&::UnityEngine::UIElements::UIR::RenderTree::OnRenderDataVisualsChanged)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xb7e6d38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderDataVisualsChanged", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.ProcessChanges
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::by_ref<::UnityEngine::UIElements::UIR::ChainBuilderStats>)>(&::UnityEngine::UIElements::UIR::RenderTree::ProcessChanges)> {
+  constexpr static std::size_t size = 0x5d0;
+  constexpr static std::size_t addrs = 0xb7e6dc4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"ProcessChanges", {}, {::i2c::type_of<::by_ref<::UnityEngine::UIElements::UIR::ChainBuilderStats>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.OnRenderCommandAdded
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderChainCommand*)>(&::UnityEngine::UIElements::UIR::RenderTree::OnRenderCommandAdded)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xb7e7694;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderCommandAdded", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderChainCommand*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.OnRenderCommandsRemoved
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderChainCommand*, ::UnityEngine::UIElements::UIR::RenderChainCommand*)>(&::UnityEngine::UIElements::UIR::RenderTree::OnRenderCommandsRemoved)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xb7e76b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderCommandsRemoved", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderChainCommand*>(), ::i2c::type_of<::UnityEngine::UIElements::UIR::RenderChainCommand*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree.ChildWillBeRemoved
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)(::UnityEngine::UIElements::UIR::RenderData*)>(&::UnityEngine::UIElements::UIR::RenderTree::ChildWillBeRemoved)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xb7e76e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"ChildWillBeRemoved", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIR::RenderTree._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIR::RenderTree::*)()>(&::UnityEngine::UIElements::UIR::RenderTree::_ctor)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb7e779c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::UIElements::UIR::RenderTreeManager*& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_RenderTreeManager()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RenderTreeManager;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderTreeManager* const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_RenderTreeManager() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RenderTreeManager;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_m_RenderTreeManager(::UnityEngine::UIElements::UIR::RenderTreeManager*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_RenderTreeManager = value;
+}
+constexpr ::UnityEngine::UIElements::UIR::DepthOrderedDirtyTracking& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_DirtyTracker()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_DirtyTracker;
+}
+constexpr ::UnityEngine::UIElements::UIR::DepthOrderedDirtyTracking const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_DirtyTracker() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_DirtyTracker;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_m_DirtyTracker(::UnityEngine::UIElements::UIR::DepthOrderedDirtyTracking  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_DirtyTracker = value;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderChainCommand*& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_FirstCommand()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_FirstCommand;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderChainCommand* const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_FirstCommand() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_FirstCommand;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_m_FirstCommand(::UnityEngine::UIElements::UIR::RenderChainCommand*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_FirstCommand = value;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderData*& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_RootRenderData()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RootRenderData;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderData* const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_RootRenderData() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RootRenderData;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_m_RootRenderData(::UnityEngine::UIElements::UIR::RenderData*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_RootRenderData = value;
+}
+constexpr ::UnityEngine::UIElements::TextureId& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_quadTextureId()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___quadTextureId;
+}
+constexpr ::UnityEngine::UIElements::TextureId const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_quadTextureId() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___quadTextureId;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_quadTextureId(::UnityEngine::UIElements::TextureId  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___quadTextureId = value;
+}
+constexpr ::UnityEngine::RectInt& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_quadRect()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___quadRect;
+}
+constexpr ::UnityEngine::RectInt const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_quadRect() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___quadRect;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_quadRect(::UnityEngine::RectInt  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___quadRect = value;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderTree*& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_parent()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___parent;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderTree* const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_parent() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___parent;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_parent(::UnityEngine::UIElements::UIR::RenderTree*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___parent = value;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderTree*& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_firstChild()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___firstChild;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderTree* const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_firstChild() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___firstChild;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_firstChild(::UnityEngine::UIElements::UIR::RenderTree*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___firstChild = value;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderTree*& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_nextSibling()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___nextSibling;
+}
+constexpr ::UnityEngine::UIElements::UIR::RenderTree* const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_nextSibling() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___nextSibling;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_nextSibling(::UnityEngine::UIElements::UIR::RenderTree*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___nextSibling = value;
+}
+constexpr ::GlobalNamespace::RenderTree_AllowedClasses& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_AllowedDirtyClasses()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_AllowedDirtyClasses;
+}
+constexpr ::GlobalNamespace::RenderTree_AllowedClasses const& UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_get_m_AllowedDirtyClasses() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_AllowedDirtyClasses;
+}
+constexpr void UnityEngine::UIElements::UIR::RenderTree::__cordl_internal_set_m_AllowedDirtyClasses(::GlobalNamespace::RenderTree_AllowedClasses  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_AllowedDirtyClasses = value;
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::setStaticF_k_MarkerClipProcessing(::Unity::Profiling::ProfilerMarker  value)  {
+::cordl_internals::setStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerClipProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>(std::forward<::Unity::Profiling::ProfilerMarker>(value));
+}
+inline ::Unity::Profiling::ProfilerMarker UnityEngine::UIElements::UIR::RenderTree::getStaticF_k_MarkerClipProcessing()  {
+return ::cordl_internals::getStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerClipProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>();
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::setStaticF_k_MarkerOpacityProcessing(::Unity::Profiling::ProfilerMarker  value)  {
+::cordl_internals::setStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerOpacityProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>(std::forward<::Unity::Profiling::ProfilerMarker>(value));
+}
+inline ::Unity::Profiling::ProfilerMarker UnityEngine::UIElements::UIR::RenderTree::getStaticF_k_MarkerOpacityProcessing()  {
+return ::cordl_internals::getStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerOpacityProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>();
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::setStaticF_k_MarkerColorsProcessing(::Unity::Profiling::ProfilerMarker  value)  {
+::cordl_internals::setStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerColorsProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>(std::forward<::Unity::Profiling::ProfilerMarker>(value));
+}
+inline ::Unity::Profiling::ProfilerMarker UnityEngine::UIElements::UIR::RenderTree::getStaticF_k_MarkerColorsProcessing()  {
+return ::cordl_internals::getStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerColorsProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>();
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::setStaticF_k_MarkerTransformProcessing(::Unity::Profiling::ProfilerMarker  value)  {
+::cordl_internals::setStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerTransformProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>(std::forward<::Unity::Profiling::ProfilerMarker>(value));
+}
+inline ::Unity::Profiling::ProfilerMarker UnityEngine::UIElements::UIR::RenderTree::getStaticF_k_MarkerTransformProcessing()  {
+return ::cordl_internals::getStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerTransformProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>();
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::setStaticF_k_MarkerVisualsProcessing(::Unity::Profiling::ProfilerMarker  value)  {
+::cordl_internals::setStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerVisualsProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>(std::forward<::Unity::Profiling::ProfilerMarker>(value));
+}
+inline ::Unity::Profiling::ProfilerMarker UnityEngine::UIElements::UIR::RenderTree::getStaticF_k_MarkerVisualsProcessing()  {
+return ::cordl_internals::getStaticField<::Unity::Profiling::ProfilerMarker, "k_MarkerVisualsProcessing", ::UnityEngine::UIElements::UIR::RenderTree*>();
+}
+inline ::UnityEngine::UIElements::UIR::RenderTreeManager* UnityEngine::UIElements::UIR::RenderTree::get_renderTreeManager()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_renderTreeManager", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::UIR::RenderTreeManager*>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::UIR::RenderData* UnityEngine::UIElements::UIR::RenderTree::get_rootRenderData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_rootRenderData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::UIR::RenderData*>(this, ___internal_method);
+}
+inline ::by_ref<::UnityEngine::UIElements::UIR::DepthOrderedDirtyTracking> UnityEngine::UIElements::UIR::RenderTree::get_dirtyTracker()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_dirtyTracker", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::by_ref<::UnityEngine::UIElements::UIR::DepthOrderedDirtyTracking>>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::UIR::RenderChainCommand* UnityEngine::UIElements::UIR::RenderTree::get_firstCommand()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_firstCommand", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::UIR::RenderChainCommand*>(this, ___internal_method);
+}
+inline bool UnityEngine::UIElements::UIR::RenderTree::get_isRootRenderTree()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"get_isRootRenderTree", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::Init(::UnityEngine::UIElements::UIR::RenderTreeManager*  renderTreeManager, ::UnityEngine::UIElements::UIR::RenderData*  rootRenderData)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"Init", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderTreeManager*>(), ::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, renderTreeManager, rootRenderData);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::DepthFirstResetTextures(::UnityEngine::UIElements::UIR::RenderData*  renderData)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"DepthFirstResetTextures", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, renderData);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::OnRenderDataTransformOrSizeChanged(::UnityEngine::UIElements::UIR::RenderData*  renderData, bool  transformChanged, bool  clipRectSizeChanged)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderDataTransformOrSizeChanged", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>(), ::i2c::type_of<bool>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, renderData, transformChanged, clipRectSizeChanged);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::OnRenderDataOpacityIdChanged(::UnityEngine::UIElements::UIR::RenderData*  renderData)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderDataOpacityIdChanged", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, renderData);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::OnRenderDataVisualsChanged(::UnityEngine::UIElements::UIR::RenderData*  renderData, bool  hierarchical)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderDataVisualsChanged", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, renderData, hierarchical);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::ProcessChanges(::by_ref<::UnityEngine::UIElements::UIR::ChainBuilderStats>  stats)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"ProcessChanges", {}, {::i2c::type_of<::by_ref<::UnityEngine::UIElements::UIR::ChainBuilderStats>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, stats);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::OnRenderCommandAdded(::UnityEngine::UIElements::UIR::RenderChainCommand*  command)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderCommandAdded", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderChainCommand*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, command);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::OnRenderCommandsRemoved(::UnityEngine::UIElements::UIR::RenderChainCommand*  firstCommand, ::UnityEngine::UIElements::UIR::RenderChainCommand*  lastCommand)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"OnRenderCommandsRemoved", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderChainCommand*>(), ::i2c::type_of<::UnityEngine::UIElements::UIR::RenderChainCommand*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, firstCommand, lastCommand);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::ChildWillBeRemoved(::UnityEngine::UIElements::UIR::RenderData*  renderData)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {"ChildWillBeRemoved", {}, {::i2c::type_of<::UnityEngine::UIElements::UIR::RenderData*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, renderData);
+}
+inline void UnityEngine::UIElements::UIR::RenderTree::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::RenderTree*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::UIR::RenderTree* UnityEngine::UIElements::UIR::RenderTree::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::UIR::RenderTree*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::UIR::RenderTree::RenderTree()   {
+}

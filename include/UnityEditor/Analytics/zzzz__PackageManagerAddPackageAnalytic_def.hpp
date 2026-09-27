@@ -1,0 +1,55 @@
+#pragma once
+// IWYU pragma private; include "UnityEditor/Analytics/PackageManagerAddPackageAnalytic.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEditor/Analytics/zzzz__PackageManagerBaseAnalytic_def.hpp"
+CORDL_MODULE_EXPORT(PackageManagerAddPackageAnalytic)
+// Forward declare root types
+namespace UnityEditor::Analytics {
+class PackageManagerAddPackageAnalytic;
+}
+// Write type traits
+MARK_REF_T(::UnityEditor::Analytics::PackageManagerAddPackageAnalytic*);
+DEFINE_IL2CPP_CLASS(::UnityEditor::Analytics::PackageManagerAddPackageAnalytic*, "UnityEditor.Analytics", "PackageManagerAddPackageAnalytic");
+// [ExcludeFromDocs]
+// [RequiredByNativeCode(GenerateProxy = true)]
+// Dependencies UnityEditor.Analytics.PackageManagerBaseAnalytic
+namespace UnityEditor::Analytics {
+// Is value type: false
+// CS Name: UnityEditor.Analytics.PackageManagerAddPackageAnalytic
+class CORDL_TYPE PackageManagerAddPackageAnalytic : public ::UnityEditor::Analytics::PackageManagerBaseAnalytic {
+public:
+// Declarations
+/// [RequiredByNativeCode]
+/// @brief Method CreatePackageManagerAddPackageAnalytic, addr 0xb923724, size 0x50, virtual false, abstract: false, final false
+static inline ::UnityEditor::Analytics::PackageManagerAddPackageAnalytic* CreatePackageManagerAddPackageAnalytic() ;
+
+static inline ::UnityEditor::Analytics::PackageManagerAddPackageAnalytic* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb9236dc, size 0x48, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr PackageManagerAddPackageAnalytic() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "PackageManagerAddPackageAnalytic", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+PackageManagerAddPackageAnalytic(PackageManagerAddPackageAnalytic && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "PackageManagerAddPackageAnalytic", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+PackageManagerAddPackageAnalytic(PackageManagerAddPackageAnalytic const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32626};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEditor::Analytics::PackageManagerAddPackageAnalytic) == 0x60, "Size mismatch!");
+
+} // namespace end def UnityEditor::Analytics

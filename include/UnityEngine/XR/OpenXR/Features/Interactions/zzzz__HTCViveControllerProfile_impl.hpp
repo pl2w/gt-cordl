@@ -1,0 +1,1188 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/XR/OpenXR/Features/Interactions/HTCViveControllerProfile.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__XRControllerWithRumble_impl.hpp"
+#include "UnityEngine/XR/OpenXR/Features/zzzz__OpenXRInteractionFeature_impl.hpp"
+#include "UnityEngine/XR/OpenXR/Features/Interactions/zzzz__HTCViveControllerProfile_def.hpp"
+#include "UnityEngine/InputSystem/Controls/zzzz__AxisControl_def.hpp"
+#include "UnityEngine/InputSystem/Controls/zzzz__ButtonControl_def.hpp"
+#include "UnityEngine/InputSystem/Controls/zzzz__IntegerControl_def.hpp"
+#include "UnityEngine/InputSystem/Controls/zzzz__QuaternionControl_def.hpp"
+#include "UnityEngine/InputSystem/Controls/zzzz__Vector2Control_def.hpp"
+#include "UnityEngine/InputSystem/Controls/zzzz__Vector3Control_def.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__PoseControl_def.hpp"
+#include "UnityEngine/XR/OpenXR/Features/Interactions/zzzz__HTCViveControllerProfile_def.hpp"
+#include "UnityEngine/XR/OpenXR/Input/zzzz__HapticControl_def.hpp"
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile.RegisterDeviceLayout
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::RegisterDeviceLayout)> {
+  constexpr static std::size_t size = 0x160;
+  constexpr static std::size_t addrs = 0xb4fc044;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(),
+                    {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 29}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile.UnregisterDeviceLayout
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::UnregisterDeviceLayout)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xb4fc1a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(),
+                    {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 30}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile.GetDeviceLayoutName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::GetDeviceLayoutName)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xb4fc20c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(),
+                    {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 33}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile.RegisterActionMapsWithRuntime
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::RegisterActionMapsWithRuntime)> {
+  constexpr static std::size_t size = 0x1ee0;
+  constexpr static std::size_t addrs = 0xb4fc24c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(),
+                    {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 31}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::_ctor)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xb4fe12c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::RegisterDeviceLayout()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 29}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::UnregisterDeviceLayout()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 30}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::GetDeviceLayoutName()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 33}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::RegisterActionMapsWithRuntime()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(), 31}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile::HTCViveControllerProfile()   {
+}
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_select
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::ButtonControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_select)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe184;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_select", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_select
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::ButtonControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_select)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe18c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_select", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_grip
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::AxisControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_grip)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe19c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_grip", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_grip
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::AxisControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_grip)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe1a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_grip", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::AxisControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_gripPressed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::ButtonControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_gripPressed)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe1b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_gripPressed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_gripPressed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::ButtonControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_gripPressed)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe1bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_gripPressed", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_menu
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::ButtonControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_menu)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe1cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_menu", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_menu
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::ButtonControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_menu)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe1d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_menu", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_trigger
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::AxisControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trigger)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe1e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trigger", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_trigger
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::AxisControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trigger)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe1ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trigger", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::AxisControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_triggerPressed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::ButtonControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_triggerPressed)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe1fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_triggerPressed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_triggerPressed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::ButtonControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_triggerPressed)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe204;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_triggerPressed", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_trackpad
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::Vector2Control* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackpad)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe214;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackpad", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_trackpad
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::Vector2Control*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackpad)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe21c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackpad", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::Vector2Control*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_trackpadClicked
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::ButtonControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackpadClicked)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe22c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackpadClicked", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_trackpadClicked
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::ButtonControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackpadClicked)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe234;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackpadClicked", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_trackpadTouched
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::ButtonControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackpadTouched)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe244;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackpadTouched", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_trackpadTouched
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::ButtonControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackpadTouched)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe24c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackpadTouched", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_devicePose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::XR::PoseControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_devicePose)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe25c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_devicePose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_devicePose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::XR::PoseControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_devicePose)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe264;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_devicePose", {}, {::i2c::type_of<::UnityEngine::InputSystem::XR::PoseControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_pointer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::XR::PoseControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_pointer)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe274;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_pointer", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_pointer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::XR::PoseControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_pointer)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe27c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_pointer", {}, {::i2c::type_of<::UnityEngine::InputSystem::XR::PoseControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_isTracked
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::ButtonControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_isTracked)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe28c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_isTracked", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_isTracked
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::ButtonControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_isTracked)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe294;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_isTracked", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_trackingState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::IntegerControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackingState)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe2a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackingState", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_trackingState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::IntegerControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackingState)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe2ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackingState", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::IntegerControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_devicePosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::Vector3Control* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_devicePosition)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe2bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_devicePosition", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_devicePosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::Vector3Control*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_devicePosition)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe2c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_devicePosition", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::Vector3Control*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_deviceRotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::QuaternionControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_deviceRotation)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe2d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_deviceRotation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_deviceRotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::QuaternionControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_deviceRotation)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe2dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_deviceRotation", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::QuaternionControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_pointerPosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::Vector3Control* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_pointerPosition)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe2ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_pointerPosition", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_pointerPosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::Vector3Control*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_pointerPosition)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe2f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_pointerPosition", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::Vector3Control*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_pointerRotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Controls::QuaternionControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_pointerRotation)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe304;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_pointerRotation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_pointerRotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::InputSystem::Controls::QuaternionControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_pointerRotation)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe30c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_pointerRotation", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::QuaternionControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.get_haptic
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::XR::OpenXR::Input::HapticControl* (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_haptic)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe31c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_haptic", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.set_haptic
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)(::UnityEngine::XR::OpenXR::Input::HapticControl*)>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_haptic)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb4fe324;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_haptic", {}, {::i2c::type_of<::UnityEngine::XR::OpenXR::Input::HapticControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController.FinishSetup
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::FinishSetup)> {
+  constexpr static std::size_t size = 0x49c;
+  constexpr static std::size_t addrs = 0xb4fe334;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                    {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::*)()>(&::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb4fe7d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__select_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____select_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__select_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____select_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__select_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____select_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__grip_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____grip_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__grip_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____grip_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__grip_k__BackingField(::UnityEngine::InputSystem::Controls::AxisControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____grip_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__gripPressed_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____gripPressed_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__gripPressed_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____gripPressed_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__gripPressed_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____gripPressed_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__menu_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____menu_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__menu_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____menu_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__menu_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____menu_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trigger_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trigger_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trigger_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trigger_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__trigger_k__BackingField(::UnityEngine::InputSystem::Controls::AxisControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____trigger_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__triggerPressed_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____triggerPressed_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__triggerPressed_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____triggerPressed_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__triggerPressed_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____triggerPressed_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::Vector2Control*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackpad_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackpad_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::Vector2Control* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackpad_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackpad_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__trackpad_k__BackingField(::UnityEngine::InputSystem::Controls::Vector2Control*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____trackpad_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackpadClicked_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackpadClicked_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackpadClicked_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackpadClicked_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__trackpadClicked_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____trackpadClicked_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackpadTouched_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackpadTouched_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackpadTouched_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackpadTouched_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__trackpadTouched_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____trackpadTouched_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::XR::PoseControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__devicePose_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____devicePose_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::XR::PoseControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__devicePose_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____devicePose_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__devicePose_k__BackingField(::UnityEngine::InputSystem::XR::PoseControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____devicePose_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::XR::PoseControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__pointer_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____pointer_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::XR::PoseControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__pointer_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____pointer_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__pointer_k__BackingField(::UnityEngine::InputSystem::XR::PoseControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____pointer_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__isTracked_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____isTracked_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__isTracked_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____isTracked_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__isTracked_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____isTracked_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackingState_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackingState_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__trackingState_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____trackingState_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__trackingState_k__BackingField(::UnityEngine::InputSystem::Controls::IntegerControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____trackingState_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__devicePosition_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____devicePosition_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__devicePosition_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____devicePosition_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__devicePosition_k__BackingField(::UnityEngine::InputSystem::Controls::Vector3Control*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____devicePosition_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__deviceRotation_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____deviceRotation_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__deviceRotation_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____deviceRotation_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__deviceRotation_k__BackingField(::UnityEngine::InputSystem::Controls::QuaternionControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____deviceRotation_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__pointerPosition_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____pointerPosition_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__pointerPosition_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____pointerPosition_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__pointerPosition_k__BackingField(::UnityEngine::InputSystem::Controls::Vector3Control*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____pointerPosition_k__BackingField = value;
+}
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__pointerRotation_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____pointerRotation_k__BackingField;
+}
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__pointerRotation_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____pointerRotation_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__pointerRotation_k__BackingField(::UnityEngine::InputSystem::Controls::QuaternionControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____pointerRotation_k__BackingField = value;
+}
+constexpr ::UnityEngine::XR::OpenXR::Input::HapticControl*& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__haptic_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____haptic_k__BackingField;
+}
+constexpr ::UnityEngine::XR::OpenXR::Input::HapticControl* const& UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_get__haptic_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____haptic_k__BackingField;
+}
+constexpr void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::__cordl_internal_set__haptic_k__BackingField(::UnityEngine::XR::OpenXR::Input::HapticControl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____haptic_k__BackingField = value;
+}
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_select()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_select", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::ButtonControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_select(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_select", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::AxisControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_grip()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_grip", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::AxisControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_grip(::UnityEngine::InputSystem::Controls::AxisControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_grip", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::AxisControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_gripPressed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_gripPressed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::ButtonControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_gripPressed(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_gripPressed", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_menu()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_menu", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::ButtonControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_menu(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_menu", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::AxisControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trigger()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trigger", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::AxisControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trigger(::UnityEngine::InputSystem::Controls::AxisControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trigger", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::AxisControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_triggerPressed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_triggerPressed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::ButtonControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_triggerPressed(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_triggerPressed", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::Vector2Control* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackpad()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackpad", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::Vector2Control*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackpad(::UnityEngine::InputSystem::Controls::Vector2Control*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackpad", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::Vector2Control*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackpadClicked()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackpadClicked", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::ButtonControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackpadClicked(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackpadClicked", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackpadTouched()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackpadTouched", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::ButtonControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackpadTouched(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackpadTouched", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::XR::PoseControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_devicePose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_devicePose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::XR::PoseControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_devicePose(::UnityEngine::InputSystem::XR::PoseControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_devicePose", {}, {::i2c::type_of<::UnityEngine::InputSystem::XR::PoseControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::XR::PoseControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_pointer()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_pointer", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::XR::PoseControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_pointer(::UnityEngine::InputSystem::XR::PoseControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_pointer", {}, {::i2c::type_of<::UnityEngine::InputSystem::XR::PoseControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_isTracked()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_isTracked", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::ButtonControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_isTracked(::UnityEngine::InputSystem::Controls::ButtonControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_isTracked", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::ButtonControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::IntegerControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_trackingState()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_trackingState", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::IntegerControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_trackingState(::UnityEngine::InputSystem::Controls::IntegerControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_trackingState", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::IntegerControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::Vector3Control* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_devicePosition()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_devicePosition", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::Vector3Control*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_devicePosition(::UnityEngine::InputSystem::Controls::Vector3Control*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_devicePosition", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::Vector3Control*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::QuaternionControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_deviceRotation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_deviceRotation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::QuaternionControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_deviceRotation(::UnityEngine::InputSystem::Controls::QuaternionControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_deviceRotation", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::QuaternionControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::Vector3Control* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_pointerPosition()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_pointerPosition", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::Vector3Control*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_pointerPosition(::UnityEngine::InputSystem::Controls::Vector3Control*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_pointerPosition", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::Vector3Control*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::Controls::QuaternionControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_pointerRotation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_pointerRotation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Controls::QuaternionControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_pointerRotation(::UnityEngine::InputSystem::Controls::QuaternionControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_pointerRotation", {}, {::i2c::type_of<::UnityEngine::InputSystem::Controls::QuaternionControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::XR::OpenXR::Input::HapticControl* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::get_haptic()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"get_haptic", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::XR::OpenXR::Input::HapticControl*>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::set_haptic(::UnityEngine::XR::OpenXR::Input::HapticControl*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {"set_haptic", {}, {::i2c::type_of<::UnityEngine::XR::OpenXR::Input::HapticControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::FinishSetup()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController* UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::XR::OpenXR::Features::Interactions::HTCViveControllerProfile_ViveController::HTCViveControllerProfile_ViveController()   {
+}

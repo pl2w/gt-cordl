@@ -1,0 +1,1006 @@
+#pragma once
+// IWYU pragma private; include "Mono/Security/PKCS7.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Mono/Security/zzzz__PKCS7_def.hpp"
+#include "Mono/Security/X509/zzzz__X509CertificateCollection_def.hpp"
+#include "Mono/Security/zzzz__ASN1_def.hpp"
+#include "Mono/Security/zzzz__PKCS7_def.hpp"
+#include "System/Collections/zzzz__ArrayList_def.hpp"
+//  Writing Method size for method: ::Mono::Security::PKCS7.AlgorithmIdentifier
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::ASN1* (*)(::StringW)>(&::Mono::Security::PKCS7::AlgorithmIdentifier)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xa0db6d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7*>(),
+                        {"AlgorithmIdentifier", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7.AlgorithmIdentifier
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::ASN1* (*)(::StringW, ::Mono::Security::ASN1*)>(&::Mono::Security::PKCS7::AlgorithmIdentifier)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xa0db78c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7*>(),
+                        {"AlgorithmIdentifier", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::Mono::Security::ASN1* Mono::Security::PKCS7::AlgorithmIdentifier(::StringW  oid)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7*>(),
+                        {"AlgorithmIdentifier", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::ASN1*>(nullptr, ___internal_method, oid);
+}
+inline ::Mono::Security::ASN1* Mono::Security::PKCS7::AlgorithmIdentifier(::StringW  oid, ::Mono::Security::ASN1*  parameters)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7*>(),
+                        {"AlgorithmIdentifier", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::ASN1*>(nullptr, ___internal_method, oid, parameters);
+}
+// Ctor Parameters []
+constexpr ::Mono::Security::PKCS7::PKCS7()   {
+}
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::_ctor)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xa0dc994;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_SignerInfo::*)(::Mono::Security::ASN1*)>(&::Mono::Security::PKCS7_SignerInfo::_ctor)> {
+  constexpr static std::size_t size = 0x3a8;
+  constexpr static std::size_t addrs = 0xa0dc5ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.get_IssuerName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::get_IssuerName)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dcd70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_IssuerName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.get_SerialNumber
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<uint8_t> (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::get_SerialNumber)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xa0dcd78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_SerialNumber", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.get_AuthenticatedAttributes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::ArrayList* (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::get_AuthenticatedAttributes)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dcdec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_AuthenticatedAttributes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.get_HashName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::get_HashName)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dcdf4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_HashName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.set_HashName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_SignerInfo::*)(::StringW)>(&::Mono::Security::PKCS7_SignerInfo::set_HashName)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dcdfc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"set_HashName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.get_Signature
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<uint8_t> (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::get_Signature)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xa0dce04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_Signature", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.get_UnauthenticatedAttributes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::ArrayList* (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::get_UnauthenticatedAttributes)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dce78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_UnauthenticatedAttributes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignerInfo.get_Version
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint8_t (::Mono::Security::PKCS7_SignerInfo::*)()>(&::Mono::Security::PKCS7_SignerInfo::get_Version)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dce80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_Version", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr uint8_t& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_version()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___version;
+}
+constexpr uint8_t const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_version() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___version;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_version(uint8_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___version = value;
+}
+constexpr ::StringW& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_hashAlgorithm()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hashAlgorithm;
+}
+constexpr ::StringW const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_hashAlgorithm() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hashAlgorithm;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_hashAlgorithm(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___hashAlgorithm = value;
+}
+constexpr ::System::Collections::ArrayList*& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_authenticatedAttributes()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___authenticatedAttributes;
+}
+constexpr ::System::Collections::ArrayList* const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_authenticatedAttributes() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___authenticatedAttributes;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_authenticatedAttributes(::System::Collections::ArrayList*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___authenticatedAttributes = value;
+}
+constexpr ::System::Collections::ArrayList*& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_unauthenticatedAttributes()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___unauthenticatedAttributes;
+}
+constexpr ::System::Collections::ArrayList* const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_unauthenticatedAttributes() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___unauthenticatedAttributes;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_unauthenticatedAttributes(::System::Collections::ArrayList*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___unauthenticatedAttributes = value;
+}
+constexpr ::ArrayW<uint8_t>& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_signature()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___signature;
+}
+constexpr ::ArrayW<uint8_t> const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_signature() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___signature;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_signature(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___signature = value;
+}
+constexpr ::StringW& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_issuer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___issuer;
+}
+constexpr ::StringW const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_issuer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___issuer;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_issuer(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___issuer = value;
+}
+constexpr ::ArrayW<uint8_t>& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_serial()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___serial;
+}
+constexpr ::ArrayW<uint8_t> const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_serial() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___serial;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_serial(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___serial = value;
+}
+constexpr ::ArrayW<uint8_t>& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_ski()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ski;
+}
+constexpr ::ArrayW<uint8_t> const& Mono::Security::PKCS7_SignerInfo::__cordl_internal_get_ski() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ski;
+}
+constexpr void Mono::Security::PKCS7_SignerInfo::__cordl_internal_set_ski(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___ski = value;
+}
+inline void Mono::Security::PKCS7_SignerInfo::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void Mono::Security::PKCS7_SignerInfo::_ctor(::Mono::Security::ASN1*  asn1)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, asn1);
+}
+inline ::StringW Mono::Security::PKCS7_SignerInfo::get_IssuerName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_IssuerName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::ArrayW<uint8_t> Mono::Security::PKCS7_SignerInfo::get_SerialNumber()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_SerialNumber", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<uint8_t>>(this, ___internal_method);
+}
+inline ::System::Collections::ArrayList* Mono::Security::PKCS7_SignerInfo::get_AuthenticatedAttributes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_AuthenticatedAttributes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::ArrayList*>(this, ___internal_method);
+}
+inline ::StringW Mono::Security::PKCS7_SignerInfo::get_HashName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_HashName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void Mono::Security::PKCS7_SignerInfo::set_HashName(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"set_HashName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::ArrayW<uint8_t> Mono::Security::PKCS7_SignerInfo::get_Signature()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_Signature", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<uint8_t>>(this, ___internal_method);
+}
+inline ::System::Collections::ArrayList* Mono::Security::PKCS7_SignerInfo::get_UnauthenticatedAttributes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_UnauthenticatedAttributes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::ArrayList*>(this, ___internal_method);
+}
+inline uint8_t Mono::Security::PKCS7_SignerInfo::get_Version()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignerInfo*>(),
+                        {"get_Version", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint8_t>(this, ___internal_method);
+}
+inline ::Mono::Security::PKCS7_SignerInfo* Mono::Security::PKCS7_SignerInfo::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_SignerInfo*>());
+}
+inline ::Mono::Security::PKCS7_SignerInfo* Mono::Security::PKCS7_SignerInfo::New_ctor(::Mono::Security::ASN1*  asn1)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_SignerInfo*>(asn1));
+}
+// Ctor Parameters []
+constexpr ::Mono::Security::PKCS7_SignerInfo::PKCS7_SignerInfo()   {
+}
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignedData._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_SignedData::*)(::Mono::Security::ASN1*)>(&::Mono::Security::PKCS7_SignedData::_ctor)> {
+  constexpr static std::size_t size = 0x51c;
+  constexpr static std::size_t addrs = 0xa0dbf44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignedData.get_Certificates
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::X509::X509CertificateCollection* (::Mono::Security::PKCS7_SignedData::*)()>(&::Mono::Security::PKCS7_SignedData::get_Certificates)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dcc1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"get_Certificates", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignedData.get_ContentInfo
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::PKCS7_ContentInfo* (::Mono::Security::PKCS7_SignedData::*)()>(&::Mono::Security::PKCS7_SignedData::get_ContentInfo)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dcc24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"get_ContentInfo", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignedData.set_HashName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_SignedData::*)(::StringW)>(&::Mono::Security::PKCS7_SignedData::set_HashName)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xa0dcbe0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"set_HashName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignedData.get_SignerInfo
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::PKCS7_SignerInfo* (::Mono::Security::PKCS7_SignedData::*)()>(&::Mono::Security::PKCS7_SignedData::get_SignerInfo)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dcc2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"get_SignerInfo", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_SignedData.OidToName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::Mono::Security::PKCS7_SignedData::*)(::StringW)>(&::Mono::Security::PKCS7_SignedData::OidToName)> {
+  constexpr static std::size_t size = 0x1b4;
+  constexpr static std::size_t addrs = 0xa0dca2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"OidToName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr uint8_t& Mono::Security::PKCS7_SignedData::__cordl_internal_get_version()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___version;
+}
+constexpr uint8_t const& Mono::Security::PKCS7_SignedData::__cordl_internal_get_version() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___version;
+}
+constexpr void Mono::Security::PKCS7_SignedData::__cordl_internal_set_version(uint8_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___version = value;
+}
+constexpr ::StringW& Mono::Security::PKCS7_SignedData::__cordl_internal_get_hashAlgorithm()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hashAlgorithm;
+}
+constexpr ::StringW const& Mono::Security::PKCS7_SignedData::__cordl_internal_get_hashAlgorithm() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hashAlgorithm;
+}
+constexpr void Mono::Security::PKCS7_SignedData::__cordl_internal_set_hashAlgorithm(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___hashAlgorithm = value;
+}
+constexpr ::Mono::Security::PKCS7_ContentInfo*& Mono::Security::PKCS7_SignedData::__cordl_internal_get_contentInfo()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___contentInfo;
+}
+constexpr ::Mono::Security::PKCS7_ContentInfo* const& Mono::Security::PKCS7_SignedData::__cordl_internal_get_contentInfo() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___contentInfo;
+}
+constexpr void Mono::Security::PKCS7_SignedData::__cordl_internal_set_contentInfo(::Mono::Security::PKCS7_ContentInfo*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___contentInfo = value;
+}
+constexpr ::Mono::Security::X509::X509CertificateCollection*& Mono::Security::PKCS7_SignedData::__cordl_internal_get_certs()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___certs;
+}
+constexpr ::Mono::Security::X509::X509CertificateCollection* const& Mono::Security::PKCS7_SignedData::__cordl_internal_get_certs() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___certs;
+}
+constexpr void Mono::Security::PKCS7_SignedData::__cordl_internal_set_certs(::Mono::Security::X509::X509CertificateCollection*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___certs = value;
+}
+constexpr ::System::Collections::ArrayList*& Mono::Security::PKCS7_SignedData::__cordl_internal_get_crls()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___crls;
+}
+constexpr ::System::Collections::ArrayList* const& Mono::Security::PKCS7_SignedData::__cordl_internal_get_crls() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___crls;
+}
+constexpr void Mono::Security::PKCS7_SignedData::__cordl_internal_set_crls(::System::Collections::ArrayList*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___crls = value;
+}
+constexpr ::Mono::Security::PKCS7_SignerInfo*& Mono::Security::PKCS7_SignedData::__cordl_internal_get_signerInfo()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___signerInfo;
+}
+constexpr ::Mono::Security::PKCS7_SignerInfo* const& Mono::Security::PKCS7_SignedData::__cordl_internal_get_signerInfo() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___signerInfo;
+}
+constexpr void Mono::Security::PKCS7_SignedData::__cordl_internal_set_signerInfo(::Mono::Security::PKCS7_SignerInfo*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___signerInfo = value;
+}
+constexpr bool& Mono::Security::PKCS7_SignedData::__cordl_internal_get_mda()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mda;
+}
+constexpr bool const& Mono::Security::PKCS7_SignedData::__cordl_internal_get_mda() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mda;
+}
+constexpr void Mono::Security::PKCS7_SignedData::__cordl_internal_set_mda(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___mda = value;
+}
+inline void Mono::Security::PKCS7_SignedData::_ctor(::Mono::Security::ASN1*  asn1)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, asn1);
+}
+inline ::Mono::Security::X509::X509CertificateCollection* Mono::Security::PKCS7_SignedData::get_Certificates()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"get_Certificates", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::X509::X509CertificateCollection*>(this, ___internal_method);
+}
+inline ::Mono::Security::PKCS7_ContentInfo* Mono::Security::PKCS7_SignedData::get_ContentInfo()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"get_ContentInfo", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::PKCS7_ContentInfo*>(this, ___internal_method);
+}
+inline void Mono::Security::PKCS7_SignedData::set_HashName(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"set_HashName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::Mono::Security::PKCS7_SignerInfo* Mono::Security::PKCS7_SignedData::get_SignerInfo()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"get_SignerInfo", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::PKCS7_SignerInfo*>(this, ___internal_method);
+}
+inline ::StringW Mono::Security::PKCS7_SignedData::OidToName(::StringW  oid)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_SignedData*>(),
+                        {"OidToName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, oid);
+}
+inline ::Mono::Security::PKCS7_SignedData* Mono::Security::PKCS7_SignedData::New_ctor(::Mono::Security::ASN1*  asn1)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_SignedData*>(asn1));
+}
+// Ctor Parameters []
+constexpr ::Mono::Security::PKCS7_SignedData::PKCS7_SignedData()   {
+}
+//  Writing Method size for method: ::Mono::Security::PKCS7_EncryptedData._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_EncryptedData::*)()>(&::Mono::Security::PKCS7_EncryptedData::_ctor)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xa0dbbb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_EncryptedData._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_EncryptedData::*)(::Mono::Security::ASN1*)>(&::Mono::Security::PKCS7_EncryptedData::_ctor)> {
+  constexpr static std::size_t size = 0x2f4;
+  constexpr static std::size_t addrs = 0xa0dbbd4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_EncryptedData.get_EncryptionAlgorithm
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::PKCS7_ContentInfo* (::Mono::Security::PKCS7_EncryptedData::*)()>(&::Mono::Security::PKCS7_EncryptedData::get_EncryptionAlgorithm)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dbec8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {"get_EncryptionAlgorithm", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_EncryptedData.get_EncryptedContent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<uint8_t> (::Mono::Security::PKCS7_EncryptedData::*)()>(&::Mono::Security::PKCS7_EncryptedData::get_EncryptedContent)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xa0dbed0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {"get_EncryptedContent", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr uint8_t& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__version()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____version;
+}
+constexpr uint8_t const& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__version() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____version;
+}
+constexpr void Mono::Security::PKCS7_EncryptedData::__cordl_internal_set__version(uint8_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____version = value;
+}
+constexpr ::Mono::Security::PKCS7_ContentInfo*& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__content()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____content;
+}
+constexpr ::Mono::Security::PKCS7_ContentInfo* const& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__content() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____content;
+}
+constexpr void Mono::Security::PKCS7_EncryptedData::__cordl_internal_set__content(::Mono::Security::PKCS7_ContentInfo*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____content = value;
+}
+constexpr ::Mono::Security::PKCS7_ContentInfo*& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__encryptionAlgorithm()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____encryptionAlgorithm;
+}
+constexpr ::Mono::Security::PKCS7_ContentInfo* const& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__encryptionAlgorithm() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____encryptionAlgorithm;
+}
+constexpr void Mono::Security::PKCS7_EncryptedData::__cordl_internal_set__encryptionAlgorithm(::Mono::Security::PKCS7_ContentInfo*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____encryptionAlgorithm = value;
+}
+constexpr ::ArrayW<uint8_t>& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__encrypted()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____encrypted;
+}
+constexpr ::ArrayW<uint8_t> const& Mono::Security::PKCS7_EncryptedData::__cordl_internal_get__encrypted() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____encrypted;
+}
+constexpr void Mono::Security::PKCS7_EncryptedData::__cordl_internal_set__encrypted(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____encrypted = value;
+}
+inline void Mono::Security::PKCS7_EncryptedData::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void Mono::Security::PKCS7_EncryptedData::_ctor(::Mono::Security::ASN1*  asn1)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, asn1);
+}
+inline ::Mono::Security::PKCS7_ContentInfo* Mono::Security::PKCS7_EncryptedData::get_EncryptionAlgorithm()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {"get_EncryptionAlgorithm", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::PKCS7_ContentInfo*>(this, ___internal_method);
+}
+inline ::ArrayW<uint8_t> Mono::Security::PKCS7_EncryptedData::get_EncryptedContent()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_EncryptedData*>(),
+                        {"get_EncryptedContent", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<uint8_t>>(this, ___internal_method);
+}
+inline ::Mono::Security::PKCS7_EncryptedData* Mono::Security::PKCS7_EncryptedData::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_EncryptedData*>());
+}
+inline ::Mono::Security::PKCS7_EncryptedData* Mono::Security::PKCS7_EncryptedData::New_ctor(::Mono::Security::ASN1*  asn1)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_EncryptedData*>(asn1));
+}
+// Ctor Parameters []
+constexpr ::Mono::Security::PKCS7_EncryptedData::PKCS7_EncryptedData()   {
+}
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_ContentInfo::*)()>(&::Mono::Security::PKCS7_ContentInfo::_ctor)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xa0db828;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_ContentInfo::*)(::StringW)>(&::Mono::Security::PKCS7_ContentInfo::_ctor)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xa0db8ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_ContentInfo::*)(::ArrayW<uint8_t>)>(&::Mono::Security::PKCS7_ContentInfo::_ctor)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa0db8d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::ArrayW<uint8_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_ContentInfo::*)(::Mono::Security::ASN1*)>(&::Mono::Security::PKCS7_ContentInfo::_ctor)> {
+  constexpr static std::size_t size = 0x19c;
+  constexpr static std::size_t addrs = 0xa0db940;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo.get_ASN1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::ASN1* (::Mono::Security::PKCS7_ContentInfo::*)()>(&::Mono::Security::PKCS7_ContentInfo::get_ASN1)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa0dbadc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"get_ASN1", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo.get_Content
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::ASN1* (::Mono::Security::PKCS7_ContentInfo::*)()>(&::Mono::Security::PKCS7_ContentInfo::get_Content)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dbb98;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"get_Content", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo.set_Content
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_ContentInfo::*)(::Mono::Security::ASN1*)>(&::Mono::Security::PKCS7_ContentInfo::set_Content)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dbba0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"set_Content", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo.get_ContentType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::Mono::Security::PKCS7_ContentInfo::*)()>(&::Mono::Security::PKCS7_ContentInfo::get_ContentType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dbba8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"get_ContentType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo.set_ContentType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::PKCS7_ContentInfo::*)(::StringW)>(&::Mono::Security::PKCS7_ContentInfo::set_ContentType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0dbbb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"set_ContentType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::PKCS7_ContentInfo.GetASN1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Mono::Security::ASN1* (::Mono::Security::PKCS7_ContentInfo::*)()>(&::Mono::Security::PKCS7_ContentInfo::GetASN1)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xa0dbae0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"GetASN1", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& Mono::Security::PKCS7_ContentInfo::__cordl_internal_get_contentType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___contentType;
+}
+constexpr ::StringW const& Mono::Security::PKCS7_ContentInfo::__cordl_internal_get_contentType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___contentType;
+}
+constexpr void Mono::Security::PKCS7_ContentInfo::__cordl_internal_set_contentType(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___contentType = value;
+}
+constexpr ::Mono::Security::ASN1*& Mono::Security::PKCS7_ContentInfo::__cordl_internal_get_content()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___content;
+}
+constexpr ::Mono::Security::ASN1* const& Mono::Security::PKCS7_ContentInfo::__cordl_internal_get_content() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___content;
+}
+constexpr void Mono::Security::PKCS7_ContentInfo::__cordl_internal_set_content(::Mono::Security::ASN1*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___content = value;
+}
+inline void Mono::Security::PKCS7_ContentInfo::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void Mono::Security::PKCS7_ContentInfo::_ctor(::StringW  oid)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, oid);
+}
+inline void Mono::Security::PKCS7_ContentInfo::_ctor(::ArrayW<uint8_t>  data)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::ArrayW<uint8_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, data);
+}
+inline void Mono::Security::PKCS7_ContentInfo::_ctor(::Mono::Security::ASN1*  asn1)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, asn1);
+}
+inline ::Mono::Security::ASN1* Mono::Security::PKCS7_ContentInfo::get_ASN1()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"get_ASN1", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::ASN1*>(this, ___internal_method);
+}
+inline ::Mono::Security::ASN1* Mono::Security::PKCS7_ContentInfo::get_Content()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"get_Content", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::ASN1*>(this, ___internal_method);
+}
+inline void Mono::Security::PKCS7_ContentInfo::set_Content(::Mono::Security::ASN1*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"set_Content", {}, {::i2c::type_of<::Mono::Security::ASN1*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::StringW Mono::Security::PKCS7_ContentInfo::get_ContentType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"get_ContentType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void Mono::Security::PKCS7_ContentInfo::set_ContentType(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"set_ContentType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::Mono::Security::ASN1* Mono::Security::PKCS7_ContentInfo::GetASN1()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::PKCS7_ContentInfo*>(),
+                        {"GetASN1", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Mono::Security::ASN1*>(this, ___internal_method);
+}
+inline ::Mono::Security::PKCS7_ContentInfo* Mono::Security::PKCS7_ContentInfo::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_ContentInfo*>());
+}
+inline ::Mono::Security::PKCS7_ContentInfo* Mono::Security::PKCS7_ContentInfo::New_ctor(::StringW  oid)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_ContentInfo*>(oid));
+}
+inline ::Mono::Security::PKCS7_ContentInfo* Mono::Security::PKCS7_ContentInfo::New_ctor(::ArrayW<uint8_t>  data)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_ContentInfo*>(data));
+}
+inline ::Mono::Security::PKCS7_ContentInfo* Mono::Security::PKCS7_ContentInfo::New_ctor(::Mono::Security::ASN1*  asn1)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::PKCS7_ContentInfo*>(asn1));
+}
+// Ctor Parameters []
+constexpr ::Mono::Security::PKCS7_ContentInfo::PKCS7_ContentInfo()   {
+}

@@ -1,0 +1,76 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/Manager/Watch.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Meta/XR/ImmersiveDebugger/Manager/zzzz__Hook_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(Watch)
+namespace Meta::XR::ImmersiveDebugger::Utils {
+struct InstanceHandle;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class DebugMember;
+}
+namespace System::Reflection {
+class MemberInfo;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger::Manager {
+class Watch;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Manager::Watch*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Manager::Watch*, "Meta.XR.ImmersiveDebugger.Manager", "Watch");
+// Dependencies Meta.XR.ImmersiveDebugger.Manager.Hook
+namespace Meta::XR::ImmersiveDebugger::Manager {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Manager.Watch
+class CORDL_TYPE Watch : public ::Meta::XR::ImmersiveDebugger::Manager::Hook {
+public:
+// Declarations
+ __declspec(property(get=get_NumberOfValues)) int32_t  NumberOfValues;
+
+ __declspec(property(get=get_Value)) ::StringW  Value;
+
+ __declspec(property(get=get_Values)) ::ArrayW<::StringW>  Values;
+
+static inline ::Meta::XR::ImmersiveDebugger::Manager::Watch* New_ctor(::System::Reflection::MemberInfo*  memberInfo, ::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle  instanceHandle, ::Meta::XR::ImmersiveDebugger::DebugMember*  attribute) ;
+
+/// @brief Method .ctor, addr 0x9ef4478, size 0x2c, virtual false, abstract: false, final false
+inline void _ctor(::System::Reflection::MemberInfo*  memberInfo, ::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle  instanceHandle, ::Meta::XR::ImmersiveDebugger::DebugMember*  attribute) ;
+
+/// @brief Method get_NumberOfValues, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline int32_t get_NumberOfValues() ;
+
+/// @brief Method get_Value, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::StringW get_Value() ;
+
+/// @brief Method get_Values, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::ArrayW<::StringW> get_Values() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Watch() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Watch", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Watch(Watch && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Watch", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Watch(Watch const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27510};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Manager::Watch) == 0x40, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger::Manager

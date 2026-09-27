@@ -1,0 +1,263 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRSceneRoom.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "GlobalNamespace/zzzz__OVRScenePlane_def.hpp"
+#include "System/zzzz__Guid_def.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(OVRSceneRoom)
+namespace GlobalNamespace {
+class IOVRSceneComponent;
+}
+namespace GlobalNamespace {
+class OVRSceneAnchor;
+}
+namespace GlobalNamespace {
+class OVRSceneManager;
+}
+namespace GlobalNamespace {
+class OVRScenePlane;
+}
+namespace GlobalNamespace {
+struct OVRSceneRoom__LoadRoom_d__19;
+}
+namespace GlobalNamespace {
+template<typename TResult>
+struct OVRTask_1;
+}
+namespace System::Collections::Generic {
+template<typename TKey,typename TValue>
+class Dictionary_2;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace System {
+struct Guid;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class OVRSceneRoom;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::OVRSceneRoom*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OVRSceneRoom*, "", "OVRSceneRoom");
+// [DisallowMultipleComponent]
+// [RequireComponent(typeof(OVRSceneAnchor))]
+// [HelpURL("https://developer.oculus.com/documentation/unity/unity-scene-use-scene-anchors/#further-scene-model-unity-components")]
+// [Obsolete("OVRSceneManager and associated classes are deprecated (v65), please use MR Utility Kit instead (https://developer.oculus.com/documentation/unity/unity-mr-utility-kit-overview)")]
+// [Feature((Meta.XR.Util.Feature)8)]
+// Dependencies OVRScenePlane, System.Guid, UnityEngine.MonoBehaviour
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OVRSceneRoom
+class CORDL_TYPE OVRSceneRoom : public ::UnityEngine::MonoBehaviour {
+public:
+// Declarations
+using _LoadRoom_d__19 = ::GlobalNamespace::OVRSceneRoom__LoadRoom_d__19;
+
+ __declspec(property(get=get_Ceiling, put=set_Ceiling)) ::UnityW<::GlobalNamespace::OVRScenePlane>  Ceiling;
+
+ __declspec(property(get=get_Floor, put=set_Floor)) ::UnityW<::GlobalNamespace::OVRScenePlane>  Floor;
+
+/// @brief Field SceneRooms, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_SceneRooms, put=setStaticF_SceneRooms)) ::System::Collections::Generic::Dictionary_2<::System::Guid,::UnityW<::GlobalNamespace::OVRSceneRoom>>*  SceneRooms;
+
+/// @brief Field SceneRoomsList, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_SceneRoomsList, put=setStaticF_SceneRoomsList)) ::System::Collections::Generic::List_1<::UnityW<::GlobalNamespace::OVRSceneRoom>>*  SceneRoomsList;
+
+ __declspec(property(get=get_Walls, put=set_Walls)) ::ArrayW<::UnityW<::GlobalNamespace::OVRScenePlane>>  Walls;
+
+/// @brief Field <Ceiling>k__BackingField, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Ceiling_k__BackingField, put=__cordl_internal_set__Ceiling_k__BackingField)) ::UnityW<::GlobalNamespace::OVRScenePlane>  _Ceiling_k__BackingField;
+
+/// @brief Field <Floor>k__BackingField, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Floor_k__BackingField, put=__cordl_internal_set__Floor_k__BackingField)) ::UnityW<::GlobalNamespace::OVRScenePlane>  _Floor_k__BackingField;
+
+/// @brief Field <Walls>k__BackingField, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Walls_k__BackingField, put=__cordl_internal_set__Walls_k__BackingField)) ::ArrayW<::UnityW<::GlobalNamespace::OVRScenePlane>>  _Walls_k__BackingField;
+
+/// @brief Field _sceneAnchor, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get__sceneAnchor, put=__cordl_internal_set__sceneAnchor)) ::UnityW<::GlobalNamespace::OVRSceneAnchor>  _sceneAnchor;
+
+/// @brief Field _sceneManager, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get__sceneManager, put=__cordl_internal_set__sceneManager)) ::UnityW<::GlobalNamespace::OVRSceneManager>  _sceneManager;
+
+/// @brief Field _uuid, offset 0x48, size 0x10 
+ __declspec(property(get=__cordl_internal_get__uuid, put=__cordl_internal_set__uuid)) ::System::Guid  _uuid;
+
+/// @brief Convert operator to "::GlobalNamespace::IOVRSceneComponent"
+constexpr operator  ::GlobalNamespace::IOVRSceneComponent*() noexcept;
+
+/// @brief Method Awake, addr 0xa63a9dc, size 0x14c, virtual false, abstract: false, final false
+inline void Awake() ;
+
+/// @brief Method IOVRSceneComponent.Initialize, addr 0xa63ab28, size 0x108, virtual true, abstract: false, final true
+inline void IOVRSceneComponent_Initialize() ;
+
+/// [AsyncStateMachine(typeof(OVRSceneRoom::<LoadRoom>d__19))]
+/// @brief Method LoadRoom, addr 0xa636a88, size 0x128, virtual false, abstract: false, final false
+inline ::GlobalNamespace::OVRTask_1<bool> LoadRoom(::System::Guid  floor, ::System::Guid  ceiling, ::ArrayW<::System::Guid>  walls) ;
+
+/// [Conditional("DEVELOPMENT_BUILD")]
+/// [Conditional("UNITY_EDITOR")]
+/// @brief Method Log, addr 0xa63ace0, size 0xa4, virtual false, abstract: false, final false
+inline void Log(::StringW  message) ;
+
+/// [Conditional("DEVELOPMENT_BUILD")]
+/// [Conditional("UNITY_EDITOR")]
+/// @brief Method LogError, addr 0xa63ae28, size 0xa4, virtual false, abstract: false, final false
+inline void LogError(::StringW  message) ;
+
+/// [Conditional("DEVELOPMENT_BUILD")]
+/// [Conditional("UNITY_EDITOR")]
+/// @brief Method LogWarning, addr 0xa63ad84, size 0xa4, virtual false, abstract: false, final false
+inline void LogWarning(::StringW  message) ;
+
+static inline ::GlobalNamespace::OVRSceneRoom* New_ctor() ;
+
+/// @brief Method OnDestroy, addr 0xa63ac30, size 0xb0, virtual false, abstract: false, final false
+inline void OnDestroy() ;
+
+/// [CompilerGenerated]
+/// @brief Method <LoadRoom>g__GetPlane|19_1, addr 0xa63b158, size 0x7c, virtual false, abstract: false, final false
+static inline ::UnityW<::GlobalNamespace::OVRScenePlane> _LoadRoom_g__GetPlane_19_1(::System::Guid  uuid) ;
+
+/// [CompilerGenerated]
+/// @brief Method <LoadRoom>g__TryGetPlane|19_0, addr 0xa63b068, size 0xf0, virtual false, abstract: false, final false
+static inline bool _LoadRoom_g__TryGetPlane_19_0(::System::Guid  uuid, ::by_ref<::GlobalNamespace::OVRScenePlane*>  plane) ;
+
+constexpr ::UnityW<::GlobalNamespace::OVRScenePlane> const& __cordl_internal_get__Ceiling_k__BackingField() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVRScenePlane>& __cordl_internal_get__Ceiling_k__BackingField() ;
+
+constexpr ::UnityW<::GlobalNamespace::OVRScenePlane> const& __cordl_internal_get__Floor_k__BackingField() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVRScenePlane>& __cordl_internal_get__Floor_k__BackingField() ;
+
+constexpr ::ArrayW<::UnityW<::GlobalNamespace::OVRScenePlane>> const& __cordl_internal_get__Walls_k__BackingField() const;
+
+constexpr ::ArrayW<::UnityW<::GlobalNamespace::OVRScenePlane>>& __cordl_internal_get__Walls_k__BackingField() ;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneAnchor> const& __cordl_internal_get__sceneAnchor() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneAnchor>& __cordl_internal_get__sceneAnchor() ;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneManager> const& __cordl_internal_get__sceneManager() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneManager>& __cordl_internal_get__sceneManager() ;
+
+constexpr ::System::Guid const& __cordl_internal_get__uuid() const;
+
+constexpr ::System::Guid& __cordl_internal_get__uuid() ;
+
+constexpr void __cordl_internal_set__Ceiling_k__BackingField(::UnityW<::GlobalNamespace::OVRScenePlane>  value) ;
+
+constexpr void __cordl_internal_set__Floor_k__BackingField(::UnityW<::GlobalNamespace::OVRScenePlane>  value) ;
+
+constexpr void __cordl_internal_set__Walls_k__BackingField(::ArrayW<::UnityW<::GlobalNamespace::OVRScenePlane>>  value) ;
+
+constexpr void __cordl_internal_set__sceneAnchor(::UnityW<::GlobalNamespace::OVRSceneAnchor>  value) ;
+
+constexpr void __cordl_internal_set__sceneManager(::UnityW<::GlobalNamespace::OVRSceneManager>  value) ;
+
+constexpr void __cordl_internal_set__uuid(::System::Guid  value) ;
+
+/// @brief Method .ctor, addr 0xa63aecc, size 0xac, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::System::Collections::Generic::Dictionary_2<::System::Guid,::UnityW<::GlobalNamespace::OVRSceneRoom>>* getStaticF_SceneRooms() ;
+
+static inline ::System::Collections::Generic::List_1<::UnityW<::GlobalNamespace::OVRSceneRoom>>* getStaticF_SceneRoomsList() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Ceiling, addr 0xa63a9bc, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::GlobalNamespace::OVRScenePlane> get_Ceiling() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Floor, addr 0xa63a9ac, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::GlobalNamespace::OVRScenePlane> get_Floor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Walls, addr 0xa63a9cc, size 0x8, virtual false, abstract: false, final false
+inline ::ArrayW<::UnityW<::GlobalNamespace::OVRScenePlane>> get_Walls() ;
+
+/// @brief Convert to "::GlobalNamespace::IOVRSceneComponent"
+constexpr ::GlobalNamespace::IOVRSceneComponent* i___GlobalNamespace__IOVRSceneComponent() noexcept;
+
+static inline void setStaticF_SceneRooms(::System::Collections::Generic::Dictionary_2<::System::Guid,::UnityW<::GlobalNamespace::OVRSceneRoom>>*  value) ;
+
+static inline void setStaticF_SceneRoomsList(::System::Collections::Generic::List_1<::UnityW<::GlobalNamespace::OVRSceneRoom>>*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Ceiling, addr 0xa63a9c4, size 0x8, virtual false, abstract: false, final false
+inline void set_Ceiling(::GlobalNamespace::OVRScenePlane*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Floor, addr 0xa63a9b4, size 0x8, virtual false, abstract: false, final false
+inline void set_Floor(::GlobalNamespace::OVRScenePlane*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Walls, addr 0xa63a9d4, size 0x8, virtual false, abstract: false, final false
+inline void set_Walls(::ArrayW<::GlobalNamespace::OVRScenePlane*>  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OVRSceneRoom() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneRoom", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OVRSceneRoom(OVRSceneRoom && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneRoom", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OVRSceneRoom(OVRSceneRoom const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{12444};
+
+/// [CompilerGenerated]
+/// @brief Field <Floor>k__BackingField, offset: 0x20, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVRScenePlane>  ____Floor_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Ceiling>k__BackingField, offset: 0x28, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVRScenePlane>  ____Ceiling_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Walls>k__BackingField, offset: 0x30, size: 0x8, def value: None
+ ::ArrayW<::UnityW<::GlobalNamespace::OVRScenePlane>>  ____Walls_k__BackingField;
+
+/// @brief Field _sceneAnchor, offset: 0x38, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVRSceneAnchor>  ____sceneAnchor;
+
+/// @brief Field _sceneManager, offset: 0x40, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVRSceneManager>  ____sceneManager;
+
+/// @brief Field _uuid, offset: 0x48, size: 0x10, def value: None
+ ::System::Guid  ____uuid;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::OVRSceneRoom, ____Floor_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneRoom, ____Ceiling_k__BackingField) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneRoom, ____Walls_k__BackingField) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneRoom, ____sceneAnchor) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneRoom, ____sceneManager) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneRoom, ____uuid) == 0x48, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::OVRSceneRoom) == 0x58, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

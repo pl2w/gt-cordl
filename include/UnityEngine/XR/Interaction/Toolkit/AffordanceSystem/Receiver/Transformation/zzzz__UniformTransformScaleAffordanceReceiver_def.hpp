@@ -1,0 +1,121 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/XR/Interaction/Toolkit/AffordanceSystem/Receiver/Transformation/UniformTransformScaleAffordanceReceiver.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/XR/Interaction/Toolkit/AffordanceSystem/Receiver/Primitives/zzzz__FloatAffordanceReceiver_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+#include <cmath>
+CORDL_MODULE_EXPORT(UniformTransformScaleAffordanceReceiver)
+namespace UnityEngine {
+class Transform;
+}
+// Forward declare root types
+namespace UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation {
+class UniformTransformScaleAffordanceReceiver;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation::UniformTransformScaleAffordanceReceiver*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation::UniformTransformScaleAffordanceReceiver*, "UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Transformation", "UniformTransformScaleAffordanceReceiver");
+// [AddComponentMenu("Affordance System/Receiver/Transformation/Uniform Transform Scale Affordance Receiver", 12)]
+// [HelpURL("https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.2/api/UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Transformation.UniformTransformScaleAffordanceReceiver.html")]
+// [Obsolete("The Affordance System namespace and all associated classes have been deprecated. The existing affordance system will be moved, replaced and updated with a new interaction feedback system in a future version of XRI.")]
+// Dependencies UnityEngine.Vector3, UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives.FloatAffordanceReceiver
+namespace UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation {
+// Is value type: false
+// CS Name: UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Transformation.UniformTransformScaleAffordanceReceiver
+class CORDL_TYPE UniformTransformScaleAffordanceReceiver : public ::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Primitives::FloatAffordanceReceiver {
+public:
+// Declarations
+/// @brief Field m_HasTransformToScale, offset 0xb0, size 0x1 
+ __declspec(property(get=__cordl_internal_get_m_HasTransformToScale, put=__cordl_internal_set_m_HasTransformToScale)) bool  m_HasTransformToScale;
+
+/// @brief Field m_InitialScale, offset 0xb4, size 0xc 
+ __declspec(property(get=__cordl_internal_get_m_InitialScale, put=__cordl_internal_set_m_InitialScale)) ::UnityEngine::Vector3  m_InitialScale;
+
+/// @brief Field m_TransformToScale, offset 0xa8, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_TransformToScale, put=__cordl_internal_set_m_TransformToScale)) ::UnityW<::UnityEngine::Transform>  m_TransformToScale;
+
+ __declspec(property(get=get_transformToScale, put=set_transformToScale)) ::UnityW<::UnityEngine::Transform>  transformToScale;
+
+/// @brief Method GetCurrentValueForCapture, addr 0xb4da5e4, size 0x38, virtual true, abstract: false, final false
+inline float_t GetCurrentValueForCapture() ;
+
+static inline ::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation::UniformTransformScaleAffordanceReceiver* New_ctor() ;
+
+/// @brief Method OnAffordanceValueUpdated, addr 0xb4da61c, size 0x54, virtual true, abstract: false, final false
+inline void OnAffordanceValueUpdated(float_t  newValue) ;
+
+/// @brief Method OnEnable, addr 0xb4da550, size 0x94, virtual true, abstract: false, final false
+inline void OnEnable() ;
+
+/// @brief Method OnValidate, addr 0xb4da6dc, size 0x90, virtual false, abstract: false, final false
+inline void OnValidate() ;
+
+constexpr bool const& __cordl_internal_get_m_HasTransformToScale() const;
+
+constexpr bool& __cordl_internal_get_m_HasTransformToScale() ;
+
+constexpr ::UnityEngine::Vector3 const& __cordl_internal_get_m_InitialScale() const;
+
+constexpr ::UnityEngine::Vector3& __cordl_internal_get_m_InitialScale() ;
+
+constexpr ::UnityW<::UnityEngine::Transform> const& __cordl_internal_get_m_TransformToScale() const;
+
+constexpr ::UnityW<::UnityEngine::Transform>& __cordl_internal_get_m_TransformToScale() ;
+
+constexpr void __cordl_internal_set_m_HasTransformToScale(bool  value) ;
+
+constexpr void __cordl_internal_set_m_InitialScale(::UnityEngine::Vector3  value) ;
+
+constexpr void __cordl_internal_set_m_TransformToScale(::UnityW<::UnityEngine::Transform>  value) ;
+
+/// @brief Method .ctor, addr 0xb4da76c, size 0x5c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_transformToScale, addr 0xb4da4bc, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Transform> get_transformToScale() ;
+
+/// @brief Method set_transformToScale, addr 0xb4da4c4, size 0x8c, virtual false, abstract: false, final false
+inline void set_transformToScale(::UnityEngine::Transform*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr UniformTransformScaleAffordanceReceiver() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "UniformTransformScaleAffordanceReceiver", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+UniformTransformScaleAffordanceReceiver(UniformTransformScaleAffordanceReceiver && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "UniformTransformScaleAffordanceReceiver", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+UniformTransformScaleAffordanceReceiver(UniformTransformScaleAffordanceReceiver const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{11752};
+
+/// [SerializeField]
+/// [Tooltip("Transform on which to apply scale value.")]
+/// @brief Field m_TransformToScale, offset: 0xa8, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::Transform>  ___m_TransformToScale;
+
+/// @brief Field m_HasTransformToScale, offset: 0xb0, size: 0x1, def value: None
+ bool  ___m_HasTransformToScale;
+
+/// @brief Field m_InitialScale, offset: 0xb4, size: 0xc, def value: None
+ ::UnityEngine::Vector3  ___m_InitialScale;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation::UniformTransformScaleAffordanceReceiver, ___m_TransformToScale) == 0xa8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation::UniformTransformScaleAffordanceReceiver, ___m_HasTransformToScale) == 0xb0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation::UniformTransformScaleAffordanceReceiver, ___m_InitialScale) == 0xb4, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation::UniformTransformScaleAffordanceReceiver) == 0xc0, "Size mismatch!");
+
+} // namespace end def UnityEngine::XR::Interaction::Toolkit::AffordanceSystem::Receiver::Transformation

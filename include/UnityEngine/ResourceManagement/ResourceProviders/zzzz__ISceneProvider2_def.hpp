@@ -1,0 +1,56 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/ResourceProviders/ISceneProvider2.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(ISceneProvider2)
+namespace UnityEngine::ResourceManagement::AsyncOperations {
+template<typename TObject>
+struct AsyncOperationHandle_1;
+}
+namespace UnityEngine::ResourceManagement::ResourceProviders {
+class ISceneProvider;
+}
+namespace UnityEngine::ResourceManagement::ResourceProviders {
+struct SceneInstance;
+}
+namespace UnityEngine::ResourceManagement {
+class ResourceManager;
+}
+namespace UnityEngine::SceneManagement {
+struct UnloadSceneOptions;
+}
+// Forward declare root types
+namespace UnityEngine::ResourceManagement::ResourceProviders {
+class ISceneProvider2;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2*, "UnityEngine.ResourceManagement.ResourceProviders", "ISceneProvider2");
+// Dependencies 
+namespace UnityEngine::ResourceManagement::ResourceProviders {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.ResourceProviders.ISceneProvider2
+class CORDL_TYPE ISceneProvider2 {
+public:
+// Declarations
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider"
+constexpr operator  ::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider*() noexcept;
+
+/// @brief Method ReleaseScene, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance> ReleaseScene(::UnityEngine::ResourceManagement::ResourceManager*  resourceManager, ::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance>  sceneLoadHandle, ::UnityEngine::SceneManagement::UnloadSceneOptions  unloadOptions) ;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider"
+constexpr ::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider* i___UnityEngine__ResourceManagement__ResourceProviders__ISceneProvider() noexcept;
+
+// Ctor Parameters [CppParam { name: "", ty: "ISceneProvider2", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ISceneProvider2(ISceneProvider2 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28624};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::ResourceManagement::ResourceProviders

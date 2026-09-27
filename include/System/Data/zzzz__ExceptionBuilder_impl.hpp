@@ -1,0 +1,5841 @@
+#pragma once
+// IWYU pragma private; include "System/Data/ExceptionBuilder.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/Data/zzzz__ExceptionBuilder_def.hpp"
+#include "System/Data/zzzz__AggregateType_def.hpp"
+#include "System/Data/zzzz__Constraint_def.hpp"
+#include "System/Data/zzzz__DataColumn_def.hpp"
+#include "System/Data/zzzz__DataRowState_def.hpp"
+#include "System/Data/zzzz__DataSetDateTime_def.hpp"
+#include "System/Data/zzzz__DataTable_def.hpp"
+#include "System/Data/zzzz__ForeignKeyConstraint_def.hpp"
+#include "System/Data/zzzz__RBTreeError_def.hpp"
+#include "System/Data/zzzz__SerializationFormat_def.hpp"
+#include "System/Data/zzzz__UniqueConstraint_def.hpp"
+#include "System/zzzz__Exception_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "System/zzzz__TypeCode_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TraceException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::StringW, ::System::Exception*)>(&::System::Data::ExceptionBuilder::TraceException)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xa902174;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceException", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TraceExceptionAsReturnValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Exception*)>(&::System::Data::ExceptionBuilder::TraceExceptionAsReturnValue)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa90220c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceExceptionAsReturnValue", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TraceExceptionForCapture
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Exception*)>(&::System::Data::ExceptionBuilder::TraceExceptionForCapture)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa8fdb64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceExceptionForCapture", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TraceExceptionWithoutRethrow
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Exception*)>(&::System::Data::ExceptionBuilder::TraceExceptionWithoutRethrow)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa8fdda8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceExceptionWithoutRethrow", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._Argument
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_Argument)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa90225c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Argument", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._Argument
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::_Argument)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa9022b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Argument", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._Argument
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::System::Exception*)>(&::System::Data::ExceptionBuilder::_Argument)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xa902314;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Argument", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._ArgumentNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::_ArgumentNull)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xa902380;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_ArgumentNull", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._ArgumentOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::_ArgumentOutOfRange)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xa9023ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_ArgumentOutOfRange", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._IndexOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_IndexOutOfRange)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa902458;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_IndexOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._InvalidOperation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_InvalidOperation)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa9024b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InvalidOperation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._InvalidEnumArgumentException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_InvalidEnumArgumentException)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa902510;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InvalidEnumArgumentException", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ThrowDataException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::StringW, ::System::Exception*)>(&::System::Data::ExceptionBuilder::ThrowDataException)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa90256c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ThrowDataException", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._Data
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_Data)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa9025bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Data", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._Constraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_Constraint)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa902624;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Constraint", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._InvalidConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_InvalidConstraint)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa90268c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InvalidConstraint", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._DeletedRowInaccessible
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_DeletedRowInaccessible)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa9026f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_DeletedRowInaccessible", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._DuplicateName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_DuplicateName)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa90275c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_DuplicateName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._InRowChangingEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_InRowChangingEvent)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa9027c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InRowChangingEvent", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._NoNullAllowed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_NoNullAllowed)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa90282c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_NoNullAllowed", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._ReadOnly
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_ReadOnly)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa902894;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_ReadOnly", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._RowNotInTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_RowNotInTable)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa9028fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_RowNotInTable", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder._VersionNotFound
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::_VersionNotFound)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa902964;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_VersionNotFound", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ArgumentNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ArgumentNull)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa8fa340;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ArgumentNull", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ArgumentOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ArgumentOutOfRange)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa9029cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ArgumentOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.BadObjectPropertyAccess
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::BadObjectPropertyAccess)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902a20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"BadObjectPropertyAccess", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ArgumentContainsNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ArgumentContainsNull)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa902a6c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ArgumentContainsNull", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TypeNotAllowed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Type*)>(&::System::Data::ExceptionBuilder::TypeNotAllowed)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xa902abc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TypeNotAllowed", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotModifyCollection
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CannotModifyCollection)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa902b28;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotModifyCollection", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CaseInsensitiveNameConflict
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CaseInsensitiveNameConflict)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902b68;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CaseInsensitiveNameConflict", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NamespaceNameConflict
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::NamespaceNameConflict)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902bb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NamespaceNameConflict", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidOffsetLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::InvalidOffsetLength)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa902c00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidOffsetLength", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnNotInTheTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::ColumnNotInTheTable)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa902c40;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnNotInTheTable", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnNotInAnyTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ColumnNotInAnyTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa902c9c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnNotInAnyTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t)>(&::System::Data::ExceptionBuilder::ColumnOutOfRange)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa902cdc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ColumnOutOfRange)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902d6c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotAddColumn1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotAddColumn1)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902db8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn1", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotAddColumn2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotAddColumn2)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902e04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn2", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotAddColumn3
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CannotAddColumn3)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8ff78c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn3", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotAddColumn4
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotAddColumn4)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa8ff7cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn4", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotAddDuplicate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotAddDuplicate)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902e50;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddDuplicate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotAddDuplicate2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotAddDuplicate2)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902e9c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddDuplicate2", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotAddDuplicate3
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotAddDuplicate3)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902ee8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddDuplicate3", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotRemoveColumn
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CannotRemoveColumn)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa902f34;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveColumn", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotRemovePrimaryKey
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CannotRemovePrimaryKey)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa902f74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemovePrimaryKey", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotRemoveChildKey
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotRemoveChildKey)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa902fb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveChildKey", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotRemoveConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::CannotRemoveConstraint)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa903000;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveConstraint", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotRemoveExpression
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::CannotRemoveExpression)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa90305c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveExpression", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AddPrimaryKeyConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::AddPrimaryKeyConstraint)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9030b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AddPrimaryKeyConstraint", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NoConstraintName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NoConstraintName)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9030f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoConstraintName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConstraintViolation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ConstraintViolation)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa903138;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintViolation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeysToString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::ArrayW<::System::Object*>)>(&::System::Data::ExceptionBuilder::KeysToString)> {
+  constexpr static std::size_t size = 0x118;
+  constexpr static std::size_t addrs = 0xa903184;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeysToString", {}, {::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.UniqueConstraintViolationText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::ArrayW<::System::Data::DataColumn*>, ::ArrayW<::System::Object*>)>(&::System::Data::ExceptionBuilder::UniqueConstraintViolationText)> {
+  constexpr static std::size_t size = 0x170;
+  constexpr static std::size_t addrs = 0xa90329c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UniqueConstraintViolationText", {}, {::i2c::type_of<::ArrayW<::System::Data::DataColumn*>>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConstraintViolation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::ArrayW<::System::Data::DataColumn*>, ::ArrayW<::System::Object*>)>(&::System::Data::ExceptionBuilder::ConstraintViolation)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xa90340c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintViolation", {}, {::i2c::type_of<::ArrayW<::System::Data::DataColumn*>>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConstraintOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t)>(&::System::Data::ExceptionBuilder::ConstraintOutOfRange)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa90341c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DuplicateConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DuplicateConstraint)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9034ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateConstraint", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DuplicateConstraintName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DuplicateConstraintName)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9034f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateConstraintName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NeededForForeignKeyConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::UniqueConstraint*, ::System::Data::ForeignKeyConstraint*)>(&::System::Data::ExceptionBuilder::NeededForForeignKeyConstraint)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xa903544;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NeededForForeignKeyConstraint", {}, {::i2c::type_of<::System::Data::UniqueConstraint*>(), ::i2c::type_of<::System::Data::ForeignKeyConstraint*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.UniqueConstraintViolation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::UniqueConstraintViolation)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9035cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UniqueConstraintViolation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConstraintForeignTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ConstraintForeignTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa90360c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintForeignTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConstraintParentValues
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ConstraintParentValues)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa90364c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintParentValues", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConstraintAddFailed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataTable*)>(&::System::Data::ExceptionBuilder::ConstraintAddFailed)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa90368c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintAddFailed", {}, {::i2c::type_of<::System::Data::DataTable*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConstraintRemoveFailed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ConstraintRemoveFailed)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9036e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintRemoveFailed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.FailedCascadeDelete
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::FailedCascadeDelete)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa903720;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FailedCascadeDelete", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.FailedCascadeUpdate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::FailedCascadeUpdate)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa90376c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FailedCascadeUpdate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.FailedClearParentTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::FailedClearParentTable)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xa9037b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FailedClearParentTable", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ForeignKeyViolation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::ArrayW<::System::Object*>)>(&::System::Data::ExceptionBuilder::ForeignKeyViolation)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa90381c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ForeignKeyViolation", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RemoveParentRow
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::ForeignKeyConstraint*)>(&::System::Data::ExceptionBuilder::RemoveParentRow)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa903884;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RemoveParentRow", {}, {::i2c::type_of<::System::Data::ForeignKeyConstraint*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MaxLengthViolationText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW)>(&::System::Data::ExceptionBuilder::MaxLengthViolationText)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xa9009fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MaxLengthViolationText", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NotAllowDBNullViolationText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW)>(&::System::Data::ExceptionBuilder::NotAllowDBNullViolationText)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xa900b70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NotAllowDBNullViolationText", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CantAddConstraintToMultipleNestedTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CantAddConstraintToMultipleNestedTable)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9038ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CantAddConstraintToMultipleNestedTable", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AutoIncrementAndExpression
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::AutoIncrementAndExpression)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fb500;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementAndExpression", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AutoIncrementAndDefaultValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::AutoIncrementAndDefaultValue)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fb540;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementAndDefaultValue", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AutoIncrementSeed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::AutoIncrementSeed)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa901304;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementSeed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CantChangeDataType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CantChangeDataType)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fce4c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CantChangeDataType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NullDataType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NullDataType)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fce8c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullDataType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnNameRequired
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ColumnNameRequired)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fca20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnNameRequired", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DefaultValueAndAutoIncrement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::DefaultValueAndAutoIncrement)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fd854;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DefaultValueAndAutoIncrement", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DefaultValueDataType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::System::Type*, ::System::Type*, ::System::Exception*)>(&::System::Data::ExceptionBuilder::DefaultValueDataType)> {
+  constexpr static std::size_t size = 0x114;
+  constexpr static std::size_t addrs = 0xa8fd47c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DefaultValueDataType", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DefaultValueColumnDataType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::System::Type*, ::System::Type*, ::System::Exception*)>(&::System::Data::ExceptionBuilder::DefaultValueColumnDataType)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xa8fd894;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DefaultValueColumnDataType", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ExpressionAndUnique
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ExpressionAndUnique)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fd9c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionAndUnique", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ExpressionAndReadOnly
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ExpressionAndReadOnly)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fdbb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionAndReadOnly", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ExpressionAndConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataColumn*, ::System::Data::Constraint*)>(&::System::Data::ExceptionBuilder::ExpressionAndConstraint)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xa8fda00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionAndConstraint", {}, {::i2c::type_of<::System::Data::DataColumn*>(), ::i2c::type_of<::System::Data::Constraint*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ExpressionInConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataColumn*)>(&::System::Data::ExceptionBuilder::ExpressionInConstraint)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa903938;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionInConstraint", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ExpressionCircular
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ExpressionCircular)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fdbf4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionCircular", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NonUniqueValues
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::NonUniqueValues)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa8ffa68;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NonUniqueValues", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NullKeyValues
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::NullKeyValues)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa8ff9d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullKeyValues", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NullValues
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::NullValues)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa8ffa1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullValues", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ReadOnlyAndExpression
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ReadOnlyAndExpression)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fea38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ReadOnlyAndExpression", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ReadOnly
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ReadOnly)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa90398c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ReadOnly", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.UniqueAndExpression
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::UniqueAndExpression)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8ff430;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UniqueAndExpression", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetFailed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Object*, ::System::Data::DataColumn*, ::System::Type*, ::System::Exception*)>(&::System::Data::ExceptionBuilder::SetFailed)> {
+  constexpr static std::size_t size = 0xd8;
+  constexpr static std::size_t addrs = 0xa8feddc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetFailed", {}, {::i2c::type_of<::System::Object*>(), ::i2c::type_of<::System::Data::DataColumn*>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotSetToNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataColumn*)>(&::System::Data::ExceptionBuilder::CannotSetToNull)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa9039d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetToNull", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.LongerThanMaxLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataColumn*)>(&::System::Data::ExceptionBuilder::LongerThanMaxLength)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa8ff97c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"LongerThanMaxLength", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotSetMaxLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataColumn*, int32_t)>(&::System::Data::ExceptionBuilder::CannotSetMaxLength)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xa8fe660;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetMaxLength", {}, {::i2c::type_of<::System::Data::DataColumn*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotSetMaxLength2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataColumn*)>(&::System::Data::ExceptionBuilder::CannotSetMaxLength2)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa8fe26c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetMaxLength2", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotSetSimpleContentType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::System::Type*)>(&::System::Data::ExceptionBuilder::CannotSetSimpleContentType)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa8fd590;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetSimpleContentType", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotSetSimpleContent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::System::Type*)>(&::System::Data::ExceptionBuilder::CannotSetSimpleContent)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa8ff730;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetSimpleContent", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotChangeNamespace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotChangeNamespace)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa8fe894;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotChangeNamespace", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.HasToBeStringType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataColumn*)>(&::System::Data::ExceptionBuilder::HasToBeStringType)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xa8fe2c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"HasToBeStringType", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AutoIncrementCannotSetIfHasData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::AutoIncrementCannotSetIfHasData)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa8fb818;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementCannotSetIfHasData", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.INullableUDTwithoutStaticNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::INullableUDTwithoutStaticNull)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa903a2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"INullableUDTwithoutStaticNull", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.IComparableNotImplemented
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::IComparableNotImplemented)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa903a78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"IComparableNotImplemented", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.UDTImplementsIChangeTrackingButnotIRevertible
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::UDTImplementsIChangeTrackingButnotIRevertible)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa903ac4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UDTImplementsIChangeTrackingButnotIRevertible", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidDataColumnMapping
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Type*)>(&::System::Data::ExceptionBuilder::InvalidDataColumnMapping)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xa903b10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidDataColumnMapping", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotSetDateTimeModeForNonDateTimeColumns
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CannotSetDateTimeModeForNonDateTimeColumns)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fd714;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetDateTimeModeForNonDateTimeColumns", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidDateTimeMode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataSetDateTime)>(&::System::Data::ExceptionBuilder::InvalidDateTimeMode)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xa8fd80c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidDateTimeMode", {}, {::i2c::type_of<::System::Data::DataSetDateTime>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CantChangeDateTimeMode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataSetDateTime, ::System::Data::DataSetDateTime)>(&::System::Data::ExceptionBuilder::CantChangeDateTimeMode)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xa8fd754;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CantChangeDateTimeMode", {}, {::i2c::type_of<::System::Data::DataSetDateTime>(), ::i2c::type_of<::System::Data::DataSetDateTime>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnTypeNotSupported
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ColumnTypeNotSupported)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa8fa394;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnTypeNotSupported", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetFailed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::SetFailed)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa903b7c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetFailed", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetRowStateFilter
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::SetRowStateFilter)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903bc8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetRowStateFilter", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotUseDataViewManager
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotUseDataViewManager)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903c08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotUseDataViewManager", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotSetTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotSetTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903c48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSetTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotUse
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotUse)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903c88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotUse", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotBindTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotBindTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903cc8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotBindTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::SetTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903d08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetIListObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::SetIListObject)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903d48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetIListObject", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AddNewNotAllowNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::AddNewNotAllowNull)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903d88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AddNewNotAllowNull", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NotOpen
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NotOpen)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903dc8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NotOpen", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CreateChildView
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CreateChildView)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903e08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CreateChildView", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotDelete
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotDelete)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903e48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotDelete", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.GetElementIndex
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t)>(&::System::Data::ExceptionBuilder::GetElementIndex)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa903e88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"GetElementIndex", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AddExternalObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::AddExternalObject)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903f18;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AddExternalObject", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotClear
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotClear)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903f58;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotClear", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InsertExternalObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::InsertExternalObject)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903f98;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InsertExternalObject", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RemoveExternalObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RemoveExternalObject)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa903fd8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RemoveExternalObject", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnToSortIsOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ColumnToSortIsOutOfRange)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa904018;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnToSortIsOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeyTableMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::KeyTableMismatch)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904064;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyTableMismatch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeyNoColumns
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::KeyNoColumns)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9040a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyNoColumns", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeyTooManyColumns
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t)>(&::System::Data::ExceptionBuilder::KeyTooManyColumns)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa9040e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyTooManyColumns", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeyDuplicateColumns
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::KeyDuplicateColumns)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa904174;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyDuplicateColumns", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationDataSetMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationDataSetMismatch)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9041c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationDataSetMismatch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnsTypeMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ColumnsTypeMismatch)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa8fd01c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnsTypeMismatch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeyLengthMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::KeyLengthMismatch)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904200;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyLengthMismatch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeyLengthZero
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::KeyLengthZero)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904240;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyLengthZero", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ForeignRelation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ForeignRelation)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904280;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ForeignRelation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.KeyColumnsIdentical
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::KeyColumnsIdentical)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9042c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyColumnsIdentical", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationForeignTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::RelationForeignTable)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa904300;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationForeignTable", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.GetParentRowTableMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::GetParentRowTableMismatch)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa90435c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"GetParentRowTableMismatch", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetParentRowTableMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::SetParentRowTableMismatch)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa9043b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetParentRowTableMismatch", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationForeignRow
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationForeignRow)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904414;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationForeignRow", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationNestedReadOnly
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationNestedReadOnly)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904454;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationNestedReadOnly", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableCantBeNestedInTwoTables
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::TableCantBeNestedInTwoTables)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa904494;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableCantBeNestedInTwoTables", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.LoopInNestedRelations
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::LoopInNestedRelations)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9044e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"LoopInNestedRelations", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationDoesNotExist
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationDoesNotExist)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa90452c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationDoesNotExist", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ParentOrChildColumnsDoNotHaveDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ParentOrChildColumnsDoNotHaveDataSet)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa90456c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ParentOrChildColumnsDoNotHaveDataSet", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InValidNestedRelation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::InValidNestedRelation)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9045ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InValidNestedRelation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidParentNamespaceinNestedRelation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::InvalidParentNamespaceinNestedRelation)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9045f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidParentNamespaceinNestedRelation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowNotInTheDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowNotInTheDataSet)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904644;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowNotInTheDataSet", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowNotInTheTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowNotInTheTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904684;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowNotInTheTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.EditInRowChanging
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::EditInRowChanging)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9046c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EditInRowChanging", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.EndEditInRowChanging
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::EndEditInRowChanging)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904704;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EndEditInRowChanging", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.BeginEditInRowChanging
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::BeginEditInRowChanging)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904744;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"BeginEditInRowChanging", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CancelEditInRowChanging
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CancelEditInRowChanging)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904784;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CancelEditInRowChanging", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DeleteInRowDeleting
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::DeleteInRowDeleting)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9047c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DeleteInRowDeleting", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ValueArrayLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ValueArrayLength)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904804;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ValueArrayLength", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NoCurrentData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NoCurrentData)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904844;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoCurrentData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NoOriginalData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NoOriginalData)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904884;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoOriginalData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NoProposedData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NoProposedData)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9048c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoProposedData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowRemovedFromTheTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowRemovedFromTheTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904904;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowRemovedFromTheTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DeletedRowInaccessible
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::DeletedRowInaccessible)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904944;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DeletedRowInaccessible", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowAlreadyDeleted
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowAlreadyDeleted)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904984;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyDeleted", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowEmpty
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowEmpty)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9049c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowEmpty", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidRowVersion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::InvalidRowVersion)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904a04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRowVersion", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t)>(&::System::Data::ExceptionBuilder::RowOutOfRange)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa904a44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowInsertTwice
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t, ::StringW)>(&::System::Data::ExceptionBuilder::RowInsertTwice)> {
+  constexpr static std::size_t size = 0xa0;
+  constexpr static std::size_t addrs = 0xa904ad4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowInsertTwice", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowInsertMissing
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::RowInsertMissing)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa904b74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowInsertMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowAlreadyRemoved
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowAlreadyRemoved)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904bc0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyRemoved", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MultipleParents
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::MultipleParents)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904c00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MultipleParents", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidRowState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataRowState)>(&::System::Data::ExceptionBuilder::InvalidRowState)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xa904c40;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRowState", {}, {::i2c::type_of<::System::Data::DataRowState>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidRowBitPattern
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::InvalidRowBitPattern)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904c88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRowBitPattern", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetDataSetNameToEmpty
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::SetDataSetNameToEmpty)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904cc8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetDataSetNameToEmpty", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SetDataSetNameConflicting
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::SetDataSetNameConflicting)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa904d08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetDataSetNameConflicting", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DataSetUnsupportedSchema
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DataSetUnsupportedSchema)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa904d54;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DataSetUnsupportedSchema", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MergeMissingDefinition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::MergeMissingDefinition)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa904da0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MergeMissingDefinition", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TablesInDifferentSets
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::TablesInDifferentSets)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904dec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TablesInDifferentSets", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationAlreadyExists
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationAlreadyExists)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904e2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationAlreadyExists", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowAlreadyInOtherCollection
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowAlreadyInOtherCollection)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904e6c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyInOtherCollection", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RowAlreadyInTheCollection
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RowAlreadyInTheCollection)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904eac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyInTheCollection", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RecordStateRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RecordStateRange)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa904eec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RecordStateRange", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.IndexKeyLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t, int32_t)>(&::System::Data::ExceptionBuilder::IndexKeyLength)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xa904f2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"IndexKeyLength", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RemovePrimaryKey
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataTable*)>(&::System::Data::ExceptionBuilder::RemovePrimaryKey)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xa905008;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RemovePrimaryKey", {}, {::i2c::type_of<::System::Data::DataTable*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationAlreadyInOtherDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationAlreadyInOtherDataSet)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905084;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationAlreadyInOtherDataSet", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationAlreadyInTheDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationAlreadyInTheDataSet)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9050c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationAlreadyInTheDataSet", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationNotInTheDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::RelationNotInTheDataSet)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa905104;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationNotInTheDataSet", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Object*)>(&::System::Data::ExceptionBuilder::RelationOutOfRange)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xa905150;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationOutOfRange", {}, {::i2c::type_of<::System::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DuplicateRelation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DuplicateRelation)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9051d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateRelation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationTableNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationTableNull)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905220;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationTableNull", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationDataSetNull
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationDataSetNull)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905260;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationDataSetNull", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationTableWasRemoved
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::RelationTableWasRemoved)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9052a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationTableWasRemoved", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ParentTableMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ParentTableMismatch)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9052e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ParentTableMismatch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ChildTableMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::ChildTableMismatch)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905320;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ChildTableMismatch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.EnforceConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::EnforceConstraint)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905360;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EnforceConstraint", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CaseLocaleMismatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CaseLocaleMismatch)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9053a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CaseLocaleMismatch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotChangeCaseLocale
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CannotChangeCaseLocale)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa9053e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotChangeCaseLocale", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotChangeCaseLocale
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Exception*)>(&::System::Data::ExceptionBuilder::CannotChangeCaseLocale)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xa9053e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotChangeCaseLocale", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidRemotingFormat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::SerializationFormat)>(&::System::Data::ExceptionBuilder::InvalidRemotingFormat)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xa905430;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRemotingFormat", {}, {::i2c::type_of<::System::Data::SerializationFormat>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableForeignPrimaryKey
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::TableForeignPrimaryKey)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905478;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableForeignPrimaryKey", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableCannotAddToSimpleContent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::TableCannotAddToSimpleContent)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9054b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableCannotAddToSimpleContent", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NoTableName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NoTableName)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9054f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoTableName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MultipleTextOnlyColumns
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::MultipleTextOnlyColumns)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905538;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MultipleTextOnlyColumns", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidSortString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::InvalidSortString)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa905578;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidSortString", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DuplicateTableName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DuplicateTableName)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9055c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateTableName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DuplicateTableName2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::DuplicateTableName2)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa905610;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateTableName2", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SelfnestedDatasetConflictingName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::SelfnestedDatasetConflictingName)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa90566c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SelfnestedDatasetConflictingName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DatasetConflictingName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DatasetConflictingName)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9056b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DatasetConflictingName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableAlreadyInOtherDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::TableAlreadyInOtherDataSet)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905704;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableAlreadyInOtherDataSet", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableAlreadyInTheDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::TableAlreadyInTheDataSet)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905744;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableAlreadyInTheDataSet", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableOutOfRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t)>(&::System::Data::ExceptionBuilder::TableOutOfRange)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa905784;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableNotInTheDataSet
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::TableNotInTheDataSet)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa905814;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableNotInTheDataSet", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableInRelation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::TableInRelation)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905860;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableInRelation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableInConstraint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::DataTable*, ::System::Data::Constraint*)>(&::System::Data::ExceptionBuilder::TableInConstraint)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xa9058a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableInConstraint", {}, {::i2c::type_of<::System::Data::DataTable*>(), ::i2c::type_of<::System::Data::Constraint*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotSerializeDataTableHierarchy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotSerializeDataTableHierarchy)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905918;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSerializeDataTableHierarchy", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotRemoteDataTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotRemoteDataTable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905958;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotRemoteDataTable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotSetRemotingFormat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotSetRemotingFormat)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905998;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSetRemotingFormat", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotSerializeDataTableWithEmptyName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotSerializeDataTableWithEmptyName)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9059d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSerializeDataTableWithEmptyName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TableNotFound
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::TableNotFound)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa905a18;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableNotFound", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AggregateException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::AggregateType, ::System::Type*)>(&::System::Data::ExceptionBuilder::AggregateException)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xa905a64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AggregateException", {}, {::i2c::type_of<::System::Data::AggregateType>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidStorageType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::TypeCode)>(&::System::Data::ExceptionBuilder::InvalidStorageType)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xa905b1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidStorageType", {}, {::i2c::type_of<::System::TypeCode>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RangeArgument
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(int32_t, int32_t)>(&::System::Data::ExceptionBuilder::RangeArgument)> {
+  constexpr static std::size_t size = 0xb4;
+  constexpr static std::size_t addrs = 0xa905bb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RangeArgument", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NullRange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NullRange)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905c64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullRange", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NegativeMinimumCapacity
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::NegativeMinimumCapacity)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905ca4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NegativeMinimumCapacity", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ProblematicChars
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(char16_t)>(&::System::Data::ExceptionBuilder::ProblematicChars)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xa905ce4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ProblematicChars", {}, {::i2c::type_of<char16_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.StorageSetFailed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::StorageSetFailed)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905dc0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"StorageSetFailed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.SimpleTypeNotSupported
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::SimpleTypeNotSupported)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa905e00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SimpleTypeNotSupported", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MissingAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::MissingAttribute)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xa905e40;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MissingAttribute", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MissingAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::MissingAttribute)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa905e60;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MissingAttribute", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidAttributeValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::InvalidAttributeValue)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa905ebc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidAttributeValue", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.AttributeValues
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::AttributeValues)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xa905f18;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AttributeValues", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ElementTypeNotFound
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ElementTypeNotFound)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa905f7c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ElementTypeNotFound", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationParentNameMissing
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::RelationParentNameMissing)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa905fc8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationParentNameMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationChildNameMissing
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::RelationChildNameMissing)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906014;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationChildNameMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationTableKeyMissing
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::RelationTableKeyMissing)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906060;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationTableKeyMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.RelationChildKeyMissing
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::RelationChildKeyMissing)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9060ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationChildKeyMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.UndefinedDatatype
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::UndefinedDatatype)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9060f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UndefinedDatatype", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DatatypeNotDefined
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::DatatypeNotDefined)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa906144;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DatatypeNotDefined", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MismatchKeyLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::MismatchKeyLength)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa906184;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MismatchKeyLength", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidField
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::InvalidField)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9061c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidField", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidSelector
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::InvalidSelector)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906210;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidSelector", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CircularComplexType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CircularComplexType)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa90625c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CircularComplexType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotInstantiateAbstract
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::CannotInstantiateAbstract)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9062a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotInstantiateAbstract", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidKey
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::InvalidKey)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9062f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidKey", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DiffgramMissingTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DiffgramMissingTable)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906340;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DiffgramMissingTable", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DiffgramMissingSQL
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::DiffgramMissingSQL)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa90638c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DiffgramMissingSQL", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DuplicateConstraintRead
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DuplicateConstraintRead)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa9063cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateConstraintRead", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ColumnTypeConflict
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::ColumnTypeConflict)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906418;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnTypeConflict", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CannotConvert
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::CannotConvert)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa906464;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotConvert", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MissingRefer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::MissingRefer)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xa9064c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MissingRefer", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidPrefix
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::InvalidPrefix)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa8fccc0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidPrefix", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.CanNotDeserializeObjectType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::CanNotDeserializeObjectType)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa906544;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotDeserializeObjectType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.IsDataSetAttributeMissingInSchema
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::IsDataSetAttributeMissingInSchema)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa906584;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"IsDataSetAttributeMissingInSchema", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.TooManyIsDataSetAtributeInSchema
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::TooManyIsDataSetAtributeInSchema)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9065c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TooManyIsDataSetAtributeInSchema", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.NestedCircular
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::NestedCircular)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906604;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NestedCircular", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MultipleParentRows
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::MultipleParentRows)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906650;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MultipleParentRows", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.PolymorphismNotSupported
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::PolymorphismNotSupported)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa90669c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"PolymorphismNotSupported", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DataTableInferenceNotSupported
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::DataTableInferenceNotSupported)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9066e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DataTableInferenceNotSupported", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ThrowMultipleTargetConverter
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::Exception*)>(&::System::Data::ExceptionBuilder::ThrowMultipleTargetConverter)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xa906728;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ThrowMultipleTargetConverter", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.DuplicateDeclaration
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::DuplicateDeclaration)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa906788;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateDeclaration", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.FoundEntity
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::FoundEntity)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa9067d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FoundEntity", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.MergeFailed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW)>(&::System::Data::ExceptionBuilder::MergeFailed)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa906814;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MergeFailed", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.ConvertFailed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Type*, ::System::Type*)>(&::System::Data::ExceptionBuilder::ConvertFailed)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa906818;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConvertFailed", {}, {::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InvalidDuplicateNamedSimpleTypeDelaration
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::StringW, ::StringW)>(&::System::Data::ExceptionBuilder::InvalidDuplicateNamedSimpleTypeDelaration)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa9068a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidDuplicateNamedSimpleTypeDelaration", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.InternalRBTreeError
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)(::System::Data::RBTreeError)>(&::System::Data::ExceptionBuilder::InternalRBTreeError)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xa906904;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InternalRBTreeError", {}, {::i2c::type_of<::System::Data::RBTreeError>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Data::ExceptionBuilder.EnumeratorModified
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (*)()>(&::System::Data::ExceptionBuilder::EnumeratorModified)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa906978;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EnumeratorModified", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void System::Data::ExceptionBuilder::TraceException(::StringW  trace, ::System::Exception*  e)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceException", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, trace, e);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TraceExceptionAsReturnValue(::System::Exception*  e)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceExceptionAsReturnValue", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, e);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TraceExceptionForCapture(::System::Exception*  e)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceExceptionForCapture", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, e);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TraceExceptionWithoutRethrow(::System::Exception*  e)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TraceExceptionWithoutRethrow", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, e);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_Argument(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Argument", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_Argument(::StringW  paramName, ::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Argument", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, paramName, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_Argument(::StringW  error, ::System::Exception*  innerException)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Argument", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error, innerException);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_ArgumentNull(::StringW  paramName, ::StringW  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_ArgumentNull", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, paramName, msg);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_ArgumentOutOfRange(::StringW  paramName, ::StringW  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_ArgumentOutOfRange", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, paramName, msg);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_IndexOutOfRange(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_IndexOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_InvalidOperation(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InvalidOperation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_InvalidEnumArgumentException(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InvalidEnumArgumentException", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+template<typename T>
+inline ::System::Exception* System::Data::ExceptionBuilder::_InvalidEnumArgumentException(T  value)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                    {"_InvalidEnumArgumentException", {::i2c::class_of<T>()}, {::i2c::type_of<T>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<T>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, value);
+}
+inline void System::Data::ExceptionBuilder::ThrowDataException(::StringW  error, ::System::Exception*  innerException)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ThrowDataException", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, error, innerException);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_Data(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Data", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_Constraint(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_Constraint", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_InvalidConstraint(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InvalidConstraint", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_DeletedRowInaccessible(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_DeletedRowInaccessible", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_DuplicateName(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_DuplicateName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_InRowChangingEvent(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_InRowChangingEvent", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_NoNullAllowed(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_NoNullAllowed", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_ReadOnly(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_ReadOnly", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_RowNotInTable(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_RowNotInTable", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::_VersionNotFound(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"_VersionNotFound", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ArgumentNull(::StringW  paramName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ArgumentNull", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, paramName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ArgumentOutOfRange(::StringW  paramName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ArgumentOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, paramName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::BadObjectPropertyAccess(::StringW  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"BadObjectPropertyAccess", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, error);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ArgumentContainsNull(::StringW  paramName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ArgumentContainsNull", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, paramName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TypeNotAllowed(::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TypeNotAllowed", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, type);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotModifyCollection()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotModifyCollection", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CaseInsensitiveNameConflict(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CaseInsensitiveNameConflict", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NamespaceNameConflict(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NamespaceNameConflict", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidOffsetLength()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidOffsetLength", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnNotInTheTable(::StringW  column, ::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnNotInTheTable", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnNotInAnyTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnNotInAnyTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnOutOfRange(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, index);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnOutOfRange(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotAddColumn1(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn1", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotAddColumn2(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn2", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotAddColumn3()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn3", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotAddColumn4(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddColumn4", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotAddDuplicate(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddDuplicate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotAddDuplicate2(::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddDuplicate2", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotAddDuplicate3(::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotAddDuplicate3", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotRemoveColumn()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveColumn", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotRemovePrimaryKey()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemovePrimaryKey", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotRemoveChildKey(::StringW  relation)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveChildKey", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, relation);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotRemoveConstraint(::StringW  constraint, ::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveConstraint", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotRemoveExpression(::StringW  column, ::StringW  expression)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotRemoveExpression", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column, expression);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AddPrimaryKeyConstraint()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AddPrimaryKeyConstraint", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NoConstraintName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoConstraintName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConstraintViolation(::StringW  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintViolation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint);
+}
+inline ::StringW System::Data::ExceptionBuilder::KeysToString(::ArrayW<::System::Object*>  keys)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeysToString", {}, {::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, keys);
+}
+inline ::StringW System::Data::ExceptionBuilder::UniqueConstraintViolationText(::ArrayW<::System::Data::DataColumn*>  columns, ::ArrayW<::System::Object*>  values)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UniqueConstraintViolationText", {}, {::i2c::type_of<::ArrayW<::System::Data::DataColumn*>>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, columns, values);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConstraintViolation(::ArrayW<::System::Data::DataColumn*>  columns, ::ArrayW<::System::Object*>  values)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintViolation", {}, {::i2c::type_of<::ArrayW<::System::Data::DataColumn*>>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, columns, values);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConstraintOutOfRange(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, index);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DuplicateConstraint(::StringW  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateConstraint", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DuplicateConstraintName(::StringW  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateConstraintName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NeededForForeignKeyConstraint(::System::Data::UniqueConstraint*  key, ::System::Data::ForeignKeyConstraint*  fk)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NeededForForeignKeyConstraint", {}, {::i2c::type_of<::System::Data::UniqueConstraint*>(), ::i2c::type_of<::System::Data::ForeignKeyConstraint*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, key, fk);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::UniqueConstraintViolation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UniqueConstraintViolation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConstraintForeignTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintForeignTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConstraintParentValues()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintParentValues", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConstraintAddFailed(::System::Data::DataTable*  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintAddFailed", {}, {::i2c::type_of<::System::Data::DataTable*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConstraintRemoveFailed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConstraintRemoveFailed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::FailedCascadeDelete(::StringW  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FailedCascadeDelete", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::FailedCascadeUpdate(::StringW  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FailedCascadeUpdate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::FailedClearParentTable(::StringW  table, ::StringW  constraint, ::StringW  childTable)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FailedClearParentTable", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table, constraint, childTable);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ForeignKeyViolation(::StringW  constraint, ::ArrayW<::System::Object*>  keys)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ForeignKeyViolation", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint, keys);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RemoveParentRow(::System::Data::ForeignKeyConstraint*  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RemoveParentRow", {}, {::i2c::type_of<::System::Data::ForeignKeyConstraint*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, constraint);
+}
+inline ::StringW System::Data::ExceptionBuilder::MaxLengthViolationText(::StringW  columnName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MaxLengthViolationText", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, columnName);
+}
+inline ::StringW System::Data::ExceptionBuilder::NotAllowDBNullViolationText(::StringW  columnName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NotAllowDBNullViolationText", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, columnName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CantAddConstraintToMultipleNestedTable(::StringW  tableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CantAddConstraintToMultipleNestedTable", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, tableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AutoIncrementAndExpression()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementAndExpression", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AutoIncrementAndDefaultValue()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementAndDefaultValue", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AutoIncrementSeed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementSeed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CantChangeDataType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CantChangeDataType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NullDataType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullDataType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnNameRequired()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnNameRequired", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DefaultValueAndAutoIncrement()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DefaultValueAndAutoIncrement", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DefaultValueDataType(::StringW  column, ::System::Type*  defaultType, ::System::Type*  columnType, ::System::Exception*  inner)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DefaultValueDataType", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column, defaultType, columnType, inner);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DefaultValueColumnDataType(::StringW  column, ::System::Type*  defaultType, ::System::Type*  columnType, ::System::Exception*  inner)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DefaultValueColumnDataType", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column, defaultType, columnType, inner);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ExpressionAndUnique()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionAndUnique", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ExpressionAndReadOnly()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionAndReadOnly", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ExpressionAndConstraint(::System::Data::DataColumn*  column, ::System::Data::Constraint*  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionAndConstraint", {}, {::i2c::type_of<::System::Data::DataColumn*>(), ::i2c::type_of<::System::Data::Constraint*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column, constraint);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ExpressionInConstraint(::System::Data::DataColumn*  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionInConstraint", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ExpressionCircular()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ExpressionCircular", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NonUniqueValues(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NonUniqueValues", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NullKeyValues(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullKeyValues", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NullValues(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullValues", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ReadOnlyAndExpression()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ReadOnlyAndExpression", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ReadOnly(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ReadOnly", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::UniqueAndExpression()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UniqueAndExpression", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetFailed(::System::Object*  value, ::System::Data::DataColumn*  column, ::System::Type*  type, ::System::Exception*  innerException)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetFailed", {}, {::i2c::type_of<::System::Object*>(), ::i2c::type_of<::System::Data::DataColumn*>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, value, column, type, innerException);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotSetToNull(::System::Data::DataColumn*  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetToNull", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::LongerThanMaxLength(::System::Data::DataColumn*  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"LongerThanMaxLength", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotSetMaxLength(::System::Data::DataColumn*  column, int32_t  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetMaxLength", {}, {::i2c::type_of<::System::Data::DataColumn*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column, value);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotSetMaxLength2(::System::Data::DataColumn*  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetMaxLength2", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotSetSimpleContentType(::StringW  columnName, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetSimpleContentType", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, columnName, type);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotSetSimpleContent(::StringW  columnName, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetSimpleContent", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, columnName, type);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotChangeNamespace(::StringW  columnName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotChangeNamespace", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, columnName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::HasToBeStringType(::System::Data::DataColumn*  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"HasToBeStringType", {}, {::i2c::type_of<::System::Data::DataColumn*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AutoIncrementCannotSetIfHasData(::StringW  typeName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AutoIncrementCannotSetIfHasData", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, typeName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::INullableUDTwithoutStaticNull(::StringW  typeName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"INullableUDTwithoutStaticNull", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, typeName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::IComparableNotImplemented(::StringW  typeName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"IComparableNotImplemented", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, typeName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::UDTImplementsIChangeTrackingButnotIRevertible(::StringW  typeName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UDTImplementsIChangeTrackingButnotIRevertible", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, typeName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidDataColumnMapping(::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidDataColumnMapping", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, type);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotSetDateTimeModeForNonDateTimeColumns()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotSetDateTimeModeForNonDateTimeColumns", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidDateTimeMode(::System::Data::DataSetDateTime  mode)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidDateTimeMode", {}, {::i2c::type_of<::System::Data::DataSetDateTime>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, mode);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CantChangeDateTimeMode(::System::Data::DataSetDateTime  oldValue, ::System::Data::DataSetDateTime  newValue)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CantChangeDateTimeMode", {}, {::i2c::type_of<::System::Data::DataSetDateTime>(), ::i2c::type_of<::System::Data::DataSetDateTime>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, oldValue, newValue);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnTypeNotSupported()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnTypeNotSupported", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetFailed(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetFailed", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetRowStateFilter()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetRowStateFilter", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotUseDataViewManager()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotUseDataViewManager", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotSetTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSetTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotUse()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotUse", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotBindTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotBindTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetIListObject()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetIListObject", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AddNewNotAllowNull()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AddNewNotAllowNull", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NotOpen()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NotOpen", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CreateChildView()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CreateChildView", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotDelete()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotDelete", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::GetElementIndex(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"GetElementIndex", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, index);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AddExternalObject()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AddExternalObject", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotClear()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotClear", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InsertExternalObject()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InsertExternalObject", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RemoveExternalObject()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RemoveExternalObject", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnToSortIsOutOfRange(::StringW  column)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnToSortIsOutOfRange", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, column);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::KeyTableMismatch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyTableMismatch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::KeyNoColumns()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyNoColumns", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::KeyTooManyColumns(int32_t  cols)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyTooManyColumns", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, cols);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::KeyDuplicateColumns(::StringW  columnName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyDuplicateColumns", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, columnName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationDataSetMismatch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationDataSetMismatch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnsTypeMismatch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnsTypeMismatch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::KeyLengthMismatch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyLengthMismatch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::KeyLengthZero()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyLengthZero", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ForeignRelation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ForeignRelation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::KeyColumnsIdentical()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"KeyColumnsIdentical", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationForeignTable(::StringW  t1, ::StringW  t2)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationForeignTable", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, t1, t2);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::GetParentRowTableMismatch(::StringW  t1, ::StringW  t2)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"GetParentRowTableMismatch", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, t1, t2);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetParentRowTableMismatch(::StringW  t1, ::StringW  t2)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetParentRowTableMismatch", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, t1, t2);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationForeignRow()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationForeignRow", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationNestedReadOnly()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationNestedReadOnly", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableCantBeNestedInTwoTables(::StringW  tableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableCantBeNestedInTwoTables", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, tableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::LoopInNestedRelations(::StringW  tableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"LoopInNestedRelations", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, tableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationDoesNotExist()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationDoesNotExist", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ParentOrChildColumnsDoNotHaveDataSet()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ParentOrChildColumnsDoNotHaveDataSet", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InValidNestedRelation(::StringW  childTableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InValidNestedRelation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, childTableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidParentNamespaceinNestedRelation(::StringW  childTableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidParentNamespaceinNestedRelation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, childTableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowNotInTheDataSet()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowNotInTheDataSet", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowNotInTheTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowNotInTheTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::EditInRowChanging()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EditInRowChanging", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::EndEditInRowChanging()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EndEditInRowChanging", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::BeginEditInRowChanging()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"BeginEditInRowChanging", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CancelEditInRowChanging()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CancelEditInRowChanging", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DeleteInRowDeleting()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DeleteInRowDeleting", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ValueArrayLength()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ValueArrayLength", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NoCurrentData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoCurrentData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NoOriginalData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoOriginalData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NoProposedData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoProposedData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowRemovedFromTheTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowRemovedFromTheTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DeletedRowInaccessible()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DeletedRowInaccessible", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowAlreadyDeleted()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyDeleted", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowEmpty()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowEmpty", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidRowVersion()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRowVersion", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowOutOfRange(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, index);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowInsertTwice(int32_t  index, ::StringW  tableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowInsertTwice", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, index, tableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowInsertMissing(::StringW  tableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowInsertMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, tableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowAlreadyRemoved()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyRemoved", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MultipleParents()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MultipleParents", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidRowState(::System::Data::DataRowState  state)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRowState", {}, {::i2c::type_of<::System::Data::DataRowState>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, state);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidRowBitPattern()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRowBitPattern", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetDataSetNameToEmpty()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetDataSetNameToEmpty", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SetDataSetNameConflicting(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SetDataSetNameConflicting", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DataSetUnsupportedSchema(::StringW  ns)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DataSetUnsupportedSchema", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, ns);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MergeMissingDefinition(::StringW  obj)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MergeMissingDefinition", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, obj);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TablesInDifferentSets()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TablesInDifferentSets", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationAlreadyExists()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationAlreadyExists", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowAlreadyInOtherCollection()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyInOtherCollection", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RowAlreadyInTheCollection()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RowAlreadyInTheCollection", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RecordStateRange()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RecordStateRange", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::IndexKeyLength(int32_t  length, int32_t  keyLength)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"IndexKeyLength", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, length, keyLength);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RemovePrimaryKey(::System::Data::DataTable*  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RemovePrimaryKey", {}, {::i2c::type_of<::System::Data::DataTable*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationAlreadyInOtherDataSet()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationAlreadyInOtherDataSet", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationAlreadyInTheDataSet()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationAlreadyInTheDataSet", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationNotInTheDataSet(::StringW  relation)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationNotInTheDataSet", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, relation);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationOutOfRange(::System::Object*  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationOutOfRange", {}, {::i2c::type_of<::System::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, index);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DuplicateRelation(::StringW  relation)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateRelation", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, relation);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationTableNull()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationTableNull", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationDataSetNull()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationDataSetNull", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationTableWasRemoved()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationTableWasRemoved", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ParentTableMismatch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ParentTableMismatch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ChildTableMismatch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ChildTableMismatch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::EnforceConstraint()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EnforceConstraint", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CaseLocaleMismatch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CaseLocaleMismatch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotChangeCaseLocale()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotChangeCaseLocale", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotChangeCaseLocale(::System::Exception*  innerException)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotChangeCaseLocale", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, innerException);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidRemotingFormat(::System::Data::SerializationFormat  mode)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidRemotingFormat", {}, {::i2c::type_of<::System::Data::SerializationFormat>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, mode);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableForeignPrimaryKey()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableForeignPrimaryKey", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableCannotAddToSimpleContent()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableCannotAddToSimpleContent", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NoTableName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NoTableName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MultipleTextOnlyColumns()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MultipleTextOnlyColumns", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidSortString(::StringW  sort)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidSortString", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, sort);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DuplicateTableName(::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateTableName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DuplicateTableName2(::StringW  table, ::StringW  ns)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateTableName2", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table, ns);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SelfnestedDatasetConflictingName(::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SelfnestedDatasetConflictingName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DatasetConflictingName(::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DatasetConflictingName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableAlreadyInOtherDataSet()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableAlreadyInOtherDataSet", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableAlreadyInTheDataSet()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableAlreadyInTheDataSet", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableOutOfRange(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableOutOfRange", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, index);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableNotInTheDataSet(::StringW  table)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableNotInTheDataSet", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableInRelation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableInRelation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableInConstraint(::System::Data::DataTable*  table, ::System::Data::Constraint*  constraint)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableInConstraint", {}, {::i2c::type_of<::System::Data::DataTable*>(), ::i2c::type_of<::System::Data::Constraint*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, table, constraint);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotSerializeDataTableHierarchy()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSerializeDataTableHierarchy", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotRemoteDataTable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotRemoteDataTable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotSetRemotingFormat()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSetRemotingFormat", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotSerializeDataTableWithEmptyName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotSerializeDataTableWithEmptyName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TableNotFound(::StringW  tableName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TableNotFound", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, tableName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AggregateException(::System::Data::AggregateType  aggregateType, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AggregateException", {}, {::i2c::type_of<::System::Data::AggregateType>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, aggregateType, type);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidStorageType(::System::TypeCode  typecode)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidStorageType", {}, {::i2c::type_of<::System::TypeCode>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, typecode);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RangeArgument(int32_t  min, int32_t  max)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RangeArgument", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, min, max);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NullRange()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NullRange", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NegativeMinimumCapacity()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NegativeMinimumCapacity", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ProblematicChars(char16_t  charValue)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ProblematicChars", {}, {::i2c::type_of<char16_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, charValue);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::StorageSetFailed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"StorageSetFailed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::SimpleTypeNotSupported()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"SimpleTypeNotSupported", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MissingAttribute(::StringW  attribute)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MissingAttribute", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, attribute);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MissingAttribute(::StringW  element, ::StringW  attribute)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MissingAttribute", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, element, attribute);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidAttributeValue(::StringW  name, ::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidAttributeValue", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name, value);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::AttributeValues(::StringW  name, ::StringW  value1, ::StringW  value2)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"AttributeValues", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name, value1, value2);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ElementTypeNotFound(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ElementTypeNotFound", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationParentNameMissing(::StringW  rel)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationParentNameMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, rel);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationChildNameMissing(::StringW  rel)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationChildNameMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, rel);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationTableKeyMissing(::StringW  rel)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationTableKeyMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, rel);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::RelationChildKeyMissing(::StringW  rel)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"RelationChildKeyMissing", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, rel);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::UndefinedDatatype(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"UndefinedDatatype", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DatatypeNotDefined()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DatatypeNotDefined", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MismatchKeyLength()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MismatchKeyLength", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidField(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidField", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidSelector(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidSelector", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CircularComplexType(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CircularComplexType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotInstantiateAbstract(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotInstantiateAbstract", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidKey(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidKey", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DiffgramMissingTable(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DiffgramMissingTable", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DiffgramMissingSQL()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DiffgramMissingSQL", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DuplicateConstraintRead(::StringW  str)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateConstraintRead", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, str);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ColumnTypeConflict(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ColumnTypeConflict", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CannotConvert(::StringW  name, ::StringW  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CannotConvert", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name, type);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MissingRefer(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MissingRefer", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidPrefix(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidPrefix", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::CanNotDeserializeObjectType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"CanNotDeserializeObjectType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::IsDataSetAttributeMissingInSchema()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"IsDataSetAttributeMissingInSchema", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::TooManyIsDataSetAtributeInSchema()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"TooManyIsDataSetAtributeInSchema", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::NestedCircular(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"NestedCircular", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MultipleParentRows(::StringW  tableQName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MultipleParentRows", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, tableQName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::PolymorphismNotSupported(::StringW  typeName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"PolymorphismNotSupported", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, typeName);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DataTableInferenceNotSupported()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DataTableInferenceNotSupported", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline void System::Data::ExceptionBuilder::ThrowMultipleTargetConverter(::System::Exception*  innerException)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ThrowMultipleTargetConverter", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, innerException);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::DuplicateDeclaration(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"DuplicateDeclaration", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::FoundEntity()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"FoundEntity", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::MergeFailed(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"MergeFailed", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, name);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::ConvertFailed(::System::Type*  type1, ::System::Type*  type2)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"ConvertFailed", {}, {::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, type1, type2);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InvalidDuplicateNamedSimpleTypeDelaration(::StringW  stName, ::StringW  errorStr)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InvalidDuplicateNamedSimpleTypeDelaration", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, stName, errorStr);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::InternalRBTreeError(::System::Data::RBTreeError  internalError)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"InternalRBTreeError", {}, {::i2c::type_of<::System::Data::RBTreeError>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method, internalError);
+}
+inline ::System::Exception* System::Data::ExceptionBuilder::EnumeratorModified()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Data::ExceptionBuilder*>(),
+                        {"EnumeratorModified", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(nullptr, ___internal_method);
+}
+// Ctor Parameters []
+constexpr ::System::Data::ExceptionBuilder::ExceptionBuilder()   {
+}

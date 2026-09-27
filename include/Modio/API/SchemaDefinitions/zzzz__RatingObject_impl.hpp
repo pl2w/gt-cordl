@@ -1,0 +1,35 @@
+#pragma once
+// IWYU pragma private; include "Modio/API/SchemaDefinitions/RatingObject.hpp"
+#include "Modio/API/SchemaDefinitions/zzzz__RatingObject_def.hpp"
+//  Writing Method size for method: ::Modio::API::SchemaDefinitions::RatingObject._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Modio::API::SchemaDefinitions::RatingObject::*)(int64_t, int64_t, int64_t, int64_t)>(&::Modio::API::SchemaDefinitions::RatingObject::_ctor)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0x9fee184;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Modio::API::SchemaDefinitions::RatingObject>(),
+                        {".ctor", {}, {::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void Modio::API::SchemaDefinitions::RatingObject::_ctor(int64_t  game_id, int64_t  mod_id, int64_t  rating, int64_t  date_added)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Modio::API::SchemaDefinitions::RatingObject>(),
+                        {".ctor", {}, {::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, game_id, mod_id, rating, date_added);
+}
+// Ctor Parameters [CppParam { name: "GameId", ty: "int64_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "ModId", ty: "int64_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "Rating", ty: "int64_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "DateAdded", ty: "int64_t", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::Modio::API::SchemaDefinitions::RatingObject::RatingObject(int64_t  GameId, int64_t  ModId, int64_t  Rating, int64_t  DateAdded) noexcept  {
+this->GameId = GameId;
+this->ModId = ModId;
+this->Rating = Rating;
+this->DateAdded = DateAdded;
+}
+// Ctor Parameters []
+constexpr ::Modio::API::SchemaDefinitions::RatingObject::RatingObject()   {
+}

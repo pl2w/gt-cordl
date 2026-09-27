@@ -1,0 +1,163 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/Diagnostics/EventLogger.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(EventLogger)
+namespace System::Diagnostics {
+struct EventLogEntryType;
+}
+namespace System::Diagnostics {
+struct TraceEventType;
+}
+namespace System::Runtime::Diagnostics {
+class DiagnosticTraceBase;
+}
+namespace System::Runtime::InteropServices {
+struct GCHandle;
+}
+// Forward declare root types
+namespace System::Runtime::Diagnostics {
+class EventLogger;
+}
+// Write type traits
+MARK_REF_T(::System::Runtime::Diagnostics::EventLogger*);
+DEFINE_IL2CPP_CLASS(::System::Runtime::Diagnostics::EventLogger*, "System.Runtime.Diagnostics", "EventLogger");
+// Dependencies System.Object
+namespace System::Runtime::Diagnostics {
+// Is value type: false
+// CS Name: System.Runtime.Diagnostics.EventLogger
+class CORDL_TYPE EventLogger : public ::System::Object {
+public:
+// Declarations
+/// @brief Field canLogEvent, offset 0xffffffff, size 0x1 
+ __declspec(property(get=getStaticF_canLogEvent, put=setStaticF_canLogEvent)) bool  canLogEvent;
+
+/// @brief Field diagnosticTrace, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_diagnosticTrace, put=__cordl_internal_set_diagnosticTrace)) ::System::Runtime::Diagnostics::DiagnosticTraceBase*  diagnosticTrace;
+
+/// @brief Field eventLogSourceName, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_eventLogSourceName, put=__cordl_internal_set_eventLogSourceName)) ::StringW  eventLogSourceName;
+
+/// @brief Field isInPartialTrust, offset 0x20, size 0x1 
+ __declspec(property(get=__cordl_internal_get_isInPartialTrust, put=__cordl_internal_set_isInPartialTrust)) bool  isInPartialTrust;
+
+/// @brief Field logCountForPT, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_logCountForPT, put=setStaticF_logCountForPT)) int32_t  logCountForPT;
+
+/// @brief Method EventLogEntryTypeFromEventType, addr 0xaa9b230, size 0x20, virtual false, abstract: false, final false
+static inline ::System::Diagnostics::EventLogEntryType EventLogEntryTypeFromEventType(::System::Diagnostics::TraceEventType  type) ;
+
+/// @brief Method IsInPartialTrust, addr 0xaa9aa1c, size 0x1d8, virtual false, abstract: false, final false
+inline bool IsInPartialTrust() ;
+
+/// @brief Method LogEvent, addr 0xaa96bec, size 0x174, virtual false, abstract: false, final false
+inline void LogEvent(::System::Diagnostics::TraceEventType  type, uint16_t  eventLogCategory, uint32_t  eventId, bool  shouldTrace, /* [ParamArray] */ ::ArrayW<::StringW>  values) ;
+
+static inline ::System::Runtime::Diagnostics::EventLogger* New_ctor() ;
+
+/// @brief [Obsolete("For System.Runtime.dll use only. Call FxTrace.EventLog instead")]
+static inline ::System::Runtime::Diagnostics::EventLogger* New_ctor(::StringW  eventLogSourceName, ::System::Runtime::Diagnostics::DiagnosticTraceBase*  diagnosticTrace) ;
+
+/// @brief Method NormalizeEventLogParameter, addr 0xaa9ac24, size 0x1b4, virtual false, abstract: false, final false
+static inline ::StringW NormalizeEventLogParameter(::StringW  eventLogParameter) ;
+
+/// @brief Method SafeLogEvent, addr 0xaa9b22c, size 0x4, virtual false, abstract: false, final false
+inline void SafeLogEvent(::System::Diagnostics::TraceEventType  type, uint16_t  eventLogCategory, uint32_t  eventId, bool  shouldTrace, /* [ParamArray] */ ::ArrayW<::StringW>  values) ;
+
+/// @brief Method SafeSetLogSourceName, addr 0xaa9b250, size 0x8, virtual false, abstract: false, final false
+inline void SafeSetLogSourceName(::StringW  eventLogSourceName) ;
+
+/// @brief Method SetLogSourceName, addr 0xaa9abf4, size 0x30, virtual false, abstract: false, final false
+inline void SetLogSourceName(::StringW  eventLogSourceName, ::System::Runtime::Diagnostics::DiagnosticTraceBase*  diagnosticTrace) ;
+
+/// @brief Method UnsafeCreateEventLogger, addr 0xaa958b4, size 0x94, virtual false, abstract: false, final false
+static inline ::System::Runtime::Diagnostics::EventLogger* UnsafeCreateEventLogger(::StringW  eventLogSourceName, ::System::Runtime::Diagnostics::DiagnosticTraceBase*  diagnosticTrace) ;
+
+/// @brief Method UnsafeGetProcessId, addr 0xaa9af08, size 0x130, virtual false, abstract: false, final false
+inline int32_t UnsafeGetProcessId() ;
+
+/// @brief Method UnsafeGetProcessName, addr 0xaa9add8, size 0x130, virtual false, abstract: false, final false
+inline ::StringW UnsafeGetProcessName() ;
+
+/// @brief Method UnsafeLogEvent, addr 0xaa95948, size 0xa90, virtual false, abstract: false, final false
+inline void UnsafeLogEvent(::System::Diagnostics::TraceEventType  type, uint16_t  eventLogCategory, uint32_t  eventId, bool  shouldTrace, /* [ParamArray] */ ::ArrayW<::StringW>  values) ;
+
+/// @brief Method UnsafeWriteEventLog, addr 0xaa9b038, size 0x1f4, virtual false, abstract: false, final false
+inline void UnsafeWriteEventLog(::System::Diagnostics::TraceEventType  type, uint16_t  eventLogCategory, uint32_t  eventId, ::ArrayW<::StringW>  logValues, ::ArrayW<uint8_t>  sidBA, ::System::Runtime::InteropServices::GCHandle  stringsRootHandle) ;
+
+constexpr ::System::Runtime::Diagnostics::DiagnosticTraceBase* const& __cordl_internal_get_diagnosticTrace() const;
+
+constexpr ::System::Runtime::Diagnostics::DiagnosticTraceBase*& __cordl_internal_get_diagnosticTrace() ;
+
+constexpr ::StringW const& __cordl_internal_get_eventLogSourceName() const;
+
+constexpr ::StringW& __cordl_internal_get_eventLogSourceName() ;
+
+constexpr bool const& __cordl_internal_get_isInPartialTrust() const;
+
+constexpr bool& __cordl_internal_get_isInPartialTrust() ;
+
+constexpr void __cordl_internal_set_diagnosticTrace(::System::Runtime::Diagnostics::DiagnosticTraceBase*  value) ;
+
+constexpr void __cordl_internal_set_eventLogSourceName(::StringW  value) ;
+
+constexpr void __cordl_internal_set_isInPartialTrust(bool  value) ;
+
+/// @brief Method .ctor, addr 0xaa9a9f8, size 0x24, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [Obsolete("For System.Runtime.dll use only. Call FxTrace.EventLog instead")]
+/// @brief Method .ctor, addr 0xaa96ab0, size 0x13c, virtual false, abstract: false, final false
+inline void _ctor(::StringW  eventLogSourceName, ::System::Runtime::Diagnostics::DiagnosticTraceBase*  diagnosticTrace) ;
+
+static inline bool getStaticF_canLogEvent() ;
+
+static inline int32_t getStaticF_logCountForPT() ;
+
+static inline void setStaticF_canLogEvent(bool  value) ;
+
+static inline void setStaticF_logCountForPT(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr EventLogger() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "EventLogger", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+EventLogger(EventLogger && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "EventLogger", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+EventLogger(EventLogger const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{31368};
+
+/// @brief Field diagnosticTrace, offset: 0x10, size: 0x8, def value: None
+ ::System::Runtime::Diagnostics::DiagnosticTraceBase*  ___diagnosticTrace;
+
+/// @brief Field eventLogSourceName, offset: 0x18, size: 0x8, def value: None
+ ::StringW  ___eventLogSourceName;
+
+/// @brief Field isInPartialTrust, offset: 0x20, size: 0x1, def value: None
+ bool  ___isInPartialTrust;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Runtime::Diagnostics::EventLogger, ___diagnosticTrace) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Runtime::Diagnostics::EventLogger, ___eventLogSourceName) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Runtime::Diagnostics::EventLogger, ___isInPartialTrust) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::System::Runtime::Diagnostics::EventLogger) == 0x28, "Size mismatch!");
+
+} // namespace end def System::Runtime::Diagnostics

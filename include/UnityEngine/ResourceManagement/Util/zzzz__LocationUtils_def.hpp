@@ -1,0 +1,57 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/Util/LocationUtils.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(LocationUtils)
+namespace System::Collections::Generic {
+template<typename T>
+class IList_1;
+}
+namespace UnityEngine::ResourceManagement::ResourceLocations {
+class IResourceLocation;
+}
+// Forward declare root types
+namespace UnityEngine::ResourceManagement::Util {
+class LocationUtils;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::LocationUtils*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::LocationUtils*, "UnityEngine.ResourceManagement.Util", "LocationUtils");
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.LocationUtils
+class CORDL_TYPE LocationUtils : public ::System::Object {
+public:
+// Declarations
+/// @brief Method DependenciesEqual, addr 0xb2fb07c, size 0x284, virtual false, abstract: false, final false
+static inline bool DependenciesEqual(::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation*>*  deps1, ::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation*>*  deps2) ;
+
+/// @brief Method LocationEquals, addr 0xb2fad88, size 0x2f4, virtual false, abstract: false, final false
+static inline bool LocationEquals(::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation*  loc1, ::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation*  loc2) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr LocationUtils() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "LocationUtils", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+LocationUtils(LocationUtils && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "LocationUtils", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+LocationUtils(LocationUtils const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28579};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::LocationUtils) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util

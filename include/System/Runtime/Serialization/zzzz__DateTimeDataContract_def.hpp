@@ -1,0 +1,81 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/Serialization/DateTimeDataContract.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Runtime/Serialization/zzzz__PrimitiveDataContract_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(DateTimeDataContract)
+namespace System::Runtime::Serialization {
+class XmlObjectSerializerReadContext;
+}
+namespace System::Runtime::Serialization {
+class XmlObjectSerializerWriteContext;
+}
+namespace System::Runtime::Serialization {
+class XmlReaderDelegator;
+}
+namespace System::Runtime::Serialization {
+class XmlWriterDelegator;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace System::Runtime::Serialization {
+class DateTimeDataContract;
+}
+// Write type traits
+MARK_REF_T(::System::Runtime::Serialization::DateTimeDataContract*);
+DEFINE_IL2CPP_CLASS(::System::Runtime::Serialization::DateTimeDataContract*, "System.Runtime.Serialization", "DateTimeDataContract");
+// Dependencies System.Runtime.Serialization.PrimitiveDataContract
+namespace System::Runtime::Serialization {
+// Is value type: false
+// CS Name: System.Runtime.Serialization.DateTimeDataContract
+class CORDL_TYPE DateTimeDataContract : public ::System::Runtime::Serialization::PrimitiveDataContract {
+public:
+// Declarations
+ __declspec(property(get=get_ReadMethodName)) ::StringW  ReadMethodName;
+
+ __declspec(property(get=get_WriteMethodName)) ::StringW  WriteMethodName;
+
+static inline ::System::Runtime::Serialization::DateTimeDataContract* New_ctor() ;
+
+/// @brief Method ReadXmlValue, addr 0xaa65c74, size 0xc0, virtual true, abstract: false, final false
+inline ::System::Object* ReadXmlValue(::System::Runtime::Serialization::XmlReaderDelegator*  reader, ::System::Runtime::Serialization::XmlObjectSerializerReadContext*  context) ;
+
+/// @brief Method WriteXmlValue, addr 0xaa65bf0, size 0x84, virtual true, abstract: false, final false
+inline void WriteXmlValue(::System::Runtime::Serialization::XmlWriterDelegator*  writer, ::System::Object*  obj, ::System::Runtime::Serialization::XmlObjectSerializerWriteContext*  context) ;
+
+/// @brief Method .ctor, addr 0xaa65ac4, size 0xac, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_ReadMethodName, addr 0xaa65bb0, size 0x40, virtual true, abstract: false, final false
+inline ::StringW get_ReadMethodName() ;
+
+/// @brief Method get_WriteMethodName, addr 0xaa65b70, size 0x40, virtual true, abstract: false, final false
+inline ::StringW get_WriteMethodName() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DateTimeDataContract() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DateTimeDataContract", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DateTimeDataContract(DateTimeDataContract && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DateTimeDataContract", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DateTimeDataContract(DateTimeDataContract const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24556};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Runtime::Serialization::DateTimeDataContract) == 0x30, "Size mismatch!");
+
+} // namespace end def System::Runtime::Serialization

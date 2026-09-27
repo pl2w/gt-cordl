@@ -1,0 +1,2892 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/InputActionRebindingExtensions.hpp"
+#include "System/zzzz__Nullable_1_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/InputSystem/Layouts/zzzz__InputControlLayout_Cache_impl.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__InternedString_impl.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__ReadOnlyArray_1_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_RebindingOperation_Flags_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputBinding_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControlList_1_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControl_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_def.hpp"
+#include "System/Collections/Generic/zzzz__Dictionary_2_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerable_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/Linq/Expressions/zzzz__Expression_1_def.hpp"
+#include "System/Text/zzzz__StringBuilder_def.hpp"
+#include "System/zzzz__Action_1_def.hpp"
+#include "System/zzzz__Action_2_def.hpp"
+#include "System/zzzz__Action_def.hpp"
+#include "System/zzzz__Func_2_def.hpp"
+#include "System/zzzz__Func_3_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "System/zzzz__Nullable_1_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__InputEventPtr_def.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__PrimitiveValue_def.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__ReadOnlyArray_1_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__IInputActionCollection2_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionAsset_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionMap_BindingOverrideJson_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionMap_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_ParameterEnumerable_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_ParameterEnumerator_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_ParameterOverride_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_Parameter_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_RebindingOperation_Flags_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionRebindingExtensions_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionState_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputAction_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputBinding_DisplayStringOptions_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputBinding_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControlList_1_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControlScheme_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControl_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputDevice_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetParameterValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue> (*)(::UnityEngine::InputSystem::InputAction*, ::StringW, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetParameterValue)> {
+  constexpr static std::size_t size = 0x12c;
+  constexpr static std::size_t addrs = 0xaf1610c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetParameterValue", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetParameterValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue> (*)(::UnityEngine::InputSystem::InputAction*, ::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetParameterValue)> {
+  constexpr static std::size_t size = 0x238;
+  constexpr static std::size_t addrs = 0xaf16314;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetParameterValue", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetParameterValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue> (*)(::UnityEngine::InputSystem::InputAction*, ::StringW, int32_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetParameterValue)> {
+  constexpr static std::size_t size = 0x20c;
+  constexpr static std::size_t addrs = 0xaf1670c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetParameterValue", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyParameterOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputActionMap*, ::StringW, ::UnityEngine::InputSystem::Utilities::PrimitiveValue, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride)> {
+  constexpr static std::size_t size = 0x13c;
+  constexpr static std::size_t addrs = 0xaf16918;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyParameterOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputActionAsset*, ::StringW, ::UnityEngine::InputSystem::Utilities::PrimitiveValue, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride)> {
+  constexpr static std::size_t size = 0x188;
+  constexpr static std::size_t addrs = 0xaf16e7c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyParameterOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, ::StringW, ::UnityEngine::InputSystem::Utilities::PrimitiveValue, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xaf17004;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyParameterOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, ::StringW, ::UnityEngine::InputSystem::Utilities::PrimitiveValue, int32_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride)> {
+  constexpr static std::size_t size = 0x200;
+  constexpr static std::size_t addrs = 0xaf17160;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyParameterOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputActionState*, int32_t, ::by_ref<::ArrayW<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>>, ::by_ref<int32_t>, ::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride)> {
+  constexpr static std::size_t size = 0x428;
+  constexpr static std::size_t addrs = 0xaf16a54;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionState*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::ArrayW<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>>>(), ::i2c::type_of<::by_ref<int32_t>>(), ::i2c::type_of<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingIndex
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::InputSystem::InputAction*, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndex)> {
+  constexpr static std::size_t size = 0x114;
+  constexpr static std::size_t addrs = 0xaf17508;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndex", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingIndex
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::InputSystem::InputActionMap*, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndex)> {
+  constexpr static std::size_t size = 0x114;
+  constexpr static std::size_t addrs = 0xaf1761c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndex", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingIndex
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::InputSystem::InputAction*, ::StringW, ::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndex)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xaf17730;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndex", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingForControl
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> (*)(::UnityEngine::InputSystem::InputAction*, ::UnityEngine::InputSystem::InputControl*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingForControl)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xaf177ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingForControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingIndexForControl
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::InputSystem::InputAction*, ::UnityEngine::InputSystem::InputControl*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndexForControl)> {
+  constexpr static std::size_t size = 0x1a4;
+  constexpr static std::size_t addrs = 0xaf17948;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndexForControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingDisplayString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::UnityEngine::InputSystem::InputAction*, ::GlobalNamespace::InputBinding_DisplayStringOptions, ::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xaf17aec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingDisplayString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::UnityEngine::InputSystem::InputAction*, ::UnityEngine::InputSystem::InputBinding, ::GlobalNamespace::InputBinding_DisplayStringOptions)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString)> {
+  constexpr static std::size_t size = 0x200;
+  constexpr static std::size_t addrs = 0xaf17c48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingDisplayString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::UnityEngine::InputSystem::InputAction*, int32_t, ::GlobalNamespace::InputBinding_DisplayStringOptions)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaf17e48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.GetBindingDisplayString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::UnityEngine::InputSystem::InputAction*, int32_t, ::by_ref<::StringW>, ::by_ref<::StringW>, ::GlobalNamespace::InputBinding_DisplayStringOptions)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString)> {
+  constexpr static std::size_t size = 0x5c0;
+  constexpr static std::size_t addrs = 0xaf17ebc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::StringW>>(), ::i2c::type_of<::by_ref<::StringW>>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, ::StringW, ::StringW, ::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xaf1847c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride)> {
+  constexpr static std::size_t size = 0x114;
+  constexpr static std::size_t addrs = 0xaf18568;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, int32_t, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaf187d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, int32_t, ::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xaf18a5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::InputSystem::InputActionMap*, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride)> {
+  constexpr static std::size_t size = 0x158;
+  constexpr static std::size_t addrs = 0xaf1867c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputActionMap*, int32_t, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride)> {
+  constexpr static std::size_t size = 0x1c4;
+  constexpr static std::size_t addrs = 0xaf18898;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.RemoveBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, int32_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverride)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xaf18b38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.RemoveBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverride)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xaf18bb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.RemoveBindingOverride
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputActionMap*, ::UnityEngine::InputSystem::InputBinding)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverride)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xaf18c70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.RemoveAllBindingOverrides
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::IInputActionCollection2*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveAllBindingOverrides)> {
+  constexpr static std::size_t size = 0x490;
+  constexpr static std::size_t addrs = 0xaf18d2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveAllBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.RemoveAllBindingOverrides
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveAllBindingOverrides)> {
+  constexpr static std::size_t size = 0x168;
+  constexpr static std::size_t addrs = 0xaf191bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveAllBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverrides
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputActionMap*, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverrides)> {
+  constexpr static std::size_t size = 0x340;
+  constexpr static std::size_t addrs = 0xaf19324;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.RemoveBindingOverrides
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputActionMap*, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverrides)> {
+  constexpr static std::size_t size = 0x340;
+  constexpr static std::size_t addrs = 0xaf19664;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverridesOnMatchingControls
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::InputSystem::InputAction*, ::UnityEngine::InputSystem::InputControl*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverridesOnMatchingControls)> {
+  constexpr static std::size_t size = 0x154;
+  constexpr static std::size_t addrs = 0xaf199a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverridesOnMatchingControls", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.ApplyBindingOverridesOnMatchingControls
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::InputSystem::InputActionMap*, ::UnityEngine::InputSystem::InputControl*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverridesOnMatchingControls)> {
+  constexpr static std::size_t size = 0x11c;
+  constexpr static std::size_t addrs = 0xaf19af8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverridesOnMatchingControls", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.SaveBindingOverridesAsJson
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::UnityEngine::InputSystem::IInputActionCollection2*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::SaveBindingOverridesAsJson)> {
+  constexpr static std::size_t size = 0x468;
+  constexpr static std::size_t addrs = 0xaf19c14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"SaveBindingOverridesAsJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.SaveBindingOverridesAsJson
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::UnityEngine::InputSystem::InputAction*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::SaveBindingOverridesAsJson)> {
+  constexpr static std::size_t size = 0x310;
+  constexpr static std::size_t addrs = 0xaf1a28c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"SaveBindingOverridesAsJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.AddBindingOverrideJsonTo
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::IInputActionCollection2*, ::UnityEngine::InputSystem::InputBinding, ::System::Collections::Generic::List_1<::GlobalNamespace::InputActionMap_BindingOverrideJson>*, ::UnityEngine::InputSystem::InputAction*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::AddBindingOverrideJsonTo)> {
+  constexpr static std::size_t size = 0x210;
+  constexpr static std::size_t addrs = 0xaf1a07c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"AddBindingOverrideJsonTo", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>(), ::i2c::type_of<::System::Collections::Generic::List_1<::GlobalNamespace::InputActionMap_BindingOverrideJson>*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.LoadBindingOverridesFromJson
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::IInputActionCollection2*, ::StringW, bool)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::LoadBindingOverridesFromJson)> {
+  constexpr static std::size_t size = 0x188;
+  constexpr static std::size_t addrs = 0xaf1a59c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"LoadBindingOverridesFromJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.LoadBindingOverridesFromJson
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, ::StringW, bool)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::LoadBindingOverridesFromJson)> {
+  constexpr static std::size_t size = 0x19c;
+  constexpr static std::size_t addrs = 0xaf1aaa0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"LoadBindingOverridesFromJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.LoadBindingOverridesFromJsonInternal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::IInputActionCollection2*, ::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::LoadBindingOverridesFromJsonInternal)> {
+  constexpr static std::size_t size = 0x37c;
+  constexpr static std::size_t addrs = 0xaf1a724;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"LoadBindingOverridesFromJsonInternal", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.PerformInteractiveRebinding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (*)(::UnityEngine::InputSystem::InputAction*, int32_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::PerformInteractiveRebinding)> {
+  constexpr static std::size_t size = 0x3b4;
+  constexpr static std::size_t addrs = 0xaf1ac3c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"PerformInteractiveRebinding", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions.DeferBindingResolution
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper* (*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions::DeferBindingResolution)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xaf15098;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"DeferBindingResolution", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::setStaticF_s_DeferBindingResolutionWrapper(::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*, "s_DeferBindingResolutionWrapper", ::UnityEngine::InputSystem::InputActionRebindingExtensions*>(std::forward<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(value));
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper* UnityEngine::InputSystem::InputActionRebindingExtensions::getStaticF_s_DeferBindingResolutionWrapper()  {
+return ::cordl_internals::getStaticField<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*, "s_DeferBindingResolutionWrapper", ::UnityEngine::InputSystem::InputActionRebindingExtensions*>();
+}
+inline ::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue> UnityEngine::InputSystem::InputActionRebindingExtensions::GetParameterValue(::UnityEngine::InputSystem::InputAction*  action, ::StringW  name, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetParameterValue", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue>>(nullptr, ___internal_method, action, name, bindingMask);
+}
+inline ::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue> UnityEngine::InputSystem::InputActionRebindingExtensions::GetParameterValue(::UnityEngine::InputSystem::InputAction*  action, ::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride  parameterOverride)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetParameterValue", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue>>(nullptr, ___internal_method, action, parameterOverride);
+}
+inline ::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue> UnityEngine::InputSystem::InputActionRebindingExtensions::GetParameterValue(::UnityEngine::InputSystem::InputAction*  action, ::StringW  name, int32_t  bindingIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetParameterValue", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Nullable_1<::UnityEngine::InputSystem::Utilities::PrimitiveValue>>(nullptr, ___internal_method, action, name, bindingIndex);
+}
+template<typename TObject,typename TValue>
+requires(::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+inline ::System::Nullable_1<TValue> UnityEngine::InputSystem::InputActionRebindingExtensions::GetParameterValue(::UnityEngine::InputSystem::InputAction*  action, ::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*  expr, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                    {"GetParameterValue", {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::System::Nullable_1<TValue>>(nullptr, ___internal_method, action, expr, bindingMask);
+}
+template<typename TObject,typename TValue>
+requires(::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputAction*  action, ::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*  expr, TValue  value, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                    {"ApplyParameterOverride", {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*>(), ::i2c::type_of<TValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, expr, value, bindingMask);
+}
+template<typename TObject,typename TValue>
+requires(::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*  expr, TValue  value, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                    {"ApplyParameterOverride", {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*>(), ::i2c::type_of<TValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actionMap, expr, value, bindingMask);
+}
+template<typename TObject,typename TValue>
+requires(::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputActionAsset*  asset, ::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*  expr, TValue  value, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                    {"ApplyParameterOverride", {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionAsset*>(), ::i2c::type_of<::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*>(), ::i2c::type_of<TValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, asset, expr, value, bindingMask);
+}
+template<typename TObject,typename TValue>
+inline ::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride UnityEngine::InputSystem::InputActionRebindingExtensions::ExtractParameterOverride(::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*  expr, ::UnityEngine::InputSystem::InputBinding  bindingMask, ::UnityEngine::InputSystem::Utilities::PrimitiveValue  value)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                    {"ExtractParameterOverride", {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}, {::i2c::type_of<::System::Linq::Expressions::Expression_1<::System::Func_2<TObject,TValue>*>*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TObject>(), ::i2c::class_of<TValue>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>(nullptr, ___internal_method, expr, bindingMask, value);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::StringW  name, ::UnityEngine::InputSystem::Utilities::PrimitiveValue  value, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actionMap, name, value, bindingMask);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputActionAsset*  asset, ::StringW  name, ::UnityEngine::InputSystem::Utilities::PrimitiveValue  value, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, asset, name, value, bindingMask);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputAction*  action, ::StringW  name, ::UnityEngine::InputSystem::Utilities::PrimitiveValue  value, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, name, value, bindingMask);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputAction*  action, ::StringW  name, ::UnityEngine::InputSystem::Utilities::PrimitiveValue  value, int32_t  bindingIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::Utilities::PrimitiveValue>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, name, value, bindingIndex);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyParameterOverride(::UnityEngine::InputSystem::InputActionState*  state, int32_t  mapIndex, ::by_ref<::ArrayW<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>>  parameterOverrides, ::by_ref<int32_t>  parameterOverridesCount, ::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride  parameterOverride)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyParameterOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionState*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::ArrayW<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>>>(), ::i2c::type_of<::by_ref<int32_t>>(), ::i2c::type_of<::GlobalNamespace::InputActionRebindingExtensions_ParameterOverride>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, state, mapIndex, parameterOverrides, parameterOverridesCount, parameterOverride);
+}
+inline int32_t UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndex(::UnityEngine::InputSystem::InputAction*  action, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndex", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, action, bindingMask);
+}
+inline int32_t UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndex(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndex", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, actionMap, bindingMask);
+}
+inline int32_t UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndex(::UnityEngine::InputSystem::InputAction*  action, ::StringW  group, ::StringW  path)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndex", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, action, group, path);
+}
+inline ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingForControl(::UnityEngine::InputSystem::InputAction*  action, ::UnityEngine::InputSystem::InputControl*  control)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingForControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>>(nullptr, ___internal_method, action, control);
+}
+inline int32_t UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingIndexForControl(::UnityEngine::InputSystem::InputAction*  action, ::UnityEngine::InputSystem::InputControl*  control)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingIndexForControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, action, control);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString(::UnityEngine::InputSystem::InputAction*  action, ::GlobalNamespace::InputBinding_DisplayStringOptions  options, ::StringW  group)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, action, options, group);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString(::UnityEngine::InputSystem::InputAction*  action, ::UnityEngine::InputSystem::InputBinding  bindingMask, ::GlobalNamespace::InputBinding_DisplayStringOptions  options)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, action, bindingMask, options);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString(::UnityEngine::InputSystem::InputAction*  action, int32_t  bindingIndex, ::GlobalNamespace::InputBinding_DisplayStringOptions  options)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, action, bindingIndex, options);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions::GetBindingDisplayString(::UnityEngine::InputSystem::InputAction*  action, int32_t  bindingIndex, ::by_ref<::StringW>  deviceLayoutName, ::by_ref<::StringW>  controlPath, ::GlobalNamespace::InputBinding_DisplayStringOptions  options)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"GetBindingDisplayString", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::StringW>>(), ::i2c::type_of<::by_ref<::StringW>>(), ::i2c::type_of<::GlobalNamespace::InputBinding_DisplayStringOptions>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, action, bindingIndex, deviceLayoutName, controlPath, options);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride(::UnityEngine::InputSystem::InputAction*  action, ::StringW  newPath, ::StringW  group, ::StringW  path)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, newPath, group, path);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride(::UnityEngine::InputSystem::InputAction*  action, ::UnityEngine::InputSystem::InputBinding  bindingOverride)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, bindingOverride);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride(::UnityEngine::InputSystem::InputAction*  action, int32_t  bindingIndex, ::UnityEngine::InputSystem::InputBinding  bindingOverride)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, bindingIndex, bindingOverride);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride(::UnityEngine::InputSystem::InputAction*  action, int32_t  bindingIndex, ::StringW  path)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, bindingIndex, path);
+}
+inline int32_t UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::UnityEngine::InputSystem::InputBinding  bindingOverride)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, actionMap, bindingOverride);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverride(::UnityEngine::InputSystem::InputActionMap*  actionMap, int32_t  bindingIndex, ::UnityEngine::InputSystem::InputBinding  bindingOverride)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actionMap, bindingIndex, bindingOverride);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverride(::UnityEngine::InputSystem::InputAction*  action, int32_t  bindingIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, bindingIndex);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverride(::UnityEngine::InputSystem::InputAction*  action, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, bindingMask);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverride(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::UnityEngine::InputSystem::InputBinding  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverride", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actionMap, bindingMask);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveAllBindingOverrides(::UnityEngine::InputSystem::IInputActionCollection2*  actions)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveAllBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actions);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveAllBindingOverrides(::UnityEngine::InputSystem::InputAction*  action)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveAllBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverrides(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*  overrides)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actionMap, overrides);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::RemoveBindingOverrides(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*  overrides)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"RemoveBindingOverrides", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actionMap, overrides);
+}
+inline int32_t UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverridesOnMatchingControls(::UnityEngine::InputSystem::InputAction*  action, ::UnityEngine::InputSystem::InputControl*  control)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverridesOnMatchingControls", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, action, control);
+}
+inline int32_t UnityEngine::InputSystem::InputActionRebindingExtensions::ApplyBindingOverridesOnMatchingControls(::UnityEngine::InputSystem::InputActionMap*  actionMap, ::UnityEngine::InputSystem::InputControl*  control)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"ApplyBindingOverridesOnMatchingControls", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionMap*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, actionMap, control);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions::SaveBindingOverridesAsJson(::UnityEngine::InputSystem::IInputActionCollection2*  actions)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"SaveBindingOverridesAsJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, actions);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions::SaveBindingOverridesAsJson(::UnityEngine::InputSystem::InputAction*  action)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"SaveBindingOverridesAsJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, action);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::AddBindingOverrideJsonTo(::UnityEngine::InputSystem::IInputActionCollection2*  actions, ::UnityEngine::InputSystem::InputBinding  binding, ::System::Collections::Generic::List_1<::GlobalNamespace::InputActionMap_BindingOverrideJson>*  list, ::UnityEngine::InputSystem::InputAction*  action)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"AddBindingOverrideJsonTo", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputBinding>(), ::i2c::type_of<::System::Collections::Generic::List_1<::GlobalNamespace::InputActionMap_BindingOverrideJson>*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actions, binding, list, action);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::LoadBindingOverridesFromJson(::UnityEngine::InputSystem::IInputActionCollection2*  actions, ::StringW  json, bool  removeExisting)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"LoadBindingOverridesFromJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actions, json, removeExisting);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::LoadBindingOverridesFromJson(::UnityEngine::InputSystem::InputAction*  action, ::StringW  json, bool  removeExisting)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"LoadBindingOverridesFromJson", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, json, removeExisting);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions::LoadBindingOverridesFromJsonInternal(::UnityEngine::InputSystem::IInputActionCollection2*  actions, ::StringW  json)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"LoadBindingOverridesFromJsonInternal", {}, {::i2c::type_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, actions, json);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions::PerformInteractiveRebinding(::UnityEngine::InputSystem::InputAction*  action, int32_t  bindingIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"PerformInteractiveRebinding", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(nullptr, ___internal_method, action, bindingIndex);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper* UnityEngine::InputSystem::InputActionRebindingExtensions::DeferBindingResolution()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions*>(),
+                        {"DeferBindingResolution", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(nullptr, ___internal_method);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputActionRebindingExtensions::InputActionRebindingExtensions()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf22594;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0._GetBindingDisplayString_b__0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::*)(::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::_GetBindingDisplayString_b__0)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xaf2259c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0*>(),
+                        {"<GetBindingDisplayString>b__0", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<::UnityEngine::InputSystem::InputBinding>& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_bindings()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___bindings;
+}
+constexpr ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<::UnityEngine::InputSystem::InputBinding> const& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_bindings() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___bindings;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_set_bindings(::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<::UnityEngine::InputSystem::InputBinding>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___bindings = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_firstPartIndex()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___firstPartIndex;
+}
+constexpr int32_t const& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_firstPartIndex() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___firstPartIndex;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_set_firstPartIndex(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___firstPartIndex = value;
+}
+constexpr ::ArrayW<::StringW>& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_partStrings()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___partStrings;
+}
+constexpr ::ArrayW<::StringW> const& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_partStrings() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___partStrings;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_set_partStrings(::ArrayW<::StringW>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___partStrings = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_partCount()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___partCount;
+}
+constexpr int32_t const& UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_get_partCount() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___partCount;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::__cordl_internal_set_partCount(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___partCount = value;
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::_GetBindingDisplayString_b__0(::StringW  fragment)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0*>(),
+                        {"<GetBindingDisplayString>b__0", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, fragment);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0* UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0::InputActionRebindingExtensions___c__DisplayClass25_0()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper.Acquire
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::Acquire)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xaf22150;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(),
+                        {"Acquire", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::Dispose)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xaf221b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(),
+                        {"Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf2258c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::Acquire()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(),
+                        {"Acquire", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper* UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper*>());
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper::InputActionRebindingExtensions_DeferBindingResolutionWrapper()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_action
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputAction* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_action)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf1c6e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_action", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_bindingMask
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_bindingMask)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xaf1c6e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_bindingMask", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_candidates
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputControlList_1<::UnityEngine::InputSystem::InputControl*> (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_candidates)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xaf1c6f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_candidates", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_scores
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<float_t> (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_scores)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaf1c70c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_scores", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_magnitudes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<float_t> (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_magnitudes)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaf1c780;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_magnitudes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_selectedControl
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputControl* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_selectedControl)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xaf1c7f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_selectedControl", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_started
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_started)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xaf1c864;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_started", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_completed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_completed)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xaf1c870;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_completed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_canceled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_canceled)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xaf1c87c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_canceled", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_startTime
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<double_t (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_startTime)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf1c888;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_startTime", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_timeout
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_timeout)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf1c890;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_timeout", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.get_expectedControlType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_expectedControlType)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xaf1b364;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_expectedControlType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithAction
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::UnityEngine::InputSystem::InputAction*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithAction)> {
+  constexpr static std::size_t size = 0x16c;
+  constexpr static std::size_t addrs = 0xaf1b08c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithAction", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithMatchingEventsBeingSuppressed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(bool)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithMatchingEventsBeingSuppressed)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xaf1b324;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithMatchingEventsBeingSuppressed", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithCancelingThrough
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithCancelingThrough)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xaf1b374;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithCancelingThrough", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithCancelingThrough
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::UnityEngine::InputSystem::InputControl*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithCancelingThrough)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xaf1c944;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithCancelingThrough", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithExpectedControlType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithExpectedControlType)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xaf1c8f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithExpectedControlType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithExpectedControlType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Type*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithExpectedControlType)> {
+  constexpr static std::size_t size = 0x168;
+  constexpr static std::size_t addrs = 0xaf1c9dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithExpectedControlType", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithTargetBinding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(int32_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithTargetBinding)> {
+  constexpr static std::size_t size = 0x50c;
+  constexpr static std::size_t addrs = 0xaf1b3a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithTargetBinding", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithBindingMask
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithBindingMask)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xaf1cc68;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithBindingMask", {}, {::i2c::type_of<::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithBindingGroup
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithBindingGroup)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xaf1cc94;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithBindingGroup", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithoutGeneralizingPathOfSelectedControl
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithoutGeneralizingPathOfSelectedControl)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xaf1cd60;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithoutGeneralizingPathOfSelectedControl", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithRebindAddingNewBinding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithRebindAddingNewBinding)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xaf1cd70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithRebindAddingNewBinding", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithMagnitudeHavingToBeGreaterThan
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(float_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithMagnitudeHavingToBeGreaterThan)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaf1cd98;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithMagnitudeHavingToBeGreaterThan", {}, {::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithoutIgnoringNoisyControls
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithoutIgnoringNoisyControls)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xaf1ce5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithoutIgnoringNoisyControls", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithControlsHavingToMatchPath
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithControlsHavingToMatchPath)> {
+  constexpr static std::size_t size = 0x124;
+  constexpr static std::size_t addrs = 0xaf1cb44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithControlsHavingToMatchPath", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithControlsExcluding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::StringW)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithControlsExcluding)> {
+  constexpr static std::size_t size = 0x124;
+  constexpr static std::size_t addrs = 0xaf1b200;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithControlsExcluding", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.WithTimeout
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(float_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithTimeout)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf1ce80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithTimeout", {}, {::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnComplete
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnComplete)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xaf1ce88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnComplete", {}, {::i2c::type_of<::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnCancel
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnCancel)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xaf1cea8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnCancel", {}, {::i2c::type_of<::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnPotentialMatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnPotentialMatch)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xaf1cec8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnPotentialMatch", {}, {::i2c::type_of<::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnGeneratePath
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Func_2<::UnityEngine::InputSystem::InputControl*,::StringW>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnGeneratePath)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xaf1cee8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnGeneratePath", {}, {::i2c::type_of<::System::Func_2<::UnityEngine::InputSystem::InputControl*,::StringW>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnComputeScore
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Func_3<::UnityEngine::InputSystem::InputControl*,::UnityEngine::InputSystem::LowLevel::InputEventPtr,float_t>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnComputeScore)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xaf1cf08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnComputeScore", {}, {::i2c::type_of<::System::Func_3<::UnityEngine::InputSystem::InputControl*,::UnityEngine::InputSystem::LowLevel::InputEventPtr,float_t>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnApplyBinding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::System::Action_2<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*,::StringW>*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnApplyBinding)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xaf1cf28;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnApplyBinding", {}, {::i2c::type_of<::System::Action_2<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*,::StringW>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnMatchWaitForAnother
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(float_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnMatchWaitForAnother)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf1b1f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnMatchWaitForAnother", {}, {::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.Start
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Start)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xaf1cf48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Start", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.Cancel
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Cancel)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xaf1d258;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Cancel", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.Complete
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Complete)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xaf1d2a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Complete", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.AddCandidate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::UnityEngine::InputSystem::InputControl*, float_t, float_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::AddCandidate)> {
+  constexpr static std::size_t size = 0x170;
+  constexpr static std::size_t addrs = 0xaf1d5b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"AddCandidate", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.RemoveCandidate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::UnityEngine::InputSystem::InputControl*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::RemoveCandidate)> {
+  constexpr static std::size_t size = 0x118;
+  constexpr static std::size_t addrs = 0xaf1d858;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"RemoveCandidate", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Dispose)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xaf1d970;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.Finalize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Finalize)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xaf1dad0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Reset)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xaf1db54;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.HookOnEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::HookOnEvent)> {
+  constexpr static std::size_t size = 0xe4;
+  constexpr static std::size_t addrs = 0xaf1d174;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"HookOnEvent", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.UnhookOnEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::UnhookOnEvent)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xaf1d9d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"UnhookOnEvent", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::UnityEngine::InputSystem::LowLevel::InputEventPtr, ::UnityEngine::InputSystem::InputDevice*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnEvent)> {
+  constexpr static std::size_t size = 0x6dc;
+  constexpr static std::size_t addrs = 0xaf1dc40;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::LowLevel::InputEventPtr>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.SortCandidatesByScore
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::SortCandidatesByScore)> {
+  constexpr static std::size_t size = 0x130;
+  constexpr static std::size_t addrs = 0xaf1d728;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"SortCandidatesByScore", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.HavePathMatch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::UnityEngine::InputSystem::InputControl*, ::ArrayW<::StringW>, int32_t)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::HavePathMatch)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xaf1e31c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"HavePathMatch", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>(), ::i2c::type_of<::ArrayW<::StringW>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.HookOnAfterUpdate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::HookOnAfterUpdate)> {
+  constexpr static std::size_t size = 0xd0;
+  constexpr static std::size_t addrs = 0xaf1d0a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"HookOnAfterUpdate", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.UnhookOnAfterUpdate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::UnhookOnAfterUpdate)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaf1da5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"UnhookOnAfterUpdate", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnAfterUpdate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnAfterUpdate)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xaf1e3ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnAfterUpdate", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnComplete
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnComplete)> {
+  constexpr static std::size_t size = 0x304;
+  constexpr static std::size_t addrs = 0xaf1d2b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnComplete", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.OnCancel
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnCancel)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xaf1d268;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnCancel", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.ResetAfterMatchCompleted
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::ResetAfterMatchCompleted)> {
+  constexpr static std::size_t size = 0xc0;
+  constexpr static std::size_t addrs = 0xaf1e560;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"ResetAfterMatchCompleted", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.ThrowIfRebindInProgress
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::ThrowIfRebindInProgress)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xaf1c898;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"ThrowIfRebindInProgress", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation.GeneratePathForControl
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)(::UnityEngine::InputSystem::InputControl*)>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::GeneratePathForControl)> {
+  constexpr static std::size_t size = 0x10c;
+  constexpr static std::size_t addrs = 0xaf1e454;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"GeneratePathForControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::*)()>(&::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::_ctor)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xaf1aff0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::InputSystem::InputAction*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ActionToRebind()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ActionToRebind;
+}
+constexpr ::UnityEngine::InputSystem::InputAction* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ActionToRebind() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ActionToRebind;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_ActionToRebind(::UnityEngine::InputSystem::InputAction*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ActionToRebind = value;
+}
+constexpr ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_BindingMask()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_BindingMask;
+}
+constexpr ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_BindingMask() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_BindingMask;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_BindingMask(::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_BindingMask = value;
+}
+constexpr ::System::Type*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ControlType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ControlType;
+}
+constexpr ::System::Type* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ControlType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ControlType;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_ControlType(::System::Type*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ControlType = value;
+}
+constexpr ::UnityEngine::InputSystem::Utilities::InternedString& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ExpectedLayout()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExpectedLayout;
+}
+constexpr ::UnityEngine::InputSystem::Utilities::InternedString const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ExpectedLayout() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExpectedLayout;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_ExpectedLayout(::UnityEngine::InputSystem::Utilities::InternedString  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ExpectedLayout = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_IncludePathCount()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IncludePathCount;
+}
+constexpr int32_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_IncludePathCount() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IncludePathCount;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_IncludePathCount(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_IncludePathCount = value;
+}
+constexpr ::ArrayW<::StringW>& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_IncludePaths()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IncludePaths;
+}
+constexpr ::ArrayW<::StringW> const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_IncludePaths() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IncludePaths;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_IncludePaths(::ArrayW<::StringW>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_IncludePaths = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ExcludePathCount()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExcludePathCount;
+}
+constexpr int32_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ExcludePathCount() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExcludePathCount;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_ExcludePathCount(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ExcludePathCount = value;
+}
+constexpr ::ArrayW<::StringW>& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ExcludePaths()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExcludePaths;
+}
+constexpr ::ArrayW<::StringW> const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_ExcludePaths() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ExcludePaths;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_ExcludePaths(::ArrayW<::StringW>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ExcludePaths = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_TargetBindingIndex()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TargetBindingIndex;
+}
+constexpr int32_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_TargetBindingIndex() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TargetBindingIndex;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_TargetBindingIndex(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_TargetBindingIndex = value;
+}
+constexpr ::StringW& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_BindingGroupForNewBinding()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_BindingGroupForNewBinding;
+}
+constexpr ::StringW const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_BindingGroupForNewBinding() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_BindingGroupForNewBinding;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_BindingGroupForNewBinding(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_BindingGroupForNewBinding = value;
+}
+constexpr ::StringW& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_CancelBinding()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CancelBinding;
+}
+constexpr ::StringW const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_CancelBinding() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CancelBinding;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_CancelBinding(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CancelBinding = value;
+}
+constexpr float_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_MagnitudeThreshold()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_MagnitudeThreshold;
+}
+constexpr float_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_MagnitudeThreshold() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_MagnitudeThreshold;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_MagnitudeThreshold(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_MagnitudeThreshold = value;
+}
+constexpr ::ArrayW<float_t>& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Scores()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Scores;
+}
+constexpr ::ArrayW<float_t> const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Scores() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Scores;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_Scores(::ArrayW<float_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Scores = value;
+}
+constexpr ::ArrayW<float_t>& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Magnitudes()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Magnitudes;
+}
+constexpr ::ArrayW<float_t> const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Magnitudes() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Magnitudes;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_Magnitudes(::ArrayW<float_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Magnitudes = value;
+}
+constexpr double_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_LastMatchTime()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LastMatchTime;
+}
+constexpr double_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_LastMatchTime() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LastMatchTime;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_LastMatchTime(double_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_LastMatchTime = value;
+}
+constexpr double_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_StartTime()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_StartTime;
+}
+constexpr double_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_StartTime() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_StartTime;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_StartTime(double_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_StartTime = value;
+}
+constexpr float_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Timeout()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Timeout;
+}
+constexpr float_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Timeout() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Timeout;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_Timeout(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Timeout = value;
+}
+constexpr float_t& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_WaitSecondsAfterMatch()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_WaitSecondsAfterMatch;
+}
+constexpr float_t const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_WaitSecondsAfterMatch() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_WaitSecondsAfterMatch;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_WaitSecondsAfterMatch(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_WaitSecondsAfterMatch = value;
+}
+constexpr ::UnityEngine::InputSystem::InputControlList_1<::UnityEngine::InputSystem::InputControl*>& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Candidates()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Candidates;
+}
+constexpr ::UnityEngine::InputSystem::InputControlList_1<::UnityEngine::InputSystem::InputControl*> const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Candidates() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Candidates;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_Candidates(::UnityEngine::InputSystem::InputControlList_1<::UnityEngine::InputSystem::InputControl*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Candidates = value;
+}
+constexpr ::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnComplete()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnComplete;
+}
+constexpr ::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnComplete() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnComplete;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnComplete(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnComplete = value;
+}
+constexpr ::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnCancel()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnCancel;
+}
+constexpr ::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnCancel() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnCancel;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnCancel(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnCancel = value;
+}
+constexpr ::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnPotentialMatch()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnPotentialMatch;
+}
+constexpr ::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnPotentialMatch() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnPotentialMatch;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnPotentialMatch(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnPotentialMatch = value;
+}
+constexpr ::System::Func_2<::UnityEngine::InputSystem::InputControl*,::StringW>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnGeneratePath()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnGeneratePath;
+}
+constexpr ::System::Func_2<::UnityEngine::InputSystem::InputControl*,::StringW>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnGeneratePath() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnGeneratePath;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnGeneratePath(::System::Func_2<::UnityEngine::InputSystem::InputControl*,::StringW>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnGeneratePath = value;
+}
+constexpr ::System::Func_3<::UnityEngine::InputSystem::InputControl*,::UnityEngine::InputSystem::LowLevel::InputEventPtr,float_t>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnComputeScore()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnComputeScore;
+}
+constexpr ::System::Func_3<::UnityEngine::InputSystem::InputControl*,::UnityEngine::InputSystem::LowLevel::InputEventPtr,float_t>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnComputeScore() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnComputeScore;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnComputeScore(::System::Func_3<::UnityEngine::InputSystem::InputControl*,::UnityEngine::InputSystem::LowLevel::InputEventPtr,float_t>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnComputeScore = value;
+}
+constexpr ::System::Action_2<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*,::StringW>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnApplyBinding()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnApplyBinding;
+}
+constexpr ::System::Action_2<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*,::StringW>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnApplyBinding() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnApplyBinding;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnApplyBinding(::System::Action_2<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*,::StringW>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnApplyBinding = value;
+}
+constexpr ::System::Action_2<::UnityEngine::InputSystem::LowLevel::InputEventPtr,::UnityEngine::InputSystem::InputDevice*>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnEventDelegate()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnEventDelegate;
+}
+constexpr ::System::Action_2<::UnityEngine::InputSystem::LowLevel::InputEventPtr,::UnityEngine::InputSystem::InputDevice*>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnEventDelegate() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnEventDelegate;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnEventDelegate(::System::Action_2<::UnityEngine::InputSystem::LowLevel::InputEventPtr,::UnityEngine::InputSystem::InputDevice*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnEventDelegate = value;
+}
+constexpr ::System::Action*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnAfterUpdateDelegate()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnAfterUpdateDelegate;
+}
+constexpr ::System::Action* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_OnAfterUpdateDelegate() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OnAfterUpdateDelegate;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_OnAfterUpdateDelegate(::System::Action*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OnAfterUpdateDelegate = value;
+}
+constexpr ::GlobalNamespace::InputControlLayout_Cache& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_LayoutCache()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LayoutCache;
+}
+constexpr ::GlobalNamespace::InputControlLayout_Cache const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_LayoutCache() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LayoutCache;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_LayoutCache(::GlobalNamespace::InputControlLayout_Cache  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_LayoutCache = value;
+}
+constexpr ::System::Text::StringBuilder*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_PathBuilder()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PathBuilder;
+}
+constexpr ::System::Text::StringBuilder* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_PathBuilder() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PathBuilder;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_PathBuilder(::System::Text::StringBuilder*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_PathBuilder = value;
+}
+constexpr ::GlobalNamespace::RebindingOperation_InputActionRebindingExtensions_Flags& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Flags()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Flags;
+}
+constexpr ::GlobalNamespace::RebindingOperation_InputActionRebindingExtensions_Flags const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_Flags() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Flags;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_Flags(::GlobalNamespace::RebindingOperation_InputActionRebindingExtensions_Flags  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Flags = value;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::InputSystem::InputControl*,float_t>*& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_StartingActuations()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_StartingActuations;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::InputSystem::InputControl*,float_t>* const& UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_get_m_StartingActuations() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_StartingActuations;
+}
+constexpr void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::__cordl_internal_set_m_StartingActuations(::System::Collections::Generic::Dictionary_2<::UnityEngine::InputSystem::InputControl*,float_t>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_StartingActuations = value;
+}
+inline ::UnityEngine::InputSystem::InputAction* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_action()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_action", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputAction*>(this, ___internal_method);
+}
+inline ::System::Nullable_1<::UnityEngine::InputSystem::InputBinding> UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_bindingMask()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_bindingMask", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputControlList_1<::UnityEngine::InputSystem::InputControl*> UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_candidates()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_candidates", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputControlList_1<::UnityEngine::InputSystem::InputControl*>>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<float_t> UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_scores()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_scores", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<float_t>>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<float_t> UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_magnitudes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_magnitudes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<float_t>>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputControl* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_selectedControl()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_selectedControl", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputControl*>(this, ___internal_method);
+}
+inline bool UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_started()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_started", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_completed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_completed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_canceled()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_canceled", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline double_t UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_startTime()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_startTime", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<double_t>(this, ___internal_method);
+}
+inline float_t UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_timeout()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_timeout", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::get_expectedControlType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"get_expectedControlType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithAction(::UnityEngine::InputSystem::InputAction*  action)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithAction", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, action);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithMatchingEventsBeingSuppressed(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithMatchingEventsBeingSuppressed", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithCancelingThrough(::StringW  binding)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithCancelingThrough", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, binding);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithCancelingThrough(::UnityEngine::InputSystem::InputControl*  control)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithCancelingThrough", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, control);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithExpectedControlType(::StringW  layoutName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithExpectedControlType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, layoutName);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithExpectedControlType(::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithExpectedControlType", {}, {::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, type);
+}
+template<typename TControl>
+requires(::cordl_internals::type_constraint<TControl, ::UnityEngine::InputSystem::InputControl*>)
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithExpectedControlType()  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                    {"WithExpectedControlType", {::i2c::class_of<TControl>()}, {}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TControl>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithTargetBinding(int32_t  bindingIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithTargetBinding", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, bindingIndex);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithBindingMask(::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>  bindingMask)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithBindingMask", {}, {::i2c::type_of<::System::Nullable_1<::UnityEngine::InputSystem::InputBinding>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, bindingMask);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithBindingGroup(::StringW  group)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithBindingGroup", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, group);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithoutGeneralizingPathOfSelectedControl()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithoutGeneralizingPathOfSelectedControl", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithRebindAddingNewBinding(::StringW  group)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithRebindAddingNewBinding", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, group);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithMagnitudeHavingToBeGreaterThan(float_t  magnitude)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithMagnitudeHavingToBeGreaterThan", {}, {::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, magnitude);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithoutIgnoringNoisyControls()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithoutIgnoringNoisyControls", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithControlsHavingToMatchPath(::StringW  path)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithControlsHavingToMatchPath", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, path);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithControlsExcluding(::StringW  path)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithControlsExcluding", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, path);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::WithTimeout(float_t  timeInSeconds)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"WithTimeout", {}, {::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, timeInSeconds);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnComplete(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnComplete", {}, {::i2c::type_of<::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, callback);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnCancel(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnCancel", {}, {::i2c::type_of<::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, callback);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnPotentialMatch(::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnPotentialMatch", {}, {::i2c::type_of<::System::Action_1<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, callback);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnGeneratePath(::System::Func_2<::UnityEngine::InputSystem::InputControl*,::StringW>*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnGeneratePath", {}, {::i2c::type_of<::System::Func_2<::UnityEngine::InputSystem::InputControl*,::StringW>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, callback);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnComputeScore(::System::Func_3<::UnityEngine::InputSystem::InputControl*,::UnityEngine::InputSystem::LowLevel::InputEventPtr,float_t>*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnComputeScore", {}, {::i2c::type_of<::System::Func_3<::UnityEngine::InputSystem::InputControl*,::UnityEngine::InputSystem::LowLevel::InputEventPtr,float_t>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, callback);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnApplyBinding(::System::Action_2<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*,::StringW>*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnApplyBinding", {}, {::i2c::type_of<::System::Action_2<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*,::StringW>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, callback);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnMatchWaitForAnother(float_t  seconds)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnMatchWaitForAnother", {}, {::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method, seconds);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Start()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Start", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Cancel()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Cancel", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Complete()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Complete", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::AddCandidate(::UnityEngine::InputSystem::InputControl*  control, float_t  score, float_t  magnitude)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"AddCandidate", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, control, score, magnitude);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::RemoveCandidate(::UnityEngine::InputSystem::InputControl*  control)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"RemoveCandidate", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, control);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Finalize()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::HookOnEvent()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"HookOnEvent", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::UnhookOnEvent()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"UnhookOnEvent", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnEvent(::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr, ::UnityEngine::InputSystem::InputDevice*  device)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::LowLevel::InputEventPtr>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, eventPtr, device);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::SortCandidatesByScore()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"SortCandidatesByScore", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::HavePathMatch(::UnityEngine::InputSystem::InputControl*  control, ::ArrayW<::StringW>  paths, int32_t  pathCount)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"HavePathMatch", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>(), ::i2c::type_of<::ArrayW<::StringW>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, control, paths, pathCount);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::HookOnAfterUpdate()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"HookOnAfterUpdate", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::UnhookOnAfterUpdate()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"UnhookOnAfterUpdate", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnAfterUpdate()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnAfterUpdate", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnComplete()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnComplete", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::OnCancel()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"OnCancel", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::ResetAfterMatchCompleted()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"ResetAfterMatchCompleted", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::ThrowIfRebindInProgress()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"ThrowIfRebindInProgress", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::GeneratePathForControl(::UnityEngine::InputSystem::InputControl*  control)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {"GeneratePathForControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, control);
+}
+inline void UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation*>());
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation::InputActionRebindingExtensions_RebindingOperation()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::*)()>(&::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaf22128;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0._WithTargetBinding_b__0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::*)(::UnityEngine::InputSystem::InputControlScheme)>(&::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::_WithTargetBinding_b__0)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xaf22130;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0*>(),
+                        {"<WithTargetBinding>b__0", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControlScheme>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::__cordl_internal_get_group()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___group;
+}
+constexpr ::StringW const& UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::__cordl_internal_get_group() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___group;
+}
+constexpr void UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::__cordl_internal_set_group(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___group = value;
+}
+inline void UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::_WithTargetBinding_b__0(::UnityEngine::InputSystem::InputControlScheme  x)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0*>(),
+                        {"<WithTargetBinding>b__0", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputControlScheme>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, x);
+}
+inline ::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0* UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0()   {
+}

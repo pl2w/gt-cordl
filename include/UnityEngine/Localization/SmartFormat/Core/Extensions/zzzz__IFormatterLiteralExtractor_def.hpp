@@ -1,0 +1,37 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Localization/SmartFormat/Core/Extensions/IFormatterLiteralExtractor.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(IFormatterLiteralExtractor)
+namespace UnityEngine::Localization::SmartFormat::Core::Extensions {
+class IFormattingInfo;
+}
+// Forward declare root types
+namespace UnityEngine::Localization::SmartFormat::Core::Extensions {
+class IFormatterLiteralExtractor;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Localization::SmartFormat::Core::Extensions::IFormatterLiteralExtractor*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Localization::SmartFormat::Core::Extensions::IFormatterLiteralExtractor*, "UnityEngine.Localization.SmartFormat.Core.Extensions", "IFormatterLiteralExtractor");
+// Dependencies 
+namespace UnityEngine::Localization::SmartFormat::Core::Extensions {
+// Is value type: false
+// CS Name: UnityEngine.Localization.SmartFormat.Core.Extensions.IFormatterLiteralExtractor
+class CORDL_TYPE IFormatterLiteralExtractor {
+public:
+// Declarations
+/// @brief Method WriteAllLiterals, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void WriteAllLiterals(::UnityEngine::Localization::SmartFormat::Core::Extensions::IFormattingInfo*  formattingInfo) ;
+
+// Ctor Parameters [CppParam { name: "", ty: "IFormatterLiteralExtractor", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IFormatterLiteralExtractor(IFormatterLiteralExtractor const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{25241};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::Localization::SmartFormat::Core::Extensions

@@ -1,0 +1,151 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/VertexAttributeDescriptor.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/Rendering/zzzz__VertexAttributeFormat_def.hpp"
+#include "UnityEngine/Rendering/zzzz__VertexAttribute_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(VertexAttributeDescriptor)
+namespace System {
+template<typename T>
+class IEquatable_1;
+}
+namespace System {
+class Object;
+}
+namespace UnityEngine::Rendering {
+struct VertexAttributeFormat;
+}
+namespace UnityEngine::Rendering {
+struct VertexAttribute;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering {
+struct VertexAttributeDescriptor;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::Rendering::VertexAttributeDescriptor);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::VertexAttributeDescriptor, "UnityEngine.Rendering", "VertexAttributeDescriptor");
+// [UsedByNativeCode]
+// Dependencies UnityEngine.Rendering.VertexAttribute, UnityEngine.Rendering.VertexAttributeFormat
+namespace UnityEngine::Rendering {
+// Is value type: true
+// CS Name: UnityEngine.Rendering.VertexAttributeDescriptor
+struct CORDL_TYPE VertexAttributeDescriptor {
+public:
+// Declarations
+ __declspec(property(get=get_attribute, put=set_attribute)) ::UnityEngine::Rendering::VertexAttribute  attribute;
+
+ __declspec(property(get=get_dimension, put=set_dimension)) int32_t  dimension;
+
+ __declspec(property(get=get_format, put=set_format)) ::UnityEngine::Rendering::VertexAttributeFormat  format;
+
+ __declspec(property(get=get_stream, put=set_stream)) int32_t  stream;
+
+/// @brief Convert operator to "::System::IEquatable_1<::UnityEngine::Rendering::VertexAttributeDescriptor>"
+constexpr operator  ::System::IEquatable_1<::UnityEngine::Rendering::VertexAttributeDescriptor>*() ;
+
+/// @brief Method Equals, addr 0xb606038, size 0xa8, virtual true, abstract: false, final false
+inline bool Equals(::System::Object*  other) ;
+
+/// @brief Method Equals, addr 0xb6060e0, size 0x44, virtual true, abstract: false, final true
+inline bool Equals(::UnityEngine::Rendering::VertexAttributeDescriptor  other) ;
+
+/// @brief Method GetHashCode, addr 0xb606014, size 0x24, virtual true, abstract: false, final false
+inline int32_t GetHashCode() ;
+
+/// @brief Method ToString, addr 0xb605e1c, size 0x1f8, virtual true, abstract: false, final false
+inline ::StringW ToString() ;
+
+/// @brief Method .ctor, addr 0xb605e10, size 0xc, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Rendering::VertexAttribute  attribute, ::UnityEngine::Rendering::VertexAttributeFormat  format, int32_t  dimension, int32_t  stream) ;
+
+/// [CompilerGenerated]
+/// [IsReadOnly]
+/// @brief Method get_attribute, addr 0xb605dd0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::VertexAttribute get_attribute() ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_dimension, addr 0xb605df0, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_dimension() ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_format, addr 0xb605de0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::VertexAttributeFormat get_format() ;
+
+/// [CompilerGenerated]
+/// [IsReadOnly]
+/// @brief Method get_stream, addr 0xb605e00, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_stream() ;
+
+/// @brief Convert to "::System::IEquatable_1<::UnityEngine::Rendering::VertexAttributeDescriptor>"
+constexpr ::System::IEquatable_1<::UnityEngine::Rendering::VertexAttributeDescriptor>* i___System__IEquatable_1___UnityEngine__Rendering__VertexAttributeDescriptor_() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_attribute, addr 0xb605dd8, size 0x8, virtual false, abstract: false, final false
+inline void set_attribute(::UnityEngine::Rendering::VertexAttribute  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_dimension, addr 0xb605df8, size 0x8, virtual false, abstract: false, final false
+inline void set_dimension(int32_t  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_format, addr 0xb605de8, size 0x8, virtual false, abstract: false, final false
+inline void set_format(::UnityEngine::Rendering::VertexAttributeFormat  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_stream, addr 0xb605e08, size 0x8, virtual false, abstract: false, final false
+inline void set_stream(int32_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr VertexAttributeDescriptor() ;
+
+// Ctor Parameters [CppParam { name: "_attribute_k__BackingField", ty: "::UnityEngine::Rendering::VertexAttribute", modifiers: "", def_value: None, comment: None }, CppParam { name: "_format_k__BackingField", ty: "::UnityEngine::Rendering::VertexAttributeFormat", modifiers: "", def_value: None, comment: None }, CppParam { name: "_dimension_k__BackingField", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "_stream_k__BackingField", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr VertexAttributeDescriptor(::UnityEngine::Rendering::VertexAttribute  _attribute_k__BackingField, ::UnityEngine::Rendering::VertexAttributeFormat  _format_k__BackingField, int32_t  _dimension_k__BackingField, int32_t  _stream_k__BackingField) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15466};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <attribute>k__BackingField, offset: 0x0, size: 0x4, def value: None
+ ::UnityEngine::Rendering::VertexAttribute  _attribute_k__BackingField;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <format>k__BackingField, offset: 0x4, size: 0x4, def value: None
+ ::UnityEngine::Rendering::VertexAttributeFormat  _format_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <dimension>k__BackingField, offset: 0x8, size: 0x4, def value: None
+ int32_t  _dimension_k__BackingField;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <stream>k__BackingField, offset: 0xc, size: 0x4, def value: None
+ int32_t  _stream_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::VertexAttributeDescriptor, _attribute_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::VertexAttributeDescriptor, _format_k__BackingField) == 0x4, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::VertexAttributeDescriptor, _dimension_k__BackingField) == 0x8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::VertexAttributeDescriptor, _stream_k__BackingField) == 0xc, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::VertexAttributeDescriptor) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

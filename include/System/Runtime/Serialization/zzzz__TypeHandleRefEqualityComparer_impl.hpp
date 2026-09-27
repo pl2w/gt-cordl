@@ -1,0 +1,86 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/Serialization/TypeHandleRefEqualityComparer.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/Runtime/Serialization/zzzz__TypeHandleRefEqualityComparer_def.hpp"
+#include "System/Collections/Generic/zzzz__IEqualityComparer_1_def.hpp"
+#include "System/Runtime/Serialization/zzzz__TypeHandleRef_def.hpp"
+//  Writing Method size for method: ::System::Runtime::Serialization::TypeHandleRefEqualityComparer.Equals
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Runtime::Serialization::TypeHandleRefEqualityComparer::*)(::System::Runtime::Serialization::TypeHandleRef*, ::System::Runtime::Serialization::TypeHandleRef*)>(&::System::Runtime::Serialization::TypeHandleRefEqualityComparer::Equals)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xaa53150;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::Serialization::TypeHandleRefEqualityComparer*>(),
+                        {"Equals", {}, {::i2c::type_of<::System::Runtime::Serialization::TypeHandleRef*>(), ::i2c::type_of<::System::Runtime::Serialization::TypeHandleRef*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Runtime::Serialization::TypeHandleRefEqualityComparer.GetHashCode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Runtime::Serialization::TypeHandleRefEqualityComparer::*)(::System::Runtime::Serialization::TypeHandleRef*)>(&::System::Runtime::Serialization::TypeHandleRefEqualityComparer::GetHashCode)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xaa53184;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::Serialization::TypeHandleRefEqualityComparer*>(),
+                        {"GetHashCode", {}, {::i2c::type_of<::System::Runtime::Serialization::TypeHandleRef*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Runtime::Serialization::TypeHandleRefEqualityComparer._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Runtime::Serialization::TypeHandleRefEqualityComparer::*)()>(&::System::Runtime::Serialization::TypeHandleRefEqualityComparer::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaa4f848;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::Serialization::TypeHandleRefEqualityComparer*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline bool System::Runtime::Serialization::TypeHandleRefEqualityComparer::Equals(::System::Runtime::Serialization::TypeHandleRef*  x, ::System::Runtime::Serialization::TypeHandleRef*  y)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::Serialization::TypeHandleRefEqualityComparer*>(),
+                        {"Equals", {}, {::i2c::type_of<::System::Runtime::Serialization::TypeHandleRef*>(), ::i2c::type_of<::System::Runtime::Serialization::TypeHandleRef*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, x, y);
+}
+inline int32_t System::Runtime::Serialization::TypeHandleRefEqualityComparer::GetHashCode(::System::Runtime::Serialization::TypeHandleRef*  obj)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::Serialization::TypeHandleRefEqualityComparer*>(),
+                        {"GetHashCode", {}, {::i2c::type_of<::System::Runtime::Serialization::TypeHandleRef*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, obj);
+}
+inline void System::Runtime::Serialization::TypeHandleRefEqualityComparer::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::Serialization::TypeHandleRefEqualityComparer*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Runtime::Serialization::TypeHandleRefEqualityComparer* System::Runtime::Serialization::TypeHandleRefEqualityComparer::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Runtime::Serialization::TypeHandleRefEqualityComparer*>());
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEqualityComparer_1<::System::Runtime::Serialization::TypeHandleRef*>"
+constexpr  System::Runtime::Serialization::TypeHandleRefEqualityComparer::operator ::System::Collections::Generic::IEqualityComparer_1<::System::Runtime::Serialization::TypeHandleRef*>*() noexcept {
+return static_cast<::System::Collections::Generic::IEqualityComparer_1<::System::Runtime::Serialization::TypeHandleRef*>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEqualityComparer_1<::System::Runtime::Serialization::TypeHandleRef*>"
+constexpr ::System::Collections::Generic::IEqualityComparer_1<::System::Runtime::Serialization::TypeHandleRef*>* System::Runtime::Serialization::TypeHandleRefEqualityComparer::i___System__Collections__Generic__IEqualityComparer_1___System__Runtime__Serialization__TypeHandleRef__() noexcept {
+return static_cast<::System::Collections::Generic::IEqualityComparer_1<::System::Runtime::Serialization::TypeHandleRef*>*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::System::Runtime::Serialization::TypeHandleRefEqualityComparer::TypeHandleRefEqualityComparer()   {
+}

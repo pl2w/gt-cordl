@@ -1,0 +1,405 @@
+#pragma once
+// IWYU pragma private; include "System/Net/Http/Headers/ContentDispositionHeaderValue.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/Net/Http/Headers/zzzz__ContentDispositionHeaderValue_def.hpp"
+#include "System/Collections/Generic/zzzz__ICollection_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/Net/Http/Headers/zzzz__NameValueHeaderValue_def.hpp"
+#include "System/zzzz__ICloneable_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)()>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa9e83bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::_ctor)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xa9e4e3c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {".ctor", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::System::Net::Http::Headers::ContentDispositionHeaderValue*)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::_ctor)> {
+  constexpr static std::size_t size = 0x254;
+  constexpr static std::size_t addrs = 0xa9e83f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.set_DispositionType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::set_DispositionType)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xa9e83c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_DispositionType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.set_FileName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::set_FileName)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xa9e4ed8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_FileName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.set_FileNameStar
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::set_FileNameStar)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xa9e4f3c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_FileNameStar", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.set_Name
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::set_Name)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xa9e4e74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_Name", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.get_Parameters
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::ICollection_1<::System::Net::Http::Headers::NameValueHeaderValue*>* (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)()>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::get_Parameters)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xa9e8648;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"get_Parameters", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.System_ICloneable_Clone
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)()>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::System_ICloneable_Clone)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa9e8c58;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"System.ICloneable.Clone", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.Equals
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::System::Object*)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::Equals)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xa9e8cb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                    {::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.EncodeBase64Value
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::EncodeBase64Value)> {
+  constexpr static std::size_t size = 0x1f0;
+  constexpr static std::size_t addrs = 0xa9e8714;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"EncodeBase64Value", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.EncodeRFC5987
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::EncodeRFC5987)> {
+  constexpr static std::size_t size = 0x2b8;
+  constexpr static std::size_t addrs = 0xa9e89a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"EncodeRFC5987", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.GetHashCode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)()>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::GetHashCode)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xa9e8ed4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                    {::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(), 2}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.SetValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)(::StringW, ::StringW)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::SetValue)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xa9e8904;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"SetValue", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.ToString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Net::Http::Headers::ContentDispositionHeaderValue::*)()>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::ToString)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa9e8f50;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                    {::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(), 3}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Http::Headers::ContentDispositionHeaderValue.TryParse
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::StringW, ::by_ref<::System::Net::Http::Headers::ContentDispositionHeaderValue*>)>(&::System::Net::Http::Headers::ContentDispositionHeaderValue::TryParse)> {
+  constexpr static std::size_t size = 0x1c4;
+  constexpr static std::size_t addrs = 0xa9e8fa8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"TryParse", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::System::Net::Http::Headers::ContentDispositionHeaderValue*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& System::Net::Http::Headers::ContentDispositionHeaderValue::__cordl_internal_get_dispositionType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___dispositionType;
+}
+constexpr ::StringW const& System::Net::Http::Headers::ContentDispositionHeaderValue::__cordl_internal_get_dispositionType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___dispositionType;
+}
+constexpr void System::Net::Http::Headers::ContentDispositionHeaderValue::__cordl_internal_set_dispositionType(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___dispositionType = value;
+}
+constexpr ::System::Collections::Generic::List_1<::System::Net::Http::Headers::NameValueHeaderValue*>*& System::Net::Http::Headers::ContentDispositionHeaderValue::__cordl_internal_get_parameters()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___parameters;
+}
+constexpr ::System::Collections::Generic::List_1<::System::Net::Http::Headers::NameValueHeaderValue*>* const& System::Net::Http::Headers::ContentDispositionHeaderValue::__cordl_internal_get_parameters() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___parameters;
+}
+constexpr void System::Net::Http::Headers::ContentDispositionHeaderValue::__cordl_internal_set_parameters(::System::Collections::Generic::List_1<::System::Net::Http::Headers::NameValueHeaderValue*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___parameters = value;
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::_ctor(::StringW  dispositionType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {".ctor", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, dispositionType);
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::_ctor(::System::Net::Http::Headers::ContentDispositionHeaderValue*  source)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, source);
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::set_DispositionType(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_DispositionType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::set_FileName(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_FileName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::set_FileNameStar(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_FileNameStar", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::set_Name(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"set_Name", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Collections::Generic::ICollection_1<::System::Net::Http::Headers::NameValueHeaderValue*>* System::Net::Http::Headers::ContentDispositionHeaderValue::get_Parameters()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"get_Parameters", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::ICollection_1<::System::Net::Http::Headers::NameValueHeaderValue*>*>(this, ___internal_method);
+}
+inline ::System::Object* System::Net::Http::Headers::ContentDispositionHeaderValue::System_ICloneable_Clone()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"System.ICloneable.Clone", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline bool System::Net::Http::Headers::ContentDispositionHeaderValue::Equals(::System::Object*  obj)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, obj);
+}
+inline ::StringW System::Net::Http::Headers::ContentDispositionHeaderValue::EncodeBase64Value(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"EncodeBase64Value", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, value);
+}
+inline ::StringW System::Net::Http::Headers::ContentDispositionHeaderValue::EncodeRFC5987(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"EncodeRFC5987", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, value);
+}
+inline int32_t System::Net::Http::Headers::ContentDispositionHeaderValue::GetHashCode()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(), 2}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline void System::Net::Http::Headers::ContentDispositionHeaderValue::SetValue(::StringW  key, ::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"SetValue", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, key, value);
+}
+inline ::StringW System::Net::Http::Headers::ContentDispositionHeaderValue::ToString()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(), 3}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline bool System::Net::Http::Headers::ContentDispositionHeaderValue::TryParse(::StringW  input, ::by_ref<::System::Net::Http::Headers::ContentDispositionHeaderValue*>  parsedValue)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(),
+                        {"TryParse", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::System::Net::Http::Headers::ContentDispositionHeaderValue*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, input, parsedValue);
+}
+inline ::System::Net::Http::Headers::ContentDispositionHeaderValue* System::Net::Http::Headers::ContentDispositionHeaderValue::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Net::Http::Headers::ContentDispositionHeaderValue*>());
+}
+inline ::System::Net::Http::Headers::ContentDispositionHeaderValue* System::Net::Http::Headers::ContentDispositionHeaderValue::New_ctor(::StringW  dispositionType)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(dispositionType));
+}
+inline ::System::Net::Http::Headers::ContentDispositionHeaderValue* System::Net::Http::Headers::ContentDispositionHeaderValue::New_ctor(::System::Net::Http::Headers::ContentDispositionHeaderValue*  source)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Net::Http::Headers::ContentDispositionHeaderValue*>(source));
+}
+/// @brief Convert operator to "::System::ICloneable"
+constexpr  System::Net::Http::Headers::ContentDispositionHeaderValue::operator ::System::ICloneable*() noexcept {
+return static_cast<::System::ICloneable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::ICloneable"
+constexpr ::System::ICloneable* System::Net::Http::Headers::ContentDispositionHeaderValue::i___System__ICloneable() noexcept {
+return static_cast<::System::ICloneable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::System::Net::Http::Headers::ContentDispositionHeaderValue::ContentDispositionHeaderValue()   {
+}

@@ -1,0 +1,398 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/GUIStyleState.hpp"
+#include "System/zzzz__IntPtr_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__GUIStyleState_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "UnityEngine/zzzz__Color_def.hpp"
+#include "UnityEngine/zzzz__GUIStyleState_def.hpp"
+#include "UnityEngine/zzzz__GUIStyle_def.hpp"
+#include "UnityEngine/zzzz__Texture2D_def.hpp"
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.get_background
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Texture2D> (::UnityEngine::GUIStyleState::*)()>(&::UnityEngine::GUIStyleState::get_background)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xb64a18c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_background", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.set_background
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::GUIStyleState::*)(::UnityEngine::Texture2D*)>(&::UnityEngine::GUIStyleState::set_background)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xb64a250;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_background", {}, {::i2c::type_of<::UnityEngine::Texture2D*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.get_textColor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Color (::UnityEngine::GUIStyleState::*)()>(&::UnityEngine::GUIStyleState::get_textColor)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xb64a33c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_textColor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.set_textColor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::GUIStyleState::*)(::UnityEngine::Color)>(&::UnityEngine::GUIStyleState::set_textColor)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xb649b0c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_textColor", {}, {::i2c::type_of<::UnityEngine::Color>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.Init
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IntPtr (*)()>(&::UnityEngine::GUIStyleState::Init)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xb64a430;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"Init", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.Cleanup
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::GUIStyleState::*)()>(&::UnityEngine::GUIStyleState::Cleanup)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xb64a458;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"Cleanup", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::GUIStyleState::*)()>(&::UnityEngine::GUIStyleState::_ctor)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb64a4e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::GUIStyleState::*)(::UnityEngine::GUIStyle*, ::System::IntPtr)>(&::UnityEngine::GUIStyleState::_ctor)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb64a528;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::GUIStyle*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.GetGUIStyleState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::GUIStyleState* (*)(::UnityEngine::GUIStyle*, ::System::IntPtr)>(&::UnityEngine::GUIStyleState::GetGUIStyleState)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xb64a564;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"GetGUIStyleState", {}, {::i2c::type_of<::UnityEngine::GUIStyle*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.Finalize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::GUIStyleState::*)()>(&::UnityEngine::GUIStyleState::Finalize)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xb64a5dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                    {::i2c::class_of<::UnityEngine::GUIStyleState*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.get_background_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IntPtr (*)(::System::IntPtr)>(&::UnityEngine::GUIStyleState::get_background_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb64a214;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_background_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.set_background_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, ::System::IntPtr)>(&::UnityEngine::GUIStyleState::set_background_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb64a2f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_background_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.get_textColor_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, ::by_ref<::UnityEngine::Color>)>(&::UnityEngine::GUIStyleState::get_textColor_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb64a3a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_textColor_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Color>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.set_textColor_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, ::by_ref<::UnityEngine::Color>)>(&::UnityEngine::GUIStyleState::set_textColor_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb64a3ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_textColor_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Color>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::GUIStyleState.Cleanup_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr)>(&::UnityEngine::GUIStyleState::Cleanup_Injected)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb64a4a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"Cleanup_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::IntPtr& UnityEngine::GUIStyleState::__cordl_internal_get_m_Ptr()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Ptr;
+}
+constexpr ::System::IntPtr const& UnityEngine::GUIStyleState::__cordl_internal_get_m_Ptr() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Ptr;
+}
+constexpr void UnityEngine::GUIStyleState::__cordl_internal_set_m_Ptr(::System::IntPtr  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Ptr = value;
+}
+constexpr ::UnityEngine::GUIStyle*& UnityEngine::GUIStyleState::__cordl_internal_get_m_SourceStyle()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_SourceStyle;
+}
+constexpr ::UnityEngine::GUIStyle* const& UnityEngine::GUIStyleState::__cordl_internal_get_m_SourceStyle() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_SourceStyle;
+}
+constexpr void UnityEngine::GUIStyleState::__cordl_internal_set_m_SourceStyle(::UnityEngine::GUIStyle*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_SourceStyle = value;
+}
+inline ::UnityW<::UnityEngine::Texture2D> UnityEngine::GUIStyleState::get_background()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_background", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Texture2D>>(this, ___internal_method);
+}
+inline void UnityEngine::GUIStyleState::set_background(::UnityEngine::Texture2D*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_background", {}, {::i2c::type_of<::UnityEngine::Texture2D*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::Color UnityEngine::GUIStyleState::get_textColor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_textColor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Color>(this, ___internal_method);
+}
+inline void UnityEngine::GUIStyleState::set_textColor(::UnityEngine::Color  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_textColor", {}, {::i2c::type_of<::UnityEngine::Color>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::IntPtr UnityEngine::GUIStyleState::Init()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"Init", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::IntPtr>(nullptr, ___internal_method);
+}
+inline void UnityEngine::GUIStyleState::Cleanup()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"Cleanup", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::GUIStyleState::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::GUIStyleState::_ctor(::UnityEngine::GUIStyle*  sourceStyle, ::System::IntPtr  source)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::GUIStyle*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, sourceStyle, source);
+}
+inline ::UnityEngine::GUIStyleState* UnityEngine::GUIStyleState::GetGUIStyleState(::UnityEngine::GUIStyle*  sourceStyle, ::System::IntPtr  source)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"GetGUIStyleState", {}, {::i2c::type_of<::UnityEngine::GUIStyle*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::GUIStyleState*>(nullptr, ___internal_method, sourceStyle, source);
+}
+inline void UnityEngine::GUIStyleState::Finalize()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::GUIStyleState*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::IntPtr UnityEngine::GUIStyleState::get_background_Injected(::System::IntPtr  _unity_self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_background_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::IntPtr>(nullptr, ___internal_method, _unity_self);
+}
+inline void UnityEngine::GUIStyleState::set_background_Injected(::System::IntPtr  _unity_self, ::System::IntPtr  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_background_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, value);
+}
+inline void UnityEngine::GUIStyleState::get_textColor_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Color>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"get_textColor_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Color>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, ret);
+}
+inline void UnityEngine::GUIStyleState::set_textColor_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Color>  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"set_textColor_Injected", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<::by_ref<::UnityEngine::Color>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, value);
+}
+inline void UnityEngine::GUIStyleState::Cleanup_Injected(::System::IntPtr  _unity_self)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState*>(),
+                        {"Cleanup_Injected", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self);
+}
+inline ::UnityEngine::GUIStyleState* UnityEngine::GUIStyleState::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::GUIStyleState*>());
+}
+inline ::UnityEngine::GUIStyleState* UnityEngine::GUIStyleState::New_ctor(::UnityEngine::GUIStyle*  sourceStyle, ::System::IntPtr  source)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::GUIStyleState*>(sourceStyle, source));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::GUIStyleState::GUIStyleState()   {
+}
+//  Writing Method size for method: ::UnityEngine::GUIStyleState_BindingsMarshaller.ConvertToNative
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IntPtr (*)(::UnityEngine::GUIStyleState*)>(&::UnityEngine::GUIStyleState_BindingsMarshaller::ConvertToNative)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xb64a66c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState_BindingsMarshaller*>(),
+                        {"ConvertToNative", {}, {::i2c::type_of<::UnityEngine::GUIStyleState*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::System::IntPtr UnityEngine::GUIStyleState_BindingsMarshaller::ConvertToNative(::UnityEngine::GUIStyleState*  guiStyleState)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::GUIStyleState_BindingsMarshaller*>(),
+                        {"ConvertToNative", {}, {::i2c::type_of<::UnityEngine::GUIStyleState*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::IntPtr>(nullptr, ___internal_method, guiStyleState);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::GUIStyleState_BindingsMarshaller::GUIStyleState_BindingsMarshaller()   {
+}

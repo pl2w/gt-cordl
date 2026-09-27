@@ -1,0 +1,76 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/RenderInstancedDataLayout.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(RenderInstancedDataLayout)
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace UnityEngine {
+struct RenderInstancedDataLayout;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::RenderInstancedDataLayout);
+DEFINE_IL2CPP_CLASS(::UnityEngine::RenderInstancedDataLayout, "UnityEngine", "RenderInstancedDataLayout");
+// [IsReadOnly]
+// Dependencies 
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.RenderInstancedDataLayout
+struct CORDL_TYPE RenderInstancedDataLayout {
+public:
+// Declarations
+/// @brief Method .ctor, addr 0xb57e670, size 0x2e8, virtual false, abstract: false, final false
+inline void _ctor(::System::Type*  t) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr RenderInstancedDataLayout() ;
+
+// Ctor Parameters [CppParam { name: "_size_k__BackingField", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "_offsetObjectToWorld_k__BackingField", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "_offsetPrevObjectToWorld_k__BackingField", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "_offsetRenderingLayerMask_k__BackingField", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr RenderInstancedDataLayout(int32_t  _size_k__BackingField, int32_t  _offsetObjectToWorld_k__BackingField, int32_t  _offsetPrevObjectToWorld_k__BackingField, int32_t  _offsetRenderingLayerMask_k__BackingField) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14874};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <size>k__BackingField, offset: 0x0, size: 0x4, def value: None
+ int32_t  _size_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <offsetObjectToWorld>k__BackingField, offset: 0x4, size: 0x4, def value: None
+ int32_t  _offsetObjectToWorld_k__BackingField;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <offsetPrevObjectToWorld>k__BackingField, offset: 0x8, size: 0x4, def value: None
+ int32_t  _offsetPrevObjectToWorld_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <offsetRenderingLayerMask>k__BackingField, offset: 0xc, size: 0x4, def value: None
+ int32_t  _offsetRenderingLayerMask_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::RenderInstancedDataLayout, _size_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::RenderInstancedDataLayout, _offsetObjectToWorld_k__BackingField) == 0x4, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::RenderInstancedDataLayout, _offsetPrevObjectToWorld_k__BackingField) == 0x8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::RenderInstancedDataLayout, _offsetRenderingLayerMask_k__BackingField) == 0xc, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::RenderInstancedDataLayout) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

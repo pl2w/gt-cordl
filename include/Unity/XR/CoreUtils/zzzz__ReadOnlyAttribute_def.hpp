@@ -1,0 +1,49 @@
+#pragma once
+// IWYU pragma private; include "Unity/XR/CoreUtils/ReadOnlyAttribute.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__PropertyAttribute_def.hpp"
+CORDL_MODULE_EXPORT(ReadOnlyAttribute)
+// Forward declare root types
+namespace Unity::XR::CoreUtils {
+class ReadOnlyAttribute;
+}
+// Write type traits
+MARK_REF_T(::Unity::XR::CoreUtils::ReadOnlyAttribute*);
+DEFINE_IL2CPP_CLASS(::Unity::XR::CoreUtils::ReadOnlyAttribute*, "Unity.XR.CoreUtils", "ReadOnlyAttribute");
+// Dependencies UnityEngine.PropertyAttribute
+namespace Unity::XR::CoreUtils {
+// Is value type: false
+// CS Name: Unity.XR.CoreUtils.ReadOnlyAttribute
+class CORDL_TYPE ReadOnlyAttribute : public ::UnityEngine::PropertyAttribute {
+public:
+// Declarations
+static inline ::Unity::XR::CoreUtils::ReadOnlyAttribute* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb3eddc8, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ReadOnlyAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ReadOnlyAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ReadOnlyAttribute(ReadOnlyAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ReadOnlyAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ReadOnlyAttribute(ReadOnlyAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30377};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Unity::XR::CoreUtils::ReadOnlyAttribute) == 0x18, "Size mismatch!");
+
+} // namespace end def Unity::XR::CoreUtils

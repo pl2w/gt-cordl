@@ -1,0 +1,1235 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/InputRemoting.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_Flags_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_RemoteSender_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_def.hpp"
+#include "System/zzzz__Exception_def.hpp"
+#include "System/zzzz__Func_2_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "System/zzzz__IObservable_1_def.hpp"
+#include "System/zzzz__IObserver_1_def.hpp"
+#include "System/zzzz__Nullable_1_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__InputEventPtr_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__InputEvent_def.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__InternedString_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControlLayoutChange_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputDeviceChange_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputDevice_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputManager_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_ChangeUsageMsg_Data_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_Flags_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_MessageType_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_Message_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_NewDeviceMsg_Data_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_NewLayoutMsg_Data_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_RemoteInputDevice_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_RemoteSender_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputRemoting_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.get_sending
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::get_sending)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xafa1664;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"get_sending", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.set_sending
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(bool)>(&::UnityEngine::InputSystem::InputRemoting::set_sending)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xafa1670;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"set_sending", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::UnityEngine::InputSystem::InputManager*, bool)>(&::UnityEngine::InputSystem::InputRemoting::_ctor)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xafa1680;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputManager*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.StartSending
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::StartSending)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xafa1714;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"StartSending", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.StopSending
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::StopSending)> {
+  constexpr static std::size_t size = 0x14c;
+  constexpr static std::size_t addrs = 0xafa1998;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"StopSending", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting::System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext)> {
+  constexpr static std::size_t size = 0xc0;
+  constexpr static std::size_t addrs = 0xafa1bec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext", {}, {::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnError
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::System::Exception*)>(&::UnityEngine::InputSystem::InputRemoting::System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnError)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xafa285c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnError", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xafa2860;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.Subscribe
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::IDisposable* (::UnityEngine::InputSystem::InputRemoting::*)(::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*)>(&::UnityEngine::InputSystem::InputRemoting::Subscribe)> {
+  constexpr static std::size_t size = 0xfc;
+  constexpr static std::size_t addrs = 0xafa2864;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"Subscribe", {}, {::i2c::type_of<::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendInitialMessages
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::SendInitialMessages)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xafa1980;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendInitialMessages", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendAllGeneratedLayouts
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::SendAllGeneratedLayouts)> {
+  constexpr static std::size_t size = 0x150;
+  constexpr static std::size_t addrs = 0xafa2968;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendAllGeneratedLayouts", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendLayout
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::StringW)>(&::UnityEngine::InputSystem::InputRemoting::SendLayout)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xafa2c10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendLayout", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendAllDevices
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::SendAllDevices)> {
+  constexpr static std::size_t size = 0x158;
+  constexpr static std::size_t addrs = 0xafa2ab8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendAllDevices", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendDevice
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::UnityEngine::InputSystem::InputDevice*)>(&::UnityEngine::InputSystem::InputRemoting::SendDevice)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xafa30e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendDevice", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::UnityEngine::InputSystem::LowLevel::InputEventPtr, ::UnityEngine::InputSystem::InputDevice*)>(&::UnityEngine::InputSystem::InputRemoting::SendEvent)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xafa34b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::LowLevel::InputEventPtr>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendDeviceChange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::UnityEngine::InputSystem::InputDevice*, ::UnityEngine::InputSystem::InputDeviceChange)>(&::UnityEngine::InputSystem::InputRemoting::SendDeviceChange)> {
+  constexpr static std::size_t size = 0xc8;
+  constexpr static std::size_t addrs = 0xafa360c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendDeviceChange", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDeviceChange>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.SendLayoutChange
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::StringW, ::UnityEngine::InputSystem::InputControlLayoutChange)>(&::UnityEngine::InputSystem::InputRemoting::SendLayoutChange)> {
+  constexpr static std::size_t size = 0xf0;
+  constexpr static std::size_t addrs = 0xafa3980;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendLayoutChange", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControlLayoutChange>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.Send
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting::Send)> {
+  constexpr static std::size_t size = 0x104;
+  constexpr static std::size_t addrs = 0xafa2f78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"Send", {}, {::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.FindOrCreateSenderRecord
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::InputSystem::InputRemoting::*)(int32_t)>(&::UnityEngine::InputSystem::InputRemoting::FindOrCreateSenderRecord)> {
+  constexpr static std::size_t size = 0xa0;
+  constexpr static std::size_t addrs = 0xafa3a70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"FindOrCreateSenderRecord", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.BuildLayoutNamespace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Utilities::InternedString (*)(int32_t)>(&::UnityEngine::InputSystem::InputRemoting::BuildLayoutNamespace)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xafa3b10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"BuildLayoutNamespace", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.FindLocalDeviceId
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::InputSystem::InputRemoting::*)(int32_t, int32_t)>(&::UnityEngine::InputSystem::InputRemoting::FindLocalDeviceId)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xafa3b9c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"FindLocalDeviceId", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.TryGetDeviceByRemoteId
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputDevice* (::UnityEngine::InputSystem::InputRemoting::*)(int32_t, int32_t)>(&::UnityEngine::InputSystem::InputRemoting::TryGetDeviceByRemoteId)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xafa3c08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"TryGetDeviceByRemoteId", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.get_manager
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputManager* (::UnityEngine::InputSystem::InputRemoting::*)()>(&::UnityEngine::InputSystem::InputRemoting::get_manager)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafa3ca8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"get_manager", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting.RemoveRemoteDevices
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting::*)(int32_t)>(&::UnityEngine::InputSystem::InputRemoting::RemoveRemoteDevices)> {
+  constexpr static std::size_t size = 0xfc;
+  constexpr static std::size_t addrs = 0xafa3cb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"RemoveRemoteDevices", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::GlobalNamespace::InputRemoting_Flags& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_Flags()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Flags;
+}
+constexpr ::GlobalNamespace::InputRemoting_Flags const& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_Flags() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Flags;
+}
+constexpr void UnityEngine::InputSystem::InputRemoting::__cordl_internal_set_m_Flags(::GlobalNamespace::InputRemoting_Flags  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Flags = value;
+}
+constexpr ::UnityEngine::InputSystem::InputManager*& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_LocalManager()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LocalManager;
+}
+constexpr ::UnityEngine::InputSystem::InputManager* const& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_LocalManager() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LocalManager;
+}
+constexpr void UnityEngine::InputSystem::InputRemoting::__cordl_internal_set_m_LocalManager(::UnityEngine::InputSystem::InputManager*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_LocalManager = value;
+}
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputRemoting_Subscriber*>& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_Subscribers()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Subscribers;
+}
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputRemoting_Subscriber*> const& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_Subscribers() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Subscribers;
+}
+constexpr void UnityEngine::InputSystem::InputRemoting::__cordl_internal_set_m_Subscribers(::ArrayW<::UnityEngine::InputSystem::InputRemoting_Subscriber*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Subscribers = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::InputRemoting_RemoteSender>& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_Senders()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Senders;
+}
+constexpr ::ArrayW<::GlobalNamespace::InputRemoting_RemoteSender> const& UnityEngine::InputSystem::InputRemoting::__cordl_internal_get_m_Senders() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Senders;
+}
+constexpr void UnityEngine::InputSystem::InputRemoting::__cordl_internal_set_m_Senders(::ArrayW<::GlobalNamespace::InputRemoting_RemoteSender>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Senders = value;
+}
+inline bool UnityEngine::InputSystem::InputRemoting::get_sending()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"get_sending", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting::set_sending(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"set_sending", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::InputSystem::InputRemoting::_ctor(::UnityEngine::InputSystem::InputManager*  manager, bool  startSendingOnConnect)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputManager*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, manager, startSendingOnConnect);
+}
+inline void UnityEngine::InputSystem::InputRemoting::StartSending()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"StartSending", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting::StopSending()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"StopSending", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting::System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext(::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext", {}, {::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, msg);
+}
+inline void UnityEngine::InputSystem::InputRemoting::System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnError(::System::Exception*  error)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnError", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, error);
+}
+inline void UnityEngine::InputSystem::InputRemoting::System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::IDisposable* UnityEngine::InputSystem::InputRemoting::Subscribe(::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*  observer)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"Subscribe", {}, {::i2c::type_of<::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::IDisposable*>(this, ___internal_method, observer);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendInitialMessages()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendInitialMessages", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendAllGeneratedLayouts()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendAllGeneratedLayouts", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendLayout(::StringW  layoutName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendLayout", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, layoutName);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendAllDevices()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendAllDevices", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendDevice(::UnityEngine::InputSystem::InputDevice*  device)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendDevice", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, device);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendEvent(::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr, ::UnityEngine::InputSystem::InputDevice*  device)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::LowLevel::InputEventPtr>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, eventPtr, device);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendDeviceChange(::UnityEngine::InputSystem::InputDevice*  device, ::UnityEngine::InputSystem::InputDeviceChange  change)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendDeviceChange", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDeviceChange>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, device, change);
+}
+inline void UnityEngine::InputSystem::InputRemoting::SendLayoutChange(::StringW  layout, ::UnityEngine::InputSystem::InputControlLayoutChange  change)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"SendLayoutChange", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::InputSystem::InputControlLayoutChange>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, layout, change);
+}
+inline void UnityEngine::InputSystem::InputRemoting::Send(::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"Send", {}, {::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, msg);
+}
+inline int32_t UnityEngine::InputSystem::InputRemoting::FindOrCreateSenderRecord(int32_t  senderId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"FindOrCreateSenderRecord", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, senderId);
+}
+inline ::UnityEngine::InputSystem::Utilities::InternedString UnityEngine::InputSystem::InputRemoting::BuildLayoutNamespace(int32_t  senderId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"BuildLayoutNamespace", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Utilities::InternedString>(nullptr, ___internal_method, senderId);
+}
+inline int32_t UnityEngine::InputSystem::InputRemoting::FindLocalDeviceId(int32_t  remoteDeviceId, int32_t  senderIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"FindLocalDeviceId", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, remoteDeviceId, senderIndex);
+}
+inline ::UnityEngine::InputSystem::InputDevice* UnityEngine::InputSystem::InputRemoting::TryGetDeviceByRemoteId(int32_t  remoteDeviceId, int32_t  senderIndex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"TryGetDeviceByRemoteId", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputDevice*>(this, ___internal_method, remoteDeviceId, senderIndex);
+}
+inline ::UnityEngine::InputSystem::InputManager* UnityEngine::InputSystem::InputRemoting::get_manager()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"get_manager", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputManager*>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting::RemoveRemoteDevices(int32_t  participantId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                        {"RemoveRemoteDevices", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, participantId);
+}
+template<typename TData>
+inline ::ArrayW<uint8_t> UnityEngine::InputSystem::InputRemoting::SerializeData(TData  data)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                    {"SerializeData", {::i2c::class_of<TData>()}, {::i2c::type_of<TData>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TData>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<uint8_t>>(nullptr, ___internal_method, data);
+}
+template<typename TData>
+inline TData UnityEngine::InputSystem::InputRemoting::DeserializeData(::ArrayW<uint8_t>  data)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting*>(),
+                    {"DeserializeData", {::i2c::class_of<TData>()}, {::i2c::type_of<::ArrayW<uint8_t>>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TData>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<TData>(nullptr, ___internal_method, data);
+}
+inline ::UnityEngine::InputSystem::InputRemoting* UnityEngine::InputSystem::InputRemoting::New_ctor(::UnityEngine::InputSystem::InputManager*  manager, bool  startSendingOnConnect)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::InputRemoting*>(manager, startSendingOnConnect));
+}
+/// @brief Convert operator to "::System::IObservable_1<::GlobalNamespace::InputRemoting_Message>"
+constexpr  UnityEngine::InputSystem::InputRemoting::operator ::System::IObservable_1<::GlobalNamespace::InputRemoting_Message>*() noexcept {
+return static_cast<::System::IObservable_1<::GlobalNamespace::InputRemoting_Message>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IObservable_1<::GlobalNamespace::InputRemoting_Message>"
+constexpr ::System::IObservable_1<::GlobalNamespace::InputRemoting_Message>* UnityEngine::InputSystem::InputRemoting::i___System__IObservable_1___GlobalNamespace__InputRemoting_Message_() noexcept {
+return static_cast<::System::IObservable_1<::GlobalNamespace::InputRemoting_Message>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>"
+constexpr  UnityEngine::InputSystem::InputRemoting::operator ::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*() noexcept {
+return static_cast<::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>"
+constexpr ::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>* UnityEngine::InputSystem::InputRemoting::i___System__IObserver_1___GlobalNamespace__InputRemoting_Message_() noexcept {
+return static_cast<::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting::InputRemoting()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::InputRemoting_Message (*)(::UnityEngine::InputSystem::InputDevice*)>(&::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg::Create)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xafa36d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*, ::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg::Process)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xafa27d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::GlobalNamespace::InputRemoting_Message UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg::Create(::UnityEngine::InputSystem::InputDevice*  device)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::InputRemoting_Message>(nullptr, ___internal_method, device);
+}
+inline void UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver, ::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver, msg);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg::InputRemoting_RemoveDeviceMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::InputRemoting_Message (*)(::UnityEngine::InputSystem::InputDevice*)>(&::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg::Create)> {
+  constexpr static std::size_t size = 0x1d8;
+  constexpr static std::size_t addrs = 0xafa3720;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*, ::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg::Process)> {
+  constexpr static std::size_t size = 0x300;
+  constexpr static std::size_t addrs = 0xafa24d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::GlobalNamespace::InputRemoting_Message UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg::Create(::UnityEngine::InputSystem::InputDevice*  device)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::InputRemoting_Message>(nullptr, ___internal_method, device);
+}
+inline void UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver, ::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver, msg);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg::InputRemoting_ChangeUsageMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::*)()>(&::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafa4c70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c._Create_b__1_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::*)(::UnityEngine::InputSystem::Utilities::InternedString)>(&::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::_Create_b__1_0)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xafa4c78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>(),
+                        {"<Create>b__1_0", {}, {::i2c::type_of<::UnityEngine::InputSystem::Utilities::InternedString>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::setStaticF___9(::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*, "<>9", ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>(std::forward<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>(value));
+}
+inline ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c* UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::getStaticF___9()  {
+return ::cordl_internals::getStaticField<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*, "<>9", ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>();
+}
+inline void UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::setStaticF___9__1_0(::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*  value)  {
+::cordl_internals::setStaticField<::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*, "<>9__1_0", ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>(std::forward<::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*>(value));
+}
+inline ::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>* UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::getStaticF___9__1_0()  {
+return ::cordl_internals::getStaticField<::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*, "<>9__1_0", ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>();
+}
+inline void UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::_Create_b__1_0(::UnityEngine::InputSystem::Utilities::InternedString  x)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>(),
+                        {"<Create>b__1_0", {}, {::i2c::type_of<::UnityEngine::InputSystem::Utilities::InternedString>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, x);
+}
+inline ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c* UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c::ChangeUsageMsg_InputRemoting___c()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewEventsMsg.CreateResetEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::InputRemoting_Message (*)(::UnityEngine::InputSystem::InputDevice*, bool)>(&::UnityEngine::InputSystem::InputRemoting_NewEventsMsg::CreateResetEvent)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xafa38f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"CreateResetEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewEventsMsg.CreateStateEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::InputRemoting_Message (*)(::UnityEngine::InputSystem::InputDevice*)>(&::UnityEngine::InputSystem::InputRemoting_NewEventsMsg::CreateStateEvent)> {
+  constexpr static std::size_t size = 0xf0;
+  constexpr static std::size_t addrs = 0xafa33c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"CreateStateEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewEventsMsg.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::InputRemoting_Message (*)(::UnityEngine::InputSystem::LowLevel::InputEvent*, int32_t)>(&::UnityEngine::InputSystem::InputRemoting_NewEventsMsg::Create)> {
+  constexpr static std::size_t size = 0xf0;
+  constexpr static std::size_t addrs = 0xafa351c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::LowLevel::InputEvent*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewEventsMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*, ::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting_NewEventsMsg::Process)> {
+  constexpr static std::size_t size = 0xc0;
+  constexpr static std::size_t addrs = 0xafa2410;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::GlobalNamespace::InputRemoting_Message UnityEngine::InputSystem::InputRemoting_NewEventsMsg::CreateResetEvent(::UnityEngine::InputSystem::InputDevice*  device, bool  isHardReset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"CreateResetEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::InputRemoting_Message>(nullptr, ___internal_method, device, isHardReset);
+}
+inline ::GlobalNamespace::InputRemoting_Message UnityEngine::InputSystem::InputRemoting_NewEventsMsg::CreateStateEvent(::UnityEngine::InputSystem::InputDevice*  device)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"CreateStateEvent", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::InputRemoting_Message>(nullptr, ___internal_method, device);
+}
+inline ::GlobalNamespace::InputRemoting_Message UnityEngine::InputSystem::InputRemoting_NewEventsMsg::Create(::UnityEngine::InputSystem::LowLevel::InputEvent*  events, int32_t  eventCount)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::LowLevel::InputEvent*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::InputRemoting_Message>(nullptr, ___internal_method, events, eventCount);
+}
+inline void UnityEngine::InputSystem::InputRemoting_NewEventsMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver, ::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewEventsMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver, msg);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_NewEventsMsg::InputRemoting_NewEventsMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::InputRemoting_Message (*)(::UnityEngine::InputSystem::InputDevice*)>(&::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg::Create)> {
+  constexpr static std::size_t size = 0x260;
+  constexpr static std::size_t addrs = 0xafa3168;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*, ::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg::Process)> {
+  constexpr static std::size_t size = 0x590;
+  constexpr static std::size_t addrs = 0xafa1e80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::GlobalNamespace::InputRemoting_Message UnityEngine::InputSystem::InputRemoting_NewDeviceMsg::Create(::UnityEngine::InputSystem::InputDevice*  device)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::InputRemoting_Message>(nullptr, ___internal_method, device);
+}
+inline void UnityEngine::InputSystem::InputRemoting_NewDeviceMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver, ::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver, msg);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg::InputRemoting_NewDeviceMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::*)()>(&::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafa4aac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c._Create_b__1_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::*)(::UnityEngine::InputSystem::Utilities::InternedString)>(&::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::_Create_b__1_0)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xafa4ab4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>(),
+                        {"<Create>b__1_0", {}, {::i2c::type_of<::UnityEngine::InputSystem::Utilities::InternedString>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::setStaticF___9(::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*, "<>9", ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>(std::forward<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>(value));
+}
+inline ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c* UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::getStaticF___9()  {
+return ::cordl_internals::getStaticField<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*, "<>9", ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>();
+}
+inline void UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::setStaticF___9__1_0(::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*  value)  {
+::cordl_internals::setStaticField<::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*, "<>9__1_0", ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>(std::forward<::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*>(value));
+}
+inline ::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>* UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::getStaticF___9__1_0()  {
+return ::cordl_internals::getStaticField<::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString,::StringW>*, "<>9__1_0", ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>();
+}
+inline void UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::_Create_b__1_0(::UnityEngine::InputSystem::Utilities::InternedString  x)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>(),
+                        {"<Create>b__1_0", {}, {::i2c::type_of<::UnityEngine::InputSystem::Utilities::InternedString>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, x);
+}
+inline ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c* UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c::NewDeviceMsg_InputRemoting___c()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Nullable_1<::GlobalNamespace::InputRemoting_Message> (*)(::UnityEngine::InputSystem::InputRemoting*, ::StringW)>(&::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg::Create)> {
+  constexpr static std::size_t size = 0x2c4;
+  constexpr static std::size_t addrs = 0xafa2cb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*, ::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg::Process)> {
+  constexpr static std::size_t size = 0xfc;
+  constexpr static std::size_t addrs = 0xafa1d84;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::System::Nullable_1<::GlobalNamespace::InputRemoting_Message> UnityEngine::InputSystem::InputRemoting_NewLayoutMsg::Create(::UnityEngine::InputSystem::InputRemoting*  sender, ::StringW  layoutName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Nullable_1<::GlobalNamespace::InputRemoting_Message>>(nullptr, ___internal_method, sender, layoutName);
+}
+inline void UnityEngine::InputSystem::InputRemoting_NewLayoutMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver, ::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver, msg);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg::InputRemoting_NewLayoutMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_DisconnectMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*, ::GlobalNamespace::InputRemoting_Message)>(&::UnityEngine::InputSystem::InputRemoting_DisconnectMsg::Process)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xafa1cf0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_DisconnectMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::InputRemoting_DisconnectMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver, ::GlobalNamespace::InputRemoting_Message  msg)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_DisconnectMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>(), ::i2c::type_of<::GlobalNamespace::InputRemoting_Message>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver, msg);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_DisconnectMsg::InputRemoting_DisconnectMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_StopSendingMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*)>(&::UnityEngine::InputSystem::InputRemoting_StopSendingMsg::Process)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xafa284c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_StopSendingMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::InputRemoting_StopSendingMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_StopSendingMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_StopSendingMsg::InputRemoting_StopSendingMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_StartSendingMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*)>(&::UnityEngine::InputSystem::InputRemoting_StartSendingMsg::Process)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xafa283c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_StartSendingMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::InputRemoting_StartSendingMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_StartSendingMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_StartSendingMsg::InputRemoting_StartSendingMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_ConnectMsg.Process
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputRemoting*)>(&::UnityEngine::InputSystem::InputRemoting_ConnectMsg::Process)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xafa1cac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_ConnectMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::InputRemoting_ConnectMsg::Process(::UnityEngine::InputSystem::InputRemoting*  receiver)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_ConnectMsg*>(),
+                        {"Process", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputRemoting*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, receiver);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_ConnectMsg::InputRemoting_ConnectMsg()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_Subscriber.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting_Subscriber::*)()>(&::UnityEngine::InputSystem::InputRemoting_Subscriber::Dispose)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xafa4298;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_Subscriber*>(),
+                        {"Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::InputRemoting_Subscriber._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::InputRemoting_Subscriber::*)()>(&::UnityEngine::InputSystem::InputRemoting_Subscriber::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafa2960;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_Subscriber*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::InputSystem::InputRemoting*& UnityEngine::InputSystem::InputRemoting_Subscriber::__cordl_internal_get_owner()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___owner;
+}
+constexpr ::UnityEngine::InputSystem::InputRemoting* const& UnityEngine::InputSystem::InputRemoting_Subscriber::__cordl_internal_get_owner() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___owner;
+}
+constexpr void UnityEngine::InputSystem::InputRemoting_Subscriber::__cordl_internal_set_owner(::UnityEngine::InputSystem::InputRemoting*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___owner = value;
+}
+constexpr ::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*& UnityEngine::InputSystem::InputRemoting_Subscriber::__cordl_internal_get_observer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___observer;
+}
+constexpr ::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>* const& UnityEngine::InputSystem::InputRemoting_Subscriber::__cordl_internal_get_observer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___observer;
+}
+constexpr void UnityEngine::InputSystem::InputRemoting_Subscriber::__cordl_internal_set_observer(::System::IObserver_1<::GlobalNamespace::InputRemoting_Message>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___observer = value;
+}
+inline void UnityEngine::InputSystem::InputRemoting_Subscriber::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_Subscriber*>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::InputRemoting_Subscriber::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::InputRemoting_Subscriber*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputRemoting_Subscriber* UnityEngine::InputSystem::InputRemoting_Subscriber::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::InputRemoting_Subscriber*>());
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::InputSystem::InputRemoting_Subscriber::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::InputSystem::InputRemoting_Subscriber::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::InputRemoting_Subscriber::InputRemoting_Subscriber()   {
+}

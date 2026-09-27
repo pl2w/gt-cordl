@@ -1,0 +1,74 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/DynamicResolutionHandler_UpsamplerScheduleType.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(DynamicResolutionHandler_UpsamplerScheduleType)
+// Forward declare root types
+namespace GlobalNamespace {
+struct DynamicResolutionHandler_UpsamplerScheduleType;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::DynamicResolutionHandler_UpsamplerScheduleType);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::DynamicResolutionHandler_UpsamplerScheduleType, "UnityEngine.Rendering", "DynamicResolutionHandler/UpsamplerScheduleType");
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: UnityEngine.Rendering.DynamicResolutionHandler/UpsamplerScheduleType
+struct CORDL_TYPE DynamicResolutionHandler_UpsamplerScheduleType {
+public:
+// Declarations
+using __CORDL_BACKING_ENUM_TYPE = int32_t;
+
+/// @brief Nested struct __DynamicResolutionHandler_UpsamplerScheduleType_Unwrapped
+enum struct __DynamicResolutionHandler_UpsamplerScheduleType_Unwrapped : int32_t {
+__E_BeforePost = static_cast<int32_t>(0x0),
+__E_AfterDepthOfField = static_cast<int32_t>(0x1),
+__E_AfterPost = static_cast<int32_t>(0x2),
+};
+
+/// @brief Conversion into unwrapped enum value
+constexpr operator __DynamicResolutionHandler_UpsamplerScheduleType_Unwrapped () const noexcept {
+return static_cast<__DynamicResolutionHandler_UpsamplerScheduleType_Unwrapped>(this->value__);
+}
+
+/// @brief Conversion into unwrapped enum value
+constexpr explicit operator int32_t () const noexcept {
+return static_cast<int32_t>(this->value__);
+}
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr DynamicResolutionHandler_UpsamplerScheduleType() ;
+
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr DynamicResolutionHandler_UpsamplerScheduleType(int32_t  value__) noexcept;
+
+/// @brief Field AfterDepthOfField value: I32(1)
+static ::GlobalNamespace::DynamicResolutionHandler_UpsamplerScheduleType const AfterDepthOfField;
+
+/// @brief Field AfterPost value: I32(2)
+static ::GlobalNamespace::DynamicResolutionHandler_UpsamplerScheduleType const AfterPost;
+
+/// @brief Field BeforePost value: I32(0)
+static ::GlobalNamespace::DynamicResolutionHandler_UpsamplerScheduleType const BeforePost;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{16626};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field value__, offset: 0x0, size: 0x4, def value: None
+ int32_t  value__;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::DynamicResolutionHandler_UpsamplerScheduleType, value__) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::DynamicResolutionHandler_UpsamplerScheduleType) == 0x4, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

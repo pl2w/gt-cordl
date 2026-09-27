@@ -1,0 +1,298 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/Mouse.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/InputSystem/zzzz__Pointer_def.hpp"
+CORDL_MODULE_EXPORT(Mouse)
+namespace UnityEngine::InputSystem::Controls {
+class ButtonControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class DeltaControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class IntegerControl;
+}
+namespace UnityEngine::InputSystem::LowLevel {
+class IInputStateCallbackReceiver;
+}
+namespace UnityEngine::InputSystem::LowLevel {
+struct InputEventPtr;
+}
+namespace UnityEngine {
+struct Vector2;
+}
+// Forward declare root types
+namespace UnityEngine::InputSystem {
+class Mouse;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::Mouse*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::Mouse*, "UnityEngine.InputSystem", "Mouse");
+// [InputControlLayout(stateType = typeof(UnityEngine.InputSystem.LowLevel.MouseState), isGenericTypeOfDevice = true)]
+// Dependencies UnityEngine.InputSystem.Pointer
+namespace UnityEngine::InputSystem {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.Mouse
+class CORDL_TYPE Mouse : public ::UnityEngine::InputSystem::Pointer {
+public:
+// Declarations
+/// @brief Field <backButton>k__BackingField, offset 0x1d8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__backButton_k__BackingField, put=__cordl_internal_set__backButton_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _backButton_k__BackingField;
+
+/// @brief Field <clickCount>k__BackingField, offset 0x1e8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__clickCount_k__BackingField, put=__cordl_internal_set__clickCount_k__BackingField)) ::UnityEngine::InputSystem::Controls::IntegerControl*  _clickCount_k__BackingField;
+
+/// @brief Field <current>k__BackingField, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF__current_k__BackingField, put=setStaticF__current_k__BackingField)) ::UnityEngine::InputSystem::Mouse*  _current_k__BackingField;
+
+/// @brief Field <forwardButton>k__BackingField, offset 0x1e0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__forwardButton_k__BackingField, put=__cordl_internal_set__forwardButton_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _forwardButton_k__BackingField;
+
+/// @brief Field <leftButton>k__BackingField, offset 0x1c0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__leftButton_k__BackingField, put=__cordl_internal_set__leftButton_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _leftButton_k__BackingField;
+
+/// @brief Field <middleButton>k__BackingField, offset 0x1c8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__middleButton_k__BackingField, put=__cordl_internal_set__middleButton_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _middleButton_k__BackingField;
+
+/// @brief Field <rightButton>k__BackingField, offset 0x1d0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__rightButton_k__BackingField, put=__cordl_internal_set__rightButton_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _rightButton_k__BackingField;
+
+/// @brief Field <scroll>k__BackingField, offset 0x1b8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__scroll_k__BackingField, put=__cordl_internal_set__scroll_k__BackingField)) ::UnityEngine::InputSystem::Controls::DeltaControl*  _scroll_k__BackingField;
+
+ __declspec(property(get=get_backButton, put=set_backButton)) ::UnityEngine::InputSystem::Controls::ButtonControl*  backButton;
+
+ __declspec(property(get=get_clickCount, put=set_clickCount)) ::UnityEngine::InputSystem::Controls::IntegerControl*  clickCount;
+
+ __declspec(property(get=get_forwardButton, put=set_forwardButton)) ::UnityEngine::InputSystem::Controls::ButtonControl*  forwardButton;
+
+ __declspec(property(get=get_leftButton, put=set_leftButton)) ::UnityEngine::InputSystem::Controls::ButtonControl*  leftButton;
+
+ __declspec(property(get=get_middleButton, put=set_middleButton)) ::UnityEngine::InputSystem::Controls::ButtonControl*  middleButton;
+
+ __declspec(property(get=get_rightButton, put=set_rightButton)) ::UnityEngine::InputSystem::Controls::ButtonControl*  rightButton;
+
+/// @brief Field s_PlatformMouseDevice, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_PlatformMouseDevice, put=setStaticF_s_PlatformMouseDevice)) ::UnityEngine::InputSystem::Mouse*  s_PlatformMouseDevice;
+
+ __declspec(property(get=get_scroll, put=set_scroll)) ::UnityEngine::InputSystem::Controls::DeltaControl*  scroll;
+
+/// @brief Convert operator to "::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver"
+constexpr operator  ::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*() noexcept;
+
+/// @brief Method FinishSetup, addr 0xaf60508, size 0x22c, virtual true, abstract: false, final false
+inline void FinishSetup() ;
+
+/// @brief Method MakeCurrent, addr 0xaf601f0, size 0x5c, virtual true, abstract: false, final false
+inline void MakeCurrent() ;
+
+static inline ::UnityEngine::InputSystem::Mouse* New_ctor() ;
+
+/// @brief Method OnAdded, addr 0xaf602ac, size 0x80, virtual true, abstract: false, final false
+inline void OnAdded() ;
+
+/// @brief Method OnNextUpdate, addr 0xaf60924, size 0x90, virtual false, abstract: false, final false
+inline void OnNextUpdate() ;
+
+/// @brief Method OnRemoved, addr 0xaf6032c, size 0x98, virtual true, abstract: false, final false
+inline void OnRemoved() ;
+
+/// @brief Method OnStateEvent, addr 0xaf60a3c, size 0x44, virtual false, abstract: false, final false
+inline void OnStateEvent(::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr) ;
+
+/// @brief Method UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnNextUpdate, addr 0xaf60acc, size 0x4, virtual true, abstract: false, final true
+inline void UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnNextUpdate() ;
+
+/// @brief Method UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnStateEvent, addr 0xaf60ad0, size 0x4, virtual true, abstract: false, final true
+inline void UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent(::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr) ;
+
+/// @brief Method WarpCursorPosition, addr 0xaf60460, size 0xa8, virtual false, abstract: false, final false
+inline void WarpCursorPosition(::UnityEngine::Vector2  position) ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__backButton_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__backButton_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl* const& __cordl_internal_get__clickCount_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl*& __cordl_internal_get__clickCount_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__forwardButton_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__forwardButton_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__leftButton_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__leftButton_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__middleButton_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__middleButton_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__rightButton_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__rightButton_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::DeltaControl* const& __cordl_internal_get__scroll_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::DeltaControl*& __cordl_internal_get__scroll_k__BackingField() ;
+
+constexpr void __cordl_internal_set__backButton_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__clickCount_k__BackingField(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+constexpr void __cordl_internal_set__forwardButton_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__leftButton_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__middleButton_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__rightButton_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__scroll_k__BackingField(::UnityEngine::InputSystem::Controls::DeltaControl*  value) ;
+
+/// @brief Method .ctor, addr 0xaf60ad4, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::InputSystem::Mouse* getStaticF__current_k__BackingField() ;
+
+static inline ::UnityEngine::InputSystem::Mouse* getStaticF_s_PlatformMouseDevice() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_backButton, addr 0xaf60108, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_backButton() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_clickCount, addr 0xaf60138, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::IntegerControl* get_clickCount() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_current, addr 0xaf60150, size 0x48, virtual false, abstract: false, final false
+static inline ::UnityEngine::InputSystem::Mouse* get_current() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_forwardButton, addr 0xaf60120, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_forwardButton() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_leftButton, addr 0xaf600c0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_leftButton() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_middleButton, addr 0xaf600d8, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_middleButton() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_rightButton, addr 0xaf600f0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_rightButton() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_scroll, addr 0xaf600a8, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::DeltaControl* get_scroll() ;
+
+/// @brief Convert to "::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver"
+constexpr ::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver* i___UnityEngine__InputSystem__LowLevel__IInputStateCallbackReceiver() noexcept;
+
+static inline void setStaticF__current_k__BackingField(::UnityEngine::InputSystem::Mouse*  value) ;
+
+static inline void setStaticF_s_PlatformMouseDevice(::UnityEngine::InputSystem::Mouse*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_backButton, addr 0xaf60110, size 0x10, virtual false, abstract: false, final false
+inline void set_backButton(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_clickCount, addr 0xaf60140, size 0x10, virtual false, abstract: false, final false
+inline void set_clickCount(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_current, addr 0xaf60198, size 0x58, virtual false, abstract: false, final false
+static inline void set_current(::UnityEngine::InputSystem::Mouse*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_forwardButton, addr 0xaf60128, size 0x10, virtual false, abstract: false, final false
+inline void set_forwardButton(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_leftButton, addr 0xaf600c8, size 0x10, virtual false, abstract: false, final false
+inline void set_leftButton(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_middleButton, addr 0xaf600e0, size 0x10, virtual false, abstract: false, final false
+inline void set_middleButton(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_rightButton, addr 0xaf600f8, size 0x10, virtual false, abstract: false, final false
+inline void set_rightButton(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_scroll, addr 0xaf600b0, size 0x10, virtual false, abstract: false, final false
+inline void set_scroll(::UnityEngine::InputSystem::Controls::DeltaControl*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Mouse() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Mouse", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Mouse(Mouse && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Mouse", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Mouse(Mouse const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13457};
+
+/// [CompilerGenerated]
+/// @brief Field <scroll>k__BackingField, offset: 0x1b8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::DeltaControl*  ____scroll_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <leftButton>k__BackingField, offset: 0x1c0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____leftButton_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <middleButton>k__BackingField, offset: 0x1c8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____middleButton_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <rightButton>k__BackingField, offset: 0x1d0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____rightButton_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <backButton>k__BackingField, offset: 0x1d8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____backButton_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <forwardButton>k__BackingField, offset: 0x1e0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____forwardButton_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <clickCount>k__BackingField, offset: 0x1e8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::IntegerControl*  ____clickCount_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::InputSystem::Mouse, ____scroll_k__BackingField) == 0x1b8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Mouse, ____leftButton_k__BackingField) == 0x1c0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Mouse, ____middleButton_k__BackingField) == 0x1c8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Mouse, ____rightButton_k__BackingField) == 0x1d0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Mouse, ____backButton_k__BackingField) == 0x1d8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Mouse, ____forwardButton_k__BackingField) == 0x1e0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Mouse, ____clickCount_k__BackingField) == 0x1e8, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::InputSystem::Mouse) == 0x1f0, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputSystem

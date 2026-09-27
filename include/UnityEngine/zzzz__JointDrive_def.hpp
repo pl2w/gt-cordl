@@ -1,0 +1,77 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/JointDrive.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cmath>
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(JointDrive)
+// Forward declare root types
+namespace UnityEngine {
+struct JointDrive;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::JointDrive);
+DEFINE_IL2CPP_CLASS(::UnityEngine::JointDrive, "UnityEngine", "JointDrive");
+// Dependencies 
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.JointDrive
+struct CORDL_TYPE JointDrive {
+public:
+// Declarations
+ __declspec(property(put=set_maximumForce)) float_t  maximumForce;
+
+ __declspec(property(put=set_positionDamper)) float_t  positionDamper;
+
+ __declspec(property(put=set_positionSpring)) float_t  positionSpring;
+
+/// @brief Method set_maximumForce, addr 0xb67f27c, size 0x8, virtual false, abstract: false, final false
+inline void set_maximumForce(float_t  value) ;
+
+/// @brief Method set_positionDamper, addr 0xb67f274, size 0x8, virtual false, abstract: false, final false
+inline void set_positionDamper(float_t  value) ;
+
+/// @brief Method set_positionSpring, addr 0xb67f26c, size 0x8, virtual false, abstract: false, final false
+inline void set_positionSpring(float_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr JointDrive() ;
+
+// Ctor Parameters [CppParam { name: "m_PositionSpring", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m_PositionDamper", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m_MaximumForce", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "m_UseAcceleration", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr JointDrive(float_t  m_PositionSpring, float_t  m_PositionDamper, float_t  m_MaximumForce, int32_t  m_UseAcceleration) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30555};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// @brief Field m_PositionSpring, offset: 0x0, size: 0x4, def value: None
+ float_t  m_PositionSpring;
+
+/// @brief Field m_PositionDamper, offset: 0x4, size: 0x4, def value: None
+ float_t  m_PositionDamper;
+
+/// @brief Field m_MaximumForce, offset: 0x8, size: 0x4, def value: None
+ float_t  m_MaximumForce;
+
+/// @brief Field m_UseAcceleration, offset: 0xc, size: 0x4, def value: None
+ int32_t  m_UseAcceleration;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::JointDrive, m_PositionSpring) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::JointDrive, m_PositionDamper) == 0x4, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::JointDrive, m_MaximumForce) == 0x8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::JointDrive, m_UseAcceleration) == 0xc, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::JointDrive) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

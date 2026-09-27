@@ -1,0 +1,162 @@
+#pragma once
+// IWYU pragma private; include "System/Data/Common/SqlConvert.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(SqlConvert)
+namespace System::Data::Common {
+struct StorageType;
+}
+namespace System::Data::SqlTypes {
+struct SqlBinary;
+}
+namespace System::Data::SqlTypes {
+struct SqlBoolean;
+}
+namespace System::Data::SqlTypes {
+struct SqlByte;
+}
+namespace System::Data::SqlTypes {
+class SqlBytes;
+}
+namespace System::Data::SqlTypes {
+class SqlChars;
+}
+namespace System::Data::SqlTypes {
+struct SqlDateTime;
+}
+namespace System::Data::SqlTypes {
+struct SqlDecimal;
+}
+namespace System::Data::SqlTypes {
+struct SqlDouble;
+}
+namespace System::Data::SqlTypes {
+struct SqlGuid;
+}
+namespace System::Data::SqlTypes {
+struct SqlInt16;
+}
+namespace System::Data::SqlTypes {
+struct SqlInt32;
+}
+namespace System::Data::SqlTypes {
+struct SqlInt64;
+}
+namespace System::Data::SqlTypes {
+struct SqlMoney;
+}
+namespace System::Data::SqlTypes {
+struct SqlSingle;
+}
+namespace System::Data::SqlTypes {
+struct SqlString;
+}
+namespace System {
+struct DateTimeOffset;
+}
+namespace System {
+class IFormatProvider;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System::Data::Common {
+class SqlConvert;
+}
+// Write type traits
+MARK_REF_T(::System::Data::Common::SqlConvert*);
+DEFINE_IL2CPP_CLASS(::System::Data::Common::SqlConvert*, "System.Data.Common", "SqlConvert");
+// Dependencies System.Object
+namespace System::Data::Common {
+// Is value type: false
+// CS Name: System.Data.Common.SqlConvert
+class CORDL_TYPE SqlConvert : public ::System::Object {
+public:
+// Declarations
+/// @brief Method ChangeType2, addr 0xa9b6bc8, size 0xfcc, virtual false, abstract: false, final false
+static inline ::System::Object* ChangeType2(::System::Object*  value, ::System::Data::Common::StorageType  stype, ::System::Type*  type, ::System::IFormatProvider*  formatProvider) ;
+
+/// @brief Method ChangeTypeForDefaultValue, addr 0xa9b6a08, size 0x1c0, virtual false, abstract: false, final false
+static inline ::System::Object* ChangeTypeForDefaultValue(::System::Object*  value, ::System::Type*  type, ::System::IFormatProvider*  formatProvider) ;
+
+/// @brief Method ChangeTypeForXML, addr 0xa9b7b94, size 0x1ce0, virtual false, abstract: false, final false
+static inline ::System::Object* ChangeTypeForXML(::System::Object*  value, ::System::Type*  type) ;
+
+/// @brief Method ConvertStringToDateTimeOffset, addr 0xa9b69a0, size 0x68, virtual false, abstract: false, final false
+static inline ::System::DateTimeOffset ConvertStringToDateTimeOffset(::StringW  value, ::System::IFormatProvider*  formatProvider) ;
+
+/// @brief Method ConvertToSqlBinary, addr 0xa9b6368, size 0x1d4, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlBinary ConvertToSqlBinary(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlBoolean, addr 0xa9b5fc8, size 0x1c0, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlBoolean ConvertToSqlBoolean(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlByte, addr 0xa9b3964, size 0x1d4, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlByte ConvertToSqlByte(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlBytes, addr 0xa9b6854, size 0x14c, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlBytes* ConvertToSqlBytes(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlChars, addr 0xa9b6708, size 0x14c, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlChars* ConvertToSqlChars(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlDateTime, addr 0xa9b5ddc, size 0x1ec, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlDateTime ConvertToSqlDateTime(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlDecimal, addr 0xa9b4c40, size 0x5cc, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlDecimal ConvertToSqlDecimal(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlDouble, addr 0xa9b4600, size 0x640, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlDouble ConvertToSqlDouble(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlGuid, addr 0xa9b6188, size 0x1e0, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlGuid ConvertToSqlGuid(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlInt16, addr 0xa9b3b38, size 0x294, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlInt16 ConvertToSqlInt16(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlInt32, addr 0xa9b3dcc, size 0x3a4, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlInt32 ConvertToSqlInt32(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlInt64, addr 0xa9b4170, size 0x490, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlInt64 ConvertToSqlInt64(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlMoney, addr 0xa9b5828, size 0x5b4, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlMoney ConvertToSqlMoney(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlSingle, addr 0xa9b520c, size 0x61c, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlSingle ConvertToSqlSingle(::System::Object*  value) ;
+
+/// @brief Method ConvertToSqlString, addr 0xa9b653c, size 0x1cc, virtual false, abstract: false, final false
+static inline ::System::Data::SqlTypes::SqlString ConvertToSqlString(::System::Object*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SqlConvert() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SqlConvert", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SqlConvert(SqlConvert && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SqlConvert", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SqlConvert(SqlConvert const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{21128};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Data::Common::SqlConvert) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Data::Common

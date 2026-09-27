@@ -1,0 +1,116 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Animations/AnimationPlayableOutput.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/Playables/zzzz__PlayableOutputHandle_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstddef>
+CORDL_MODULE_EXPORT(AnimationPlayableOutput)
+namespace System {
+struct IntPtr;
+}
+namespace UnityEngine::Playables {
+class IPlayableOutput;
+}
+namespace UnityEngine::Playables {
+struct PlayableGraph;
+}
+namespace UnityEngine::Playables {
+struct PlayableOutputHandle;
+}
+namespace UnityEngine::Playables {
+struct PlayableOutput;
+}
+namespace UnityEngine {
+class Animator;
+}
+// Forward declare root types
+namespace UnityEngine::Animations {
+struct AnimationPlayableOutput;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::Animations::AnimationPlayableOutput);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Animations::AnimationPlayableOutput, "UnityEngine.Animations", "AnimationPlayableOutput");
+// [NativeHeader("Runtime/Director/Core/HPlayableGraph.h")]
+// [NativeHeader("Runtime/Director/Core/HPlayableOutput.h")]
+// [NativeHeader("Modules/Animation/Animator.h")]
+// [RequiredByNativeCode]
+// [StaticAccessor("AnimationPlayableOutputBindings", (UnityEngine.Bindings.StaticAccessorType)2)]
+// [NativeHeader("Modules/Animation/ScriptBindings/AnimationPlayableOutput.bindings.h")]
+// [NativeHeader("Modules/Animation/Director/AnimationPlayableOutput.h")]
+// Dependencies UnityEngine.Playables.PlayableOutputHandle
+namespace UnityEngine::Animations {
+// Is value type: true
+// CS Name: UnityEngine.Animations.AnimationPlayableOutput
+struct CORDL_TYPE AnimationPlayableOutput {
+public:
+// Declarations
+/// @brief Convert operator to "::UnityEngine::Playables::IPlayableOutput"
+constexpr operator  ::UnityEngine::Playables::IPlayableOutput*() ;
+
+/// @brief Method Create, addr 0xb549be8, size 0x60, virtual false, abstract: false, final false
+static inline ::UnityEngine::Animations::AnimationPlayableOutput Create(::UnityEngine::Playables::PlayableGraph  graph, ::StringW  name, ::UnityEngine::Animator*  target) ;
+
+/// @brief Method GetHandle, addr 0xb549900, size 0xc, virtual true, abstract: false, final true
+inline ::UnityEngine::Playables::PlayableOutputHandle GetHandle() ;
+
+/// @brief Method GetTarget, addr 0xb54c05c, size 0x4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Animator> GetTarget() ;
+
+/// [NativeThrows]
+/// @brief Method InternalGetTarget, addr 0xb54c060, size 0x6c, virtual false, abstract: false, final false
+static inline ::UnityW<::UnityEngine::Animator> InternalGetTarget(::by_ref<::UnityEngine::Playables::PlayableOutputHandle>  handle) ;
+
+/// @brief Method InternalGetTarget_Injected, addr 0xb54c158, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr InternalGetTarget_Injected(::by_ref<::UnityEngine::Playables::PlayableOutputHandle>  handle) ;
+
+/// [NativeThrows]
+/// @brief Method InternalSetTarget, addr 0xb54c0cc, size 0x8c, virtual false, abstract: false, final false
+static inline void InternalSetTarget(::by_ref<::UnityEngine::Playables::PlayableOutputHandle>  handle, ::UnityEngine::Animator*  target) ;
+
+/// @brief Method InternalSetTarget_Injected, addr 0xb54c194, size 0x44, virtual false, abstract: false, final false
+static inline void InternalSetTarget_Injected(::by_ref<::UnityEngine::Playables::PlayableOutputHandle>  handle, ::System::IntPtr  target) ;
+
+/// @brief Method SetTarget, addr 0xb54bfd4, size 0x4, virtual false, abstract: false, final false
+inline void SetTarget(::UnityEngine::Animator*  value) ;
+
+/// @brief Method .ctor, addr 0xb54bee4, size 0xf0, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Playables::PlayableOutputHandle  handle) ;
+
+/// @brief Method get_Null, addr 0xb54be68, size 0x7c, virtual false, abstract: false, final false
+static inline ::UnityEngine::Animations::AnimationPlayableOutput get_Null() ;
+
+/// @brief Convert to "::UnityEngine::Playables::IPlayableOutput"
+constexpr ::UnityEngine::Playables::IPlayableOutput* i___UnityEngine__Playables__IPlayableOutput() ;
+
+/// @brief Method op_Explicit, addr 0xb54bfd8, size 0x84, virtual false, abstract: false, final false
+static inline ::UnityEngine::Animations::AnimationPlayableOutput op_Explicit___UnityEngine__Animations__AnimationPlayableOutput(::UnityEngine::Playables::PlayableOutput  output) ;
+
+/// @brief Method op_Implicit, addr 0xb549c48, size 0x30, virtual false, abstract: false, final false
+static inline ::UnityEngine::Playables::PlayableOutput op_Implicit___UnityEngine__Playables__PlayableOutput(::UnityEngine::Animations::AnimationPlayableOutput  output) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr AnimationPlayableOutput() ;
+
+// Ctor Parameters [CppParam { name: "m_Handle", ty: "::UnityEngine::Playables::PlayableOutputHandle", modifiers: "", def_value: None, comment: None }]
+constexpr AnimationPlayableOutput(::UnityEngine::Playables::PlayableOutputHandle  m_Handle) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{29813};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// @brief Field m_Handle, offset: 0x0, size: 0x10, def value: None
+ ::UnityEngine::Playables::PlayableOutputHandle  m_Handle;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Animations::AnimationPlayableOutput, m_Handle) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Animations::AnimationPlayableOutput) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Animations

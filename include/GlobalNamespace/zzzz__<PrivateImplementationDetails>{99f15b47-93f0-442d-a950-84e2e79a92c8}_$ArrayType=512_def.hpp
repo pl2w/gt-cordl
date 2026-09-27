@@ -1,0 +1,42 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/<PrivateImplementationDetails>{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+CORDL_MODULE_EXPORT(<PrivateImplementationDetails>{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512)
+// Forward declare root types
+namespace GlobalNamespace {
+struct _PrivateImplementationDetails_{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::_PrivateImplementationDetails_{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::_PrivateImplementationDetails_{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512, "", "<PrivateImplementationDetails>{99f15b47-93f0-442d-a950-84e2e79a92c8}/$ArrayType=512");
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: <PrivateImplementationDetails>{99f15b47-93f0-442d-a950-84e2e79a92c8}/$ArrayType=512
+#pragma pack(push, 1)
+struct CORDL_TYPE _PrivateImplementationDetails_{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512 {
+public:
+// Declarations
+// Ctor Parameters []
+// @brief default ctor
+constexpr _PrivateImplementationDetails_{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512() ;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28218};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x200};
+
+/// @brief Size padding 0x200 - 0x0 = 0x200, packed as 0x200
+ uint8_t  _cordl_size_padding[0x200];
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+#pragma pack(pop)
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::_PrivateImplementationDetails_{99f15b47-93f0-442d-a950-84e2e79a92c8}_$ArrayType=512) == 0x200, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

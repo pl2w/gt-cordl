@@ -1,0 +1,66 @@
+#pragma once
+// IWYU pragma private; include "Cysharp/Threading/Tasks/Linq/ToDictionary__ToDictionaryAwaitAsync_d__3_3.hpp"
+#include "Cysharp/Threading/Tasks/CompilerServices/zzzz__AsyncUniTaskMethodBuilder_1_impl.hpp"
+#include "Cysharp/Threading/Tasks/zzzz__UniTask_Awaiter_impl.hpp"
+#include "Cysharp/Threading/Tasks/zzzz__UniTask`1_Awaiter_impl.hpp"
+#include "System/Threading/zzzz__CancellationToken_impl.hpp"
+#include "Cysharp/Threading/Tasks/Linq/zzzz__ToDictionary__ToDictionaryAwaitAsync_d__3_3_def.hpp"
+#include "Cysharp/Threading/Tasks/zzzz__IUniTaskAsyncEnumerable_1_def.hpp"
+#include "Cysharp/Threading/Tasks/zzzz__IUniTaskAsyncEnumerator_1_def.hpp"
+#include "Cysharp/Threading/Tasks/zzzz__UniTask_1_def.hpp"
+#include "System/Collections/Generic/zzzz__Dictionary_2_def.hpp"
+#include "System/Collections/Generic/zzzz__IEqualityComparer_1_def.hpp"
+#include "System/Runtime/CompilerServices/zzzz__IAsyncStateMachine_def.hpp"
+#include "System/zzzz__Func_2_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+template<typename TSource,typename TKey,typename TElement>
+inline void GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+template<typename TSource,typename TKey,typename TElement>
+inline void GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>::SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine*  stateMachine)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>>(),
+                        {"SetStateMachine", {}, {::i2c::type_of<::System::Runtime::CompilerServices::IAsyncStateMachine*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, stateMachine);
+}
+/// @brief Convert operator to "::System::Runtime::CompilerServices::IAsyncStateMachine"
+template<typename TSource,typename TKey,typename TElement>
+constexpr  GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>::operator ::System::Runtime::CompilerServices::IAsyncStateMachine*()  {
+return static_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+/// @brief Convert to "::System::Runtime::CompilerServices::IAsyncStateMachine"
+template<typename TSource,typename TKey,typename TElement>
+constexpr ::System::Runtime::CompilerServices::IAsyncStateMachine* GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>::i___System__Runtime__CompilerServices__IAsyncStateMachine()  {
+return static_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+// Ctor Parameters [CppParam { name: "__1__state", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__t__builder", ty: "::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::Collections::Generic::Dictionary_2<TKey,TElement>*>", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "comparer", ty: "::System::Collections::Generic::IEqualityComparer_1<TKey>*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "source", ty: "::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "cancellationToken", ty: "::System::Threading::CancellationToken", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "keySelector", ty: "::System::Func_2<TSource,::Cysharp::Threading::Tasks::UniTask_1<TKey>>*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "elementSelector", ty: "::System::Func_2<TSource,::Cysharp::Threading::Tasks::UniTask_1<TElement>>*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "_dict_5__2", ty: "::System::Collections::Generic::Dictionary_2<TKey,TElement>*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "_e_5__3", ty: "::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__7__wrap3", ty: "::System::Object*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__7__wrap4", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "_v_5__6", ty: "TSource", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "_key_5__7", ty: "TKey", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__u__1", ty: "::GlobalNamespace::UniTask_1_Awaiter<TKey>", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__u__2", ty: "::GlobalNamespace::UniTask_1_Awaiter<TElement>", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__u__3", ty: "::GlobalNamespace::UniTask_1_Awaiter<bool>", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__u__4", ty: "::GlobalNamespace::UniTask_Awaiter", modifiers: "", def_value: Some("{}"), comment: None }]
+template<typename TSource,typename TKey,typename TElement>
+constexpr ::GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>::ToDictionary__ToDictionaryAwaitAsync_d__3_3(int32_t  __1__state, ::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::Collections::Generic::Dictionary_2<TKey,TElement>*>  __t__builder, ::System::Collections::Generic::IEqualityComparer_1<TKey>*  comparer, ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*  source, ::System::Threading::CancellationToken  cancellationToken, ::System::Func_2<TSource,::Cysharp::Threading::Tasks::UniTask_1<TKey>>*  keySelector, ::System::Func_2<TSource,::Cysharp::Threading::Tasks::UniTask_1<TElement>>*  elementSelector, ::System::Collections::Generic::Dictionary_2<TKey,TElement>*  _dict_5__2, ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*  _e_5__3, ::System::Object*  __7__wrap3, int32_t  __7__wrap4, TSource  _v_5__6, TKey  _key_5__7, ::GlobalNamespace::UniTask_1_Awaiter<TKey>  __u__1, ::GlobalNamespace::UniTask_1_Awaiter<TElement>  __u__2, ::GlobalNamespace::UniTask_1_Awaiter<bool>  __u__3, ::GlobalNamespace::UniTask_Awaiter  __u__4) noexcept  {
+this->__1__state = __1__state;
+this->__t__builder = __t__builder;
+this->comparer = comparer;
+this->source = source;
+this->cancellationToken = cancellationToken;
+this->keySelector = keySelector;
+this->elementSelector = elementSelector;
+this->_dict_5__2 = _dict_5__2;
+this->_e_5__3 = _e_5__3;
+this->__7__wrap3 = __7__wrap3;
+this->__7__wrap4 = __7__wrap4;
+this->_v_5__6 = _v_5__6;
+this->_key_5__7 = _key_5__7;
+this->__u__1 = __u__1;
+this->__u__2 = __u__2;
+this->__u__3 = __u__3;
+this->__u__4 = __u__4;
+}
+// Ctor Parameters []
+template<typename TSource,typename TKey,typename TElement>
+constexpr ::GlobalNamespace::ToDictionary__ToDictionaryAwaitAsync_d__3_3<TSource,TKey,TElement>::ToDictionary__ToDictionaryAwaitAsync_d__3_3()   {
+}

@@ -1,0 +1,118 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/Poly2Tri/Triangulatable.hpp"
+#include "UnityEngine/ProBuilder/Poly2Tri/zzzz__Triangulatable_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerable_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IList_1_def.hpp"
+#include "UnityEngine/ProBuilder/Poly2Tri/zzzz__DelaunayTriangle_def.hpp"
+#include "UnityEngine/ProBuilder/Poly2Tri/zzzz__TriangulationContext_def.hpp"
+#include "UnityEngine/ProBuilder/Poly2Tri/zzzz__TriangulationMode_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Poly2Tri::Triangulatable.Prepare
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::*)(::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext*)>(&::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::Prepare)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Poly2Tri::Triangulatable.get_Triangles
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>* (::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::*)()>(&::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::get_Triangles)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Poly2Tri::Triangulatable.AddTriangle
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::*)(::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*)>(&::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::AddTriangle)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 2}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Poly2Tri::Triangulatable.AddTriangles
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::*)(::System::Collections::Generic::IEnumerable_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*)>(&::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::AddTriangles)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 3}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Poly2Tri::Triangulatable.get_TriangulationMode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode (::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::*)()>(&::UnityEngine::ProBuilder::Poly2Tri::Triangulatable::get_TriangulationMode)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 4}
+                ));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::ProBuilder::Poly2Tri::Triangulatable::Prepare(::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext*  tcx)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, tcx);
+}
+inline ::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>* UnityEngine::ProBuilder::Poly2Tri::Triangulatable::get_Triangles()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*>(this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::Poly2Tri::Triangulatable::AddTriangle(::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*  t)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 2}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, t);
+}
+inline void UnityEngine::ProBuilder::Poly2Tri::Triangulatable::AddTriangles(::System::Collections::Generic::IEnumerable_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*  list)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 3}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, list);
+}
+inline ::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode UnityEngine::ProBuilder::Poly2Tri::Triangulatable::get_TriangulationMode()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*>(), 4}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode>(this, ___internal_method);
+}

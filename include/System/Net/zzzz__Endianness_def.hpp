@@ -1,0 +1,70 @@
+#pragma once
+// IWYU pragma private; include "System/Net/Endianness.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(Endianness)
+// Forward declare root types
+namespace System::Net {
+struct Endianness;
+}
+// Write type traits
+MARK_VAL_T(::System::Net::Endianness);
+DEFINE_IL2CPP_CLASS(::System::Net::Endianness, "System.Net", "Endianness");
+// Dependencies 
+namespace System::Net {
+// Is value type: true
+// CS Name: System.Net.Endianness
+struct CORDL_TYPE Endianness {
+public:
+// Declarations
+using __CORDL_BACKING_ENUM_TYPE = int32_t;
+
+/// @brief Nested struct __Endianness_Unwrapped
+enum struct __Endianness_Unwrapped : int32_t {
+__E_Network = static_cast<int32_t>(0x0),
+__E_Native = static_cast<int32_t>(0x10),
+};
+
+/// @brief Conversion into unwrapped enum value
+constexpr operator __Endianness_Unwrapped () const noexcept {
+return static_cast<__Endianness_Unwrapped>(this->value__);
+}
+
+/// @brief Conversion into unwrapped enum value
+constexpr explicit operator int32_t () const noexcept {
+return static_cast<int32_t>(this->value__);
+}
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr Endianness() ;
+
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr Endianness(int32_t  value__) noexcept;
+
+/// @brief Field Native value: I32(16)
+static ::System::Net::Endianness const Native;
+
+/// @brief Field Network value: I32(0)
+static ::System::Net::Endianness const Network;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10519};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field value__, offset: 0x0, size: 0x4, def value: None
+ int32_t  value__;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Net::Endianness, value__) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::System::Net::Endianness) == 0x4, "Size mismatch!");
+
+} // namespace end def System::Net

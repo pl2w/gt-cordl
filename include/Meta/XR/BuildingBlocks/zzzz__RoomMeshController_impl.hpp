@@ -1,0 +1,932 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/BuildingBlocks/RoomMeshController.hpp"
+#include "GlobalNamespace/zzzz__OVRAnchor_FetchResult_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRAnchor_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRObjectPool_ListScope_1_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRResult_2_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRTask_1_impl.hpp"
+#include "System/Collections/Generic/zzzz__List`1_Enumerator_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "Meta/XR/BuildingBlocks/zzzz__RoomMeshController_def.hpp"
+#include "GlobalNamespace/zzzz__OVRAnchor_def.hpp"
+#include "GlobalNamespace/zzzz__RoomMeshAnchor_def.hpp"
+#include "Meta/XR/BuildingBlocks/zzzz__RoomMeshController_def.hpp"
+#include "Meta/XR/BuildingBlocks/zzzz__RoomMeshEvent_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerator_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/Collections/zzzz__IEnumerator_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/zzzz__GameObject_def.hpp"
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController.Awake
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController::Awake)> {
+  constexpr static std::size_t size = 0xb0;
+  constexpr static std::size_t addrs = 0x9ec2a44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"Awake", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController.Start
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::IEnumerator* (::Meta::XR::BuildingBlocks::RoomMeshController::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController::Start)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0x9ec2af4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"Start", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController.UpdateVolume
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::IEnumerator* (::Meta::XR::BuildingBlocks::RoomMeshController::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController::UpdateVolume)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0x9ec2b88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"UpdateVolume", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController.LoadRoomMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::IEnumerator* (::Meta::XR::BuildingBlocks::RoomMeshController::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController::LoadRoomMesh)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0x9ec2c1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"LoadRoomMesh", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController.InstantiateRoomMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController::*)(::GlobalNamespace::OVRAnchor, ::UnityEngine::GameObject*)>(&::Meta::XR::BuildingBlocks::RoomMeshController::InstantiateRoomMesh)> {
+  constexpr static std::size_t size = 0x1e8;
+  constexpr static std::size_t addrs = 0x9ec2cb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"InstantiateRoomMesh", {}, {::i2c::type_of<::GlobalNamespace::OVRAnchor>(), ::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0x9ec2e98;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityW<::UnityEngine::GameObject>& Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_get__meshPrefab()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____meshPrefab;
+}
+constexpr ::UnityW<::UnityEngine::GameObject> const& Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_get__meshPrefab() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____meshPrefab;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_set__meshPrefab(::UnityW<::UnityEngine::GameObject>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____meshPrefab = value;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshEvent>& Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_get__roomMeshEvent()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____roomMeshEvent;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshEvent> const& Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_get__roomMeshEvent() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____roomMeshEvent;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_set__roomMeshEvent(::UnityW<::Meta::XR::BuildingBlocks::RoomMeshEvent>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____roomMeshEvent = value;
+}
+constexpr ::UnityW<::GlobalNamespace::RoomMeshAnchor>& Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_get__roomMeshAnchor()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____roomMeshAnchor;
+}
+constexpr ::UnityW<::GlobalNamespace::RoomMeshAnchor> const& Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_get__roomMeshAnchor() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____roomMeshAnchor;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController::__cordl_internal_set__roomMeshAnchor(::UnityW<::GlobalNamespace::RoomMeshAnchor>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____roomMeshAnchor = value;
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController::Awake()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"Awake", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Collections::IEnumerator* Meta::XR::BuildingBlocks::RoomMeshController::Start()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"Start", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::IEnumerator*>(this, ___internal_method);
+}
+inline ::System::Collections::IEnumerator* Meta::XR::BuildingBlocks::RoomMeshController::UpdateVolume()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"UpdateVolume", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::IEnumerator*>(this, ___internal_method);
+}
+inline ::System::Collections::IEnumerator* Meta::XR::BuildingBlocks::RoomMeshController::LoadRoomMesh()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"LoadRoomMesh", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::IEnumerator*>(this, ___internal_method);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController::InstantiateRoomMesh(::GlobalNamespace::OVRAnchor  anchor, ::UnityEngine::GameObject*  prefab)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {"InstantiateRoomMesh", {}, {::i2c::type_of<::GlobalNamespace::OVRAnchor>(), ::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, anchor, prefab);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::Meta::XR::BuildingBlocks::RoomMeshController* Meta::XR::BuildingBlocks::RoomMeshController::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Meta::XR::BuildingBlocks::RoomMeshController*>());
+}
+// Ctor Parameters []
+constexpr ::Meta::XR::BuildingBlocks::RoomMeshController::RoomMeshController()   {
+}
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::*)(int32_t)>(&::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::_ctor)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0x9ec2bf4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5.System_IDisposable_Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_IDisposable_Dispose)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0x9ec38a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5.MoveNext
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::MoveNext)> {
+  constexpr static std::size_t size = 0x418;
+  constexpr static std::size_t addrs = 0x9ec38ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5.System_Collections_Generic_IEnumerator_System_Object__get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_Collections_Generic_IEnumerator_System_Object__get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0x9ec3cc4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.Collections.Generic.IEnumerator<System.Object>.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5.System_Collections_IEnumerator_Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_Collections_IEnumerator_Reset)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0x9ec3ccc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5.System_Collections_IEnumerator_get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_Collections_IEnumerator_get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0x9ec3d04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_get___1__state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr int32_t const& Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_get___1__state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_set___1__state(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____1__state = value;
+}
+constexpr ::System::Object*& Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_get___2__current()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr ::System::Object* const& Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_get___2__current() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_set___2__current(::System::Object*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____2__current = value;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController>& Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_get___4__this()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController> const& Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_get___4__this() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::__cordl_internal_set___4__this(::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____4__this = value;
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::_ctor(int32_t  __1__state)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, __1__state);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_IDisposable_Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::System::Object* Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_Collections_Generic_IEnumerator_System_Object__get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.Collections.Generic.IEnumerator<System.Object>.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_Collections_IEnumerator_Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Object* Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::System_Collections_IEnumerator_get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+/// @brief [DebuggerHidden]
+inline ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5* Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::New_ctor(int32_t  __1__state)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5*>(__1__state));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::operator ::System::Collections::Generic::IEnumerator_1<::System::Object*>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::System::Object*>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr ::System::Collections::Generic::IEnumerator_1<::System::Object*>* Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::i___System__Collections__Generic__IEnumerator_1___System__Object__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::System::Object*>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerator"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::operator ::System::Collections::IEnumerator*() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerator"
+constexpr ::System::Collections::IEnumerator* Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::i___System__Collections__IEnumerator() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::Meta::XR::BuildingBlocks::RoomMeshController__UpdateVolume_d__5::RoomMeshController__UpdateVolume_d__5()   {
+}
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::*)(int32_t)>(&::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::_ctor)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0x9ec2b60;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4.System_IDisposable_Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_IDisposable_Dispose)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0x9ec35b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4.MoveNext
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::MoveNext)> {
+  constexpr static std::size_t size = 0x2a4;
+  constexpr static std::size_t addrs = 0x9ec35bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4.System_Collections_Generic_IEnumerator_System_Object__get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_Collections_Generic_IEnumerator_System_Object__get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0x9ec3860;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.Collections.Generic.IEnumerator<System.Object>.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4.System_Collections_IEnumerator_Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_Collections_IEnumerator_Reset)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0x9ec3868;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4.System_Collections_IEnumerator_get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_Collections_IEnumerator_get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0x9ec38a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get___1__state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr int32_t const& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get___1__state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_set___1__state(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____1__state = value;
+}
+constexpr ::System::Object*& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get___2__current()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr ::System::Object* const& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get___2__current() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_set___2__current(::System::Object*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____2__current = value;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController>& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get___4__this()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController> const& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get___4__this() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_set___4__this(::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____4__this = value;
+}
+constexpr float_t& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get__timeout_5__2()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____timeout_5__2;
+}
+constexpr float_t const& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get__timeout_5__2() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____timeout_5__2;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_set__timeout_5__2(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____timeout_5__2 = value;
+}
+constexpr float_t& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get__startTime_5__3()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____startTime_5__3;
+}
+constexpr float_t const& Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_get__startTime_5__3() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____startTime_5__3;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::__cordl_internal_set__startTime_5__3(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____startTime_5__3 = value;
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::_ctor(int32_t  __1__state)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, __1__state);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_IDisposable_Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::System::Object* Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_Collections_Generic_IEnumerator_System_Object__get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.Collections.Generic.IEnumerator<System.Object>.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_Collections_IEnumerator_Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Object* Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::System_Collections_IEnumerator_get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+/// @brief [DebuggerHidden]
+inline ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4* Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::New_ctor(int32_t  __1__state)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4*>(__1__state));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::operator ::System::Collections::Generic::IEnumerator_1<::System::Object*>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::System::Object*>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr ::System::Collections::Generic::IEnumerator_1<::System::Object*>* Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::i___System__Collections__Generic__IEnumerator_1___System__Object__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::System::Object*>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerator"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::operator ::System::Collections::IEnumerator*() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerator"
+constexpr ::System::Collections::IEnumerator* Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::i___System__Collections__IEnumerator() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::Meta::XR::BuildingBlocks::RoomMeshController__Start_d__4::RoomMeshController__Start_d__4()   {
+}
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)(int32_t)>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::_ctor)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0x9ec2c88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6.System_IDisposable_Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_IDisposable_Dispose)> {
+  constexpr static std::size_t size = 0xb0;
+  constexpr static std::size_t addrs = 0x9ec2ea0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6.MoveNext
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::MoveNext)> {
+  constexpr static std::size_t size = 0x580;
+  constexpr static std::size_t addrs = 0x9ec2f50;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6.__m__Finally1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__m__Finally1)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0x9ec3520;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"<>m__Finally1", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6.__m__Finally2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__m__Finally2)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0x9ec34d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"<>m__Finally2", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6.System_Collections_Generic_IEnumerator_System_Object__get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_Collections_Generic_IEnumerator_System_Object__get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0x9ec3570;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.Collections.Generic.IEnumerator<System.Object>.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6.System_Collections_IEnumerator_Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_Collections_IEnumerator_Reset)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0x9ec3578;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6.System_Collections_IEnumerator_get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::*)()>(&::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_Collections_IEnumerator_get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0x9ec35b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___1__state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr int32_t const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___1__state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set___1__state(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____1__state = value;
+}
+constexpr ::System::Object*& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___2__current()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr ::System::Object* const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___2__current() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set___2__current(::System::Object*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____2__current = value;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController>& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___4__this()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr ::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController> const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___4__this() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set___4__this(::UnityW<::Meta::XR::BuildingBlocks::RoomMeshController>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____4__this = value;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRAnchor>*& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__anchors_5__2()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____anchors_5__2;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::OVRAnchor>* const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__anchors_5__2() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____anchors_5__2;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set__anchors_5__2(::System::Collections::Generic::List_1<::GlobalNamespace::OVRAnchor>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____anchors_5__2 = value;
+}
+constexpr ::GlobalNamespace::OVRObjectPool_ListScope_1<::GlobalNamespace::OVRAnchor>& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___7__wrap2()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap2;
+}
+constexpr ::GlobalNamespace::OVRObjectPool_ListScope_1<::GlobalNamespace::OVRAnchor> const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___7__wrap2() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap2;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set___7__wrap2(::GlobalNamespace::OVRObjectPool_ListScope_1<::GlobalNamespace::OVRAnchor>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____7__wrap2 = value;
+}
+constexpr ::GlobalNamespace::OVRTask_1<::GlobalNamespace::OVRResult_2<::System::Collections::Generic::List_1<::GlobalNamespace::OVRAnchor>*,::GlobalNamespace::OVRAnchor_FetchResult>>& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__task_5__4()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____task_5__4;
+}
+constexpr ::GlobalNamespace::OVRTask_1<::GlobalNamespace::OVRResult_2<::System::Collections::Generic::List_1<::GlobalNamespace::OVRAnchor>*,::GlobalNamespace::OVRAnchor_FetchResult>> const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__task_5__4() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____task_5__4;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set__task_5__4(::GlobalNamespace::OVRTask_1<::GlobalNamespace::OVRResult_2<::System::Collections::Generic::List_1<::GlobalNamespace::OVRAnchor>*,::GlobalNamespace::OVRAnchor_FetchResult>>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____task_5__4 = value;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::GlobalNamespace::OVRAnchor>& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___7__wrap4()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap4;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::GlobalNamespace::OVRAnchor> const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get___7__wrap4() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____7__wrap4;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set___7__wrap4(::GlobalNamespace::List_1_Enumerator<::GlobalNamespace::OVRAnchor>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____7__wrap4 = value;
+}
+constexpr ::GlobalNamespace::OVRAnchor& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__anchor_5__6()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____anchor_5__6;
+}
+constexpr ::GlobalNamespace::OVRAnchor const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__anchor_5__6() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____anchor_5__6;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set__anchor_5__6(::GlobalNamespace::OVRAnchor  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____anchor_5__6 = value;
+}
+constexpr ::GlobalNamespace::OVRTask_1<bool>& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__localizeTask_5__7()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____localizeTask_5__7;
+}
+constexpr ::GlobalNamespace::OVRTask_1<bool> const& Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_get__localizeTask_5__7() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____localizeTask_5__7;
+}
+constexpr void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__cordl_internal_set__localizeTask_5__7(::GlobalNamespace::OVRTask_1<bool>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____localizeTask_5__7 = value;
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::_ctor(int32_t  __1__state)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, __1__state);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_IDisposable_Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__m__Finally1()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"<>m__Finally1", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::__m__Finally2()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"<>m__Finally2", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Object* Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_Collections_Generic_IEnumerator_System_Object__get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.Collections.Generic.IEnumerator<System.Object>.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline void Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_Collections_IEnumerator_Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Object* Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::System_Collections_IEnumerator_get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+/// @brief [DebuggerHidden]
+inline ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6* Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::New_ctor(int32_t  __1__state)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6*>(__1__state));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::operator ::System::Collections::Generic::IEnumerator_1<::System::Object*>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::System::Object*>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr ::System::Collections::Generic::IEnumerator_1<::System::Object*>* Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::i___System__Collections__Generic__IEnumerator_1___System__Object__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::System::Object*>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerator"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::operator ::System::Collections::IEnumerator*() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerator"
+constexpr ::System::Collections::IEnumerator* Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::i___System__Collections__IEnumerator() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::Meta::XR::BuildingBlocks::RoomMeshController__LoadRoomMesh_d__6::RoomMeshController__LoadRoomMesh_d__6()   {
+}

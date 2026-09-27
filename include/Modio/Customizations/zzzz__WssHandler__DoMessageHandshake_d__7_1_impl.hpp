@@ -1,0 +1,52 @@
+#pragma once
+// IWYU pragma private; include "Modio/Customizations/WssHandler__DoMessageHandshake_d__7_1.hpp"
+#include "Modio/Customizations/zzzz__WssMessage_impl.hpp"
+#include "System/Runtime/CompilerServices/zzzz__AsyncTaskMethodBuilder_1_impl.hpp"
+#include "System/Runtime/CompilerServices/zzzz__TaskAwaiter_1_impl.hpp"
+#include "System/zzzz__ValueTuple_2_impl.hpp"
+#include "Modio/Customizations/zzzz__WssHandler__DoMessageHandshake_d__7_1_def.hpp"
+#include "Modio/Customizations/zzzz__WssMessage_def.hpp"
+#include "Modio/zzzz__Error_def.hpp"
+#include "System/Runtime/CompilerServices/zzzz__IAsyncStateMachine_def.hpp"
+#include "System/Threading/Tasks/zzzz__Task_1_def.hpp"
+#include "System/zzzz__ValueTuple_2_def.hpp"
+template<typename T>
+inline void GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+template<typename T>
+inline void GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>::SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine*  stateMachine)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>>(),
+                        {"SetStateMachine", {}, {::i2c::type_of<::System::Runtime::CompilerServices::IAsyncStateMachine*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, stateMachine);
+}
+/// @brief Convert operator to "::System::Runtime::CompilerServices::IAsyncStateMachine"
+template<typename T>
+constexpr  GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>::operator ::System::Runtime::CompilerServices::IAsyncStateMachine*()  {
+return static_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+/// @brief Convert to "::System::Runtime::CompilerServices::IAsyncStateMachine"
+template<typename T>
+constexpr ::System::Runtime::CompilerServices::IAsyncStateMachine* GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>::i___System__Runtime__CompilerServices__IAsyncStateMachine()  {
+return static_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+// Ctor Parameters [CppParam { name: "__1__state", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__t__builder", ty: "::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_2<::Modio::Error*,T>>", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "message", ty: "::Modio::Customizations::WssMessage", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "_task_5__2", ty: "::System::Threading::Tasks::Task_1<::System::ValueTuple_2<::Modio::Error*,::Modio::Customizations::WssMessage>>*", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__u__1", ty: "::System::Runtime::CompilerServices::TaskAwaiter_1<::Modio::Error*>", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "__u__2", ty: "::System::Runtime::CompilerServices::TaskAwaiter_1<::System::ValueTuple_2<::Modio::Error*,::Modio::Customizations::WssMessage>>", modifiers: "", def_value: Some("{}"), comment: None }]
+template<typename T>
+constexpr ::GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>::WssHandler__DoMessageHandshake_d__7_1(int32_t  __1__state, ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_2<::Modio::Error*,T>>  __t__builder, ::Modio::Customizations::WssMessage  message, ::System::Threading::Tasks::Task_1<::System::ValueTuple_2<::Modio::Error*,::Modio::Customizations::WssMessage>>*  _task_5__2, ::System::Runtime::CompilerServices::TaskAwaiter_1<::Modio::Error*>  __u__1, ::System::Runtime::CompilerServices::TaskAwaiter_1<::System::ValueTuple_2<::Modio::Error*,::Modio::Customizations::WssMessage>>  __u__2) noexcept  {
+this->__1__state = __1__state;
+this->__t__builder = __t__builder;
+this->message = message;
+this->_task_5__2 = _task_5__2;
+this->__u__1 = __u__1;
+this->__u__2 = __u__2;
+}
+// Ctor Parameters []
+template<typename T>
+constexpr ::GlobalNamespace::WssHandler__DoMessageHandshake_d__7_1<T>::WssHandler__DoMessageHandshake_d__7_1()   {
+}

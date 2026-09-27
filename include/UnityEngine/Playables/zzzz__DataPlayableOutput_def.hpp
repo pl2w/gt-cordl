@@ -1,0 +1,78 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Playables/DataPlayableOutput.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/Playables/zzzz__PlayableOutputHandle_def.hpp"
+#include <cstddef>
+CORDL_MODULE_EXPORT(DataPlayableOutput)
+namespace System {
+class Object;
+}
+namespace UnityEngine::Playables {
+class IPlayableOutput;
+}
+namespace UnityEngine::Playables {
+struct PlayableOutputHandle;
+}
+// Forward declare root types
+namespace UnityEngine::Playables {
+struct DataPlayableOutput;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::Playables::DataPlayableOutput);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Playables::DataPlayableOutput, "UnityEngine.Playables", "DataPlayableOutput");
+// [NativeHeader("Modules/Director/ScriptBindings/DataPlayableOutput.bindings.h")]
+// [NativeHeader("Modules/Director/ScriptBindings/DataPlayableOutputExtensions.bindings.h")]
+// [NativeHeader("Modules/Director/DataPlayableOutput.h")]
+// [NativeHeader("Runtime/Director/Core/HPlayableGraph.h")]
+// [NativeHeader("Runtime/Director/Core/HPlayableOutput.h")]
+// [StaticAccessor("DataPlayableOutputBindings", (UnityEngine.Bindings.StaticAccessorType)2)]
+// [RequiredByNativeCode]
+// Dependencies UnityEngine.Playables.PlayableOutputHandle
+namespace UnityEngine::Playables {
+// Is value type: true
+// CS Name: UnityEngine.Playables.DataPlayableOutput
+struct CORDL_TYPE DataPlayableOutput {
+public:
+// Declarations
+/// @brief Convert operator to "::UnityEngine::Playables::IPlayableOutput"
+constexpr operator  ::UnityEngine::Playables::IPlayableOutput*() ;
+
+/// @brief Method GetHandle, addr 0xb630d68, size 0xc, virtual true, abstract: false, final true
+inline ::UnityEngine::Playables::PlayableOutputHandle GetHandle() ;
+
+/// [RequiredByNativeCode]
+/// @brief Method Internal_CallOnPlayerChanged, addr 0xb630d74, size 0x180, virtual false, abstract: false, final false
+static inline void Internal_CallOnPlayerChanged(::UnityEngine::Playables::PlayableOutputHandle  handle, ::System::Object*  previousPlayer, ::System::Object*  currentPlayer) ;
+
+/// @brief Method .ctor, addr 0xb630c78, size 0xf0, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Playables::PlayableOutputHandle  handle) ;
+
+/// @brief Convert to "::UnityEngine::Playables::IPlayableOutput"
+constexpr ::UnityEngine::Playables::IPlayableOutput* i___UnityEngine__Playables__IPlayableOutput() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr DataPlayableOutput() ;
+
+// Ctor Parameters [CppParam { name: "m_Handle", ty: "::UnityEngine::Playables::PlayableOutputHandle", modifiers: "", def_value: None, comment: None }]
+constexpr DataPlayableOutput(::UnityEngine::Playables::PlayableOutputHandle  m_Handle) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32642};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// @brief Field m_Handle, offset: 0x0, size: 0x10, def value: None
+ ::UnityEngine::Playables::PlayableOutputHandle  m_Handle;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Playables::DataPlayableOutput, m_Handle) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Playables::DataPlayableOutput) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Playables

@@ -1,0 +1,206 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/AsyncOperations/InitalizationObjectsOperation.hpp"
+#include "UnityEngine/ResourceManagement/AsyncOperations/zzzz__AsyncOperationBase_1_impl.hpp"
+#include "UnityEngine/ResourceManagement/AsyncOperations/zzzz__AsyncOperationHandle_1_impl.hpp"
+#include "UnityEngine/ResourceManagement/AsyncOperations/zzzz__InitalizationObjectsOperation_def.hpp"
+#include "System/Collections/Generic/zzzz__IList_1_def.hpp"
+#include "UnityEngine/AddressableAssets/Initialization/zzzz__ResourceManagerRuntimeData_def.hpp"
+#include "UnityEngine/AddressableAssets/zzzz__AddressablesImpl_def.hpp"
+#include "UnityEngine/ResourceManagement/AsyncOperations/zzzz__AsyncOperationHandle_1_def.hpp"
+#include "UnityEngine/ResourceManagement/AsyncOperations/zzzz__AsyncOperationHandle_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation.Init
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::*)(::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>, ::UnityEngine::AddressableAssets::AddressablesImpl*)>(&::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::Init)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xae4c590;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {"Init", {}, {::i2c::type_of<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>>(), ::i2c::type_of<::UnityEngine::AddressableAssets::AddressablesImpl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation.get_DebugName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::*)()>(&::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::get_DebugName)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xae4c5f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                    {::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(), 31}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation.LogRuntimeWarnings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::*)(::StringW)>(&::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::LogRuntimeWarnings)> {
+  constexpr static std::size_t size = 0x1e8;
+  constexpr static std::size_t addrs = 0xae4c630;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {"LogRuntimeWarnings", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation.InvokeWaitForCompletion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::*)()>(&::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::InvokeWaitForCompletion)> {
+  constexpr static std::size_t size = 0x198;
+  constexpr static std::size_t addrs = 0xae4c948;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                    {::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(), 33}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation.Execute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::*)()>(&::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::Execute)> {
+  constexpr static std::size_t size = 0x658;
+  constexpr static std::size_t addrs = 0xae4cae0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                    {::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(), 28}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::*)()>(&::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::_ctor)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xae4d1e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation._Execute_b__8_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::*)(::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle>*>)>(&::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::_Execute_b__8_0)> {
+  constexpr static std::size_t size = 0x194;
+  constexpr static std::size_t addrs = 0xae4d228;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {"<Execute>b__8_0", {}, {::i2c::type_of<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle>*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>& UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_get_m_RtdOp()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RtdOp;
+}
+constexpr ::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*> const& UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_get_m_RtdOp() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RtdOp;
+}
+constexpr void UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_set_m_RtdOp(::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_RtdOp = value;
+}
+constexpr ::UnityEngine::AddressableAssets::AddressablesImpl*& UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_get_m_Addressables()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Addressables;
+}
+constexpr ::UnityEngine::AddressableAssets::AddressablesImpl* const& UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_get_m_Addressables() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Addressables;
+}
+constexpr void UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_set_m_Addressables(::UnityEngine::AddressableAssets::AddressablesImpl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Addressables = value;
+}
+constexpr ::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle>*>& UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_get_m_DepOp()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_DepOp;
+}
+constexpr ::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle>*> const& UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_get_m_DepOp() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_DepOp;
+}
+constexpr void UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::__cordl_internal_set_m_DepOp(::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle>*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_DepOp = value;
+}
+inline void UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::Init(::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>  rtdOp, ::UnityEngine::AddressableAssets::AddressablesImpl*  addressables)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {"Init", {}, {::i2c::type_of<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData*>>(), ::i2c::type_of<::UnityEngine::AddressableAssets::AddressablesImpl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, rtdOp, addressables);
+}
+inline ::StringW UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::get_DebugName()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(), 31}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline bool UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::LogRuntimeWarnings(::StringW  pathToBuildLogs)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {"LogRuntimeWarnings", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, pathToBuildLogs);
+}
+inline bool UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::InvokeWaitForCompletion()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(), 33}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::Execute()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(), 28}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::_Execute_b__8_0(::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle>*>  obj)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>(),
+                        {"<Execute>b__8_0", {}, {::i2c::type_of<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<::System::Collections::Generic::IList_1<::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle>*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, obj);
+}
+inline ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation* UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation::InitalizationObjectsOperation()   {
+}

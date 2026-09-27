@@ -1,0 +1,258 @@
+#pragma once
+// IWYU pragma private; include "System/Net/WebCompletionSource_1.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Net/zzzz__WebCompletionSource`1_Status_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(WebCompletionSource_1)
+namespace GlobalNamespace {
+template<typename T>
+struct WebCompletionSource_1_Status;
+}
+namespace GlobalNamespace {
+template<typename T>
+struct WebCompletionSource_1__WaitForCompletion_d__15;
+}
+namespace System::Net {
+template<typename T>
+class WebCompletionSource_1_Result;
+}
+namespace System::Runtime::ExceptionServices {
+class ExceptionDispatchInfo;
+}
+namespace System::Threading::Tasks {
+template<typename TResult>
+class TaskCompletionSource_1;
+}
+namespace System::Threading::Tasks {
+template<typename TResult>
+class Task_1;
+}
+namespace System::Threading::Tasks {
+class Task;
+}
+namespace System {
+class Exception;
+}
+namespace System {
+class OperationCanceledException;
+}
+// Forward declare root types
+namespace System::Net {
+template<typename T>
+class WebCompletionSource_1;
+}
+namespace System::Net {
+template<typename T>
+class WebCompletionSource_1_Result;
+}
+// Write type traits
+MARK_GEN_REF_T_PTR(::System::Net::WebCompletionSource_1);
+MARK_GEN_REF_T_PTR(::System::Net::WebCompletionSource_1_Result);
+DEFINE_IL2CPP_GEN_CLASS_PTR(::System::Net::WebCompletionSource_1, "System.Net", "WebCompletionSource`1");
+DEFINE_IL2CPP_GEN_CLASS_PTR(::System::Net::WebCompletionSource_1_Result, "System.Net", "WebCompletionSource`1/Result");
+// Dependencies System.Object
+namespace System::Net {
+// cpp template
+template<typename T>
+// Is value type: false
+// CS Name: System.Net.WebCompletionSource`1<T>
+class CORDL_TYPE WebCompletionSource_1 : public ::System::Object {
+public:
+// Declarations
+using Status = ::GlobalNamespace::WebCompletionSource_1_Status<T>;
+
+using _WaitForCompletion_d__15 = ::GlobalNamespace::WebCompletionSource_1__WaitForCompletion_d__15<T>;
+
+using Result = ::System::Net::WebCompletionSource_1_Result<T>;
+
+ __declspec(property(get=get_CurrentResult)) ::System::Net::WebCompletionSource_1_Result<T>*  CurrentResult;
+
+ __declspec(property(get=get_CurrentStatus)) ::GlobalNamespace::WebCompletionSource_1_Status<T>  CurrentStatus;
+
+ __declspec(property(get=get_Task)) ::System::Threading::Tasks::Task*  Task;
+
+/// @brief Field completion, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_completion, put=__cordl_internal_set_completion)) ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource_1_Result<T>*>*  completion;
+
+/// @brief Field currentResult, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_currentResult, put=__cordl_internal_set_currentResult)) ::System::Net::WebCompletionSource_1_Result<T>*  currentResult;
+
+static inline ::System::Net::WebCompletionSource_1<T>* New_ctor(bool  runAsync) ;
+
+/// @brief Method ThrowOnError, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline void ThrowOnError() ;
+
+/// @brief Method TrySetCanceled, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline bool TrySetCanceled() ;
+
+/// @brief Method TrySetCanceled, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline bool TrySetCanceled(::System::OperationCanceledException*  error) ;
+
+/// @brief Method TrySetCompleted, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline bool TrySetCompleted() ;
+
+/// @brief Method TrySetCompleted, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline bool TrySetCompleted(T  argument) ;
+
+/// @brief Method TrySetException, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline bool TrySetException(::System::Exception*  error) ;
+
+/// [AsyncStateMachine(typeof(System.Net.WebCompletionSource`1::<WaitForCompletion>d__15<T>))]
+/// @brief Method WaitForCompletion, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::System::Threading::Tasks::Task_1<T>* WaitForCompletion() ;
+
+constexpr ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource_1_Result<T>*>* const& __cordl_internal_get_completion() const;
+
+constexpr ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource_1_Result<T>*>*& __cordl_internal_get_completion() ;
+
+constexpr ::System::Net::WebCompletionSource_1_Result<T>* const& __cordl_internal_get_currentResult() const;
+
+constexpr ::System::Net::WebCompletionSource_1_Result<T>*& __cordl_internal_get_currentResult() ;
+
+constexpr void __cordl_internal_set_completion(::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource_1_Result<T>*>*  value) ;
+
+constexpr void __cordl_internal_set_currentResult(::System::Net::WebCompletionSource_1_Result<T>*  value) ;
+
+/// @brief Method .ctor, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline void _ctor(bool  runAsync) ;
+
+/// @brief Method get_CurrentResult, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::System::Net::WebCompletionSource_1_Result<T>* get_CurrentResult() ;
+
+/// @brief Method get_CurrentStatus, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::GlobalNamespace::WebCompletionSource_1_Status<T> get_CurrentStatus() ;
+
+/// @brief Method get_Task, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::System::Threading::Tasks::Task* get_Task() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr WebCompletionSource_1() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "WebCompletionSource_1", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+WebCompletionSource_1(WebCompletionSource_1 && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "WebCompletionSource_1", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+WebCompletionSource_1(WebCompletionSource_1 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10731};
+
+/// @brief Field completion, offset: 0x10, size: 0x8, def value: None
+ ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource_1_Result<T>*>*  ___completion;
+
+/// @brief Field currentResult, offset: 0x18, size: 0x8, def value: None
+ ::System::Net::WebCompletionSource_1_Result<T>*  ___currentResult;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def System::Net
+// Dependencies System.Net.WebCompletionSource`1::Status<T>, System.Object
+namespace System::Net {
+// cpp template
+template<typename T>
+// Is value type: false
+// CS Name: System.Net.WebCompletionSource`1/Result<T>
+class CORDL_TYPE WebCompletionSource_1_Result : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Argument)) T  Argument;
+
+ __declspec(property(get=get_Error)) ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*  Error;
+
+ __declspec(property(get=get_Status)) ::GlobalNamespace::WebCompletionSource_1_Status<T>  Status;
+
+ __declspec(property(get=get_Success)) bool  Success;
+
+/// @brief Field <Argument>k__BackingField, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Argument_k__BackingField, put=__cordl_internal_set__Argument_k__BackingField)) T  _Argument_k__BackingField;
+
+/// @brief Field <Error>k__BackingField, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Error_k__BackingField, put=__cordl_internal_set__Error_k__BackingField)) ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*  _Error_k__BackingField;
+
+/// @brief Field <Status>k__BackingField, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get__Status_k__BackingField, put=__cordl_internal_set__Status_k__BackingField)) ::GlobalNamespace::WebCompletionSource_1_Status<T>  _Status_k__BackingField;
+
+static inline ::System::Net::WebCompletionSource_1_Result<T>* New_ctor(T  argument) ;
+
+static inline ::System::Net::WebCompletionSource_1_Result<T>* New_ctor(::GlobalNamespace::WebCompletionSource_1_Status<T>  state, ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*  error) ;
+
+constexpr T const& __cordl_internal_get__Argument_k__BackingField() const;
+
+constexpr T& __cordl_internal_get__Argument_k__BackingField() ;
+
+constexpr ::System::Runtime::ExceptionServices::ExceptionDispatchInfo* const& __cordl_internal_get__Error_k__BackingField() const;
+
+constexpr ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& __cordl_internal_get__Error_k__BackingField() ;
+
+constexpr ::GlobalNamespace::WebCompletionSource_1_Status<T> const& __cordl_internal_get__Status_k__BackingField() const;
+
+constexpr ::GlobalNamespace::WebCompletionSource_1_Status<T>& __cordl_internal_get__Status_k__BackingField() ;
+
+constexpr void __cordl_internal_set__Argument_k__BackingField(T  value) ;
+
+constexpr void __cordl_internal_set__Error_k__BackingField(::System::Runtime::ExceptionServices::ExceptionDispatchInfo*  value) ;
+
+constexpr void __cordl_internal_set__Status_k__BackingField(::GlobalNamespace::WebCompletionSource_1_Status<T>  value) ;
+
+/// @brief Method .ctor, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline void _ctor(T  argument) ;
+
+/// @brief Method .ctor, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline void _ctor(::GlobalNamespace::WebCompletionSource_1_Status<T>  state, ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*  error) ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Argument, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline T get_Argument() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Error, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::System::Runtime::ExceptionServices::ExceptionDispatchInfo* get_Error() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Status, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline ::GlobalNamespace::WebCompletionSource_1_Status<T> get_Status() ;
+
+/// @brief Method get_Success, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+inline bool get_Success() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr WebCompletionSource_1_Result() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "WebCompletionSource_1_Result", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+WebCompletionSource_1_Result(WebCompletionSource_1_Result && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "WebCompletionSource_1_Result", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+WebCompletionSource_1_Result(WebCompletionSource_1_Result const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10729};
+
+/// [CompilerGenerated]
+/// @brief Field <Status>k__BackingField, offset: 0x10, size: 0x4, def value: None
+ ::GlobalNamespace::WebCompletionSource_1_Status<T>  ____Status_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Error>k__BackingField, offset: 0x18, size: 0x8, def value: None
+ ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*  ____Error_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <Argument>k__BackingField, offset: 0x20, size: 0x8, def value: None
+ T  ____Argument_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def System::Net

@@ -1,0 +1,230 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/UIR/NativePagedList_1.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Unity/Collections/zzzz__Allocator_impl.hpp"
+#include "Unity/Collections/zzzz__NativeArray_1_impl.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__NativePagedList_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "Unity/Collections/zzzz__Allocator_def.hpp"
+#include "Unity/Collections/zzzz__NativeArray_1_def.hpp"
+#include "Unity/Collections/zzzz__NativeSlice_1_def.hpp"
+#include "UnityEngine/UIElements/UIR/zzzz__NativePagedList`1_Enumerator_def.hpp"
+template<typename T>
+constexpr int32_t& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_k_PoolCapacity()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___k_PoolCapacity;
+}
+template<typename T>
+constexpr int32_t const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_k_PoolCapacity() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___k_PoolCapacity;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set_k_PoolCapacity(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___k_PoolCapacity = value;
+}
+template<typename T>
+constexpr ::System::Collections::Generic::List_1<::Unity::Collections::NativeArray_1<T>>*& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_Pages()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Pages;
+}
+template<typename T>
+constexpr ::System::Collections::Generic::List_1<::Unity::Collections::NativeArray_1<T>>* const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_Pages() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Pages;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set_m_Pages(::System::Collections::Generic::List_1<::Unity::Collections::NativeArray_1<T>>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Pages = value;
+}
+template<typename T>
+constexpr ::Unity::Collections::NativeArray_1<T>& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_LastPage()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LastPage;
+}
+template<typename T>
+constexpr ::Unity::Collections::NativeArray_1<T> const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_LastPage() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_LastPage;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set_m_LastPage(::Unity::Collections::NativeArray_1<T>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_LastPage = value;
+}
+template<typename T>
+constexpr int32_t& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_CountInLastPage()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CountInLastPage;
+}
+template<typename T>
+constexpr int32_t const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_CountInLastPage() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CountInLastPage;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set_m_CountInLastPage(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CountInLastPage = value;
+}
+template<typename T>
+constexpr ::Unity::Collections::Allocator& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_FirstPageAllocator()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_FirstPageAllocator;
+}
+template<typename T>
+constexpr ::Unity::Collections::Allocator const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_FirstPageAllocator() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_FirstPageAllocator;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set_m_FirstPageAllocator(::Unity::Collections::Allocator  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_FirstPageAllocator = value;
+}
+template<typename T>
+constexpr ::Unity::Collections::Allocator& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_OtherPagesAllocator()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OtherPagesAllocator;
+}
+template<typename T>
+constexpr ::Unity::Collections::Allocator const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_OtherPagesAllocator() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_OtherPagesAllocator;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set_m_OtherPagesAllocator(::Unity::Collections::Allocator  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_OtherPagesAllocator = value;
+}
+template<typename T>
+constexpr ::System::Collections::Generic::List_1<::Unity::Collections::NativeSlice_1<T>>*& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_Enumerator()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Enumerator;
+}
+template<typename T>
+constexpr ::System::Collections::Generic::List_1<::Unity::Collections::NativeSlice_1<T>>* const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get_m_Enumerator() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Enumerator;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set_m_Enumerator(::System::Collections::Generic::List_1<::Unity::Collections::NativeSlice_1<T>>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Enumerator = value;
+}
+template<typename T>
+constexpr bool& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get__disposed_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____disposed_k__BackingField;
+}
+template<typename T>
+constexpr bool const& UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_get__disposed_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____disposed_k__BackingField;
+}
+template<typename T>
+constexpr void UnityEngine::UIElements::UIR::NativePagedList_1<T>::__cordl_internal_set__disposed_k__BackingField(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____disposed_k__BackingField = value;
+}
+template<typename T>
+inline void UnityEngine::UIElements::UIR::NativePagedList_1<T>::_ctor(int32_t  poolCapacity, ::Unity::Collections::Allocator  firstPageAllocator, ::Unity::Collections::Allocator  otherPagesAllocator)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::Unity::Collections::Allocator>(), ::i2c::type_of<::Unity::Collections::Allocator>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, poolCapacity, firstPageAllocator, otherPagesAllocator);
+}
+template<typename T>
+inline void UnityEngine::UIElements::UIR::NativePagedList_1<T>::Add(::by_ref<T>  data)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"Add", {}, {::i2c::type_of<::by_ref<T>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, data);
+}
+template<typename T>
+inline void UnityEngine::UIElements::UIR::NativePagedList_1<T>::Add(T  data)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"Add", {}, {::i2c::type_of<T>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, data);
+}
+template<typename T>
+inline ::System::Collections::Generic::List_1<::Unity::Collections::NativeSlice_1<T>>* UnityEngine::UIElements::UIR::NativePagedList_1<T>::GetPages()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"GetPages", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::Unity::Collections::NativeSlice_1<T>>*>(this, ___internal_method);
+}
+template<typename T>
+inline int32_t UnityEngine::UIElements::UIR::NativePagedList_1<T>::GetCount()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"GetCount", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+template<typename T>
+inline void UnityEngine::UIElements::UIR::NativePagedList_1<T>::Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+template<typename T>
+inline bool UnityEngine::UIElements::UIR::NativePagedList_1<T>::get_disposed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"get_disposed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+template<typename T>
+inline void UnityEngine::UIElements::UIR::NativePagedList_1<T>::set_disposed(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"set_disposed", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+template<typename T>
+inline void UnityEngine::UIElements::UIR::NativePagedList_1<T>::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+template<typename T>
+inline void UnityEngine::UIElements::UIR::NativePagedList_1<T>::Dispose(bool  disposing)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(),
+                        {"Dispose", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, disposing);
+}
+template<typename T>
+inline ::UnityEngine::UIElements::UIR::NativePagedList_1<T>* UnityEngine::UIElements::UIR::NativePagedList_1<T>::New_ctor(int32_t  poolCapacity, ::Unity::Collections::Allocator  firstPageAllocator, ::Unity::Collections::Allocator  otherPagesAllocator)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::UIR::NativePagedList_1<T>*>(poolCapacity, firstPageAllocator, otherPagesAllocator));
+}
+/// @brief Convert operator to "::System::IDisposable"
+template<typename T>
+constexpr  UnityEngine::UIElements::UIR::NativePagedList_1<T>::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+template<typename T>
+constexpr ::System::IDisposable* UnityEngine::UIElements::UIR::NativePagedList_1<T>::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+template<typename T>
+constexpr ::UnityEngine::UIElements::UIR::NativePagedList_1<T>::NativePagedList_1()   {
+}

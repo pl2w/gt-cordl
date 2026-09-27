@@ -1,0 +1,111 @@
+#pragma once
+// IWYU pragma private; include "System/Net/NetworkInformation/LinuxNetworkInterface.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Net/NetworkInformation/zzzz__UnixNetworkInterface_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(LinuxNetworkInterface)
+namespace System::Net::NetworkInformation {
+struct OperationalStatus;
+}
+// Forward declare root types
+namespace System::Net::NetworkInformation {
+class LinuxNetworkInterface;
+}
+// Write type traits
+MARK_REF_T(::System::Net::NetworkInformation::LinuxNetworkInterface*);
+DEFINE_IL2CPP_CLASS(::System::Net::NetworkInformation::LinuxNetworkInterface*, "System.Net.NetworkInformation", "LinuxNetworkInterface");
+// Dependencies System.Net.NetworkInformation.UnixNetworkInterface
+namespace System::Net::NetworkInformation {
+// Is value type: false
+// CS Name: System.Net.NetworkInformation.LinuxNetworkInterface
+class CORDL_TYPE LinuxNetworkInterface : public ::System::Net::NetworkInformation::UnixNetworkInterface {
+public:
+// Declarations
+ __declspec(property(get=get_IfacePath)) ::StringW  IfacePath;
+
+ __declspec(property(get=get_OperationalStatus)) ::System::Net::NetworkInformation::OperationalStatus  OperationalStatus;
+
+/// @brief Field iface_flags_path, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_iface_flags_path, put=__cordl_internal_set_iface_flags_path)) ::StringW  iface_flags_path;
+
+/// @brief Field iface_operstate_path, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_iface_operstate_path, put=__cordl_internal_set_iface_operstate_path)) ::StringW  iface_operstate_path;
+
+/// @brief Field iface_path, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_iface_path, put=__cordl_internal_set_iface_path)) ::StringW  iface_path;
+
+static inline ::System::Net::NetworkInformation::LinuxNetworkInterface* New_ctor(::StringW  name) ;
+
+/// @brief Method ReadLine, addr 0xaccad04, size 0x24c, virtual false, abstract: false, final false
+static inline ::StringW ReadLine(::StringW  path) ;
+
+constexpr ::StringW const& __cordl_internal_get_iface_flags_path() const;
+
+constexpr ::StringW& __cordl_internal_get_iface_flags_path() ;
+
+constexpr ::StringW const& __cordl_internal_get_iface_operstate_path() const;
+
+constexpr ::StringW& __cordl_internal_get_iface_operstate_path() ;
+
+constexpr ::StringW const& __cordl_internal_get_iface_path() const;
+
+constexpr ::StringW& __cordl_internal_get_iface_path() ;
+
+constexpr void __cordl_internal_set_iface_flags_path(::StringW  value) ;
+
+constexpr void __cordl_internal_set_iface_operstate_path(::StringW  value) ;
+
+constexpr void __cordl_internal_set_iface_path(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0xacca8c0, size 0x100, virtual false, abstract: false, final false
+inline void _ctor(::StringW  name) ;
+
+/// @brief Method get_IfacePath, addr 0xacca9cc, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_IfacePath() ;
+
+/// @brief Method get_OperationalStatus, addr 0xacca9d4, size 0x330, virtual true, abstract: false, final false
+inline ::System::Net::NetworkInformation::OperationalStatus get_OperationalStatus() ;
+
+/// @brief Method unitydroid_get_network_interface_up_state, addr 0xacca9c8, size 0x4, virtual false, abstract: false, final false
+static inline bool unitydroid_get_network_interface_up_state(::StringW  ifname, ::by_ref<bool>  is_up) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr LinuxNetworkInterface() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "LinuxNetworkInterface", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+LinuxNetworkInterface(LinuxNetworkInterface && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "LinuxNetworkInterface", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+LinuxNetworkInterface(LinuxNetworkInterface const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10779};
+
+/// @brief Field iface_path, offset: 0x30, size: 0x8, def value: None
+ ::StringW  ___iface_path;
+
+/// @brief Field iface_operstate_path, offset: 0x38, size: 0x8, def value: None
+ ::StringW  ___iface_operstate_path;
+
+/// @brief Field iface_flags_path, offset: 0x40, size: 0x8, def value: None
+ ::StringW  ___iface_flags_path;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Net::NetworkInformation::LinuxNetworkInterface, ___iface_path) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::System::Net::NetworkInformation::LinuxNetworkInterface, ___iface_operstate_path) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::System::Net::NetworkInformation::LinuxNetworkInterface, ___iface_flags_path) == 0x40, "Offset mismatch!");
+
+static_assert(sizeof(::System::Net::NetworkInformation::LinuxNetworkInterface) == 0x48, "Size mismatch!");
+
+} // namespace end def System::Net::NetworkInformation

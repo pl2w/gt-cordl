@@ -1,0 +1,55 @@
+#pragma once
+// IWYU pragma private; include "Oculus/Platform/UserAgeCategory.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Oculus/Platform/zzzz__UserAgeCategory_def.hpp"
+#include "Oculus/Platform/Models/zzzz__UserAccountAgeCategory_def.hpp"
+#include "Oculus/Platform/zzzz__AppAgeCategory_def.hpp"
+#include "Oculus/Platform/zzzz__Request_1_def.hpp"
+#include "Oculus/Platform/zzzz__Request_def.hpp"
+//  Writing Method size for method: ::Oculus::Platform::UserAgeCategory.Get
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Oculus::Platform::Request_1<::Oculus::Platform::Models::UserAccountAgeCategory*>* (*)()>(&::Oculus::Platform::UserAgeCategory::Get)> {
+  constexpr static std::size_t size = 0x1c0;
+  constexpr static std::size_t addrs = 0xa54d748;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::UserAgeCategory*>(),
+                        {"Get", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Oculus::Platform::UserAgeCategory.Report
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Oculus::Platform::Request* (*)(::Oculus::Platform::AppAgeCategory)>(&::Oculus::Platform::UserAgeCategory::Report)> {
+  constexpr static std::size_t size = 0x1b4;
+  constexpr static std::size_t addrs = 0xa54d908;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::UserAgeCategory*>(),
+                        {"Report", {}, {::i2c::type_of<::Oculus::Platform::AppAgeCategory>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::Oculus::Platform::Request_1<::Oculus::Platform::Models::UserAccountAgeCategory*>* Oculus::Platform::UserAgeCategory::Get()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::UserAgeCategory*>(),
+                        {"Get", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Oculus::Platform::Request_1<::Oculus::Platform::Models::UserAccountAgeCategory*>*>(nullptr, ___internal_method);
+}
+inline ::Oculus::Platform::Request* Oculus::Platform::UserAgeCategory::Report(::Oculus::Platform::AppAgeCategory  age_category)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::UserAgeCategory*>(),
+                        {"Report", {}, {::i2c::type_of<::Oculus::Platform::AppAgeCategory>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Oculus::Platform::Request*>(nullptr, ___internal_method, age_category);
+}
+// Ctor Parameters []
+constexpr ::Oculus::Platform::UserAgeCategory::UserAgeCategory()   {
+}

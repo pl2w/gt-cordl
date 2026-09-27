@@ -1,0 +1,605 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Playables/PlayableGraph.hpp"
+#include "System/zzzz__IntPtr_impl.hpp"
+#include "UnityEngine/Playables/zzzz__IPlayable_impl.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableGraph_def.hpp"
+#include "UnityEngine/Bindings/zzzz__ManagedSpanWrapper_def.hpp"
+#include "UnityEngine/Playables/zzzz__DirectorUpdateMode_def.hpp"
+#include "UnityEngine/Playables/zzzz__FrameRate_def.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableHandle_def.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableOutputHandle_def.hpp"
+#include "UnityEngine/Playables/zzzz__Playable_def.hpp"
+#include "UnityEngine/zzzz__IExposedPropertyTable_def.hpp"
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetRootPlayable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::Playable (::UnityEngine::Playables::PlayableGraph::*)(int32_t)>(&::UnityEngine::Playables::PlayableGraph::GetRootPlayable)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb601c68;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayable", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.Evaluate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::Evaluate)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xb601cc8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Evaluate", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::PlayableGraph (*)(::StringW)>(&::UnityEngine::Playables::PlayableGraph::Create)> {
+  constexpr static std::size_t size = 0x14c;
+  constexpr static std::size_t addrs = 0xb601d54;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Create", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.Destroy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::Destroy)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb601ee4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Destroy", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.IsValid
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::IsValid)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb601f20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"IsValid", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.IsPlaying
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::IsPlaying)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb601f5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"IsPlaying", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.Play
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::Play)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb601f98;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Play", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.Evaluate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Playables::PlayableGraph::*)(float_t)>(&::UnityEngine::Playables::PlayableGraph::Evaluate)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb601d08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Evaluate", {}, {::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.SetTimeUpdateMode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Playables::PlayableGraph::*)(::UnityEngine::Playables::DirectorUpdateMode)>(&::UnityEngine::Playables::PlayableGraph::SetTimeUpdateMode)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb601fd4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"SetTimeUpdateMode", {}, {::i2c::type_of<::UnityEngine::Playables::DirectorUpdateMode>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetResolver
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::IExposedPropertyTable* (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::GetResolver)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb602018;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetResolver", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetPlayableCount
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::GetPlayableCount)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb602054;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetPlayableCount", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetRootPlayableCount
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::GetRootPlayableCount)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb602090;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayableCount", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.SynchronizeEvaluation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Playables::PlayableGraph::*)(::UnityEngine::Playables::PlayableGraph)>(&::UnityEngine::Playables::PlayableGraph::SynchronizeEvaluation)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xb6020cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"SynchronizeEvaluation", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableGraph>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.CreatePlayableHandle
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::PlayableHandle (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::CreatePlayableHandle)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xb6014a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreatePlayableHandle", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.CreateScriptOutputInternal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Playables::PlayableGraph::*)(::StringW, ::by_ref<::UnityEngine::Playables::PlayableOutputHandle>)>(&::UnityEngine::Playables::PlayableGraph::CreateScriptOutputInternal)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xb6021a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreateScriptOutputInternal", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableOutputHandle>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetRootPlayableInternal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::PlayableHandle (::UnityEngine::Playables::PlayableGraph::*)(int32_t)>(&::UnityEngine::Playables::PlayableGraph::GetRootPlayableInternal)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xb601c6c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayableInternal", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.IsMatchFrameRateEnabled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::IsMatchFrameRateEnabled)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb6023b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"IsMatchFrameRateEnabled", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetFrameRate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::FrameRate (::UnityEngine::Playables::PlayableGraph::*)()>(&::UnityEngine::Playables::PlayableGraph::GetFrameRate)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb6023ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetFrameRate", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.ConnectInternal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Playables::PlayableGraph::*)(::UnityEngine::Playables::PlayableHandle, int32_t, ::UnityEngine::Playables::PlayableHandle, int32_t)>(&::UnityEngine::Playables::PlayableGraph::ConnectInternal)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xb60247c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"ConnectInternal", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableHandle>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::UnityEngine::Playables::PlayableHandle>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.Create_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>, ::by_ref<::UnityEngine::Playables::PlayableGraph>)>(&::UnityEngine::Playables::PlayableGraph::Create_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb601ea0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Create_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.SynchronizeEvaluation_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::UnityEngine::Playables::PlayableGraph>, ::by_ref<::UnityEngine::Playables::PlayableGraph>)>(&::UnityEngine::Playables::PlayableGraph::SynchronizeEvaluation_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb60211c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"SynchronizeEvaluation_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.CreatePlayableHandle_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::UnityEngine::Playables::PlayableGraph>, ::by_ref<::UnityEngine::Playables::PlayableHandle>)>(&::UnityEngine::Playables::PlayableGraph::CreatePlayableHandle_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb602160;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreatePlayableHandle_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.CreateScriptOutputInternal_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::by_ref<::UnityEngine::Playables::PlayableGraph>, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>, ::by_ref<::UnityEngine::Playables::PlayableOutputHandle>)>(&::UnityEngine::Playables::PlayableGraph::CreateScriptOutputInternal_Injected)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xb602308;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreateScriptOutputInternal_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableOutputHandle>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetRootPlayableInternal_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::UnityEngine::Playables::PlayableGraph>, int32_t, ::by_ref<::UnityEngine::Playables::PlayableHandle>)>(&::UnityEngine::Playables::PlayableGraph::GetRootPlayableInternal_Injected)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xb60235c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayableInternal_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.GetFrameRate_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::UnityEngine::Playables::PlayableGraph>, ::by_ref<::UnityEngine::Playables::FrameRate>)>(&::UnityEngine::Playables::PlayableGraph::GetFrameRate_Injected)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb602438;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetFrameRate_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::FrameRate>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Playables::PlayableGraph.ConnectInternal_Injected
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::by_ref<::UnityEngine::Playables::PlayableGraph>, ::by_ref<::UnityEngine::Playables::PlayableHandle>, int32_t, ::by_ref<::UnityEngine::Playables::PlayableHandle>, int32_t)>(&::UnityEngine::Playables::PlayableGraph::ConnectInternal_Injected)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xb6024f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"ConnectInternal_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::UnityEngine::Playables::Playable UnityEngine::Playables::PlayableGraph::GetRootPlayable(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayable", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::Playable>(*this, ___internal_method, index);
+}
+template<typename U,typename V>
+requires(::cordl_internals::type_constraint<U, ::UnityEngine::Playables::IPlayable*> && ::cordl_internals::value_type_constraint<U> && ::cordl_internals::default_constructor_constraint<U> && ::cordl_internals::type_constraint<V, ::UnityEngine::Playables::IPlayable*> && ::cordl_internals::value_type_constraint<V> && ::cordl_internals::default_constructor_constraint<V>)
+inline bool UnityEngine::Playables::PlayableGraph::Connect(U  source, int32_t  sourceOutputPort, V  destination, int32_t  destinationInputPort)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                    {"Connect", {::i2c::class_of<U>(), ::i2c::class_of<V>()}, {::i2c::type_of<U>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<V>(), ::i2c::type_of<int32_t>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<U>(), ::i2c::class_of<V>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method, source, sourceOutputPort, destination, destinationInputPort);
+}
+inline void UnityEngine::Playables::PlayableGraph::Evaluate()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Evaluate", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+inline ::UnityEngine::Playables::PlayableGraph UnityEngine::Playables::PlayableGraph::Create(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Create", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::PlayableGraph>(nullptr, ___internal_method, name);
+}
+inline void UnityEngine::Playables::PlayableGraph::Destroy()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Destroy", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+inline bool UnityEngine::Playables::PlayableGraph::IsValid()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"IsValid", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline bool UnityEngine::Playables::PlayableGraph::IsPlaying()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"IsPlaying", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline void UnityEngine::Playables::PlayableGraph::Play()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Play", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+inline void UnityEngine::Playables::PlayableGraph::Evaluate(/* [DefaultValue("0")] */ float_t  deltaTime)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Evaluate", {}, {::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, deltaTime);
+}
+inline void UnityEngine::Playables::PlayableGraph::SetTimeUpdateMode(::UnityEngine::Playables::DirectorUpdateMode  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"SetTimeUpdateMode", {}, {::i2c::type_of<::UnityEngine::Playables::DirectorUpdateMode>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline ::UnityEngine::IExposedPropertyTable* UnityEngine::Playables::PlayableGraph::GetResolver()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetResolver", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::IExposedPropertyTable*>(*this, ___internal_method);
+}
+inline int32_t UnityEngine::Playables::PlayableGraph::GetPlayableCount()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetPlayableCount", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(*this, ___internal_method);
+}
+inline int32_t UnityEngine::Playables::PlayableGraph::GetRootPlayableCount()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayableCount", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(*this, ___internal_method);
+}
+inline void UnityEngine::Playables::PlayableGraph::SynchronizeEvaluation(::UnityEngine::Playables::PlayableGraph  playable)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"SynchronizeEvaluation", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableGraph>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, playable);
+}
+inline ::UnityEngine::Playables::PlayableHandle UnityEngine::Playables::PlayableGraph::CreatePlayableHandle()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreatePlayableHandle", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::PlayableHandle>(*this, ___internal_method);
+}
+inline bool UnityEngine::Playables::PlayableGraph::CreateScriptOutputInternal(::StringW  name, ::by_ref<::UnityEngine::Playables::PlayableOutputHandle>  handle)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreateScriptOutputInternal", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableOutputHandle>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method, name, handle);
+}
+inline ::UnityEngine::Playables::PlayableHandle UnityEngine::Playables::PlayableGraph::GetRootPlayableInternal(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayableInternal", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::PlayableHandle>(*this, ___internal_method, index);
+}
+inline bool UnityEngine::Playables::PlayableGraph::IsMatchFrameRateEnabled()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"IsMatchFrameRateEnabled", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline ::UnityEngine::Playables::FrameRate UnityEngine::Playables::PlayableGraph::GetFrameRate()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetFrameRate", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::FrameRate>(*this, ___internal_method);
+}
+inline bool UnityEngine::Playables::PlayableGraph::ConnectInternal(::UnityEngine::Playables::PlayableHandle  source, int32_t  sourceOutputPort, ::UnityEngine::Playables::PlayableHandle  destination, int32_t  destinationInputPort)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"ConnectInternal", {}, {::i2c::type_of<::UnityEngine::Playables::PlayableHandle>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::UnityEngine::Playables::PlayableHandle>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method, source, sourceOutputPort, destination, destinationInputPort);
+}
+inline void UnityEngine::Playables::PlayableGraph::Create_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name, ::by_ref<::UnityEngine::Playables::PlayableGraph>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"Create_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, name, ret);
+}
+inline void UnityEngine::Playables::PlayableGraph::SynchronizeEvaluation_Injected(::by_ref<::UnityEngine::Playables::PlayableGraph>  _unity_self, ::by_ref<::UnityEngine::Playables::PlayableGraph>  playable)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"SynchronizeEvaluation_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, playable);
+}
+inline void UnityEngine::Playables::PlayableGraph::CreatePlayableHandle_Injected(::by_ref<::UnityEngine::Playables::PlayableGraph>  _unity_self, ::by_ref<::UnityEngine::Playables::PlayableHandle>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreatePlayableHandle_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, ret);
+}
+inline bool UnityEngine::Playables::PlayableGraph::CreateScriptOutputInternal_Injected(::by_ref<::UnityEngine::Playables::PlayableGraph>  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name, ::by_ref<::UnityEngine::Playables::PlayableOutputHandle>  handle)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"CreateScriptOutputInternal_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableOutputHandle>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, _unity_self, name, handle);
+}
+inline void UnityEngine::Playables::PlayableGraph::GetRootPlayableInternal_Injected(::by_ref<::UnityEngine::Playables::PlayableGraph>  _unity_self, int32_t  index, ::by_ref<::UnityEngine::Playables::PlayableHandle>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetRootPlayableInternal_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, index, ret);
+}
+inline void UnityEngine::Playables::PlayableGraph::GetFrameRate_Injected(::by_ref<::UnityEngine::Playables::PlayableGraph>  _unity_self, ::by_ref<::UnityEngine::Playables::FrameRate>  ret)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"GetFrameRate_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::FrameRate>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, _unity_self, ret);
+}
+inline bool UnityEngine::Playables::PlayableGraph::ConnectInternal_Injected(::by_ref<::UnityEngine::Playables::PlayableGraph>  _unity_self, ::by_ref<::UnityEngine::Playables::PlayableHandle>  source, int32_t  sourceOutputPort, ::by_ref<::UnityEngine::Playables::PlayableHandle>  destination, int32_t  destinationInputPort)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Playables::PlayableGraph>(),
+                        {"ConnectInternal_Injected", {}, {::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableGraph>>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::UnityEngine::Playables::PlayableHandle>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, _unity_self, source, sourceOutputPort, destination, destinationInputPort);
+}
+// Ctor Parameters [CppParam { name: "m_Handle", ty: "::System::IntPtr", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Version", ty: "uint32_t", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::Playables::PlayableGraph::PlayableGraph(::System::IntPtr  m_Handle, uint32_t  m_Version) noexcept  {
+this->m_Handle = m_Handle;
+this->m_Version = m_Version;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Playables::PlayableGraph::PlayableGraph()   {
+}

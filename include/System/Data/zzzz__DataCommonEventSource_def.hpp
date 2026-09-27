@@ -1,0 +1,128 @@
+#pragma once
+// IWYU pragma private; include "System/Data/DataCommonEventSource.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Diagnostics/Tracing/zzzz__EventSource_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(DataCommonEventSource)
+// Forward declare root types
+namespace System::Data {
+class DataCommonEventSource;
+}
+// Write type traits
+MARK_REF_T(::System::Data::DataCommonEventSource*);
+DEFINE_IL2CPP_CLASS(::System::Data::DataCommonEventSource*, "System.Data", "DataCommonEventSource");
+// [EventSource(Name = "System.Data.DataCommonEventSource")]
+// Dependencies System.Diagnostics.Tracing.EventSource
+namespace System::Data {
+// Is value type: false
+// CS Name: System.Data.DataCommonEventSource
+class CORDL_TYPE DataCommonEventSource : public ::System::Diagnostics::Tracing::EventSource {
+public:
+// Declarations
+/// @brief Field Log, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_Log, put=setStaticF_Log)) ::System::Data::DataCommonEventSource*  Log;
+
+/// @brief Field s_nextScopeId, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_nextScopeId, put=setStaticF_s_nextScopeId)) int64_t  s_nextScopeId;
+
+/// [NonEvent]
+/// @brief Method EnterScope, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T1>
+inline int64_t EnterScope(::StringW  format, T1  arg1) ;
+
+/// [NonEvent]
+/// @brief Method EnterScope, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T1,typename T2>
+inline int64_t EnterScope(::StringW  format, T1  arg1, T2  arg2) ;
+
+/// [NonEvent]
+/// @brief Method EnterScope, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T1,typename T2,typename T3>
+inline int64_t EnterScope(::StringW  format, T1  arg1, T2  arg2, T3  arg3) ;
+
+/// [NonEvent]
+/// @brief Method EnterScope, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T1,typename T2,typename T3,typename T4>
+inline int64_t EnterScope(::StringW  format, T1  arg1, T2  arg2, T3  arg3, T4  arg4) ;
+
+/// [Event(2, Level = (System.Diagnostics.Tracing.EventLevel)5)]
+/// @brief Method EnterScope, addr 0xa919f40, size 0xc4, virtual false, abstract: false, final false
+inline int64_t EnterScope(::StringW  message) ;
+
+/// [Event(3, Level = (System.Diagnostics.Tracing.EventLevel)5)]
+/// @brief Method ExitScope, addr 0xa91a004, size 0x10, virtual false, abstract: false, final false
+inline void ExitScope(int64_t  scopeId) ;
+
+static inline ::System::Data::DataCommonEventSource* New_ctor() ;
+
+/// [NonEvent]
+/// @brief Method Trace, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T0>
+inline void Trace(::StringW  format, T0  arg0) ;
+
+/// [NonEvent]
+/// @brief Method Trace, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T0,typename T1>
+inline void Trace(::StringW  format, T0  arg0, T1  arg1) ;
+
+/// [NonEvent]
+/// @brief Method Trace, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T0,typename T1,typename T2>
+inline void Trace(::StringW  format, T0  arg0, T1  arg1, T2  arg2) ;
+
+/// [NonEvent]
+/// @brief Method Trace, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T0,typename T1,typename T2,typename T3>
+inline void Trace(::StringW  format, T0  arg0, T1  arg1, T2  arg2, T3  arg3) ;
+
+/// [NonEvent]
+/// @brief Method Trace, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T0,typename T1,typename T2,typename T3,typename T4>
+inline void Trace(::StringW  format, T0  arg0, T1  arg1, T2  arg2, T3  arg3, T4  arg4) ;
+
+/// [NonEvent]
+/// @brief Method Trace, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T0,typename T1,typename T2,typename T3,typename T4,typename T5,typename T6>
+inline void Trace(::StringW  format, T0  arg0, T1  arg1, T2  arg2, T3  arg3, T4  arg4, T5  arg5, T6  arg6) ;
+
+/// [Event(1, Level = (System.Diagnostics.Tracing.EventLevel)4)]
+/// @brief Method Trace, addr 0xa919f30, size 0x10, virtual false, abstract: false, final false
+inline void Trace(::StringW  message) ;
+
+/// @brief Method .ctor, addr 0xa91a014, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::System::Data::DataCommonEventSource* getStaticF_Log() ;
+
+static inline int64_t getStaticF_s_nextScopeId() ;
+
+static inline void setStaticF_Log(::System::Data::DataCommonEventSource*  value) ;
+
+static inline void setStaticF_s_nextScopeId(int64_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DataCommonEventSource() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DataCommonEventSource", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DataCommonEventSource(DataCommonEventSource && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DataCommonEventSource", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DataCommonEventSource(DataCommonEventSource const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{20956};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Data::DataCommonEventSource) == 0x18, "Size mismatch!");
+
+} // namespace end def System::Data

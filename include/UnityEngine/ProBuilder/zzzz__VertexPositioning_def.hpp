@@ -1,0 +1,113 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/VertexPositioning.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(VertexPositioning)
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace UnityEngine::ProBuilder {
+struct Edge;
+}
+namespace UnityEngine::ProBuilder {
+class Face;
+}
+namespace UnityEngine::ProBuilder {
+class ProBuilderMesh;
+}
+namespace UnityEngine::ProBuilder {
+class Vertex;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+// Forward declare root types
+namespace UnityEngine::ProBuilder {
+class VertexPositioning;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ProBuilder::VertexPositioning*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ProBuilder::VertexPositioning*, "UnityEngine.ProBuilder", "VertexPositioning");
+// [Extension]
+// Dependencies System.Object
+namespace UnityEngine::ProBuilder {
+// Is value type: false
+// CS Name: UnityEngine.ProBuilder.VertexPositioning
+class CORDL_TYPE VertexPositioning : public ::System::Object {
+public:
+// Declarations
+/// @brief Field s_CoincidentVertices, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_CoincidentVertices, put=setStaticF_s_CoincidentVertices)) ::System::Collections::Generic::List_1<int32_t>*  s_CoincidentVertices;
+
+/// [Extension]
+/// @brief Method SetSharedVertexPosition, addr 0xb0cede0, size 0x36c, virtual false, abstract: false, final false
+static inline void SetSharedVertexPosition(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, int32_t  sharedVertexHandle, ::UnityEngine::Vector3  position) ;
+
+/// [Extension]
+/// @brief Method SetSharedVertexValues, addr 0xb0cf14c, size 0x2c4, virtual false, abstract: false, final false
+static inline void SetSharedVertexValues(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, int32_t  sharedVertexHandle, ::UnityEngine::ProBuilder::Vertex*  vertex) ;
+
+/// [Extension]
+/// @brief Method TranslateVertices, addr 0xb0ceb88, size 0x12c, virtual false, abstract: false, final false
+static inline void TranslateVertices(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ProBuilder::Edge>*  edges, ::UnityEngine::Vector3  offset) ;
+
+/// [Extension]
+/// @brief Method TranslateVertices, addr 0xb0cecb4, size 0x12c, virtual false, abstract: false, final false
+static inline void TranslateVertices(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ProBuilder::Face*>*  faces, ::UnityEngine::Vector3  offset) ;
+
+/// [Extension]
+/// @brief Method TranslateVertices, addr 0xb0ce8f8, size 0x12c, virtual false, abstract: false, final false
+static inline void TranslateVertices(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::System::Collections::Generic::IEnumerable_1<int32_t>*  indexes, ::UnityEngine::Vector3  offset) ;
+
+/// [Extension]
+/// @brief Method TranslateVerticesInWorldSpace, addr 0xb0ce338, size 0x114, virtual false, abstract: false, final false
+static inline void TranslateVerticesInWorldSpace(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::ArrayW<int32_t>  indexes, ::UnityEngine::Vector3  offset) ;
+
+/// [Extension]
+/// @brief Method TranslateVerticesInWorldSpace, addr 0xb0ce44c, size 0x4ac, virtual false, abstract: false, final false
+static inline void TranslateVerticesInWorldSpace(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::ArrayW<int32_t>  indexes, ::UnityEngine::Vector3  offset, float_t  snapValue, bool  snapAxisOnly) ;
+
+/// @brief Method TranslateVerticesInternal, addr 0xb0cea24, size 0x164, virtual false, abstract: false, final false
+static inline void TranslateVerticesInternal(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::System::Collections::Generic::IEnumerable_1<int32_t>*  indices, ::UnityEngine::Vector3  offset) ;
+
+/// [Extension]
+/// @brief Method VerticesInWorldSpace, addr 0xb0ce1c0, size 0x178, virtual false, abstract: false, final false
+static inline ::ArrayW<::UnityEngine::Vector3> VerticesInWorldSpace(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh) ;
+
+static inline ::System::Collections::Generic::List_1<int32_t>* getStaticF_s_CoincidentVertices() ;
+
+static inline void setStaticF_s_CoincidentVertices(::System::Collections::Generic::List_1<int32_t>*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr VertexPositioning() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "VertexPositioning", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+VertexPositioning(VertexPositioning && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "VertexPositioning", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+VertexPositioning(VertexPositioning const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24305};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ProBuilder::VertexPositioning) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::ProBuilder

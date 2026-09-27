@@ -1,0 +1,93 @@
+#pragma once
+// IWYU pragma private; include "System/Net/NetworkInformation/AixNetworkInterfaceAPI.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Net/NetworkInformation/zzzz__UnixNetworkInterfaceAPI_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(AixNetworkInterfaceAPI)
+namespace System::Net::NetworkInformation::AixStructs {
+struct ifconf;
+}
+namespace System::Net::NetworkInformation::AixStructs {
+struct ifreq_flags;
+}
+namespace System::Net::NetworkInformation::AixStructs {
+struct ifreq_mtu;
+}
+namespace System::Net::NetworkInformation {
+struct AixAddressFamily;
+}
+namespace System::Net::NetworkInformation {
+struct AixIoctlRequest;
+}
+namespace System::Net::NetworkInformation {
+class NetworkInterface;
+}
+// Forward declare root types
+namespace System::Net::NetworkInformation {
+class AixNetworkInterfaceAPI;
+}
+// Write type traits
+MARK_REF_T(::System::Net::NetworkInformation::AixNetworkInterfaceAPI*);
+DEFINE_IL2CPP_CLASS(::System::Net::NetworkInformation::AixNetworkInterfaceAPI*, "System.Net.NetworkInformation", "AixNetworkInterfaceAPI");
+// Dependencies System.Net.NetworkInformation.UnixNetworkInterfaceAPI
+namespace System::Net::NetworkInformation {
+// Is value type: false
+// CS Name: System.Net.NetworkInformation.AixNetworkInterfaceAPI
+class CORDL_TYPE AixNetworkInterfaceAPI : public ::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
+public:
+// Declarations
+/// @brief Method ByteArrayCopy, addr 0xacc8954, size 0x1c, virtual false, abstract: false, final false
+static inline void ByteArrayCopy(uint8_t*  dst, uint8_t*  src, int32_t  elements) ;
+
+/// @brief Method GetAllNetworkInterfaces, addr 0xacc8970, size 0xf60, virtual true, abstract: false, final false
+inline ::ArrayW<::System::Net::NetworkInformation::NetworkInterface*> GetAllNetworkInterfaces() ;
+
+static inline ::System::Net::NetworkInformation::AixNetworkInterfaceAPI* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xacc9b7c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method close, addr 0xacc865c, size 0x78, virtual false, abstract: false, final false
+static inline int32_t close(int32_t  fd) ;
+
+/// @brief Method ioctl, addr 0xacc8774, size 0xa0, virtual false, abstract: false, final false
+static inline int32_t ioctl(int32_t  fd, ::System::Net::NetworkInformation::AixIoctlRequest  request, ::by_ref<::System::Net::NetworkInformation::AixStructs::ifconf>  arg) ;
+
+/// @brief Method ioctl, addr 0xacc8814, size 0xa0, virtual false, abstract: false, final false
+static inline int32_t ioctl(int32_t  fd, ::System::Net::NetworkInformation::AixIoctlRequest  request, ::by_ref<::System::Net::NetworkInformation::AixStructs::ifreq_flags>  arg) ;
+
+/// @brief Method ioctl, addr 0xacc88b4, size 0xa0, virtual false, abstract: false, final false
+static inline int32_t ioctl(int32_t  fd, ::System::Net::NetworkInformation::AixIoctlRequest  request, ::by_ref<::System::Net::NetworkInformation::AixStructs::ifreq_mtu>  arg) ;
+
+/// @brief Method ioctl, addr 0xacc86d4, size 0xa0, virtual false, abstract: false, final false
+static inline int32_t ioctl(int32_t  fd, ::System::Net::NetworkInformation::AixIoctlRequest  request, ::by_ref<int32_t>  arg) ;
+
+/// @brief Method socket, addr 0xacc85bc, size 0xa0, virtual false, abstract: false, final false
+static inline int32_t socket(::System::Net::NetworkInformation::AixAddressFamily  family, int32_t  type, int32_t  protocol) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr AixNetworkInterfaceAPI() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "AixNetworkInterfaceAPI", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+AixNetworkInterfaceAPI(AixNetworkInterfaceAPI && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "AixNetworkInterfaceAPI", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+AixNetworkInterfaceAPI(AixNetworkInterfaceAPI const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10771};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Net::NetworkInformation::AixNetworkInterfaceAPI) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Net::NetworkInformation

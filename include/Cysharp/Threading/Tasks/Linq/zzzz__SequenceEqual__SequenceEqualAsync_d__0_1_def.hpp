@@ -1,0 +1,126 @@
+#pragma once
+// IWYU pragma private; include "Cysharp/Threading/Tasks/Linq/SequenceEqual__SequenceEqualAsync_d__0_1.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Cysharp/Threading/Tasks/CompilerServices/zzzz__AsyncUniTaskMethodBuilder_1_def.hpp"
+#include "Cysharp/Threading/Tasks/zzzz__UniTask_Awaiter_def.hpp"
+#include "Cysharp/Threading/Tasks/zzzz__UniTask`1_Awaiter_def.hpp"
+#include "System/Threading/zzzz__CancellationToken_def.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(SequenceEqual__SequenceEqualAsync_d__0_1)
+namespace Cysharp::Threading::Tasks {
+template<typename T>
+class IUniTaskAsyncEnumerable_1;
+}
+namespace Cysharp::Threading::Tasks {
+template<typename T>
+class IUniTaskAsyncEnumerator_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IEqualityComparer_1;
+}
+namespace System::Runtime::CompilerServices {
+class IAsyncStateMachine;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+template<typename TSource>
+struct SequenceEqual__SequenceEqualAsync_d__0_1;
+}
+// Write type traits
+MARK_GEN_VAL_T(::GlobalNamespace::SequenceEqual__SequenceEqualAsync_d__0_1);
+DEFINE_IL2CPP_GEN_CLASS(::GlobalNamespace::SequenceEqual__SequenceEqualAsync_d__0_1, "Cysharp.Threading.Tasks.Linq", "SequenceEqual/<SequenceEqualAsync>d__0`1");
+// [CompilerGenerated]
+// Dependencies Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1<T>, Cysharp.Threading.Tasks.UniTask::Awaiter, Cysharp.Threading.Tasks.UniTask`1::Awaiter<T>, System.Threading.CancellationToken
+namespace GlobalNamespace {
+// cpp template
+template<typename TSource>
+// Is value type: true
+// CS Name: Cysharp.Threading.Tasks.Linq.SequenceEqual/<SequenceEqualAsync>d__0`1<TSource>
+struct CORDL_TYPE SequenceEqual__SequenceEqualAsync_d__0_1 {
+public:
+// Declarations
+/// @brief Convert operator to "::System::Runtime::CompilerServices::IAsyncStateMachine"
+constexpr operator  ::System::Runtime::CompilerServices::IAsyncStateMachine*() ;
+
+/// @brief Method MoveNext, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline void MoveNext() ;
+
+/// [DebuggerHidden]
+/// @brief Method SetStateMachine, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: false, final true
+inline void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine*  stateMachine) ;
+
+/// @brief Convert to "::System::Runtime::CompilerServices::IAsyncStateMachine"
+constexpr ::System::Runtime::CompilerServices::IAsyncStateMachine* i___System__Runtime__CompilerServices__IAsyncStateMachine() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr SequenceEqual__SequenceEqualAsync_d__0_1() ;
+
+// Ctor Parameters [CppParam { name: "__1__state", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "__t__builder", ty: "::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<bool>", modifiers: "", def_value: None, comment: None }, CppParam { name: "first", ty: "::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*", modifiers: "", def_value: None, comment: None }, CppParam { name: "cancellationToken", ty: "::System::Threading::CancellationToken", modifiers: "", def_value: None, comment: None }, CppParam { name: "second", ty: "::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*", modifiers: "", def_value: None, comment: None }, CppParam { name: "comparer", ty: "::System::Collections::Generic::IEqualityComparer_1<TSource>*", modifiers: "", def_value: None, comment: None }, CppParam { name: "_e1_5__2", ty: "::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*", modifiers: "", def_value: None, comment: None }, CppParam { name: "__7__wrap2", ty: "::System::Object*", modifiers: "", def_value: None, comment: None }, CppParam { name: "__7__wrap3", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "__7__wrap4", ty: "bool", modifiers: "", def_value: None, comment: None }, CppParam { name: "_e2_5__6", ty: "::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*", modifiers: "", def_value: None, comment: None }, CppParam { name: "__7__wrap6", ty: "::System::Object*", modifiers: "", def_value: None, comment: None }, CppParam { name: "__7__wrap7", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "__7__wrap8", ty: "bool", modifiers: "", def_value: None, comment: None }, CppParam { name: "__u__1", ty: "::GlobalNamespace::UniTask_1_Awaiter<bool>", modifiers: "", def_value: None, comment: None }, CppParam { name: "__u__2", ty: "::GlobalNamespace::UniTask_Awaiter", modifiers: "", def_value: None, comment: None }]
+constexpr SequenceEqual__SequenceEqualAsync_d__0_1(int32_t  __1__state, ::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<bool>  __t__builder, ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*  first, ::System::Threading::CancellationToken  cancellationToken, ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*  second, ::System::Collections::Generic::IEqualityComparer_1<TSource>*  comparer, ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*  _e1_5__2, ::System::Object*  __7__wrap2, int32_t  __7__wrap3, bool  __7__wrap4, ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*  _e2_5__6, ::System::Object*  __7__wrap6, int32_t  __7__wrap7, bool  __7__wrap8, ::GlobalNamespace::UniTask_1_Awaiter<bool>  __u__1, ::GlobalNamespace::UniTask_Awaiter  __u__2) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{20744};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x98};
+
+/// @brief Field <>1__state, offset: 0x0, size: 0x4, def value: None
+ int32_t  __1__state;
+
+/// @brief Field <>t__builder, offset: 0x8, size: 0x18, def value: None
+ ::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<bool>  __t__builder;
+
+/// @brief Field first, offset: 0x20, size: 0x8, def value: None
+ ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*  first;
+
+/// @brief Field cancellationToken, offset: 0x28, size: 0x8, def value: None
+ ::System::Threading::CancellationToken  cancellationToken;
+
+/// @brief Field second, offset: 0x30, size: 0x8, def value: None
+ ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerable_1<TSource>*  second;
+
+/// @brief Field comparer, offset: 0x38, size: 0x8, def value: None
+ ::System::Collections::Generic::IEqualityComparer_1<TSource>*  comparer;
+
+/// @brief Field <e1>5__2, offset: 0x40, size: 0x8, def value: None
+ ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*  _e1_5__2;
+
+/// @brief Field <>7__wrap2, offset: 0x48, size: 0x8, def value: None
+ ::System::Object*  __7__wrap2;
+
+/// @brief Field <>7__wrap3, offset: 0x50, size: 0x4, def value: None
+ int32_t  __7__wrap3;
+
+/// @brief Field <>7__wrap4, offset: 0x54, size: 0x1, def value: None
+ bool  __7__wrap4;
+
+/// @brief Field <e2>5__6, offset: 0x58, size: 0x8, def value: None
+ ::Cysharp::Threading::Tasks::IUniTaskAsyncEnumerator_1<TSource>*  _e2_5__6;
+
+/// @brief Field <>7__wrap6, offset: 0x60, size: 0x8, def value: None
+ ::System::Object*  __7__wrap6;
+
+/// @brief Field <>7__wrap7, offset: 0x68, size: 0x4, def value: None
+ int32_t  __7__wrap7;
+
+/// @brief Field <>7__wrap8, offset: 0x6c, size: 0x1, def value: None
+ bool  __7__wrap8;
+
+/// @brief Field <>u__1, offset: 0x70, size: 0x18, def value: None
+ ::GlobalNamespace::UniTask_1_Awaiter<bool>  __u__1;
+
+/// @brief Field <>u__2, offset: 0x88, size: 0x10, def value: None
+ ::GlobalNamespace::UniTask_Awaiter  __u__2;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+} // namespace end def GlobalNamespace

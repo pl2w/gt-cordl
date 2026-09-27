@@ -1,0 +1,40 @@
+#pragma once
+// IWYU pragma private; include "System/IFormatProvider.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(IFormatProvider)
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System {
+class IFormatProvider;
+}
+// Write type traits
+MARK_REF_T(::System::IFormatProvider*);
+DEFINE_IL2CPP_CLASS(::System::IFormatProvider*, "System", "IFormatProvider");
+// Dependencies 
+namespace System {
+// Is value type: false
+// CS Name: System.IFormatProvider
+class CORDL_TYPE IFormatProvider {
+public:
+// Declarations
+/// @brief Method GetFormat, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::System::Object* GetFormat(::System::Type*  formatType) ;
+
+// Ctor Parameters [CppParam { name: "", ty: "IFormatProvider", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IFormatProvider(IFormatProvider const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{5522};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def System

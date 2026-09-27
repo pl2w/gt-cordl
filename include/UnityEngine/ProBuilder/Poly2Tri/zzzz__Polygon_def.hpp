@@ -1,0 +1,168 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/Poly2Tri/Polygon.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(Polygon)
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IList_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace UnityEngine::ProBuilder::Poly2Tri {
+class DelaunayTriangle;
+}
+namespace UnityEngine::ProBuilder::Poly2Tri {
+class PolygonPoint;
+}
+namespace UnityEngine::ProBuilder::Poly2Tri {
+class Triangulatable;
+}
+namespace UnityEngine::ProBuilder::Poly2Tri {
+class TriangulationContext;
+}
+namespace UnityEngine::ProBuilder::Poly2Tri {
+struct TriangulationMode;
+}
+namespace UnityEngine::ProBuilder::Poly2Tri {
+class TriangulationPoint;
+}
+// Forward declare root types
+namespace UnityEngine::ProBuilder::Poly2Tri {
+class Polygon;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ProBuilder::Poly2Tri::Polygon*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ProBuilder::Poly2Tri::Polygon*, "UnityEngine.ProBuilder.Poly2Tri", "Polygon");
+// Dependencies System.Object
+namespace UnityEngine::ProBuilder::Poly2Tri {
+// Is value type: false
+// CS Name: UnityEngine.ProBuilder.Poly2Tri.Polygon
+class CORDL_TYPE Polygon : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Triangles)) ::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*  Triangles;
+
+ __declspec(property(get=get_TriangulationMode)) ::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode  TriangulationMode;
+
+/// @brief Field _holes, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__holes, put=__cordl_internal_set__holes)) ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::Polygon*>*  _holes;
+
+/// @brief Field _points, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get__points, put=__cordl_internal_set__points)) ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*  _points;
+
+/// @brief Field _steinerPoints, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get__steinerPoints, put=__cordl_internal_set__steinerPoints)) ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*  _steinerPoints;
+
+/// @brief Field _triangles, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get__triangles, put=__cordl_internal_set__triangles)) ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*  _triangles;
+
+/// @brief Convert operator to "::UnityEngine::ProBuilder::Poly2Tri::Triangulatable"
+constexpr operator  ::UnityEngine::ProBuilder::Poly2Tri::Triangulatable*() noexcept;
+
+/// @brief Method AddHole, addr 0xb07c93c, size 0x100, virtual false, abstract: false, final false
+inline void AddHole(::UnityEngine::ProBuilder::Poly2Tri::Polygon*  poly) ;
+
+/// @brief Method AddTriangle, addr 0xb07ca44, size 0xac, virtual true, abstract: false, final true
+inline void AddTriangle(::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*  t) ;
+
+/// @brief Method AddTriangles, addr 0xb07caf0, size 0x58, virtual true, abstract: false, final true
+inline void AddTriangles(::System::Collections::Generic::IEnumerable_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*  list) ;
+
+static inline ::UnityEngine::ProBuilder::Poly2Tri::Polygon* New_ctor(::System::Collections::Generic::IEnumerable_1<::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint*>*  points) ;
+
+static inline ::UnityEngine::ProBuilder::Poly2Tri::Polygon* New_ctor(::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint*>*  points) ;
+
+/// @brief Method Prepare, addr 0xb07cb48, size 0x3e0, virtual true, abstract: false, final true
+inline void Prepare(::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext*  tcx) ;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::Polygon*>* const& __cordl_internal_get__holes() const;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::Polygon*>*& __cordl_internal_get__holes() ;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>* const& __cordl_internal_get__points() const;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*& __cordl_internal_get__points() ;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>* const& __cordl_internal_get__steinerPoints() const;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*& __cordl_internal_get__steinerPoints() ;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>* const& __cordl_internal_get__triangles() const;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*& __cordl_internal_get__triangles() ;
+
+constexpr void __cordl_internal_set__holes(::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::Polygon*>*  value) ;
+
+constexpr void __cordl_internal_set__points(::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*  value) ;
+
+constexpr void __cordl_internal_set__steinerPoints(::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*  value) ;
+
+constexpr void __cordl_internal_set__triangles(::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*  value) ;
+
+/// @brief Method .ctor, addr 0xb07c8ac, size 0x88, virtual false, abstract: false, final false
+inline void _ctor(::System::Collections::Generic::IEnumerable_1<::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint*>*  points) ;
+
+/// @brief Method .ctor, addr 0xb07c4ec, size 0x3c0, virtual false, abstract: false, final false
+inline void _ctor(::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint*>*  points) ;
+
+/// @brief Method get_Triangles, addr 0xb07ca3c, size 0x8, virtual true, abstract: false, final true
+inline ::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>* get_Triangles() ;
+
+/// @brief Method get_TriangulationMode, addr 0xb07c934, size 0x8, virtual true, abstract: false, final true
+inline ::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode get_TriangulationMode() ;
+
+/// @brief Convert to "::UnityEngine::ProBuilder::Poly2Tri::Triangulatable"
+constexpr ::UnityEngine::ProBuilder::Poly2Tri::Triangulatable* i___UnityEngine__ProBuilder__Poly2Tri__Triangulatable() noexcept;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Polygon() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Polygon", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Polygon(Polygon && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Polygon", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Polygon(Polygon const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32401};
+
+/// @brief Field _points, offset: 0x10, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*  ____points;
+
+/// @brief Field _steinerPoints, offset: 0x18, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint*>*  ____steinerPoints;
+
+/// @brief Field _holes, offset: 0x20, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::Polygon*>*  ____holes;
+
+/// @brief Field _triangles, offset: 0x28, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle*>*  ____triangles;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ProBuilder::Poly2Tri::Polygon, ____points) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ProBuilder::Poly2Tri::Polygon, ____steinerPoints) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ProBuilder::Poly2Tri::Polygon, ____holes) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ProBuilder::Poly2Tri::Polygon, ____triangles) == 0x28, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ProBuilder::Poly2Tri::Polygon) == 0x30, "Size mismatch!");
+
+} // namespace end def UnityEngine::ProBuilder::Poly2Tri

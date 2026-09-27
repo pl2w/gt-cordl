@@ -1,0 +1,133 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Timeline/BlendUtility.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(BlendUtility)
+namespace System {
+template<typename T>
+class Comparison_1;
+}
+namespace UnityEngine::Timeline {
+class BlendUtility___c;
+}
+namespace UnityEngine::Timeline {
+class TimelineClip;
+}
+// Forward declare root types
+namespace UnityEngine::Timeline {
+class BlendUtility;
+}
+namespace UnityEngine::Timeline {
+class BlendUtility___c;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Timeline::BlendUtility*);
+MARK_REF_T(::UnityEngine::Timeline::BlendUtility___c*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Timeline::BlendUtility*, "UnityEngine.Timeline", "BlendUtility");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Timeline::BlendUtility___c*, "UnityEngine.Timeline", "BlendUtility/<>c");
+// Dependencies System.Object
+namespace UnityEngine::Timeline {
+// Is value type: false
+// CS Name: UnityEngine.Timeline.BlendUtility
+class CORDL_TYPE BlendUtility : public ::System::Object {
+public:
+// Declarations
+using __c = ::UnityEngine::Timeline::BlendUtility___c;
+
+/// @brief Field kMinOverlapTime, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_kMinOverlapTime, put=setStaticF_kMinOverlapTime)) double_t  kMinOverlapTime;
+
+/// @brief Method ComputeBlendsFromOverlaps, addr 0xb3d0e58, size 0x248, virtual false, abstract: false, final false
+static inline void ComputeBlendsFromOverlaps(::ArrayW<::UnityEngine::Timeline::TimelineClip*>  clips) ;
+
+/// @brief Method Overlaps, addr 0xb3d0d64, size 0xf4, virtual false, abstract: false, final false
+static inline bool Overlaps(::UnityEngine::Timeline::TimelineClip*  blendOut, ::UnityEngine::Timeline::TimelineClip*  blendIn) ;
+
+/// @brief Method UpdateClipIntersection, addr 0xb3d10a0, size 0x1c4, virtual false, abstract: false, final false
+static inline void UpdateClipIntersection(::UnityEngine::Timeline::TimelineClip*  blendOutClip, ::UnityEngine::Timeline::TimelineClip*  blendInClip) ;
+
+static inline double_t getStaticF_kMinOverlapTime() ;
+
+static inline void setStaticF_kMinOverlapTime(double_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BlendUtility() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BlendUtility", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BlendUtility(BlendUtility && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BlendUtility", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BlendUtility(BlendUtility const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28784};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Timeline::BlendUtility) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Timeline
+// [CompilerGenerated]
+// Dependencies System.Object
+namespace UnityEngine::Timeline {
+// Is value type: false
+// CS Name: UnityEngine.Timeline.BlendUtility/<>c
+class CORDL_TYPE BlendUtility___c : public ::System::Object {
+public:
+// Declarations
+/// @brief Field <>9, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF___9, put=setStaticF___9)) ::UnityEngine::Timeline::BlendUtility___c*  __9;
+
+/// @brief Field <>9__2_0, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF___9__2_0, put=setStaticF___9__2_0)) ::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>*  __9__2_0;
+
+static inline ::UnityEngine::Timeline::BlendUtility___c* New_ctor() ;
+
+/// @brief Method <ComputeBlendsFromOverlaps>b__2_0, addr 0xb3d1358, size 0xe0, virtual false, abstract: false, final false
+inline int32_t _ComputeBlendsFromOverlaps_b__2_0(::UnityEngine::Timeline::TimelineClip*  c1, ::UnityEngine::Timeline::TimelineClip*  c2) ;
+
+/// @brief Method .ctor, addr 0xb3d1350, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::Timeline::BlendUtility___c* getStaticF___9() ;
+
+static inline ::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>* getStaticF___9__2_0() ;
+
+static inline void setStaticF___9(::UnityEngine::Timeline::BlendUtility___c*  value) ;
+
+static inline void setStaticF___9__2_0(::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BlendUtility___c() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BlendUtility___c", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BlendUtility___c(BlendUtility___c && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BlendUtility___c", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BlendUtility___c(BlendUtility___c const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28783};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Timeline::BlendUtility___c) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Timeline

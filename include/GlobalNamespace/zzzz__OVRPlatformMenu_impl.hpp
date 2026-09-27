@@ -1,0 +1,190 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRPlatformMenu.hpp"
+#include "GlobalNamespace/zzzz__OVRInput_RawButton_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRPlatformMenu_eHandler_impl.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRPlatformMenu_def.hpp"
+#include "GlobalNamespace/zzzz__OVRPlatformMenu_eBackButtonAction_def.hpp"
+#include "GlobalNamespace/zzzz__OVRPlatformMenu_eHandler_def.hpp"
+#include "System/Collections/Generic/zzzz__Stack_1_def.hpp"
+#include "System/zzzz__Func_1_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRPlatformMenu.HandleBackButtonState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPlatformMenu_eBackButtonAction (::GlobalNamespace::OVRPlatformMenu::*)()>(&::GlobalNamespace::OVRPlatformMenu::HandleBackButtonState)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa60d504;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"HandleBackButtonState", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPlatformMenu.Awake
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRPlatformMenu::*)()>(&::GlobalNamespace::OVRPlatformMenu::Awake)> {
+  constexpr static std::size_t size = 0x18c;
+  constexpr static std::size_t addrs = 0xa60d56c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"Awake", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPlatformMenu.ShowConfirmQuitMenu
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRPlatformMenu::*)()>(&::GlobalNamespace::OVRPlatformMenu::ShowConfirmQuitMenu)> {
+  constexpr static std::size_t size = 0xd8;
+  constexpr static std::size_t addrs = 0xa60d6f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"ShowConfirmQuitMenu", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPlatformMenu.RetreatOneLevel
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)()>(&::GlobalNamespace::OVRPlatformMenu::RetreatOneLevel)> {
+  constexpr static std::size_t size = 0xf4;
+  constexpr static std::size_t addrs = 0xa60d7d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"RetreatOneLevel", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPlatformMenu.Update
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRPlatformMenu::*)()>(&::GlobalNamespace::OVRPlatformMenu::Update)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa60d8c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"Update", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPlatformMenu._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRPlatformMenu::*)()>(&::GlobalNamespace::OVRPlatformMenu::_ctor)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xa60d904;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::GlobalNamespace::OVRInput_RawButton& GlobalNamespace::OVRPlatformMenu::__cordl_internal_get_inputCode()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___inputCode;
+}
+constexpr ::GlobalNamespace::OVRInput_RawButton const& GlobalNamespace::OVRPlatformMenu::__cordl_internal_get_inputCode() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___inputCode;
+}
+constexpr void GlobalNamespace::OVRPlatformMenu::__cordl_internal_set_inputCode(::GlobalNamespace::OVRInput_RawButton  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___inputCode = value;
+}
+constexpr ::GlobalNamespace::OVRPlatformMenu_eHandler& GlobalNamespace::OVRPlatformMenu::__cordl_internal_get_shortPressHandler()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___shortPressHandler;
+}
+constexpr ::GlobalNamespace::OVRPlatformMenu_eHandler const& GlobalNamespace::OVRPlatformMenu::__cordl_internal_get_shortPressHandler() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___shortPressHandler;
+}
+constexpr void GlobalNamespace::OVRPlatformMenu::__cordl_internal_set_shortPressHandler(::GlobalNamespace::OVRPlatformMenu_eHandler  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___shortPressHandler = value;
+}
+constexpr ::System::Func_1<bool>*& GlobalNamespace::OVRPlatformMenu::__cordl_internal_get_OnShortPress()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___OnShortPress;
+}
+constexpr ::System::Func_1<bool>* const& GlobalNamespace::OVRPlatformMenu::__cordl_internal_get_OnShortPress() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___OnShortPress;
+}
+constexpr void GlobalNamespace::OVRPlatformMenu::__cordl_internal_set_OnShortPress(::System::Func_1<bool>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___OnShortPress = value;
+}
+inline void GlobalNamespace::OVRPlatformMenu::setStaticF_sceneStack(::System::Collections::Generic::Stack_1<::StringW>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Stack_1<::StringW>*, "sceneStack", ::GlobalNamespace::OVRPlatformMenu*>(std::forward<::System::Collections::Generic::Stack_1<::StringW>*>(value));
+}
+inline ::System::Collections::Generic::Stack_1<::StringW>* GlobalNamespace::OVRPlatformMenu::getStaticF_sceneStack()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Stack_1<::StringW>*, "sceneStack", ::GlobalNamespace::OVRPlatformMenu*>();
+}
+inline ::GlobalNamespace::OVRPlatformMenu_eBackButtonAction GlobalNamespace::OVRPlatformMenu::HandleBackButtonState()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"HandleBackButtonState", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPlatformMenu_eBackButtonAction>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRPlatformMenu::Awake()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"Awake", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRPlatformMenu::ShowConfirmQuitMenu()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"ShowConfirmQuitMenu", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRPlatformMenu::RetreatOneLevel()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"RetreatOneLevel", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method);
+}
+inline void GlobalNamespace::OVRPlatformMenu::Update()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {"Update", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRPlatformMenu::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPlatformMenu*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRPlatformMenu* GlobalNamespace::OVRPlatformMenu::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRPlatformMenu*>());
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRPlatformMenu::OVRPlatformMenu()   {
+}

@@ -1,0 +1,544 @@
+#pragma once
+// IWYU pragma private; include "System/Text/Normalization.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/Text/zzzz__Normalization_def.hpp"
+#include "System/Text/zzzz__NormalizationCheck_def.hpp"
+#include "System/Text/zzzz__NormalizationForm_def.hpp"
+#include "System/Text/zzzz__StringBuilder_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+//  Writing Method size for method: ::System::Text::Normalization.PropValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint32_t (*)(int32_t)>(&::System::Text::Normalization::PropValue)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xa1528c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"PropValue", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.CharMapIdx
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(int32_t)>(&::System::Text::Normalization::CharMapIdx)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xa152954;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"CharMapIdx", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.GetCombiningClass
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint8_t (*)(int32_t)>(&::System::Text::Normalization::GetCombiningClass)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xa1529e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetCombiningClass", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.GetPrimaryCompositeFromMapIndex
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(int32_t)>(&::System::Text::Normalization::GetPrimaryCompositeFromMapIndex)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xa152a90;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetPrimaryCompositeFromMapIndex", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.GetPrimaryCompositeHelperIndex
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(int32_t)>(&::System::Text::Normalization::GetPrimaryCompositeHelperIndex)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xa152b38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetPrimaryCompositeHelperIndex", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Compose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW, int32_t)>(&::System::Text::Normalization::Compose)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xa152be0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Compose", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Combine
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Text::StringBuilder* (*)(::StringW, int32_t, int32_t)>(&::System::Text::Normalization::Combine)> {
+  constexpr static std::size_t size = 0x13c;
+  constexpr static std::size_t addrs = 0xa152df4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Combine", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Combine
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::Text::StringBuilder*, int32_t, int32_t)>(&::System::Text::Normalization::Combine)> {
+  constexpr static std::size_t size = 0x110;
+  constexpr static std::size_t addrs = 0xa152f30;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Combine", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.CombineHangul
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::System::Text::StringBuilder*, ::StringW, int32_t)>(&::System::Text::Normalization::CombineHangul)> {
+  constexpr static std::size_t size = 0x1c8;
+  constexpr static std::size_t addrs = 0xa15316c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"CombineHangul", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Fetch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::System::Text::StringBuilder*, ::StringW, int32_t)>(&::System::Text::Normalization::Fetch)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xa153568;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Fetch", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.TryComposeWithPreviousStarter
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::System::Text::StringBuilder*, ::StringW, int32_t)>(&::System::Text::Normalization::TryComposeWithPreviousStarter)> {
+  constexpr static std::size_t size = 0x234;
+  constexpr static std::size_t addrs = 0xa153334;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"TryComposeWithPreviousStarter", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.TryCompose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(int32_t, int32_t, int32_t)>(&::System::Text::Normalization::TryCompose)> {
+  constexpr static std::size_t size = 0x118;
+  constexpr static std::size_t addrs = 0xa1535a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"TryCompose", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Decompose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW, int32_t)>(&::System::Text::Normalization::Decompose)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xa1536bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Decompose", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Decompose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::StringW, ::by_ref<::System::Text::StringBuilder*>, int32_t)>(&::System::Text::Normalization::Decompose)> {
+  constexpr static std::size_t size = 0x134;
+  constexpr static std::size_t addrs = 0xa152cc0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Decompose", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::System::Text::StringBuilder*>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.ReorderCanonical
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::StringW, ::by_ref<::System::Text::StringBuilder*>, int32_t)>(&::System::Text::Normalization::ReorderCanonical)> {
+  constexpr static std::size_t size = 0x27c;
+  constexpr static std::size_t addrs = 0xa153940;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"ReorderCanonical", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::System::Text::StringBuilder*>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.DecomposeChar
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::System::Text::StringBuilder*>, ::by_ref<::ArrayW<int32_t>>, ::StringW, int32_t, int32_t, ::by_ref<int32_t>)>(&::System::Text::Normalization::DecomposeChar)> {
+  constexpr static std::size_t size = 0x1f8;
+  constexpr static std::size_t addrs = 0xa153748;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"DecomposeChar", {}, {::i2c::type_of<::by_ref<::System::Text::StringBuilder*>>(), ::i2c::type_of<::by_ref<::ArrayW<int32_t>>>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.QuickCheck
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Text::NormalizationCheck (*)(char16_t, int32_t)>(&::System::Text::Normalization::QuickCheck)> {
+  constexpr static std::size_t size = 0x12c;
+  constexpr static std::size_t addrs = 0xa153040;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"QuickCheck", {}, {::i2c::type_of<char16_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.GetCanonicalHangul
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(int32_t, ::ArrayW<int32_t>, int32_t)>(&::System::Text::Normalization::GetCanonicalHangul)> {
+  constexpr static std::size_t size = 0xe4;
+  constexpr static std::size_t addrs = 0xa153d74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetCanonicalHangul", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<int32_t>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.GetCanonical
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(int32_t, ::ArrayW<int32_t>, int32_t, int32_t)>(&::System::Text::Normalization::GetCanonical)> {
+  constexpr static std::size_t size = 0x1b8;
+  constexpr static std::size_t addrs = 0xa153bbc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetCanonical", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<int32_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Normalize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW, ::System::Text::NormalizationForm)>(&::System::Text::Normalization::Normalize)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xa153e58;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Normalize", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Text::NormalizationForm>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.Normalize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW, int32_t)>(&::System::Text::Normalization::Normalize)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xa153efc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Normalize", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Text::Normalization.load_normalization_resource
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::System::IntPtr>, ::by_ref<::System::IntPtr>, ::by_ref<::System::IntPtr>, ::by_ref<::System::IntPtr>, ::by_ref<::System::IntPtr>, ::by_ref<::System::IntPtr>)>(&::System::Text::Normalization::load_normalization_resource)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa153f88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"load_normalization_resource", {}, {::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void System::Text::Normalization::setStaticF_props(uint8_t*  value)  {
+::cordl_internals::setStaticField<uint8_t*, "props", ::System::Text::Normalization*>(std::forward<uint8_t*>(value));
+}
+inline uint8_t* System::Text::Normalization::getStaticF_props()  {
+return ::cordl_internals::getStaticField<uint8_t*, "props", ::System::Text::Normalization*>();
+}
+inline void System::Text::Normalization::setStaticF_mappedChars(int32_t*  value)  {
+::cordl_internals::setStaticField<int32_t*, "mappedChars", ::System::Text::Normalization*>(std::forward<int32_t*>(value));
+}
+inline int32_t* System::Text::Normalization::getStaticF_mappedChars()  {
+return ::cordl_internals::getStaticField<int32_t*, "mappedChars", ::System::Text::Normalization*>();
+}
+inline void System::Text::Normalization::setStaticF_charMapIndex(int16_t*  value)  {
+::cordl_internals::setStaticField<int16_t*, "charMapIndex", ::System::Text::Normalization*>(std::forward<int16_t*>(value));
+}
+inline int16_t* System::Text::Normalization::getStaticF_charMapIndex()  {
+return ::cordl_internals::getStaticField<int16_t*, "charMapIndex", ::System::Text::Normalization*>();
+}
+inline void System::Text::Normalization::setStaticF_helperIndex(int16_t*  value)  {
+::cordl_internals::setStaticField<int16_t*, "helperIndex", ::System::Text::Normalization*>(std::forward<int16_t*>(value));
+}
+inline int16_t* System::Text::Normalization::getStaticF_helperIndex()  {
+return ::cordl_internals::getStaticField<int16_t*, "helperIndex", ::System::Text::Normalization*>();
+}
+inline void System::Text::Normalization::setStaticF_mapIdxToComposite(uint16_t*  value)  {
+::cordl_internals::setStaticField<uint16_t*, "mapIdxToComposite", ::System::Text::Normalization*>(std::forward<uint16_t*>(value));
+}
+inline uint16_t* System::Text::Normalization::getStaticF_mapIdxToComposite()  {
+return ::cordl_internals::getStaticField<uint16_t*, "mapIdxToComposite", ::System::Text::Normalization*>();
+}
+inline void System::Text::Normalization::setStaticF_combiningClass(uint8_t*  value)  {
+::cordl_internals::setStaticField<uint8_t*, "combiningClass", ::System::Text::Normalization*>(std::forward<uint8_t*>(value));
+}
+inline uint8_t* System::Text::Normalization::getStaticF_combiningClass()  {
+return ::cordl_internals::getStaticField<uint8_t*, "combiningClass", ::System::Text::Normalization*>();
+}
+inline void System::Text::Normalization::setStaticF_forLock(::System::Object*  value)  {
+::cordl_internals::setStaticField<::System::Object*, "forLock", ::System::Text::Normalization*>(std::forward<::System::Object*>(value));
+}
+inline ::System::Object* System::Text::Normalization::getStaticF_forLock()  {
+return ::cordl_internals::getStaticField<::System::Object*, "forLock", ::System::Text::Normalization*>();
+}
+inline void System::Text::Normalization::setStaticF_isReady(bool  value)  {
+::cordl_internals::setStaticField<bool, "isReady", ::System::Text::Normalization*>(std::forward<bool>(value));
+}
+inline bool System::Text::Normalization::getStaticF_isReady()  {
+return ::cordl_internals::getStaticField<bool, "isReady", ::System::Text::Normalization*>();
+}
+inline uint32_t System::Text::Normalization::PropValue(int32_t  cp)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"PropValue", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint32_t>(nullptr, ___internal_method, cp);
+}
+inline int32_t System::Text::Normalization::CharMapIdx(int32_t  cp)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"CharMapIdx", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, cp);
+}
+inline uint8_t System::Text::Normalization::GetCombiningClass(int32_t  c)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetCombiningClass", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint8_t>(nullptr, ___internal_method, c);
+}
+inline int32_t System::Text::Normalization::GetPrimaryCompositeFromMapIndex(int32_t  src)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetPrimaryCompositeFromMapIndex", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, src);
+}
+inline int32_t System::Text::Normalization::GetPrimaryCompositeHelperIndex(int32_t  cp)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetPrimaryCompositeHelperIndex", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, cp);
+}
+inline ::StringW System::Text::Normalization::Compose(::StringW  source, int32_t  checkType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Compose", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, source, checkType);
+}
+inline ::System::Text::StringBuilder* System::Text::Normalization::Combine(::StringW  source, int32_t  start, int32_t  checkType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Combine", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Text::StringBuilder*>(nullptr, ___internal_method, source, start, checkType);
+}
+inline void System::Text::Normalization::Combine(::System::Text::StringBuilder*  sb, int32_t  i, int32_t  checkType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Combine", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, sb, i, checkType);
+}
+inline int32_t System::Text::Normalization::CombineHangul(::System::Text::StringBuilder*  sb, ::StringW  s, int32_t  current)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"CombineHangul", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, sb, s, current);
+}
+inline int32_t System::Text::Normalization::Fetch(::System::Text::StringBuilder*  sb, ::StringW  s, int32_t  i)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Fetch", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, sb, s, i);
+}
+inline int32_t System::Text::Normalization::TryComposeWithPreviousStarter(::System::Text::StringBuilder*  sb, ::StringW  s, int32_t  current)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"TryComposeWithPreviousStarter", {}, {::i2c::type_of<::System::Text::StringBuilder*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, sb, s, current);
+}
+inline int32_t System::Text::Normalization::TryCompose(int32_t  i, int32_t  starter, int32_t  candidate)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"TryCompose", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, i, starter, candidate);
+}
+inline ::StringW System::Text::Normalization::Decompose(::StringW  source, int32_t  checkType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Decompose", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, source, checkType);
+}
+inline void System::Text::Normalization::Decompose(::StringW  source, ::by_ref<::System::Text::StringBuilder*>  sb, int32_t  checkType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Decompose", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::System::Text::StringBuilder*>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, source, sb, checkType);
+}
+inline void System::Text::Normalization::ReorderCanonical(::StringW  src, ::by_ref<::System::Text::StringBuilder*>  sb, int32_t  start)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"ReorderCanonical", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::System::Text::StringBuilder*>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, src, sb, start);
+}
+inline void System::Text::Normalization::DecomposeChar(::by_ref<::System::Text::StringBuilder*>  sb, ::by_ref<::ArrayW<int32_t>>  buf, ::StringW  s, int32_t  i, int32_t  checkType, ::by_ref<int32_t>  start)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"DecomposeChar", {}, {::i2c::type_of<::by_ref<::System::Text::StringBuilder*>>(), ::i2c::type_of<::by_ref<::ArrayW<int32_t>>>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, sb, buf, s, i, checkType, start);
+}
+inline ::System::Text::NormalizationCheck System::Text::Normalization::QuickCheck(char16_t  c, int32_t  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"QuickCheck", {}, {::i2c::type_of<char16_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Text::NormalizationCheck>(nullptr, ___internal_method, c, type);
+}
+inline int32_t System::Text::Normalization::GetCanonicalHangul(int32_t  s, ::ArrayW<int32_t>  buf, int32_t  bufIdx)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetCanonicalHangul", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<int32_t>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, s, buf, bufIdx);
+}
+inline int32_t System::Text::Normalization::GetCanonical(int32_t  c, ::ArrayW<int32_t>  buf, int32_t  bufIdx, int32_t  checkType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"GetCanonical", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<int32_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, c, buf, bufIdx, checkType);
+}
+inline ::StringW System::Text::Normalization::Normalize(::StringW  source, ::System::Text::NormalizationForm  normalizationForm)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Normalize", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Text::NormalizationForm>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, source, normalizationForm);
+}
+inline ::StringW System::Text::Normalization::Normalize(::StringW  source, int32_t  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"Normalize", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, source, type);
+}
+inline void System::Text::Normalization::load_normalization_resource(::by_ref<::System::IntPtr>  props, ::by_ref<::System::IntPtr>  mappedChars, ::by_ref<::System::IntPtr>  charMapIndex, ::by_ref<::System::IntPtr>  helperIndex, ::by_ref<::System::IntPtr>  mapIdxToComposite, ::by_ref<::System::IntPtr>  combiningClass)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Text::Normalization*>(),
+                        {"load_normalization_resource", {}, {::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>(), ::i2c::type_of<::by_ref<::System::IntPtr>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, props, mappedChars, charMapIndex, helperIndex, mapIdxToComposite, combiningClass);
+}
+// Ctor Parameters []
+constexpr ::System::Text::Normalization::Normalization()   {
+}

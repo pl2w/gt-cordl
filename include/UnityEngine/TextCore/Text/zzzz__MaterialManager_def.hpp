@@ -1,0 +1,71 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/TextCore/Text/MaterialManager.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(MaterialManager)
+namespace System::Collections::Generic {
+template<typename TKey,typename TValue>
+class Dictionary_2;
+}
+namespace UnityEngine::TextCore::Text {
+class FontAsset;
+}
+namespace UnityEngine {
+class Material;
+}
+// Forward declare root types
+namespace UnityEngine::TextCore::Text {
+class MaterialManager;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::TextCore::Text::MaterialManager*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::TextCore::Text::MaterialManager*, "UnityEngine.TextCore.Text", "MaterialManager");
+// Dependencies System.Object
+namespace UnityEngine::TextCore::Text {
+// Is value type: false
+// CS Name: UnityEngine.TextCore.Text.MaterialManager
+class CORDL_TYPE MaterialManager : public ::System::Object {
+public:
+// Declarations
+/// @brief Field s_FallbackMaterials, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_FallbackMaterials, put=setStaticF_s_FallbackMaterials)) ::System::Collections::Generic::Dictionary_2<int64_t,::UnityW<::UnityEngine::Material>>*  s_FallbackMaterials;
+
+/// @brief Method CopyMaterialPresetProperties, addr 0xb6bf584, size 0x288, virtual false, abstract: false, final false
+static inline void CopyMaterialPresetProperties(::UnityEngine::Material*  source, ::UnityEngine::Material*  destination) ;
+
+/// @brief Method GetFallbackMaterial, addr 0xb6bf80c, size 0x238, virtual false, abstract: false, final false
+static inline ::UnityW<::UnityEngine::Material> GetFallbackMaterial(::UnityEngine::TextCore::Text::FontAsset*  fontAsset, ::UnityEngine::Material*  sourceMaterial, int32_t  atlasIndex) ;
+
+/// @brief Method GetFallbackMaterial, addr 0xb6bf154, size 0x430, virtual false, abstract: false, final false
+static inline ::UnityW<::UnityEngine::Material> GetFallbackMaterial(::UnityEngine::Material*  sourceMaterial, ::UnityEngine::Material*  targetMaterial) ;
+
+static inline ::System::Collections::Generic::Dictionary_2<int64_t,::UnityW<::UnityEngine::Material>>* getStaticF_s_FallbackMaterials() ;
+
+static inline void setStaticF_s_FallbackMaterials(::System::Collections::Generic::Dictionary_2<int64_t,::UnityW<::UnityEngine::Material>>*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MaterialManager() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MaterialManager", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MaterialManager(MaterialManager && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MaterialManager", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MaterialManager(MaterialManager const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{26234};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::TextCore::Text::MaterialManager) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::TextCore::Text

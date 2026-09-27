@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/QuestPackageManager/QPM.Package/refs/heads/main/qpm.schema.json",
+  "version": "0.1.0",
+  "sharedDir": "include",
+  "dependenciesDir": "extern",
+  "info": {
+    "name": "gt-cordl",
+    "id": "gt-cordl",
+    "version": "0.1.0",
+    "url": "https://github.com/pl2w/gt-cordl",
+    "additionalData": {
+      "headersOnly": true,
+      "branchName": "main"
+    }
+  },
+  "dependencies": [
+    {
+      "id": "libil2cpp",
+      "versionRange": "^0.5.0",
+      "additionalData": {}
+    },
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^8.1.0",
+      "additionalData": {}
+    }
+  ]
+}

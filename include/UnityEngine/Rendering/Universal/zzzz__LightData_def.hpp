@@ -1,0 +1,122 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/Universal/LightData.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(LightData)
+namespace Unity::Collections {
+template<typename T>
+struct NativeArray_1;
+}
+namespace UnityEngine::Rendering::Universal {
+class UniversalLightData;
+}
+namespace UnityEngine::Rendering {
+class ContextContainer;
+}
+namespace UnityEngine::Rendering {
+struct VisibleLight;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering::Universal {
+struct LightData;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::Rendering::Universal::LightData);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::Universal::LightData, "UnityEngine.Rendering.Universal", "LightData");
+// Dependencies 
+namespace UnityEngine::Rendering::Universal {
+// Is value type: true
+// CS Name: UnityEngine.Rendering.Universal.LightData
+struct CORDL_TYPE LightData {
+public:
+// Declarations
+ __declspec(property(get=get_additionalLightsCount)) int32_t  additionalLightsCount;
+
+ __declspec(property(get=get_mainLightIndex)) int32_t  mainLightIndex;
+
+ __declspec(property(get=get_maxPerObjectAdditionalLightsCount)) int32_t  maxPerObjectAdditionalLightsCount;
+
+ __declspec(property(get=get_reflectionProbeAtlas)) bool  reflectionProbeAtlas;
+
+ __declspec(property(get=get_reflectionProbeBlending)) bool  reflectionProbeBlending;
+
+ __declspec(property(get=get_reflectionProbeBoxProjection)) bool  reflectionProbeBoxProjection;
+
+ __declspec(property(get=get_shadeAdditionalLightsPerVertex)) bool  shadeAdditionalLightsPerVertex;
+
+ __declspec(property(get=get_supportsAdditionalLights)) bool  supportsAdditionalLights;
+
+ __declspec(property(get=get_supportsLightLayers)) bool  supportsLightLayers;
+
+ __declspec(property(get=get_supportsMixedLighting)) bool  supportsMixedLighting;
+
+ __declspec(property(get=get_universalLightData)) ::UnityEngine::Rendering::Universal::UniversalLightData*  universalLightData;
+
+ __declspec(property(get=get_visibleLights)) ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::VisibleLight>  visibleLights;
+
+/// @brief Method .ctor, addr 0xb2c70f4, size 0x8, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Rendering::ContextContainer*  frameData) ;
+
+/// @brief Method get_additionalLightsCount, addr 0xb2c71a8, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<int32_t> get_additionalLightsCount() ;
+
+/// @brief Method get_mainLightIndex, addr 0xb2c714c, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<int32_t> get_mainLightIndex() ;
+
+/// @brief Method get_maxPerObjectAdditionalLightsCount, addr 0xb2c7204, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<int32_t> get_maxPerObjectAdditionalLightsCount() ;
+
+/// @brief Method get_reflectionProbeAtlas, addr 0xb2c742c, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<bool> get_reflectionProbeAtlas() ;
+
+/// @brief Method get_reflectionProbeBlending, addr 0xb2c73d0, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<bool> get_reflectionProbeBlending() ;
+
+/// @brief Method get_reflectionProbeBoxProjection, addr 0xb2c7374, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<bool> get_reflectionProbeBoxProjection() ;
+
+/// @brief Method get_shadeAdditionalLightsPerVertex, addr 0xb2c72bc, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<bool> get_shadeAdditionalLightsPerVertex() ;
+
+/// @brief Method get_supportsAdditionalLights, addr 0xb2c74e4, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<bool> get_supportsAdditionalLights() ;
+
+/// @brief Method get_supportsLightLayers, addr 0xb2c7488, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<bool> get_supportsLightLayers() ;
+
+/// @brief Method get_supportsMixedLighting, addr 0xb2c7318, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<bool> get_supportsMixedLighting() ;
+
+/// @brief Method get_universalLightData, addr 0xb2c70fc, size 0x50, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::Universal::UniversalLightData* get_universalLightData() ;
+
+/// @brief Method get_visibleLights, addr 0xb2c7260, size 0x5c, virtual false, abstract: false, final false
+inline ::by_ref<::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::VisibleLight>> get_visibleLights() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr LightData() ;
+
+// Ctor Parameters [CppParam { name: "frameData", ty: "::UnityEngine::Rendering::ContextContainer*", modifiers: "", def_value: None, comment: None }]
+constexpr LightData(::UnityEngine::Rendering::ContextContainer*  frameData) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{18696};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x8};
+
+/// @brief Field frameData, offset: 0x0, size: 0x8, def value: None
+ ::UnityEngine::Rendering::ContextContainer*  frameData;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::Universal::LightData, frameData) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::Universal::LightData) == 0x8, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering::Universal

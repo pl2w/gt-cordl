@@ -1,0 +1,67 @@
+#pragma once
+// IWYU pragma private; include "System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Net/Http/Headers/zzzz__TransferCodingHeaderValue_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(TransferCodingWithQualityHeaderValue)
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace System::Net::Http::Headers {
+class Lexer;
+}
+namespace System::Net::Http::Headers {
+struct Token;
+}
+// Forward declare root types
+namespace System::Net::Http::Headers {
+class TransferCodingWithQualityHeaderValue;
+}
+// Write type traits
+MARK_REF_T(::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue*);
+DEFINE_IL2CPP_CLASS(::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue*, "System.Net.Http.Headers", "TransferCodingWithQualityHeaderValue");
+// Dependencies System.Net.Http.Headers.TransferCodingHeaderValue
+namespace System::Net::Http::Headers {
+// Is value type: false
+// CS Name: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+class CORDL_TYPE TransferCodingWithQualityHeaderValue : public ::System::Net::Http::Headers::TransferCodingHeaderValue {
+public:
+// Declarations
+static inline ::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue* New_ctor() ;
+
+/// @brief Method TryParse, addr 0xa9f3f08, size 0xb0, virtual false, abstract: false, final false
+static inline bool TryParse(::StringW  input, int32_t  minimalCount, ::by_ref<::System::Collections::Generic::List_1<::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue*>*>  result) ;
+
+/// @brief Method TryParseElement, addr 0xa9f3fb8, size 0x178, virtual false, abstract: false, final false
+static inline bool TryParseElement(::System::Net::Http::Headers::Lexer*  lexer, ::by_ref<::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue*>  parsedValue, ::by_ref<::System::Net::Http::Headers::Token>  t) ;
+
+/// @brief Method .ctor, addr 0xa9f3f00, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr TransferCodingWithQualityHeaderValue() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "TransferCodingWithQualityHeaderValue", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+TransferCodingWithQualityHeaderValue(TransferCodingWithQualityHeaderValue && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "TransferCodingWithQualityHeaderValue", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+TransferCodingWithQualityHeaderValue(TransferCodingWithQualityHeaderValue const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30785};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue) == 0x20, "Size mismatch!");
+
+} // namespace end def System::Net::Http::Headers

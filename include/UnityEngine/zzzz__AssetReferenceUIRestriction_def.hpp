@@ -1,0 +1,60 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/AssetReferenceUIRestriction.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Attribute_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(AssetReferenceUIRestriction)
+namespace UnityEngine {
+class Object;
+}
+// Forward declare root types
+namespace UnityEngine {
+class AssetReferenceUIRestriction;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::AssetReferenceUIRestriction*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::AssetReferenceUIRestriction*, "UnityEngine", "AssetReferenceUIRestriction");
+// [AttributeUsage((System.AttributeTargets)384, AllowMultiple = true)]
+// Dependencies System.Attribute
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.AssetReferenceUIRestriction
+class CORDL_TYPE AssetReferenceUIRestriction : public ::System::Attribute {
+public:
+// Declarations
+static inline ::UnityEngine::AssetReferenceUIRestriction* New_ctor() ;
+
+/// @brief Method ValidateAsset, addr 0xae4c424, size 0x8, virtual true, abstract: false, final false
+inline bool ValidateAsset(::UnityEngine::Object*  obj) ;
+
+/// @brief Method ValidateAsset, addr 0xae4c42c, size 0x8, virtual true, abstract: false, final false
+inline bool ValidateAsset(::StringW  path) ;
+
+/// @brief Method .ctor, addr 0xae4c434, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr AssetReferenceUIRestriction() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "AssetReferenceUIRestriction", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+AssetReferenceUIRestriction(AssetReferenceUIRestriction && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "AssetReferenceUIRestriction", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+AssetReferenceUIRestriction(AssetReferenceUIRestriction const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{29205};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::AssetReferenceUIRestriction) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

@@ -1,0 +1,161 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/Shapes/Cone.hpp"
+#include "UnityEngine/ProBuilder/Shapes/zzzz__Shape_impl.hpp"
+#include "UnityEngine/ProBuilder/Shapes/zzzz__Cone_def.hpp"
+#include "UnityEngine/ProBuilder/Shapes/zzzz__Shape_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__ProBuilderMesh_def.hpp"
+#include "UnityEngine/zzzz__Bounds_def.hpp"
+#include "UnityEngine/zzzz__Quaternion_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Cone.SetParametersToBuiltInShape
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Shapes::Cone::*)()>(&::UnityEngine::ProBuilder::Shapes::Cone::SetParametersToBuiltInShape)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xb0d1f64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 7}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Cone.CopyShape
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Shapes::Cone::*)(::UnityEngine::ProBuilder::Shapes::Shape*)>(&::UnityEngine::ProBuilder::Shapes::Cone::CopyShape)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xb0d1f78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 6}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Cone.UpdateBounds
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Bounds (::UnityEngine::ProBuilder::Shapes::Cone::*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Bounds)>(&::UnityEngine::ProBuilder::Shapes::Cone::UpdateBounds)> {
+  constexpr static std::size_t size = 0x168;
+  constexpr static std::size_t addrs = 0xb0d2004;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 4}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Cone.RebuildMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Bounds (::UnityEngine::ProBuilder::Shapes::Cone::*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion)>(&::UnityEngine::ProBuilder::Shapes::Cone::RebuildMesh)> {
+  constexpr static std::size_t size = 0xc48;
+  constexpr static std::size_t addrs = 0xb0d216c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Cone._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Shapes::Cone::*)()>(&::UnityEngine::ProBuilder::Shapes::Cone::_ctor)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb0d2db4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_get_m_NumberOfSides()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_NumberOfSides;
+}
+constexpr int32_t const& UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_get_m_NumberOfSides() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_NumberOfSides;
+}
+constexpr void UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_set_m_NumberOfSides(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_NumberOfSides = value;
+}
+constexpr float_t& UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_get_m_Radius()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Radius;
+}
+constexpr float_t const& UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_get_m_Radius() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Radius;
+}
+constexpr void UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_set_m_Radius(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Radius = value;
+}
+constexpr bool& UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_get_m_Smooth()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Smooth;
+}
+constexpr bool const& UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_get_m_Smooth() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Smooth;
+}
+constexpr void UnityEngine::ProBuilder::Shapes::Cone::__cordl_internal_set_m_Smooth(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Smooth = value;
+}
+inline void UnityEngine::ProBuilder::Shapes::Cone::SetParametersToBuiltInShape()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 7}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::Shapes::Cone::CopyShape(::UnityEngine::ProBuilder::Shapes::Shape*  shape)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 6}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, shape);
+}
+inline ::UnityEngine::Bounds UnityEngine::ProBuilder::Shapes::Cone::UpdateBounds(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Vector3  size, ::UnityEngine::Quaternion  rotation, ::UnityEngine::Bounds  bounds)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 4}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Bounds>(this, ___internal_method, mesh, size, rotation, bounds);
+}
+inline ::UnityEngine::Bounds UnityEngine::ProBuilder::Shapes::Cone::RebuildMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Vector3  size, ::UnityEngine::Quaternion  rotation)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Bounds>(this, ___internal_method, mesh, size, rotation);
+}
+inline void UnityEngine::ProBuilder::Shapes::Cone::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Cone*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::ProBuilder::Shapes::Cone* UnityEngine::ProBuilder::Shapes::Cone::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::ProBuilder::Shapes::Cone*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::Shapes::Cone::Cone()   {
+}

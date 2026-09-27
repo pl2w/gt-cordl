@@ -1,0 +1,78 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/XR/Haptics/HapticState.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(HapticState)
+// Forward declare root types
+namespace UnityEngine::InputSystem::XR::Haptics {
+struct HapticState;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::InputSystem::XR::Haptics::HapticState);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::XR::Haptics::HapticState, "UnityEngine.InputSystem.XR.Haptics", "HapticState");
+// Dependencies 
+namespace UnityEngine::InputSystem::XR::Haptics {
+// Is value type: true
+// CS Name: UnityEngine.InputSystem.XR.Haptics.HapticState
+struct CORDL_TYPE HapticState {
+public:
+// Declarations
+ __declspec(property(get=get_samplesAvailable, put=set_samplesAvailable)) uint32_t  samplesAvailable;
+
+ __declspec(property(get=get_samplesQueued, put=set_samplesQueued)) uint32_t  samplesQueued;
+
+/// @brief Method .ctor, addr 0xafcb5e8, size 0x8, virtual false, abstract: false, final false
+inline void _ctor(uint32_t  samplesQueued, uint32_t  samplesAvailable) ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_samplesAvailable, addr 0xafcb600, size 0x8, virtual false, abstract: false, final false
+inline uint32_t get_samplesAvailable() ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_samplesQueued, addr 0xafcb5f0, size 0x8, virtual false, abstract: false, final false
+inline uint32_t get_samplesQueued() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_samplesAvailable, addr 0xafcb608, size 0x8, virtual false, abstract: false, final false
+inline void set_samplesAvailable(uint32_t  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_samplesQueued, addr 0xafcb5f8, size 0x8, virtual false, abstract: false, final false
+inline void set_samplesQueued(uint32_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr HapticState() ;
+
+// Ctor Parameters [CppParam { name: "_samplesQueued_k__BackingField", ty: "uint32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "_samplesAvailable_k__BackingField", ty: "uint32_t", modifiers: "", def_value: None, comment: None }]
+constexpr HapticState(uint32_t  _samplesQueued_k__BackingField, uint32_t  _samplesAvailable_k__BackingField) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13560};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x8};
+
+/// [CompilerGenerated]
+/// @brief Field <samplesQueued>k__BackingField, offset: 0x0, size: 0x4, def value: None
+ uint32_t  _samplesQueued_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <samplesAvailable>k__BackingField, offset: 0x4, size: 0x4, def value: None
+ uint32_t  _samplesAvailable_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::InputSystem::XR::Haptics::HapticState, _samplesQueued_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::XR::Haptics::HapticState, _samplesAvailable_k__BackingField) == 0x4, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::InputSystem::XR::Haptics::HapticState) == 0x8, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputSystem::XR::Haptics

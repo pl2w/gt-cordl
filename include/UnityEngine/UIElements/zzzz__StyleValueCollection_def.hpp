@@ -1,0 +1,133 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/StyleValueCollection.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(StyleValueCollection)
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace UnityEngine::UIElements::StyleSheets {
+struct StylePropertyId;
+}
+namespace UnityEngine::UIElements::StyleSheets {
+struct StyleValue;
+}
+namespace UnityEngine::UIElements {
+struct StyleBackgroundPosition;
+}
+namespace UnityEngine::UIElements {
+struct StyleBackgroundRepeat;
+}
+namespace UnityEngine::UIElements {
+struct StyleBackground;
+}
+namespace UnityEngine::UIElements {
+struct StyleColor;
+}
+namespace UnityEngine::UIElements {
+struct StyleFloat;
+}
+namespace UnityEngine::UIElements {
+struct StyleFontDefinition;
+}
+namespace UnityEngine::UIElements {
+struct StyleFont;
+}
+namespace UnityEngine::UIElements {
+struct StyleInt;
+}
+namespace UnityEngine::UIElements {
+struct StyleLength;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+class StyleValueCollection;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::UIElements::StyleValueCollection*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::StyleValueCollection*, "UnityEngine.UIElements", "StyleValueCollection");
+// Dependencies System.Object
+namespace UnityEngine::UIElements {
+// Is value type: false
+// CS Name: UnityEngine.UIElements.StyleValueCollection
+class CORDL_TYPE StyleValueCollection : public ::System::Object {
+public:
+// Declarations
+/// @brief Field m_Values, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Values, put=__cordl_internal_set_m_Values)) ::System::Collections::Generic::List_1<::UnityEngine::UIElements::StyleSheets::StyleValue>*  m_Values;
+
+/// @brief Method GetStyleBackground, addr 0xb782954, size 0x2c0, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleBackground GetStyleBackground(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleBackgroundPosition, addr 0xb782d44, size 0x5c, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleBackgroundPosition GetStyleBackgroundPosition(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleBackgroundRepeat, addr 0xb782dbc, size 0x5c, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleBackgroundRepeat GetStyleBackgroundRepeat(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleColor, addr 0xb7828c4, size 0x74, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleColor GetStyleColor(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleFloat, addr 0xb7827d4, size 0x58, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleFloat GetStyleFloat(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleFont, addr 0xb782e34, size 0xf8, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleFont GetStyleFont(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleFontDefinition, addr 0xb782f64, size 0xe8, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleFontDefinition GetStyleFontDefinition(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleInt, addr 0xb782840, size 0x74, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleInt GetStyleInt(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+/// @brief Method GetStyleLength, addr 0xb782580, size 0x6c, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::StyleLength GetStyleLength(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id) ;
+
+static inline ::UnityEngine::UIElements::StyleValueCollection* New_ctor() ;
+
+/// @brief Method SetStyleValue, addr 0xb7830dc, size 0x1e8, virtual false, abstract: false, final false
+inline void SetStyleValue(::UnityEngine::UIElements::StyleSheets::StyleValue  value) ;
+
+/// @brief Method TryGetStyleValue, addr 0xb7825ec, size 0x1b8, virtual false, abstract: false, final false
+inline bool TryGetStyleValue(::UnityEngine::UIElements::StyleSheets::StylePropertyId  id, ::by_ref<::UnityEngine::UIElements::StyleSheets::StyleValue>  value) ;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::UIElements::StyleSheets::StyleValue>* const& __cordl_internal_get_m_Values() const;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::UIElements::StyleSheets::StyleValue>*& __cordl_internal_get_m_Values() ;
+
+constexpr void __cordl_internal_set_m_Values(::System::Collections::Generic::List_1<::UnityEngine::UIElements::StyleSheets::StyleValue>*  value) ;
+
+/// @brief Method .ctor, addr 0xb7832c4, size 0x88, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr StyleValueCollection() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "StyleValueCollection", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+StyleValueCollection(StyleValueCollection && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "StyleValueCollection", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+StyleValueCollection(StyleValueCollection const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{8149};
+
+/// @brief Field m_Values, offset: 0x10, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::UnityEngine::UIElements::StyleSheets::StyleValue>*  ___m_Values;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::UIElements::StyleValueCollection, ___m_Values) == 0x10, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::UIElements::StyleValueCollection) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

@@ -1,0 +1,98 @@
+#pragma once
+// IWYU pragma private; include "System/Configuration/ConfigurationSection.hpp"
+#include "System/Configuration/zzzz__ConfigurationElement_impl.hpp"
+#include "System/Configuration/zzzz__ConfigurationSection_def.hpp"
+#include "System/Configuration/zzzz__ConfigurationElement_def.hpp"
+#include "System/Configuration/zzzz__ConfigurationSaveMode_def.hpp"
+#include "System/Xml/zzzz__XmlReader_def.hpp"
+//  Writing Method size for method: ::System::Configuration::ConfigurationSection.DeserializeSection
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Configuration::ConfigurationSection::*)(::System::Xml::XmlReader*)>(&::System::Configuration::ConfigurationSection::DeserializeSection)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xa84ebd8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Configuration::ConfigurationSection*>(),
+                    {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Configuration::ConfigurationSection.IsModified
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Configuration::ConfigurationSection::*)()>(&::System::Configuration::ConfigurationSection::IsModified)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xa84ec10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Configuration::ConfigurationSection*>(),
+                    {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 7}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Configuration::ConfigurationSection.ResetModified
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Configuration::ConfigurationSection::*)()>(&::System::Configuration::ConfigurationSection::ResetModified)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xa84ec48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Configuration::ConfigurationSection*>(),
+                    {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 10}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Configuration::ConfigurationSection.SerializeSection
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Configuration::ConfigurationSection::*)(::System::Configuration::ConfigurationElement*, ::StringW, ::System::Configuration::ConfigurationSaveMode)>(&::System::Configuration::ConfigurationSection::SerializeSection)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xa84ec80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Configuration::ConfigurationSection*>(),
+                    {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 14}
+                ));
+    return ___internal_method;
+  }
+};
+inline void System::Configuration::ConfigurationSection::DeserializeSection(::System::Xml::XmlReader*  reader)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, reader);
+}
+inline bool System::Configuration::ConfigurationSection::IsModified()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 7}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Configuration::ConfigurationSection::ResetModified()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 10}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW System::Configuration::ConfigurationSection::SerializeSection(::System::Configuration::ConfigurationElement*  parentElement, ::StringW  name, ::System::Configuration::ConfigurationSaveMode  saveMode)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Configuration::ConfigurationSection*>(), 14}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, parentElement, name, saveMode);
+}
+// Ctor Parameters []
+constexpr ::System::Configuration::ConfigurationSection::ConfigurationSection()   {
+}

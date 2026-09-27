@@ -1,0 +1,41 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/_PrivateImplementationDetails_.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=103_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=174_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=184_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=2673_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=3016_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=32_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=40_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=44_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=696_impl.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=932_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "GlobalNamespace/zzzz___PrivateImplementationDetails__def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=103_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=174_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=184_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=2673_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=3016_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=32_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=40_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=44_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=696_def.hpp"
+#include "GlobalNamespace/zzzz__<PrivateImplementationDetails>___StaticArrayInitTypeSize=932_def.hpp"
+// Ctor Parameters []
+constexpr ::GlobalNamespace::_PrivateImplementationDetails_::_PrivateImplementationDetails_()   {
+}
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=696  GlobalNamespace::_PrivateImplementationDetails_::02BF302F66F50150BCF5E322DA879E92E417084D14FBE4F5345DDCB68F863E51{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=3016  GlobalNamespace::_PrivateImplementationDetails_::1C881340DF42D9E5B186CD4EB1D90C6ECF6BCD2DD954FC1E1347A640FCB490BB{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=103  GlobalNamespace::_PrivateImplementationDetails_::3119C902A2D30870A3FC3661C8D3CC542815988CC258DFA0A4B9396E04855905{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=32  GlobalNamespace::_PrivateImplementationDetails_::3BF63951626584EB1653F9B8DBB590A5EE1EAE1135A904B9317C3773896DF076{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=32  GlobalNamespace::_PrivateImplementationDetails_::4BCD43D478B9229AB7A13406353712C7944B60348C36B4D0E6B789D10F697652{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=174  GlobalNamespace::_PrivateImplementationDetails_::538F052AB907338D0E8980BC5D8AD76919B39F0248ACDFAFAAA0CC76E39948F7{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=2673  GlobalNamespace::_PrivateImplementationDetails_::53CD36ED570B8CC1DEABA236E164C67A39D345A10A8CAD4B4DDD0AAC941FEAB7{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=184  GlobalNamespace::_PrivateImplementationDetails_::54163634AEBD5768E4BE0AF562CC018EB2E45008D13F13F14366BE52C290193D{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=32  GlobalNamespace::_PrivateImplementationDetails_::872CF31969B30D16D8B7FD68ABCEBFD7F8F3336BA347CD8712D80E58CB1EB667{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=40  GlobalNamespace::_PrivateImplementationDetails_::A516EECB41051151F0183A8B0B6F6693C43F7D9E1815F85CAAAB18E00A5269A2{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=932  GlobalNamespace::_PrivateImplementationDetails_::B20F66C1E87747FEB8C0CC42BB95D0598777BC0237D75E567AE09EDFADDB0A60{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=174  GlobalNamespace::_PrivateImplementationDetails_::B2DCA9FD613841289369C721661A31B454A090D2146EFE106203F7821567907D{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=32  GlobalNamespace::_PrivateImplementationDetails_::C69994AC61B52FBCEA582D6CCCD595C12E00BDB18F0C6F593FB6B393CAEDB08C{{}};
+constexpr ::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize=44  GlobalNamespace::_PrivateImplementationDetails_::CB81BB1A460E5CE9CF6277B9FEB0A3B860AF6F30ABA098EDB651F338C83A9278{{}};

@@ -1,0 +1,93 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/EnvironmentDepth/IDepthProvider.hpp"
+#include "Meta/XR/EnvironmentDepth/zzzz__IDepthProvider_def.hpp"
+#include "Meta/XR/EnvironmentDepth/zzzz__DepthFrameDesc_def.hpp"
+#include "UnityEngine/zzzz__RenderTexture_def.hpp"
+//  Writing Method size for method: ::Meta::XR::EnvironmentDepth::IDepthProvider.get_IsSupported
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::Meta::XR::EnvironmentDepth::IDepthProvider::*)()>(&::Meta::XR::EnvironmentDepth::IDepthProvider::get_IsSupported)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(),
+                    {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::EnvironmentDepth::IDepthProvider.set_RemoveHands
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::EnvironmentDepth::IDepthProvider::*)(bool)>(&::Meta::XR::EnvironmentDepth::IDepthProvider::set_RemoveHands)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(),
+                    {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::EnvironmentDepth::IDepthProvider.SetDepthEnabled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::EnvironmentDepth::IDepthProvider::*)(bool, bool)>(&::Meta::XR::EnvironmentDepth::IDepthProvider::SetDepthEnabled)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(),
+                    {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 2}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::EnvironmentDepth::IDepthProvider.TryGetUpdatedDepthTexture
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::Meta::XR::EnvironmentDepth::IDepthProvider::*)(::by_ref<::UnityEngine::RenderTexture*>, ::ArrayW<::Meta::XR::EnvironmentDepth::DepthFrameDesc>)>(&::Meta::XR::EnvironmentDepth::IDepthProvider::TryGetUpdatedDepthTexture)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(),
+                    {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 3}
+                ));
+    return ___internal_method;
+  }
+};
+inline bool Meta::XR::EnvironmentDepth::IDepthProvider::get_IsSupported()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void Meta::XR::EnvironmentDepth::IDepthProvider::set_RemoveHands(bool  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void Meta::XR::EnvironmentDepth::IDepthProvider::SetDepthEnabled(bool  isEnabled, bool  removeHands)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 2}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, isEnabled, removeHands);
+}
+inline bool Meta::XR::EnvironmentDepth::IDepthProvider::TryGetUpdatedDepthTexture(::by_ref<::UnityEngine::RenderTexture*>  depthTexture, ::ArrayW<::Meta::XR::EnvironmentDepth::DepthFrameDesc>  frameDescriptors)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::EnvironmentDepth::IDepthProvider*>(), 3}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, depthTexture, frameDescriptors);
+}

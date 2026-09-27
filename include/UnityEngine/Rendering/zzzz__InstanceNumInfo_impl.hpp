@@ -1,0 +1,123 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/InstanceNumInfo.hpp"
+#include "UnityEngine/Rendering/zzzz__InstanceNumInfo__InstanceNums_e__FixedBuffer_impl.hpp"
+#include "UnityEngine/Rendering/zzzz__InstanceNumInfo_def.hpp"
+#include "UnityEngine/Rendering/zzzz__InstanceNumInfo__InstanceNums_e__FixedBuffer_def.hpp"
+#include "UnityEngine/Rendering/zzzz__InstanceType_def.hpp"
+//  Writing Method size for method: ::UnityEngine::Rendering::InstanceNumInfo.InitDefault
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::InstanceNumInfo::*)()>(&::UnityEngine::Rendering::InstanceNumInfo::InitDefault)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb2089b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"InitDefault", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::InstanceNumInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::InstanceNumInfo::*)(int32_t, int32_t)>(&::UnityEngine::Rendering::InstanceNumInfo::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb2089c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::InstanceNumInfo.GetInstanceNum
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::Rendering::InstanceNumInfo::*)(::UnityEngine::Rendering::InstanceType)>(&::UnityEngine::Rendering::InstanceNumInfo::GetInstanceNum)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb2089c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"GetInstanceNum", {}, {::i2c::type_of<::UnityEngine::Rendering::InstanceType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::InstanceNumInfo.GetInstanceNumIncludingChildren
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::Rendering::InstanceNumInfo::*)(::UnityEngine::Rendering::InstanceType)>(&::UnityEngine::Rendering::InstanceNumInfo::GetInstanceNumIncludingChildren)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xb2089d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"GetInstanceNumIncludingChildren", {}, {::i2c::type_of<::UnityEngine::Rendering::InstanceType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::InstanceNumInfo.GetTotalInstanceNum
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::Rendering::InstanceNumInfo::*)()>(&::UnityEngine::Rendering::InstanceNumInfo::GetTotalInstanceNum)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb208b34;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"GetTotalInstanceNum", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::Rendering::InstanceNumInfo::InitDefault()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"InitDefault", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+inline void UnityEngine::Rendering::InstanceNumInfo::_ctor(int32_t  meshRendererNum, int32_t  speedTreeNum)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, meshRendererNum, speedTreeNum);
+}
+inline int32_t UnityEngine::Rendering::InstanceNumInfo::GetInstanceNum(::UnityEngine::Rendering::InstanceType  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"GetInstanceNum", {}, {::i2c::type_of<::UnityEngine::Rendering::InstanceType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(*this, ___internal_method, type);
+}
+inline int32_t UnityEngine::Rendering::InstanceNumInfo::GetInstanceNumIncludingChildren(::UnityEngine::Rendering::InstanceType  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"GetInstanceNumIncludingChildren", {}, {::i2c::type_of<::UnityEngine::Rendering::InstanceType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(*this, ___internal_method, type);
+}
+inline int32_t UnityEngine::Rendering::InstanceNumInfo::GetTotalInstanceNum()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::InstanceNumInfo>(),
+                        {"GetTotalInstanceNum", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(*this, ___internal_method);
+}
+// Ctor Parameters [CppParam { name: "InstanceNums", ty: "::GlobalNamespace::InstanceNumInfo__InstanceNums_e__FixedBuffer", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::Rendering::InstanceNumInfo::InstanceNumInfo(::GlobalNamespace::InstanceNumInfo__InstanceNums_e__FixedBuffer  InstanceNums) noexcept  {
+this->InstanceNums = InstanceNums;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Rendering::InstanceNumInfo::InstanceNumInfo()   {
+}

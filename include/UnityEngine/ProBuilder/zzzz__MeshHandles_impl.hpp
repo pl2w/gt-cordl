@@ -1,0 +1,406 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/MeshHandles.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__Vector2_impl.hpp"
+#include "UnityEngine/ProBuilder/zzzz__MeshHandles_def.hpp"
+#include "System/Collections/Generic/zzzz__ICollection_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerable_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IList_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/zzzz__Func_2_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__Edge_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__Face_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__MeshHandles_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__ProBuilderMesh_def.hpp"
+#include "UnityEngine/zzzz__Mesh_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+#include "UnityEngine/zzzz__Vector4_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateFaceMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreateFaceMesh)> {
+  constexpr static std::size_t size = 0x170;
+  constexpr static std::size_t addrs = 0xb0982fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateFaceMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateFaceMeshFromFaces
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Face*>*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreateFaceMeshFromFaces)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xb09846c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateFaceMeshFromFaces", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Face*>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateEdgeMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreateEdgeMesh)> {
+  constexpr static std::size_t size = 0x3e0;
+  constexpr static std::size_t addrs = 0xb0985c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateEdgeMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Mesh*, ::ArrayW<::UnityEngine::ProBuilder::Edge>)>(&::UnityEngine::ProBuilder::MeshHandles::CreateEdgeMesh)> {
+  constexpr static std::size_t size = 0x2cc;
+  constexpr static std::size_t addrs = 0xb0989a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>(), ::i2c::type_of<::ArrayW<::UnityEngine::ProBuilder::Edge>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateVertexMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreateVertexMesh)> {
+  constexpr static std::size_t size = 0x1b8;
+  constexpr static std::size_t addrs = 0xb098c74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateVertexMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateVertexMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Mesh*, ::System::Collections::Generic::IList_1<int32_t>*)>(&::UnityEngine::ProBuilder::MeshHandles::CreateVertexMesh)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xb098e2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateVertexMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<int32_t>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreatePointMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::ArrayW<::UnityEngine::Vector3>, ::System::Collections::Generic::IList_1<int32_t>*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreatePointMesh)> {
+  constexpr static std::size_t size = 0x1b4;
+  constexpr static std::size_t addrs = 0xb098f0c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreatePointMesh", {}, {::i2c::type_of<::ArrayW<::UnityEngine::Vector3>>(), ::i2c::type_of<::System::Collections::Generic::IList_1<int32_t>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreatePointBillboardMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreatePointBillboardMesh)> {
+  constexpr static std::size_t size = 0x8f8;
+  constexpr static std::size_t addrs = 0xb099a3c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreatePointBillboardMesh", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreatePointBillboardMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*, ::System::Collections::Generic::IList_1<int32_t>*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreatePointBillboardMesh)> {
+  constexpr static std::size_t size = 0x97c;
+  constexpr static std::size_t addrs = 0xb0990c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreatePointBillboardMesh", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<int32_t>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateEdgeBillboardMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Mesh*)>(&::UnityEngine::ProBuilder::MeshHandles::CreateEdgeBillboardMesh)> {
+  constexpr static std::size_t size = 0x880;
+  constexpr static std::size_t addrs = 0xb09a334;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeBillboardMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles.CreateEdgeBillboardMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Mesh*, ::System::Collections::Generic::ICollection_1<::UnityEngine::ProBuilder::Edge>*)>(&::UnityEngine::ProBuilder::MeshHandles::CreateEdgeBillboardMesh)> {
+  constexpr static std::size_t size = 0xb5c;
+  constexpr static std::size_t addrs = 0xb09abb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeBillboardMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>(), ::i2c::type_of<::System::Collections::Generic::ICollection_1<::UnityEngine::ProBuilder::Edge>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_s_Vector2List(::System::Collections::Generic::List_1<::UnityEngine::Vector3>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, "s_Vector2List", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* UnityEngine::ProBuilder::MeshHandles::getStaticF_s_Vector2List()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, "s_Vector2List", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_s_Vector3List(::System::Collections::Generic::List_1<::UnityEngine::Vector3>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, "s_Vector3List", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* UnityEngine::ProBuilder::MeshHandles::getStaticF_s_Vector3List()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, "s_Vector3List", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_s_Vector4List(::System::Collections::Generic::List_1<::UnityEngine::Vector4>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::UnityEngine::Vector4>*, "s_Vector4List", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::System::Collections::Generic::List_1<::UnityEngine::Vector4>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::Vector4>* UnityEngine::ProBuilder::MeshHandles::getStaticF_s_Vector4List()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::UnityEngine::Vector4>*, "s_Vector4List", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_s_IndexList(::System::Collections::Generic::List_1<int32_t>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<int32_t>*, "s_IndexList", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::System::Collections::Generic::List_1<int32_t>*>(value));
+}
+inline ::System::Collections::Generic::List_1<int32_t>* UnityEngine::ProBuilder::MeshHandles::getStaticF_s_IndexList()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<int32_t>*, "s_IndexList", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_s_SharedVertexIndexList(::System::Collections::Generic::List_1<int32_t>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<int32_t>*, "s_SharedVertexIndexList", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::System::Collections::Generic::List_1<int32_t>*>(value));
+}
+inline ::System::Collections::Generic::List_1<int32_t>* UnityEngine::ProBuilder::MeshHandles::getStaticF_s_SharedVertexIndexList()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<int32_t>*, "s_SharedVertexIndexList", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_k_Billboard0(::UnityEngine::Vector2  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Vector2, "k_Billboard0", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::UnityEngine::Vector2>(value));
+}
+inline ::UnityEngine::Vector2 UnityEngine::ProBuilder::MeshHandles::getStaticF_k_Billboard0()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Vector2, "k_Billboard0", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_k_Billboard1(::UnityEngine::Vector2  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Vector2, "k_Billboard1", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::UnityEngine::Vector2>(value));
+}
+inline ::UnityEngine::Vector2 UnityEngine::ProBuilder::MeshHandles::getStaticF_k_Billboard1()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Vector2, "k_Billboard1", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_k_Billboard2(::UnityEngine::Vector2  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Vector2, "k_Billboard2", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::UnityEngine::Vector2>(value));
+}
+inline ::UnityEngine::Vector2 UnityEngine::ProBuilder::MeshHandles::getStaticF_k_Billboard2()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Vector2, "k_Billboard2", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::setStaticF_k_Billboard3(::UnityEngine::Vector2  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Vector2, "k_Billboard3", ::UnityEngine::ProBuilder::MeshHandles*>(std::forward<::UnityEngine::Vector2>(value));
+}
+inline ::UnityEngine::Vector2 UnityEngine::ProBuilder::MeshHandles::getStaticF_k_Billboard3()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Vector2, "k_Billboard3", ::UnityEngine::ProBuilder::MeshHandles*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateFaceMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateFaceMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateFaceMeshFromFaces(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Face*>*  faces, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateFaceMeshFromFaces", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<::UnityEngine::ProBuilder::Face*>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, faces, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateEdgeMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateEdgeMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Mesh*  target, ::ArrayW<::UnityEngine::ProBuilder::Edge>  edges)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>(), ::i2c::type_of<::ArrayW<::UnityEngine::ProBuilder::Edge>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, target, edges);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateVertexMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateVertexMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateVertexMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Mesh*  target, ::System::Collections::Generic::IList_1<int32_t>*  indexes)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateVertexMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<int32_t>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, target, indexes);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreatePointMesh(::ArrayW<::UnityEngine::Vector3>  positions, ::System::Collections::Generic::IList_1<int32_t>*  indexes, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreatePointMesh", {}, {::i2c::type_of<::ArrayW<::UnityEngine::Vector3>>(), ::i2c::type_of<::System::Collections::Generic::IList_1<int32_t>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, positions, indexes, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreatePointBillboardMesh(::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*  positions, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreatePointBillboardMesh", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, positions, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreatePointBillboardMesh(::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*  positions, ::System::Collections::Generic::IList_1<int32_t>*  indexes, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreatePointBillboardMesh", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::UnityEngine::Vector3>*>(), ::i2c::type_of<::System::Collections::Generic::IList_1<int32_t>*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, positions, indexes, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateEdgeBillboardMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Mesh*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeBillboardMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, target);
+}
+inline void UnityEngine::ProBuilder::MeshHandles::CreateEdgeBillboardMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Mesh*  target, ::System::Collections::Generic::ICollection_1<::UnityEngine::ProBuilder::Edge>*  edges)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles*>(),
+                        {"CreateEdgeBillboardMesh", {}, {::i2c::type_of<::UnityEngine::ProBuilder::ProBuilderMesh*>(), ::i2c::type_of<::UnityEngine::Mesh*>(), ::i2c::type_of<::System::Collections::Generic::ICollection_1<::UnityEngine::ProBuilder::Edge>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, mesh, target, edges);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::MeshHandles::MeshHandles()   {
+}
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles___c._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::MeshHandles___c::*)()>(&::UnityEngine::ProBuilder::MeshHandles___c::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb09b950;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles___c._CreateFaceMesh_b__9_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerable_1<int32_t>* (::UnityEngine::ProBuilder::MeshHandles___c::*)(::UnityEngine::ProBuilder::Face*)>(&::UnityEngine::ProBuilder::MeshHandles___c::_CreateFaceMesh_b__9_0)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb09b958;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles___c*>(),
+                        {"<CreateFaceMesh>b__9_0", {}, {::i2c::type_of<::UnityEngine::ProBuilder::Face*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::MeshHandles___c._CreateFaceMeshFromFaces_b__10_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerable_1<int32_t>* (::UnityEngine::ProBuilder::MeshHandles___c::*)(::UnityEngine::ProBuilder::Face*)>(&::UnityEngine::ProBuilder::MeshHandles___c::_CreateFaceMeshFromFaces_b__10_0)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb09b970;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles___c*>(),
+                        {"<CreateFaceMeshFromFaces>b__10_0", {}, {::i2c::type_of<::UnityEngine::ProBuilder::Face*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::ProBuilder::MeshHandles___c::setStaticF___9(::UnityEngine::ProBuilder::MeshHandles___c*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::ProBuilder::MeshHandles___c*, "<>9", ::UnityEngine::ProBuilder::MeshHandles___c*>(std::forward<::UnityEngine::ProBuilder::MeshHandles___c*>(value));
+}
+inline ::UnityEngine::ProBuilder::MeshHandles___c* UnityEngine::ProBuilder::MeshHandles___c::getStaticF___9()  {
+return ::cordl_internals::getStaticField<::UnityEngine::ProBuilder::MeshHandles___c*, "<>9", ::UnityEngine::ProBuilder::MeshHandles___c*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles___c::setStaticF___9__9_0(::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*  value)  {
+::cordl_internals::setStaticField<::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*, "<>9__9_0", ::UnityEngine::ProBuilder::MeshHandles___c*>(std::forward<::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*>(value));
+}
+inline ::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>* UnityEngine::ProBuilder::MeshHandles___c::getStaticF___9__9_0()  {
+return ::cordl_internals::getStaticField<::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*, "<>9__9_0", ::UnityEngine::ProBuilder::MeshHandles___c*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles___c::setStaticF___9__10_0(::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*  value)  {
+::cordl_internals::setStaticField<::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*, "<>9__10_0", ::UnityEngine::ProBuilder::MeshHandles___c*>(std::forward<::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*>(value));
+}
+inline ::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>* UnityEngine::ProBuilder::MeshHandles___c::getStaticF___9__10_0()  {
+return ::cordl_internals::getStaticField<::System::Func_2<::UnityEngine::ProBuilder::Face*,::System::Collections::Generic::IEnumerable_1<int32_t>*>*, "<>9__10_0", ::UnityEngine::ProBuilder::MeshHandles___c*>();
+}
+inline void UnityEngine::ProBuilder::MeshHandles___c::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::IEnumerable_1<int32_t>* UnityEngine::ProBuilder::MeshHandles___c::_CreateFaceMesh_b__9_0(::UnityEngine::ProBuilder::Face*  x)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles___c*>(),
+                        {"<CreateFaceMesh>b__9_0", {}, {::i2c::type_of<::UnityEngine::ProBuilder::Face*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<int32_t>*>(this, ___internal_method, x);
+}
+inline ::System::Collections::Generic::IEnumerable_1<int32_t>* UnityEngine::ProBuilder::MeshHandles___c::_CreateFaceMeshFromFaces_b__10_0(::UnityEngine::ProBuilder::Face*  x)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::MeshHandles___c*>(),
+                        {"<CreateFaceMeshFromFaces>b__10_0", {}, {::i2c::type_of<::UnityEngine::ProBuilder::Face*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<int32_t>*>(this, ___internal_method, x);
+}
+inline ::UnityEngine::ProBuilder::MeshHandles___c* UnityEngine::ProBuilder::MeshHandles___c::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::ProBuilder::MeshHandles___c*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::MeshHandles___c::MeshHandles___c()   {
+}

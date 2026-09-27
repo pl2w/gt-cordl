@@ -1,0 +1,680 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRGrabber.hpp"
+#include "GlobalNamespace/zzzz__OVRInput_Controller_impl.hpp"
+#include "UnityEngine/zzzz__Collider_impl.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "UnityEngine/zzzz__Quaternion_impl.hpp"
+#include "UnityEngine/zzzz__Vector3_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRGrabber_def.hpp"
+#include "GlobalNamespace/zzzz__OVRCameraRig_def.hpp"
+#include "GlobalNamespace/zzzz__OVRGrabbable_def.hpp"
+#include "System/Collections/Generic/zzzz__Dictionary_2_def.hpp"
+#include "UnityEngine/zzzz__Collider_def.hpp"
+#include "UnityEngine/zzzz__GameObject_def.hpp"
+#include "UnityEngine/zzzz__Quaternion_def.hpp"
+#include "UnityEngine/zzzz__Transform_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.get_grabbedObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::GlobalNamespace::OVRGrabbable> (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::get_grabbedObject)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa662a44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"get_grabbedObject", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.ForceRelease
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::GlobalNamespace::OVRGrabbable*)>(&::GlobalNamespace::OVRGrabber::ForceRelease)> {
+  constexpr static std::size_t size = 0xb0;
+  constexpr static std::size_t addrs = 0xa662984;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"ForceRelease", {}, {::i2c::type_of<::GlobalNamespace::OVRGrabbable*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.Awake
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::Awake)> {
+  constexpr static std::size_t size = 0x140;
+  constexpr static std::size_t addrs = 0xa662cb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 4}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.Start
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::Start)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xa662df8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.Update
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::Update)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xa663090;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 6}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.OnUpdatedAnchors
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::OnUpdatedAnchors)> {
+  constexpr static std::size_t size = 0x224;
+  constexpr static std::size_t addrs = 0xa6630a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnUpdatedAnchors", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.OnDestroy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::OnDestroy)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xa663300;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnDestroy", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.OnTriggerEnter
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::UnityEngine::Collider*)>(&::GlobalNamespace::OVRGrabber::OnTriggerEnter)> {
+  constexpr static std::size_t size = 0x128;
+  constexpr static std::size_t addrs = 0xa663378;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnTriggerEnter", {}, {::i2c::type_of<::UnityEngine::Collider*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.OnTriggerExit
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::UnityEngine::Collider*)>(&::GlobalNamespace::OVRGrabber::OnTriggerExit)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xa6634a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnTriggerExit", {}, {::i2c::type_of<::UnityEngine::Collider*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.CheckForGrabOrRelease
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(float_t)>(&::GlobalNamespace::OVRGrabber::CheckForGrabOrRelease)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xa6632c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"CheckForGrabOrRelease", {}, {::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.GrabBegin
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::GrabBegin)> {
+  constexpr static std::size_t size = 0x6dc;
+  constexpr static std::size_t addrs = 0xa6635fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 7}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.MoveGrabbedObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::UnityEngine::Vector3, ::UnityEngine::Quaternion, bool)>(&::GlobalNamespace::OVRGrabber::MoveGrabbedObject)> {
+  constexpr static std::size_t size = 0x224;
+  constexpr static std::size_t addrs = 0xa663cd8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 8}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.GrabEnd
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::GrabEnd)> {
+  constexpr static std::size_t size = 0x26c;
+  constexpr static std::size_t addrs = 0xa662a4c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"GrabEnd", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.GrabbableRelease
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::UnityEngine::Vector3, ::UnityEngine::Vector3)>(&::GlobalNamespace::OVRGrabber::GrabbableRelease)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xa663efc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"GrabbableRelease", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.GrabVolumeEnable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(bool)>(&::GlobalNamespace::OVRGrabber::GrabVolumeEnable)> {
+  constexpr static std::size_t size = 0xc0;
+  constexpr static std::size_t addrs = 0xa663f64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 9}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.OffhandGrabbed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::GlobalNamespace::OVRGrabbable*)>(&::GlobalNamespace::OVRGrabber::OffhandGrabbed)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xa664024;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 10}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber.SetPlayerIgnoreCollision
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::UnityEngine::GameObject*, bool)>(&::GlobalNamespace::OVRGrabber::SetPlayerIgnoreCollision)> {
+  constexpr static std::size_t size = 0x1a0;
+  constexpr static std::size_t addrs = 0xa662ef0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"SetPlayerIgnoreCollision", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)()>(&::GlobalNamespace::OVRGrabber::_ctor)> {
+  constexpr static std::size_t size = 0xa0;
+  constexpr static std::size_t addrs = 0xa6640f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRGrabber._Awake_b__23_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRGrabber::*)(::GlobalNamespace::OVRCameraRig*)>(&::GlobalNamespace::OVRGrabber::_Awake_b__23_0)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa664190;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"<Awake>b__23_0", {}, {::i2c::type_of<::GlobalNamespace::OVRCameraRig*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr float_t& GlobalNamespace::OVRGrabber::__cordl_internal_get_grabBegin()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___grabBegin;
+}
+constexpr float_t const& GlobalNamespace::OVRGrabber::__cordl_internal_get_grabBegin() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___grabBegin;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_grabBegin(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___grabBegin = value;
+}
+constexpr float_t& GlobalNamespace::OVRGrabber::__cordl_internal_get_grabEnd()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___grabEnd;
+}
+constexpr float_t const& GlobalNamespace::OVRGrabber::__cordl_internal_get_grabEnd() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___grabEnd;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_grabEnd(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___grabEnd = value;
+}
+constexpr bool& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_parentHeldObject()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_parentHeldObject;
+}
+constexpr bool const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_parentHeldObject() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_parentHeldObject;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_parentHeldObject(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_parentHeldObject = value;
+}
+constexpr bool& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_moveHandPosition()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_moveHandPosition;
+}
+constexpr bool const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_moveHandPosition() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_moveHandPosition;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_moveHandPosition(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_moveHandPosition = value;
+}
+constexpr ::UnityW<::UnityEngine::Transform>& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_gripTransform()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_gripTransform;
+}
+constexpr ::UnityW<::UnityEngine::Transform> const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_gripTransform() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_gripTransform;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_gripTransform(::UnityW<::UnityEngine::Transform>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_gripTransform = value;
+}
+constexpr ::ArrayW<::UnityW<::UnityEngine::Collider>>& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabVolumes()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabVolumes;
+}
+constexpr ::ArrayW<::UnityW<::UnityEngine::Collider>> const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabVolumes() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabVolumes;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_grabVolumes(::ArrayW<::UnityW<::UnityEngine::Collider>>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_grabVolumes = value;
+}
+constexpr ::GlobalNamespace::OVRInput_Controller& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_controller()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_controller;
+}
+constexpr ::GlobalNamespace::OVRInput_Controller const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_controller() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_controller;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_controller(::GlobalNamespace::OVRInput_Controller  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_controller = value;
+}
+constexpr ::UnityW<::UnityEngine::Transform>& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_parentTransform()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_parentTransform;
+}
+constexpr ::UnityW<::UnityEngine::Transform> const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_parentTransform() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_parentTransform;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_parentTransform(::UnityW<::UnityEngine::Transform>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_parentTransform = value;
+}
+constexpr ::UnityW<::UnityEngine::GameObject>& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_player()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_player;
+}
+constexpr ::UnityW<::UnityEngine::GameObject> const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_player() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_player;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_player(::UnityW<::UnityEngine::GameObject>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_player = value;
+}
+constexpr bool& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabVolumeEnabled()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabVolumeEnabled;
+}
+constexpr bool const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabVolumeEnabled() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabVolumeEnabled;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_grabVolumeEnabled(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_grabVolumeEnabled = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_lastPos()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_lastPos;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_lastPos() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_lastPos;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_lastPos(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_lastPos = value;
+}
+constexpr ::UnityEngine::Quaternion& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_lastRot()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_lastRot;
+}
+constexpr ::UnityEngine::Quaternion const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_lastRot() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_lastRot;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_lastRot(::UnityEngine::Quaternion  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_lastRot = value;
+}
+constexpr ::UnityEngine::Quaternion& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_anchorOffsetRotation()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_anchorOffsetRotation;
+}
+constexpr ::UnityEngine::Quaternion const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_anchorOffsetRotation() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_anchorOffsetRotation;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_anchorOffsetRotation(::UnityEngine::Quaternion  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_anchorOffsetRotation = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_anchorOffsetPosition()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_anchorOffsetPosition;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_anchorOffsetPosition() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_anchorOffsetPosition;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_anchorOffsetPosition(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_anchorOffsetPosition = value;
+}
+constexpr float_t& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_prevFlex()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_prevFlex;
+}
+constexpr float_t const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_prevFlex() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_prevFlex;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_prevFlex(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_prevFlex = value;
+}
+constexpr ::UnityW<::GlobalNamespace::OVRGrabbable>& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabbedObj()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabbedObj;
+}
+constexpr ::UnityW<::GlobalNamespace::OVRGrabbable> const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabbedObj() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabbedObj;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_grabbedObj(::UnityW<::GlobalNamespace::OVRGrabbable>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_grabbedObj = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabbedObjectPosOff()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabbedObjectPosOff;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabbedObjectPosOff() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabbedObjectPosOff;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_grabbedObjectPosOff(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_grabbedObjectPosOff = value;
+}
+constexpr ::UnityEngine::Quaternion& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabbedObjectRotOff()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabbedObjectRotOff;
+}
+constexpr ::UnityEngine::Quaternion const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabbedObjectRotOff() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabbedObjectRotOff;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_grabbedObjectRotOff(::UnityEngine::Quaternion  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_grabbedObjectRotOff = value;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityW<::GlobalNamespace::OVRGrabbable>,int32_t>*& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabCandidates()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabCandidates;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityW<::GlobalNamespace::OVRGrabbable>,int32_t>* const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_grabCandidates() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_grabCandidates;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_grabCandidates(::System::Collections::Generic::Dictionary_2<::UnityW<::GlobalNamespace::OVRGrabbable>,int32_t>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_grabCandidates = value;
+}
+constexpr bool& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_operatingWithoutOVRCameraRig()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_operatingWithoutOVRCameraRig;
+}
+constexpr bool const& GlobalNamespace::OVRGrabber::__cordl_internal_get_m_operatingWithoutOVRCameraRig() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_operatingWithoutOVRCameraRig;
+}
+constexpr void GlobalNamespace::OVRGrabber::__cordl_internal_set_m_operatingWithoutOVRCameraRig(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_operatingWithoutOVRCameraRig = value;
+}
+inline ::UnityW<::GlobalNamespace::OVRGrabbable> GlobalNamespace::OVRGrabber::get_grabbedObject()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"get_grabbedObject", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::GlobalNamespace::OVRGrabbable>>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::ForceRelease(::GlobalNamespace::OVRGrabbable*  grabbable)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"ForceRelease", {}, {::i2c::type_of<::GlobalNamespace::OVRGrabbable*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, grabbable);
+}
+inline void GlobalNamespace::OVRGrabber::Awake()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 4}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::Start()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::Update()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 6}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::OnUpdatedAnchors()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnUpdatedAnchors", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::OnDestroy()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnDestroy", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::OnTriggerEnter(::UnityEngine::Collider*  otherCollider)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnTriggerEnter", {}, {::i2c::type_of<::UnityEngine::Collider*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, otherCollider);
+}
+inline void GlobalNamespace::OVRGrabber::OnTriggerExit(::UnityEngine::Collider*  otherCollider)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"OnTriggerExit", {}, {::i2c::type_of<::UnityEngine::Collider*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, otherCollider);
+}
+inline void GlobalNamespace::OVRGrabber::CheckForGrabOrRelease(float_t  prevFlex)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"CheckForGrabOrRelease", {}, {::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prevFlex);
+}
+inline void GlobalNamespace::OVRGrabber::GrabBegin()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 7}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::MoveGrabbedObject(::UnityEngine::Vector3  pos, ::UnityEngine::Quaternion  rot, bool  forceTeleport)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 8}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, pos, rot, forceTeleport);
+}
+inline void GlobalNamespace::OVRGrabber::GrabEnd()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"GrabEnd", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::GrabbableRelease(::UnityEngine::Vector3  linearVelocity, ::UnityEngine::Vector3  angularVelocity)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"GrabbableRelease", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, linearVelocity, angularVelocity);
+}
+inline void GlobalNamespace::OVRGrabber::GrabVolumeEnable(bool  enabled)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 9}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, enabled);
+}
+inline void GlobalNamespace::OVRGrabber::OffhandGrabbed(::GlobalNamespace::OVRGrabbable*  grabbable)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRGrabber*>(), 10}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, grabbable);
+}
+inline void GlobalNamespace::OVRGrabber::SetPlayerIgnoreCollision(::UnityEngine::GameObject*  grabbable, bool  ignore)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"SetPlayerIgnoreCollision", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, grabbable, ignore);
+}
+inline void GlobalNamespace::OVRGrabber::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRGrabber::_Awake_b__23_0(::GlobalNamespace::OVRCameraRig*  r)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRGrabber*>(),
+                        {"<Awake>b__23_0", {}, {::i2c::type_of<::GlobalNamespace::OVRCameraRig*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, r);
+}
+inline ::GlobalNamespace::OVRGrabber* GlobalNamespace::OVRGrabber::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRGrabber*>());
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRGrabber::OVRGrabber()   {
+}

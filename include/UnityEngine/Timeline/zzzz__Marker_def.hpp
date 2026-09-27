@@ -1,0 +1,118 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Timeline/Marker.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__ScriptableObject_def.hpp"
+#include <cmath>
+CORDL_MODULE_EXPORT(Marker)
+namespace UnityEngine::Timeline {
+class IMarker;
+}
+namespace UnityEngine::Timeline {
+class TrackAsset;
+}
+// Forward declare root types
+namespace UnityEngine::Timeline {
+class Marker;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Timeline::Marker*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Timeline::Marker*, "UnityEngine.Timeline", "Marker");
+// Dependencies UnityEngine.ScriptableObject
+namespace UnityEngine::Timeline {
+// Is value type: false
+// CS Name: UnityEngine.Timeline.Marker
+class CORDL_TYPE Marker : public ::UnityEngine::ScriptableObject {
+public:
+// Declarations
+/// @brief Field <parent>k__BackingField, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__parent_k__BackingField, put=__cordl_internal_set__parent_k__BackingField)) ::UnityW<::UnityEngine::Timeline::TrackAsset>  _parent_k__BackingField;
+
+/// @brief Field m_Time, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Time, put=__cordl_internal_set_m_Time)) double_t  m_Time;
+
+ __declspec(property(get=get_parent, put=set_parent)) ::UnityW<::UnityEngine::Timeline::TrackAsset>  parent;
+
+ __declspec(property(get=get_time, put=set_time)) double_t  time;
+
+/// @brief Convert operator to "::UnityEngine::Timeline::IMarker"
+constexpr operator  ::UnityEngine::Timeline::IMarker*() noexcept;
+
+static inline ::UnityEngine::Timeline::Marker* New_ctor() ;
+
+/// @brief Method OnInitialize, addr 0xb3c8ed4, size 0x4, virtual true, abstract: false, final false
+inline void OnInitialize(::UnityEngine::Timeline::TrackAsset*  aPent) ;
+
+/// @brief Method UnityEngine.Timeline.IMarker.Initialize, addr 0xb3c8d78, size 0x15c, virtual true, abstract: false, final true
+inline void UnityEngine_Timeline_IMarker_Initialize(::UnityEngine::Timeline::TrackAsset*  parentTrack) ;
+
+constexpr ::UnityW<::UnityEngine::Timeline::TrackAsset> const& __cordl_internal_get__parent_k__BackingField() const;
+
+constexpr ::UnityW<::UnityEngine::Timeline::TrackAsset>& __cordl_internal_get__parent_k__BackingField() ;
+
+constexpr double_t const& __cordl_internal_get_m_Time() const;
+
+constexpr double_t& __cordl_internal_get_m_Time() ;
+
+constexpr void __cordl_internal_set__parent_k__BackingField(::UnityW<::UnityEngine::Timeline::TrackAsset>  value) ;
+
+constexpr void __cordl_internal_set_m_Time(double_t  value) ;
+
+/// @brief Method .ctor, addr 0xb3c8ed8, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_parent, addr 0xb3c8cf0, size 0x8, virtual true, abstract: false, final true
+inline ::UnityW<::UnityEngine::Timeline::TrackAsset> get_parent() ;
+
+/// @brief Method get_time, addr 0xb3c8d00, size 0x8, virtual true, abstract: false, final true
+inline double_t get_time() ;
+
+/// @brief Convert to "::UnityEngine::Timeline::IMarker"
+constexpr ::UnityEngine::Timeline::IMarker* i___UnityEngine__Timeline__IMarker() noexcept;
+
+/// [CompilerGenerated]
+/// @brief Method set_parent, addr 0xb3c8cf8, size 0x8, virtual false, abstract: false, final false
+inline void set_parent(::UnityEngine::Timeline::TrackAsset*  value) ;
+
+/// @brief Method set_time, addr 0xb3c8d08, size 0x70, virtual true, abstract: false, final true
+inline void set_time(double_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Marker() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Marker", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Marker(Marker && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Marker", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Marker(Marker const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28739};
+
+/// [SerializeField]
+/// [TimeField((UnityEngine.Timeline.TimeFieldAttribute::UseEditMode)1)]
+/// [Tooltip("Time for the marker")]
+/// @brief Field m_Time, offset: 0x18, size: 0x8, def value: None
+ double_t  ___m_Time;
+
+/// [CompilerGenerated]
+/// @brief Field <parent>k__BackingField, offset: 0x20, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::Timeline::TrackAsset>  ____parent_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Timeline::Marker, ___m_Time) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Timeline::Marker, ____parent_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Timeline::Marker) == 0x28, "Size mismatch!");
+
+} // namespace end def UnityEngine::Timeline

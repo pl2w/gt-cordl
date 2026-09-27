@@ -1,0 +1,107 @@
+#pragma once
+// IWYU pragma private; include "System/Security/Cryptography/CryptoConfig.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(CryptoConfig)
+namespace System::Collections::Generic {
+template<typename TKey,typename TValue>
+class Dictionary_2;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System::Security::Cryptography {
+class CryptoConfig;
+}
+// Write type traits
+MARK_REF_T(::System::Security::Cryptography::CryptoConfig*);
+DEFINE_IL2CPP_CLASS(::System::Security::Cryptography::CryptoConfig*, "System.Security.Cryptography", "CryptoConfig");
+// [ComVisible(true)]
+// Dependencies System.Object
+namespace System::Security::Cryptography {
+// Is value type: false
+// CS Name: System.Security.Cryptography.CryptoConfig
+class CORDL_TYPE CryptoConfig : public ::System::Object {
+public:
+// Declarations
+/// @brief Field algorithms, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_algorithms, put=setStaticF_algorithms)) ::System::Collections::Generic::Dictionary_2<::StringW,::System::Type*>*  algorithms;
+
+/// @brief Field lockObject, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_lockObject, put=setStaticF_lockObject)) ::System::Object*  lockObject;
+
+/// @brief Method AddAlgorithm, addr 0xa181288, size 0x380, virtual false, abstract: false, final false
+static inline void AddAlgorithm(::System::Type*  algorithm, /* [ParamArray] */ ::ArrayW<::StringW>  names) ;
+
+/// @brief Method AddOID, addr 0xa17e958, size 0x38, virtual false, abstract: false, final false
+static inline void AddOID(::StringW  oid, /* [ParamArray] */ ::ArrayW<::StringW>  names) ;
+
+/// @brief Method CreateFromName, addr 0xa171954, size 0x58, virtual false, abstract: false, final false
+static inline ::System::Object* CreateFromName(::StringW  name) ;
+
+/// @brief Method CreateFromName, addr 0xa17e990, size 0x1ed4, virtual false, abstract: false, final false
+static inline ::System::Object* CreateFromName(::StringW  name, /* [ParamArray] */ ::ArrayW<::System::Object*>  args) ;
+
+/// @brief Method EncodeLongNumber, addr 0xa181a08, size 0x15c, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> EncodeLongNumber(int64_t  x) ;
+
+/// @brief Method EncodeOID, addr 0xa181608, size 0x400, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> EncodeOID(::StringW  str) ;
+
+/// @brief Method Initialize, addr 0xa181184, size 0x104, virtual false, abstract: false, final false
+static inline void Initialize() ;
+
+/// @brief Method MapNameToOID, addr 0xa1809b0, size 0x7d4, virtual false, abstract: false, final false
+static inline ::StringW MapNameToOID(::StringW  name) ;
+
+/// @brief Method MapNameToOID, addr 0xa18095c, size 0x54, virtual false, abstract: false, final false
+static inline ::StringW MapNameToOID(::StringW  name, ::System::Object*  arg) ;
+
+static inline ::System::Security::Cryptography::CryptoConfig* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xa181b64, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::System::Collections::Generic::Dictionary_2<::StringW,::System::Type*>* getStaticF_algorithms() ;
+
+static inline ::System::Object* getStaticF_lockObject() ;
+
+/// @brief Method get_AllowOnlyFipsAlgorithms, addr 0xa178234, size 0x8, virtual false, abstract: false, final false
+static inline bool get_AllowOnlyFipsAlgorithms() ;
+
+static inline void setStaticF_algorithms(::System::Collections::Generic::Dictionary_2<::StringW,::System::Type*>*  value) ;
+
+static inline void setStaticF_lockObject(::System::Object*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr CryptoConfig() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "CryptoConfig", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+CryptoConfig(CryptoConfig && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "CryptoConfig", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+CryptoConfig(CryptoConfig const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6144};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Security::Cryptography::CryptoConfig) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Security::Cryptography

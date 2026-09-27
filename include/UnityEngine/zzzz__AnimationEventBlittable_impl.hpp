@@ -1,0 +1,218 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/AnimationEventBlittable.hpp"
+#include "System/zzzz__IntPtr_impl.hpp"
+#include "UnityEngine/zzzz__AnimationEventSource_impl.hpp"
+#include "UnityEngine/zzzz__AnimatorClipInfo_impl.hpp"
+#include "UnityEngine/zzzz__AnimatorStateInfo_impl.hpp"
+#include "UnityEngine/zzzz__AnimationEventBlittable_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "UnityEngine/zzzz__AnimationEvent_def.hpp"
+#include "UnityEngine/zzzz__GCHandlePool_def.hpp"
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.FromAnimationEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::AnimationEventBlittable (*)(::UnityEngine::AnimationEvent*)>(&::UnityEngine::AnimationEventBlittable::FromAnimationEvent)> {
+  constexpr static std::size_t size = 0x18c;
+  constexpr static std::size_t addrs = 0xb53cc48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"FromAnimationEvent", {}, {::i2c::type_of<::UnityEngine::AnimationEvent*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.FromAnimationEvents
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::ArrayW<::UnityEngine::AnimationEvent*>, ::UnityEngine::AnimationEventBlittable*)>(&::UnityEngine::AnimationEventBlittable::FromAnimationEvents)> {
+  constexpr static std::size_t size = 0x1a4;
+  constexpr static std::size_t addrs = 0xb53ce38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"FromAnimationEvents", {}, {::i2c::type_of<::ArrayW<::UnityEngine::AnimationEvent*>>(), ::i2c::type_of<::UnityEngine::AnimationEventBlittable*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.PointerToAnimationEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::AnimationEvent* (*)(::System::IntPtr)>(&::UnityEngine::AnimationEventBlittable::PointerToAnimationEvent)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xb53cfdc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"PointerToAnimationEvent", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.PointerToAnimationEvents
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::UnityEngine::AnimationEvent*> (*)(::System::IntPtr, int32_t)>(&::UnityEngine::AnimationEventBlittable::PointerToAnimationEvents)> {
+  constexpr static std::size_t size = 0x100;
+  constexpr static std::size_t addrs = 0xb53d2b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"PointerToAnimationEvents", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.DisposeEvents
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr, int32_t)>(&::UnityEngine::AnimationEventBlittable::DisposeEvents)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xb53d3b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"DisposeEvents", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.FreeEventsInternal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::System::IntPtr)>(&::UnityEngine::AnimationEventBlittable::FreeEventsInternal)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb53d520;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"FreeEventsInternal", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.ToAnimationEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::AnimationEvent* (*)(::UnityEngine::AnimationEventBlittable)>(&::UnityEngine::AnimationEventBlittable::ToAnimationEvent)> {
+  constexpr static std::size_t size = 0x2a0;
+  constexpr static std::size_t addrs = 0xb53d010;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"ToAnimationEvent", {}, {::i2c::type_of<::UnityEngine::AnimationEventBlittable>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::AnimationEventBlittable.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::AnimationEventBlittable::*)()>(&::UnityEngine::AnimationEventBlittable::Dispose)> {
+  constexpr static std::size_t size = 0x104;
+  constexpr static std::size_t addrs = 0xb53d41c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::AnimationEventBlittable::setStaticF_s_handlePool(::UnityEngine::GCHandlePool*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::GCHandlePool*, "s_handlePool", ::UnityEngine::AnimationEventBlittable>(std::forward<::UnityEngine::GCHandlePool*>(value));
+}
+inline ::UnityEngine::GCHandlePool* UnityEngine::AnimationEventBlittable::getStaticF_s_handlePool()  {
+return ::cordl_internals::getStaticField<::UnityEngine::GCHandlePool*, "s_handlePool", ::UnityEngine::AnimationEventBlittable>();
+}
+inline ::UnityEngine::AnimationEventBlittable UnityEngine::AnimationEventBlittable::FromAnimationEvent(::UnityEngine::AnimationEvent*  animationEvent)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"FromAnimationEvent", {}, {::i2c::type_of<::UnityEngine::AnimationEvent*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::AnimationEventBlittable>(nullptr, ___internal_method, animationEvent);
+}
+inline void UnityEngine::AnimationEventBlittable::FromAnimationEvents(::ArrayW<::UnityEngine::AnimationEvent*>  animationEvents, ::UnityEngine::AnimationEventBlittable*  animationEventBlittables)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"FromAnimationEvents", {}, {::i2c::type_of<::ArrayW<::UnityEngine::AnimationEvent*>>(), ::i2c::type_of<::UnityEngine::AnimationEventBlittable*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, animationEvents, animationEventBlittables);
+}
+inline ::UnityEngine::AnimationEvent* UnityEngine::AnimationEventBlittable::PointerToAnimationEvent(::System::IntPtr  animationEventBlittable)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"PointerToAnimationEvent", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::AnimationEvent*>(nullptr, ___internal_method, animationEventBlittable);
+}
+inline ::ArrayW<::UnityEngine::AnimationEvent*> UnityEngine::AnimationEventBlittable::PointerToAnimationEvents(::System::IntPtr  animationEventBlittableArray, int32_t  size)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"PointerToAnimationEvents", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::UnityEngine::AnimationEvent*>>(nullptr, ___internal_method, animationEventBlittableArray, size);
+}
+inline void UnityEngine::AnimationEventBlittable::DisposeEvents(::System::IntPtr  animationEventBlittableArray, int32_t  size)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"DisposeEvents", {}, {::i2c::type_of<::System::IntPtr>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, animationEventBlittableArray, size);
+}
+inline void UnityEngine::AnimationEventBlittable::FreeEventsInternal(::System::IntPtr  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"FreeEventsInternal", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, value);
+}
+inline ::UnityEngine::AnimationEvent* UnityEngine::AnimationEventBlittable::ToAnimationEvent(::UnityEngine::AnimationEventBlittable  animationEventBlittable)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"ToAnimationEvent", {}, {::i2c::type_of<::UnityEngine::AnimationEventBlittable>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::AnimationEvent*>(nullptr, ___internal_method, animationEventBlittable);
+}
+inline void UnityEngine::AnimationEventBlittable::Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::AnimationEventBlittable>(),
+                        {"Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::AnimationEventBlittable::operator ::System::IDisposable*()  {
+return static_cast<::System::IDisposable*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::AnimationEventBlittable::i___System__IDisposable()  {
+return static_cast<::System::IDisposable*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+// Ctor Parameters [CppParam { name: "m_Time", ty: "float_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_FunctionName", ty: "::System::IntPtr", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_StringParameter", ty: "::System::IntPtr", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_ObjectReferenceParameter", ty: "::System::IntPtr", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_FloatParameter", ty: "float_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_IntParameter", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_MessageOptions", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Source", ty: "::UnityEngine::AnimationEventSource", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_StateSender", ty: "::System::IntPtr", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_AnimatorStateInfo", ty: "::UnityEngine::AnimatorStateInfo", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_AnimatorClipInfo", ty: "::UnityEngine::AnimatorClipInfo", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::AnimationEventBlittable::AnimationEventBlittable(float_t  m_Time, ::System::IntPtr  m_FunctionName, ::System::IntPtr  m_StringParameter, ::System::IntPtr  m_ObjectReferenceParameter, float_t  m_FloatParameter, int32_t  m_IntParameter, int32_t  m_MessageOptions, ::UnityEngine::AnimationEventSource  m_Source, ::System::IntPtr  m_StateSender, ::UnityEngine::AnimatorStateInfo  m_AnimatorStateInfo, ::UnityEngine::AnimatorClipInfo  m_AnimatorClipInfo) noexcept  {
+this->m_Time = m_Time;
+this->m_FunctionName = m_FunctionName;
+this->m_StringParameter = m_StringParameter;
+this->m_ObjectReferenceParameter = m_ObjectReferenceParameter;
+this->m_FloatParameter = m_FloatParameter;
+this->m_IntParameter = m_IntParameter;
+this->m_MessageOptions = m_MessageOptions;
+this->m_Source = m_Source;
+this->m_StateSender = m_StateSender;
+this->m_AnimatorStateInfo = m_AnimatorStateInfo;
+this->m_AnimatorClipInfo = m_AnimatorClipInfo;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::AnimationEventBlittable::AnimationEventBlittable()   {
+}

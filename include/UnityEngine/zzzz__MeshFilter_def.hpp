@@ -1,0 +1,91 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/MeshFilter.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__Component_def.hpp"
+CORDL_MODULE_EXPORT(MeshFilter)
+namespace System {
+struct IntPtr;
+}
+namespace UnityEngine {
+class Mesh;
+}
+// Forward declare root types
+namespace UnityEngine {
+class MeshFilter;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::MeshFilter*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::MeshFilter*, "UnityEngine", "MeshFilter");
+// [RequireComponent(typeof(UnityEngine.Transform))]
+// [NativeHeader("Runtime/Graphics/Mesh/MeshFilter.h")]
+// Dependencies UnityEngine.Component
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.MeshFilter
+class CORDL_TYPE MeshFilter : public ::UnityEngine::Component {
+public:
+// Declarations
+ __declspec(property(get=get_mesh, put=set_mesh)) ::UnityW<::UnityEngine::Mesh>  mesh;
+
+ __declspec(property(get=get_sharedMesh, put=set_sharedMesh)) ::UnityW<::UnityEngine::Mesh>  sharedMesh;
+
+/// [RequiredByNativeCode]
+/// @brief Method DontStripMeshFilter, addr 0xb59e630, size 0x4, virtual false, abstract: false, final false
+inline void DontStripMeshFilter() ;
+
+static inline ::UnityEngine::MeshFilter* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb59e9c4, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [NativeName("GetInstantiatedMeshFromScript")]
+/// @brief Method get_mesh, addr 0xb59e7fc, size 0x94, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Mesh> get_mesh() ;
+
+/// @brief Method get_mesh_Injected, addr 0xb59e890, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr get_mesh_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_sharedMesh, addr 0xb59e634, size 0x94, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Mesh> get_sharedMesh() ;
+
+/// @brief Method get_sharedMesh_Injected, addr 0xb59e6c8, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr get_sharedMesh_Injected(::System::IntPtr  _unity_self) ;
+
+/// [NativeName("SetInstantiatedMesh")]
+/// @brief Method set_mesh, addr 0xb59e8cc, size 0xb4, virtual false, abstract: false, final false
+inline void set_mesh(::UnityEngine::Mesh*  value) ;
+
+/// @brief Method set_mesh_Injected, addr 0xb59e980, size 0x44, virtual false, abstract: false, final false
+static inline void set_mesh_Injected(::System::IntPtr  _unity_self, ::System::IntPtr  value) ;
+
+/// @brief Method set_sharedMesh, addr 0xb59e704, size 0xb4, virtual false, abstract: false, final false
+inline void set_sharedMesh(::UnityEngine::Mesh*  value) ;
+
+/// @brief Method set_sharedMesh_Injected, addr 0xb59e7b8, size 0x44, virtual false, abstract: false, final false
+static inline void set_sharedMesh_Injected(::System::IntPtr  _unity_self, ::System::IntPtr  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MeshFilter() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MeshFilter", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MeshFilter(MeshFilter && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MeshFilter", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MeshFilter(MeshFilter const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14894};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::MeshFilter) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine

@@ -1,0 +1,74 @@
+#pragma once
+// IWYU pragma private; include "Fusion/Photon/Realtime/AuthModeOption.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(AuthModeOption)
+// Forward declare root types
+namespace Fusion::Photon::Realtime {
+struct AuthModeOption;
+}
+// Write type traits
+MARK_VAL_T(::Fusion::Photon::Realtime::AuthModeOption);
+DEFINE_IL2CPP_CLASS(::Fusion::Photon::Realtime::AuthModeOption, "Fusion.Photon.Realtime", "AuthModeOption");
+// Dependencies 
+namespace Fusion::Photon::Realtime {
+// Is value type: true
+// CS Name: Fusion.Photon.Realtime.AuthModeOption
+struct CORDL_TYPE AuthModeOption {
+public:
+// Declarations
+using __CORDL_BACKING_ENUM_TYPE = int32_t;
+
+/// @brief Nested struct __AuthModeOption_Unwrapped
+enum struct __AuthModeOption_Unwrapped : int32_t {
+__E_Auth = static_cast<int32_t>(0x0),
+__E_AuthOnce = static_cast<int32_t>(0x1),
+__E_AuthOnceWss = static_cast<int32_t>(0x2),
+};
+
+/// @brief Conversion into unwrapped enum value
+constexpr operator __AuthModeOption_Unwrapped () const noexcept {
+return static_cast<__AuthModeOption_Unwrapped>(this->value__);
+}
+
+/// @brief Conversion into unwrapped enum value
+constexpr explicit operator int32_t () const noexcept {
+return static_cast<int32_t>(this->value__);
+}
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr AuthModeOption() ;
+
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr AuthModeOption(int32_t  value__) noexcept;
+
+/// @brief Field Auth value: I32(0)
+static ::Fusion::Photon::Realtime::AuthModeOption const Auth;
+
+/// @brief Field AuthOnce value: I32(1)
+static ::Fusion::Photon::Realtime::AuthModeOption const AuthOnce;
+
+/// @brief Field AuthOnceWss value: I32(2)
+static ::Fusion::Photon::Realtime::AuthModeOption const AuthOnceWss;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28090};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field value__, offset: 0x0, size: 0x4, def value: None
+ int32_t  value__;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::Fusion::Photon::Realtime::AuthModeOption, value__) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::Fusion::Photon::Realtime::AuthModeOption) == 0x4, "Size mismatch!");
+
+} // namespace end def Fusion::Photon::Realtime

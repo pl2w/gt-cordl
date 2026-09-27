@@ -1,0 +1,110 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Localization/LocalizedGameObject.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/Localization/zzzz__LocalizedAsset_1_def.hpp"
+CORDL_MODULE_EXPORT(LocalizedGameObject)
+namespace System {
+class Object;
+}
+namespace UnityEngine::Localization {
+class LocalizedGameObject_UxmlSerializedData;
+}
+namespace UnityEngine {
+class GameObject;
+}
+// Forward declare root types
+namespace UnityEngine::Localization {
+class LocalizedGameObject;
+}
+namespace UnityEngine::Localization {
+class LocalizedGameObject_UxmlSerializedData;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Localization::LocalizedGameObject*);
+MARK_REF_T(::UnityEngine::Localization::LocalizedGameObject_UxmlSerializedData*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Localization::LocalizedGameObject*, "UnityEngine.Localization", "LocalizedGameObject");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Localization::LocalizedGameObject_UxmlSerializedData*, "UnityEngine.Localization", "LocalizedGameObject/UxmlSerializedData");
+// [UxmlObject]
+// Dependencies UnityEngine.Localization.LocalizedAsset`1<TObject>
+namespace UnityEngine::Localization {
+// Is value type: false
+// CS Name: UnityEngine.Localization.LocalizedGameObject
+class CORDL_TYPE LocalizedGameObject : public ::UnityEngine::Localization::LocalizedAsset_1<::UnityW<::UnityEngine::GameObject>> {
+public:
+// Declarations
+using UxmlSerializedData = ::UnityEngine::Localization::LocalizedGameObject_UxmlSerializedData;
+
+static inline ::UnityEngine::Localization::LocalizedGameObject* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb00eb80, size 0x48, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr LocalizedGameObject() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "LocalizedGameObject", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+LocalizedGameObject(LocalizedGameObject && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "LocalizedGameObject", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+LocalizedGameObject(LocalizedGameObject const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{25023};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Localization::LocalizedGameObject) == 0xe0, "Size mismatch!");
+
+} // namespace end def UnityEngine::Localization
+// [CompilerGenerated]
+// Dependencies UnityEngine.Localization.LocalizedAsset`1::UxmlSerializedData<TObject>
+namespace UnityEngine::Localization {
+// Is value type: false
+// CS Name: UnityEngine.Localization.LocalizedGameObject/UxmlSerializedData
+class CORDL_TYPE LocalizedGameObject_UxmlSerializedData : public ::UnityEngine::Localization::LocalizedAsset_1_UxmlSerializedData<::UnityW<::UnityEngine::GameObject>> {
+public:
+// Declarations
+/// @brief Method CreateInstance, addr 0xb00ebcc, size 0x50, virtual true, abstract: false, final false
+inline ::System::Object* CreateInstance() ;
+
+static inline ::UnityEngine::Localization::LocalizedGameObject_UxmlSerializedData* New_ctor() ;
+
+/// [RegisterUxmlCache]
+/// [Conditional("UNITY_EDITOR")]
+/// @brief Method Register, addr 0xb00ebc8, size 0x4, virtual false, abstract: false, final false
+static inline void Register() ;
+
+/// @brief Method .ctor, addr 0xb00ec1c, size 0x48, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr LocalizedGameObject_UxmlSerializedData() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "LocalizedGameObject_UxmlSerializedData", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+LocalizedGameObject_UxmlSerializedData(LocalizedGameObject_UxmlSerializedData && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "LocalizedGameObject_UxmlSerializedData", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+LocalizedGameObject_UxmlSerializedData(LocalizedGameObject_UxmlSerializedData const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{25022};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Localization::LocalizedGameObject_UxmlSerializedData) == 0x68, "Size mismatch!");
+
+} // namespace end def UnityEngine::Localization

@@ -1,0 +1,130 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ContactPairHeader.hpp"
+#include "System/zzzz__IntPtr_impl.hpp"
+#include "UnityEngine/zzzz__CollisionPairHeaderFlags_impl.hpp"
+#include "UnityEngine/zzzz__Vector3_impl.hpp"
+#include "UnityEngine/zzzz__ContactPairHeader_def.hpp"
+#include "UnityEngine/zzzz__Component_def.hpp"
+#include "UnityEngine/zzzz__ContactPair_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ContactPairHeader.get_body
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Component> (::UnityEngine::ContactPairHeader::*)()>(&::UnityEngine::ContactPairHeader::get_body)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xb67e9c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"get_body", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ContactPairHeader.get_otherBody
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Component> (::UnityEngine::ContactPairHeader::*)()>(&::UnityEngine::ContactPairHeader::get_otherBody)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xb67e95c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"get_otherBody", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ContactPairHeader.get_hasRemovedBody
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ContactPairHeader::*)()>(&::UnityEngine::ContactPairHeader::get_hasRemovedBody)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb68aa0c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"get_hasRemovedBody", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ContactPairHeader.GetContactPair
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::by_ref<::UnityEngine::ContactPair> (::UnityEngine::ContactPairHeader::*)(int32_t)>(&::UnityEngine::ContactPairHeader::GetContactPair)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb68aa1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"GetContactPair", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ContactPairHeader.GetContactPair_Internal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ContactPair* (::UnityEngine::ContactPairHeader::*)(int32_t)>(&::UnityEngine::ContactPairHeader::GetContactPair_Internal)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xb68d0fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"GetContactPair_Internal", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::UnityW<::UnityEngine::Component> UnityEngine::ContactPairHeader::get_body()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"get_body", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Component>>(*this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::Component> UnityEngine::ContactPairHeader::get_otherBody()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"get_otherBody", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Component>>(*this, ___internal_method);
+}
+inline bool UnityEngine::ContactPairHeader::get_hasRemovedBody()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"get_hasRemovedBody", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline ::by_ref<::UnityEngine::ContactPair> UnityEngine::ContactPairHeader::GetContactPair(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"GetContactPair", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::by_ref<::UnityEngine::ContactPair>>(*this, ___internal_method, index);
+}
+inline ::UnityEngine::ContactPair* UnityEngine::ContactPairHeader::GetContactPair_Internal(int32_t  index)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ContactPairHeader>(),
+                        {"GetContactPair_Internal", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ContactPair*>(*this, ___internal_method, index);
+}
+// Ctor Parameters [CppParam { name: "m_BodyID", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_OtherBodyID", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_StartPtr", ty: "::System::IntPtr", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_NbPairs", ty: "uint32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Flags", ty: "::UnityEngine::CollisionPairHeaderFlags", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_RelativeVelocity", ty: "::UnityEngine::Vector3", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::ContactPairHeader::ContactPairHeader(int32_t  m_BodyID, int32_t  m_OtherBodyID, ::System::IntPtr  m_StartPtr, uint32_t  m_NbPairs, ::UnityEngine::CollisionPairHeaderFlags  m_Flags, ::UnityEngine::Vector3  m_RelativeVelocity) noexcept  {
+this->m_BodyID = m_BodyID;
+this->m_OtherBodyID = m_OtherBodyID;
+this->m_StartPtr = m_StartPtr;
+this->m_NbPairs = m_NbPairs;
+this->m_Flags = m_Flags;
+this->m_RelativeVelocity = m_RelativeVelocity;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ContactPairHeader::ContactPairHeader()   {
+}

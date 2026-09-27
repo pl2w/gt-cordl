@@ -1,0 +1,99 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/TextCore/LowLevel/LigatureSubstitutionRecord.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(LigatureSubstitutionRecord)
+namespace System {
+template<typename T>
+class IEquatable_1;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace UnityEngine::TextCore::LowLevel {
+struct LigatureSubstitutionRecord;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord);
+DEFINE_IL2CPP_CLASS(::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord, "UnityEngine.TextCore.LowLevel", "LigatureSubstitutionRecord");
+// [VisibleToOtherModules(new[] { "UnityEngine.TextCoreTextEngineModule", "UnityEditor.TextCoreTextEngineModule" })]
+// [UsedByNativeCode]
+// Dependencies 
+namespace UnityEngine::TextCore::LowLevel {
+// Is value type: true
+// CS Name: UnityEngine.TextCore.LowLevel.LigatureSubstitutionRecord
+struct CORDL_TYPE LigatureSubstitutionRecord {
+public:
+// Declarations
+ __declspec(property(get=get_componentGlyphIDs, put=set_componentGlyphIDs)) ::ArrayW<uint32_t>  componentGlyphIDs;
+
+ __declspec(property(get=get_ligatureGlyphID, put=set_ligatureGlyphID)) uint32_t  ligatureGlyphID;
+
+/// @brief Convert operator to "::System::IEquatable_1<::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord>"
+constexpr operator  ::System::IEquatable_1<::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord>*() ;
+
+/// @brief Method Equals, addr 0xb6b7e10, size 0x7c, virtual true, abstract: false, final false
+inline bool Equals(::System::Object*  obj) ;
+
+/// @brief Method Equals, addr 0xb6b7d9c, size 0x18, virtual true, abstract: false, final true
+inline bool Equals(::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord  other) ;
+
+/// @brief Method GetHashCode, addr 0xb6b7e8c, size 0x7ec, virtual true, abstract: false, final false
+inline int32_t GetHashCode() ;
+
+/// @brief Method get_componentGlyphIDs, addr 0xb6b7d7c, size 0x8, virtual false, abstract: false, final false
+inline ::ArrayW<uint32_t> get_componentGlyphIDs() ;
+
+/// @brief Method get_ligatureGlyphID, addr 0xb6b7d8c, size 0x8, virtual false, abstract: false, final false
+inline uint32_t get_ligatureGlyphID() ;
+
+/// @brief Convert to "::System::IEquatable_1<::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord>"
+constexpr ::System::IEquatable_1<::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord>* i___System__IEquatable_1___UnityEngine__TextCore__LowLevel__LigatureSubstitutionRecord_() ;
+
+/// @brief Method op_Equality, addr 0xb6b7db4, size 0x5c, virtual false, abstract: false, final false
+static inline bool op_Equality(::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord  lhs, ::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord  rhs) ;
+
+/// @brief Method set_componentGlyphIDs, addr 0xb6b7d84, size 0x8, virtual false, abstract: false, final false
+inline void set_componentGlyphIDs(::ArrayW<uint32_t>  value) ;
+
+/// @brief Method set_ligatureGlyphID, addr 0xb6b7d94, size 0x8, virtual false, abstract: false, final false
+inline void set_ligatureGlyphID(uint32_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr LigatureSubstitutionRecord() ;
+
+// Ctor Parameters [CppParam { name: "m_ComponentGlyphIDs", ty: "::ArrayW<uint32_t>", modifiers: "", def_value: None, comment: None }, CppParam { name: "m_LigatureGlyphID", ty: "uint32_t", modifiers: "", def_value: None, comment: None }]
+constexpr LigatureSubstitutionRecord(::ArrayW<uint32_t>  m_ComponentGlyphIDs, uint32_t  m_LigatureGlyphID) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{31819};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// [SerializeField]
+/// [NativeName("componentGlyphs")]
+/// @brief Field m_ComponentGlyphIDs, offset: 0x0, size: 0x8, def value: None
+ ::ArrayW<uint32_t>  m_ComponentGlyphIDs;
+
+/// [NativeName("ligatureGlyph")]
+/// [SerializeField]
+/// @brief Field m_LigatureGlyphID, offset: 0x8, size: 0x4, def value: None
+ uint32_t  m_LigatureGlyphID;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord, m_ComponentGlyphIDs) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord, m_LigatureGlyphID) == 0x8, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::TextCore::LowLevel::LigatureSubstitutionRecord) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::TextCore::LowLevel

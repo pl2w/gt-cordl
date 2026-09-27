@@ -1,0 +1,466 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/Universal/Internal/FinalBlitPass.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/Rendering/RenderGraphModule/zzzz__TextureHandle_def.hpp"
+#include "UnityEngine/Rendering/Universal/Internal/zzzz__FinalBlitPass_BlitMaterialData_def.hpp"
+#include "UnityEngine/Rendering/Universal/zzzz__ScriptableRenderPass_def.hpp"
+#include "UnityEngine/zzzz__Vector4_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(FinalBlitPass)
+namespace GlobalNamespace {
+struct FinalBlitPass_BlitMaterialData;
+}
+namespace GlobalNamespace {
+struct FinalBlitPass_BlitType;
+}
+namespace GlobalNamespace {
+struct HDROutputUtils_Operation;
+}
+namespace UnityEngine::Rendering::RenderGraphModule {
+template<typename PassData,typename ContextType>
+class BaseRenderFunc_2;
+}
+namespace UnityEngine::Rendering::RenderGraphModule {
+struct RasterGraphContext;
+}
+namespace UnityEngine::Rendering::RenderGraphModule {
+class RenderGraph;
+}
+namespace UnityEngine::Rendering::RenderGraphModule {
+struct TextureHandle;
+}
+namespace UnityEngine::Rendering::Universal::Internal {
+class FinalBlitPass_BlitPassNames;
+}
+namespace UnityEngine::Rendering::Universal::Internal {
+class FinalBlitPass_PassData;
+}
+namespace UnityEngine::Rendering::Universal::Internal {
+class FinalBlitPass___c;
+}
+namespace UnityEngine::Rendering::Universal {
+struct RenderPassEvent;
+}
+namespace UnityEngine::Rendering::Universal {
+struct RenderTargetHandle;
+}
+namespace UnityEngine::Rendering::Universal {
+struct RenderingData;
+}
+namespace UnityEngine::Rendering::Universal {
+class UniversalCameraData;
+}
+namespace UnityEngine::Rendering {
+class CommandBuffer;
+}
+namespace UnityEngine::Rendering {
+class ContextContainer;
+}
+namespace UnityEngine::Rendering {
+class RTHandle;
+}
+namespace UnityEngine::Rendering {
+class RasterCommandBuffer;
+}
+namespace UnityEngine::Rendering {
+struct ScriptableRenderContext;
+}
+namespace UnityEngine {
+struct ColorGamut;
+}
+namespace UnityEngine {
+class Material;
+}
+namespace UnityEngine {
+struct RenderTextureDescriptor;
+}
+namespace UnityEngine {
+struct Vector4;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering::Universal::Internal {
+class FinalBlitPass;
+}
+namespace UnityEngine::Rendering::Universal::Internal {
+class FinalBlitPass_BlitPassNames;
+}
+namespace UnityEngine::Rendering::Universal::Internal {
+class FinalBlitPass_PassData;
+}
+namespace UnityEngine::Rendering::Universal::Internal {
+class FinalBlitPass___c;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass*);
+MARK_REF_T(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames*);
+MARK_REF_T(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*);
+MARK_REF_T(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass*, "UnityEngine.Rendering.Universal.Internal", "FinalBlitPass");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames*, "UnityEngine.Rendering.Universal.Internal", "FinalBlitPass/BlitPassNames");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*, "UnityEngine.Rendering.Universal.Internal", "FinalBlitPass/PassData");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c*, "UnityEngine.Rendering.Universal.Internal", "FinalBlitPass/<>c");
+// Dependencies UnityEngine.Rendering.Universal.Internal.FinalBlitPass::BlitMaterialData, UnityEngine.Rendering.Universal.ScriptableRenderPass
+namespace UnityEngine::Rendering::Universal::Internal {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.Universal.Internal.FinalBlitPass
+class CORDL_TYPE FinalBlitPass : public ::UnityEngine::Rendering::Universal::ScriptableRenderPass {
+public:
+// Declarations
+using BlitMaterialData = ::GlobalNamespace::FinalBlitPass_BlitMaterialData;
+
+using BlitType = ::GlobalNamespace::FinalBlitPass_BlitType;
+
+using BlitPassNames = ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames;
+
+using PassData = ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData;
+
+using __c = ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c;
+
+/// @brief Field m_BlitMaterialData, offset 0xc8, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_BlitMaterialData, put=__cordl_internal_set_m_BlitMaterialData)) ::ArrayW<::GlobalNamespace::FinalBlitPass_BlitMaterialData>  m_BlitMaterialData;
+
+/// @brief Field m_PassData, offset 0xc0, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_PassData, put=__cordl_internal_set_m_PassData)) ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*  m_PassData;
+
+/// @brief Field m_Source, offset 0xb8, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Source, put=__cordl_internal_set_m_Source)) ::UnityEngine::Rendering::RTHandle*  m_Source;
+
+/// @brief Field s_CameraDepthTextureID, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_s_CameraDepthTextureID, put=setStaticF_s_CameraDepthTextureID)) int32_t  s_CameraDepthTextureID;
+
+/// @brief Method Dispose, addr 0xb2e7b18, size 0x4, virtual false, abstract: false, final false
+inline void Dispose() ;
+
+/// [Obsolete("This rendering path is for compatibility mode only (when Render Graph is disabled). Use Render Graph API instead.", false)]
+/// @brief Method Execute, addr 0xb2e7d70, size 0xaf8, virtual true, abstract: false, final false
+inline void Execute(::UnityEngine::Rendering::ScriptableRenderContext  context, ::by_ref<::UnityEngine::Rendering::Universal::RenderingData>  renderingData) ;
+
+/// @brief Method ExecutePass, addr 0xb2e8914, size 0x2d0, virtual false, abstract: false, final false
+static inline void ExecutePass(::UnityEngine::Rendering::RasterCommandBuffer*  cmd, ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*  data, ::UnityEngine::Rendering::RTHandle*  source, ::UnityEngine::Rendering::RTHandle*  destination, ::UnityEngine::Rendering::Universal::UniversalCameraData*  cameraData) ;
+
+/// @brief Method InitPassData, addr 0xb2e8868, size 0xac, virtual false, abstract: false, final false
+inline void InitPassData(::UnityEngine::Rendering::Universal::UniversalCameraData*  cameraData, ::by_ref<::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*>  passData, ::GlobalNamespace::FinalBlitPass_BlitType  blitType, bool  enableAlphaOutput) ;
+
+static inline ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass* New_ctor(::UnityEngine::Rendering::Universal::RenderPassEvent  evt, ::UnityEngine::Material*  blitMaterial, ::UnityEngine::Material*  blitHDRMaterial) ;
+
+/// [Obsolete("This rendering path is for compatibility mode only (when Render Graph is disabled). Use Render Graph API instead.", false)]
+/// @brief Method OnCameraSetup, addr 0xb2e7c8c, size 0xe4, virtual true, abstract: false, final false
+inline void OnCameraSetup(::UnityEngine::Rendering::CommandBuffer*  cmd, ::by_ref<::UnityEngine::Rendering::Universal::RenderingData>  renderingData) ;
+
+/// @brief Method Render, addr 0xb2e8be4, size 0x9f4, virtual false, abstract: false, final false
+inline void Render(::UnityEngine::Rendering::RenderGraphModule::RenderGraph*  renderGraph, ::UnityEngine::Rendering::ContextContainer*  frameData, ::UnityEngine::Rendering::Universal::UniversalCameraData*  cameraData, /* [IsReadOnly] */ ::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>  src, /* [IsReadOnly] */ ::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>  dest, ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  overlayUITexture) ;
+
+/// @brief Method Setup, addr 0xb2e7b68, size 0xc, virtual false, abstract: false, final false
+inline void Setup(::UnityEngine::RenderTextureDescriptor  baseDescriptor, ::UnityEngine::Rendering::RTHandle*  colorHandle) ;
+
+/// [Obsolete("Use RTHandles for colorHandle", true)]
+/// @brief Method Setup, addr 0xb2e7b1c, size 0x4c, virtual false, abstract: false, final false
+inline void Setup(::UnityEngine::RenderTextureDescriptor  baseDescriptor, ::UnityEngine::Rendering::Universal::RenderTargetHandle  colorHandle) ;
+
+/// @brief Method SetupHDROutput, addr 0xb2e7b74, size 0x118, virtual false, abstract: false, final false
+static inline void SetupHDROutput(::UnityEngine::ColorGamut  hdrDisplayColorGamut, ::UnityEngine::Material*  material, ::GlobalNamespace::HDROutputUtils_Operation  hdrOperation, ::UnityEngine::Vector4  hdrOutputParameters, bool  rendersOverlayUI) ;
+
+constexpr ::ArrayW<::GlobalNamespace::FinalBlitPass_BlitMaterialData> const& __cordl_internal_get_m_BlitMaterialData() const;
+
+constexpr ::ArrayW<::GlobalNamespace::FinalBlitPass_BlitMaterialData>& __cordl_internal_get_m_BlitMaterialData() ;
+
+constexpr ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData* const& __cordl_internal_get_m_PassData() const;
+
+constexpr ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*& __cordl_internal_get_m_PassData() ;
+
+constexpr ::UnityEngine::Rendering::RTHandle* const& __cordl_internal_get_m_Source() const;
+
+constexpr ::UnityEngine::Rendering::RTHandle*& __cordl_internal_get_m_Source() ;
+
+constexpr void __cordl_internal_set_m_BlitMaterialData(::ArrayW<::GlobalNamespace::FinalBlitPass_BlitMaterialData>  value) ;
+
+constexpr void __cordl_internal_set_m_PassData(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*  value) ;
+
+constexpr void __cordl_internal_set_m_Source(::UnityEngine::Rendering::RTHandle*  value) ;
+
+/// @brief Method .ctor, addr 0xb2e78f0, size 0x220, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Rendering::Universal::RenderPassEvent  evt, ::UnityEngine::Material*  blitMaterial, ::UnityEngine::Material*  blitHDRMaterial) ;
+
+static inline int32_t getStaticF_s_CameraDepthTextureID() ;
+
+static inline void setStaticF_s_CameraDepthTextureID(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr FinalBlitPass() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+FinalBlitPass(FinalBlitPass && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+FinalBlitPass(FinalBlitPass const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{18761};
+
+/// @brief Field m_Source, offset: 0xb8, size: 0x8, def value: None
+ ::UnityEngine::Rendering::RTHandle*  ___m_Source;
+
+/// @brief Field m_PassData, offset: 0xc0, size: 0x8, def value: None
+ ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*  ___m_PassData;
+
+/// @brief Field m_BlitMaterialData, offset: 0xc8, size: 0x8, def value: None
+ ::ArrayW<::GlobalNamespace::FinalBlitPass_BlitMaterialData>  ___m_BlitMaterialData;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass, ___m_Source) == 0xb8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass, ___m_PassData) == 0xc0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass, ___m_BlitMaterialData) == 0xc8, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass) == 0xd0, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering::Universal::Internal
+// [CompilerGenerated]
+// Dependencies System.Object
+namespace UnityEngine::Rendering::Universal::Internal {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.Universal.Internal.FinalBlitPass/<>c
+class CORDL_TYPE FinalBlitPass___c : public ::System::Object {
+public:
+// Declarations
+/// @brief Field <>9, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF___9, put=setStaticF___9)) ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c*  __9;
+
+/// @brief Field <>9__17_0, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF___9__17_0, put=setStaticF___9__17_0)) ::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>*  __9__17_0;
+
+static inline ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c* New_ctor() ;
+
+/// @brief Method <Render>b__17_0, addr 0xb2e96b0, size 0x3d4, virtual false, abstract: false, final false
+inline void _Render_b__17_0(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*  data, ::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext  context) ;
+
+/// @brief Method .ctor, addr 0xb2e96a8, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c* getStaticF___9() ;
+
+static inline ::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>* getStaticF___9__17_0() ;
+
+static inline void setStaticF___9(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c*  value) ;
+
+static inline void setStaticF___9__17_0(::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr FinalBlitPass___c() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass___c", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+FinalBlitPass___c(FinalBlitPass___c && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass___c", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+FinalBlitPass___c(FinalBlitPass___c const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{18760};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass___c) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering::Universal::Internal
+// Dependencies System.Object, UnityEngine.Rendering.RenderGraphModule.TextureHandle, UnityEngine.Rendering.Universal.Internal.FinalBlitPass::BlitMaterialData, UnityEngine.Vector4
+namespace UnityEngine::Rendering::Universal::Internal {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.Universal.Internal.FinalBlitPass/PassData
+class CORDL_TYPE FinalBlitPass_PassData : public ::System::Object {
+public:
+// Declarations
+/// @brief Field blitMaterialData, offset 0x48, size 0x10 
+ __declspec(property(get=__cordl_internal_get_blitMaterialData, put=__cordl_internal_set_blitMaterialData)) ::GlobalNamespace::FinalBlitPass_BlitMaterialData  blitMaterialData;
+
+/// @brief Field cameraData, offset 0x58, size 0x8 
+ __declspec(property(get=__cordl_internal_get_cameraData, put=__cordl_internal_set_cameraData)) ::UnityEngine::Rendering::Universal::UniversalCameraData*  cameraData;
+
+/// @brief Field destination, offset 0x20, size 0x10 
+ __declspec(property(get=__cordl_internal_get_destination, put=__cordl_internal_set_destination)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  destination;
+
+/// @brief Field enableAlphaOutput, offset 0x45, size 0x1 
+ __declspec(property(get=__cordl_internal_get_enableAlphaOutput, put=__cordl_internal_set_enableAlphaOutput)) bool  enableAlphaOutput;
+
+/// @brief Field hdrOutputLuminanceParams, offset 0x34, size 0x10 
+ __declspec(property(get=__cordl_internal_get_hdrOutputLuminanceParams, put=__cordl_internal_set_hdrOutputLuminanceParams)) ::UnityEngine::Vector4  hdrOutputLuminanceParams;
+
+/// @brief Field requireSrgbConversion, offset 0x44, size 0x1 
+ __declspec(property(get=__cordl_internal_get_requireSrgbConversion, put=__cordl_internal_set_requireSrgbConversion)) bool  requireSrgbConversion;
+
+/// @brief Field source, offset 0x10, size 0x10 
+ __declspec(property(get=__cordl_internal_get_source, put=__cordl_internal_set_source)) ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  source;
+
+/// @brief Field sourceID, offset 0x30, size 0x4 
+ __declspec(property(get=__cordl_internal_get_sourceID, put=__cordl_internal_set_sourceID)) int32_t  sourceID;
+
+static inline ::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData* New_ctor() ;
+
+constexpr ::GlobalNamespace::FinalBlitPass_BlitMaterialData const& __cordl_internal_get_blitMaterialData() const;
+
+constexpr ::GlobalNamespace::FinalBlitPass_BlitMaterialData& __cordl_internal_get_blitMaterialData() ;
+
+constexpr ::UnityEngine::Rendering::Universal::UniversalCameraData* const& __cordl_internal_get_cameraData() const;
+
+constexpr ::UnityEngine::Rendering::Universal::UniversalCameraData*& __cordl_internal_get_cameraData() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get_destination() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get_destination() ;
+
+constexpr bool const& __cordl_internal_get_enableAlphaOutput() const;
+
+constexpr bool& __cordl_internal_get_enableAlphaOutput() ;
+
+constexpr ::UnityEngine::Vector4 const& __cordl_internal_get_hdrOutputLuminanceParams() const;
+
+constexpr ::UnityEngine::Vector4& __cordl_internal_get_hdrOutputLuminanceParams() ;
+
+constexpr bool const& __cordl_internal_get_requireSrgbConversion() const;
+
+constexpr bool& __cordl_internal_get_requireSrgbConversion() ;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& __cordl_internal_get_source() const;
+
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& __cordl_internal_get_source() ;
+
+constexpr int32_t const& __cordl_internal_get_sourceID() const;
+
+constexpr int32_t& __cordl_internal_get_sourceID() ;
+
+constexpr void __cordl_internal_set_blitMaterialData(::GlobalNamespace::FinalBlitPass_BlitMaterialData  value) ;
+
+constexpr void __cordl_internal_set_cameraData(::UnityEngine::Rendering::Universal::UniversalCameraData*  value) ;
+
+constexpr void __cordl_internal_set_destination(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set_enableAlphaOutput(bool  value) ;
+
+constexpr void __cordl_internal_set_hdrOutputLuminanceParams(::UnityEngine::Vector4  value) ;
+
+constexpr void __cordl_internal_set_requireSrgbConversion(bool  value) ;
+
+constexpr void __cordl_internal_set_source(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value) ;
+
+constexpr void __cordl_internal_set_sourceID(int32_t  value) ;
+
+/// @brief Method .ctor, addr 0xb2e7b10, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr FinalBlitPass_PassData() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass_PassData", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+FinalBlitPass_PassData(FinalBlitPass_PassData && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass_PassData", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+FinalBlitPass_PassData(FinalBlitPass_PassData const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{18759};
+
+/// @brief Field source, offset: 0x10, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ___source;
+
+/// @brief Field destination, offset: 0x20, size: 0x10, def value: None
+ ::UnityEngine::Rendering::RenderGraphModule::TextureHandle  ___destination;
+
+/// @brief Field sourceID, offset: 0x30, size: 0x4, def value: None
+ int32_t  ___sourceID;
+
+/// @brief Field hdrOutputLuminanceParams, offset: 0x34, size: 0x10, def value: None
+ ::UnityEngine::Vector4  ___hdrOutputLuminanceParams;
+
+/// @brief Field requireSrgbConversion, offset: 0x44, size: 0x1, def value: None
+ bool  ___requireSrgbConversion;
+
+/// @brief Field enableAlphaOutput, offset: 0x45, size: 0x1, def value: None
+ bool  ___enableAlphaOutput;
+
+/// @brief Field blitMaterialData, offset: 0x48, size: 0x10, def value: None
+ ::GlobalNamespace::FinalBlitPass_BlitMaterialData  ___blitMaterialData;
+
+/// @brief Field cameraData, offset: 0x58, size: 0x8, def value: None
+ ::UnityEngine::Rendering::Universal::UniversalCameraData*  ___cameraData;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___source) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___destination) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___sourceID) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___hdrOutputLuminanceParams) == 0x34, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___requireSrgbConversion) == 0x44, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___enableAlphaOutput) == 0x45, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___blitMaterialData) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData, ___cameraData) == 0x58, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_PassData) == 0x60, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering::Universal::Internal
+// Dependencies System.Object
+namespace UnityEngine::Rendering::Universal::Internal {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.Universal.Internal.FinalBlitPass/BlitPassNames
+class CORDL_TYPE FinalBlitPass_BlitPassNames : public ::System::Object {
+public:
+// Declarations
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr FinalBlitPass_BlitPassNames() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass_BlitPassNames", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+FinalBlitPass_BlitPassNames(FinalBlitPass_BlitPassNames && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "FinalBlitPass_BlitPassNames", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+FinalBlitPass_BlitPassNames(FinalBlitPass_BlitPassNames const& ) = delete;
+
+/// @brief Field BilinearSampler offset 0xffffffff size 0x8
+static constexpr ::ConstString  BilinearSampler{u"BilinearDebugDraw"};
+
+/// @brief Field NearestSampler offset 0xffffffff size 0x8
+static constexpr ::ConstString  NearestSampler{u"NearestDebugDraw"};
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{18756};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitPassNames) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering::Universal::Internal

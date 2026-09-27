@@ -1,0 +1,378 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRHeadsetEmulator.hpp"
+#include "GlobalNamespace/zzzz__OVRHeadsetEmulator_OpMode_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputAction_impl.hpp"
+#include "UnityEngine/zzzz__CursorLockMode_impl.hpp"
+#include "UnityEngine/zzzz__KeyCode_impl.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "UnityEngine/zzzz__Vector3_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRHeadsetEmulator_def.hpp"
+#include "GlobalNamespace/zzzz__OVRHeadsetEmulator_OpMode_def.hpp"
+#include "GlobalNamespace/zzzz__OVRManager_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputAction_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRHeadsetEmulator.Start
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRHeadsetEmulator::*)()>(&::GlobalNamespace::OVRHeadsetEmulator::Start)> {
+  constexpr static std::size_t size = 0x344;
+  constexpr static std::size_t addrs = 0xa5c272c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"Start", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRHeadsetEmulator.Update
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRHeadsetEmulator::*)()>(&::GlobalNamespace::OVRHeadsetEmulator::Update)> {
+  constexpr static std::size_t size = 0x474;
+  constexpr static std::size_t addrs = 0xa5c2a70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"Update", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRHeadsetEmulator.IsEmulationActivated
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::GlobalNamespace::OVRHeadsetEmulator::*)()>(&::GlobalNamespace::OVRHeadsetEmulator::IsEmulationActivated)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xa5c2ee4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"IsEmulationActivated", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRHeadsetEmulator.IsTweakingPitch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::GlobalNamespace::OVRHeadsetEmulator::*)()>(&::GlobalNamespace::OVRHeadsetEmulator::IsTweakingPitch)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xa5c2fb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"IsTweakingPitch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRHeadsetEmulator.OnDestroy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRHeadsetEmulator::*)()>(&::GlobalNamespace::OVRHeadsetEmulator::OnDestroy)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xa5c3030;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"OnDestroy", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRHeadsetEmulator._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRHeadsetEmulator::*)()>(&::GlobalNamespace::OVRHeadsetEmulator::_ctor)> {
+  constexpr static std::size_t size = 0x26c;
+  constexpr static std::size_t addrs = 0xa5c311c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::GlobalNamespace::OVRHeadsetEmulator_OpMode& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_opMode()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___opMode;
+}
+constexpr ::GlobalNamespace::OVRHeadsetEmulator_OpMode const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_opMode() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___opMode;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_opMode(::GlobalNamespace::OVRHeadsetEmulator_OpMode  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___opMode = value;
+}
+constexpr bool& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_resetHmdPoseOnRelease()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___resetHmdPoseOnRelease;
+}
+constexpr bool const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_resetHmdPoseOnRelease() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___resetHmdPoseOnRelease;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_resetHmdPoseOnRelease(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___resetHmdPoseOnRelease = value;
+}
+constexpr bool& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_resetHmdPoseByMiddleMouseButton()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___resetHmdPoseByMiddleMouseButton;
+}
+constexpr bool const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_resetHmdPoseByMiddleMouseButton() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___resetHmdPoseByMiddleMouseButton;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_resetHmdPoseByMiddleMouseButton(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___resetHmdPoseByMiddleMouseButton = value;
+}
+constexpr ::ArrayW<::UnityEngine::KeyCode>& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_activateKeys()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___activateKeys;
+}
+constexpr ::ArrayW<::UnityEngine::KeyCode> const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_activateKeys() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___activateKeys;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_activateKeys(::ArrayW<::UnityEngine::KeyCode>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___activateKeys = value;
+}
+constexpr ::ArrayW<::StringW>& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_activateKeyBindings()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___activateKeyBindings;
+}
+constexpr ::ArrayW<::StringW> const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_activateKeyBindings() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___activateKeyBindings;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_activateKeyBindings(::ArrayW<::StringW>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___activateKeyBindings = value;
+}
+constexpr ::ArrayW<::UnityEngine::KeyCode>& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_pitchKeys()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pitchKeys;
+}
+constexpr ::ArrayW<::UnityEngine::KeyCode> const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_pitchKeys() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pitchKeys;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_pitchKeys(::ArrayW<::UnityEngine::KeyCode>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___pitchKeys = value;
+}
+constexpr ::ArrayW<::StringW>& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_pitchKeyBindings()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pitchKeyBindings;
+}
+constexpr ::ArrayW<::StringW> const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_pitchKeyBindings() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pitchKeyBindings;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_pitchKeyBindings(::ArrayW<::StringW>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___pitchKeyBindings = value;
+}
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputAction*>& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_activateKeyActions()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___activateKeyActions;
+}
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputAction*> const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_activateKeyActions() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___activateKeyActions;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_activateKeyActions(::ArrayW<::UnityEngine::InputSystem::InputAction*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___activateKeyActions = value;
+}
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputAction*>& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_pitchKeyActions()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pitchKeyActions;
+}
+constexpr ::ArrayW<::UnityEngine::InputSystem::InputAction*> const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_pitchKeyActions() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pitchKeyActions;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_pitchKeyActions(::ArrayW<::UnityEngine::InputSystem::InputAction*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___pitchKeyActions = value;
+}
+constexpr ::UnityEngine::InputSystem::InputAction*& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_middleMouseButtonAction()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___middleMouseButtonAction;
+}
+constexpr ::UnityEngine::InputSystem::InputAction* const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_middleMouseButtonAction() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___middleMouseButtonAction;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_middleMouseButtonAction(::UnityEngine::InputSystem::InputAction*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___middleMouseButtonAction = value;
+}
+constexpr ::UnityEngine::InputSystem::InputAction*& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_mouseScrollAction()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mouseScrollAction;
+}
+constexpr ::UnityEngine::InputSystem::InputAction* const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_mouseScrollAction() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mouseScrollAction;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_mouseScrollAction(::UnityEngine::InputSystem::InputAction*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___mouseScrollAction = value;
+}
+constexpr ::UnityEngine::InputSystem::InputAction*& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_mouseMoveAction()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mouseMoveAction;
+}
+constexpr ::UnityEngine::InputSystem::InputAction* const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_mouseMoveAction() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mouseMoveAction;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_mouseMoveAction(::UnityEngine::InputSystem::InputAction*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___mouseMoveAction = value;
+}
+constexpr ::UnityW<::GlobalNamespace::OVRManager>& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_manager()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___manager;
+}
+constexpr ::UnityW<::GlobalNamespace::OVRManager> const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_manager() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___manager;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_manager(::UnityW<::GlobalNamespace::OVRManager>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___manager = value;
+}
+constexpr bool& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_lastFrameEmulationActivated()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___lastFrameEmulationActivated;
+}
+constexpr bool const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_lastFrameEmulationActivated() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___lastFrameEmulationActivated;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_lastFrameEmulationActivated(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___lastFrameEmulationActivated = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_recordedHeadPoseRelativeOffsetTranslation()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___recordedHeadPoseRelativeOffsetTranslation;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_recordedHeadPoseRelativeOffsetTranslation() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___recordedHeadPoseRelativeOffsetTranslation;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_recordedHeadPoseRelativeOffsetTranslation(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___recordedHeadPoseRelativeOffsetTranslation = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_recordedHeadPoseRelativeOffsetRotation()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___recordedHeadPoseRelativeOffsetRotation;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_recordedHeadPoseRelativeOffsetRotation() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___recordedHeadPoseRelativeOffsetRotation;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_recordedHeadPoseRelativeOffsetRotation(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___recordedHeadPoseRelativeOffsetRotation = value;
+}
+constexpr bool& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_hasSentEvent()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hasSentEvent;
+}
+constexpr bool const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_hasSentEvent() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hasSentEvent;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_hasSentEvent(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___hasSentEvent = value;
+}
+constexpr bool& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_emulatorHasInitialized()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___emulatorHasInitialized;
+}
+constexpr bool const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_emulatorHasInitialized() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___emulatorHasInitialized;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_emulatorHasInitialized(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___emulatorHasInitialized = value;
+}
+constexpr ::UnityEngine::CursorLockMode& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_previousCursorLockMode()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___previousCursorLockMode;
+}
+constexpr ::UnityEngine::CursorLockMode const& GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_get_previousCursorLockMode() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___previousCursorLockMode;
+}
+constexpr void GlobalNamespace::OVRHeadsetEmulator::__cordl_internal_set_previousCursorLockMode(::UnityEngine::CursorLockMode  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___previousCursorLockMode = value;
+}
+inline void GlobalNamespace::OVRHeadsetEmulator::Start()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"Start", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRHeadsetEmulator::Update()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"Update", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRHeadsetEmulator::IsEmulationActivated()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"IsEmulationActivated", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRHeadsetEmulator::IsTweakingPitch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"IsTweakingPitch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRHeadsetEmulator::OnDestroy()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {"OnDestroy", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRHeadsetEmulator::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRHeadsetEmulator*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRHeadsetEmulator* GlobalNamespace::OVRHeadsetEmulator::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRHeadsetEmulator*>());
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRHeadsetEmulator::OVRHeadsetEmulator()   {
+}

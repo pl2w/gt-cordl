@@ -1,0 +1,64 @@
+#pragma once
+// IWYU pragma private; include "Oculus/Interaction/MoveAtSourceProvider.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "Oculus/Interaction/zzzz__MoveAtSourceProvider_def.hpp"
+#include "Oculus/Interaction/zzzz__IMovementProvider_def.hpp"
+#include "Oculus/Interaction/zzzz__IMovement_def.hpp"
+//  Writing Method size for method: ::Oculus::Interaction::MoveAtSourceProvider.CreateMovement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::Oculus::Interaction::IMovement* (::Oculus::Interaction::MoveAtSourceProvider::*)()>(&::Oculus::Interaction::MoveAtSourceProvider::CreateMovement)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xa474a6c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Interaction::MoveAtSourceProvider*>(),
+                        {"CreateMovement", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Oculus::Interaction::MoveAtSourceProvider._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Oculus::Interaction::MoveAtSourceProvider::*)()>(&::Oculus::Interaction::MoveAtSourceProvider::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa474b3c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Interaction::MoveAtSourceProvider*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::Oculus::Interaction::IMovement* Oculus::Interaction::MoveAtSourceProvider::CreateMovement()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Interaction::MoveAtSourceProvider*>(),
+                        {"CreateMovement", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::Oculus::Interaction::IMovement*>(this, ___internal_method);
+}
+inline void Oculus::Interaction::MoveAtSourceProvider::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Interaction::MoveAtSourceProvider*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::Oculus::Interaction::MoveAtSourceProvider* Oculus::Interaction::MoveAtSourceProvider::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Oculus::Interaction::MoveAtSourceProvider*>());
+}
+/// @brief Convert operator to "::Oculus::Interaction::IMovementProvider"
+constexpr  Oculus::Interaction::MoveAtSourceProvider::operator ::Oculus::Interaction::IMovementProvider*() noexcept {
+return static_cast<::Oculus::Interaction::IMovementProvider*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::Oculus::Interaction::IMovementProvider"
+constexpr ::Oculus::Interaction::IMovementProvider* Oculus::Interaction::MoveAtSourceProvider::i___Oculus__Interaction__IMovementProvider() noexcept {
+return static_cast<::Oculus::Interaction::IMovementProvider*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::Oculus::Interaction::MoveAtSourceProvider::MoveAtSourceProvider()   {
+}

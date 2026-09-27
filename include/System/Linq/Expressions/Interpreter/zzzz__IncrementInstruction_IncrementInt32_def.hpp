@@ -1,0 +1,56 @@
+#pragma once
+// IWYU pragma private; include "System/Linq/Expressions/Interpreter/IncrementInstruction_IncrementInt32.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Linq/Expressions/Interpreter/zzzz__IncrementInstruction_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(IncrementInstruction_IncrementInt32)
+namespace System::Linq::Expressions::Interpreter {
+class InterpretedFrame;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class IncrementInstruction_IncrementInt32;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::IncrementInstruction_IncrementInt32*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::IncrementInstruction_IncrementInt32*, "System.Linq.Expressions.Interpreter", "IncrementInstruction/IncrementInt32");
+// Dependencies System.Linq.Expressions.Interpreter.IncrementInstruction
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: System.Linq.Expressions.Interpreter.IncrementInstruction/IncrementInt32
+class CORDL_TYPE IncrementInstruction_IncrementInt32 : public ::System::Linq::Expressions::Interpreter::IncrementInstruction {
+public:
+// Declarations
+static inline ::GlobalNamespace::IncrementInstruction_IncrementInt32* New_ctor() ;
+
+/// @brief Method Run, addr 0xa8909b0, size 0x70, virtual true, abstract: false, final false
+inline int32_t Run(::System::Linq::Expressions::Interpreter::InterpretedFrame*  frame) ;
+
+/// @brief Method .ctor, addr 0xa890870, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr IncrementInstruction_IncrementInt32() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "IncrementInstruction_IncrementInt32", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+IncrementInstruction_IncrementInt32(IncrementInstruction_IncrementInt32 && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "IncrementInstruction_IncrementInt32", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IncrementInstruction_IncrementInt32(IncrementInstruction_IncrementInt32 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{23855};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::IncrementInstruction_IncrementInt32) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

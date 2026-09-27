@@ -1,0 +1,56 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/MouseCaptureController.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(MouseCaptureController)
+namespace UnityEngine::UIElements {
+class IEventHandler;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+class MouseCaptureController;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::UIElements::MouseCaptureController*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::MouseCaptureController*, "UnityEngine.UIElements", "MouseCaptureController");
+// [Extension]
+// Dependencies System.Object
+namespace UnityEngine::UIElements {
+// Is value type: false
+// CS Name: UnityEngine.UIElements.MouseCaptureController
+class CORDL_TYPE MouseCaptureController : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method CaptureMouse, addr 0xb8bb14c, size 0xcc, virtual false, abstract: false, final false
+static inline void CaptureMouse(::UnityEngine::UIElements::IEventHandler*  handler) ;
+
+/// [Extension]
+/// @brief Method HasMouseCapture, addr 0xb8b9808, size 0xac, virtual false, abstract: false, final false
+static inline bool HasMouseCapture(::UnityEngine::UIElements::IEventHandler*  handler) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MouseCaptureController() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MouseCaptureController", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MouseCaptureController(MouseCaptureController && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MouseCaptureController", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MouseCaptureController(MouseCaptureController const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7815};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::UIElements::MouseCaptureController) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

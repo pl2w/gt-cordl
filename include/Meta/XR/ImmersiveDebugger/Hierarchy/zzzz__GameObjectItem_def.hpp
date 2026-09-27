@@ -1,0 +1,106 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/Hierarchy/GameObjectItem.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Meta/XR/ImmersiveDebugger/Hierarchy/zzzz__ItemWithChildren_3_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(GameObjectItem)
+namespace Meta::XR::ImmersiveDebugger::Hierarchy {
+class ComponentItem;
+}
+namespace Meta::XR::ImmersiveDebugger::Utils {
+struct InstanceHandle;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace UnityEngine {
+class GameObject;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger::Hierarchy {
+class GameObjectItem;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Hierarchy::GameObjectItem*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Hierarchy::GameObjectItem*, "Meta.XR.ImmersiveDebugger.Hierarchy", "GameObjectItem");
+// Dependencies Meta.XR.ImmersiveDebugger.Hierarchy.ItemWithChildren`3<TargetType, ChildType, ChildTargetType>
+namespace Meta::XR::ImmersiveDebugger::Hierarchy {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Hierarchy.GameObjectItem
+class CORDL_TYPE GameObjectItem : public ::Meta::XR::ImmersiveDebugger::Hierarchy::ItemWithChildren_3<::UnityW<::UnityEngine::GameObject>,::Meta::XR::ImmersiveDebugger::Hierarchy::GameObjectItem*,::UnityW<::UnityEngine::GameObject>> {
+public:
+// Declarations
+ __declspec(property(get=get_Label)) ::StringW  Label;
+
+ __declspec(property(get=get_Valid)) bool  Valid;
+
+/// @brief Field _components, offset 0x50, size 0x8 
+ __declspec(property(get=__cordl_internal_get__components, put=__cordl_internal_set__components)) ::System::Collections::Generic::List_1<::Meta::XR::ImmersiveDebugger::Hierarchy::ComponentItem*>*  _components;
+
+/// @brief Method BuildContent, addr 0x9ef7d74, size 0x60, virtual true, abstract: false, final false
+inline void BuildContent() ;
+
+/// @brief Method BuildContentInternal, addr 0x9ef7dd4, size 0x184, virtual false, abstract: false, final false
+inline void BuildContentInternal() ;
+
+/// @brief Method BuildHandle, addr 0x9ef7b88, size 0x8c, virtual true, abstract: false, final false
+inline ::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle BuildHandle() ;
+
+/// @brief Method ClearContent, addr 0x9ef7fa0, size 0x198, virtual true, abstract: false, final false
+inline void ClearContent() ;
+
+/// @brief Method CompareChildren, addr 0x9ef7c14, size 0x68, virtual true, abstract: false, final false
+inline bool CompareChildren(::UnityEngine::GameObject*  lhs, ::UnityEngine::GameObject*  rhs) ;
+
+/// @brief Method FetchExpectedChildren, addr 0x9ef7c7c, size 0xf8, virtual true, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::GameObject>> FetchExpectedChildren() ;
+
+static inline ::Meta::XR::ImmersiveDebugger::Hierarchy::GameObjectItem* New_ctor() ;
+
+constexpr ::System::Collections::Generic::List_1<::Meta::XR::ImmersiveDebugger::Hierarchy::ComponentItem*>* const& __cordl_internal_get__components() const;
+
+constexpr ::System::Collections::Generic::List_1<::Meta::XR::ImmersiveDebugger::Hierarchy::ComponentItem*>*& __cordl_internal_get__components() ;
+
+constexpr void __cordl_internal_set__components(::System::Collections::Generic::List_1<::Meta::XR::ImmersiveDebugger::Hierarchy::ComponentItem*>*  value) ;
+
+/// @brief Method .ctor, addr 0x9ef8138, size 0x9c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_Label, addr 0x9ef7b10, size 0x18, virtual true, abstract: false, final false
+inline ::StringW get_Label() ;
+
+/// @brief Method get_Valid, addr 0x9ef7b28, size 0x60, virtual true, abstract: false, final false
+inline bool get_Valid() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr GameObjectItem() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "GameObjectItem", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+GameObjectItem(GameObjectItem && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "GameObjectItem", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+GameObjectItem(GameObjectItem const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27532};
+
+/// @brief Field _components, offset: 0x50, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::Meta::XR::ImmersiveDebugger::Hierarchy::ComponentItem*>*  ____components;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::Hierarchy::GameObjectItem, ____components) == 0x50, "Offset mismatch!");
+
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Hierarchy::GameObjectItem) == 0x58, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger::Hierarchy

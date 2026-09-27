@@ -1,0 +1,71 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/LowLevel/IInputStateCallbackReceiver.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__IInputStateCallbackReceiver_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__InputEventPtr_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControl_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver.OnNextUpdate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::*)()>(&::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::OnNextUpdate)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver.OnStateEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::*)(::UnityEngine::InputSystem::LowLevel::InputEventPtr)>(&::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::OnStateEvent)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver.GetStateOffsetForEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::*)(::UnityEngine::InputSystem::InputControl*, ::UnityEngine::InputSystem::LowLevel::InputEventPtr, ::by_ref<uint32_t>)>(&::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::GetStateOffsetForEvent)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(), 2}
+                ));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::OnNextUpdate()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::OnStateEvent(::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, eventPtr);
+}
+inline bool UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver::GetStateOffsetForEvent(::UnityEngine::InputSystem::InputControl*  control, ::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr, ::by_ref<uint32_t>  offset)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver*>(), 2}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, control, eventPtr, offset);
+}

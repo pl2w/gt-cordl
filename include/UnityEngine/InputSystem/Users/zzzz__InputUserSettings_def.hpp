@@ -1,0 +1,380 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/Users/InputUserSettings.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Nullable_1_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cmath>
+CORDL_MODULE_EXPORT(InputUserSettings)
+namespace System {
+template<typename T>
+struct Nullable_1;
+}
+namespace UnityEngine::InputSystem {
+class IInputActionCollection;
+}
+// Forward declare root types
+namespace UnityEngine::InputSystem::Users {
+class InputUserSettings;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::Users::InputUserSettings*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::Users::InputUserSettings*, "UnityEngine.InputSystem.Users", "InputUserSettings");
+// Dependencies System.Nullable`1<T>, System.Object
+namespace UnityEngine::InputSystem::Users {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.Users.InputUserSettings
+class CORDL_TYPE InputUserSettings : public ::System::Object {
+public:
+// Declarations
+/// @brief Field <customBindings>k__BackingField, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get__customBindings_k__BackingField, put=__cordl_internal_set__customBindings_k__BackingField)) ::StringW  _customBindings_k__BackingField;
+
+/// @brief Field <invertMouseX>k__BackingField, offset 0x18, size 0x1 
+ __declspec(property(get=__cordl_internal_get__invertMouseX_k__BackingField, put=__cordl_internal_set__invertMouseX_k__BackingField)) bool  _invertMouseX_k__BackingField;
+
+/// @brief Field <invertMouseY>k__BackingField, offset 0x19, size 0x1 
+ __declspec(property(get=__cordl_internal_get__invertMouseY_k__BackingField, put=__cordl_internal_set__invertMouseY_k__BackingField)) bool  _invertMouseY_k__BackingField;
+
+/// @brief Field <invertStickX>k__BackingField, offset 0x40, size 0x1 
+ __declspec(property(get=__cordl_internal_get__invertStickX_k__BackingField, put=__cordl_internal_set__invertStickX_k__BackingField)) bool  _invertStickX_k__BackingField;
+
+/// @brief Field <invertStickY>k__BackingField, offset 0x41, size 0x1 
+ __declspec(property(get=__cordl_internal_get__invertStickY_k__BackingField, put=__cordl_internal_set__invertStickY_k__BackingField)) bool  _invertStickY_k__BackingField;
+
+/// @brief Field <mouseSensitivity>k__BackingField, offset 0x30, size 0x10 
+ __declspec(property(get=__cordl_internal_get__mouseSensitivity_k__BackingField, put=__cordl_internal_set__mouseSensitivity_k__BackingField)) ::System::Nullable_1<float_t>  _mouseSensitivity_k__BackingField;
+
+/// @brief Field <mouseSmoothing>k__BackingField, offset 0x20, size 0x10 
+ __declspec(property(get=__cordl_internal_get__mouseSmoothing_k__BackingField, put=__cordl_internal_set__mouseSmoothing_k__BackingField)) ::System::Nullable_1<float_t>  _mouseSmoothing_k__BackingField;
+
+/// @brief Field <swapBumpers>k__BackingField, offset 0x43, size 0x1 
+ __declspec(property(get=__cordl_internal_get__swapBumpers_k__BackingField, put=__cordl_internal_set__swapBumpers_k__BackingField)) bool  _swapBumpers_k__BackingField;
+
+/// @brief Field <swapDpadAndLeftStick>k__BackingField, offset 0x45, size 0x1 
+ __declspec(property(get=__cordl_internal_get__swapDpadAndLeftStick_k__BackingField, put=__cordl_internal_set__swapDpadAndLeftStick_k__BackingField)) bool  _swapDpadAndLeftStick_k__BackingField;
+
+/// @brief Field <swapSticks>k__BackingField, offset 0x42, size 0x1 
+ __declspec(property(get=__cordl_internal_get__swapSticks_k__BackingField, put=__cordl_internal_set__swapSticks_k__BackingField)) bool  _swapSticks_k__BackingField;
+
+/// @brief Field <swapTriggers>k__BackingField, offset 0x44, size 0x1 
+ __declspec(property(get=__cordl_internal_get__swapTriggers_k__BackingField, put=__cordl_internal_set__swapTriggers_k__BackingField)) bool  _swapTriggers_k__BackingField;
+
+/// @brief Field <vibrationStrength>k__BackingField, offset 0x48, size 0x4 
+ __declspec(property(get=__cordl_internal_get__vibrationStrength_k__BackingField, put=__cordl_internal_set__vibrationStrength_k__BackingField)) float_t  _vibrationStrength_k__BackingField;
+
+ __declspec(property(get=get_customBindings, put=set_customBindings)) ::StringW  customBindings;
+
+ __declspec(property(get=get_invertMouseX, put=set_invertMouseX)) bool  invertMouseX;
+
+ __declspec(property(get=get_invertMouseY, put=set_invertMouseY)) bool  invertMouseY;
+
+ __declspec(property(get=get_invertStickX, put=set_invertStickX)) bool  invertStickX;
+
+ __declspec(property(get=get_invertStickY, put=set_invertStickY)) bool  invertStickY;
+
+/// @brief Field m_CustomBindings, offset 0x50, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_CustomBindings, put=__cordl_internal_set_m_CustomBindings)) ::StringW  m_CustomBindings;
+
+ __declspec(property(get=get_mouseSensitivity, put=set_mouseSensitivity)) ::System::Nullable_1<float_t>  mouseSensitivity;
+
+ __declspec(property(get=get_mouseSmoothing, put=set_mouseSmoothing)) ::System::Nullable_1<float_t>  mouseSmoothing;
+
+ __declspec(property(get=get_swapBumpers, put=set_swapBumpers)) bool  swapBumpers;
+
+ __declspec(property(get=get_swapDpadAndLeftStick, put=set_swapDpadAndLeftStick)) bool  swapDpadAndLeftStick;
+
+ __declspec(property(get=get_swapSticks, put=set_swapSticks)) bool  swapSticks;
+
+ __declspec(property(get=get_swapTriggers, put=set_swapTriggers)) bool  swapTriggers;
+
+ __declspec(property(get=get_vibrationStrength, put=set_vibrationStrength)) float_t  vibrationStrength;
+
+/// @brief Method Apply, addr 0xafd1690, size 0x4, virtual true, abstract: false, final false
+inline void Apply(::UnityEngine::InputSystem::IInputActionCollection*  actions) ;
+
+static inline ::UnityEngine::InputSystem::Users::InputUserSettings* New_ctor() ;
+
+constexpr ::StringW const& __cordl_internal_get__customBindings_k__BackingField() const;
+
+constexpr ::StringW& __cordl_internal_get__customBindings_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__invertMouseX_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__invertMouseX_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__invertMouseY_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__invertMouseY_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__invertStickX_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__invertStickX_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__invertStickY_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__invertStickY_k__BackingField() ;
+
+constexpr ::System::Nullable_1<float_t> const& __cordl_internal_get__mouseSensitivity_k__BackingField() const;
+
+constexpr ::System::Nullable_1<float_t>& __cordl_internal_get__mouseSensitivity_k__BackingField() ;
+
+constexpr ::System::Nullable_1<float_t> const& __cordl_internal_get__mouseSmoothing_k__BackingField() const;
+
+constexpr ::System::Nullable_1<float_t>& __cordl_internal_get__mouseSmoothing_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__swapBumpers_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__swapBumpers_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__swapDpadAndLeftStick_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__swapDpadAndLeftStick_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__swapSticks_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__swapSticks_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__swapTriggers_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__swapTriggers_k__BackingField() ;
+
+constexpr float_t const& __cordl_internal_get__vibrationStrength_k__BackingField() const;
+
+constexpr float_t& __cordl_internal_get__vibrationStrength_k__BackingField() ;
+
+constexpr ::StringW const& __cordl_internal_get_m_CustomBindings() const;
+
+constexpr ::StringW& __cordl_internal_get_m_CustomBindings() ;
+
+constexpr void __cordl_internal_set__customBindings_k__BackingField(::StringW  value) ;
+
+constexpr void __cordl_internal_set__invertMouseX_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__invertMouseY_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__invertStickX_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__invertStickY_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__mouseSensitivity_k__BackingField(::System::Nullable_1<float_t>  value) ;
+
+constexpr void __cordl_internal_set__mouseSmoothing_k__BackingField(::System::Nullable_1<float_t>  value) ;
+
+constexpr void __cordl_internal_set__swapBumpers_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__swapDpadAndLeftStick_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__swapSticks_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__swapTriggers_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__vibrationStrength_k__BackingField(float_t  value) ;
+
+constexpr void __cordl_internal_set_m_CustomBindings(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0xafd1694, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_customBindings, addr 0xafd15d0, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_customBindings() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_invertMouseX, addr 0xafd15e0, size 0x8, virtual false, abstract: false, final false
+inline bool get_invertMouseX() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_invertMouseY, addr 0xafd15f0, size 0x8, virtual false, abstract: false, final false
+inline bool get_invertMouseY() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_invertStickX, addr 0xafd1620, size 0x8, virtual false, abstract: false, final false
+inline bool get_invertStickX() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_invertStickY, addr 0xafd1630, size 0x8, virtual false, abstract: false, final false
+inline bool get_invertStickY() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_mouseSensitivity, addr 0xafd1610, size 0x8, virtual false, abstract: false, final false
+inline ::System::Nullable_1<float_t> get_mouseSensitivity() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_mouseSmoothing, addr 0xafd1600, size 0x8, virtual false, abstract: false, final false
+inline ::System::Nullable_1<float_t> get_mouseSmoothing() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_swapBumpers, addr 0xafd1650, size 0x8, virtual false, abstract: false, final false
+inline bool get_swapBumpers() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_swapDpadAndLeftStick, addr 0xafd1670, size 0x8, virtual false, abstract: false, final false
+inline bool get_swapDpadAndLeftStick() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_swapSticks, addr 0xafd1640, size 0x8, virtual false, abstract: false, final false
+inline bool get_swapSticks() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_swapTriggers, addr 0xafd1660, size 0x8, virtual false, abstract: false, final false
+inline bool get_swapTriggers() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_vibrationStrength, addr 0xafd1680, size 0x8, virtual false, abstract: false, final false
+inline float_t get_vibrationStrength() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_customBindings, addr 0xafd15d8, size 0x8, virtual false, abstract: false, final false
+inline void set_customBindings(::StringW  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_invertMouseX, addr 0xafd15e8, size 0x8, virtual false, abstract: false, final false
+inline void set_invertMouseX(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_invertMouseY, addr 0xafd15f8, size 0x8, virtual false, abstract: false, final false
+inline void set_invertMouseY(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_invertStickX, addr 0xafd1628, size 0x8, virtual false, abstract: false, final false
+inline void set_invertStickX(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_invertStickY, addr 0xafd1638, size 0x8, virtual false, abstract: false, final false
+inline void set_invertStickY(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_mouseSensitivity, addr 0xafd1618, size 0x8, virtual false, abstract: false, final false
+inline void set_mouseSensitivity(::System::Nullable_1<float_t>  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_mouseSmoothing, addr 0xafd1608, size 0x8, virtual false, abstract: false, final false
+inline void set_mouseSmoothing(::System::Nullable_1<float_t>  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_swapBumpers, addr 0xafd1658, size 0x8, virtual false, abstract: false, final false
+inline void set_swapBumpers(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_swapDpadAndLeftStick, addr 0xafd1678, size 0x8, virtual false, abstract: false, final false
+inline void set_swapDpadAndLeftStick(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_swapSticks, addr 0xafd1648, size 0x8, virtual false, abstract: false, final false
+inline void set_swapSticks(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_swapTriggers, addr 0xafd1668, size 0x8, virtual false, abstract: false, final false
+inline void set_swapTriggers(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_vibrationStrength, addr 0xafd1688, size 0x8, virtual false, abstract: false, final false
+inline void set_vibrationStrength(float_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr InputUserSettings() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "InputUserSettings", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+InputUserSettings(InputUserSettings && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "InputUserSettings", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+InputUserSettings(InputUserSettings const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13585};
+
+/// [CompilerGenerated]
+/// @brief Field <customBindings>k__BackingField, offset: 0x10, size: 0x8, def value: None
+ ::StringW  ____customBindings_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <invertMouseX>k__BackingField, offset: 0x18, size: 0x1, def value: None
+ bool  ____invertMouseX_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <invertMouseY>k__BackingField, offset: 0x19, size: 0x1, def value: None
+ bool  ____invertMouseY_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <mouseSmoothing>k__BackingField, offset: 0x20, size: 0x10, def value: None
+ ::System::Nullable_1<float_t>  ____mouseSmoothing_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <mouseSensitivity>k__BackingField, offset: 0x30, size: 0x10, def value: None
+ ::System::Nullable_1<float_t>  ____mouseSensitivity_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <invertStickX>k__BackingField, offset: 0x40, size: 0x1, def value: None
+ bool  ____invertStickX_k__BackingField;
+
+/// @brief Size padding 0x40 - 0x58 = 0x18, packed as 0x18
+ uint8_t  _cordl_size_padding[0x18];
+
+/// [CompilerGenerated]
+/// @brief Field <invertStickY>k__BackingField, offset: 0x41, size: 0x1, def value: None
+ bool  ____invertStickY_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <swapSticks>k__BackingField, offset: 0x42, size: 0x1, def value: None
+ bool  ____swapSticks_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <swapBumpers>k__BackingField, offset: 0x43, size: 0x1, def value: None
+ bool  ____swapBumpers_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <swapTriggers>k__BackingField, offset: 0x44, size: 0x1, def value: None
+ bool  ____swapTriggers_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <swapDpadAndLeftStick>k__BackingField, offset: 0x45, size: 0x1, def value: None
+ bool  ____swapDpadAndLeftStick_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <vibrationStrength>k__BackingField, offset: 0x48, size: 0x4, def value: None
+ float_t  ____vibrationStrength_k__BackingField;
+
+/// [SerializeField]
+/// @brief Field m_CustomBindings, offset: 0x50, size: 0x8, def value: None
+ ::StringW  ___m_CustomBindings;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____customBindings_k__BackingField) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____invertMouseX_k__BackingField) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____invertMouseY_k__BackingField) == 0x19, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____mouseSmoothing_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____mouseSensitivity_k__BackingField) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____invertStickX_k__BackingField) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____invertStickY_k__BackingField) == 0x41, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____swapSticks_k__BackingField) == 0x42, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____swapBumpers_k__BackingField) == 0x43, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____swapTriggers_k__BackingField) == 0x44, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____swapDpadAndLeftStick_k__BackingField) == 0x45, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ____vibrationStrength_k__BackingField) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::Users::InputUserSettings, ___m_CustomBindings) == 0x50, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::InputSystem::Users::InputUserSettings) == 0x40, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputSystem::Users

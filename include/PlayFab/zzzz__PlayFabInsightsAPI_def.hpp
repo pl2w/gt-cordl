@@ -1,0 +1,113 @@
+#pragma once
+// IWYU pragma private; include "PlayFab/PlayFabInsightsAPI.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(PlayFabInsightsAPI)
+namespace PlayFab::InsightsModels {
+class InsightsEmptyRequest;
+}
+namespace PlayFab::InsightsModels {
+class InsightsGetDetailsResponse;
+}
+namespace PlayFab::InsightsModels {
+class InsightsGetLimitsResponse;
+}
+namespace PlayFab::InsightsModels {
+class InsightsGetOperationStatusRequest;
+}
+namespace PlayFab::InsightsModels {
+class InsightsGetOperationStatusResponse;
+}
+namespace PlayFab::InsightsModels {
+class InsightsGetPendingOperationsRequest;
+}
+namespace PlayFab::InsightsModels {
+class InsightsGetPendingOperationsResponse;
+}
+namespace PlayFab::InsightsModels {
+class InsightsOperationResponse;
+}
+namespace PlayFab::InsightsModels {
+class InsightsSetPerformanceRequest;
+}
+namespace PlayFab::InsightsModels {
+class InsightsSetStorageRetentionRequest;
+}
+namespace PlayFab {
+class PlayFabError;
+}
+namespace System::Collections::Generic {
+template<typename TKey,typename TValue>
+class Dictionary_2;
+}
+namespace System {
+template<typename T>
+class Action_1;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace PlayFab {
+class PlayFabInsightsAPI;
+}
+// Write type traits
+MARK_REF_T(::PlayFab::PlayFabInsightsAPI*);
+DEFINE_IL2CPP_CLASS(::PlayFab::PlayFabInsightsAPI*, "PlayFab", "PlayFabInsightsAPI");
+// Dependencies System.Object
+namespace PlayFab {
+// Is value type: false
+// CS Name: PlayFab.PlayFabInsightsAPI
+class CORDL_TYPE PlayFabInsightsAPI : public ::System::Object {
+public:
+// Declarations
+/// @brief Method ForgetAllCredentials, addr 0xa7ccd8c, size 0x60, virtual false, abstract: false, final false
+static inline void ForgetAllCredentials() ;
+
+/// @brief Method GetDetails, addr 0xa7ccdec, size 0x194, virtual false, abstract: false, final false
+static inline void GetDetails(::PlayFab::InsightsModels::InsightsEmptyRequest*  request, ::System::Action_1<::PlayFab::InsightsModels::InsightsGetDetailsResponse*>*  resultCallback, ::System::Action_1<::PlayFab::PlayFabError*>*  errorCallback, ::System::Object*  customData, ::System::Collections::Generic::Dictionary_2<::StringW,::StringW>*  extraHeaders) ;
+
+/// @brief Method GetLimits, addr 0xa7ccf80, size 0x194, virtual false, abstract: false, final false
+static inline void GetLimits(::PlayFab::InsightsModels::InsightsEmptyRequest*  request, ::System::Action_1<::PlayFab::InsightsModels::InsightsGetLimitsResponse*>*  resultCallback, ::System::Action_1<::PlayFab::PlayFabError*>*  errorCallback, ::System::Object*  customData, ::System::Collections::Generic::Dictionary_2<::StringW,::StringW>*  extraHeaders) ;
+
+/// @brief Method GetOperationStatus, addr 0xa7cd114, size 0x194, virtual false, abstract: false, final false
+static inline void GetOperationStatus(::PlayFab::InsightsModels::InsightsGetOperationStatusRequest*  request, ::System::Action_1<::PlayFab::InsightsModels::InsightsGetOperationStatusResponse*>*  resultCallback, ::System::Action_1<::PlayFab::PlayFabError*>*  errorCallback, ::System::Object*  customData, ::System::Collections::Generic::Dictionary_2<::StringW,::StringW>*  extraHeaders) ;
+
+/// @brief Method GetPendingOperations, addr 0xa7cd2a8, size 0x194, virtual false, abstract: false, final false
+static inline void GetPendingOperations(::PlayFab::InsightsModels::InsightsGetPendingOperationsRequest*  request, ::System::Action_1<::PlayFab::InsightsModels::InsightsGetPendingOperationsResponse*>*  resultCallback, ::System::Action_1<::PlayFab::PlayFabError*>*  errorCallback, ::System::Object*  customData, ::System::Collections::Generic::Dictionary_2<::StringW,::StringW>*  extraHeaders) ;
+
+/// @brief Method IsEntityLoggedIn, addr 0xa7ccd18, size 0x74, virtual false, abstract: false, final false
+static inline bool IsEntityLoggedIn() ;
+
+/// @brief Method SetPerformance, addr 0xa7cd43c, size 0x194, virtual false, abstract: false, final false
+static inline void SetPerformance(::PlayFab::InsightsModels::InsightsSetPerformanceRequest*  request, ::System::Action_1<::PlayFab::InsightsModels::InsightsOperationResponse*>*  resultCallback, ::System::Action_1<::PlayFab::PlayFabError*>*  errorCallback, ::System::Object*  customData, ::System::Collections::Generic::Dictionary_2<::StringW,::StringW>*  extraHeaders) ;
+
+/// @brief Method SetStorageRetention, addr 0xa7cd5d0, size 0x194, virtual false, abstract: false, final false
+static inline void SetStorageRetention(::PlayFab::InsightsModels::InsightsSetStorageRetentionRequest*  request, ::System::Action_1<::PlayFab::InsightsModels::InsightsOperationResponse*>*  resultCallback, ::System::Action_1<::PlayFab::PlayFabError*>*  errorCallback, ::System::Object*  customData, ::System::Collections::Generic::Dictionary_2<::StringW,::StringW>*  extraHeaders) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr PlayFabInsightsAPI() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "PlayFabInsightsAPI", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+PlayFabInsightsAPI(PlayFabInsightsAPI && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "PlayFabInsightsAPI", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+PlayFabInsightsAPI(PlayFabInsightsAPI const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{19501};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::PlayFab::PlayFabInsightsAPI) == 0x10, "Size mismatch!");
+
+} // namespace end def PlayFab

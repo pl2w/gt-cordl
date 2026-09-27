@@ -1,0 +1,187 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/ResourceProviders/InstantiationParameters.hpp"
+#include "UnityEngine/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__Quaternion_impl.hpp"
+#include "UnityEngine/zzzz__Vector3_impl.hpp"
+#include "UnityEngine/ResourceManagement/ResourceProviders/zzzz__InstantiationParameters_def.hpp"
+#include "UnityEngine/zzzz__Quaternion_def.hpp"
+#include "UnityEngine/zzzz__Transform_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters.get_Position
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Vector3 (::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::*)()>(&::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_Position)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb303198;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_Position", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters.get_Rotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Quaternion (::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::*)()>(&::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_Rotation)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb3031a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_Rotation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters.get_Parent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Transform> (::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::*)()>(&::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_Parent)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3031b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_Parent", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters.get_InstantiateInWorldPosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::*)()>(&::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_InstantiateInWorldPosition)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3031b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_InstantiateInWorldPosition", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters.get_SetPositionRotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::*)()>(&::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_SetPositionRotation)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3031c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_SetPositionRotation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::*)(::UnityEngine::Transform*, bool)>(&::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::_ctor)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xb3031c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::*)(::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Transform*)>(&::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::_ctor)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xb303284;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Quaternion>(), ::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::UnityEngine::Vector3 UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_Position()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_Position", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Vector3>(*this, ___internal_method);
+}
+inline ::UnityEngine::Quaternion UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_Rotation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_Rotation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Quaternion>(*this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::Transform> UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_Parent()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_Parent", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Transform>>(*this, ___internal_method);
+}
+inline bool UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_InstantiateInWorldPosition()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_InstantiateInWorldPosition", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline bool UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::get_SetPositionRotation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {"get_SetPositionRotation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline void UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::_ctor(::UnityEngine::Transform*  parent, bool  instantiateInWorldSpace)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, parent, instantiateInWorldSpace);
+}
+inline void UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::_ctor(::UnityEngine::Vector3  position, ::UnityEngine::Quaternion  rotation, ::UnityEngine::Transform*  parent)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Quaternion>(), ::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, position, rotation, parent);
+}
+template<typename TObject>
+requires(::cordl_internals::type_constraint<TObject, ::UnityEngine::Object*>)
+inline TObject UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::Instantiate(TObject  source)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters>(),
+                    {"Instantiate", {::i2c::class_of<TObject>()}, {::i2c::type_of<TObject>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<TObject>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<TObject>(*this, ___internal_method, source);
+}
+// Ctor Parameters [CppParam { name: "m_Position", ty: "::UnityEngine::Vector3", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Rotation", ty: "::UnityEngine::Quaternion", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Parent", ty: "::UnityW<::UnityEngine::Transform>", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_InstantiateInWorldPosition", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_SetPositionRotation", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::InstantiationParameters(::UnityEngine::Vector3  m_Position, ::UnityEngine::Quaternion  m_Rotation, ::UnityW<::UnityEngine::Transform>  m_Parent, bool  m_InstantiateInWorldPosition, bool  m_SetPositionRotation) noexcept  {
+this->m_Position = m_Position;
+this->m_Rotation = m_Rotation;
+this->m_Parent = m_Parent;
+this->m_InstantiateInWorldPosition = m_InstantiateInWorldPosition;
+this->m_SetPositionRotation = m_SetPositionRotation;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters::InstantiationParameters()   {
+}

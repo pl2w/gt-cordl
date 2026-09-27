@@ -1,0 +1,574 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/AutoUnwrapSettings.hpp"
+#include "UnityEngine/ProBuilder/zzzz__AutoUnwrapSettings_Anchor_impl.hpp"
+#include "UnityEngine/ProBuilder/zzzz__AutoUnwrapSettings_Fill_impl.hpp"
+#include "UnityEngine/zzzz__Vector2_impl.hpp"
+#include "UnityEngine/ProBuilder/zzzz__AutoUnwrapSettings_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__AutoUnwrapSettings_Anchor_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__AutoUnwrapSettings_Fill_def.hpp"
+#include "UnityEngine/zzzz__Vector2_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_defaultAutoUnwrapSettings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ProBuilder::AutoUnwrapSettings (*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_defaultAutoUnwrapSettings)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb083248;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_defaultAutoUnwrapSettings", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_useWorldSpace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_useWorldSpace)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb083278;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_useWorldSpace", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_useWorldSpace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(bool)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_useWorldSpace)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb083280;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_useWorldSpace", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_flipU
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_flipU)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb083288;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_flipU", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_flipU
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(bool)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_flipU)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb083290;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_flipU", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_flipV
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_flipV)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb083298;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_flipV", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_flipV
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(bool)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_flipV)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_flipV", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_swapUV
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_swapUV)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_swapUV", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_swapUV
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(bool)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_swapUV)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_swapUV", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_fill
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::AutoUnwrapSettings_Fill (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_fill)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_fill", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_fill
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(::GlobalNamespace::AutoUnwrapSettings_Fill)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_fill)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_fill", {}, {::i2c::type_of<::GlobalNamespace::AutoUnwrapSettings_Fill>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_scale
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Vector2 (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_scale)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_scale", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_scale
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(::UnityEngine::Vector2)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_scale)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_scale", {}, {::i2c::type_of<::UnityEngine::Vector2>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_offset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Vector2 (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_offset)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_offset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_offset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(::UnityEngine::Vector2)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_offset)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_offset", {}, {::i2c::type_of<::UnityEngine::Vector2>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_rotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_rotation)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_rotation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_rotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(float_t)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_rotation)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_rotation", {}, {::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_anchor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::AutoUnwrapSettings_Anchor (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_anchor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb0832f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_anchor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.set_anchor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(::GlobalNamespace::AutoUnwrapSettings_Anchor)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::set_anchor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb083300;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_anchor", {}, {::i2c::type_of<::GlobalNamespace::AutoUnwrapSettings_Anchor>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)(::UnityEngine::ProBuilder::AutoUnwrapSettings)>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::_ctor)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xb083308;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_tile
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ProBuilder::AutoUnwrapSettings (*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_tile)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb083364;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_tile", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_fit
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ProBuilder::AutoUnwrapSettings (*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_fit)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb08337c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_fit", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.get_stretch
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ProBuilder::AutoUnwrapSettings (*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::get_stretch)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb083394;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_stretch", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::Reset)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb083260;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::AutoUnwrapSettings.ToString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::ProBuilder::AutoUnwrapSettings::*)()>(&::UnityEngine::ProBuilder::AutoUnwrapSettings::ToString)> {
+  constexpr static std::size_t size = 0x488;
+  constexpr static std::size_t addrs = 0xb0833ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(), 3}
+                ));
+    return ___internal_method;
+  }
+};
+inline ::UnityEngine::ProBuilder::AutoUnwrapSettings UnityEngine::ProBuilder::AutoUnwrapSettings::get_defaultAutoUnwrapSettings()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_defaultAutoUnwrapSettings", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ProBuilder::AutoUnwrapSettings>(nullptr, ___internal_method);
+}
+inline bool UnityEngine::ProBuilder::AutoUnwrapSettings::get_useWorldSpace()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_useWorldSpace", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_useWorldSpace(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_useWorldSpace", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline bool UnityEngine::ProBuilder::AutoUnwrapSettings::get_flipU()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_flipU", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_flipU(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_flipU", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline bool UnityEngine::ProBuilder::AutoUnwrapSettings::get_flipV()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_flipV", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_flipV(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_flipV", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline bool UnityEngine::ProBuilder::AutoUnwrapSettings::get_swapUV()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_swapUV", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_swapUV(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_swapUV", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline ::GlobalNamespace::AutoUnwrapSettings_Fill UnityEngine::ProBuilder::AutoUnwrapSettings::get_fill()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_fill", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::AutoUnwrapSettings_Fill>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_fill(::GlobalNamespace::AutoUnwrapSettings_Fill  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_fill", {}, {::i2c::type_of<::GlobalNamespace::AutoUnwrapSettings_Fill>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline ::UnityEngine::Vector2 UnityEngine::ProBuilder::AutoUnwrapSettings::get_scale()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_scale", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Vector2>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_scale(::UnityEngine::Vector2  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_scale", {}, {::i2c::type_of<::UnityEngine::Vector2>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline ::UnityEngine::Vector2 UnityEngine::ProBuilder::AutoUnwrapSettings::get_offset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_offset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Vector2>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_offset(::UnityEngine::Vector2  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_offset", {}, {::i2c::type_of<::UnityEngine::Vector2>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline float_t UnityEngine::ProBuilder::AutoUnwrapSettings::get_rotation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_rotation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_rotation(float_t  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_rotation", {}, {::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline ::GlobalNamespace::AutoUnwrapSettings_Anchor UnityEngine::ProBuilder::AutoUnwrapSettings::get_anchor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_anchor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::AutoUnwrapSettings_Anchor>(*this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::set_anchor(::GlobalNamespace::AutoUnwrapSettings_Anchor  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"set_anchor", {}, {::i2c::type_of<::GlobalNamespace::AutoUnwrapSettings_Anchor>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, value);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::_ctor(::UnityEngine::ProBuilder::AutoUnwrapSettings  unwrapSettings)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method, unwrapSettings);
+}
+inline ::UnityEngine::ProBuilder::AutoUnwrapSettings UnityEngine::ProBuilder::AutoUnwrapSettings::get_tile()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_tile", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ProBuilder::AutoUnwrapSettings>(nullptr, ___internal_method);
+}
+inline ::UnityEngine::ProBuilder::AutoUnwrapSettings UnityEngine::ProBuilder::AutoUnwrapSettings::get_fit()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_fit", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ProBuilder::AutoUnwrapSettings>(nullptr, ___internal_method);
+}
+inline ::UnityEngine::ProBuilder::AutoUnwrapSettings UnityEngine::ProBuilder::AutoUnwrapSettings::get_stretch()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"get_stretch", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ProBuilder::AutoUnwrapSettings>(nullptr, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::AutoUnwrapSettings::Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(),
+                        {"Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(*this, ___internal_method);
+}
+inline ::StringW UnityEngine::ProBuilder::AutoUnwrapSettings::ToString()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::AutoUnwrapSettings>(), 3}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(*this, ___internal_method);
+}
+// Ctor Parameters [CppParam { name: "m_UseWorldSpace", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_FlipU", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_FlipV", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_SwapUV", ty: "bool", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Fill", ty: "::GlobalNamespace::AutoUnwrapSettings_Fill", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Scale", ty: "::UnityEngine::Vector2", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Offset", ty: "::UnityEngine::Vector2", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Rotation", ty: "float_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "m_Anchor", ty: "::GlobalNamespace::AutoUnwrapSettings_Anchor", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::ProBuilder::AutoUnwrapSettings::AutoUnwrapSettings(bool  m_UseWorldSpace, bool  m_FlipU, bool  m_FlipV, bool  m_SwapUV, ::GlobalNamespace::AutoUnwrapSettings_Fill  m_Fill, ::UnityEngine::Vector2  m_Scale, ::UnityEngine::Vector2  m_Offset, float_t  m_Rotation, ::GlobalNamespace::AutoUnwrapSettings_Anchor  m_Anchor) noexcept  {
+this->m_UseWorldSpace = m_UseWorldSpace;
+this->m_FlipU = m_FlipU;
+this->m_FlipV = m_FlipV;
+this->m_SwapUV = m_SwapUV;
+this->m_Fill = m_Fill;
+this->m_Scale = m_Scale;
+this->m_Offset = m_Offset;
+this->m_Rotation = m_Rotation;
+this->m_Anchor = m_Anchor;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::AutoUnwrapSettings::AutoUnwrapSettings()   {
+}

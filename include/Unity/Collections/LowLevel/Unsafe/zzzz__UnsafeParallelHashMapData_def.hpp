@@ -1,0 +1,253 @@
+#pragma once
+// IWYU pragma private; include "Unity/Collections/LowLevel/Unsafe/UnsafeParallelHashMapData.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(UnsafeParallelHashMapData)
+namespace GlobalNamespace {
+struct AllocatorManager_AllocatorHandle;
+}
+// Forward declare root types
+namespace Unity::Collections::LowLevel::Unsafe {
+struct UnsafeParallelHashMapData;
+}
+// Write type traits
+MARK_VAL_T(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData);
+DEFINE_IL2CPP_CLASS(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData, "Unity.Collections.LowLevel.Unsafe", "UnsafeParallelHashMapData");
+// [GenerateTestsForBurstCompatibility]
+// Dependencies 
+namespace Unity::Collections::LowLevel::Unsafe {
+// Is value type: true
+// CS Name: Unity.Collections.LowLevel.Unsafe.UnsafeParallelHashMapData
+struct CORDL_TYPE UnsafeParallelHashMapData {
+public:
+// Declarations
+/// @brief Field allocatedIndexLength, offset 0x28, size 0x4 
+ __declspec(property(get=__cordl_internal_get_allocatedIndexLength, put=__cordl_internal_set_allocatedIndexLength)) int32_t  allocatedIndexLength;
+
+/// @brief Field bucketCapacityMask, offset 0x24, size 0x4 
+ __declspec(property(get=__cordl_internal_get_bucketCapacityMask, put=__cordl_internal_set_bucketCapacityMask)) int32_t  bucketCapacityMask;
+
+/// @brief Field buckets, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_buckets, put=__cordl_internal_set_buckets)) uint8_t*  buckets;
+
+ __declspec(property(get=get_firstFreeTLS)) int32_t*  firstFreeTLS;
+
+/// @brief Field keyCapacity, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_keyCapacity, put=__cordl_internal_set_keyCapacity)) int32_t  keyCapacity;
+
+/// @brief Field keys, offset 0x8, size 0x8 
+ __declspec(property(get=__cordl_internal_get_keys, put=__cordl_internal_set_keys)) uint8_t*  keys;
+
+/// @brief Field next, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_next, put=__cordl_internal_set_next)) uint8_t*  next;
+
+/// @brief Field values, offset 0x0, size 0x8 
+ __declspec(property(get=__cordl_internal_get_values, put=__cordl_internal_set_values)) uint8_t*  values;
+
+/// [GenerateTestsForBurstCompatibility(GenericTypeArguments = new[] { typeof(System.Int32), typeof(System.Int32) })]
+/// @brief Method AllocateHashMap, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename TKey,typename TValue>
+requires(::cordl_internals::value_type_constraint<TKey> && ::cordl_internals::default_constructor_constraint<TKey> && ::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+static inline void AllocateHashMap(int32_t  length, int32_t  bucketLength, ::GlobalNamespace::AllocatorManager_AllocatorHandle  label, ::by_ref<::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData*>  outBuf) ;
+
+/// [GenerateTestsForBurstCompatibility(GenericTypeArguments = new[] { typeof(System.Int32), typeof(System.Int32) })]
+/// @brief Method CalculateDataSize, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename TKey,typename TValue>
+requires(::cordl_internals::value_type_constraint<TKey> && ::cordl_internals::default_constructor_constraint<TKey> && ::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+static inline int32_t CalculateDataSize(int32_t  length, int32_t  bucketLength, ::by_ref<int32_t>  keyOffset, ::by_ref<int32_t>  nextOffset, ::by_ref<int32_t>  bucketOffset) ;
+
+/// @brief Method DeallocateHashMap, addr 0xaf07b70, size 0x7c, virtual false, abstract: false, final false
+static inline void DeallocateHashMap(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData*  data, ::GlobalNamespace::AllocatorManager_AllocatorHandle  allocator) ;
+
+/// @brief Method GetBucketSize, addr 0xaf07b58, size 0x8, virtual false, abstract: false, final false
+static inline int32_t GetBucketSize(int32_t  capacity) ;
+
+/// @brief Method GetCount, addr 0xaf07bec, size 0x98, virtual false, abstract: false, final false
+static inline int32_t GetCount(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData*  data) ;
+
+/// @brief Method GrowCapacity, addr 0xaf07b60, size 0x10, virtual false, abstract: false, final false
+static inline int32_t GrowCapacity(int32_t  capacity) ;
+
+/// @brief Method MoveNext, addr 0xaf07cf8, size 0x38, virtual false, abstract: false, final false
+static inline bool MoveNext(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData*  data, ::by_ref<int32_t>  bucketIndex, ::by_ref<int32_t>  nextIndex, ::by_ref<int32_t>  index) ;
+
+/// @brief Method MoveNextSearch, addr 0xaf07c84, size 0x74, virtual false, abstract: false, final false
+static inline bool MoveNextSearch(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData*  data, ::by_ref<int32_t>  bucketIndex, ::by_ref<int32_t>  nextIndex, ::by_ref<int32_t>  index) ;
+
+/// [GenerateTestsForBurstCompatibility(GenericTypeArguments = new[] { typeof(System.Int32), typeof(System.Int32) })]
+/// @brief Method ReallocateHashMap, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename TKey,typename TValue>
+requires(::cordl_internals::value_type_constraint<TKey> && ::cordl_internals::default_constructor_constraint<TKey> && ::cordl_internals::value_type_constraint<TValue> && ::cordl_internals::default_constructor_constraint<TValue>)
+static inline void ReallocateHashMap(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData*  data, int32_t  newCapacity, int32_t  newBucketCapacity, ::GlobalNamespace::AllocatorManager_AllocatorHandle  label) ;
+
+constexpr int32_t const& __cordl_internal_get_allocatedIndexLength() const;
+
+constexpr int32_t& __cordl_internal_get_allocatedIndexLength() ;
+
+constexpr int32_t const& __cordl_internal_get_bucketCapacityMask() const;
+
+constexpr int32_t& __cordl_internal_get_bucketCapacityMask() ;
+
+constexpr uint8_t* const& __cordl_internal_get_buckets() const;
+
+constexpr uint8_t*& __cordl_internal_get_buckets() ;
+
+constexpr int32_t const& __cordl_internal_get_keyCapacity() const;
+
+constexpr int32_t& __cordl_internal_get_keyCapacity() ;
+
+constexpr uint8_t* const& __cordl_internal_get_keys() const;
+
+constexpr uint8_t*& __cordl_internal_get_keys() ;
+
+constexpr uint8_t* const& __cordl_internal_get_next() const;
+
+constexpr uint8_t*& __cordl_internal_get_next() ;
+
+constexpr uint8_t* const& __cordl_internal_get_values() const;
+
+constexpr uint8_t*& __cordl_internal_get_values() ;
+
+constexpr void __cordl_internal_set_allocatedIndexLength(int32_t  value) ;
+
+constexpr void __cordl_internal_set_bucketCapacityMask(int32_t  value) ;
+
+constexpr void __cordl_internal_set_buckets(uint8_t*  value) ;
+
+constexpr void __cordl_internal_set_keyCapacity(int32_t  value) ;
+
+constexpr void __cordl_internal_set_keys(uint8_t*  value) ;
+
+constexpr void __cordl_internal_set_next(uint8_t*  value) ;
+
+constexpr void __cordl_internal_set_values(uint8_t*  value) ;
+
+/// @brief Method get_firstFreeTLS, addr 0xaf07b50, size 0x8, virtual false, abstract: false, final false
+inline int32_t* get_firstFreeTLS() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr UnsafeParallelHashMapData() ;
+
+// Ctor Parameters [CppParam { name: "values", ty: "uint8_t*", modifiers: "", def_value: None, comment: None }, CppParam { name: "keys", ty: "uint8_t*", modifiers: "", def_value: None, comment: None }, CppParam { name: "next", ty: "uint8_t*", modifiers: "", def_value: None, comment: None }, CppParam { name: "buckets", ty: "uint8_t*", modifiers: "", def_value: None, comment: None }, CppParam { name: "keyCapacity", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "bucketCapacityMask", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "allocatedIndexLength", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr UnsafeParallelHashMapData(uint8_t*  values, uint8_t*  keys, uint8_t*  next, uint8_t*  buckets, int32_t  keyCapacity, int32_t  bucketCapacityMask, int32_t  allocatedIndexLength) noexcept;
+
+private:
+/// @brief Explicitly laid out type with union based offsets
+union {
+#pragma pack(push, tp, 1)
+struct  {
+/// @brief Padding field 0x0
+ uint8_t  ___values_padding[0x0];
+/// @brief Field values, offset: 0x0, size: 0x8, def value: None
+ uint8_t*  ___values;
+};
+#pragma pack(pop, tp)
+struct  {
+/// @brief Padding field 0x0 for alignment
+ uint8_t  ___values_padding_forAlignment[0x0];
+/// @brief Field values, offset: 0x0, size: 0x8, def value: None
+ uint8_t*  ___values_forAlignment;
+};
+#pragma pack(push, tp, 1)
+struct  {
+/// @brief Padding field 0x8
+ uint8_t  ___keys_padding[0x8];
+/// @brief Field keys, offset: 0x8, size: 0x8, def value: None
+ uint8_t*  ___keys;
+};
+#pragma pack(pop, tp)
+struct  {
+/// @brief Padding field 0x8 for alignment
+ uint8_t  ___keys_padding_forAlignment[0x8];
+/// @brief Field keys, offset: 0x8, size: 0x8, def value: None
+ uint8_t*  ___keys_forAlignment;
+};
+#pragma pack(push, tp, 1)
+struct  {
+/// @brief Padding field 0x10
+ uint8_t  ___next_padding[0x10];
+/// @brief Field next, offset: 0x10, size: 0x8, def value: None
+ uint8_t*  ___next;
+};
+#pragma pack(pop, tp)
+struct  {
+/// @brief Padding field 0x10 for alignment
+ uint8_t  ___next_padding_forAlignment[0x10];
+/// @brief Field next, offset: 0x10, size: 0x8, def value: None
+ uint8_t*  ___next_forAlignment;
+};
+#pragma pack(push, tp, 1)
+struct  {
+/// @brief Padding field 0x18
+ uint8_t  ___buckets_padding[0x18];
+/// @brief Field buckets, offset: 0x18, size: 0x8, def value: None
+ uint8_t*  ___buckets;
+};
+#pragma pack(pop, tp)
+struct  {
+/// @brief Padding field 0x18 for alignment
+ uint8_t  ___buckets_padding_forAlignment[0x18];
+/// @brief Field buckets, offset: 0x18, size: 0x8, def value: None
+ uint8_t*  ___buckets_forAlignment;
+};
+#pragma pack(push, tp, 1)
+struct  {
+/// @brief Padding field 0x20
+ uint8_t  ___keyCapacity_padding[0x20];
+/// @brief Field keyCapacity, offset: 0x20, size: 0x4, def value: None
+ int32_t  ___keyCapacity;
+};
+#pragma pack(pop, tp)
+struct  {
+/// @brief Padding field 0x20 for alignment
+ uint8_t  ___keyCapacity_padding_forAlignment[0x20];
+/// @brief Field keyCapacity, offset: 0x20, size: 0x4, def value: None
+ int32_t  ___keyCapacity_forAlignment;
+};
+#pragma pack(push, tp, 1)
+struct  {
+/// @brief Padding field 0x24
+ uint8_t  ___bucketCapacityMask_padding[0x24];
+/// @brief Field bucketCapacityMask, offset: 0x24, size: 0x4, def value: None
+ int32_t  ___bucketCapacityMask;
+};
+#pragma pack(pop, tp)
+struct  {
+/// @brief Padding field 0x24 for alignment
+ uint8_t  ___bucketCapacityMask_padding_forAlignment[0x24];
+/// @brief Field bucketCapacityMask, offset: 0x24, size: 0x4, def value: None
+ int32_t  ___bucketCapacityMask_forAlignment;
+};
+#pragma pack(push, tp, 1)
+struct  {
+/// @brief Padding field 0x28
+ uint8_t  ___allocatedIndexLength_padding[0x28];
+/// @brief Field allocatedIndexLength, offset: 0x28, size: 0x4, def value: None
+ int32_t  ___allocatedIndexLength;
+};
+#pragma pack(pop, tp)
+struct  {
+/// @brief Padding field 0x28 for alignment
+ uint8_t  ___allocatedIndexLength_padding_forAlignment[0x28];
+/// @brief Field allocatedIndexLength, offset: 0x28, size: 0x4, def value: None
+ int32_t  ___allocatedIndexLength_forAlignment;
+};
+};
+public:
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30233};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x30};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(sizeof(::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashMapData) == 0x30, "Size mismatch!");
+
+} // namespace end def Unity::Collections::LowLevel::Unsafe

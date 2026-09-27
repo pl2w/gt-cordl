@@ -1,0 +1,145 @@
+#pragma once
+// IWYU pragma private; include "System/IO/FileStatus.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "GlobalNamespace/zzzz__Interop_Sys_FileStatus_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(FileStatus)
+namespace System::IO {
+struct FileAttributes;
+}
+namespace System {
+struct DateTimeOffset;
+}
+namespace System {
+template<typename T>
+struct Nullable_1;
+}
+namespace System {
+template<typename T>
+struct ReadOnlySpan_1;
+}
+// Forward declare root types
+namespace System::IO {
+struct FileStatus;
+}
+// Write type traits
+MARK_VAL_T(::System::IO::FileStatus);
+DEFINE_IL2CPP_CLASS(::System::IO::FileStatus, "System.IO", "FileStatus");
+// Dependencies Interop::Sys::FileStatus
+namespace System::IO {
+// Is value type: true
+// CS Name: System.IO.FileStatus
+struct CORDL_TYPE FileStatus {
+public:
+// Declarations
+ __declspec(property(get=get_InitiallyDirectory, put=set_InitiallyDirectory)) bool  InitiallyDirectory;
+
+/// @brief Method EnsureStatInitialized, addr 0xa29aca4, size 0xc0, virtual false, abstract: false, final false
+inline void EnsureStatInitialized(::System::ReadOnlySpan_1<char16_t>  path, bool  continueOnError) ;
+
+/// @brief Method GetAttributes, addr 0xa29ad64, size 0xe8, virtual false, abstract: false, final false
+inline ::System::IO::FileAttributes GetAttributes(::System::ReadOnlySpan_1<char16_t>  path, ::System::ReadOnlySpan_1<char16_t>  fileName) ;
+
+/// @brief Method GetCreationTime, addr 0xa29b2b0, size 0xe4, virtual false, abstract: false, final false
+inline ::System::DateTimeOffset GetCreationTime(::System::ReadOnlySpan_1<char16_t>  path, bool  continueOnError) ;
+
+/// @brief Method GetExists, addr 0xa29b0dc, size 0x44, virtual false, abstract: false, final false
+inline bool GetExists(::System::ReadOnlySpan_1<char16_t>  path) ;
+
+/// @brief Method GetLastAccessTime, addr 0xa29b588, size 0x9c, virtual false, abstract: false, final false
+inline ::System::DateTimeOffset GetLastAccessTime(::System::ReadOnlySpan_1<char16_t>  path, bool  continueOnError) ;
+
+/// @brief Method GetLastWriteTime, addr 0xa29b7d4, size 0x9c, virtual false, abstract: false, final false
+inline ::System::DateTimeOffset GetLastWriteTime(::System::ReadOnlySpan_1<char16_t>  path, bool  continueOnError) ;
+
+/// @brief Method GetLength, addr 0xa29b9b0, size 0x18, virtual false, abstract: false, final false
+inline int64_t GetLength(::System::ReadOnlySpan_1<char16_t>  path, bool  continueOnError) ;
+
+/// @brief Method Initialize, addr 0xa29ab9c, size 0x10, virtual false, abstract: false, final false
+static inline void Initialize(::by_ref<::System::IO::FileStatus>  status, bool  isDirectory) ;
+
+/// @brief Method Invalidate, addr 0xa29abac, size 0xc, virtual false, abstract: false, final false
+inline void Invalidate() ;
+
+/// @brief Method IsReadOnly, addr 0xa29abb8, size 0xec, virtual false, abstract: false, final false
+inline bool IsReadOnly(::System::ReadOnlySpan_1<char16_t>  path, bool  continueOnError) ;
+
+/// @brief Method Refresh, addr 0xa29b120, size 0x190, virtual false, abstract: false, final false
+inline void Refresh(::System::ReadOnlySpan_1<char16_t>  path) ;
+
+/// @brief Method SetAccessWriteTimes, addr 0xa29b624, size 0x1b0, virtual false, abstract: false, final false
+inline void SetAccessWriteTimes(::StringW  path, ::System::Nullable_1<int64_t>  accessSec, ::System::Nullable_1<int64_t>  accessUSec, ::System::Nullable_1<int64_t>  writeSec, ::System::Nullable_1<int64_t>  writeUSec) ;
+
+/// @brief Method SetAttributes, addr 0xa29ae4c, size 0x1f8, virtual false, abstract: false, final false
+inline void SetAttributes(::StringW  path, ::System::IO::FileAttributes  attributes) ;
+
+/// @brief Method SetCreationTime, addr 0xa29b44c, size 0x4, virtual false, abstract: false, final false
+inline void SetCreationTime(::StringW  path, ::System::DateTimeOffset  time) ;
+
+/// @brief Method SetLastAccessTime, addr 0xa29b450, size 0x138, virtual false, abstract: false, final false
+inline void SetLastAccessTime(::StringW  path, ::System::DateTimeOffset  time) ;
+
+/// @brief Method SetLastWriteTime, addr 0xa29b870, size 0x140, virtual false, abstract: false, final false
+inline void SetLastWriteTime(::StringW  path, ::System::DateTimeOffset  time) ;
+
+/// @brief Method UnixTimeToDateTimeOffset, addr 0xa29b394, size 0xb8, virtual false, abstract: false, final false
+inline ::System::DateTimeOffset UnixTimeToDateTimeOffset(int64_t  seconds, int64_t  nanoseconds) ;
+
+/// [CompilerGenerated]
+/// [IsReadOnly]
+/// @brief Method get_InitiallyDirectory, addr 0xa29ab8c, size 0x8, virtual false, abstract: false, final false
+inline bool get_InitiallyDirectory() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_InitiallyDirectory, addr 0xa29ab94, size 0x8, virtual false, abstract: false, final false
+inline void set_InitiallyDirectory(bool  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr FileStatus() ;
+
+// Ctor Parameters [CppParam { name: "_fileStatus", ty: "::GlobalNamespace::Sys_Interop_FileStatus", modifiers: "", def_value: None, comment: None }, CppParam { name: "_fileStatusInitialized", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "_InitiallyDirectory_k__BackingField", ty: "bool", modifiers: "", def_value: None, comment: None }, CppParam { name: "_isDirectory", ty: "bool", modifiers: "", def_value: None, comment: None }, CppParam { name: "_exists", ty: "bool", modifiers: "", def_value: None, comment: None }]
+constexpr FileStatus(::GlobalNamespace::Sys_Interop_FileStatus  _fileStatus, int32_t  _fileStatusInitialized, bool  _InitiallyDirectory_k__BackingField, bool  _isDirectory, bool  _exists) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7029};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x78};
+
+/// @brief Field _fileStatus, offset: 0x0, size: 0x70, def value: None
+ ::GlobalNamespace::Sys_Interop_FileStatus  _fileStatus;
+
+/// @brief Field _fileStatusInitialized, offset: 0x70, size: 0x4, def value: None
+ int32_t  _fileStatusInitialized;
+
+/// [CompilerGenerated]
+/// @brief Field <InitiallyDirectory>k__BackingField, offset: 0x74, size: 0x1, def value: None
+ bool  _InitiallyDirectory_k__BackingField;
+
+/// @brief Field _isDirectory, offset: 0x75, size: 0x1, def value: None
+ bool  _isDirectory;
+
+/// @brief Field _exists, offset: 0x76, size: 0x1, def value: None
+ bool  _exists;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::System::IO::FileStatus, _fileStatus) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::System::IO::FileStatus, _fileStatusInitialized) == 0x70, "Offset mismatch!");
+
+static_assert(offsetof(::System::IO::FileStatus, _InitiallyDirectory_k__BackingField) == 0x74, "Offset mismatch!");
+
+static_assert(offsetof(::System::IO::FileStatus, _isDirectory) == 0x75, "Offset mismatch!");
+
+static_assert(offsetof(::System::IO::FileStatus, _exists) == 0x76, "Offset mismatch!");
+
+static_assert(sizeof(::System::IO::FileStatus) == 0x78, "Size mismatch!");
+
+} // namespace end def System::IO

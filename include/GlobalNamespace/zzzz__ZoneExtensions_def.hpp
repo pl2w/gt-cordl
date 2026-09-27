@@ -1,0 +1,60 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/ZoneExtensions.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(ZoneExtensions)
+namespace GlobalNamespace {
+struct GTZone;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IList_1;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class ZoneExtensions;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::ZoneExtensions*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::ZoneExtensions*, "", "ZoneExtensions");
+// [Extension]
+// Dependencies System.Object
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: ZoneExtensions
+class CORDL_TYPE ZoneExtensions : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method IsAnyPlayerInZone, addr 0x56b8f28, size 0x338, virtual false, abstract: false, final false
+static inline bool IsAnyPlayerInZone(::GlobalNamespace::GTZone  zone) ;
+
+/// [Extension]
+/// @brief Method IsAnyPlayerInZones, addr 0x56b9260, size 0x3bc, virtual false, abstract: false, final false
+static inline bool IsAnyPlayerInZones(::System::Collections::Generic::IList_1<::GlobalNamespace::GTZone>*  zones) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ZoneExtensions() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ZoneExtensions", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ZoneExtensions(ZoneExtensions && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ZoneExtensions", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ZoneExtensions(ZoneExtensions const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{961};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::ZoneExtensions) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

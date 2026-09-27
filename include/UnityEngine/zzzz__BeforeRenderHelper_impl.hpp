@@ -1,0 +1,104 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/BeforeRenderHelper.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__BeforeRenderHelper_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "UnityEngine/Events/zzzz__UnityAction_def.hpp"
+#include "UnityEngine/zzzz__BeforeRenderHelper_OrderBlock_def.hpp"
+//  Writing Method size for method: ::UnityEngine::BeforeRenderHelper.GetUpdateOrder
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::Events::UnityAction*)>(&::UnityEngine::BeforeRenderHelper::GetUpdateOrder)> {
+  constexpr static std::size_t size = 0x10c;
+  constexpr static std::size_t addrs = 0xb57a004;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"GetUpdateOrder", {}, {::i2c::type_of<::UnityEngine::Events::UnityAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::BeforeRenderHelper.RegisterCallback
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Events::UnityAction*)>(&::UnityEngine::BeforeRenderHelper::RegisterCallback)> {
+  constexpr static std::size_t size = 0x380;
+  constexpr static std::size_t addrs = 0xb57a110;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"RegisterCallback", {}, {::i2c::type_of<::UnityEngine::Events::UnityAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::BeforeRenderHelper.UnregisterCallback
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Events::UnityAction*)>(&::UnityEngine::BeforeRenderHelper::UnregisterCallback)> {
+  constexpr static std::size_t size = 0x324;
+  constexpr static std::size_t addrs = 0xb57a490;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"UnregisterCallback", {}, {::i2c::type_of<::UnityEngine::Events::UnityAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::BeforeRenderHelper.Invoke
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)()>(&::UnityEngine::BeforeRenderHelper::Invoke)> {
+  constexpr static std::size_t size = 0x1b0;
+  constexpr static std::size_t addrs = 0xb57a7b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"Invoke", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::BeforeRenderHelper::setStaticF_s_OrderBlocks(::System::Collections::Generic::List_1<::GlobalNamespace::BeforeRenderHelper_OrderBlock>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::GlobalNamespace::BeforeRenderHelper_OrderBlock>*, "s_OrderBlocks", ::UnityEngine::BeforeRenderHelper*>(std::forward<::System::Collections::Generic::List_1<::GlobalNamespace::BeforeRenderHelper_OrderBlock>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::GlobalNamespace::BeforeRenderHelper_OrderBlock>* UnityEngine::BeforeRenderHelper::getStaticF_s_OrderBlocks()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::GlobalNamespace::BeforeRenderHelper_OrderBlock>*, "s_OrderBlocks", ::UnityEngine::BeforeRenderHelper*>();
+}
+inline int32_t UnityEngine::BeforeRenderHelper::GetUpdateOrder(::UnityEngine::Events::UnityAction*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"GetUpdateOrder", {}, {::i2c::type_of<::UnityEngine::Events::UnityAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, callback);
+}
+inline void UnityEngine::BeforeRenderHelper::RegisterCallback(::UnityEngine::Events::UnityAction*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"RegisterCallback", {}, {::i2c::type_of<::UnityEngine::Events::UnityAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, callback);
+}
+inline void UnityEngine::BeforeRenderHelper::UnregisterCallback(::UnityEngine::Events::UnityAction*  callback)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"UnregisterCallback", {}, {::i2c::type_of<::UnityEngine::Events::UnityAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, callback);
+}
+inline void UnityEngine::BeforeRenderHelper::Invoke()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::BeforeRenderHelper*>(),
+                        {"Invoke", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::BeforeRenderHelper::BeforeRenderHelper()   {
+}

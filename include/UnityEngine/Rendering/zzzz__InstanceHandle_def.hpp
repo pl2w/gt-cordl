@@ -1,0 +1,115 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/InstanceHandle.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(InstanceHandle)
+namespace System {
+template<typename T>
+class IComparable_1;
+}
+namespace System {
+template<typename T>
+class IEquatable_1;
+}
+namespace UnityEngine::Rendering {
+struct InstanceType;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering {
+struct InstanceHandle;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::Rendering::InstanceHandle);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::InstanceHandle, "UnityEngine.Rendering", "InstanceHandle");
+// Dependencies 
+namespace UnityEngine::Rendering {
+// Is value type: true
+// CS Name: UnityEngine.Rendering.InstanceHandle
+struct CORDL_TYPE InstanceHandle {
+public:
+// Declarations
+/// @brief Field Invalid, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_Invalid, put=setStaticF_Invalid)) ::UnityEngine::Rendering::InstanceHandle  Invalid;
+
+ __declspec(property(get=get_index, put=set_index)) int32_t  index;
+
+ __declspec(property(get=get_instanceIndex)) int32_t  instanceIndex;
+
+ __declspec(property(get=get_type)) ::UnityEngine::Rendering::InstanceType  type;
+
+ __declspec(property(get=get_valid)) bool  valid;
+
+/// @brief Convert operator to "::System::IComparable_1<::UnityEngine::Rendering::InstanceHandle>"
+constexpr operator  ::System::IComparable_1<::UnityEngine::Rendering::InstanceHandle>*() ;
+
+/// @brief Convert operator to "::System::IEquatable_1<::UnityEngine::Rendering::InstanceHandle>"
+constexpr operator  ::System::IEquatable_1<::UnityEngine::Rendering::InstanceHandle>*() ;
+
+/// @brief Method CompareTo, addr 0xb1fde30, size 0x78, virtual true, abstract: false, final true
+inline int32_t CompareTo(::UnityEngine::Rendering::InstanceHandle  other) ;
+
+/// @brief Method Equals, addr 0xb1fddc8, size 0x68, virtual true, abstract: false, final true
+inline bool Equals(::UnityEngine::Rendering::InstanceHandle  other) ;
+
+/// @brief Method FromInt, addr 0xb1f684c, size 0x54, virtual false, abstract: false, final false
+static inline ::UnityEngine::Rendering::InstanceHandle FromInt(int32_t  value) ;
+
+/// @brief Method GetHashCode, addr 0xb1fdea8, size 0x54, virtual true, abstract: false, final false
+inline int32_t GetHashCode() ;
+
+static inline ::UnityEngine::Rendering::InstanceHandle getStaticF_Invalid() ;
+
+/// [IsReadOnly]
+/// [CompilerGenerated]
+/// @brief Method get_index, addr 0xb1fddb8, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_index() ;
+
+/// @brief Method get_instanceIndex, addr 0xb1fb700, size 0x58, virtual false, abstract: false, final false
+inline int32_t get_instanceIndex() ;
+
+/// @brief Method get_type, addr 0xb1fb6a8, size 0x58, virtual false, abstract: false, final false
+inline ::UnityEngine::Rendering::InstanceType get_type() ;
+
+/// @brief Method get_valid, addr 0xb1fb64c, size 0x5c, virtual false, abstract: false, final false
+inline bool get_valid() ;
+
+/// @brief Convert to "::System::IComparable_1<::UnityEngine::Rendering::InstanceHandle>"
+constexpr ::System::IComparable_1<::UnityEngine::Rendering::InstanceHandle>* i___System__IComparable_1___UnityEngine__Rendering__InstanceHandle_() ;
+
+/// @brief Convert to "::System::IEquatable_1<::UnityEngine::Rendering::InstanceHandle>"
+constexpr ::System::IEquatable_1<::UnityEngine::Rendering::InstanceHandle>* i___System__IEquatable_1___UnityEngine__Rendering__InstanceHandle_() ;
+
+static inline void setStaticF_Invalid(::UnityEngine::Rendering::InstanceHandle  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_index, addr 0xb1fddc0, size 0x8, virtual false, abstract: false, final false
+inline void set_index(int32_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr InstanceHandle() ;
+
+// Ctor Parameters [CppParam { name: "_index_k__BackingField", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr InstanceHandle(int32_t  _index_k__BackingField) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{26617};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// [CompilerGenerated]
+/// @brief Field <index>k__BackingField, offset: 0x0, size: 0x4, def value: None
+ int32_t  _index_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::InstanceHandle, _index_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::InstanceHandle) == 0x4, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

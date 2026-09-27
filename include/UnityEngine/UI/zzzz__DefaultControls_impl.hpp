@@ -1,0 +1,540 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UI/DefaultControls.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__Color_impl.hpp"
+#include "UnityEngine/zzzz__Vector2_impl.hpp"
+#include "UnityEngine/UI/zzzz__DefaultControls_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+#include "UnityEngine/UI/zzzz__DefaultControls_Resources_def.hpp"
+#include "UnityEngine/UI/zzzz__DefaultControls_def.hpp"
+#include "UnityEngine/UI/zzzz__Selectable_def.hpp"
+#include "UnityEngine/UI/zzzz__Text_def.hpp"
+#include "UnityEngine/zzzz__GameObject_def.hpp"
+#include "UnityEngine/zzzz__Vector2_def.hpp"
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.get_factory
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UI::DefaultControls_IFactoryControls* (*)()>(&::UnityEngine::UI::DefaultControls::get_factory)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xb700698;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"get_factory", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateUIElementRoot
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::StringW, ::UnityEngine::Vector2, ::ArrayW<::System::Type*>)>(&::UnityEngine::UI::DefaultControls::CreateUIElementRoot)> {
+  constexpr static std::size_t size = 0x160;
+  constexpr static std::size_t addrs = 0xb7006f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateUIElementRoot", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::Vector2>(), ::i2c::type_of<::ArrayW<::System::Type*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateUIObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::StringW, ::UnityEngine::GameObject*, ::ArrayW<::System::Type*>)>(&::UnityEngine::UI::DefaultControls::CreateUIObject)> {
+  constexpr static std::size_t size = 0x128;
+  constexpr static std::size_t addrs = 0xb700850;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateUIObject", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<::ArrayW<::System::Type*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.SetDefaultTextValues
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::UI::Text*)>(&::UnityEngine::UI::DefaultControls::SetDefaultTextValues)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xb700a78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetDefaultTextValues", {}, {::i2c::type_of<::UnityEngine::UI::Text*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.SetDefaultColorTransitionValues
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::UI::Selectable*)>(&::UnityEngine::UI::DefaultControls::SetDefaultColorTransitionValues)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xb700b54;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetDefaultColorTransitionValues", {}, {::i2c::type_of<::UnityEngine::UI::Selectable*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.SetParentAndAlign
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::GameObject*, ::UnityEngine::GameObject*)>(&::UnityEngine::UI::DefaultControls::SetParentAndAlign)> {
+  constexpr static std::size_t size = 0x100;
+  constexpr static std::size_t addrs = 0xb700978;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetParentAndAlign", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.SetLayerRecursively
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::GameObject*, int32_t)>(&::UnityEngine::UI::DefaultControls::SetLayerRecursively)> {
+  constexpr static std::size_t size = 0xe4;
+  constexpr static std::size_t addrs = 0xb700bb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetLayerRecursively", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreatePanel
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreatePanel)> {
+  constexpr static std::size_t size = 0x2bc;
+  constexpr static std::size_t addrs = 0xb700c98;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreatePanel", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateButton
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateButton)> {
+  constexpr static std::size_t size = 0x40c;
+  constexpr static std::size_t addrs = 0xb7012e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateButton", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateText)> {
+  constexpr static std::size_t size = 0x198;
+  constexpr static std::size_t addrs = 0xb7016f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateText", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateImage
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateImage)> {
+  constexpr static std::size_t size = 0x134;
+  constexpr static std::size_t addrs = 0xb701888;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateImage", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateRawImage
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateRawImage)> {
+  constexpr static std::size_t size = 0x134;
+  constexpr static std::size_t addrs = 0xb7019bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateRawImage", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateSlider
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateSlider)> {
+  constexpr static std::size_t size = 0x6f8;
+  constexpr static std::size_t addrs = 0xb701af0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateSlider", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateScrollbar
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateScrollbar)> {
+  constexpr static std::size_t size = 0x4a8;
+  constexpr static std::size_t addrs = 0xb7021e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateScrollbar", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateToggle
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateToggle)> {
+  constexpr static std::size_t size = 0x5a4;
+  constexpr static std::size_t addrs = 0xb702690;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateToggle", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateInputField
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateInputField)> {
+  constexpr static std::size_t size = 0x648;
+  constexpr static std::size_t addrs = 0xb702c34;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateInputField", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateDropdown
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateDropdown)> {
+  constexpr static std::size_t size = 0x1318;
+  constexpr static std::size_t addrs = 0xb70327c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateDropdown", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls.CreateScrollView
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (*)(::GlobalNamespace::DefaultControls_Resources)>(&::UnityEngine::UI::DefaultControls::CreateScrollView)> {
+  constexpr static std::size_t size = 0x91c;
+  constexpr static std::size_t addrs = 0xb704800;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateScrollView", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::UI::DefaultControls::setStaticF_m_CurrentFactory(::UnityEngine::UI::DefaultControls_IFactoryControls*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::UI::DefaultControls_IFactoryControls*, "m_CurrentFactory", ::UnityEngine::UI::DefaultControls*>(std::forward<::UnityEngine::UI::DefaultControls_IFactoryControls*>(value));
+}
+inline ::UnityEngine::UI::DefaultControls_IFactoryControls* UnityEngine::UI::DefaultControls::getStaticF_m_CurrentFactory()  {
+return ::cordl_internals::getStaticField<::UnityEngine::UI::DefaultControls_IFactoryControls*, "m_CurrentFactory", ::UnityEngine::UI::DefaultControls*>();
+}
+inline void UnityEngine::UI::DefaultControls::setStaticF_s_ThickElementSize(::UnityEngine::Vector2  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Vector2, "s_ThickElementSize", ::UnityEngine::UI::DefaultControls*>(std::forward<::UnityEngine::Vector2>(value));
+}
+inline ::UnityEngine::Vector2 UnityEngine::UI::DefaultControls::getStaticF_s_ThickElementSize()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Vector2, "s_ThickElementSize", ::UnityEngine::UI::DefaultControls*>();
+}
+inline void UnityEngine::UI::DefaultControls::setStaticF_s_ThinElementSize(::UnityEngine::Vector2  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Vector2, "s_ThinElementSize", ::UnityEngine::UI::DefaultControls*>(std::forward<::UnityEngine::Vector2>(value));
+}
+inline ::UnityEngine::Vector2 UnityEngine::UI::DefaultControls::getStaticF_s_ThinElementSize()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Vector2, "s_ThinElementSize", ::UnityEngine::UI::DefaultControls*>();
+}
+inline void UnityEngine::UI::DefaultControls::setStaticF_s_ImageElementSize(::UnityEngine::Vector2  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Vector2, "s_ImageElementSize", ::UnityEngine::UI::DefaultControls*>(std::forward<::UnityEngine::Vector2>(value));
+}
+inline ::UnityEngine::Vector2 UnityEngine::UI::DefaultControls::getStaticF_s_ImageElementSize()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Vector2, "s_ImageElementSize", ::UnityEngine::UI::DefaultControls*>();
+}
+inline void UnityEngine::UI::DefaultControls::setStaticF_s_DefaultSelectableColor(::UnityEngine::Color  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Color, "s_DefaultSelectableColor", ::UnityEngine::UI::DefaultControls*>(std::forward<::UnityEngine::Color>(value));
+}
+inline ::UnityEngine::Color UnityEngine::UI::DefaultControls::getStaticF_s_DefaultSelectableColor()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Color, "s_DefaultSelectableColor", ::UnityEngine::UI::DefaultControls*>();
+}
+inline void UnityEngine::UI::DefaultControls::setStaticF_s_PanelColor(::UnityEngine::Color  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Color, "s_PanelColor", ::UnityEngine::UI::DefaultControls*>(std::forward<::UnityEngine::Color>(value));
+}
+inline ::UnityEngine::Color UnityEngine::UI::DefaultControls::getStaticF_s_PanelColor()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Color, "s_PanelColor", ::UnityEngine::UI::DefaultControls*>();
+}
+inline void UnityEngine::UI::DefaultControls::setStaticF_s_TextColor(::UnityEngine::Color  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Color, "s_TextColor", ::UnityEngine::UI::DefaultControls*>(std::forward<::UnityEngine::Color>(value));
+}
+inline ::UnityEngine::Color UnityEngine::UI::DefaultControls::getStaticF_s_TextColor()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Color, "s_TextColor", ::UnityEngine::UI::DefaultControls*>();
+}
+inline ::UnityEngine::UI::DefaultControls_IFactoryControls* UnityEngine::UI::DefaultControls::get_factory()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"get_factory", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UI::DefaultControls_IFactoryControls*>(nullptr, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateUIElementRoot(::StringW  name, ::UnityEngine::Vector2  size, /* [ParamArray] */ ::ArrayW<::System::Type*>  components)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateUIElementRoot", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::Vector2>(), ::i2c::type_of<::ArrayW<::System::Type*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, name, size, components);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateUIObject(::StringW  name, ::UnityEngine::GameObject*  parent, /* [ParamArray] */ ::ArrayW<::System::Type*>  components)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateUIObject", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<::ArrayW<::System::Type*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, name, parent, components);
+}
+inline void UnityEngine::UI::DefaultControls::SetDefaultTextValues(::UnityEngine::UI::Text*  lbl)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetDefaultTextValues", {}, {::i2c::type_of<::UnityEngine::UI::Text*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, lbl);
+}
+inline void UnityEngine::UI::DefaultControls::SetDefaultColorTransitionValues(::UnityEngine::UI::Selectable*  slider)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetDefaultColorTransitionValues", {}, {::i2c::type_of<::UnityEngine::UI::Selectable*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, slider);
+}
+inline void UnityEngine::UI::DefaultControls::SetParentAndAlign(::UnityEngine::GameObject*  child, ::UnityEngine::GameObject*  parent)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetParentAndAlign", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, child, parent);
+}
+inline void UnityEngine::UI::DefaultControls::SetLayerRecursively(::UnityEngine::GameObject*  go, int32_t  layer)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"SetLayerRecursively", {}, {::i2c::type_of<::UnityEngine::GameObject*>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, go, layer);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreatePanel(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreatePanel", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateButton(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateButton", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateText(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateText", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateImage(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateImage", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateRawImage(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateRawImage", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateSlider(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateSlider", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateScrollbar(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateScrollbar", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateToggle(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateToggle", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateInputField(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateInputField", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateDropdown(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateDropdown", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls::CreateScrollView(::GlobalNamespace::DefaultControls_Resources  resources)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls*>(),
+                        {"CreateScrollView", {}, {::i2c::type_of<::GlobalNamespace::DefaultControls_Resources>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(nullptr, ___internal_method, resources);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UI::DefaultControls::DefaultControls()   {
+}
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory.CreateGameObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::*)(::StringW, ::ArrayW<::System::Type*>)>(&::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::CreateGameObject)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xb705200;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory*>(),
+                        {"CreateGameObject", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Type*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::*)()>(&::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb70526c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::setStaticF_Default(::UnityEngine::UI::DefaultControls_IFactoryControls*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::UI::DefaultControls_IFactoryControls*, "Default", ::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory*>(std::forward<::UnityEngine::UI::DefaultControls_IFactoryControls*>(value));
+}
+inline ::UnityEngine::UI::DefaultControls_IFactoryControls* UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::getStaticF_Default()  {
+return ::cordl_internals::getStaticField<::UnityEngine::UI::DefaultControls_IFactoryControls*, "Default", ::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory*>();
+}
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::CreateGameObject(::StringW  name, /* [ParamArray] */ ::ArrayW<::System::Type*>  components)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory*>(),
+                        {"CreateGameObject", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Type*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(this, ___internal_method, name, components);
+}
+inline void UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory* UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory*>());
+}
+/// @brief Convert operator to "::UnityEngine::UI::DefaultControls_IFactoryControls"
+constexpr  UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::operator ::UnityEngine::UI::DefaultControls_IFactoryControls*() noexcept {
+return static_cast<::UnityEngine::UI::DefaultControls_IFactoryControls*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::UnityEngine::UI::DefaultControls_IFactoryControls"
+constexpr ::UnityEngine::UI::DefaultControls_IFactoryControls* UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::i___UnityEngine__UI__DefaultControls_IFactoryControls() noexcept {
+return static_cast<::UnityEngine::UI::DefaultControls_IFactoryControls*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory::DefaultControls_DefaultRuntimeFactory()   {
+}
+//  Writing Method size for method: ::UnityEngine::UI::DefaultControls_IFactoryControls.CreateGameObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::GameObject> (::UnityEngine::UI::DefaultControls_IFactoryControls::*)(::StringW, ::ArrayW<::System::Type*>)>(&::UnityEngine::UI::DefaultControls_IFactoryControls::CreateGameObject)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::UI::DefaultControls_IFactoryControls*>(),
+                    {::i2c::class_of<::UnityEngine::UI::DefaultControls_IFactoryControls*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+inline ::UnityW<::UnityEngine::GameObject> UnityEngine::UI::DefaultControls_IFactoryControls::CreateGameObject(::StringW  name, /* [ParamArray] */ ::ArrayW<::System::Type*>  components)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::UI::DefaultControls_IFactoryControls*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::GameObject>>(this, ___internal_method, name, components);
+}

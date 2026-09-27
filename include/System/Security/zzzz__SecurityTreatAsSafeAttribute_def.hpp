@@ -1,0 +1,51 @@
+#pragma once
+// IWYU pragma private; include "System/Security/SecurityTreatAsSafeAttribute.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Attribute_def.hpp"
+CORDL_MODULE_EXPORT(SecurityTreatAsSafeAttribute)
+// Forward declare root types
+namespace System::Security {
+class SecurityTreatAsSafeAttribute;
+}
+// Write type traits
+MARK_REF_T(::System::Security::SecurityTreatAsSafeAttribute*);
+DEFINE_IL2CPP_CLASS(::System::Security::SecurityTreatAsSafeAttribute*, "System.Security", "SecurityTreatAsSafeAttribute");
+// [Obsolete("SecurityTreatAsSafe is only used for .NET 2.0 transparency compatibility.  Please use the SecuritySafeCriticalAttribute instead.")]
+// [AttributeUsage((System.AttributeTargets)5501, AllowMultiple = false, Inherited = false)]
+// Dependencies System.Attribute
+namespace System::Security {
+// Is value type: false
+// CS Name: System.Security.SecurityTreatAsSafeAttribute
+class CORDL_TYPE SecurityTreatAsSafeAttribute : public ::System::Attribute {
+public:
+// Declarations
+static inline ::System::Security::SecurityTreatAsSafeAttribute* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xa154434, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SecurityTreatAsSafeAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SecurityTreatAsSafeAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SecurityTreatAsSafeAttribute(SecurityTreatAsSafeAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SecurityTreatAsSafeAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SecurityTreatAsSafeAttribute(SecurityTreatAsSafeAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6024};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Security::SecurityTreatAsSafeAttribute) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Security

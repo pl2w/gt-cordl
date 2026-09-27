@@ -1,0 +1,61 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OperationResultExtensions.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(OperationResultExtensions)
+namespace GlobalNamespace {
+struct OVRSpatialAnchor_OperationResult;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class OperationResultExtensions;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::OperationResultExtensions*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OperationResultExtensions*, "", "OperationResultExtensions");
+// [Extension]
+// Dependencies System.Object
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OperationResultExtensions
+class CORDL_TYPE OperationResultExtensions : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method IsError, addr 0xa64b014, size 0x8, virtual false, abstract: false, final false
+static inline bool IsError(::GlobalNamespace::OVRSpatialAnchor_OperationResult  res) ;
+
+/// [Extension]
+/// @brief Method IsSuccess, addr 0xa64b008, size 0xc, virtual false, abstract: false, final false
+static inline bool IsSuccess(::GlobalNamespace::OVRSpatialAnchor_OperationResult  res) ;
+
+/// [Extension]
+/// [Obsolete("There are no OperationResults that are considered warnings so this method will always return False.")]
+/// @brief Method IsWarning, addr 0xa64b01c, size 0xc, virtual false, abstract: false, final false
+static inline bool IsWarning(::GlobalNamespace::OVRSpatialAnchor_OperationResult  res) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OperationResultExtensions() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OperationResultExtensions", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OperationResultExtensions(OperationResultExtensions && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OperationResultExtensions", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OperationResultExtensions(OperationResultExtensions const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{12478};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::OperationResultExtensions) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

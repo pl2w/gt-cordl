@@ -1,0 +1,135 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/XYZColor.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/ProBuilder/zzzz__XYZColor_def.hpp"
+#include "UnityEngine/zzzz__Color_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::XYZColor._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::XYZColor::*)(float_t, float_t, float_t)>(&::UnityEngine::ProBuilder::XYZColor::_ctor)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb0898e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(),
+                        {".ctor", {}, {::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::XYZColor.FromRGB
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ProBuilder::XYZColor* (*)(::UnityEngine::Color)>(&::UnityEngine::ProBuilder::XYZColor::FromRGB)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xb089920;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(),
+                        {"FromRGB", {}, {::i2c::type_of<::UnityEngine::Color>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::XYZColor.FromRGB
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ProBuilder::XYZColor* (*)(float_t, float_t, float_t)>(&::UnityEngine::ProBuilder::XYZColor::FromRGB)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xb089a10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(),
+                        {"FromRGB", {}, {::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::XYZColor.ToString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::ProBuilder::XYZColor::*)()>(&::UnityEngine::ProBuilder::XYZColor::ToString)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xb089c38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(), 3}
+                ));
+    return ___internal_method;
+  }
+};
+constexpr float_t& UnityEngine::ProBuilder::XYZColor::__cordl_internal_get_x()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___x;
+}
+constexpr float_t const& UnityEngine::ProBuilder::XYZColor::__cordl_internal_get_x() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___x;
+}
+constexpr void UnityEngine::ProBuilder::XYZColor::__cordl_internal_set_x(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___x = value;
+}
+constexpr float_t& UnityEngine::ProBuilder::XYZColor::__cordl_internal_get_y()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___y;
+}
+constexpr float_t const& UnityEngine::ProBuilder::XYZColor::__cordl_internal_get_y() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___y;
+}
+constexpr void UnityEngine::ProBuilder::XYZColor::__cordl_internal_set_y(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___y = value;
+}
+constexpr float_t& UnityEngine::ProBuilder::XYZColor::__cordl_internal_get_z()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___z;
+}
+constexpr float_t const& UnityEngine::ProBuilder::XYZColor::__cordl_internal_get_z() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___z;
+}
+constexpr void UnityEngine::ProBuilder::XYZColor::__cordl_internal_set_z(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___z = value;
+}
+inline void UnityEngine::ProBuilder::XYZColor::_ctor(float_t  x, float_t  y, float_t  z)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(),
+                        {".ctor", {}, {::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, x, y, z);
+}
+inline ::UnityEngine::ProBuilder::XYZColor* UnityEngine::ProBuilder::XYZColor::FromRGB(::UnityEngine::Color  col)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(),
+                        {"FromRGB", {}, {::i2c::type_of<::UnityEngine::Color>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ProBuilder::XYZColor*>(nullptr, ___internal_method, col);
+}
+inline ::UnityEngine::ProBuilder::XYZColor* UnityEngine::ProBuilder::XYZColor::FromRGB(float_t  R, float_t  G, float_t  B)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(),
+                        {"FromRGB", {}, {::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ProBuilder::XYZColor*>(nullptr, ___internal_method, R, G, B);
+}
+inline ::StringW UnityEngine::ProBuilder::XYZColor::ToString()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::XYZColor*>(), 3}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::UnityEngine::ProBuilder::XYZColor* UnityEngine::ProBuilder::XYZColor::New_ctor(float_t  x, float_t  y, float_t  z)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::ProBuilder::XYZColor*>(x, y, z));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::XYZColor::XYZColor()   {
+}

@@ -1,0 +1,421 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Logger.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__LogType_impl.hpp"
+#include "UnityEngine/zzzz__Logger_def.hpp"
+#include "System/zzzz__Exception_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/zzzz__ILogHandler_def.hpp"
+#include "UnityEngine/zzzz__ILogger_def.hpp"
+#include "UnityEngine/zzzz__LogType_def.hpp"
+#include "UnityEngine/zzzz__Object_def.hpp"
+//  Writing Method size for method: ::UnityEngine::Logger._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::UnityEngine::ILogHandler*)>(&::UnityEngine::Logger::_ctor)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xb5c557c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::ILogHandler*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.get_logHandler
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::ILogHandler* (::UnityEngine::Logger::*)()>(&::UnityEngine::Logger::get_logHandler)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb5c55c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"get_logHandler", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.set_logHandler
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::UnityEngine::ILogHandler*)>(&::UnityEngine::Logger::set_logHandler)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb5c55c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"set_logHandler", {}, {::i2c::type_of<::UnityEngine::ILogHandler*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.get_logEnabled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Logger::*)()>(&::UnityEngine::Logger::get_logEnabled)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb5c55d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"get_logEnabled", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.set_logEnabled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(bool)>(&::UnityEngine::Logger::set_logEnabled)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb5c55d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"set_logEnabled", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.get_filterLogType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::LogType (::UnityEngine::Logger::*)()>(&::UnityEngine::Logger::get_filterLogType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb5c55e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"get_filterLogType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.set_filterLogType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::UnityEngine::LogType)>(&::UnityEngine::Logger::set_filterLogType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb5c55e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"set_filterLogType", {}, {::i2c::type_of<::UnityEngine::LogType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.IsLogTypeAllowed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Logger::*)(::UnityEngine::LogType)>(&::UnityEngine::Logger::IsLogTypeAllowed)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xb5c55f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"IsLogTypeAllowed", {}, {::i2c::type_of<::UnityEngine::LogType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.GetString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::System::Object*)>(&::UnityEngine::Logger::GetString)> {
+  constexpr static std::size_t size = 0x120;
+  constexpr static std::size_t addrs = 0xb5c5624;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"GetString", {}, {::i2c::type_of<::System::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.Log
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::UnityEngine::LogType, ::System::Object*)>(&::UnityEngine::Logger::Log)> {
+  constexpr static std::size_t size = 0x180;
+  constexpr static std::size_t addrs = 0xb5c5744;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"Log", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::System::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.Log
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::UnityEngine::LogType, ::System::Object*, ::UnityEngine::Object*)>(&::UnityEngine::Logger::Log)> {
+  constexpr static std::size_t size = 0x184;
+  constexpr static std::size_t addrs = 0xb5c58c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"Log", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::System::Object*>(), ::i2c::type_of<::UnityEngine::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.Log
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::System::Object*)>(&::UnityEngine::Logger::Log)> {
+  constexpr static std::size_t size = 0x168;
+  constexpr static std::size_t addrs = 0xb5c5a48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"Log", {}, {::i2c::type_of<::System::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.LogError
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::StringW, ::System::Object*)>(&::UnityEngine::Logger::LogError)> {
+  constexpr static std::size_t size = 0x1a8;
+  constexpr static std::size_t addrs = 0xb5c5bb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogError", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.LogException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::System::Exception*, ::UnityEngine::Object*)>(&::UnityEngine::Logger::LogException)> {
+  constexpr static std::size_t size = 0xd4;
+  constexpr static std::size_t addrs = 0xb5c5d58;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogException", {}, {::i2c::type_of<::System::Exception*>(), ::i2c::type_of<::UnityEngine::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.LogFormat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::UnityEngine::LogType, ::StringW, ::ArrayW<::System::Object*>)>(&::UnityEngine::Logger::LogFormat)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xb5c5e2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogFormat", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Logger.LogFormat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Logger::*)(::UnityEngine::LogType, ::UnityEngine::Object*, ::StringW, ::ArrayW<::System::Object*>)>(&::UnityEngine::Logger::LogFormat)> {
+  constexpr static std::size_t size = 0x108;
+  constexpr static std::size_t addrs = 0xb5c5f24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogFormat", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::UnityEngine::Object*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::ILogHandler*& UnityEngine::Logger::__cordl_internal_get__logHandler_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____logHandler_k__BackingField;
+}
+constexpr ::UnityEngine::ILogHandler* const& UnityEngine::Logger::__cordl_internal_get__logHandler_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____logHandler_k__BackingField;
+}
+constexpr void UnityEngine::Logger::__cordl_internal_set__logHandler_k__BackingField(::UnityEngine::ILogHandler*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____logHandler_k__BackingField = value;
+}
+constexpr bool& UnityEngine::Logger::__cordl_internal_get__logEnabled_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____logEnabled_k__BackingField;
+}
+constexpr bool const& UnityEngine::Logger::__cordl_internal_get__logEnabled_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____logEnabled_k__BackingField;
+}
+constexpr void UnityEngine::Logger::__cordl_internal_set__logEnabled_k__BackingField(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____logEnabled_k__BackingField = value;
+}
+constexpr ::UnityEngine::LogType& UnityEngine::Logger::__cordl_internal_get__filterLogType_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____filterLogType_k__BackingField;
+}
+constexpr ::UnityEngine::LogType const& UnityEngine::Logger::__cordl_internal_get__filterLogType_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____filterLogType_k__BackingField;
+}
+constexpr void UnityEngine::Logger::__cordl_internal_set__filterLogType_k__BackingField(::UnityEngine::LogType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____filterLogType_k__BackingField = value;
+}
+inline void UnityEngine::Logger::_ctor(::UnityEngine::ILogHandler*  logHandler)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::ILogHandler*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, logHandler);
+}
+inline ::UnityEngine::ILogHandler* UnityEngine::Logger::get_logHandler()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"get_logHandler", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::ILogHandler*>(this, ___internal_method);
+}
+inline void UnityEngine::Logger::set_logHandler(::UnityEngine::ILogHandler*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"set_logHandler", {}, {::i2c::type_of<::UnityEngine::ILogHandler*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::Logger::get_logEnabled()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"get_logEnabled", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::Logger::set_logEnabled(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"set_logEnabled", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::LogType UnityEngine::Logger::get_filterLogType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"get_filterLogType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::LogType>(this, ___internal_method);
+}
+inline void UnityEngine::Logger::set_filterLogType(::UnityEngine::LogType  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"set_filterLogType", {}, {::i2c::type_of<::UnityEngine::LogType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::Logger::IsLogTypeAllowed(::UnityEngine::LogType  logType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"IsLogTypeAllowed", {}, {::i2c::type_of<::UnityEngine::LogType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, logType);
+}
+inline ::StringW UnityEngine::Logger::GetString(::System::Object*  message)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"GetString", {}, {::i2c::type_of<::System::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, message);
+}
+inline void UnityEngine::Logger::Log(::UnityEngine::LogType  logType, ::System::Object*  message)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"Log", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::System::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, logType, message);
+}
+inline void UnityEngine::Logger::Log(::UnityEngine::LogType  logType, ::System::Object*  message, ::UnityEngine::Object*  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"Log", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::System::Object*>(), ::i2c::type_of<::UnityEngine::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, logType, message, context);
+}
+inline void UnityEngine::Logger::Log(::System::Object*  message)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"Log", {}, {::i2c::type_of<::System::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, message);
+}
+inline void UnityEngine::Logger::LogError(::StringW  tag, ::System::Object*  message)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogError", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, tag, message);
+}
+inline void UnityEngine::Logger::LogException(::System::Exception*  exception, ::UnityEngine::Object*  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogException", {}, {::i2c::type_of<::System::Exception*>(), ::i2c::type_of<::UnityEngine::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, exception, context);
+}
+inline void UnityEngine::Logger::LogFormat(::UnityEngine::LogType  logType, ::StringW  format, /* [ParamArray] */ ::ArrayW<::System::Object*>  args)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogFormat", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, logType, format, args);
+}
+inline void UnityEngine::Logger::LogFormat(::UnityEngine::LogType  logType, ::UnityEngine::Object*  context, ::StringW  format, /* [ParamArray] */ ::ArrayW<::System::Object*>  args)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Logger*>(),
+                        {"LogFormat", {}, {::i2c::type_of<::UnityEngine::LogType>(), ::i2c::type_of<::UnityEngine::Object*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::ArrayW<::System::Object*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, logType, context, format, args);
+}
+inline ::UnityEngine::Logger* UnityEngine::Logger::New_ctor(::UnityEngine::ILogHandler*  logHandler)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::Logger*>(logHandler));
+}
+/// @brief Convert operator to "::UnityEngine::ILogger"
+constexpr  UnityEngine::Logger::operator ::UnityEngine::ILogger*() noexcept {
+return static_cast<::UnityEngine::ILogger*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::UnityEngine::ILogger"
+constexpr ::UnityEngine::ILogger* UnityEngine::Logger::i___UnityEngine__ILogger() noexcept {
+return static_cast<::UnityEngine::ILogger*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::UnityEngine::ILogHandler"
+constexpr  UnityEngine::Logger::operator ::UnityEngine::ILogHandler*() noexcept {
+return static_cast<::UnityEngine::ILogHandler*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::UnityEngine::ILogHandler"
+constexpr ::UnityEngine::ILogHandler* UnityEngine::Logger::i___UnityEngine__ILogHandler() noexcept {
+return static_cast<::UnityEngine::ILogHandler*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Logger::Logger()   {
+}

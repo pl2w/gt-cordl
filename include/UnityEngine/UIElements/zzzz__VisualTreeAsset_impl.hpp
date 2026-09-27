@@ -1,0 +1,2288 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/VisualTreeAsset.hpp"
+#include "System/Collections/Generic/zzzz__List`1_Enumerator_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_UsingEntry_impl.hpp"
+#include "UnityEngine/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__ScriptableObject_impl.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_def.hpp"
+#include "System/Collections/Generic/zzzz__Dictionary_2_def.hpp"
+#include "System/Collections/Generic/zzzz__HashSet_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IComparer_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerable_1_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerator_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/Collections/zzzz__IEnumerable_def.hpp"
+#include "System/Collections/zzzz__IEnumerator_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+#include "UnityEngine/UIElements/zzzz__CreationContext_def.hpp"
+#include "UnityEngine/UIElements/zzzz__IBaseUxmlObjectFactory_def.hpp"
+#include "UnityEngine/UIElements/zzzz__IUxmlAttributes_def.hpp"
+#include "UnityEngine/UIElements/zzzz__StyleSheet_def.hpp"
+#include "UnityEngine/UIElements/zzzz__TemplateAsset_def.hpp"
+#include "UnityEngine/UIElements/zzzz__TemplateContainer_def.hpp"
+#include "UnityEngine/UIElements/zzzz__UxmlAsset_def.hpp"
+#include "UnityEngine/UIElements/zzzz__UxmlNamespaceDefinition_def.hpp"
+#include "UnityEngine/UIElements/zzzz__UxmlObjectAsset_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualElementAsset_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualElement_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_AssetEntry_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_SlotDefinition_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_SlotUsageEntry_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_UsingEntry_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_UxmlObjectEntry_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset___c__DisplayClass82_0_def.hpp"
+#include "UnityEngine/UIElements/zzzz__VisualTreeAsset_def.hpp"
+#include "UnityEngine/zzzz__Object_def.hpp"
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_importedWithErrors
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_importedWithErrors)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb3b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_importedWithErrors", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.set_importedWithErrors
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(bool)>(&::UnityEngine::UIElements::VisualTreeAsset::set_importedWithErrors)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb3b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_importedWithErrors", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_importerWithUpdatedUrls
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_importerWithUpdatedUrls)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb3c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_importerWithUpdatedUrls", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.set_importerWithUpdatedUrls
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(bool)>(&::UnityEngine::UIElements::VisualTreeAsset::set_importerWithUpdatedUrls)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb3c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_importerWithUpdatedUrls", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_importedWithWarnings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_importedWithWarnings)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb3d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_importedWithWarnings", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.set_importedWithWarnings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(bool)>(&::UnityEngine::UIElements::VisualTreeAsset::set_importedWithWarnings)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb3d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_importedWithWarnings", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.GetNextChildSerialNumber
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::GetNextChildSerialNumber)> {
+  constexpr static std::size_t size = 0x180;
+  constexpr static std::size_t addrs = 0xb7bb3e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetNextChildSerialNumber", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_usings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_usings)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb560;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_usings", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_templateDependencies
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_templateDependencies)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xb7bb568;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_templateDependencies", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_stylesheets
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_stylesheets)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xb7bb5dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_stylesheets", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_visualElementAssets
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_visualElementAssets)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb650;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_visualElementAssets", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_templateAssets
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<::UnityEngine::UIElements::TemplateAsset*>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_templateAssets)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb658;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_templateAssets", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_uxmlObjectEntries
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_uxmlObjectEntries)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb660;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_uxmlObjectEntries", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_uxmlObjectIds
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<int32_t>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_uxmlObjectIds)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bb668;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_uxmlObjectIds", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.RemoveElementAndDependencies
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::VisualElementAsset*)>(&::UnityEngine::UIElements::VisualTreeAsset::RemoveElementAndDependencies)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xb7bb670;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveElementAndDependencies", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.RegisterUxmlObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::UxmlObjectAsset*)>(&::UnityEngine::UIElements::VisualTreeAsset::RegisterUxmlObject)> {
+  constexpr static std::size_t size = 0x298;
+  constexpr static std::size_t addrs = 0xb7bbbec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RegisterUxmlObject", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlObjectAsset*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.AddUxmlObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::UxmlObjectAsset* (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::UxmlAsset*, ::StringW, ::StringW, ::UnityEngine::UIElements::UxmlNamespaceDefinition)>(&::UnityEngine::UIElements::VisualTreeAsset::AddUxmlObject)> {
+  constexpr static std::size_t size = 0x3e0;
+  constexpr static std::size_t addrs = 0xb7bbfdc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AddUxmlObject", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::UIElements::UxmlNamespaceDefinition>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.GetNextUxmlAssetId
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::UIElements::VisualTreeAsset::*)(int32_t)>(&::UnityEngine::UIElements::VisualTreeAsset::GetNextUxmlAssetId)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xb7bc3bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetNextUxmlAssetId", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.RemoveUxmlObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(int32_t, bool)>(&::UnityEngine::UIElements::VisualTreeAsset::RemoveUxmlObject)> {
+  constexpr static std::size_t size = 0x1e8;
+  constexpr static std::size_t addrs = 0xb7bc424;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveUxmlObject", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.RemoveUxmlObjectEntryDependencies
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(int32_t)>(&::UnityEngine::UIElements::VisualTreeAsset::RemoveUxmlObjectEntryDependencies)> {
+  constexpr static std::size_t size = 0x508;
+  constexpr static std::size_t addrs = 0xb7bb6e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveUxmlObjectEntryDependencies", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CollectUxmlObjectAssets
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::UxmlAsset*, ::StringW, ::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*)>(&::UnityEngine::UIElements::VisualTreeAsset::CollectUxmlObjectAssets)> {
+  constexpr static std::size_t size = 0x330;
+  constexpr static std::size_t addrs = 0xb7bc60c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CollectUxmlObjectAssets", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.SetUxmlObjectAssets
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::UxmlAsset*, ::StringW, ::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*)>(&::UnityEngine::UIElements::VisualTreeAsset::SetUxmlObjectAssets)> {
+  constexpr static std::size_t size = 0x330;
+  constexpr static std::size_t addrs = 0xb7bc93c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"SetUxmlObjectAssets", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.AssetEntryExists
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW, ::System::Type*)>(&::UnityEngine::UIElements::VisualTreeAsset::AssetEntryExists)> {
+  constexpr static std::size_t size = 0x1c0;
+  constexpr static std::size_t addrs = 0xb7bcc6c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AssetEntryExists", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.RegisterAssetEntry
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW, ::System::Type*, ::UnityEngine::Object*)>(&::UnityEngine::UIElements::VisualTreeAsset::RegisterAssetEntry)> {
+  constexpr static std::size_t size = 0xfc;
+  constexpr static std::size_t addrs = 0xb7bce2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RegisterAssetEntry", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::UnityEngine::Object*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.TransferAssetEntries
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::VisualTreeAsset*)>(&::UnityEngine::UIElements::VisualTreeAsset::TransferAssetEntries)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xb7bcf28;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"TransferAssetEntries", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualTreeAsset*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.GetAsset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Object> (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW, ::System::Type*)>(&::UnityEngine::UIElements::VisualTreeAsset::GetAsset)> {
+  constexpr static std::size_t size = 0x1c0;
+  constexpr static std::size_t addrs = 0xb7b7854;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetAsset", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.GetAssetType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Type* (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW)>(&::UnityEngine::UIElements::VisualTreeAsset::GetAssetType)> {
+  constexpr static std::size_t size = 0x170;
+  constexpr static std::size_t addrs = 0xb7b76e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetAssetType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.GetUxmlObjectEntry
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry (::UnityEngine::UIElements::VisualTreeAsset::*)(int32_t)>(&::UnityEngine::UIElements::VisualTreeAsset::GetUxmlObjectEntry)> {
+  constexpr static std::size_t size = 0x158;
+  constexpr static std::size_t addrs = 0xb7bbe84;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetUxmlObjectEntry", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.GetUxmlObjectFactory
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::IBaseUxmlObjectFactory* (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::UxmlObjectAsset*)>(&::UnityEngine::UIElements::VisualTreeAsset::GetUxmlObjectFactory)> {
+  constexpr static std::size_t size = 0x3c0;
+  constexpr static std::size_t addrs = 0xb7bcfbc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetUxmlObjectFactory", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlObjectAsset*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_slots
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_SlotDefinition>* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_slots)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bd37c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_slots", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_contentContainerId
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_contentContainerId)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bd384;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_contentContainerId", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.set_contentContainerId
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(int32_t)>(&::UnityEngine::UIElements::VisualTreeAsset::set_contentContainerId)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bd38c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_contentContainerId", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.Instantiate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::TemplateContainer* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::Instantiate)> {
+  constexpr static std::size_t size = 0x1fc;
+  constexpr static std::size_t addrs = 0xb7bd394;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"Instantiate", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.Instantiate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::TemplateContainer* (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW)>(&::UnityEngine::UIElements::VisualTreeAsset::Instantiate)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb7bd590;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"Instantiate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CloneTree
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::TemplateContainer* (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::CloneTree)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb7bd5cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CloneTree
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::TemplateContainer* (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW)>(&::UnityEngine::UIElements::VisualTreeAsset::CloneTree)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb7bd5d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CloneTree
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::VisualElement*)>(&::UnityEngine::UIElements::VisualTreeAsset::CloneTree)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xb7bd5d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElement*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CloneTree
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::VisualElement*, ::by_ref<int32_t>, ::by_ref<int32_t>)>(&::UnityEngine::UIElements::VisualTreeAsset::CloneTree)> {
+  constexpr static std::size_t size = 0x1d8;
+  constexpr static std::size_t addrs = 0xb7bd5ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElement*>(), ::i2c::type_of<::by_ref<int32_t>>(), ::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CloneTree
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::VisualElement*, ::UnityEngine::UIElements::CreationContext)>(&::UnityEngine::UIElements::VisualTreeAsset::CloneTree)> {
+  constexpr static std::size_t size = 0x7b4;
+  constexpr static std::size_t addrs = 0xb7b3a88;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElement*>(), ::i2c::type_of<::UnityEngine::UIElements::CreationContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CloneSetupRecursively
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::VisualElement* (::UnityEngine::UIElements::VisualTreeAsset::*)(::UnityEngine::UIElements::VisualElementAsset*, ::System::Collections::Generic::Dictionary_2<int32_t,::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>*>*, ::UnityEngine::UIElements::CreationContext)>(&::UnityEngine::UIElements::VisualTreeAsset::CloneSetupRecursively)> {
+  constexpr static std::size_t size = 0xb08;
+  constexpr static std::size_t addrs = 0xb7bd9e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneSetupRecursively", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<int32_t,::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>*>*>(), ::i2c::type_of<::UnityEngine::UIElements::CreationContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.CompareForOrder
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (*)(::UnityEngine::UIElements::VisualElementAsset*, ::UnityEngine::UIElements::VisualElementAsset*)>(&::UnityEngine::UIElements::VisualTreeAsset::CompareForOrder)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xb7bebe4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CompareForOrder", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.TryGetSlotInsertionPoint
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset::*)(int32_t, ::by_ref<::StringW>)>(&::UnityEngine::UIElements::VisualTreeAsset::TryGetSlotInsertionPoint)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xb7beb20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"TryGetSlotInsertionPoint", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::StringW>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.TryGetUsingEntry
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW, ::by_ref<::GlobalNamespace::VisualTreeAsset_UsingEntry>)>(&::UnityEngine::UIElements::VisualTreeAsset::TryGetUsingEntry)> {
+  constexpr static std::size_t size = 0x160;
+  constexpr static std::size_t addrs = 0xb7bec18;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"TryGetUsingEntry", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::GlobalNamespace::VisualTreeAsset_UsingEntry>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.RemoveUsingEntry
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(::GlobalNamespace::VisualTreeAsset_UsingEntry)>(&::UnityEngine::UIElements::VisualTreeAsset::RemoveUsingEntry)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xb7bed78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveUsingEntry", {}, {::i2c::type_of<::GlobalNamespace::VisualTreeAsset_UsingEntry>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.ResolveTemplate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::UIElements::VisualTreeAsset> (::UnityEngine::UIElements::VisualTreeAsset::*)(::StringW)>(&::UnityEngine::UIElements::VisualTreeAsset::ResolveTemplate)> {
+  constexpr static std::size_t size = 0x168;
+  constexpr static std::size_t addrs = 0xb7b3920;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"ResolveTemplate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::VisualElement* (*)(::UnityEngine::UIElements::VisualElementAsset*, ::UnityEngine::UIElements::CreationContext)>(&::UnityEngine::UIElements::VisualTreeAsset::Create)> {
+  constexpr static std::size_t size = 0x630;
+  constexpr static std::size_t addrs = 0xb7be4f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::CreationContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.AssignClassListFromAssetToElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::UIElements::VisualElementAsset*, ::UnityEngine::UIElements::VisualElement*)>(&::UnityEngine::UIElements::VisualTreeAsset::AssignClassListFromAssetToElement)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xb7bd7c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AssignClassListFromAssetToElement", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::VisualElement*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.AssignStyleSheetFromAssetToElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::UIElements::VisualElementAsset*, ::UnityEngine::UIElements::VisualElement*)>(&::UnityEngine::UIElements::VisualTreeAsset::AssignStyleSheetFromAssetToElement)> {
+  constexpr static std::size_t size = 0x1b8;
+  constexpr static std::size_t addrs = 0xb7bd830;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AssignStyleSheetFromAssetToElement", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::VisualElement*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.get_contentHash
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::get_contentHash)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bef60;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_contentHash", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset.set_contentHash
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)(int32_t)>(&::UnityEngine::UIElements::VisualTreeAsset::set_contentHash)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bef68;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_contentHash", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset::*)()>(&::UnityEngine::UIElements::VisualTreeAsset::_ctor)> {
+  constexpr static std::size_t size = 0x268;
+  constexpr static std::size_t addrs = 0xb7bef70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset._Create_g__CreateError_82_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::UIElements::VisualElement* (*)(::by_ref<::GlobalNamespace::VisualTreeAsset___c__DisplayClass82_0>)>(&::UnityEngine::UIElements::VisualTreeAsset::_Create_g__CreateError_82_0)> {
+  constexpr static std::size_t size = 0x174;
+  constexpr static std::size_t addrs = 0xb7bedec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"<Create>g__CreateError|82_0", {}, {::i2c::type_of<::by_ref<::GlobalNamespace::VisualTreeAsset___c__DisplayClass82_0>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr bool& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ImportedWithErrors()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ImportedWithErrors;
+}
+constexpr bool const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ImportedWithErrors() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ImportedWithErrors;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_ImportedWithErrors(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ImportedWithErrors = value;
+}
+constexpr bool& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_HasUpdatedUrls()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_HasUpdatedUrls;
+}
+constexpr bool const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_HasUpdatedUrls() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_HasUpdatedUrls;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_HasUpdatedUrls(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_HasUpdatedUrls = value;
+}
+constexpr bool& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ImportedWithWarnings()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ImportedWithWarnings;
+}
+constexpr bool const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ImportedWithWarnings() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ImportedWithWarnings;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_ImportedWithWarnings(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ImportedWithWarnings = value;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>*& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_Usings()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Usings;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>* const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_Usings() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Usings;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_Usings(::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Usings = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet>& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_inlineSheet()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___inlineSheet;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet> const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_inlineSheet() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___inlineSheet;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_inlineSheet(::UnityW<::UnityEngine::UIElements::StyleSheet>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___inlineSheet = value;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>*& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_VisualElementAssets()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_VisualElementAssets;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>* const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_VisualElementAssets() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_VisualElementAssets;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_VisualElementAssets(::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_VisualElementAssets = value;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::UIElements::TemplateAsset*>*& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_TemplateAssets()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TemplateAssets;
+}
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::UIElements::TemplateAsset*>* const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_TemplateAssets() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TemplateAssets;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_TemplateAssets(::System::Collections::Generic::List_1<::UnityEngine::UIElements::TemplateAsset*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_TemplateAssets = value;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry>*& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_UxmlObjectEntries()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_UxmlObjectEntries;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry>* const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_UxmlObjectEntries() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_UxmlObjectEntries;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_UxmlObjectEntries(::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_UxmlObjectEntries = value;
+}
+constexpr ::System::Collections::Generic::List_1<int32_t>*& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_UxmlObjectIds()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_UxmlObjectIds;
+}
+constexpr ::System::Collections::Generic::List_1<int32_t>* const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_UxmlObjectIds() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_UxmlObjectIds;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_UxmlObjectIds(::System::Collections::Generic::List_1<int32_t>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_UxmlObjectIds = value;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_AssetEntry>*& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_AssetEntries()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_AssetEntries;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_AssetEntry>* const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_AssetEntries() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_AssetEntries;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_AssetEntries(::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_AssetEntry>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_AssetEntries = value;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_SlotDefinition>*& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_Slots()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Slots;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_SlotDefinition>* const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_Slots() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Slots;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_Slots(::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_SlotDefinition>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Slots = value;
+}
+constexpr int32_t& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ContentContainerId()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ContentContainerId;
+}
+constexpr int32_t const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ContentContainerId() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ContentContainerId;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_ContentContainerId(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ContentContainerId = value;
+}
+constexpr int32_t& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ContentHash()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ContentHash;
+}
+constexpr int32_t const& UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_get_m_ContentHash() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ContentHash;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset::__cordl_internal_set_m_ContentHash(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ContentHash = value;
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::setStaticF_LinkedVEAInTemplatePropertyName(::StringW  value)  {
+::cordl_internals::setStaticField<::StringW, "LinkedVEAInTemplatePropertyName", ::UnityEngine::UIElements::VisualTreeAsset*>(std::forward<::StringW>(value));
+}
+inline ::StringW UnityEngine::UIElements::VisualTreeAsset::getStaticF_LinkedVEAInTemplatePropertyName()  {
+return ::cordl_internals::getStaticField<::StringW, "LinkedVEAInTemplatePropertyName", ::UnityEngine::UIElements::VisualTreeAsset*>();
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::setStaticF_NoRegisteredFactoryErrorMessage(::StringW  value)  {
+::cordl_internals::setStaticField<::StringW, "NoRegisteredFactoryErrorMessage", ::UnityEngine::UIElements::VisualTreeAsset*>(std::forward<::StringW>(value));
+}
+inline ::StringW UnityEngine::UIElements::VisualTreeAsset::getStaticF_NoRegisteredFactoryErrorMessage()  {
+return ::cordl_internals::getStaticField<::StringW, "NoRegisteredFactoryErrorMessage", ::UnityEngine::UIElements::VisualTreeAsset*>();
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::setStaticF_s_TemporarySlotInsertionPoints(::System::Collections::Generic::Dictionary_2<::StringW,::UnityEngine::UIElements::VisualElement*>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Dictionary_2<::StringW,::UnityEngine::UIElements::VisualElement*>*, "s_TemporarySlotInsertionPoints", ::UnityEngine::UIElements::VisualTreeAsset*>(std::forward<::System::Collections::Generic::Dictionary_2<::StringW,::UnityEngine::UIElements::VisualElement*>*>(value));
+}
+inline ::System::Collections::Generic::Dictionary_2<::StringW,::UnityEngine::UIElements::VisualElement*>* UnityEngine::UIElements::VisualTreeAsset::getStaticF_s_TemporarySlotInsertionPoints()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Dictionary_2<::StringW,::UnityEngine::UIElements::VisualElement*>*, "s_TemporarySlotInsertionPoints", ::UnityEngine::UIElements::VisualTreeAsset*>();
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::setStaticF_s_VeaIdsPath(::System::Collections::Generic::List_1<int32_t>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<int32_t>*, "s_VeaIdsPath", ::UnityEngine::UIElements::VisualTreeAsset*>(std::forward<::System::Collections::Generic::List_1<int32_t>*>(value));
+}
+inline ::System::Collections::Generic::List_1<int32_t>* UnityEngine::UIElements::VisualTreeAsset::getStaticF_s_VeaIdsPath()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<int32_t>*, "s_VeaIdsPath", ::UnityEngine::UIElements::VisualTreeAsset*>();
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset::get_importedWithErrors()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_importedWithErrors", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::set_importedWithErrors(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_importedWithErrors", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset::get_importerWithUpdatedUrls()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_importerWithUpdatedUrls", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::set_importerWithUpdatedUrls(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_importerWithUpdatedUrls", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset::get_importedWithWarnings()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_importedWithWarnings", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::set_importedWithWarnings(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_importedWithWarnings", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline int32_t UnityEngine::UIElements::VisualTreeAsset::GetNextChildSerialNumber()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetNextChildSerialNumber", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>* UnityEngine::UIElements::VisualTreeAsset::get_usings()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_usings", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>* UnityEngine::UIElements::VisualTreeAsset::get_templateDependencies()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_templateDependencies", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>* UnityEngine::UIElements::VisualTreeAsset::get_stylesheets()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_stylesheets", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>* UnityEngine::UIElements::VisualTreeAsset::get_visualElementAssets()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_visualElementAssets", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::UIElements::TemplateAsset*>* UnityEngine::UIElements::VisualTreeAsset::get_templateAssets()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_templateAssets", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::UnityEngine::UIElements::TemplateAsset*>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry>* UnityEngine::UIElements::VisualTreeAsset::get_uxmlObjectEntries()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_uxmlObjectEntries", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::List_1<int32_t>* UnityEngine::UIElements::VisualTreeAsset::get_uxmlObjectIds()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_uxmlObjectIds", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<int32_t>*>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::RemoveElementAndDependencies(::UnityEngine::UIElements::VisualElementAsset*  asset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveElementAndDependencies", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, asset);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::RegisterUxmlObject(::UnityEngine::UIElements::UxmlObjectAsset*  uxmlObjectAsset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RegisterUxmlObject", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlObjectAsset*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, uxmlObjectAsset);
+}
+inline ::UnityEngine::UIElements::UxmlObjectAsset* UnityEngine::UIElements::VisualTreeAsset::AddUxmlObject(::UnityEngine::UIElements::UxmlAsset*  parent, ::StringW  fieldUxmlName, ::StringW  fullTypeName, ::UnityEngine::UIElements::UxmlNamespaceDefinition  xmlNamespace)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AddUxmlObject", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::UnityEngine::UIElements::UxmlNamespaceDefinition>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::UxmlObjectAsset*>(this, ___internal_method, parent, fieldUxmlName, fullTypeName, xmlNamespace);
+}
+inline int32_t UnityEngine::UIElements::VisualTreeAsset::GetNextUxmlAssetId(int32_t  parentId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetNextUxmlAssetId", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, parentId);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::RemoveUxmlObject(int32_t  id, bool  onlyIfIsField)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveUxmlObject", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, id, onlyIfIsField);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::RemoveUxmlObjectEntryDependencies(int32_t  parentId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveUxmlObjectEntryDependencies", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, parentId);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::CollectUxmlObjectAssets(::UnityEngine::UIElements::UxmlAsset*  parent, ::StringW  fieldName, ::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*  foundEntries)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CollectUxmlObjectAssets", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, parent, fieldName, foundEntries);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::SetUxmlObjectAssets(::UnityEngine::UIElements::UxmlAsset*  parent, ::StringW  fieldName, ::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*  entries)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"SetUxmlObjectAssets", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlAsset*>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::UIElements::UxmlObjectAsset*>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, parent, fieldName, entries);
+}
+template<typename T>
+requires(::cordl_internals::default_constructor_constraint<T>)
+inline ::System::Collections::Generic::List_1<T>* UnityEngine::UIElements::VisualTreeAsset::GetUxmlObjects(::UnityEngine::UIElements::IUxmlAttributes*  asset, ::UnityEngine::UIElements::CreationContext  cc)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                    {"GetUxmlObjects", {::i2c::class_of<T>()}, {::i2c::type_of<::UnityEngine::UIElements::IUxmlAttributes*>(), ::i2c::type_of<::UnityEngine::UIElements::CreationContext>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<T>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<T>*>(this, ___internal_method, asset, cc);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset::AssetEntryExists(::StringW  path, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AssetEntryExists", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, path, type);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::RegisterAssetEntry(::StringW  path, ::System::Type*  type, ::UnityEngine::Object*  asset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RegisterAssetEntry", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::UnityEngine::Object*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, path, type, asset);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::TransferAssetEntries(::UnityEngine::UIElements::VisualTreeAsset*  otherVta)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"TransferAssetEntries", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualTreeAsset*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, otherVta);
+}
+template<typename T>
+requires(::cordl_internals::type_constraint<T, ::UnityEngine::Object*>)
+inline T UnityEngine::UIElements::VisualTreeAsset::GetAsset(::StringW  path)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                    {"GetAsset", {::i2c::class_of<T>()}, {::i2c::type_of<::StringW>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<T>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<T>(this, ___internal_method, path);
+}
+inline ::UnityW<::UnityEngine::Object> UnityEngine::UIElements::VisualTreeAsset::GetAsset(::StringW  path, ::System::Type*  type)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetAsset", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Type*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Object>>(this, ___internal_method, path, type);
+}
+inline ::System::Type* UnityEngine::UIElements::VisualTreeAsset::GetAssetType(::StringW  path)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetAssetType", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Type*>(this, ___internal_method, path);
+}
+inline ::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry UnityEngine::UIElements::VisualTreeAsset::GetUxmlObjectEntry(int32_t  id)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetUxmlObjectEntry", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::VisualTreeAsset_UxmlObjectEntry>(this, ___internal_method, id);
+}
+inline ::UnityEngine::UIElements::IBaseUxmlObjectFactory* UnityEngine::UIElements::VisualTreeAsset::GetUxmlObjectFactory(::UnityEngine::UIElements::UxmlObjectAsset*  uxmlObjectAsset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"GetUxmlObjectFactory", {}, {::i2c::type_of<::UnityEngine::UIElements::UxmlObjectAsset*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::IBaseUxmlObjectFactory*>(this, ___internal_method, uxmlObjectAsset);
+}
+inline ::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_SlotDefinition>* UnityEngine::UIElements::VisualTreeAsset::get_slots()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_slots", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::List_1<::GlobalNamespace::VisualTreeAsset_SlotDefinition>*>(this, ___internal_method);
+}
+inline int32_t UnityEngine::UIElements::VisualTreeAsset::get_contentContainerId()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_contentContainerId", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::set_contentContainerId(int32_t  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_contentContainerId", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::UIElements::TemplateContainer* UnityEngine::UIElements::VisualTreeAsset::Instantiate()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"Instantiate", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::TemplateContainer*>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::TemplateContainer* UnityEngine::UIElements::VisualTreeAsset::Instantiate(::StringW  bindingPath)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"Instantiate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::TemplateContainer*>(this, ___internal_method, bindingPath);
+}
+inline ::UnityEngine::UIElements::TemplateContainer* UnityEngine::UIElements::VisualTreeAsset::CloneTree()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::TemplateContainer*>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::TemplateContainer* UnityEngine::UIElements::VisualTreeAsset::CloneTree(::StringW  bindingPath)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::TemplateContainer*>(this, ___internal_method, bindingPath);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::CloneTree(::UnityEngine::UIElements::VisualElement*  target)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElement*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, target);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::CloneTree(::UnityEngine::UIElements::VisualElement*  target, ::by_ref<int32_t>  firstElementIndex, ::by_ref<int32_t>  elementAddedCount)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElement*>(), ::i2c::type_of<::by_ref<int32_t>>(), ::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, target, firstElementIndex, elementAddedCount);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::CloneTree(::UnityEngine::UIElements::VisualElement*  target, ::UnityEngine::UIElements::CreationContext  cc)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneTree", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElement*>(), ::i2c::type_of<::UnityEngine::UIElements::CreationContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, target, cc);
+}
+inline ::UnityEngine::UIElements::VisualElement* UnityEngine::UIElements::VisualTreeAsset::CloneSetupRecursively(::UnityEngine::UIElements::VisualElementAsset*  root, ::System::Collections::Generic::Dictionary_2<int32_t,::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>*>*  idToChildren, ::UnityEngine::UIElements::CreationContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CloneSetupRecursively", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<int32_t,::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElementAsset*>*>*>(), ::i2c::type_of<::UnityEngine::UIElements::CreationContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::VisualElement*>(this, ___internal_method, root, idToChildren, context);
+}
+inline int32_t UnityEngine::UIElements::VisualTreeAsset::CompareForOrder(::UnityEngine::UIElements::VisualElementAsset*  a, ::UnityEngine::UIElements::VisualElementAsset*  b)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"CompareForOrder", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(nullptr, ___internal_method, a, b);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset::TryGetSlotInsertionPoint(int32_t  insertionPointId, ::by_ref<::StringW>  slotName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"TryGetSlotInsertionPoint", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::by_ref<::StringW>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, insertionPointId, slotName);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset::TryGetUsingEntry(::StringW  templateName, ::by_ref<::GlobalNamespace::VisualTreeAsset_UsingEntry>  entry)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"TryGetUsingEntry", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::by_ref<::GlobalNamespace::VisualTreeAsset_UsingEntry>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, templateName, entry);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::RemoveUsingEntry(::GlobalNamespace::VisualTreeAsset_UsingEntry  entry)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"RemoveUsingEntry", {}, {::i2c::type_of<::GlobalNamespace::VisualTreeAsset_UsingEntry>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, entry);
+}
+inline ::UnityW<::UnityEngine::UIElements::VisualTreeAsset> UnityEngine::UIElements::VisualTreeAsset::ResolveTemplate(::StringW  templateName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"ResolveTemplate", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>(this, ___internal_method, templateName);
+}
+inline ::UnityEngine::UIElements::VisualElement* UnityEngine::UIElements::VisualTreeAsset::Create(::UnityEngine::UIElements::VisualElementAsset*  asset, ::UnityEngine::UIElements::CreationContext  ctx)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::CreationContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::VisualElement*>(nullptr, ___internal_method, asset, ctx);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::AssignClassListFromAssetToElement(::UnityEngine::UIElements::VisualElementAsset*  asset, ::UnityEngine::UIElements::VisualElement*  element)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AssignClassListFromAssetToElement", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::VisualElement*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, asset, element);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::AssignStyleSheetFromAssetToElement(::UnityEngine::UIElements::VisualElementAsset*  asset, ::UnityEngine::UIElements::VisualElement*  element)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"AssignStyleSheetFromAssetToElement", {}, {::i2c::type_of<::UnityEngine::UIElements::VisualElementAsset*>(), ::i2c::type_of<::UnityEngine::UIElements::VisualElement*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, asset, element);
+}
+inline int32_t UnityEngine::UIElements::VisualTreeAsset::get_contentHash()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"get_contentHash", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::set_contentHash(int32_t  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"set_contentHash", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::VisualElement* UnityEngine::UIElements::VisualTreeAsset::_Create_g__CreateError_82_0(::by_ref<::GlobalNamespace::VisualTreeAsset___c__DisplayClass82_0>  _cordl_fixed_empty_name_whitespace)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset*>(),
+                        {"<Create>g__CreateError|82_0", {}, {::i2c::type_of<::by_ref<::GlobalNamespace::VisualTreeAsset___c__DisplayClass82_0>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::UIElements::VisualElement*>(nullptr, ___internal_method, _cordl_fixed_empty_name_whitespace);
+}
+inline ::UnityEngine::UIElements::VisualTreeAsset* UnityEngine::UIElements::VisualTreeAsset::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::VisualTreeAsset*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::VisualTreeAsset::VisualTreeAsset()   {
+}
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)(int32_t)>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::_ctor)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xb7c0258;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.System_IDisposable_Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_IDisposable_Dispose)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xb7c028c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.MoveNext
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::MoveNext)> {
+  constexpr static std::size_t size = 0x55c;
+  constexpr static std::size_t addrs = 0xb7c02b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.__m__Finally1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__m__Finally1)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xb7c0814;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"<>m__Finally1", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.System_Collections_Generic_IEnumerator_UnityEngine_UIElements_VisualTreeAsset__get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::UIElements::VisualTreeAsset> (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_Generic_IEnumerator_UnityEngine_UIElements_VisualTreeAsset__get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7c0864;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.Generic.IEnumerator<UnityEngine.UIElements.VisualTreeAsset>.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.System_Collections_IEnumerator_Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_IEnumerator_Reset)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xb7c086c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.System_Collections_IEnumerator_get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_IEnumerator_get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7c08a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.System_Collections_Generic_IEnumerable_UnityEngine_UIElements_VisualTreeAsset__GetEnumerator
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>* (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_Generic_IEnumerable_UnityEngine_UIElements_VisualTreeAsset__GetEnumerator)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xb7c08ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.Generic.IEnumerable<UnityEngine.UIElements.VisualTreeAsset>.GetEnumerator", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27.System_Collections_IEnumerable_GetEnumerator
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::IEnumerator* (::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_IEnumerable_GetEnumerator)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb7c0950;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.IEnumerable.GetEnumerator", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___1__state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr int32_t const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___1__state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set___1__state(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____1__state = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset>& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___2__current()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset> const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___2__current() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set___2__current(::UnityW<::UnityEngine::UIElements::VisualTreeAsset>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____2__current = value;
+}
+constexpr int32_t& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___l__initialThreadId()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____l__initialThreadId;
+}
+constexpr int32_t const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___l__initialThreadId() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____l__initialThreadId;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set___l__initialThreadId(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____l__initialThreadId = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset>& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___4__this()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset> const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___4__this() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set___4__this(::UnityW<::UnityEngine::UIElements::VisualTreeAsset>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____4__this = value;
+}
+constexpr ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get__sent_5__1()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sent_5__1;
+}
+constexpr ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>* const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get__sent_5__1() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sent_5__1;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set__sent_5__1(::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____sent_5__1 = value;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::GlobalNamespace::VisualTreeAsset_UsingEntry>& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___s__2()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__2;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::GlobalNamespace::VisualTreeAsset_UsingEntry> const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get___s__2() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__2;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set___s__2(::GlobalNamespace::List_1_Enumerator<::GlobalNamespace::VisualTreeAsset_UsingEntry>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____s__2 = value;
+}
+constexpr ::GlobalNamespace::VisualTreeAsset_UsingEntry& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get__entry_5__3()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____entry_5__3;
+}
+constexpr ::GlobalNamespace::VisualTreeAsset_UsingEntry const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get__entry_5__3() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____entry_5__3;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set__entry_5__3(::GlobalNamespace::VisualTreeAsset_UsingEntry  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____entry_5__3 = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset>& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get__vta_5__4()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____vta_5__4;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset> const& UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_get__vta_5__4() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____vta_5__4;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__cordl_internal_set__vta_5__4(::UnityW<::UnityEngine::UIElements::VisualTreeAsset>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____vta_5__4 = value;
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::_ctor(int32_t  __1__state)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, __1__state);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_IDisposable_Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::__m__Finally1()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"<>m__Finally1", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::UIElements::VisualTreeAsset> UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_Generic_IEnumerator_UnityEngine_UIElements_VisualTreeAsset__get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.Generic.IEnumerator<UnityEngine.UIElements.VisualTreeAsset>.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_IEnumerator_Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Object* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_IEnumerator_get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_Generic_IEnumerable_UnityEngine_UIElements_VisualTreeAsset__GetEnumerator()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.Generic.IEnumerable<UnityEngine.UIElements.VisualTreeAsset>.GetEnumerator", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*>(this, ___internal_method);
+}
+inline ::System::Collections::IEnumerator* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::System_Collections_IEnumerable_GetEnumerator()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(),
+                        {"System.Collections.IEnumerable.GetEnumerator", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::IEnumerator*>(this, ___internal_method);
+}
+/// @brief [DebuggerHidden]
+inline ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::New_ctor(int32_t  __1__state)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27*>(__1__state));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::operator ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>"
+constexpr ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::i___System__Collections__Generic__IEnumerable_1___UnityW___UnityEngine__UIElements__VisualTreeAsset__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerable"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::operator ::System::Collections::IEnumerable*() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerable"
+constexpr ::System::Collections::IEnumerable* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::i___System__Collections__IEnumerable() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::operator ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>"
+constexpr ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::i___System__Collections__Generic__IEnumerator_1___UnityW___UnityEngine__UIElements__VisualTreeAsset__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::VisualTreeAsset>>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerator"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::operator ::System::Collections::IEnumerator*() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerator"
+constexpr ::System::Collections::IEnumerator* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::i___System__Collections__IEnumerator() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__27::VisualTreeAsset__get_templateDependencies_d__27()   {
+}
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)(int32_t)>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::_ctor)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xb7bf870;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.System_IDisposable_Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_IDisposable_Dispose)> {
+  constexpr static std::size_t size = 0xd8;
+  constexpr static std::size_t addrs = 0xb7bf8a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.MoveNext
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::MoveNext)> {
+  constexpr static std::size_t size = 0x6fc;
+  constexpr static std::size_t addrs = 0xb7bf97c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.__m__Finally1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__m__Finally1)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xb7c0118;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"<>m__Finally1", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.__m__Finally2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__m__Finally2)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xb7c0078;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"<>m__Finally2", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.__m__Finally3
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__m__Finally3)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xb7c00c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"<>m__Finally3", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.System_Collections_Generic_IEnumerator_UnityEngine_UIElements_StyleSheet__get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::UIElements::StyleSheet> (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_Generic_IEnumerator_UnityEngine_UIElements_StyleSheet__get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7c0168;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.Generic.IEnumerator<UnityEngine.UIElements.StyleSheet>.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.System_Collections_IEnumerator_Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_IEnumerator_Reset)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xb7c0170;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.System_Collections_IEnumerator_get_Current
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_IEnumerator_get_Current)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7c01a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.System_Collections_Generic_IEnumerable_UnityEngine_UIElements_StyleSheet__GetEnumerator
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>* (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_Generic_IEnumerable_UnityEngine_UIElements_StyleSheet__GetEnumerator)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xb7c01b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.Generic.IEnumerable<UnityEngine.UIElements.StyleSheet>.GetEnumerator", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31.System_Collections_IEnumerable_GetEnumerator
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::IEnumerator* (::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::*)()>(&::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_IEnumerable_GetEnumerator)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xb7c0254;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.IEnumerable.GetEnumerator", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___1__state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr int32_t const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___1__state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____1__state;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set___1__state(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____1__state = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet>& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___2__current()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet> const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___2__current() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____2__current;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set___2__current(::UnityW<::UnityEngine::UIElements::StyleSheet>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____2__current = value;
+}
+constexpr int32_t& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___l__initialThreadId()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____l__initialThreadId;
+}
+constexpr int32_t const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___l__initialThreadId() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____l__initialThreadId;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set___l__initialThreadId(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____l__initialThreadId = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset>& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___4__this()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::VisualTreeAsset> const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___4__this() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____4__this;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set___4__this(::UnityW<::UnityEngine::UIElements::VisualTreeAsset>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____4__this = value;
+}
+constexpr ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__sent_5__1()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sent_5__1;
+}
+constexpr ::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>* const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__sent_5__1() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sent_5__1;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set__sent_5__1(::System::Collections::Generic::HashSet_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____sent_5__1 = value;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::UnityEngine::UIElements::VisualElementAsset*>& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___s__2()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__2;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::UnityEngine::UIElements::VisualElementAsset*> const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___s__2() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__2;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set___s__2(::GlobalNamespace::List_1_Enumerator<::UnityEngine::UIElements::VisualElementAsset*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____s__2 = value;
+}
+constexpr ::UnityEngine::UIElements::VisualElementAsset*& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__vea_5__3()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____vea_5__3;
+}
+constexpr ::UnityEngine::UIElements::VisualElementAsset* const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__vea_5__3() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____vea_5__3;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set__vea_5__3(::UnityEngine::UIElements::VisualElementAsset*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____vea_5__3 = value;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::UnityW<::UnityEngine::UIElements::StyleSheet>>& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___s__4()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__4;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::UnityW<::UnityEngine::UIElements::StyleSheet>> const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___s__4() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__4;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set___s__4(::GlobalNamespace::List_1_Enumerator<::UnityW<::UnityEngine::UIElements::StyleSheet>>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____s__4 = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet>& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__stylesheet_5__5()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stylesheet_5__5;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet> const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__stylesheet_5__5() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stylesheet_5__5;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set__stylesheet_5__5(::UnityW<::UnityEngine::UIElements::StyleSheet>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____stylesheet_5__5 = value;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::StringW>& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___s__6()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__6;
+}
+constexpr ::GlobalNamespace::List_1_Enumerator<::StringW> const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get___s__6() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->_____s__6;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set___s__6(::GlobalNamespace::List_1_Enumerator<::StringW>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->_____s__6 = value;
+}
+constexpr ::StringW& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__stylesheetPath_5__7()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stylesheetPath_5__7;
+}
+constexpr ::StringW const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__stylesheetPath_5__7() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stylesheetPath_5__7;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set__stylesheetPath_5__7(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____stylesheetPath_5__7 = value;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet>& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__stylesheet_5__8()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stylesheet_5__8;
+}
+constexpr ::UnityW<::UnityEngine::UIElements::StyleSheet> const& UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_get__stylesheet_5__8() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____stylesheet_5__8;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__cordl_internal_set__stylesheet_5__8(::UnityW<::UnityEngine::UIElements::StyleSheet>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____stylesheet_5__8 = value;
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::_ctor(int32_t  __1__state)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {".ctor", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, __1__state);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_IDisposable_Dispose()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.IDisposable.Dispose", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::MoveNext()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"MoveNext", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__m__Finally1()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"<>m__Finally1", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__m__Finally2()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"<>m__Finally2", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::__m__Finally3()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"<>m__Finally3", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::UIElements::StyleSheet> UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_Generic_IEnumerator_UnityEngine_UIElements_StyleSheet__get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.Generic.IEnumerator<UnityEngine.UIElements.StyleSheet>.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::UIElements::StyleSheet>>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_IEnumerator_Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.IEnumerator.Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Object* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_IEnumerator_get_Current()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.IEnumerator.get_Current", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_Generic_IEnumerable_UnityEngine_UIElements_StyleSheet__GetEnumerator()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.Generic.IEnumerable<UnityEngine.UIElements.StyleSheet>.GetEnumerator", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*>(this, ___internal_method);
+}
+inline ::System::Collections::IEnumerator* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::System_Collections_IEnumerable_GetEnumerator()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(),
+                        {"System.Collections.IEnumerable.GetEnumerator", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::IEnumerator*>(this, ___internal_method);
+}
+/// @brief [DebuggerHidden]
+inline ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::New_ctor(int32_t  __1__state)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31*>(__1__state));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::operator ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>"
+constexpr ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::i___System__Collections__Generic__IEnumerable_1___UnityW___UnityEngine__UIElements__StyleSheet__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerable"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::operator ::System::Collections::IEnumerable*() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerable"
+constexpr ::System::Collections::IEnumerable* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::i___System__Collections__IEnumerable() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::operator ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>"
+constexpr ::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::i___System__Collections__Generic__IEnumerator_1___UnityW___UnityEngine__UIElements__StyleSheet__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerator_1<::UnityW<::UnityEngine::UIElements::StyleSheet>>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerator"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::operator ::System::Collections::IEnumerator*() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerator"
+constexpr ::System::Collections::IEnumerator* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::i___System__Collections__IEnumerator() noexcept {
+return static_cast<::System::Collections::IEnumerator*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__31::VisualTreeAsset__get_stylesheets_d__31()   {
+}
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::*)()>(&::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bf848;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0._CloneSetupRecursively_b__0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::*)(::GlobalNamespace::VisualTreeAsset_SlotUsageEntry)>(&::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::_CloneSetupRecursively_b__0)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xb7bf850;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0*>(),
+                        {"<CloneSetupRecursively>b__0", {}, {::i2c::type_of<::GlobalNamespace::VisualTreeAsset_SlotUsageEntry>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::UIElements::VisualElementAsset*& UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::__cordl_internal_get_childVea()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___childVea;
+}
+constexpr ::UnityEngine::UIElements::VisualElementAsset* const& UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::__cordl_internal_get_childVea() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___childVea;
+}
+constexpr void UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::__cordl_internal_set_childVea(::UnityEngine::UIElements::VisualElementAsset*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___childVea = value;
+}
+inline void UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::_CloneSetupRecursively_b__0(::GlobalNamespace::VisualTreeAsset_SlotUsageEntry  u)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0*>(),
+                        {"<CloneSetupRecursively>b__0", {}, {::i2c::type_of<::GlobalNamespace::VisualTreeAsset_SlotUsageEntry>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, u);
+}
+inline ::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0* UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass76_0::VisualTreeAsset___c__DisplayClass76_0()   {
+}
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer.Compare
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::*)(::GlobalNamespace::VisualTreeAsset_UsingEntry, ::GlobalNamespace::VisualTreeAsset_UsingEntry)>(&::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::Compare)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb7bf3e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer*>(),
+                        {"Compare", {}, {::i2c::type_of<::GlobalNamespace::VisualTreeAsset_UsingEntry>(), ::i2c::type_of<::GlobalNamespace::VisualTreeAsset_UsingEntry>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::*)()>(&::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7bf3dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline int32_t UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::Compare(::GlobalNamespace::VisualTreeAsset_UsingEntry  x, ::GlobalNamespace::VisualTreeAsset_UsingEntry  y)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer*>(),
+                        {"Compare", {}, {::i2c::type_of<::GlobalNamespace::VisualTreeAsset_UsingEntry>(), ::i2c::type_of<::GlobalNamespace::VisualTreeAsset_UsingEntry>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, x, y);
+}
+inline void UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer* UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer*>());
+}
+/// @brief Convert operator to "::System::Collections::Generic::IComparer_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>"
+constexpr  UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::operator ::System::Collections::Generic::IComparer_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>*() noexcept {
+return static_cast<::System::Collections::Generic::IComparer_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IComparer_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>"
+constexpr ::System::Collections::Generic::IComparer_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>* UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::i___System__Collections__Generic__IComparer_1___GlobalNamespace__VisualTreeAsset_UsingEntry_() noexcept {
+return static_cast<::System::Collections::Generic::IComparer_1<::GlobalNamespace::VisualTreeAsset_UsingEntry>*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer::VisualTreeAsset_UsingEntryComparer()   {
+}

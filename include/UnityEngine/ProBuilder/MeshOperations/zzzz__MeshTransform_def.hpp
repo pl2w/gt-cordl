@@ -1,0 +1,72 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/MeshOperations/MeshTransform.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(MeshTransform)
+namespace UnityEngine::ProBuilder {
+struct PivotLocation;
+}
+namespace UnityEngine::ProBuilder {
+class ProBuilderMesh;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+// Forward declare root types
+namespace UnityEngine::ProBuilder::MeshOperations {
+class MeshTransform;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ProBuilder::MeshOperations::MeshTransform*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ProBuilder::MeshOperations::MeshTransform*, "UnityEngine.ProBuilder.MeshOperations", "MeshTransform");
+// [Extension]
+// Dependencies System.Object
+namespace UnityEngine::ProBuilder::MeshOperations {
+// Is value type: false
+// CS Name: UnityEngine.ProBuilder.MeshOperations.MeshTransform
+class CORDL_TYPE MeshTransform : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method CenterPivot, addr 0xb0fea18, size 0x2d0, virtual false, abstract: false, final false
+static inline void CenterPivot(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::ArrayW<int32_t>  indexes) ;
+
+/// [Extension]
+/// @brief Method FreezeScaleTransform, addr 0xb103308, size 0x160, virtual false, abstract: false, final false
+static inline void FreezeScaleTransform(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh) ;
+
+/// [Extension]
+/// @brief Method SetPivot, addr 0xb1030d0, size 0xa4, virtual false, abstract: false, final false
+static inline void SetPivot(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::ProBuilder::PivotLocation  pivotLocation) ;
+
+/// [Extension]
+/// @brief Method SetPivot, addr 0xb103174, size 0x194, virtual false, abstract: false, final false
+static inline void SetPivot(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Vector3  worldPosition) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MeshTransform() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MeshTransform", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MeshTransform(MeshTransform && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MeshTransform", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MeshTransform(MeshTransform const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24359};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ProBuilder::MeshOperations::MeshTransform) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::ProBuilder::MeshOperations

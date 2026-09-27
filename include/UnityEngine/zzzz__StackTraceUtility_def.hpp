@@ -1,0 +1,73 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/StackTraceUtility.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(StackTraceUtility)
+namespace System::Diagnostics {
+class StackTrace;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace UnityEngine {
+class StackTraceUtility;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::StackTraceUtility*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::StackTraceUtility*, "UnityEngine", "StackTraceUtility");
+// Dependencies System.Object
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.StackTraceUtility
+class CORDL_TYPE StackTraceUtility : public ::System::Object {
+public:
+// Declarations
+/// @brief Field projectFolder, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_projectFolder, put=setStaticF_projectFolder)) ::StringW  projectFolder;
+
+/// @brief Method ExtractFormattedStackTrace, addr 0xb5e4fb0, size 0x750, virtual false, abstract: false, final false
+static inline ::StringW ExtractFormattedStackTrace(::System::Diagnostics::StackTrace*  stackFrames) ;
+
+/// [RequiredByNativeCode]
+/// @brief Method ExtractStackTrace, addr 0xb5e4e54, size 0x15c, virtual false, abstract: false, final false
+static inline ::StringW ExtractStackTrace() ;
+
+/// [RequiredByNativeCode]
+/// @brief Method ExtractStringFromExceptionInternal, addr 0xb5e5700, size 0x378, virtual false, abstract: false, final false
+static inline void ExtractStringFromExceptionInternal(::System::Object*  exceptiono, ::by_ref<::StringW>  message, ::by_ref<::StringW>  stackTrace) ;
+
+/// [RequiredByNativeCode]
+/// @brief Method SetProjectFolder, addr 0xb5e4d50, size 0x104, virtual false, abstract: false, final false
+static inline void SetProjectFolder(::StringW  folder) ;
+
+static inline ::StringW getStaticF_projectFolder() ;
+
+static inline void setStaticF_projectFolder(::StringW  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr StackTraceUtility() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "StackTraceUtility", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+StackTraceUtility(StackTraceUtility && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "StackTraceUtility", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+StackTraceUtility(StackTraceUtility const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15098};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::StackTraceUtility) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

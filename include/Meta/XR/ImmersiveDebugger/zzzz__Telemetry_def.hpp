@@ -1,0 +1,372 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/Telemetry.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "GlobalNamespace/zzzz__OVRTelemetryMarker_def.hpp"
+#include "Meta/XR/ImmersiveDebugger/zzzz__Telemetry_Method_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(Telemetry)
+namespace GlobalNamespace {
+struct Telemetry_Method;
+}
+namespace GlobalNamespace {
+struct Telemetry_State;
+}
+namespace Meta::XR::ImmersiveDebugger::Manager {
+class DebugManager;
+}
+namespace Meta::XR::ImmersiveDebugger::Manager {
+class IDebugManager;
+}
+namespace Meta::XR::ImmersiveDebugger::UserInterface::Generic {
+class Button;
+}
+namespace Meta::XR::ImmersiveDebugger::UserInterface::Generic {
+class Controller;
+}
+namespace Meta::XR::ImmersiveDebugger::UserInterface::Generic {
+class Panel;
+}
+namespace Meta::XR::ImmersiveDebugger::Utils {
+class InstanceCache;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class Telemetry_AnnotationType;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class Telemetry_MarkerId;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class Telemetry_TelemetryTracker;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger {
+class Telemetry;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class Telemetry_AnnotationType;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class Telemetry_MarkerId;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class Telemetry_TelemetryTracker;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Telemetry*);
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Telemetry_AnnotationType*);
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Telemetry_MarkerId*);
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Telemetry*, "Meta.XR.ImmersiveDebugger", "Telemetry");
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Telemetry_AnnotationType*, "Meta.XR.ImmersiveDebugger", "Telemetry/AnnotationType");
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Telemetry_MarkerId*, "Meta.XR.ImmersiveDebugger", "Telemetry/MarkerId");
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker*, "Meta.XR.ImmersiveDebugger", "Telemetry/TelemetryTracker");
+// [Extension]
+// Dependencies System.Object
+namespace Meta::XR::ImmersiveDebugger {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Telemetry
+class CORDL_TYPE Telemetry : public ::System::Object {
+public:
+// Declarations
+using Method = ::GlobalNamespace::Telemetry_Method;
+
+using State = ::GlobalNamespace::Telemetry_State;
+
+using AnnotationType = ::Meta::XR::ImmersiveDebugger::Telemetry_AnnotationType;
+
+using MarkerId = ::Meta::XR::ImmersiveDebugger::Telemetry_MarkerId;
+
+using TelemetryTracker = ::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker;
+
+/// @brief Field NonCustomAssemblies, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_NonCustomAssemblies, put=setStaticF_NonCustomAssemblies)) ::System::Collections::Generic::List_1<::StringW>*  NonCustomAssemblies;
+
+/// @brief Method FetchPanel, addr 0x9ed23f0, size 0xe4, virtual false, abstract: false, final false
+static inline ::UnityW<::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Panel> FetchPanel(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Controller*  controller) ;
+
+/// [Extension]
+/// @brief Method GetTypeHash, addr 0x9ed1d84, size 0x6c, virtual false, abstract: false, final false
+static inline ::StringW GetTypeHash(::System::Type*  type) ;
+
+/// [Extension]
+/// @brief Method IsTypeCustom, addr 0x9ed1df0, size 0x1b8, virtual false, abstract: false, final false
+static inline bool IsTypeCustom(::System::Type*  type) ;
+
+/// @brief Method OnButtonClicked, addr 0x9ed2158, size 0x298, virtual false, abstract: false, final false
+static inline void OnButtonClicked(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Button*  button) ;
+
+/// @brief Method OnPanelActiveStateChanged, addr 0x9ed1fa8, size 0x1b0, virtual false, abstract: false, final false
+static inline void OnPanelActiveStateChanged(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Panel*  panel) ;
+
+static inline ::System::Collections::Generic::List_1<::StringW>* getStaticF_NonCustomAssemblies() ;
+
+static inline void setStaticF_NonCustomAssemblies(::System::Collections::Generic::List_1<::StringW>*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Telemetry() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Telemetry(Telemetry && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Telemetry(Telemetry const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27405};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Telemetry) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger
+// Dependencies Meta.XR.ImmersiveDebugger.Telemetry::Method, OVRTelemetryMarker, System.Object
+namespace Meta::XR::ImmersiveDebugger {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Telemetry/TelemetryTracker
+class CORDL_TYPE Telemetry_TelemetryTracker : public ::System::Object {
+public:
+// Declarations
+/// @brief Field _cache, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get__cache, put=__cordl_internal_set__cache)) ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*  _cache;
+
+/// @brief Field _managers, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__managers, put=__cordl_internal_set__managers)) ::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>*  _managers;
+
+/// @brief Field _method, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get__method, put=__cordl_internal_set__method)) ::GlobalNamespace::Telemetry_Method  _method;
+
+/// @brief Field _runTelemetryMarker, offset 0x28, size 0x18 
+ __declspec(property(get=__cordl_internal_get__runTelemetryMarker, put=__cordl_internal_set__runTelemetryMarker)) ::GlobalNamespace::OVRTelemetryMarker  _runTelemetryMarker;
+
+/// @brief Method Init, addr 0x9ed2658, size 0x120, virtual false, abstract: false, final false
+static inline ::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker* Init(::GlobalNamespace::Telemetry_Method  method, ::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>*  managers, ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*  cache, ::Meta::XR::ImmersiveDebugger::Manager::DebugManager*  debugManager) ;
+
+static inline ::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker* New_ctor(::GlobalNamespace::Telemetry_Method  method, ::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>*  managers, ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*  cache) ;
+
+/// @brief Method OnDisable, addr 0x9ed326c, size 0x8, virtual false, abstract: false, final false
+inline void OnDisable() ;
+
+/// @brief Method OnFocusLost, addr 0x9ed3264, size 0x8, virtual false, abstract: false, final false
+inline void OnFocusLost() ;
+
+/// @brief Method OnStart, addr 0x9ed2968, size 0x34, virtual false, abstract: false, final false
+inline void OnStart() ;
+
+/// @brief Method SendComponentTracked, addr 0x9ed29c0, size 0x8a4, virtual false, abstract: false, final false
+inline void SendComponentTracked(::GlobalNamespace::Telemetry_State  state) ;
+
+/// @brief Method SendStart, addr 0x9ed299c, size 0x24, virtual false, abstract: false, final false
+inline void SendStart() ;
+
+constexpr ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache* const& __cordl_internal_get__cache() const;
+
+constexpr ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*& __cordl_internal_get__cache() ;
+
+constexpr ::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>* const& __cordl_internal_get__managers() const;
+
+constexpr ::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>*& __cordl_internal_get__managers() ;
+
+constexpr ::GlobalNamespace::Telemetry_Method const& __cordl_internal_get__method() const;
+
+constexpr ::GlobalNamespace::Telemetry_Method& __cordl_internal_get__method() ;
+
+constexpr ::GlobalNamespace::OVRTelemetryMarker const& __cordl_internal_get__runTelemetryMarker() const;
+
+constexpr ::GlobalNamespace::OVRTelemetryMarker& __cordl_internal_get__runTelemetryMarker() ;
+
+constexpr void __cordl_internal_set__cache(::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*  value) ;
+
+constexpr void __cordl_internal_set__managers(::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>*  value) ;
+
+constexpr void __cordl_internal_set__method(::GlobalNamespace::Telemetry_Method  value) ;
+
+constexpr void __cordl_internal_set__runTelemetryMarker(::GlobalNamespace::OVRTelemetryMarker  value) ;
+
+/// @brief Method .ctor, addr 0x9ed2778, size 0x1f0, virtual false, abstract: false, final false
+inline void _ctor(::GlobalNamespace::Telemetry_Method  method, ::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>*  managers, ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*  cache) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Telemetry_TelemetryTracker() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry_TelemetryTracker", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Telemetry_TelemetryTracker(Telemetry_TelemetryTracker && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry_TelemetryTracker", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Telemetry_TelemetryTracker(Telemetry_TelemetryTracker const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27404};
+
+/// @brief Field _method, offset: 0x10, size: 0x4, def value: None
+ ::GlobalNamespace::Telemetry_Method  ____method;
+
+/// @brief Field _cache, offset: 0x18, size: 0x8, def value: None
+ ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*  ____cache;
+
+/// @brief Field _managers, offset: 0x20, size: 0x8, def value: None
+ ::System::Collections::Generic::IEnumerable_1<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>*  ____managers;
+
+/// @brief Field _runTelemetryMarker, offset: 0x28, size: 0x18, def value: None
+ ::GlobalNamespace::OVRTelemetryMarker  ____runTelemetryMarker;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker, ____method) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker, ____cache) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker, ____managers) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker, ____runTelemetryMarker) == 0x28, "Offset mismatch!");
+
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Telemetry_TelemetryTracker) == 0x40, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger
+// Dependencies System.Object
+namespace Meta::XR::ImmersiveDebugger {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Telemetry/AnnotationType
+class CORDL_TYPE Telemetry_AnnotationType : public ::System::Object {
+public:
+// Declarations
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Telemetry_AnnotationType() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry_AnnotationType", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Telemetry_AnnotationType(Telemetry_AnnotationType && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry_AnnotationType", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Telemetry_AnnotationType(Telemetry_AnnotationType const& ) = delete;
+
+/// @brief Field Action offset 0xffffffff size 0x8
+static constexpr ::ConstString  Action{u"action"};
+
+/// @brief Field ActionType offset 0xffffffff size 0x8
+static constexpr ::ConstString  ActionType{u"action_type"};
+
+/// @brief Field Actions offset 0xffffffff size 0x8
+static constexpr ::ConstString  Actions{u"Actions"};
+
+/// @brief Field Gizmos offset 0xffffffff size 0x8
+static constexpr ::ConstString  Gizmos{u"Gizmos"};
+
+/// @brief Field Instances offset 0xffffffff size 0x8
+static constexpr ::ConstString  Instances{u"Instances"};
+
+/// @brief Field IsCustom offset 0xffffffff size 0x8
+static constexpr ::ConstString  IsCustom{u"IsCustom"};
+
+/// @brief Field Method offset 0xffffffff size 0x8
+static constexpr ::ConstString  Method{u"Method"};
+
+/// @brief Field Origin offset 0xffffffff size 0x8
+static constexpr ::ConstString  Origin{u"origin"};
+
+/// @brief Field OriginType offset 0xffffffff size 0x8
+static constexpr ::ConstString  OriginType{u"origin_type"};
+
+/// @brief Field Platform offset 0xffffffff size 0x8
+static constexpr ::ConstString  Platform{u"platform"};
+
+/// @brief Field State offset 0xffffffff size 0x8
+static constexpr ::ConstString  State{u"State"};
+
+/// @brief Field Tweaks offset 0xffffffff size 0x8
+static constexpr ::ConstString  Tweaks{u"Tweaks"};
+
+/// @brief Field Type offset 0xffffffff size 0x8
+static constexpr ::ConstString  Type{u"Type"};
+
+/// @brief Field Watches offset 0xffffffff size 0x8
+static constexpr ::ConstString  Watches{u"Watches"};
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27403};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Telemetry_AnnotationType) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger
+// [OVRTelemetry::Markers]
+// Dependencies System.Object
+namespace Meta::XR::ImmersiveDebugger {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Telemetry/MarkerId
+class CORDL_TYPE Telemetry_MarkerId : public ::System::Object {
+public:
+// Declarations
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Telemetry_MarkerId() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry_MarkerId", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Telemetry_MarkerId(Telemetry_MarkerId && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Telemetry_MarkerId", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Telemetry_MarkerId(Telemetry_MarkerId const& ) = delete;
+
+/// @brief Field ComponentTracked offset 0xffffffff size 0x4
+static constexpr int32_t  ComponentTracked{static_cast<int32_t>(0x9b81762)};
+
+/// @brief Field FrameUpdate offset 0xffffffff size 0x4
+static constexpr int32_t  FrameUpdate{static_cast<int32_t>(0x9b80c0f)};
+
+/// @brief Field PanelClose offset 0xffffffff size 0x4
+static constexpr int32_t  PanelClose{static_cast<int32_t>(0x9b818cf)};
+
+/// @brief Field PanelInteraction offset 0xffffffff size 0x4
+static constexpr int32_t  PanelInteraction{static_cast<int32_t>(0x9b8146a)};
+
+/// @brief Field PanelOpen offset 0xffffffff size 0x4
+static constexpr int32_t  PanelOpen{static_cast<int32_t>(0x9b80e5b)};
+
+/// @brief Field Run offset 0xffffffff size 0x4
+static constexpr int32_t  Run{static_cast<int32_t>(0x9b81f98)};
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27400};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Telemetry_MarkerId) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger

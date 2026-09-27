@@ -1,0 +1,138 @@
+#pragma once
+// IWYU pragma private; include "System/GC.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(GC)
+namespace System::Runtime::CompilerServices {
+struct Ephemeron;
+}
+namespace System {
+struct GCCollectionMode;
+}
+namespace System {
+class Object;
+}
+namespace System {
+struct UIntPtr;
+}
+// Forward declare root types
+namespace System {
+class GC;
+}
+// Write type traits
+MARK_REF_T(::System::GC*);
+DEFINE_IL2CPP_CLASS(::System::GC*, "System", "GC");
+// Dependencies System.Object
+namespace System {
+// Is value type: false
+// CS Name: System.GC
+class CORDL_TYPE GC : public ::System::Object {
+public:
+// Declarations
+/// @brief Field EPHEMERON_TOMBSTONE, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_EPHEMERON_TOMBSTONE, put=setStaticF_EPHEMERON_TOMBSTONE)) ::System::Object*  EPHEMERON_TOMBSTONE;
+
+/// @brief Method AddMemoryPressure, addr 0xa318938, size 0x110, virtual false, abstract: false, final false
+static inline void AddMemoryPressure(int64_t  bytesAllocated) ;
+
+/// @brief Method Collect, addr 0xa318bec, size 0x50, virtual false, abstract: false, final false
+static inline void Collect() ;
+
+/// @brief Method Collect, addr 0xa318b2c, size 0x58, virtual false, abstract: false, final false
+static inline void Collect(int32_t  generation) ;
+
+/// @brief Method Collect, addr 0xa318b84, size 0x68, virtual false, abstract: false, final false
+static inline void Collect(int32_t  generation, ::System::GCCollectionMode  mode) ;
+
+/// @brief Method Collect, addr 0xa318c88, size 0x6c, virtual false, abstract: false, final false
+static inline void Collect(int32_t  generation, ::System::GCCollectionMode  mode, bool  blocking) ;
+
+/// @brief Method Collect, addr 0xa318cf4, size 0x100, virtual false, abstract: false, final false
+static inline void Collect(int32_t  generation, ::System::GCCollectionMode  mode, bool  blocking, bool  compacting) ;
+
+/// [ReliabilityContract((System.Runtime.ConstrainedExecution.Consistency)3, (System.Runtime.ConstrainedExecution.Cer)2)]
+/// @brief Method CollectionCount, addr 0xa318df4, size 0xbc, virtual false, abstract: false, final false
+static inline int32_t CollectionCount(int32_t  generation) ;
+
+/// @brief Method GetCollectionCount, addr 0xa318904, size 0x4, virtual false, abstract: false, final false
+static inline int32_t GetCollectionCount(int32_t  generation) ;
+
+/// @brief Method GetMaxGeneration, addr 0xa318908, size 0x4, virtual false, abstract: false, final false
+static inline int32_t GetMaxGeneration() ;
+
+/// @brief Method GetMemoryInfo, addr 0xa31891c, size 0x1c, virtual false, abstract: false, final false
+static inline void GetMemoryInfo(::by_ref<uint32_t>  highMemLoadThreshold, ::by_ref<uint64_t>  totalPhysicalMem, ::by_ref<uint32_t>  lastRecordedMemLoad, ::by_ref<::System::UIntPtr>  lastRecordedHeapSize, ::by_ref<::System::UIntPtr>  lastRecordedFragmentation) ;
+
+/// @brief Method GetTotalMemory, addr 0xa319000, size 0x4, virtual false, abstract: false, final false
+static inline int64_t GetTotalMemory(bool  forceFullCollection) ;
+
+/// @brief Method InternalCollect, addr 0xa31890c, size 0x4, virtual false, abstract: false, final false
+static inline void InternalCollect(int32_t  generation) ;
+
+/// [ReliabilityContract((System.Runtime.ConstrainedExecution.Consistency)3, (System.Runtime.ConstrainedExecution.Cer)2)]
+/// @brief Method KeepAlive, addr 0xa318eb0, size 0x4, virtual false, abstract: false, final false
+static inline void KeepAlive(::System::Object*  obj) ;
+
+/// @brief Method ReRegisterForFinalize, addr 0xa318f60, size 0xa0, virtual false, abstract: false, final false
+static inline void ReRegisterForFinalize(::System::Object*  obj) ;
+
+/// @brief Method RecordPressure, addr 0xa318910, size 0x4, virtual false, abstract: false, final false
+static inline void RecordPressure(int64_t  bytesAllocated) ;
+
+/// @brief Method RemoveMemoryPressure, addr 0xa318a48, size 0xe4, virtual false, abstract: false, final false
+static inline void RemoveMemoryPressure(int64_t  bytesAllocated) ;
+
+/// [ReliabilityContract((System.Runtime.ConstrainedExecution.Consistency)3, (System.Runtime.ConstrainedExecution.Cer)2)]
+/// @brief Method SuppressFinalize, addr 0xa318ebc, size 0xa0, virtual false, abstract: false, final false
+static inline void SuppressFinalize(::System::Object*  obj) ;
+
+/// @brief Method WaitForPendingFinalizers, addr 0xa318eb4, size 0x4, virtual false, abstract: false, final false
+static inline void WaitForPendingFinalizers() ;
+
+/// @brief Method _ReRegisterForFinalize, addr 0xa318f5c, size 0x4, virtual false, abstract: false, final false
+static inline void _ReRegisterForFinalize(::System::Object*  o) ;
+
+/// [ReliabilityContract((System.Runtime.ConstrainedExecution.Consistency)3, (System.Runtime.ConstrainedExecution.Cer)2)]
+/// @brief Method _SuppressFinalize, addr 0xa318eb8, size 0x4, virtual false, abstract: false, final false
+static inline void _SuppressFinalize(::System::Object*  o) ;
+
+static inline ::System::Object* getStaticF_EPHEMERON_TOMBSTONE() ;
+
+/// @brief Method get_MaxGeneration, addr 0xa318c3c, size 0x4c, virtual false, abstract: false, final false
+static inline int32_t get_MaxGeneration() ;
+
+/// @brief Method get_ephemeron_tombstone, addr 0xa318918, size 0x4, virtual false, abstract: false, final false
+static inline ::System::Object* get_ephemeron_tombstone() ;
+
+/// @brief Method register_ephemeron_array, addr 0xa318914, size 0x4, virtual false, abstract: false, final false
+static inline void register_ephemeron_array(::ArrayW<::System::Runtime::CompilerServices::Ephemeron>  array) ;
+
+static inline void setStaticF_EPHEMERON_TOMBSTONE(::System::Object*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr GC() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "GC", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+GC(GC && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "GC", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+GC(GC const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{5686};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::GC) == 0x10, "Size mismatch!");
+
+} // namespace end def System

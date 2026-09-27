@@ -1,0 +1,60 @@
+#pragma once
+// IWYU pragma private; include "System/Net/InternalException.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__SystemException_def.hpp"
+CORDL_MODULE_EXPORT(InternalException)
+namespace System::Runtime::Serialization {
+class SerializationInfo;
+}
+namespace System::Runtime::Serialization {
+struct StreamingContext;
+}
+// Forward declare root types
+namespace System::Net {
+class InternalException;
+}
+// Write type traits
+MARK_REF_T(::System::Net::InternalException*);
+DEFINE_IL2CPP_CLASS(::System::Net::InternalException*, "System.Net", "InternalException");
+// Dependencies System.SystemException
+namespace System::Net {
+// Is value type: false
+// CS Name: System.Net.InternalException
+class CORDL_TYPE InternalException : public ::System::SystemException {
+public:
+// Declarations
+static inline ::System::Net::InternalException* New_ctor() ;
+
+static inline ::System::Net::InternalException* New_ctor(::System::Runtime::Serialization::SerializationInfo*  serializationInfo, ::System::Runtime::Serialization::StreamingContext  streamingContext) ;
+
+/// @brief Method .ctor, addr 0xac59768, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xac59770, size 0x8, virtual false, abstract: false, final false
+inline void _ctor(::System::Runtime::Serialization::SerializationInfo*  serializationInfo, ::System::Runtime::Serialization::StreamingContext  streamingContext) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr InternalException() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "InternalException", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+InternalException(InternalException && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "InternalException", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+InternalException(InternalException const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10509};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Net::InternalException) == 0x90, "Size mismatch!");
+
+} // namespace end def System::Net

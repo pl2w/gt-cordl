@@ -1,0 +1,50 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OnEnterPlaySystem.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(OnEnterPlaySystem)
+namespace System {
+class Action;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class OnEnterPlaySystem;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::OnEnterPlaySystem*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OnEnterPlaySystem*, "", "OnEnterPlaySystem");
+// Dependencies System.Object
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OnEnterPlaySystem
+class CORDL_TYPE OnEnterPlaySystem : public ::System::Object {
+public:
+// Declarations
+/// @brief Method AddCallback, addr 0x5b0e29c, size 0x4, virtual false, abstract: false, final false
+static inline void AddCallback(::System::Action*  callback) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OnEnterPlaySystem() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OnEnterPlaySystem", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OnEnterPlaySystem(OnEnterPlaySystem && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OnEnterPlaySystem", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OnEnterPlaySystem(OnEnterPlaySystem const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{3536};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::OnEnterPlaySystem) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

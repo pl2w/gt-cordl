@@ -1,0 +1,136 @@
+#pragma once
+// IWYU pragma private; include "System/Globalization/StringInfo.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(StringInfo)
+namespace System::Globalization {
+struct UnicodeCategory;
+}
+namespace System::Runtime::Serialization {
+struct StreamingContext;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace System::Globalization {
+class StringInfo;
+}
+// Write type traits
+MARK_REF_T(::System::Globalization::StringInfo*);
+DEFINE_IL2CPP_CLASS(::System::Globalization::StringInfo*, "System.Globalization", "StringInfo");
+// [ComVisible(true)]
+// Dependencies System.Object
+namespace System::Globalization {
+// Is value type: false
+// CS Name: System.Globalization.StringInfo
+class CORDL_TYPE StringInfo : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Indexes)) ::ArrayW<int32_t>  Indexes;
+
+ __declspec(property(get=get_LengthInTextElements)) int32_t  LengthInTextElements;
+
+ __declspec(property(get=get_String, put=set_String)) ::StringW  String;
+
+/// @brief Field m_indexes, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_indexes, put=__cordl_internal_set_m_indexes)) ::ArrayW<int32_t>  m_indexes;
+
+/// @brief Field m_str, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_str, put=__cordl_internal_set_m_str)) ::StringW  m_str;
+
+/// [ComVisible(false)]
+/// @brief Method Equals, addr 0xa2466c0, size 0x98, virtual true, abstract: false, final false
+inline bool Equals(::System::Object*  value) ;
+
+/// @brief Method GetCurrentTextElementLen, addr 0xa246964, size 0x114, virtual false, abstract: false, final false
+static inline int32_t GetCurrentTextElementLen(::StringW  str, int32_t  index, int32_t  len, ::by_ref<::System::Globalization::UnicodeCategory>  ucCurrent, ::by_ref<int32_t>  currentCharCount) ;
+
+/// [ComVisible(false)]
+/// @brief Method GetHashCode, addr 0xa246758, size 0x1c, virtual true, abstract: false, final false
+inline int32_t GetHashCode() ;
+
+static inline ::System::Globalization::StringInfo* New_ctor() ;
+
+static inline ::System::Globalization::StringInfo* New_ctor(::StringW  value) ;
+
+/// [OnDeserialized]
+/// @brief Method OnDeserialized, addr 0xa246698, size 0x28, virtual false, abstract: false, final false
+inline void OnDeserialized(::System::Runtime::Serialization::StreamingContext  ctx) ;
+
+/// [OnDeserializing]
+/// @brief Method OnDeserializing, addr 0xa24667c, size 0x1c, virtual false, abstract: false, final false
+inline void OnDeserializing(::System::Runtime::Serialization::StreamingContext  ctx) ;
+
+/// @brief Method ParseCombiningCharacters, addr 0xa2467c8, size 0x168, virtual false, abstract: false, final false
+static inline ::ArrayW<int32_t> ParseCombiningCharacters(::StringW  str) ;
+
+constexpr ::ArrayW<int32_t> const& __cordl_internal_get_m_indexes() const;
+
+constexpr ::ArrayW<int32_t>& __cordl_internal_get_m_indexes() ;
+
+constexpr ::StringW const& __cordl_internal_get_m_str() const;
+
+constexpr ::StringW& __cordl_internal_get_m_str() ;
+
+constexpr void __cordl_internal_set_m_indexes(::ArrayW<int32_t>  value) ;
+
+constexpr void __cordl_internal_set_m_str(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0xa246564, size 0x58, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xa2465bc, size 0x2c, virtual false, abstract: false, final false
+inline void _ctor(::StringW  value) ;
+
+/// @brief Method get_Indexes, addr 0xa246774, size 0x54, virtual false, abstract: false, final false
+inline ::ArrayW<int32_t> get_Indexes() ;
+
+/// @brief Method get_LengthInTextElements, addr 0xa246938, size 0x2c, virtual false, abstract: false, final false
+inline int32_t get_LengthInTextElements() ;
+
+/// @brief Method get_String, addr 0xa246930, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_String() ;
+
+/// @brief Method set_String, addr 0xa2465e8, size 0x94, virtual false, abstract: false, final false
+inline void set_String(::StringW  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr StringInfo() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "StringInfo", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+StringInfo(StringInfo && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "StringInfo", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+StringInfo(StringInfo const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6756};
+
+/// [OptionalField(VersionAdded = 2)]
+/// @brief Field m_str, offset: 0x10, size: 0x8, def value: None
+ ::StringW  ___m_str;
+
+/// @brief Field m_indexes, offset: 0x18, size: 0x8, def value: None
+ ::ArrayW<int32_t>  ___m_indexes;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Globalization::StringInfo, ___m_str) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Globalization::StringInfo, ___m_indexes) == 0x18, "Offset mismatch!");
+
+static_assert(sizeof(::System::Globalization::StringInfo) == 0x20, "Size mismatch!");
+
+} // namespace end def System::Globalization

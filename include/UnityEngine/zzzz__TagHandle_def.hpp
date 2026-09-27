@@ -1,0 +1,61 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/TagHandle.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(TagHandle)
+namespace UnityEngine::Bindings {
+struct ManagedSpanWrapper;
+}
+// Forward declare root types
+namespace UnityEngine {
+struct TagHandle;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::TagHandle);
+DEFINE_IL2CPP_CLASS(::UnityEngine::TagHandle, "UnityEngine", "TagHandle");
+// [NativeHeader("Runtime/BaseClasses/TagManager.h")]
+// [StaticAccessor("GetTagManager()", (UnityEngine.Bindings.StaticAccessorType)0)]
+// Dependencies 
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.TagHandle
+struct CORDL_TYPE TagHandle {
+public:
+// Declarations
+/// @brief Method TagToString, addr 0xb5e5ce8, size 0xcc, virtual false, abstract: false, final false
+static inline ::StringW TagToString(uint32_t  tagIndex) ;
+
+/// @brief Method TagToString_Injected, addr 0xb5e5db4, size 0x44, virtual false, abstract: false, final false
+static inline void TagToString_Injected(uint32_t  tagIndex, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  ret) ;
+
+/// @brief Method ToString, addr 0xb5e5ce0, size 0x8, virtual true, abstract: false, final false
+inline ::StringW ToString() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr TagHandle() ;
+
+// Ctor Parameters [CppParam { name: "_tagIndex", ty: "uint32_t", modifiers: "", def_value: None, comment: None }]
+constexpr TagHandle(uint32_t  _tagIndex) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15101};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field _tagIndex, offset: 0x0, size: 0x4, def value: None
+ uint32_t  _tagIndex;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::TagHandle, _tagIndex) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::TagHandle) == 0x4, "Size mismatch!");
+
+} // namespace end def UnityEngine

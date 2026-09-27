@@ -1,0 +1,145 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceRequest.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/zzzz__AsyncOperation_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(ResourceRequest)
+namespace System {
+struct IntPtr;
+}
+namespace System {
+class Type;
+}
+namespace UnityEngine {
+class Object;
+}
+namespace UnityEngine {
+class ResourceRequest_BindingsMarshaller;
+}
+// Forward declare root types
+namespace UnityEngine {
+class ResourceRequest;
+}
+namespace UnityEngine {
+class ResourceRequest_BindingsMarshaller;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourceRequest*);
+MARK_REF_T(::UnityEngine::ResourceRequest_BindingsMarshaller*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceRequest*, "UnityEngine", "ResourceRequest");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceRequest_BindingsMarshaller*, "UnityEngine", "ResourceRequest/BindingsMarshaller");
+// [RequiredByNativeCode]
+// Dependencies UnityEngine.AsyncOperation
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.ResourceRequest
+class CORDL_TYPE ResourceRequest : public ::UnityEngine::AsyncOperation {
+public:
+// Declarations
+using BindingsMarshaller = ::UnityEngine::ResourceRequest_BindingsMarshaller;
+
+ __declspec(property(get=get_asset)) ::UnityW<::UnityEngine::Object>  asset;
+
+/// @brief Field m_Path, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Path, put=__cordl_internal_set_m_Path)) ::StringW  m_Path;
+
+/// @brief Field m_Type, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Type, put=__cordl_internal_set_m_Type)) ::System::Type*  m_Type;
+
+/// @brief Method GetResult, addr 0xb5d5c20, size 0xc, virtual true, abstract: false, final false
+inline ::UnityW<::UnityEngine::Object> GetResult() ;
+
+static inline ::UnityEngine::ResourceRequest* New_ctor() ;
+
+static inline ::UnityEngine::ResourceRequest* New_ctor(::System::IntPtr  ptr) ;
+
+constexpr ::StringW const& __cordl_internal_get_m_Path() const;
+
+constexpr ::StringW& __cordl_internal_get_m_Path() ;
+
+constexpr ::System::Type* const& __cordl_internal_get_m_Type() const;
+
+constexpr ::System::Type*& __cordl_internal_get_m_Type() ;
+
+constexpr void __cordl_internal_set_m_Path(::StringW  value) ;
+
+constexpr void __cordl_internal_set_m_Type(::System::Type*  value) ;
+
+/// @brief Method .ctor, addr 0xb5d5cb0, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xb5d5cc0, size 0x4, virtual false, abstract: false, final false
+inline void _ctor(::System::IntPtr  ptr) ;
+
+/// @brief Method get_asset, addr 0xb5d5ca4, size 0xc, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Object> get_asset() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ResourceRequest() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourceRequest", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ResourceRequest(ResourceRequest && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourceRequest", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ResourceRequest(ResourceRequest const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15021};
+
+/// @brief Field m_Path, offset: 0x20, size: 0x8, def value: None
+ ::StringW  ___m_Path;
+
+/// @brief Field m_Type, offset: 0x28, size: 0x8, def value: None
+ ::System::Type*  ___m_Type;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ResourceRequest, ___m_Path) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceRequest, ___m_Type) == 0x28, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ResourceRequest) == 0x30, "Size mismatch!");
+
+} // namespace end def UnityEngine
+// Dependencies System.Object
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.ResourceRequest/BindingsMarshaller
+class CORDL_TYPE ResourceRequest_BindingsMarshaller : public ::System::Object {
+public:
+// Declarations
+/// @brief Method ConvertToManaged, addr 0xb5d5d1c, size 0x58, virtual false, abstract: false, final false
+static inline ::UnityEngine::ResourceRequest* ConvertToManaged(::System::IntPtr  ptr) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ResourceRequest_BindingsMarshaller() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourceRequest_BindingsMarshaller", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ResourceRequest_BindingsMarshaller(ResourceRequest_BindingsMarshaller && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourceRequest_BindingsMarshaller", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ResourceRequest_BindingsMarshaller(ResourceRequest_BindingsMarshaller const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15020};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ResourceRequest_BindingsMarshaller) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

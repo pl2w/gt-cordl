@@ -1,0 +1,50 @@
+#pragma once
+// IWYU pragma private; include "Fusion/ToggleLeftAttribute.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Fusion/zzzz__DrawerPropertyAttribute_def.hpp"
+CORDL_MODULE_EXPORT(ToggleLeftAttribute)
+// Forward declare root types
+namespace Fusion {
+class ToggleLeftAttribute;
+}
+// Write type traits
+MARK_REF_T(::Fusion::ToggleLeftAttribute*);
+DEFINE_IL2CPP_CLASS(::Fusion::ToggleLeftAttribute*, "Fusion", "ToggleLeftAttribute");
+// [AttributeUsage((System.AttributeTargets)256)]
+// Dependencies Fusion.DrawerPropertyAttribute
+namespace Fusion {
+// Is value type: false
+// CS Name: Fusion.ToggleLeftAttribute
+class CORDL_TYPE ToggleLeftAttribute : public ::Fusion::DrawerPropertyAttribute {
+public:
+// Declarations
+static inline ::Fusion::ToggleLeftAttribute* New_ctor() ;
+
+/// @brief Method .ctor, addr 0x5f3d834, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ToggleLeftAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ToggleLeftAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ToggleLeftAttribute(ToggleLeftAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ToggleLeftAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ToggleLeftAttribute(ToggleLeftAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{31284};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Fusion::ToggleLeftAttribute) == 0x18, "Size mismatch!");
+
+} // namespace end def Fusion

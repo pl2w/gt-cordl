@@ -1,0 +1,219 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Timeline/ActivationTrack.hpp"
+#include "UnityEngine/Timeline/zzzz__ActivationTrack_PostPlaybackState_impl.hpp"
+#include "UnityEngine/Timeline/zzzz__TrackAsset_impl.hpp"
+#include "UnityEngine/Timeline/zzzz__ActivationTrack_def.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableDirector_def.hpp"
+#include "UnityEngine/Playables/zzzz__PlayableGraph_def.hpp"
+#include "UnityEngine/Playables/zzzz__Playable_def.hpp"
+#include "UnityEngine/Timeline/zzzz__ActivationMixerPlayable_def.hpp"
+#include "UnityEngine/Timeline/zzzz__ActivationTrack_PostPlaybackState_def.hpp"
+#include "UnityEngine/Timeline/zzzz__IPropertyCollector_def.hpp"
+#include "UnityEngine/Timeline/zzzz__TimelineClip_def.hpp"
+#include "UnityEngine/zzzz__GameObject_def.hpp"
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack.CanCompileClips
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::Timeline::ActivationTrack::*)()>(&::UnityEngine::Timeline::ActivationTrack::CanCompileClips)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xb3af1cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                    {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 33}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack.get_postPlaybackState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::ActivationTrack_PostPlaybackState (::UnityEngine::Timeline::ActivationTrack::*)()>(&::UnityEngine::Timeline::ActivationTrack::get_postPlaybackState)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb3af2d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {"get_postPlaybackState", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack.set_postPlaybackState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ActivationTrack::*)(::GlobalNamespace::ActivationTrack_PostPlaybackState)>(&::UnityEngine::Timeline::ActivationTrack::set_postPlaybackState)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xb3af2e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {"set_postPlaybackState", {}, {::i2c::type_of<::GlobalNamespace::ActivationTrack_PostPlaybackState>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack.CreateTrackMixer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Playables::Playable (::UnityEngine::Timeline::ActivationTrack::*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, int32_t)>(&::UnityEngine::Timeline::ActivationTrack::CreateTrackMixer)> {
+  constexpr static std::size_t size = 0xf4;
+  constexpr static std::size_t addrs = 0xb3af308;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                    {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 24}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack.UpdateTrackMode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ActivationTrack::*)()>(&::UnityEngine::Timeline::ActivationTrack::UpdateTrackMode)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xb3af2f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {"UpdateTrackMode", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack.GatherProperties
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ActivationTrack::*)(::UnityEngine::Playables::PlayableDirector*, ::UnityEngine::Timeline::IPropertyCollector*)>(&::UnityEngine::Timeline::ActivationTrack::GatherProperties)> {
+  constexpr static std::size_t size = 0x12c;
+  constexpr static std::size_t addrs = 0xb3af3fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                    {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 29}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack.OnCreateClip
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ActivationTrack::*)(::UnityEngine::Timeline::TimelineClip*)>(&::UnityEngine::Timeline::ActivationTrack::OnCreateClip)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xb3af6a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                    {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 30}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Timeline::ActivationTrack._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Timeline::ActivationTrack::*)()>(&::UnityEngine::Timeline::ActivationTrack::_ctor)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xb3af6f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::GlobalNamespace::ActivationTrack_PostPlaybackState& UnityEngine::Timeline::ActivationTrack::__cordl_internal_get_m_PostPlaybackState()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PostPlaybackState;
+}
+constexpr ::GlobalNamespace::ActivationTrack_PostPlaybackState const& UnityEngine::Timeline::ActivationTrack::__cordl_internal_get_m_PostPlaybackState() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PostPlaybackState;
+}
+constexpr void UnityEngine::Timeline::ActivationTrack::__cordl_internal_set_m_PostPlaybackState(::GlobalNamespace::ActivationTrack_PostPlaybackState  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_PostPlaybackState = value;
+}
+constexpr ::UnityEngine::Timeline::ActivationMixerPlayable*& UnityEngine::Timeline::ActivationTrack::__cordl_internal_get_m_ActivationMixer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ActivationMixer;
+}
+constexpr ::UnityEngine::Timeline::ActivationMixerPlayable* const& UnityEngine::Timeline::ActivationTrack::__cordl_internal_get_m_ActivationMixer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_ActivationMixer;
+}
+constexpr void UnityEngine::Timeline::ActivationTrack::__cordl_internal_set_m_ActivationMixer(::UnityEngine::Timeline::ActivationMixerPlayable*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_ActivationMixer = value;
+}
+inline bool UnityEngine::Timeline::ActivationTrack::CanCompileClips()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 33}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::GlobalNamespace::ActivationTrack_PostPlaybackState UnityEngine::Timeline::ActivationTrack::get_postPlaybackState()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {"get_postPlaybackState", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::ActivationTrack_PostPlaybackState>(this, ___internal_method);
+}
+inline void UnityEngine::Timeline::ActivationTrack::set_postPlaybackState(::GlobalNamespace::ActivationTrack_PostPlaybackState  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {"set_postPlaybackState", {}, {::i2c::type_of<::GlobalNamespace::ActivationTrack_PostPlaybackState>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::Playables::Playable UnityEngine::Timeline::ActivationTrack::CreateTrackMixer(::UnityEngine::Playables::PlayableGraph  graph, ::UnityEngine::GameObject*  go, int32_t  inputCount)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 24}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Playables::Playable>(this, ___internal_method, graph, go, inputCount);
+}
+inline void UnityEngine::Timeline::ActivationTrack::UpdateTrackMode()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {"UpdateTrackMode", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::Timeline::ActivationTrack::GatherProperties(::UnityEngine::Playables::PlayableDirector*  director, ::UnityEngine::Timeline::IPropertyCollector*  driver)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 29}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, director, driver);
+}
+inline void UnityEngine::Timeline::ActivationTrack::OnCreateClip(::UnityEngine::Timeline::TimelineClip*  clip)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(), 30}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, clip);
+}
+inline void UnityEngine::Timeline::ActivationTrack::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Timeline::ActivationTrack*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::Timeline::ActivationTrack* UnityEngine::Timeline::ActivationTrack::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::Timeline::ActivationTrack*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Timeline::ActivationTrack::ActivationTrack()   {
+}

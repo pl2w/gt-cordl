@@ -1,0 +1,98 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/InputActions/InputActionDefinition.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "GlobalNamespace/zzzz__OVRPlugin_ActionTypes_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(InputActionDefinition)
+// Forward declare root types
+namespace Meta::XR::InputActions {
+class InputActionDefinition;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::InputActions::InputActionDefinition*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::InputActions::InputActionDefinition*, "Meta.XR.InputActions", "InputActionDefinition");
+// Dependencies OVRPlugin::ActionTypes, System.Object
+namespace Meta::XR::InputActions {
+// Is value type: false
+// CS Name: Meta.XR.InputActions.InputActionDefinition
+class CORDL_TYPE InputActionDefinition : public ::System::Object {
+public:
+// Declarations
+/// @brief Field ActionName, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_ActionName, put=__cordl_internal_set_ActionName)) ::StringW  ActionName;
+
+/// @brief Field Paths, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_Paths, put=__cordl_internal_set_Paths)) ::ArrayW<::StringW>  Paths;
+
+/// @brief Field Type, offset 0x18, size 0x4 
+ __declspec(property(get=__cordl_internal_get_Type, put=__cordl_internal_set_Type)) ::GlobalNamespace::OVRPlugin_ActionTypes  Type;
+
+static inline ::Meta::XR::InputActions::InputActionDefinition* New_ctor() ;
+
+constexpr ::StringW const& __cordl_internal_get_ActionName() const;
+
+constexpr ::StringW& __cordl_internal_get_ActionName() ;
+
+constexpr ::ArrayW<::StringW> const& __cordl_internal_get_Paths() const;
+
+constexpr ::ArrayW<::StringW>& __cordl_internal_get_Paths() ;
+
+constexpr ::GlobalNamespace::OVRPlugin_ActionTypes const& __cordl_internal_get_Type() const;
+
+constexpr ::GlobalNamespace::OVRPlugin_ActionTypes& __cordl_internal_get_Type() ;
+
+constexpr void __cordl_internal_set_ActionName(::StringW  value) ;
+
+constexpr void __cordl_internal_set_Paths(::ArrayW<::StringW>  value) ;
+
+constexpr void __cordl_internal_set_Type(::GlobalNamespace::OVRPlugin_ActionTypes  value) ;
+
+/// @brief Method .ctor, addr 0xa5b83f0, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr InputActionDefinition() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "InputActionDefinition", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+InputActionDefinition(InputActionDefinition && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "InputActionDefinition", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+InputActionDefinition(InputActionDefinition const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13302};
+
+/// [Tooltip("The name of this action. This is used in functions like OVRPlugin.GetActionStateBoolean to identify this specific action.")]
+/// @brief Field ActionName, offset: 0x10, size: 0x8, def value: None
+ ::StringW  ___ActionName;
+
+/// [Tooltip("The type of this action. Does it return a bool, pose, vector2, float or trigger a vibration?")]
+/// @brief Field Type, offset: 0x18, size: 0x4, def value: None
+ ::GlobalNamespace::OVRPlugin_ActionTypes  ___Type;
+
+/// [Tooltip("Paths: the path from where this action will get its data. This is based on the OpenXR specification for the device.")]
+/// [FormerlySerializedAs("Path")]
+/// @brief Field Paths, offset: 0x20, size: 0x8, def value: None
+ ::ArrayW<::StringW>  ___Paths;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Meta::XR::InputActions::InputActionDefinition, ___ActionName) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::InputActions::InputActionDefinition, ___Type) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::InputActions::InputActionDefinition, ___Paths) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::Meta::XR::InputActions::InputActionDefinition) == 0x28, "Size mismatch!");
+
+} // namespace end def Meta::XR::InputActions

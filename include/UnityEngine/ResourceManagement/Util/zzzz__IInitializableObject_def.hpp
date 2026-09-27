@@ -1,0 +1,45 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/Util/IInitializableObject.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(IInitializableObject)
+namespace UnityEngine::ResourceManagement::AsyncOperations {
+template<typename TObject>
+struct AsyncOperationHandle_1;
+}
+namespace UnityEngine::ResourceManagement {
+class ResourceManager;
+}
+// Forward declare root types
+namespace UnityEngine::ResourceManagement::Util {
+class IInitializableObject;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::IInitializableObject*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::IInitializableObject*, "UnityEngine.ResourceManagement.Util", "IInitializableObject");
+// Dependencies 
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.IInitializableObject
+class CORDL_TYPE IInitializableObject {
+public:
+// Declarations
+/// @brief Method Initialize, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline bool Initialize(::StringW  id, ::StringW  data) ;
+
+/// @brief Method InitializeAsync, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<bool> InitializeAsync(::UnityEngine::ResourceManagement::ResourceManager*  rm, ::StringW  id, ::StringW  data) ;
+
+// Ctor Parameters [CppParam { name: "", ty: "IInitializableObject", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IInitializableObject(IInitializableObject const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28581};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::ResourceManagement::Util

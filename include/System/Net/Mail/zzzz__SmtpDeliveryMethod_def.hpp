@@ -1,0 +1,74 @@
+#pragma once
+// IWYU pragma private; include "System/Net/Mail/SmtpDeliveryMethod.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(SmtpDeliveryMethod)
+// Forward declare root types
+namespace System::Net::Mail {
+struct SmtpDeliveryMethod;
+}
+// Write type traits
+MARK_VAL_T(::System::Net::Mail::SmtpDeliveryMethod);
+DEFINE_IL2CPP_CLASS(::System::Net::Mail::SmtpDeliveryMethod, "System.Net.Mail", "SmtpDeliveryMethod");
+// Dependencies 
+namespace System::Net::Mail {
+// Is value type: true
+// CS Name: System.Net.Mail.SmtpDeliveryMethod
+struct CORDL_TYPE SmtpDeliveryMethod {
+public:
+// Declarations
+using __CORDL_BACKING_ENUM_TYPE = int32_t;
+
+/// @brief Nested struct __SmtpDeliveryMethod_Unwrapped
+enum struct __SmtpDeliveryMethod_Unwrapped : int32_t {
+__E_Network = static_cast<int32_t>(0x0),
+__E_SpecifiedPickupDirectory = static_cast<int32_t>(0x1),
+__E_PickupDirectoryFromIis = static_cast<int32_t>(0x2),
+};
+
+/// @brief Conversion into unwrapped enum value
+constexpr operator __SmtpDeliveryMethod_Unwrapped () const noexcept {
+return static_cast<__SmtpDeliveryMethod_Unwrapped>(this->value__);
+}
+
+/// @brief Conversion into unwrapped enum value
+constexpr explicit operator int32_t () const noexcept {
+return static_cast<int32_t>(this->value__);
+}
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr SmtpDeliveryMethod() ;
+
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr SmtpDeliveryMethod(int32_t  value__) noexcept;
+
+/// @brief Field Network value: I32(0)
+static ::System::Net::Mail::SmtpDeliveryMethod const Network;
+
+/// @brief Field PickupDirectoryFromIis value: I32(2)
+static ::System::Net::Mail::SmtpDeliveryMethod const PickupDirectoryFromIis;
+
+/// @brief Field SpecifiedPickupDirectory value: I32(1)
+static ::System::Net::Mail::SmtpDeliveryMethod const SpecifiedPickupDirectory;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10882};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// @brief Field value__, offset: 0x0, size: 0x4, def value: None
+ int32_t  value__;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Net::Mail::SmtpDeliveryMethod, value__) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::System::Net::Mail::SmtpDeliveryMethod) == 0x4, "Size mismatch!");
+
+} // namespace end def System::Net::Mail

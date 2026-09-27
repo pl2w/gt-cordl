@@ -1,0 +1,56 @@
+#pragma once
+// IWYU pragma private; include "Newtonsoft/Json/Serialization/ExtensionDataSetter.hpp"
+#include "System/zzzz__MulticastDelegate_impl.hpp"
+#include "Newtonsoft/Json/Serialization/zzzz__ExtensionDataSetter_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+//  Writing Method size for method: ::Newtonsoft::Json::Serialization::ExtensionDataSetter._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Newtonsoft::Json::Serialization::ExtensionDataSetter::*)(::System::Object*, ::System::IntPtr)>(&::Newtonsoft::Json::Serialization::ExtensionDataSetter::_ctor)> {
+  constexpr static std::size_t size = 0x10c;
+  constexpr static std::size_t addrs = 0xa3b36ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Newtonsoft::Json::Serialization::ExtensionDataSetter*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Object*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Newtonsoft::Json::Serialization::ExtensionDataSetter.Invoke
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Newtonsoft::Json::Serialization::ExtensionDataSetter::*)(::System::Object*, ::StringW, ::System::Object*)>(&::Newtonsoft::Json::Serialization::ExtensionDataSetter::Invoke)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xa3b37b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Newtonsoft::Json::Serialization::ExtensionDataSetter*>(),
+                    {::i2c::class_of<::Newtonsoft::Json::Serialization::ExtensionDataSetter*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+inline void Newtonsoft::Json::Serialization::ExtensionDataSetter::_ctor(::System::Object*  object, ::System::IntPtr  method)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Newtonsoft::Json::Serialization::ExtensionDataSetter*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Object*>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, object, method);
+}
+inline void Newtonsoft::Json::Serialization::ExtensionDataSetter::Invoke(::System::Object*  o, ::StringW  key, /* [Nullable(2)] */ ::System::Object*  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Newtonsoft::Json::Serialization::ExtensionDataSetter*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, o, key, value);
+}
+inline ::Newtonsoft::Json::Serialization::ExtensionDataSetter* Newtonsoft::Json::Serialization::ExtensionDataSetter::New_ctor(::System::Object*  object, ::System::IntPtr  method)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Newtonsoft::Json::Serialization::ExtensionDataSetter*>(object, method));
+}
+// Ctor Parameters []
+constexpr ::Newtonsoft::Json::Serialization::ExtensionDataSetter::ExtensionDataSetter()   {
+}

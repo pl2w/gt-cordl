@@ -1,0 +1,137 @@
+#pragma once
+// IWYU pragma private; include "PlayFab/PlayFabAuthenticationContext.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(PlayFabAuthenticationContext)
+// Forward declare root types
+namespace PlayFab {
+class PlayFabAuthenticationContext;
+}
+// Write type traits
+MARK_REF_T(::PlayFab::PlayFabAuthenticationContext*);
+DEFINE_IL2CPP_CLASS(::PlayFab::PlayFabAuthenticationContext*, "PlayFab", "PlayFabAuthenticationContext");
+// Dependencies System.Object
+namespace PlayFab {
+// Is value type: false
+// CS Name: PlayFab.PlayFabAuthenticationContext
+class CORDL_TYPE PlayFabAuthenticationContext : public ::System::Object {
+public:
+// Declarations
+/// @brief Field ClientSessionTicket, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_ClientSessionTicket, put=__cordl_internal_set_ClientSessionTicket)) ::StringW  ClientSessionTicket;
+
+/// @brief Field EntityId, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_EntityId, put=__cordl_internal_set_EntityId)) ::StringW  EntityId;
+
+/// @brief Field EntityToken, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_EntityToken, put=__cordl_internal_set_EntityToken)) ::StringW  EntityToken;
+
+/// @brief Field EntityType, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_EntityType, put=__cordl_internal_set_EntityType)) ::StringW  EntityType;
+
+/// @brief Field PlayFabId, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_PlayFabId, put=__cordl_internal_set_PlayFabId)) ::StringW  PlayFabId;
+
+/// @brief Method CopyFrom, addr 0xa7dd2b8, size 0x6c, virtual false, abstract: false, final false
+inline void CopyFrom(::PlayFab::PlayFabAuthenticationContext*  other) ;
+
+/// @brief Method ForgetAllCredentials, addr 0xa7c181c, size 0x58, virtual false, abstract: false, final false
+inline void ForgetAllCredentials() ;
+
+/// @brief Method IsClientLoggedIn, addr 0xa7dd324, size 0x20, virtual false, abstract: false, final false
+inline bool IsClientLoggedIn() ;
+
+/// @brief Method IsEntityLoggedIn, addr 0xa7c179c, size 0x20, virtual false, abstract: false, final false
+inline bool IsEntityLoggedIn() ;
+
+static inline ::PlayFab::PlayFabAuthenticationContext* New_ctor() ;
+
+static inline ::PlayFab::PlayFabAuthenticationContext* New_ctor(::StringW  clientSessionTicket, ::StringW  entityToken, ::StringW  playFabId, ::StringW  entityId, ::StringW  entityType) ;
+
+constexpr ::StringW const& __cordl_internal_get_ClientSessionTicket() const;
+
+constexpr ::StringW& __cordl_internal_get_ClientSessionTicket() ;
+
+constexpr ::StringW const& __cordl_internal_get_EntityId() const;
+
+constexpr ::StringW& __cordl_internal_get_EntityId() ;
+
+constexpr ::StringW const& __cordl_internal_get_EntityToken() const;
+
+constexpr ::StringW& __cordl_internal_get_EntityToken() ;
+
+constexpr ::StringW const& __cordl_internal_get_EntityType() const;
+
+constexpr ::StringW& __cordl_internal_get_EntityType() ;
+
+constexpr ::StringW const& __cordl_internal_get_PlayFabId() const;
+
+constexpr ::StringW& __cordl_internal_get_PlayFabId() ;
+
+constexpr void __cordl_internal_set_ClientSessionTicket(::StringW  value) ;
+
+constexpr void __cordl_internal_set_EntityId(::StringW  value) ;
+
+constexpr void __cordl_internal_set_EntityToken(::StringW  value) ;
+
+constexpr void __cordl_internal_set_EntityType(::StringW  value) ;
+
+constexpr void __cordl_internal_set_PlayFabId(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0xa7dd220, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xa7dd228, size 0x90, virtual false, abstract: false, final false
+inline void _ctor(::StringW  clientSessionTicket, ::StringW  entityToken, ::StringW  playFabId, ::StringW  entityId, ::StringW  entityType) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr PlayFabAuthenticationContext() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "PlayFabAuthenticationContext", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+PlayFabAuthenticationContext(PlayFabAuthenticationContext && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "PlayFabAuthenticationContext", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+PlayFabAuthenticationContext(PlayFabAuthenticationContext const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{19519};
+
+/// @brief Field ClientSessionTicket, offset: 0x10, size: 0x8, def value: None
+ ::StringW  ___ClientSessionTicket;
+
+/// @brief Field PlayFabId, offset: 0x18, size: 0x8, def value: None
+ ::StringW  ___PlayFabId;
+
+/// @brief Field EntityToken, offset: 0x20, size: 0x8, def value: None
+ ::StringW  ___EntityToken;
+
+/// @brief Field EntityId, offset: 0x28, size: 0x8, def value: None
+ ::StringW  ___EntityId;
+
+/// @brief Field EntityType, offset: 0x30, size: 0x8, def value: None
+ ::StringW  ___EntityType;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::PlayFab::PlayFabAuthenticationContext, ___ClientSessionTicket) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::PlayFabAuthenticationContext, ___PlayFabId) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::PlayFabAuthenticationContext, ___EntityToken) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::PlayFabAuthenticationContext, ___EntityId) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::PlayFabAuthenticationContext, ___EntityType) == 0x30, "Offset mismatch!");
+
+static_assert(sizeof(::PlayFab::PlayFabAuthenticationContext) == 0x38, "Size mismatch!");
+
+} // namespace end def PlayFab

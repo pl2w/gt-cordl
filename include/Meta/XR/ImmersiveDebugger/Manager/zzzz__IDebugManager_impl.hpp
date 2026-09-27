@@ -1,0 +1,142 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/Manager/IDebugManager.hpp"
+#include "Meta/XR/ImmersiveDebugger/Manager/zzzz__IDebugManager_def.hpp"
+#include "Meta/XR/ImmersiveDebugger/Hierarchy/zzzz__Item_def.hpp"
+#include "Meta/XR/ImmersiveDebugger/UserInterface/zzzz__IDebugUIPanel_def.hpp"
+#include "Meta/XR/ImmersiveDebugger/Utils/zzzz__InstanceCache_def.hpp"
+#include "Meta/XR/ImmersiveDebugger/Utils/zzzz__InstanceHandle_def.hpp"
+#include "Meta/XR/ImmersiveDebugger/zzzz__DebugMember_def.hpp"
+#include "System/Reflection/zzzz__MemberInfo_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+//  Writing Method size for method: ::Meta::XR::ImmersiveDebugger::Manager::IDebugManager.Setup
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::*)(::Meta::XR::ImmersiveDebugger::UserInterface::IDebugUIPanel*, ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*)>(&::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::Setup)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(),
+                    {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::ImmersiveDebugger::Manager::IDebugManager.ProcessType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::*)(::System::Type*)>(&::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::ProcessType)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(),
+                    {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::ImmersiveDebugger::Manager::IDebugManager.ProcessTypeFromInspector
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::*)(::System::Type*, ::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle, ::System::Reflection::MemberInfo*, ::Meta::XR::ImmersiveDebugger::DebugMember*)>(&::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::ProcessTypeFromInspector)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(),
+                    {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 2}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::ImmersiveDebugger::Manager::IDebugManager.ProcessTypeFromHierarchy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::*)(::Meta::XR::ImmersiveDebugger::Hierarchy::Item*, ::System::Reflection::MemberInfo*)>(&::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::ProcessTypeFromHierarchy)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(),
+                    {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 3}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::ImmersiveDebugger::Manager::IDebugManager.get_TelemetryAnnotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::*)()>(&::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::get_TelemetryAnnotation)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(),
+                    {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 4}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Meta::XR::ImmersiveDebugger::Manager::IDebugManager.GetCountPerType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::*)(::System::Type*)>(&::Meta::XR::ImmersiveDebugger::Manager::IDebugManager::GetCountPerType)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(),
+                    {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+inline void Meta::XR::ImmersiveDebugger::Manager::IDebugManager::Setup(::Meta::XR::ImmersiveDebugger::UserInterface::IDebugUIPanel*  panel, ::Meta::XR::ImmersiveDebugger::Utils::InstanceCache*  cache)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, panel, cache);
+}
+inline void Meta::XR::ImmersiveDebugger::Manager::IDebugManager::ProcessType(::System::Type*  type)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, type);
+}
+inline void Meta::XR::ImmersiveDebugger::Manager::IDebugManager::ProcessTypeFromInspector(::System::Type*  type, ::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle  handle, ::System::Reflection::MemberInfo*  memberInfo, ::Meta::XR::ImmersiveDebugger::DebugMember*  memberAttribute)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 2}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, type, handle, memberInfo, memberAttribute);
+}
+inline void Meta::XR::ImmersiveDebugger::Manager::IDebugManager::ProcessTypeFromHierarchy(::Meta::XR::ImmersiveDebugger::Hierarchy::Item*  item, ::System::Reflection::MemberInfo*  memberInfo)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 3}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, item, memberInfo);
+}
+inline ::StringW Meta::XR::ImmersiveDebugger::Manager::IDebugManager::get_TelemetryAnnotation()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 4}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline int32_t Meta::XR::ImmersiveDebugger::Manager::IDebugManager::GetCountPerType(::System::Type*  type)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Meta::XR::ImmersiveDebugger::Manager::IDebugManager*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, type);
+}

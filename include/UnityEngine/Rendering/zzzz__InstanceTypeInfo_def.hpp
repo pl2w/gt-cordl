@@ -1,0 +1,87 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/InstanceTypeInfo.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/Rendering/zzzz__InstanceType_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+CORDL_MODULE_EXPORT(InstanceTypeInfo)
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace Unity::Collections {
+template<typename T>
+struct NativeList_1;
+}
+namespace UnityEngine::Rendering {
+struct InstanceType;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering {
+class InstanceTypeInfo;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::InstanceTypeInfo*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::InstanceTypeInfo*, "UnityEngine.Rendering", "InstanceTypeInfo");
+// Dependencies System.Collections.Generic.List`1<T>, System.Object, UnityEngine.Rendering.InstanceType
+namespace UnityEngine::Rendering {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.InstanceTypeInfo
+class CORDL_TYPE InstanceTypeInfo : public ::System::Object {
+public:
+// Declarations
+/// @brief Field s_ChildTypes, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_ChildTypes, put=setStaticF_s_ChildTypes)) ::ArrayW<::System::Collections::Generic::List_1<::UnityEngine::Rendering::InstanceType>*>  s_ChildTypes;
+
+/// @brief Field s_ParentTypes, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_ParentTypes, put=setStaticF_s_ParentTypes)) ::ArrayW<::UnityEngine::Rendering::InstanceType>  s_ParentTypes;
+
+/// @brief Method FlattenChildInstanceTypes, addr 0xb208784, size 0x1b8, virtual false, abstract: false, final false
+static inline void FlattenChildInstanceTypes(::UnityEngine::Rendering::InstanceType  instanceType, ::Unity::Collections::NativeList_1<::UnityEngine::Rendering::InstanceType>  instanceTypes) ;
+
+/// @brief Method GetChildTypes, addr 0xb20893c, size 0x7c, virtual false, abstract: false, final false
+static inline ::System::Collections::Generic::List_1<::UnityEngine::Rendering::InstanceType>* GetChildTypes(::UnityEngine::Rendering::InstanceType  type) ;
+
+/// @brief Method InitChildTypes, addr 0xb208400, size 0x24c, virtual false, abstract: false, final false
+static inline void InitChildTypes() ;
+
+/// @brief Method InitParentTypes, addr 0xb208340, size 0xc0, virtual false, abstract: false, final false
+static inline void InitParentTypes() ;
+
+/// @brief Method ValidateTypeRelationsAreCorrectlySorted, addr 0xb20864c, size 0x138, virtual false, abstract: false, final false
+static inline void ValidateTypeRelationsAreCorrectlySorted() ;
+
+static inline ::ArrayW<::System::Collections::Generic::List_1<::UnityEngine::Rendering::InstanceType>*> getStaticF_s_ChildTypes() ;
+
+static inline ::ArrayW<::UnityEngine::Rendering::InstanceType> getStaticF_s_ParentTypes() ;
+
+static inline void setStaticF_s_ChildTypes(::ArrayW<::System::Collections::Generic::List_1<::UnityEngine::Rendering::InstanceType>*>  value) ;
+
+static inline void setStaticF_s_ParentTypes(::ArrayW<::UnityEngine::Rendering::InstanceType>  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr InstanceTypeInfo() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "InstanceTypeInfo", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+InstanceTypeInfo(InstanceTypeInfo && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "InstanceTypeInfo", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+InstanceTypeInfo(InstanceTypeInfo const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{26661};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Rendering::InstanceTypeInfo) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

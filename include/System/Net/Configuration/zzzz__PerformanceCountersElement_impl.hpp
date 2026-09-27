@@ -1,0 +1,99 @@
+#pragma once
+// IWYU pragma private; include "System/Net/Configuration/PerformanceCountersElement.hpp"
+#include "System/Configuration/zzzz__ConfigurationElement_impl.hpp"
+#include "System/Net/Configuration/zzzz__PerformanceCountersElement_def.hpp"
+#include "System/Configuration/zzzz__ConfigurationPropertyCollection_def.hpp"
+//  Writing Method size for method: ::System::Net::Configuration::PerformanceCountersElement._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Configuration::PerformanceCountersElement::*)()>(&::System::Net::Configuration::PerformanceCountersElement::_ctor)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xacfa628;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Configuration::PerformanceCountersElement.get_Enabled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Net::Configuration::PerformanceCountersElement::*)()>(&::System::Net::Configuration::PerformanceCountersElement::get_Enabled)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xacfa660;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(),
+                        {"get_Enabled", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Configuration::PerformanceCountersElement.set_Enabled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Net::Configuration::PerformanceCountersElement::*)(bool)>(&::System::Net::Configuration::PerformanceCountersElement::set_Enabled)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xacfa698;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(),
+                        {"set_Enabled", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Net::Configuration::PerformanceCountersElement.get_Properties
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Configuration::ConfigurationPropertyCollection* (::System::Net::Configuration::PerformanceCountersElement::*)()>(&::System::Net::Configuration::PerformanceCountersElement::get_Properties)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xacfa6d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(),
+                    {::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(), 4}
+                ));
+    return ___internal_method;
+  }
+};
+inline void System::Net::Configuration::PerformanceCountersElement::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool System::Net::Configuration::PerformanceCountersElement::get_Enabled()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(),
+                        {"get_Enabled", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Net::Configuration::PerformanceCountersElement::set_Enabled(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(),
+                        {"set_Enabled", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Configuration::ConfigurationPropertyCollection* System::Net::Configuration::PerformanceCountersElement::get_Properties()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Net::Configuration::PerformanceCountersElement*>(), 4}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Configuration::ConfigurationPropertyCollection*>(this, ___internal_method);
+}
+inline ::System::Net::Configuration::PerformanceCountersElement* System::Net::Configuration::PerformanceCountersElement::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Net::Configuration::PerformanceCountersElement*>());
+}
+// Ctor Parameters []
+constexpr ::System::Net::Configuration::PerformanceCountersElement::PerformanceCountersElement()   {
+}

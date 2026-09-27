@@ -1,0 +1,143 @@
+#pragma once
+// IWYU pragma private; include "System/Reflection/MemberInfo.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(MemberInfo)
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IList_1;
+}
+namespace System::Reflection {
+class CustomAttributeData;
+}
+namespace System::Reflection {
+class ICustomAttributeProvider;
+}
+namespace System::Reflection {
+struct MemberTypes;
+}
+namespace System::Reflection {
+class Module;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System::Reflection {
+class MemberInfo;
+}
+// Write type traits
+MARK_REF_T(::System::Reflection::MemberInfo*);
+DEFINE_IL2CPP_CLASS(::System::Reflection::MemberInfo*, "System.Reflection", "MemberInfo");
+// Dependencies System.Object
+namespace System::Reflection {
+// Is value type: false
+// CS Name: System.Reflection.MemberInfo
+class CORDL_TYPE MemberInfo : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_CustomAttributes)) ::System::Collections::Generic::IEnumerable_1<::System::Reflection::CustomAttributeData*>*  CustomAttributes;
+
+ __declspec(property(get=get_DeclaringType)) ::System::Type*  DeclaringType;
+
+ __declspec(property(get=get_MemberType)) ::System::Reflection::MemberTypes  MemberType;
+
+ __declspec(property(get=get_MetadataToken)) int32_t  MetadataToken;
+
+ __declspec(property(get=get_Module)) ::System::Reflection::Module*  Module;
+
+ __declspec(property(get=get_Name)) ::StringW  Name;
+
+ __declspec(property(get=get_ReflectedType)) ::System::Type*  ReflectedType;
+
+/// @brief Convert operator to "::System::Reflection::ICustomAttributeProvider"
+constexpr operator  ::System::Reflection::ICustomAttributeProvider*() noexcept;
+
+/// @brief Method Equals, addr 0xa1f4ac0, size 0x8, virtual true, abstract: false, final false
+inline bool Equals(::System::Object*  obj) ;
+
+/// @brief Method GetCustomAttributes, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::ArrayW<::System::Object*> GetCustomAttributes(::System::Type*  attributeType, bool  inherit) ;
+
+/// @brief Method GetCustomAttributes, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::ArrayW<::System::Object*> GetCustomAttributes(bool  inherit) ;
+
+/// @brief Method GetCustomAttributesData, addr 0xa1f6008, size 0x28, virtual true, abstract: false, final false
+inline ::System::Collections::Generic::IList_1<::System::Reflection::CustomAttributeData*>* GetCustomAttributesData() ;
+
+/// @brief Method GetHashCode, addr 0xa1f4ad0, size 0x8, virtual true, abstract: false, final false
+inline int32_t GetHashCode() ;
+
+/// @brief Method IsDefined, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline bool IsDefined(::System::Type*  attributeType, bool  inherit) ;
+
+static inline ::System::Reflection::MemberInfo* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xa1f4964, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_CustomAttributes, addr 0xa1f5ff8, size 0x10, virtual true, abstract: false, final false
+inline ::System::Collections::Generic::IEnumerable_1<::System::Reflection::CustomAttributeData*>* get_CustomAttributes() ;
+
+/// @brief Method get_DeclaringType, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::System::Type* get_DeclaringType() ;
+
+/// @brief Method get_MemberType, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::System::Reflection::MemberTypes get_MemberType() ;
+
+/// @brief Method get_MetadataToken, addr 0xa1f6030, size 0x38, virtual true, abstract: false, final false
+inline int32_t get_MetadataToken() ;
+
+/// @brief Method get_Module, addr 0xa1f5f4c, size 0xac, virtual true, abstract: false, final false
+inline ::System::Reflection::Module* get_Module() ;
+
+/// @brief Method get_Name, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::StringW get_Name() ;
+
+/// @brief Method get_ReflectedType, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::System::Type* get_ReflectedType() ;
+
+/// @brief Convert to "::System::Reflection::ICustomAttributeProvider"
+constexpr ::System::Reflection::ICustomAttributeProvider* i___System__Reflection__ICustomAttributeProvider() noexcept;
+
+/// @brief Method op_Equality, addr 0xa1f6068, size 0x320, virtual false, abstract: false, final false
+static inline bool op_Equality(::System::Reflection::MemberInfo*  left, ::System::Reflection::MemberInfo*  right) ;
+
+/// @brief Method op_Inequality, addr 0xa1f65a8, size 0x18, virtual false, abstract: false, final false
+static inline bool op_Inequality(::System::Reflection::MemberInfo*  left, ::System::Reflection::MemberInfo*  right) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MemberInfo() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MemberInfo", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MemberInfo(MemberInfo && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MemberInfo", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MemberInfo(MemberInfo const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6622};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Reflection::MemberInfo) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Reflection

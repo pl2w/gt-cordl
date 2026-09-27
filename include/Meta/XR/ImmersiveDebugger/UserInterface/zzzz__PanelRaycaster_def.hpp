@@ -1,0 +1,70 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/UserInterface/PanelRaycaster.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "GlobalNamespace/zzzz__OVRRaycaster_def.hpp"
+CORDL_MODULE_EXPORT(PanelRaycaster)
+namespace UnityEngine::EventSystems {
+class PointerEventData;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger::UserInterface {
+class PanelRaycaster;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster*, "Meta.XR.ImmersiveDebugger.UserInterface", "PanelRaycaster");
+// [RequireComponent(typeof(UnityEngine.Canvas))]
+// Dependencies OVRRaycaster
+namespace Meta::XR::ImmersiveDebugger::UserInterface {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.UserInterface.PanelRaycaster
+class CORDL_TYPE PanelRaycaster : public ::GlobalNamespace::OVRRaycaster {
+public:
+// Declarations
+ __declspec(property(get=get_IsValid)) bool  IsValid;
+
+/// @brief Method IsFocussed, addr 0x9ee4c7c, size 0x8, virtual true, abstract: false, final false
+inline bool IsFocussed() ;
+
+static inline ::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster* New_ctor() ;
+
+/// @brief Method OnDisable, addr 0x9ee4cd8, size 0x54, virtual true, abstract: false, final false
+inline void OnDisable() ;
+
+/// @brief Method OnEnable, addr 0x9ee4c84, size 0x54, virtual true, abstract: false, final false
+inline void OnEnable() ;
+
+/// @brief Method OnPointerEnter, addr 0x9ee4c78, size 0x4, virtual true, abstract: false, final false
+inline void OnPointerEnter(::UnityEngine::EventSystems::PointerEventData*  e) ;
+
+/// @brief Method .ctor, addr 0x9ee4d2c, size 0x58, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_IsValid, addr 0x9ee3ed4, size 0x78, virtual false, abstract: false, final false
+inline bool get_IsValid() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr PanelRaycaster() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "PanelRaycaster", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+PanelRaycaster(PanelRaycaster && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "PanelRaycaster", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+PanelRaycaster(PanelRaycaster const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27444};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::UserInterface::PanelRaycaster) == 0x70, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger::UserInterface

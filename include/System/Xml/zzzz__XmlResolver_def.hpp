@@ -1,0 +1,75 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/XmlResolver.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(XmlResolver)
+namespace System::Threading::Tasks {
+template<typename TResult>
+class Task_1;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+namespace System {
+class Uri;
+}
+// Forward declare root types
+namespace System::Xml {
+class XmlResolver;
+}
+// Write type traits
+MARK_REF_T(::System::Xml::XmlResolver*);
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlResolver*, "System.Xml", "XmlResolver");
+// Dependencies System.Object
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlResolver
+class CORDL_TYPE XmlResolver : public ::System::Object {
+public:
+// Declarations
+/// @brief Method GetEntity, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::System::Object* GetEntity(::System::Uri*  absoluteUri, ::StringW  role, ::System::Type*  ofObjectToReturn) ;
+
+/// @brief Method GetEntityAsync, addr 0xabfad50, size 0x38, virtual true, abstract: false, final false
+inline ::System::Threading::Tasks::Task_1<::System::Object*>* GetEntityAsync(::System::Uri*  absoluteUri, ::StringW  role, ::System::Type*  ofObjectToReturn) ;
+
+static inline ::System::Xml::XmlResolver* New_ctor() ;
+
+/// @brief Method ResolveUri, addr 0xabfaa50, size 0x1c8, virtual true, abstract: false, final false
+inline ::System::Uri* ResolveUri(::System::Uri*  baseUri, ::StringW  relativeUri) ;
+
+/// @brief Method SupportsType, addr 0xabfac18, size 0x138, virtual true, abstract: false, final false
+inline bool SupportsType(::System::Uri*  absoluteUri, ::System::Type*  type) ;
+
+/// @brief Method .ctor, addr 0xabfad88, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlResolver() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlResolver", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlResolver(XmlResolver && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlResolver", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlResolver(XmlResolver const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14192};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Xml::XmlResolver) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Xml

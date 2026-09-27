@@ -1,0 +1,125 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/OverlapSphereCommand.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__PhysicsScene_def.hpp"
+#include "UnityEngine/zzzz__QueryParameters_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+#include <cmath>
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(OverlapSphereCommand)
+namespace GlobalNamespace {
+struct JobsUtility_JobScheduleParameters;
+}
+namespace Unity::Collections {
+template<typename T>
+struct NativeArray_1;
+}
+namespace Unity::Jobs {
+struct JobHandle;
+}
+namespace UnityEngine {
+struct ColliderHit;
+}
+namespace UnityEngine {
+struct PhysicsScene;
+}
+namespace UnityEngine {
+struct QueryParameters;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+// Forward declare root types
+namespace UnityEngine {
+struct OverlapSphereCommand;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::OverlapSphereCommand);
+DEFINE_IL2CPP_CLASS(::UnityEngine::OverlapSphereCommand, "UnityEngine", "OverlapSphereCommand");
+// [NativeHeader("Modules/Physics/BatchCommands/OverlapSphereCommand.h")]
+// Dependencies UnityEngine.PhysicsScene, UnityEngine.QueryParameters, UnityEngine.Vector3
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.OverlapSphereCommand
+struct CORDL_TYPE OverlapSphereCommand {
+public:
+// Declarations
+ __declspec(property(put=set_physicsScene)) ::UnityEngine::PhysicsScene  physicsScene;
+
+ __declspec(property(put=set_point)) ::UnityEngine::Vector3  point;
+
+ __declspec(property(put=set_radius)) float_t  radius;
+
+/// @brief Method ScheduleBatch, addr 0xb68f5ac, size 0x1e4, virtual false, abstract: false, final false
+static inline ::Unity::Jobs::JobHandle ScheduleBatch(::Unity::Collections::NativeArray_1<::UnityEngine::OverlapSphereCommand>  commands, ::Unity::Collections::NativeArray_1<::UnityEngine::ColliderHit>  results, int32_t  minCommandsPerJob, int32_t  maxHits, ::Unity::Jobs::JobHandle  dependsOn) ;
+
+/// [FreeFunction("ScheduleOverlapSphereCommandBatch", ThrowsException = true)]
+/// @brief Method ScheduleOverlapSphereBatch, addr 0xb68f790, size 0x9c, virtual false, abstract: false, final false
+static inline ::Unity::Jobs::JobHandle ScheduleOverlapSphereBatch(::by_ref<::GlobalNamespace::JobsUtility_JobScheduleParameters>  parameters, void*  commands, int32_t  commandLen, void*  result, int32_t  resultLen, int32_t  minCommandsPerJob, int32_t  maxHits) ;
+
+/// @brief Method ScheduleOverlapSphereBatch_Injected, addr 0xb68f82c, size 0x8c, virtual false, abstract: false, final false
+static inline void ScheduleOverlapSphereBatch_Injected(::by_ref<::GlobalNamespace::JobsUtility_JobScheduleParameters>  parameters, void*  commands, int32_t  commandLen, void*  result, int32_t  resultLen, int32_t  minCommandsPerJob, int32_t  maxHits, ::by_ref<::Unity::Jobs::JobHandle>  ret) ;
+
+/// @brief Method .ctor, addr 0xb68f4f8, size 0x98, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Vector3  point, float_t  radius, ::UnityEngine::QueryParameters  queryParameters) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_physicsScene, addr 0xb68f5a4, size 0x8, virtual false, abstract: false, final false
+inline void set_physicsScene(::UnityEngine::PhysicsScene  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_point, addr 0xb68f590, size 0xc, virtual false, abstract: false, final false
+inline void set_point(::UnityEngine::Vector3  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_radius, addr 0xb68f59c, size 0x8, virtual false, abstract: false, final false
+inline void set_radius(float_t  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr OverlapSphereCommand() ;
+
+// Ctor Parameters [CppParam { name: "_point_k__BackingField", ty: "::UnityEngine::Vector3", modifiers: "", def_value: None, comment: None }, CppParam { name: "_radius_k__BackingField", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "_physicsScene_k__BackingField", ty: "::UnityEngine::PhysicsScene", modifiers: "", def_value: None, comment: None }, CppParam { name: "queryParameters", ty: "::UnityEngine::QueryParameters", modifiers: "", def_value: None, comment: None }]
+constexpr OverlapSphereCommand(::UnityEngine::Vector3  _point_k__BackingField, float_t  _radius_k__BackingField, ::UnityEngine::PhysicsScene  _physicsScene_k__BackingField, ::UnityEngine::QueryParameters  queryParameters) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30595};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x28};
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <point>k__BackingField, offset: 0x0, size: 0xc, def value: None
+ ::UnityEngine::Vector3  _point_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <radius>k__BackingField, offset: 0xc, size: 0x4, def value: None
+ float_t  _radius_k__BackingField;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <physicsScene>k__BackingField, offset: 0x10, size: 0x8, def value: None
+ ::UnityEngine::PhysicsScene  _physicsScene_k__BackingField;
+
+/// @brief Field queryParameters, offset: 0x18, size: 0x10, def value: None
+ ::UnityEngine::QueryParameters  queryParameters;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::OverlapSphereCommand, _point_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::OverlapSphereCommand, _radius_k__BackingField) == 0xc, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::OverlapSphereCommand, _physicsScene_k__BackingField) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::OverlapSphereCommand, queryParameters) == 0x18, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::OverlapSphereCommand) == 0x28, "Size mismatch!");
+
+} // namespace end def UnityEngine

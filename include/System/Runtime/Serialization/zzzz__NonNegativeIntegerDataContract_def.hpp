@@ -1,0 +1,49 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/Serialization/NonNegativeIntegerDataContract.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Runtime/Serialization/zzzz__LongDataContract_def.hpp"
+CORDL_MODULE_EXPORT(NonNegativeIntegerDataContract)
+// Forward declare root types
+namespace System::Runtime::Serialization {
+class NonNegativeIntegerDataContract;
+}
+// Write type traits
+MARK_REF_T(::System::Runtime::Serialization::NonNegativeIntegerDataContract*);
+DEFINE_IL2CPP_CLASS(::System::Runtime::Serialization::NonNegativeIntegerDataContract*, "System.Runtime.Serialization", "NonNegativeIntegerDataContract");
+// Dependencies System.Runtime.Serialization.LongDataContract
+namespace System::Runtime::Serialization {
+// Is value type: false
+// CS Name: System.Runtime.Serialization.NonNegativeIntegerDataContract
+class CORDL_TYPE NonNegativeIntegerDataContract : public ::System::Runtime::Serialization::LongDataContract {
+public:
+// Declarations
+static inline ::System::Runtime::Serialization::NonNegativeIntegerDataContract* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xaa651b0, size 0x64, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr NonNegativeIntegerDataContract() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "NonNegativeIntegerDataContract", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+NonNegativeIntegerDataContract(NonNegativeIntegerDataContract && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "NonNegativeIntegerDataContract", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+NonNegativeIntegerDataContract(NonNegativeIntegerDataContract const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24551};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Runtime::Serialization::NonNegativeIntegerDataContract) == 0x30, "Size mismatch!");
+
+} // namespace end def System::Runtime::Serialization

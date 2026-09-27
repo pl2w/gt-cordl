@@ -1,0 +1,56 @@
+#pragma once
+// IWYU pragma private; include "PlayFab/CloudScriptModels/RegisterHttpFunctionRequest.hpp"
+#include "PlayFab/SharedModels/zzzz__PlayFabRequestCommon_impl.hpp"
+#include "PlayFab/CloudScriptModels/zzzz__RegisterHttpFunctionRequest_def.hpp"
+//  Writing Method size for method: ::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::*)()>(&::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa842fec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::__cordl_internal_get_FunctionName()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FunctionName;
+}
+constexpr ::StringW const& PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::__cordl_internal_get_FunctionName() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FunctionName;
+}
+constexpr void PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::__cordl_internal_set_FunctionName(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___FunctionName = value;
+}
+constexpr ::StringW& PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::__cordl_internal_get_FunctionUrl()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FunctionUrl;
+}
+constexpr ::StringW const& PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::__cordl_internal_get_FunctionUrl() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FunctionUrl;
+}
+constexpr void PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::__cordl_internal_set_FunctionUrl(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___FunctionUrl = value;
+}
+inline void PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest* PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest*>());
+}
+// Ctor Parameters []
+constexpr ::PlayFab::CloudScriptModels::RegisterHttpFunctionRequest::RegisterHttpFunctionRequest()   {
+}

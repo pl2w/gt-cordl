@@ -1,0 +1,343 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/EventDispatcher.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(EventDispatcher)
+namespace GlobalNamespace {
+struct EventDispatcher_DispatchContext;
+}
+namespace GlobalNamespace {
+struct EventDispatcher_EventRecord;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class Queue_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class Stack_1;
+}
+namespace UnityEngine::UIElements {
+class BaseVisualElementPanel;
+}
+namespace UnityEngine::UIElements {
+class ClickDetector;
+}
+namespace UnityEngine::UIElements {
+struct DispatchMode;
+}
+namespace UnityEngine::UIElements {
+class EventBase;
+}
+namespace UnityEngine::UIElements {
+class EventDispatcher___c;
+}
+namespace UnityEngine::UIElements {
+template<typename T>
+class ObjectPool_1;
+}
+namespace UnityEngine::UIElements {
+class PointerDispatchState;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+class EventDispatcher;
+}
+namespace UnityEngine::UIElements {
+class EventDispatcher___c;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::UIElements::EventDispatcher*);
+MARK_REF_T(::UnityEngine::UIElements::EventDispatcher___c*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::EventDispatcher*, "UnityEngine.UIElements", "EventDispatcher");
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::EventDispatcher___c*, "UnityEngine.UIElements", "EventDispatcher/<>c");
+// Dependencies System.Object
+namespace UnityEngine::UIElements {
+// Is value type: false
+// CS Name: UnityEngine.UIElements.EventDispatcher
+class CORDL_TYPE EventDispatcher : public ::System::Object {
+public:
+// Declarations
+using DispatchContext = ::GlobalNamespace::EventDispatcher_DispatchContext;
+
+using EventRecord = ::GlobalNamespace::EventDispatcher_EventRecord;
+
+using __c = ::UnityEngine::UIElements::EventDispatcher___c;
+
+/// @brief Field <pointerState>k__BackingField, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__pointerState_k__BackingField, put=__cordl_internal_set__pointerState_k__BackingField)) ::UnityEngine::UIElements::PointerDispatchState*  _pointerState_k__BackingField;
+
+/// @brief Field <processingEvents>k__BackingField, offset 0x49, size 0x1 
+ __declspec(property(get=__cordl_internal_get__processingEvents_k__BackingField, put=__cordl_internal_set__processingEvents_k__BackingField)) bool  _processingEvents_k__BackingField;
+
+ __declspec(property(get=get_dispatchImmediately)) bool  dispatchImmediately;
+
+/// @brief Field k_EventQueuePool, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_EventQueuePool, put=setStaticF_k_EventQueuePool)) ::UnityEngine::UIElements::ObjectPool_1<::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>*>*  k_EventQueuePool;
+
+/// @brief Field m_ClickDetector, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_ClickDetector, put=__cordl_internal_set_m_ClickDetector)) ::UnityEngine::UIElements::ClickDetector*  m_ClickDetector;
+
+/// @brief Field m_CurrentEvent, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_CurrentEvent, put=__cordl_internal_set_m_CurrentEvent)) ::UnityEngine::UIElements::EventBase*  m_CurrentEvent;
+
+/// @brief Field m_DispatchContexts, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_DispatchContexts, put=__cordl_internal_set_m_DispatchContexts)) ::System::Collections::Generic::Stack_1<::GlobalNamespace::EventDispatcher_DispatchContext>*  m_DispatchContexts;
+
+/// @brief Field m_DispatchStackFrame, offset 0x30, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_DispatchStackFrame, put=__cordl_internal_set_m_DispatchStackFrame)) int32_t  m_DispatchStackFrame;
+
+/// @brief Field m_GateCount, offset 0x28, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_GateCount, put=__cordl_internal_set_m_GateCount)) uint32_t  m_GateCount;
+
+/// @brief Field m_GateDepth, offset 0x2c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_GateDepth, put=__cordl_internal_set_m_GateDepth)) uint32_t  m_GateDepth;
+
+/// @brief Field m_Immediate, offset 0x48, size 0x1 
+ __declspec(property(get=__cordl_internal_get_m_Immediate, put=__cordl_internal_set_m_Immediate)) bool  m_Immediate;
+
+/// @brief Field m_Queue, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Queue, put=__cordl_internal_set_m_Queue)) ::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>*  m_Queue;
+
+ __declspec(property(get=get_pointerState)) ::UnityEngine::UIElements::PointerDispatchState*  pointerState;
+
+ __declspec(property(put=set_processingEvents)) bool  processingEvents;
+
+/// @brief Method CloseGate, addr 0xb88c0c8, size 0x14, virtual false, abstract: false, final false
+inline void CloseGate() ;
+
+/// @brief Method CreateDefault, addr 0xb88c32c, size 0x50, virtual false, abstract: false, final false
+static inline ::UnityEngine::UIElements::EventDispatcher* CreateDefault() ;
+
+/// @brief Method Dispatch, addr 0xb88c510, size 0x198, virtual false, abstract: false, final false
+inline void Dispatch(::UnityEngine::UIElements::EventBase*  evt, /* [NotNull] */ ::UnityEngine::UIElements::BaseVisualElementPanel*  panel, ::UnityEngine::UIElements::DispatchMode  dispatchMode) ;
+
+/// @brief Method HandleRecursiveState, addr 0xb88ca08, size 0x41c, virtual false, abstract: false, final false
+inline bool HandleRecursiveState(::UnityEngine::UIElements::EventBase*  evt) ;
+
+/// @brief [Obsolete("Please use EventDispatcher.CreateDefault().")]
+static inline ::UnityEngine::UIElements::EventDispatcher* New_ctor() ;
+
+/// @brief Method OpenGate, addr 0xb88c0f0, size 0x190, virtual false, abstract: false, final false
+inline void OpenGate() ;
+
+/// @brief Method ProcessEvent, addr 0xb88c748, size 0x2c0, virtual false, abstract: false, final false
+inline void ProcessEvent(::UnityEngine::UIElements::EventBase*  evt, /* [NotNull] */ ::UnityEngine::UIElements::BaseVisualElementPanel*  panel) ;
+
+/// @brief Method ProcessEventQueue, addr 0xb88ce24, size 0x390, virtual false, abstract: false, final false
+inline void ProcessEventQueue() ;
+
+constexpr ::UnityEngine::UIElements::PointerDispatchState* const& __cordl_internal_get__pointerState_k__BackingField() const;
+
+constexpr ::UnityEngine::UIElements::PointerDispatchState*& __cordl_internal_get__pointerState_k__BackingField() ;
+
+constexpr bool const& __cordl_internal_get__processingEvents_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__processingEvents_k__BackingField() ;
+
+constexpr ::UnityEngine::UIElements::ClickDetector* const& __cordl_internal_get_m_ClickDetector() const;
+
+constexpr ::UnityEngine::UIElements::ClickDetector*& __cordl_internal_get_m_ClickDetector() ;
+
+constexpr ::UnityEngine::UIElements::EventBase* const& __cordl_internal_get_m_CurrentEvent() const;
+
+constexpr ::UnityEngine::UIElements::EventBase*& __cordl_internal_get_m_CurrentEvent() ;
+
+constexpr ::System::Collections::Generic::Stack_1<::GlobalNamespace::EventDispatcher_DispatchContext>* const& __cordl_internal_get_m_DispatchContexts() const;
+
+constexpr ::System::Collections::Generic::Stack_1<::GlobalNamespace::EventDispatcher_DispatchContext>*& __cordl_internal_get_m_DispatchContexts() ;
+
+constexpr int32_t const& __cordl_internal_get_m_DispatchStackFrame() const;
+
+constexpr int32_t& __cordl_internal_get_m_DispatchStackFrame() ;
+
+constexpr uint32_t const& __cordl_internal_get_m_GateCount() const;
+
+constexpr uint32_t& __cordl_internal_get_m_GateCount() ;
+
+constexpr uint32_t const& __cordl_internal_get_m_GateDepth() const;
+
+constexpr uint32_t& __cordl_internal_get_m_GateDepth() ;
+
+constexpr bool const& __cordl_internal_get_m_Immediate() const;
+
+constexpr bool& __cordl_internal_get_m_Immediate() ;
+
+constexpr ::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>* const& __cordl_internal_get_m_Queue() const;
+
+constexpr ::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>*& __cordl_internal_get_m_Queue() ;
+
+constexpr void __cordl_internal_set__pointerState_k__BackingField(::UnityEngine::UIElements::PointerDispatchState*  value) ;
+
+constexpr void __cordl_internal_set__processingEvents_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set_m_ClickDetector(::UnityEngine::UIElements::ClickDetector*  value) ;
+
+constexpr void __cordl_internal_set_m_CurrentEvent(::UnityEngine::UIElements::EventBase*  value) ;
+
+constexpr void __cordl_internal_set_m_DispatchContexts(::System::Collections::Generic::Stack_1<::GlobalNamespace::EventDispatcher_DispatchContext>*  value) ;
+
+constexpr void __cordl_internal_set_m_DispatchStackFrame(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_GateCount(uint32_t  value) ;
+
+constexpr void __cordl_internal_set_m_GateDepth(uint32_t  value) ;
+
+constexpr void __cordl_internal_set_m_Immediate(bool  value) ;
+
+constexpr void __cordl_internal_set_m_Queue(::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>*  value) ;
+
+/// [Obsolete("Please use EventDispatcher.CreateDefault().")]
+/// @brief Method .ctor, addr 0xb88c37c, size 0x16c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::UIElements::ObjectPool_1<::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>*>* getStaticF_k_EventQueuePool() ;
+
+/// @brief Method get_dispatchImmediately, addr 0xb88c4e8, size 0x20, virtual false, abstract: false, final false
+inline bool get_dispatchImmediately() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_pointerState, addr 0xb88c324, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::PointerDispatchState* get_pointerState() ;
+
+static inline void setStaticF_k_EventQueuePool(::UnityEngine::UIElements::ObjectPool_1<::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>*>*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_processingEvents, addr 0xb88c508, size 0x8, virtual false, abstract: false, final false
+inline void set_processingEvents(bool  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr EventDispatcher() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "EventDispatcher", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+EventDispatcher(EventDispatcher && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "EventDispatcher", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+EventDispatcher(EventDispatcher const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7575};
+
+/// @brief Field k_MaxGateDepth offset 0xffffffff size 0x4
+static constexpr int32_t  k_MaxGateDepth{static_cast<int32_t>(0x1f4)};
+
+/// @brief Field k_NumberOfEventsWithEventInfo offset 0xffffffff size 0x4
+static constexpr int32_t  k_NumberOfEventsWithEventInfo{static_cast<int32_t>(0x64)};
+
+/// @brief Field k_NumberOfEventsWithStackInfo offset 0xffffffff size 0x4
+static constexpr int32_t  k_NumberOfEventsWithStackInfo{static_cast<int32_t>(0xa)};
+
+/// @brief Field m_ClickDetector, offset: 0x10, size: 0x8, def value: None
+ ::UnityEngine::UIElements::ClickDetector*  ___m_ClickDetector;
+
+/// @brief Field m_Queue, offset: 0x18, size: 0x8, def value: None
+ ::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>*  ___m_Queue;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <pointerState>k__BackingField, offset: 0x20, size: 0x8, def value: None
+ ::UnityEngine::UIElements::PointerDispatchState*  ____pointerState_k__BackingField;
+
+/// @brief Field m_GateCount, offset: 0x28, size: 0x4, def value: None
+ uint32_t  ___m_GateCount;
+
+/// @brief Field m_GateDepth, offset: 0x2c, size: 0x4, def value: None
+ uint32_t  ___m_GateDepth;
+
+/// @brief Field m_DispatchStackFrame, offset: 0x30, size: 0x4, def value: None
+ int32_t  ___m_DispatchStackFrame;
+
+/// @brief Field m_CurrentEvent, offset: 0x38, size: 0x8, def value: None
+ ::UnityEngine::UIElements::EventBase*  ___m_CurrentEvent;
+
+/// @brief Field m_DispatchContexts, offset: 0x40, size: 0x8, def value: None
+ ::System::Collections::Generic::Stack_1<::GlobalNamespace::EventDispatcher_DispatchContext>*  ___m_DispatchContexts;
+
+/// @brief Field m_Immediate, offset: 0x48, size: 0x1, def value: None
+ bool  ___m_Immediate;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <processingEvents>k__BackingField, offset: 0x49, size: 0x1, def value: None
+ bool  ____processingEvents_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_ClickDetector) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_Queue) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ____pointerState_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_GateCount) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_GateDepth) == 0x2c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_DispatchStackFrame) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_CurrentEvent) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_DispatchContexts) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ___m_Immediate) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::EventDispatcher, ____processingEvents_k__BackingField) == 0x49, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::UIElements::EventDispatcher) == 0x50, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements
+// [CompilerGenerated]
+// Dependencies System.Object
+namespace UnityEngine::UIElements {
+// Is value type: false
+// CS Name: UnityEngine.UIElements.EventDispatcher/<>c
+class CORDL_TYPE EventDispatcher___c : public ::System::Object {
+public:
+// Declarations
+/// @brief Field <>9, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF___9, put=setStaticF___9)) ::UnityEngine::UIElements::EventDispatcher___c*  __9;
+
+static inline ::UnityEngine::UIElements::EventDispatcher___c* New_ctor() ;
+
+/// @brief Method <.cctor>b__35_0, addr 0xb88d34c, size 0x68, virtual false, abstract: false, final false
+inline ::System::Collections::Generic::Queue_1<::GlobalNamespace::EventDispatcher_EventRecord>* __cctor_b__35_0() ;
+
+/// @brief Method .ctor, addr 0xb88d344, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::UIElements::EventDispatcher___c* getStaticF___9() ;
+
+static inline void setStaticF___9(::UnityEngine::UIElements::EventDispatcher___c*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr EventDispatcher___c() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "EventDispatcher___c", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+EventDispatcher___c(EventDispatcher___c && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "EventDispatcher___c", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+EventDispatcher___c(EventDispatcher___c const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7574};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::UIElements::EventDispatcher___c) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

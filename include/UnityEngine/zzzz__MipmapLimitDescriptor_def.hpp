@@ -1,0 +1,72 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/MipmapLimitDescriptor.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstddef>
+CORDL_MODULE_EXPORT(MipmapLimitDescriptor)
+// Forward declare root types
+namespace UnityEngine {
+struct MipmapLimitDescriptor;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::MipmapLimitDescriptor);
+DEFINE_IL2CPP_CLASS(::UnityEngine::MipmapLimitDescriptor, "UnityEngine", "MipmapLimitDescriptor");
+// Dependencies 
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.MipmapLimitDescriptor
+struct CORDL_TYPE MipmapLimitDescriptor {
+public:
+// Declarations
+ __declspec(property(get=get_groupName)) ::StringW  groupName;
+
+ __declspec(property(get=get_useMipmapLimit)) bool  useMipmapLimit;
+
+/// @brief Method .ctor, addr 0xb5c36e4, size 0x10, virtual false, abstract: false, final false
+inline void _ctor(bool  useMipmapLimit, ::StringW  groupName) ;
+
+/// [CompilerGenerated]
+/// [IsReadOnly]
+/// @brief Method get_groupName, addr 0xb5c36dc, size 0x8, virtual false, abstract: false, final false
+inline ::StringW get_groupName() ;
+
+/// [CompilerGenerated]
+/// [IsReadOnly]
+/// @brief Method get_useMipmapLimit, addr 0xb5c36d4, size 0x8, virtual false, abstract: false, final false
+inline bool get_useMipmapLimit() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr MipmapLimitDescriptor() ;
+
+// Ctor Parameters [CppParam { name: "_useMipmapLimit_k__BackingField", ty: "bool", modifiers: "", def_value: None, comment: None }, CppParam { name: "_groupName_k__BackingField", ty: "::StringW", modifiers: "", def_value: None, comment: None }]
+constexpr MipmapLimitDescriptor(bool  _useMipmapLimit_k__BackingField, ::StringW  _groupName_k__BackingField) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14960};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x10};
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <useMipmapLimit>k__BackingField, offset: 0x0, size: 0x1, def value: None
+ bool  _useMipmapLimit_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <groupName>k__BackingField, offset: 0x8, size: 0x8, def value: None
+ ::StringW  _groupName_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::MipmapLimitDescriptor, _useMipmapLimit_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::MipmapLimitDescriptor, _groupName_k__BackingField) == 0x8, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::MipmapLimitDescriptor) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

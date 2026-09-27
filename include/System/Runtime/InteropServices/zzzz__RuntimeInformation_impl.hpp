@@ -1,0 +1,94 @@
+#pragma once
+// IWYU pragma private; include "System/Runtime/InteropServices/RuntimeInformation.hpp"
+#include "System/Runtime/InteropServices/zzzz__Architecture_impl.hpp"
+#include "System/Runtime/InteropServices/zzzz__OSPlatform_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/Runtime/InteropServices/zzzz__RuntimeInformation_def.hpp"
+#include "System/Runtime/InteropServices/zzzz__OSPlatform_def.hpp"
+//  Writing Method size for method: ::System::Runtime::InteropServices::RuntimeInformation.GetRuntimeArchitecture
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)()>(&::System::Runtime::InteropServices::RuntimeInformation::GetRuntimeArchitecture)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa1e1d1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::InteropServices::RuntimeInformation*>(),
+                        {"GetRuntimeArchitecture", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Runtime::InteropServices::RuntimeInformation.GetOSName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)()>(&::System::Runtime::InteropServices::RuntimeInformation::GetOSName)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa1e1d20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::InteropServices::RuntimeInformation*>(),
+                        {"GetOSName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Runtime::InteropServices::RuntimeInformation.IsOSPlatform
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::System::Runtime::InteropServices::OSPlatform)>(&::System::Runtime::InteropServices::RuntimeInformation::IsOSPlatform)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xa1e1d24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::InteropServices::RuntimeInformation*>(),
+                        {"IsOSPlatform", {}, {::i2c::type_of<::System::Runtime::InteropServices::OSPlatform>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void System::Runtime::InteropServices::RuntimeInformation::setStaticF__osArchitecture(::System::Runtime::InteropServices::Architecture  value)  {
+::cordl_internals::setStaticField<::System::Runtime::InteropServices::Architecture, "_osArchitecture", ::System::Runtime::InteropServices::RuntimeInformation*>(std::forward<::System::Runtime::InteropServices::Architecture>(value));
+}
+inline ::System::Runtime::InteropServices::Architecture System::Runtime::InteropServices::RuntimeInformation::getStaticF__osArchitecture()  {
+return ::cordl_internals::getStaticField<::System::Runtime::InteropServices::Architecture, "_osArchitecture", ::System::Runtime::InteropServices::RuntimeInformation*>();
+}
+inline void System::Runtime::InteropServices::RuntimeInformation::setStaticF__processArchitecture(::System::Runtime::InteropServices::Architecture  value)  {
+::cordl_internals::setStaticField<::System::Runtime::InteropServices::Architecture, "_processArchitecture", ::System::Runtime::InteropServices::RuntimeInformation*>(std::forward<::System::Runtime::InteropServices::Architecture>(value));
+}
+inline ::System::Runtime::InteropServices::Architecture System::Runtime::InteropServices::RuntimeInformation::getStaticF__processArchitecture()  {
+return ::cordl_internals::getStaticField<::System::Runtime::InteropServices::Architecture, "_processArchitecture", ::System::Runtime::InteropServices::RuntimeInformation*>();
+}
+inline void System::Runtime::InteropServices::RuntimeInformation::setStaticF__osPlatform(::System::Runtime::InteropServices::OSPlatform  value)  {
+::cordl_internals::setStaticField<::System::Runtime::InteropServices::OSPlatform, "_osPlatform", ::System::Runtime::InteropServices::RuntimeInformation*>(std::forward<::System::Runtime::InteropServices::OSPlatform>(value));
+}
+inline ::System::Runtime::InteropServices::OSPlatform System::Runtime::InteropServices::RuntimeInformation::getStaticF__osPlatform()  {
+return ::cordl_internals::getStaticField<::System::Runtime::InteropServices::OSPlatform, "_osPlatform", ::System::Runtime::InteropServices::RuntimeInformation*>();
+}
+inline ::StringW System::Runtime::InteropServices::RuntimeInformation::GetRuntimeArchitecture()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::InteropServices::RuntimeInformation*>(),
+                        {"GetRuntimeArchitecture", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method);
+}
+inline ::StringW System::Runtime::InteropServices::RuntimeInformation::GetOSName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::InteropServices::RuntimeInformation*>(),
+                        {"GetOSName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method);
+}
+inline bool System::Runtime::InteropServices::RuntimeInformation::IsOSPlatform(::System::Runtime::InteropServices::OSPlatform  osPlatform)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Runtime::InteropServices::RuntimeInformation*>(),
+                        {"IsOSPlatform", {}, {::i2c::type_of<::System::Runtime::InteropServices::OSPlatform>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, osPlatform);
+}
+// Ctor Parameters []
+constexpr ::System::Runtime::InteropServices::RuntimeInformation::RuntimeInformation()   {
+}

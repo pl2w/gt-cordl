@@ -1,0 +1,821 @@
+#pragma once
+// IWYU pragma private; include "System/IO/UnmanagedMemoryStream.hpp"
+#include "System/IO/zzzz__FileAccess_impl.hpp"
+#include "System/IO/zzzz__Stream_impl.hpp"
+#include "System/IO/zzzz__UnmanagedMemoryStream_def.hpp"
+#include "System/IO/zzzz__FileAccess_def.hpp"
+#include "System/IO/zzzz__SeekOrigin_def.hpp"
+#include "System/Runtime/InteropServices/zzzz__SafeBuffer_def.hpp"
+#include "System/Threading/Tasks/zzzz__Task_1_def.hpp"
+#include "System/Threading/Tasks/zzzz__Task_def.hpp"
+#include "System/Threading/Tasks/zzzz__ValueTask_1_def.hpp"
+#include "System/Threading/Tasks/zzzz__ValueTask_def.hpp"
+#include "System/Threading/zzzz__CancellationToken_def.hpp"
+#include "System/zzzz__Memory_1_def.hpp"
+#include "System/zzzz__ReadOnlyMemory_1_def.hpp"
+#include "System/zzzz__ReadOnlySpan_1_def.hpp"
+#include "System/zzzz__Span_1_def.hpp"
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::_ctor)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xa286ce4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(uint8_t*, int64_t)>(&::System::IO::UnmanagedMemoryStream::_ctor)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xa294418;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {".ctor", {}, {::i2c::type_of<uint8_t*>(), ::i2c::type_of<int64_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(uint8_t*, int64_t, int64_t, ::System::IO::FileAccess)>(&::System::IO::UnmanagedMemoryStream::_ctor)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa294498;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {".ctor", {}, {::i2c::type_of<uint8_t*>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<::System::IO::FileAccess>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Initialize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(uint8_t*, int64_t, int64_t, ::System::IO::FileAccess)>(&::System::IO::UnmanagedMemoryStream::Initialize)> {
+  constexpr static std::size_t size = 0x1ec;
+  constexpr static std::size_t addrs = 0xa286d48;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"Initialize", {}, {::i2c::type_of<uint8_t*>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<::System::IO::FileAccess>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.get_CanRead
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::get_CanRead)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xa294528;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 8}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.get_CanSeek
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::get_CanSeek)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa294544;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 9}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.get_CanWrite
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::get_CanWrite)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xa29454c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 11}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(bool)>(&::System::IO::UnmanagedMemoryStream::Dispose)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xa287514;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 22}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.EnsureNotClosed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::EnsureNotClosed)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xa294568;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"EnsureNotClosed", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.EnsureReadable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::EnsureReadable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa29459c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"EnsureReadable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.EnsureWriteable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::EnsureWriteable)> {
+  constexpr static std::size_t size = 0x40;
+  constexpr static std::size_t addrs = 0xa2945dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"EnsureWriteable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Flush
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::Flush)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa29461c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 23}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.FlushAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::UnmanagedMemoryStream::*)(::System::Threading::CancellationToken)>(&::System::IO::UnmanagedMemoryStream::FlushAsync)> {
+  constexpr static std::size_t size = 0x1bc;
+  constexpr static std::size_t addrs = 0xa294620;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 24}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.get_Length
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::get_Length)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xa2947dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 12}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.get_Position
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::get_Position)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xa2947f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.set_Position
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(int64_t)>(&::System::IO::UnmanagedMemoryStream::set_Position)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xa294844;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 14}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.get_PositionPointer
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint8_t* (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::get_PositionPointer)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xa2948ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"get_PositionPointer", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Read
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::UnmanagedMemoryStream::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::System::IO::UnmanagedMemoryStream::Read)> {
+  constexpr static std::size_t size = 0x180;
+  constexpr static std::size_t addrs = 0xa2949a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 35}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Read
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::UnmanagedMemoryStream::*)(::System::Span_1<uint8_t>)>(&::System::IO::UnmanagedMemoryStream::Read)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xa294b24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 36}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.ReadCore
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::UnmanagedMemoryStream::*)(::System::Span_1<uint8_t>)>(&::System::IO::UnmanagedMemoryStream::ReadCore)> {
+  constexpr static std::size_t size = 0x220;
+  constexpr static std::size_t addrs = 0xa286f38;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"ReadCore", {}, {::i2c::type_of<::System::Span_1<uint8_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.ReadAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task_1<int32_t>* (::System::IO::UnmanagedMemoryStream::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::System::Threading::CancellationToken)>(&::System::IO::UnmanagedMemoryStream::ReadAsync)> {
+  constexpr static std::size_t size = 0x35c;
+  constexpr static std::size_t addrs = 0xa294bf0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 27}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.ReadAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::ValueTask_1<int32_t> (::System::IO::UnmanagedMemoryStream::*)(::System::Memory_1<uint8_t>, ::System::Threading::CancellationToken)>(&::System::IO::UnmanagedMemoryStream::ReadAsync)> {
+  constexpr static std::size_t size = 0x34c;
+  constexpr static std::size_t addrs = 0xa294f4c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 28}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.ReadByte
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::IO::UnmanagedMemoryStream::*)()>(&::System::IO::UnmanagedMemoryStream::ReadByte)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xa295298;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 37}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Seek
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::IO::UnmanagedMemoryStream::*)(int64_t, ::System::IO::SeekOrigin)>(&::System::IO::UnmanagedMemoryStream::Seek)> {
+  constexpr static std::size_t size = 0xf4;
+  constexpr static std::size_t addrs = 0xa2953f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 33}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.SetLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(int64_t)>(&::System::IO::UnmanagedMemoryStream::SetLength)> {
+  constexpr static std::size_t size = 0x16c;
+  constexpr static std::size_t addrs = 0xa2954e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 34}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Write
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::System::IO::UnmanagedMemoryStream::Write)> {
+  constexpr static std::size_t size = 0x1ac;
+  constexpr static std::size_t addrs = 0xa295654;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 38}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.Write
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(::System::ReadOnlySpan_1<uint8_t>)>(&::System::IO::UnmanagedMemoryStream::Write)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xa295800;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 39}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.WriteCore
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(::System::ReadOnlySpan_1<uint8_t>)>(&::System::IO::UnmanagedMemoryStream::WriteCore)> {
+  constexpr static std::size_t size = 0x2e4;
+  constexpr static std::size_t addrs = 0xa28715c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"WriteCore", {}, {::i2c::type_of<::System::ReadOnlySpan_1<uint8_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.WriteAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::Task* (::System::IO::UnmanagedMemoryStream::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::System::Threading::CancellationToken)>(&::System::IO::UnmanagedMemoryStream::WriteAsync)> {
+  constexpr static std::size_t size = 0x2f8;
+  constexpr static std::size_t addrs = 0xa2958cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 31}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.WriteAsync
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Threading::Tasks::ValueTask (::System::IO::UnmanagedMemoryStream::*)(::System::ReadOnlyMemory_1<uint8_t>, ::System::Threading::CancellationToken)>(&::System::IO::UnmanagedMemoryStream::WriteAsync)> {
+  constexpr static std::size_t size = 0x2bc;
+  constexpr static std::size_t addrs = 0xa295bc4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 32}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::IO::UnmanagedMemoryStream.WriteByte
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::IO::UnmanagedMemoryStream::*)(uint8_t)>(&::System::IO::UnmanagedMemoryStream::WriteByte)> {
+  constexpr static std::size_t size = 0x218;
+  constexpr static std::size_t addrs = 0xa295e80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                    {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 40}
+                ));
+    return ___internal_method;
+  }
+};
+constexpr ::System::Runtime::InteropServices::SafeBuffer*& System::IO::UnmanagedMemoryStream::__cordl_internal_get__buffer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____buffer;
+}
+constexpr ::System::Runtime::InteropServices::SafeBuffer* const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__buffer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____buffer;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__buffer(::System::Runtime::InteropServices::SafeBuffer*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____buffer = value;
+}
+constexpr uint8_t*& System::IO::UnmanagedMemoryStream::__cordl_internal_get__mem()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____mem;
+}
+constexpr uint8_t* const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__mem() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____mem;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__mem(uint8_t*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____mem = value;
+}
+constexpr int64_t& System::IO::UnmanagedMemoryStream::__cordl_internal_get__length()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____length;
+}
+constexpr int64_t const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__length() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____length;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__length(int64_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____length = value;
+}
+constexpr int64_t& System::IO::UnmanagedMemoryStream::__cordl_internal_get__capacity()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____capacity;
+}
+constexpr int64_t const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__capacity() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____capacity;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__capacity(int64_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____capacity = value;
+}
+constexpr int64_t& System::IO::UnmanagedMemoryStream::__cordl_internal_get__position()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____position;
+}
+constexpr int64_t const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__position() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____position;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__position(int64_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____position = value;
+}
+constexpr int64_t& System::IO::UnmanagedMemoryStream::__cordl_internal_get__offset()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____offset;
+}
+constexpr int64_t const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__offset() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____offset;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__offset(int64_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____offset = value;
+}
+constexpr ::System::IO::FileAccess& System::IO::UnmanagedMemoryStream::__cordl_internal_get__access()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____access;
+}
+constexpr ::System::IO::FileAccess const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__access() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____access;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__access(::System::IO::FileAccess  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____access = value;
+}
+constexpr bool& System::IO::UnmanagedMemoryStream::__cordl_internal_get__isOpen()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____isOpen;
+}
+constexpr bool const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__isOpen() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____isOpen;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__isOpen(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____isOpen = value;
+}
+constexpr ::System::Threading::Tasks::Task_1<int32_t>*& System::IO::UnmanagedMemoryStream::__cordl_internal_get__lastReadTask()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastReadTask;
+}
+constexpr ::System::Threading::Tasks::Task_1<int32_t>* const& System::IO::UnmanagedMemoryStream::__cordl_internal_get__lastReadTask() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastReadTask;
+}
+constexpr void System::IO::UnmanagedMemoryStream::__cordl_internal_set__lastReadTask(::System::Threading::Tasks::Task_1<int32_t>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____lastReadTask = value;
+}
+inline void System::IO::UnmanagedMemoryStream::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::UnmanagedMemoryStream::_ctor(uint8_t*  pointer, int64_t  length)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {".ctor", {}, {::i2c::type_of<uint8_t*>(), ::i2c::type_of<int64_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, pointer, length);
+}
+inline void System::IO::UnmanagedMemoryStream::_ctor(uint8_t*  pointer, int64_t  length, int64_t  capacity, ::System::IO::FileAccess  access)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {".ctor", {}, {::i2c::type_of<uint8_t*>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<::System::IO::FileAccess>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, pointer, length, capacity, access);
+}
+inline void System::IO::UnmanagedMemoryStream::Initialize(uint8_t*  pointer, int64_t  length, int64_t  capacity, ::System::IO::FileAccess  access)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"Initialize", {}, {::i2c::type_of<uint8_t*>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<int64_t>(), ::i2c::type_of<::System::IO::FileAccess>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, pointer, length, capacity, access);
+}
+inline bool System::IO::UnmanagedMemoryStream::get_CanRead()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 8}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::IO::UnmanagedMemoryStream::get_CanSeek()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 9}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::IO::UnmanagedMemoryStream::get_CanWrite()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 11}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::IO::UnmanagedMemoryStream::Dispose(bool  disposing)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 22}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, disposing);
+}
+inline void System::IO::UnmanagedMemoryStream::EnsureNotClosed()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"EnsureNotClosed", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::UnmanagedMemoryStream::EnsureReadable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"EnsureReadable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::UnmanagedMemoryStream::EnsureWriteable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"EnsureWriteable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::IO::UnmanagedMemoryStream::Flush()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 23}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Threading::Tasks::Task* System::IO::UnmanagedMemoryStream::FlushAsync(::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 24}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, cancellationToken);
+}
+inline int64_t System::IO::UnmanagedMemoryStream::get_Length()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 12}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method);
+}
+inline int64_t System::IO::UnmanagedMemoryStream::get_Position()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method);
+}
+inline void System::IO::UnmanagedMemoryStream::set_Position(int64_t  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 14}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline uint8_t* System::IO::UnmanagedMemoryStream::get_PositionPointer()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"get_PositionPointer", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint8_t*>(this, ___internal_method);
+}
+inline int32_t System::IO::UnmanagedMemoryStream::Read(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 35}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, buffer, offset, count);
+}
+inline int32_t System::IO::UnmanagedMemoryStream::Read(::System::Span_1<uint8_t>  buffer)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 36}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, buffer);
+}
+inline int32_t System::IO::UnmanagedMemoryStream::ReadCore(::System::Span_1<uint8_t>  buffer)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"ReadCore", {}, {::i2c::type_of<::System::Span_1<uint8_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, buffer);
+}
+inline ::System::Threading::Tasks::Task_1<int32_t>* System::IO::UnmanagedMemoryStream::ReadAsync(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 27}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task_1<int32_t>*>(this, ___internal_method, buffer, offset, count, cancellationToken);
+}
+inline ::System::Threading::Tasks::ValueTask_1<int32_t> System::IO::UnmanagedMemoryStream::ReadAsync(::System::Memory_1<uint8_t>  buffer, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 28}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::ValueTask_1<int32_t>>(this, ___internal_method, buffer, cancellationToken);
+}
+inline int32_t System::IO::UnmanagedMemoryStream::ReadByte()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 37}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline int64_t System::IO::UnmanagedMemoryStream::Seek(int64_t  offset, ::System::IO::SeekOrigin  loc)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 33}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method, offset, loc);
+}
+inline void System::IO::UnmanagedMemoryStream::SetLength(int64_t  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 34}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void System::IO::UnmanagedMemoryStream::Write(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 38}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, buffer, offset, count);
+}
+inline void System::IO::UnmanagedMemoryStream::Write(::System::ReadOnlySpan_1<uint8_t>  buffer)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 39}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, buffer);
+}
+inline void System::IO::UnmanagedMemoryStream::WriteCore(::System::ReadOnlySpan_1<uint8_t>  buffer)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(),
+                        {"WriteCore", {}, {::i2c::type_of<::System::ReadOnlySpan_1<uint8_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, buffer);
+}
+inline ::System::Threading::Tasks::Task* System::IO::UnmanagedMemoryStream::WriteAsync(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 31}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::Task*>(this, ___internal_method, buffer, offset, count, cancellationToken);
+}
+inline ::System::Threading::Tasks::ValueTask System::IO::UnmanagedMemoryStream::WriteAsync(::System::ReadOnlyMemory_1<uint8_t>  buffer, ::System::Threading::CancellationToken  cancellationToken)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 32}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Threading::Tasks::ValueTask>(this, ___internal_method, buffer, cancellationToken);
+}
+inline void System::IO::UnmanagedMemoryStream::WriteByte(uint8_t  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::IO::UnmanagedMemoryStream*>(), 40}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::IO::UnmanagedMemoryStream* System::IO::UnmanagedMemoryStream::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::IO::UnmanagedMemoryStream*>());
+}
+/// @brief [CLSCompliant(false)]
+inline ::System::IO::UnmanagedMemoryStream* System::IO::UnmanagedMemoryStream::New_ctor(uint8_t*  pointer, int64_t  length)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::IO::UnmanagedMemoryStream*>(pointer, length));
+}
+/// @brief [CLSCompliant(false)]
+inline ::System::IO::UnmanagedMemoryStream* System::IO::UnmanagedMemoryStream::New_ctor(uint8_t*  pointer, int64_t  length, int64_t  capacity, ::System::IO::FileAccess  access)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::IO::UnmanagedMemoryStream*>(pointer, length, capacity, access));
+}
+// Ctor Parameters []
+constexpr ::System::IO::UnmanagedMemoryStream::UnmanagedMemoryStream()   {
+}

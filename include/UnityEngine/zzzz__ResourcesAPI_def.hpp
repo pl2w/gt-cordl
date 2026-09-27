@@ -1,0 +1,102 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourcesAPI.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(ResourcesAPI)
+namespace System {
+class Type;
+}
+namespace UnityEngine {
+class Object;
+}
+namespace UnityEngine {
+class ResourceRequest;
+}
+namespace UnityEngine {
+class Shader;
+}
+// Forward declare root types
+namespace UnityEngine {
+class ResourcesAPI;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourcesAPI*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourcesAPI*, "UnityEngine", "ResourcesAPI");
+// Dependencies System.Object
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.ResourcesAPI
+class CORDL_TYPE ResourcesAPI : public ::System::Object {
+public:
+// Declarations
+/// @brief Field <overrideAPI>k__BackingField, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF__overrideAPI_k__BackingField, put=setStaticF__overrideAPI_k__BackingField)) ::UnityEngine::ResourcesAPI*  _overrideAPI_k__BackingField;
+
+/// @brief Field s_DefaultAPI, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_DefaultAPI, put=setStaticF_s_DefaultAPI)) ::UnityEngine::ResourcesAPI*  s_DefaultAPI;
+
+/// @brief Method FindObjectsOfTypeAll, addr 0xb5d6868, size 0x3c, virtual true, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::Object>> FindObjectsOfTypeAll(::System::Type*  systemTypeInstance) ;
+
+/// @brief Method FindShaderByName, addr 0xb5d68a4, size 0x8, virtual true, abstract: false, final false
+inline ::UnityW<::UnityEngine::Shader> FindShaderByName(::StringW  name) ;
+
+/// @brief Method Load, addr 0xb5d68ac, size 0xc, virtual true, abstract: false, final false
+inline ::UnityW<::UnityEngine::Object> Load(::StringW  path, ::System::Type*  systemTypeInstance) ;
+
+/// @brief Method LoadAll, addr 0xb5d68b8, size 0xc, virtual true, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::Object>> LoadAll(::StringW  path, ::System::Type*  systemTypeInstance) ;
+
+/// @brief Method LoadAsync, addr 0xb5d68c4, size 0x54, virtual true, abstract: false, final false
+inline ::UnityEngine::ResourceRequest* LoadAsync(::StringW  path, ::System::Type*  systemTypeInstance) ;
+
+static inline ::UnityEngine::ResourcesAPI* New_ctor() ;
+
+/// @brief Method UnloadAsset, addr 0xb5d6918, size 0x8, virtual true, abstract: false, final false
+inline void UnloadAsset(::UnityEngine::Object*  assetToUnload) ;
+
+/// @brief Method .ctor, addr 0xb5d6860, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::ResourcesAPI* getStaticF__overrideAPI_k__BackingField() ;
+
+static inline ::UnityEngine::ResourcesAPI* getStaticF_s_DefaultAPI() ;
+
+/// @brief Method get_ActiveAPI, addr 0xb5d6760, size 0xa8, virtual false, abstract: false, final false
+static inline ::UnityEngine::ResourcesAPI* get_ActiveAPI() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_overrideAPI, addr 0xb5d6808, size 0x58, virtual false, abstract: false, final false
+static inline ::UnityEngine::ResourcesAPI* get_overrideAPI() ;
+
+static inline void setStaticF__overrideAPI_k__BackingField(::UnityEngine::ResourcesAPI*  value) ;
+
+static inline void setStaticF_s_DefaultAPI(::UnityEngine::ResourcesAPI*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ResourcesAPI() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourcesAPI", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ResourcesAPI(ResourcesAPI && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourcesAPI", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ResourcesAPI(ResourcesAPI const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15023};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ResourcesAPI) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

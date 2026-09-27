@@ -1,0 +1,172 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Networking/DownloadHandlerAssetBundle.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/Networking/zzzz__DownloadHandler_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(DownloadHandlerAssetBundle)
+namespace System {
+struct IntPtr;
+}
+namespace UnityEngine::Bindings {
+struct ManagedSpanWrapper;
+}
+namespace UnityEngine::Networking {
+class DownloadHandlerAssetBundle_BindingsMarshaller;
+}
+namespace UnityEngine {
+class AssetBundle;
+}
+namespace UnityEngine {
+struct CachedAssetBundle;
+}
+namespace UnityEngine {
+struct Hash128;
+}
+// Forward declare root types
+namespace UnityEngine::Networking {
+class DownloadHandlerAssetBundle;
+}
+namespace UnityEngine::Networking {
+class DownloadHandlerAssetBundle_BindingsMarshaller;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Networking::DownloadHandlerAssetBundle*);
+MARK_REF_T(::UnityEngine::Networking::DownloadHandlerAssetBundle_BindingsMarshaller*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Networking::DownloadHandlerAssetBundle*, "UnityEngine.Networking", "DownloadHandlerAssetBundle");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Networking::DownloadHandlerAssetBundle_BindingsMarshaller*, "UnityEngine.Networking", "DownloadHandlerAssetBundle/BindingsMarshaller");
+// [NativeHeader("Modules/UnityWebRequestAssetBundle/Public/DownloadHandlerAssetBundle.h")]
+// Dependencies UnityEngine.Networking.DownloadHandler
+namespace UnityEngine::Networking {
+// Is value type: false
+// CS Name: UnityEngine.Networking.DownloadHandlerAssetBundle
+class CORDL_TYPE DownloadHandlerAssetBundle : public ::UnityEngine::Networking::DownloadHandler {
+public:
+// Declarations
+using BindingsMarshaller = ::UnityEngine::Networking::DownloadHandlerAssetBundle_BindingsMarshaller;
+
+ __declspec(property(get=get_assetBundle)) ::UnityW<::UnityEngine::AssetBundle>  assetBundle;
+
+ __declspec(property(get=get_autoLoadAssetBundle, put=set_autoLoadAssetBundle)) bool  autoLoadAssetBundle;
+
+ __declspec(property(get=get_isDownloadComplete)) bool  isDownloadComplete;
+
+/// @brief Method Create, addr 0xb9255a8, size 0x188, virtual false, abstract: false, final false
+static inline ::System::IntPtr Create(/* [Unmarshalled] */ ::UnityEngine::Networking::DownloadHandlerAssetBundle*  obj, ::StringW  url, uint32_t  crc) ;
+
+/// @brief Method CreateCached, addr 0xb925784, size 0x258, virtual false, abstract: false, final false
+static inline ::System::IntPtr CreateCached(/* [Unmarshalled] */ ::UnityEngine::Networking::DownloadHandlerAssetBundle*  obj, ::StringW  url, ::StringW  name, ::UnityEngine::Hash128  hash, uint32_t  crc) ;
+
+/// @brief Method CreateCached_Injected, addr 0xb9259dc, size 0x6c, virtual false, abstract: false, final false
+static inline ::System::IntPtr CreateCached_Injected(::UnityEngine::Networking::DownloadHandlerAssetBundle*  obj, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  url, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name, ::by_ref<::UnityEngine::Hash128>  hash, uint32_t  crc) ;
+
+/// @brief Method Create_Injected, addr 0xb925730, size 0x54, virtual false, abstract: false, final false
+static inline ::System::IntPtr Create_Injected(::UnityEngine::Networking::DownloadHandlerAssetBundle*  obj, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  url, uint32_t  crc) ;
+
+/// @brief Method GetData, addr 0xb925a78, size 0x4c, virtual true, abstract: false, final false
+inline ::ArrayW<uint8_t> GetData() ;
+
+/// @brief Method GetText, addr 0xb925ac4, size 0x4c, virtual true, abstract: false, final false
+inline ::StringW GetText() ;
+
+/// @brief Method InternalCreateAssetBundle, addr 0xb925a48, size 0x18, virtual false, abstract: false, final false
+inline void InternalCreateAssetBundle(::StringW  url, uint32_t  crc) ;
+
+/// @brief Method InternalCreateAssetBundleCached, addr 0xb925a60, size 0x18, virtual false, abstract: false, final false
+inline void InternalCreateAssetBundleCached(::StringW  url, ::StringW  name, ::UnityEngine::Hash128  hash, uint32_t  crc) ;
+
+static inline ::UnityEngine::Networking::DownloadHandlerAssetBundle* New_ctor(::StringW  url, ::UnityEngine::CachedAssetBundle  cachedBundle, uint32_t  crc) ;
+
+static inline ::UnityEngine::Networking::DownloadHandlerAssetBundle* New_ctor(::StringW  url, uint32_t  crc) ;
+
+/// @brief Method .ctor, addr 0xb925538, size 0x70, virtual false, abstract: false, final false
+inline void _ctor(::StringW  url, ::UnityEngine::CachedAssetBundle  cachedBundle, uint32_t  crc) ;
+
+/// @brief Method .ctor, addr 0xb925408, size 0x3c, virtual false, abstract: false, final false
+inline void _ctor(::StringW  url, uint32_t  crc) ;
+
+/// @brief Method get_assetBundle, addr 0xb925b10, size 0x88, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::AssetBundle> get_assetBundle() ;
+
+/// @brief Method get_assetBundle_Injected, addr 0xb925b98, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr get_assetBundle_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_autoLoadAssetBundle, addr 0xb925bd4, size 0x50, virtual false, abstract: false, final false
+inline bool get_autoLoadAssetBundle() ;
+
+/// @brief Method get_autoLoadAssetBundle_Injected, addr 0xb925c24, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_autoLoadAssetBundle_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_isDownloadComplete, addr 0xb925cfc, size 0x50, virtual false, abstract: false, final false
+inline bool get_isDownloadComplete() ;
+
+/// @brief Method get_isDownloadComplete_Injected, addr 0xb925d4c, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_isDownloadComplete_Injected(::System::IntPtr  _unity_self) ;
+
+/// [NativeThrows]
+/// @brief Method set_autoLoadAssetBundle, addr 0xb925c60, size 0x58, virtual false, abstract: false, final false
+inline void set_autoLoadAssetBundle(bool  value) ;
+
+/// @brief Method set_autoLoadAssetBundle_Injected, addr 0xb925cb8, size 0x44, virtual false, abstract: false, final false
+static inline void set_autoLoadAssetBundle_Injected(::System::IntPtr  _unity_self, bool  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DownloadHandlerAssetBundle() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DownloadHandlerAssetBundle", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DownloadHandlerAssetBundle(DownloadHandlerAssetBundle && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DownloadHandlerAssetBundle", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DownloadHandlerAssetBundle(DownloadHandlerAssetBundle const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32866};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Networking::DownloadHandlerAssetBundle) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine::Networking
+// Dependencies System.Object
+namespace UnityEngine::Networking {
+// Is value type: false
+// CS Name: UnityEngine.Networking.DownloadHandlerAssetBundle/BindingsMarshaller
+class CORDL_TYPE DownloadHandlerAssetBundle_BindingsMarshaller : public ::System::Object {
+public:
+// Declarations
+/// @brief Method ConvertToNative, addr 0xb925d88, size 0x14, virtual false, abstract: false, final false
+static inline ::System::IntPtr ConvertToNative(::UnityEngine::Networking::DownloadHandlerAssetBundle*  handler) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DownloadHandlerAssetBundle_BindingsMarshaller() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DownloadHandlerAssetBundle_BindingsMarshaller", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DownloadHandlerAssetBundle_BindingsMarshaller(DownloadHandlerAssetBundle_BindingsMarshaller && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DownloadHandlerAssetBundle_BindingsMarshaller", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DownloadHandlerAssetBundle_BindingsMarshaller(DownloadHandlerAssetBundle_BindingsMarshaller const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32865};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Networking::DownloadHandlerAssetBundle_BindingsMarshaller) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Networking

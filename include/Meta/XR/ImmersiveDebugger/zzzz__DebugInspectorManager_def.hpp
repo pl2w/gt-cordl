@@ -1,0 +1,105 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/DebugInspectorManager.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Meta/XR/ImmersiveDebugger/Manager/zzzz__DebugManagerAddon_1_def.hpp"
+CORDL_MODULE_EXPORT(DebugInspectorManager)
+namespace GlobalNamespace {
+struct Telemetry_Method;
+}
+namespace Meta::XR::ImmersiveDebugger::Manager {
+struct Category;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class DebugInspector;
+}
+namespace Meta::XR::ImmersiveDebugger {
+class DebugMember;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger {
+class DebugInspectorManager;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::DebugInspectorManager*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::DebugInspectorManager*, "Meta.XR.ImmersiveDebugger", "DebugInspectorManager");
+// Dependencies Meta.XR.ImmersiveDebugger.Manager.DebugManagerAddon`1<Type>
+namespace Meta::XR::ImmersiveDebugger {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.DebugInspectorManager
+class CORDL_TYPE DebugInspectorManager : public ::Meta::XR::ImmersiveDebugger::Manager::DebugManagerAddon_1<::Meta::XR::ImmersiveDebugger::DebugInspectorManager*> {
+public:
+// Declarations
+ __declspec(property(get=get_Method)) ::GlobalNamespace::Telemetry_Method  Method;
+
+/// @brief Field _inspectors, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__inspectors, put=__cordl_internal_set__inspectors)) ::System::Collections::Generic::List_1<::UnityW<::Meta::XR::ImmersiveDebugger::DebugInspector>>*  _inspectors;
+
+/// @brief Method FetchCategory, addr 0x9ecf8d0, size 0x34, virtual false, abstract: false, final false
+static inline ::Meta::XR::ImmersiveDebugger::Manager::Category FetchCategory(::Meta::XR::ImmersiveDebugger::DebugMember*  attribute) ;
+
+static inline ::Meta::XR::ImmersiveDebugger::DebugInspectorManager* New_ctor() ;
+
+/// @brief Method OnReadyInternal, addr 0x9ecf610, size 0x12c, virtual true, abstract: false, final false
+inline void OnReadyInternal() ;
+
+/// @brief Method ProcessInspector, addr 0x9ecec48, size 0x5e0, virtual false, abstract: false, final false
+inline void ProcessInspector(::Meta::XR::ImmersiveDebugger::DebugInspector*  inspector) ;
+
+/// @brief Method RegisterInspector, addr 0x9ece2d0, size 0xb4, virtual false, abstract: false, final false
+inline void RegisterInspector(::Meta::XR::ImmersiveDebugger::DebugInspector*  inspector) ;
+
+/// @brief Method UnprocessInspector, addr 0x9ecf228, size 0x3e0, virtual false, abstract: false, final false
+inline void UnprocessInspector(::Meta::XR::ImmersiveDebugger::DebugInspector*  inspector) ;
+
+/// @brief Method UnregisterInspector, addr 0x9ece3fc, size 0x64, virtual false, abstract: false, final false
+inline void UnregisterInspector(::Meta::XR::ImmersiveDebugger::DebugInspector*  inspector) ;
+
+/// @brief Method UpdateCategory, addr 0x9ecf880, size 0x50, virtual false, abstract: false, final false
+inline void UpdateCategory(::Meta::XR::ImmersiveDebugger::DebugMember*  attribute, ::Meta::XR::ImmersiveDebugger::DebugInspector*  inspector) ;
+
+constexpr ::System::Collections::Generic::List_1<::UnityW<::Meta::XR::ImmersiveDebugger::DebugInspector>>* const& __cordl_internal_get__inspectors() const;
+
+constexpr ::System::Collections::Generic::List_1<::UnityW<::Meta::XR::ImmersiveDebugger::DebugInspector>>*& __cordl_internal_get__inspectors() ;
+
+constexpr void __cordl_internal_set__inspectors(::System::Collections::Generic::List_1<::UnityW<::Meta::XR::ImmersiveDebugger::DebugInspector>>*  value) ;
+
+/// @brief Method .ctor, addr 0x9ecf9ac, size 0xc0, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_Method, addr 0x9ecf608, size 0x8, virtual true, abstract: false, final false
+inline ::GlobalNamespace::Telemetry_Method get_Method() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DebugInspectorManager() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DebugInspectorManager", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DebugInspectorManager(DebugInspectorManager && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DebugInspectorManager", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DebugInspectorManager(DebugInspectorManager const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27390};
+
+/// @brief Field _inspectors, offset: 0x20, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::UnityW<::Meta::XR::ImmersiveDebugger::DebugInspector>>*  ____inspectors;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::DebugInspectorManager, ____inspectors) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::DebugInspectorManager) == 0x28, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger

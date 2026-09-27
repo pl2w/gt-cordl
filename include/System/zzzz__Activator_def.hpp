@@ -1,0 +1,88 @@
+#pragma once
+// IWYU pragma private; include "System/Activator.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+CORDL_MODULE_EXPORT(Activator)
+namespace System::Globalization {
+class CultureInfo;
+}
+namespace System::Reflection {
+class Binder;
+}
+namespace System::Reflection {
+struct BindingFlags;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System {
+class Activator;
+}
+// Write type traits
+MARK_REF_T(::System::Activator*);
+DEFINE_IL2CPP_CLASS(::System::Activator*, "System", "Activator");
+// [ClassInterface((System.Runtime.InteropServices.ClassInterfaceType)0)]
+// [ComDefaultInterface(typeof(System.Runtime.InteropServices._Activator))]
+// [ComVisible(true)]
+// Dependencies System.Object
+namespace System {
+// Is value type: false
+// CS Name: System.Activator
+class CORDL_TYPE Activator : public ::System::Object {
+public:
+// Declarations
+/// @brief Method CreateInstance, addr 0xa30aad4, size 0xc, virtual false, abstract: false, final false
+static inline ::System::Object* CreateInstance(::System::Type*  type) ;
+
+/// @brief Method CreateInstance, addr 0xa30aabc, size 0x18, virtual false, abstract: false, final false
+static inline ::System::Object* CreateInstance(::System::Type*  type, ::ArrayW<::System::Object*>  args, ::ArrayW<::System::Object*>  activationAttributes) ;
+
+/// @brief Method CreateInstance, addr 0xa30aaa4, size 0x18, virtual false, abstract: false, final false
+static inline ::System::Object* CreateInstance(::System::Type*  type, /* [ParamArray] */ ::ArrayW<::System::Object*>  args) ;
+
+/// @brief Method CreateInstance, addr 0xa309f48, size 0x8, virtual false, abstract: false, final false
+static inline ::System::Object* CreateInstance(::System::Type*  type, ::System::Reflection::BindingFlags  bindingAttr, ::System::Reflection::Binder*  binder, ::ArrayW<::System::Object*>  args, ::System::Globalization::CultureInfo*  culture) ;
+
+/// @brief Method CreateInstance, addr 0xa309f50, size 0x1f8, virtual false, abstract: false, final false
+static inline ::System::Object* CreateInstance(::System::Type*  type, ::System::Reflection::BindingFlags  bindingAttr, ::System::Reflection::Binder*  binder, ::ArrayW<::System::Object*>  args, ::System::Globalization::CultureInfo*  culture, ::ArrayW<::System::Object*>  activationAttributes) ;
+
+/// @brief Method CreateInstance, addr 0xa30aae0, size 0x8, virtual false, abstract: false, final false
+static inline ::System::Object* CreateInstance(::System::Type*  type, bool  nonPublic) ;
+
+/// @brief Method CreateInstance, addr 0xa30aae8, size 0x178, virtual false, abstract: false, final false
+static inline ::System::Object* CreateInstance(::System::Type*  type, bool  nonPublic, bool  wrapExceptions) ;
+
+/// @brief Method CreateInstance, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline T CreateInstance() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Activator() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Activator", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Activator(Activator && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Activator", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Activator(Activator const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{5669};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Activator) == 0x10, "Size mismatch!");
+
+} // namespace end def System

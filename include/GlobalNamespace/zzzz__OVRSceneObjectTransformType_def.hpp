@@ -1,0 +1,72 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRSceneObjectTransformType.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "GlobalNamespace/zzzz__OVRSceneObjectTransformType_Transformation_def.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_def.hpp"
+CORDL_MODULE_EXPORT(OVRSceneObjectTransformType)
+namespace GlobalNamespace {
+struct OVRSceneObjectTransformType_Transformation;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class OVRSceneObjectTransformType;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::OVRSceneObjectTransformType*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OVRSceneObjectTransformType*, "", "OVRSceneObjectTransformType");
+// [HelpURL("https://developer.oculus.com/documentation/unity/unity-scene-use-scene-anchors/#further-scene-model-unity-components")]
+// [Obsolete("OVRSceneManager and associated classes are deprecated (v65), please use MR Utility Kit instead (https://developer.oculus.com/documentation/unity/unity-mr-utility-kit-overview)")]
+// Dependencies OVRSceneObjectTransformType::Transformation, UnityEngine.MonoBehaviour
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OVRSceneObjectTransformType
+class CORDL_TYPE OVRSceneObjectTransformType : public ::UnityEngine::MonoBehaviour {
+public:
+// Declarations
+using Transformation = ::GlobalNamespace::OVRSceneObjectTransformType_Transformation;
+
+/// @brief Field TransformType, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_TransformType, put=__cordl_internal_set_TransformType)) ::GlobalNamespace::OVRSceneObjectTransformType_Transformation  TransformType;
+
+static inline ::GlobalNamespace::OVRSceneObjectTransformType* New_ctor() ;
+
+constexpr ::GlobalNamespace::OVRSceneObjectTransformType_Transformation const& __cordl_internal_get_TransformType() const;
+
+constexpr ::GlobalNamespace::OVRSceneObjectTransformType_Transformation& __cordl_internal_get_TransformType() ;
+
+constexpr void __cordl_internal_set_TransformType(::GlobalNamespace::OVRSceneObjectTransformType_Transformation  value) ;
+
+/// @brief Method .ctor, addr 0xa6381c8, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OVRSceneObjectTransformType() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneObjectTransformType", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OVRSceneObjectTransformType(OVRSceneObjectTransformType && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneObjectTransformType", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OVRSceneObjectTransformType(OVRSceneObjectTransformType const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{12435};
+
+/// [Tooltip("Choose the type of scene anchor (volume/plane) that may modify this transform.")]
+/// @brief Field TransformType, offset: 0x20, size: 0x4, def value: None
+ ::GlobalNamespace::OVRSceneObjectTransformType_Transformation  ___TransformType;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::OVRSceneObjectTransformType, ___TransformType) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::OVRSceneObjectTransformType) == 0x28, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

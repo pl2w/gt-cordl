@@ -1,0 +1,141 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/LowLevel/QueryKeyNameCommand.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__InputDeviceCommand_impl.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__QueryKeyNameCommand__nameBuffer_e__FixedBuffer_impl.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__QueryKeyNameCommand_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__IInputDeviceCommandInfo_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__QueryKeyNameCommand__nameBuffer_e__FixedBuffer_def.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__FourCC_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__Key_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand.get_Type
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Utilities::FourCC (*)()>(&::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::get_Type)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xafed3b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"get_Type", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand.ReadKeyName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::*)()>(&::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::ReadKeyName)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xafed3e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"ReadKeyName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand.get_typeStatic
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::Utilities::FourCC (::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::*)()>(&::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::get_typeStatic)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xafed3f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"get_typeStatic", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand.Create
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand (*)(::UnityEngine::InputSystem::Key)>(&::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::Create)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xafed424;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::Key>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::InputSystem::LowLevel::InputDeviceCommand& UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_get_baseCommand()  {
+return this->___baseCommand;
+}
+constexpr ::UnityEngine::InputSystem::LowLevel::InputDeviceCommand const& UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_get_baseCommand() const {
+return this->___baseCommand;
+}
+constexpr void UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_set_baseCommand(::UnityEngine::InputSystem::LowLevel::InputDeviceCommand  value)  {
+this->___baseCommand = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_get_scanOrKeyCode()  {
+return this->___scanOrKeyCode;
+}
+constexpr int32_t const& UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_get_scanOrKeyCode() const {
+return this->___scanOrKeyCode;
+}
+constexpr void UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_set_scanOrKeyCode(int32_t  value)  {
+this->___scanOrKeyCode = value;
+}
+constexpr ::GlobalNamespace::QueryKeyNameCommand__nameBuffer_e__FixedBuffer& UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_get_nameBuffer()  {
+return this->___nameBuffer;
+}
+constexpr ::GlobalNamespace::QueryKeyNameCommand__nameBuffer_e__FixedBuffer const& UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_get_nameBuffer() const {
+return this->___nameBuffer;
+}
+constexpr void UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::__cordl_internal_set_nameBuffer(::GlobalNamespace::QueryKeyNameCommand__nameBuffer_e__FixedBuffer  value)  {
+this->___nameBuffer = value;
+}
+inline ::UnityEngine::InputSystem::Utilities::FourCC UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::get_Type()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"get_Type", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Utilities::FourCC>(nullptr, ___internal_method);
+}
+inline ::StringW UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::ReadKeyName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"ReadKeyName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(*this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::Utilities::FourCC UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::get_typeStatic()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"get_typeStatic", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::Utilities::FourCC>(*this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::Create(::UnityEngine::InputSystem::Key  key)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(),
+                        {"Create", {}, {::i2c::type_of<::UnityEngine::InputSystem::Key>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand>(nullptr, ___internal_method, key);
+}
+/// @brief Convert operator to "::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo"
+constexpr  UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::operator ::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo*()  {
+return static_cast<::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+/// @brief Convert to "::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo"
+constexpr ::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo* UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::i___UnityEngine__InputSystem__LowLevel__IInputDeviceCommandInfo()  {
+return static_cast<::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo*>(static_cast<void*>(::i2c::to_object<true>(*this, false)));
+}
+// Ctor Parameters [CppParam { name: "baseCommand", ty: "::UnityEngine::InputSystem::LowLevel::InputDeviceCommand", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "scanOrKeyCode", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "nameBuffer", ty: "::GlobalNamespace::QueryKeyNameCommand__nameBuffer_e__FixedBuffer", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::QueryKeyNameCommand(::UnityEngine::InputSystem::LowLevel::InputDeviceCommand  baseCommand, int32_t  scanOrKeyCode, ::GlobalNamespace::QueryKeyNameCommand__nameBuffer_e__FixedBuffer  nameBuffer) noexcept  {
+this->baseCommand = baseCommand;
+this->scanOrKeyCode = scanOrKeyCode;
+this->nameBuffer = nameBuffer;
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand::QueryKeyNameCommand()   {
+}

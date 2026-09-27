@@ -1,0 +1,76 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/SpeedTreeWindParamsBufferIterator.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__IntPtr_def.hpp"
+#include "UnityEngine/Rendering/zzzz__SpeedTreeWindParamsBufferIterator__uintParamOffsets_e__FixedBuffer_def.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(SpeedTreeWindParamsBufferIterator)
+namespace GlobalNamespace {
+struct SpeedTreeWindParamsBufferIterator__uintParamOffsets_e__FixedBuffer;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering {
+struct SpeedTreeWindParamsBufferIterator;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator, "UnityEngine.Rendering", "SpeedTreeWindParamsBufferIterator");
+// [NativeHeader("Modules/Terrain/Public/SpeedTreeWind.h")]
+// [UsedByNativeCode]
+// Dependencies System.IntPtr, UnityEngine.Rendering.SpeedTreeWindParamsBufferIterator::<uintParamOffsets>e__FixedBuffer
+namespace UnityEngine::Rendering {
+// Is value type: true
+// CS Name: UnityEngine.Rendering.SpeedTreeWindParamsBufferIterator
+struct CORDL_TYPE SpeedTreeWindParamsBufferIterator {
+public:
+// Declarations
+using _uintParamOffsets_e__FixedBuffer = ::GlobalNamespace::SpeedTreeWindParamsBufferIterator__uintParamOffsets_e__FixedBuffer;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr SpeedTreeWindParamsBufferIterator() ;
+
+// Ctor Parameters [CppParam { name: "bufferPtr", ty: "::System::IntPtr", modifiers: "", def_value: None, comment: None }, CppParam { name: "uintParamOffsets", ty: "::GlobalNamespace::SpeedTreeWindParamsBufferIterator__uintParamOffsets_e__FixedBuffer", modifiers: "", def_value: None, comment: None }, CppParam { name: "uintStride", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "elementOffset", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "elementsCount", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr SpeedTreeWindParamsBufferIterator(::System::IntPtr  bufferPtr, ::GlobalNamespace::SpeedTreeWindParamsBufferIterator__uintParamOffsets_e__FixedBuffer  uintParamOffsets, int32_t  uintStride, int32_t  elementOffset, int32_t  elementsCount) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32484};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x58};
+
+/// @brief Field bufferPtr, offset: 0x0, size: 0x8, def value: None
+ ::System::IntPtr  bufferPtr;
+
+/// [FixedBuffer(typeof(System.Int32), 16)]
+/// @brief Field uintParamOffsets, offset: 0x8, size: 0x40, def value: None
+ ::GlobalNamespace::SpeedTreeWindParamsBufferIterator__uintParamOffsets_e__FixedBuffer  uintParamOffsets;
+
+/// @brief Field uintStride, offset: 0x48, size: 0x4, def value: None
+ int32_t  uintStride;
+
+/// @brief Field elementOffset, offset: 0x4c, size: 0x4, def value: None
+ int32_t  elementOffset;
+
+/// @brief Field elementsCount, offset: 0x50, size: 0x4, def value: None
+ int32_t  elementsCount;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator, bufferPtr) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator, uintParamOffsets) == 0x8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator, uintStride) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator, elementOffset) == 0x4c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator, elementsCount) == 0x50, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::SpeedTreeWindParamsBufferIterator) == 0x58, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

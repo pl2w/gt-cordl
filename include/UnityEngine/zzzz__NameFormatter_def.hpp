@@ -1,0 +1,57 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/NameFormatter.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(NameFormatter)
+namespace UnityEngine::Bindings {
+struct ManagedSpanWrapper;
+}
+// Forward declare root types
+namespace UnityEngine {
+class NameFormatter;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::NameFormatter*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::NameFormatter*, "UnityEngine", "NameFormatter");
+// [VisibleToOtherModules]
+// [NativeHeader("Runtime/NameFormatter/NameFormatter.h")]
+// Dependencies System.Object
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.NameFormatter
+class CORDL_TYPE NameFormatter : public ::System::Object {
+public:
+// Declarations
+/// [FreeFunction]
+/// @brief Method FormatVariableName, addr 0xb5f0b1c, size 0x1c4, virtual false, abstract: false, final false
+static inline ::StringW FormatVariableName(::StringW  name) ;
+
+/// @brief Method FormatVariableName_Injected, addr 0xb5f0ce0, size 0x44, virtual false, abstract: false, final false
+static inline void FormatVariableName_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  ret) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr NameFormatter() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "NameFormatter", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+NameFormatter(NameFormatter && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "NameFormatter", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+NameFormatter(NameFormatter const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15152};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::NameFormatter) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

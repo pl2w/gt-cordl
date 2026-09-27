@@ -1,0 +1,127 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/Shapes/Plane.hpp"
+#include "UnityEngine/ProBuilder/Shapes/zzzz__Shape_impl.hpp"
+#include "UnityEngine/ProBuilder/Shapes/zzzz__Plane_def.hpp"
+#include "UnityEngine/ProBuilder/Shapes/zzzz__Shape_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__ProBuilderMesh_def.hpp"
+#include "UnityEngine/zzzz__Bounds_def.hpp"
+#include "UnityEngine/zzzz__Quaternion_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Plane.SetParametersToBuiltInShape
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Shapes::Plane::*)()>(&::UnityEngine::ProBuilder::Shapes::Plane::SetParametersToBuiltInShape)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb0d62b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(), 7}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Plane.CopyShape
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Shapes::Plane::*)(::UnityEngine::ProBuilder::Shapes::Shape*)>(&::UnityEngine::ProBuilder::Shapes::Plane::CopyShape)> {
+  constexpr static std::size_t size = 0xb0;
+  constexpr static std::size_t addrs = 0xb0d62bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(), 6}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Plane.RebuildMesh
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Bounds (::UnityEngine::ProBuilder::Shapes::Plane::*)(::UnityEngine::ProBuilder::ProBuilderMesh*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion)>(&::UnityEngine::ProBuilder::Shapes::Plane::RebuildMesh)> {
+  constexpr static std::size_t size = 0x258;
+  constexpr static std::size_t addrs = 0xb0d636c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Shapes::Plane._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::Shapes::Plane::*)()>(&::UnityEngine::ProBuilder::Shapes::Plane::_ctor)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xb0d65c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& UnityEngine::ProBuilder::Shapes::Plane::__cordl_internal_get_m_HeightSegments()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_HeightSegments;
+}
+constexpr int32_t const& UnityEngine::ProBuilder::Shapes::Plane::__cordl_internal_get_m_HeightSegments() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_HeightSegments;
+}
+constexpr void UnityEngine::ProBuilder::Shapes::Plane::__cordl_internal_set_m_HeightSegments(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_HeightSegments = value;
+}
+constexpr int32_t& UnityEngine::ProBuilder::Shapes::Plane::__cordl_internal_get_m_WidthSegments()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_WidthSegments;
+}
+constexpr int32_t const& UnityEngine::ProBuilder::Shapes::Plane::__cordl_internal_get_m_WidthSegments() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_WidthSegments;
+}
+constexpr void UnityEngine::ProBuilder::Shapes::Plane::__cordl_internal_set_m_WidthSegments(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_WidthSegments = value;
+}
+inline void UnityEngine::ProBuilder::Shapes::Plane::SetParametersToBuiltInShape()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(), 7}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::ProBuilder::Shapes::Plane::CopyShape(::UnityEngine::ProBuilder::Shapes::Shape*  shape)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(), 6}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, shape);
+}
+inline ::UnityEngine::Bounds UnityEngine::ProBuilder::Shapes::Plane::RebuildMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Vector3  size, ::UnityEngine::Quaternion  rotation)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Bounds>(this, ___internal_method, mesh, size, rotation);
+}
+inline void UnityEngine::ProBuilder::Shapes::Plane::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Shapes::Plane*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::ProBuilder::Shapes::Plane* UnityEngine::ProBuilder::Shapes::Plane::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::ProBuilder::Shapes::Plane*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::Shapes::Plane::Plane()   {
+}

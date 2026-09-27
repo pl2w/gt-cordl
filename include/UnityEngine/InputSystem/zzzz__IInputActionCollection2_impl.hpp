@@ -1,0 +1,98 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/IInputActionCollection2.hpp"
+#include "UnityEngine/InputSystem/zzzz__IInputActionCollection2_def.hpp"
+#include "System/Collections/Generic/zzzz__IEnumerable_1_def.hpp"
+#include "System/Collections/zzzz__IEnumerable_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__IInputActionCollection_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputAction_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputBinding_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::IInputActionCollection2.get_bindings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>* (::UnityEngine::InputSystem::IInputActionCollection2::*)()>(&::UnityEngine::InputSystem::IInputActionCollection2::get_bindings)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::IInputActionCollection2.FindAction
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputAction* (::UnityEngine::InputSystem::IInputActionCollection2::*)(::StringW, bool)>(&::UnityEngine::InputSystem::IInputActionCollection2::FindAction)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::IInputActionCollection2.FindBinding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::InputSystem::IInputActionCollection2::*)(::UnityEngine::InputSystem::InputBinding, ::by_ref<::UnityEngine::InputSystem::InputAction*>)>(&::UnityEngine::InputSystem::IInputActionCollection2::FindBinding)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), 2}
+                ));
+    return ___internal_method;
+  }
+};
+inline ::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>* UnityEngine::InputSystem::IInputActionCollection2::get_bindings()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputBinding>*>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::InputAction* UnityEngine::InputSystem::IInputActionCollection2::FindAction(::StringW  actionNameOrId, bool  throwIfNotFound)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputAction*>(this, ___internal_method, actionNameOrId, throwIfNotFound);
+}
+inline int32_t UnityEngine::InputSystem::IInputActionCollection2::FindBinding(::UnityEngine::InputSystem::InputBinding  mask, ::by_ref<::UnityEngine::InputSystem::InputAction*>  action)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::IInputActionCollection2*>(), 2}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, mask, action);
+}
+/// @brief Convert operator to "::UnityEngine::InputSystem::IInputActionCollection"
+constexpr  UnityEngine::InputSystem::IInputActionCollection2::operator ::UnityEngine::InputSystem::IInputActionCollection*() noexcept {
+return static_cast<::UnityEngine::InputSystem::IInputActionCollection*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::UnityEngine::InputSystem::IInputActionCollection"
+constexpr ::UnityEngine::InputSystem::IInputActionCollection* UnityEngine::InputSystem::IInputActionCollection2::i___UnityEngine__InputSystem__IInputActionCollection() noexcept {
+return static_cast<::UnityEngine::InputSystem::IInputActionCollection*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputAction*>"
+constexpr  UnityEngine::InputSystem::IInputActionCollection2::operator ::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputAction*>*() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputAction*>*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputAction*>"
+constexpr ::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputAction*>* UnityEngine::InputSystem::IInputActionCollection2::i___System__Collections__Generic__IEnumerable_1___UnityEngine__InputSystem__InputAction__() noexcept {
+return static_cast<::System::Collections::Generic::IEnumerable_1<::UnityEngine::InputSystem::InputAction*>*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::Collections::IEnumerable"
+constexpr  UnityEngine::InputSystem::IInputActionCollection2::operator ::System::Collections::IEnumerable*() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Collections::IEnumerable"
+constexpr ::System::Collections::IEnumerable* UnityEngine::InputSystem::IInputActionCollection2::i___System__Collections__IEnumerable() noexcept {
+return static_cast<::System::Collections::IEnumerable*>(static_cast<void*>(this));
+}

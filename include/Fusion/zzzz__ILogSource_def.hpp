@@ -1,0 +1,37 @@
+#pragma once
+// IWYU pragma private; include "Fusion/ILogSource.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(ILogSource)
+namespace UnityEngine {
+class Object;
+}
+// Forward declare root types
+namespace Fusion {
+class ILogSource;
+}
+// Write type traits
+MARK_REF_T(::Fusion::ILogSource*);
+DEFINE_IL2CPP_CLASS(::Fusion::ILogSource*, "Fusion", "ILogSource");
+// Dependencies 
+namespace Fusion {
+// Is value type: false
+// CS Name: Fusion.ILogSource
+class CORDL_TYPE ILogSource {
+public:
+// Declarations
+/// @brief Method GetUnityObject, addr 0x5f44710, size 0x78, virtual true, abstract: false, final false
+inline ::UnityW<::UnityEngine::Object> GetUnityObject() ;
+
+// Ctor Parameters [CppParam { name: "", ty: "ILogSource", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ILogSource(ILogSource const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32716};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def Fusion

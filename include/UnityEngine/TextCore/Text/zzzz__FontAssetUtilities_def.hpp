@@ -1,0 +1,113 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/TextCore/Text/FontAssetUtilities.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(FontAssetUtilities)
+namespace System::Collections::Generic {
+template<typename T>
+class HashSet_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace UnityEngine::TextCore::Text {
+class Character;
+}
+namespace UnityEngine::TextCore::Text {
+class FontAsset;
+}
+namespace UnityEngine::TextCore::Text {
+struct FontStyles;
+}
+namespace UnityEngine::TextCore::Text {
+class SpriteAsset;
+}
+namespace UnityEngine::TextCore::Text {
+class SpriteCharacter;
+}
+namespace UnityEngine::TextCore::Text {
+class TextAsset;
+}
+namespace UnityEngine::TextCore::Text {
+class TextElement;
+}
+namespace UnityEngine::TextCore::Text {
+struct TextFontWeight;
+}
+// Forward declare root types
+namespace UnityEngine::TextCore::Text {
+class FontAssetUtilities;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::TextCore::Text::FontAssetUtilities*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::TextCore::Text::FontAssetUtilities*, "UnityEngine.TextCore.Text", "FontAssetUtilities");
+// Dependencies System.Object
+namespace UnityEngine::TextCore::Text {
+// Is value type: false
+// CS Name: UnityEngine.TextCore.Text.FontAssetUtilities
+class CORDL_TYPE FontAssetUtilities : public ::System::Object {
+public:
+// Declarations
+/// @brief Field k_SearchedAssets, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_SearchedAssets, put=setStaticF_k_SearchedAssets)) ::System::Collections::Generic::HashSet_1<int32_t>*  k_SearchedAssets;
+
+/// @brief Method GetCharacterFromFontAsset, addr 0xb6e3dd4, size 0x118, virtual false, abstract: false, final false
+static inline ::UnityEngine::TextCore::Text::Character* GetCharacterFromFontAsset(uint32_t  unicode, ::UnityEngine::TextCore::Text::FontAsset*  sourceFontAsset, bool  includeFallbacks, ::UnityEngine::TextCore::Text::FontStyles  fontStyle, ::UnityEngine::TextCore::Text::TextFontWeight  fontWeight, ::by_ref<bool>  isAlternativeTypeface, bool  populateLigatures) ;
+
+/// @brief Method GetCharacterFromFontAsset_Internal, addr 0xb6e3eec, size 0x590, virtual false, abstract: false, final false
+static inline ::UnityEngine::TextCore::Text::Character* GetCharacterFromFontAsset_Internal(uint32_t  unicode, ::UnityEngine::TextCore::Text::FontAsset*  sourceFontAsset, bool  includeFallbacks, ::UnityEngine::TextCore::Text::FontStyles  fontStyle, ::UnityEngine::TextCore::Text::TextFontWeight  fontWeight, ::by_ref<bool>  isAlternativeTypeface, bool  populateLigatures) ;
+
+/// @brief Method GetCharacterFromFontAssetsInternal, addr 0xb6e45ec, size 0x1d4, virtual false, abstract: false, final false
+static inline ::UnityEngine::TextCore::Text::Character* GetCharacterFromFontAssetsInternal(uint32_t  unicode, ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::TextCore::Text::FontAsset>>*  fontAssets, bool  includeFallbacks, ::UnityEngine::TextCore::Text::FontStyles  fontStyle, ::UnityEngine::TextCore::Text::TextFontWeight  fontWeight, ::by_ref<bool>  isAlternativeTypeface, bool  populateLigatures) ;
+
+/// @brief Method GetCharacterFromFontAssetsInternal, addr 0xb6e4484, size 0x168, virtual false, abstract: false, final false
+static inline ::UnityEngine::TextCore::Text::Character* GetCharacterFromFontAssetsInternal(uint32_t  unicode, ::UnityEngine::TextCore::Text::FontAsset*  sourceFontAsset, ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::TextCore::Text::FontAsset>>*  fontAssets, ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::TextCore::Text::FontAsset>>*  OSFallbackList, bool  includeFallbacks, ::UnityEngine::TextCore::Text::FontStyles  fontStyle, ::UnityEngine::TextCore::Text::TextFontWeight  fontWeight, ::by_ref<bool>  isAlternativeTypeface, bool  populateLigatures) ;
+
+/// @brief Method GetCodePoint, addr 0xb6e5030, size 0x100, virtual false, abstract: false, final false
+static inline uint32_t GetCodePoint(::ArrayW<uint32_t>  codesPoints, ::by_ref<int32_t>  index) ;
+
+/// @brief Method GetCodePoint, addr 0xb6e4f30, size 0x100, virtual false, abstract: false, final false
+static inline uint32_t GetCodePoint(::StringW  text, ::by_ref<int32_t>  index) ;
+
+/// @brief Method GetSpriteCharacterFromSpriteAsset, addr 0xb6e4c4c, size 0x2c0, virtual false, abstract: false, final false
+static inline ::UnityEngine::TextCore::Text::SpriteCharacter* GetSpriteCharacterFromSpriteAsset(uint32_t  unicode, ::UnityEngine::TextCore::Text::SpriteAsset*  spriteAsset, bool  includeFallbacks) ;
+
+/// @brief Method GetSpriteCharacterFromSpriteAsset_Internal, addr 0xb6e4a90, size 0x1bc, virtual false, abstract: false, final false
+static inline ::UnityEngine::TextCore::Text::SpriteCharacter* GetSpriteCharacterFromSpriteAsset_Internal(uint32_t  unicode, ::UnityEngine::TextCore::Text::SpriteAsset*  spriteAsset, bool  includeFallbacks) ;
+
+/// @brief Method GetTextElementFromTextAssets, addr 0xb6e47c0, size 0x2d0, virtual false, abstract: false, final false
+static inline ::UnityEngine::TextCore::Text::TextElement* GetTextElementFromTextAssets(uint32_t  unicode, ::UnityEngine::TextCore::Text::FontAsset*  sourceFontAsset, ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::TextCore::Text::TextAsset>>*  textAssets, bool  includeFallbacks, ::UnityEngine::TextCore::Text::FontStyles  fontStyle, ::UnityEngine::TextCore::Text::TextFontWeight  fontWeight, ::by_ref<bool>  isAlternativeTypeface, bool  populateLigatures) ;
+
+static inline ::System::Collections::Generic::HashSet_1<int32_t>* getStaticF_k_SearchedAssets() ;
+
+static inline void setStaticF_k_SearchedAssets(::System::Collections::Generic::HashSet_1<int32_t>*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr FontAssetUtilities() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "FontAssetUtilities", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+FontAssetUtilities(FontAssetUtilities && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "FontAssetUtilities", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+FontAssetUtilities(FontAssetUtilities const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{26248};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::TextCore::Text::FontAssetUtilities) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::TextCore::Text

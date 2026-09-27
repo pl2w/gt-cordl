@@ -1,0 +1,51 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ScrollViewState.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(ScrollViewState)
+// Forward declare root types
+namespace UnityEngine {
+class ScrollViewState;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ScrollViewState*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ScrollViewState*, "UnityEngine", "ScrollViewState");
+// Dependencies System.Object
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.ScrollViewState
+class CORDL_TYPE ScrollViewState : public ::System::Object {
+public:
+// Declarations
+/// @brief [RequiredByNativeCode]
+static inline ::UnityEngine::ScrollViewState* New_ctor() ;
+
+/// [RequiredByNativeCode]
+/// @brief Method .ctor, addr 0xb654fd0, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ScrollViewState() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ScrollViewState", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ScrollViewState(ScrollViewState && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ScrollViewState", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ScrollViewState(ScrollViewState const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28845};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ScrollViewState) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

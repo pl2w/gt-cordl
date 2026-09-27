@@ -1,0 +1,86 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/LayerMask.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(LayerMask)
+namespace UnityEngine::Bindings {
+struct ManagedSpanWrapper;
+}
+// Forward declare root types
+namespace UnityEngine {
+struct LayerMask;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::LayerMask);
+DEFINE_IL2CPP_CLASS(::UnityEngine::LayerMask, "UnityEngine", "LayerMask");
+// [NativeHeader("Runtime/BaseClasses/BitField.h")]
+// [RequiredByNativeCode(Optional = true, GenerateProxy = true)]
+// [NativeHeader("Runtime/BaseClasses/TagManager.h")]
+// [NativeClass("BitField", "struct BitField;")]
+// Dependencies 
+namespace UnityEngine {
+// Is value type: true
+// CS Name: UnityEngine.LayerMask
+struct CORDL_TYPE LayerMask {
+public:
+// Declarations
+ __declspec(property(get=get_value)) int32_t  value;
+
+/// @brief Method GetMask, addr 0xb5e28b0, size 0xcc, virtual false, abstract: false, final false
+static inline int32_t GetMask(/* [ParamArray] */ ::ArrayW<::StringW>  layerNames) ;
+
+/// [StaticAccessor("GetTagManager()", (UnityEngine.Bindings.StaticAccessorType)0)]
+/// [NativeMethod("LayerToString")]
+/// @brief Method LayerToName, addr 0xb5e25f4, size 0xcc, virtual false, abstract: false, final false
+static inline ::StringW LayerToName(int32_t  layer) ;
+
+/// @brief Method LayerToName_Injected, addr 0xb5e26c0, size 0x44, virtual false, abstract: false, final false
+static inline void LayerToName_Injected(int32_t  layer, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  ret) ;
+
+/// [NativeMethod("StringToLayer")]
+/// [StaticAccessor("GetTagManager()", (UnityEngine.Bindings.StaticAccessorType)0)]
+/// @brief Method NameToLayer, addr 0xb5e2704, size 0x170, virtual false, abstract: false, final false
+static inline int32_t NameToLayer(::StringW  layerName) ;
+
+/// @brief Method NameToLayer_Injected, addr 0xb5e2874, size 0x3c, virtual false, abstract: false, final false
+static inline int32_t NameToLayer_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  layerName) ;
+
+/// @brief Method get_value, addr 0xb5e25ec, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_value() ;
+
+/// @brief Method op_Implicit, addr 0xb5e25e8, size 0x4, virtual false, abstract: false, final false
+static inline ::UnityEngine::LayerMask op_Implicit___UnityEngine__LayerMask(int32_t  intVal) ;
+
+/// @brief Method op_Implicit, addr 0xb5e25e4, size 0x4, virtual false, abstract: false, final false
+static inline int32_t op_Implicit_int32_t(::UnityEngine::LayerMask  mask) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr LayerMask() ;
+
+// Ctor Parameters [CppParam { name: "m_Mask", ty: "int32_t", modifiers: "", def_value: None, comment: None }]
+constexpr LayerMask(int32_t  m_Mask) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15084};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x4};
+
+/// [NativeName("m_Bits")]
+/// @brief Field m_Mask, offset: 0x0, size: 0x4, def value: None
+ int32_t  m_Mask;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::LayerMask, m_Mask) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::LayerMask) == 0x4, "Size mismatch!");
+
+} // namespace end def UnityEngine

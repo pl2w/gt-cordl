@@ -1,0 +1,610 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/GameObject.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__Component_def.hpp"
+#include "UnityEngine/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(GameObject)
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace System {
+class Array;
+}
+namespace System {
+struct IntPtr;
+}
+namespace System {
+class Object;
+}
+namespace System {
+template<typename T>
+struct ReadOnlySpan_1;
+}
+namespace System {
+class Type;
+}
+namespace Unity::Collections {
+template<typename T>
+struct NativeArray_1;
+}
+namespace UnityEngine::Bindings {
+struct ManagedSpanWrapper;
+}
+namespace UnityEngine::SceneManagement {
+struct Scene;
+}
+namespace UnityEngine {
+class Component;
+}
+namespace UnityEngine {
+struct PrimitiveType;
+}
+namespace UnityEngine {
+struct SendMessageOptions;
+}
+namespace UnityEngine {
+struct TagHandle;
+}
+namespace UnityEngine {
+class Transform;
+}
+// Forward declare root types
+namespace UnityEngine {
+class GameObject;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::GameObject*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::GameObject*, "UnityEngine", "GameObject");
+// [NativeHeader("Runtime/Export/Scripting/GameObject.bindings.h")]
+// [UsedByNativeCode]
+// [ExcludeFromPreset]
+// Dependencies UnityEngine.Component, UnityEngine.Object
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.GameObject
+class CORDL_TYPE GameObject : public ::UnityEngine::Object {
+public:
+// Declarations
+/// @brief [Obsolete("GameObject.active is obsolete. Use GameObject.SetActive(), GameObject.activeSelf or GameObject.activeInHierarchy.")]
+ __declspec(property(get=get_active, put=set_active)) bool  active;
+
+ __declspec(property(get=get_activeInHierarchy)) bool  activeInHierarchy;
+
+ __declspec(property(get=get_activeSelf)) bool  activeSelf;
+
+ __declspec(property(get=get_gameObject)) ::UnityW<::UnityEngine::GameObject>  gameObject;
+
+ __declspec(property(get=get_isStatic, put=set_isStatic)) bool  isStatic;
+
+ __declspec(property(get=get_isStaticBatchable)) bool  isStaticBatchable;
+
+ __declspec(property(get=get_layer, put=set_layer)) int32_t  layer;
+
+ __declspec(property(get=get_scene)) ::UnityEngine::SceneManagement::Scene  scene;
+
+ __declspec(property(get=get_sceneCullingMask)) uint64_t  sceneCullingMask;
+
+ __declspec(property(get=get_tag, put=set_tag)) ::StringW  tag;
+
+ __declspec(property(get=get_transform)) ::UnityW<::UnityEngine::Transform>  transform;
+
+/// [TypeInferenceRule((UnityEngineInternal.TypeInferenceRules)0)]
+/// @brief Method AddComponent, addr 0xb5e06f0, size 0x4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> AddComponent(::System::Type*  componentType) ;
+
+/// @brief Method AddComponent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::type_constraint<T, ::UnityEngine::Component*>)
+inline T AddComponent() ;
+
+/// [FreeFunction(Name = "MonoAddComponent", HasExplicitThis = true)]
+/// @brief Method AddComponentInternal, addr 0xb5e03ac, size 0x218, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> AddComponentInternal(::StringW  className) ;
+
+/// @brief Method AddComponentInternal_Injected, addr 0xb5e05c4, size 0x44, virtual false, abstract: false, final false
+static inline ::System::IntPtr AddComponentInternal_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  className) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method BroadcastMessage, addr 0xb5e196c, size 0xc, virtual false, abstract: false, final false
+inline void BroadcastMessage(::StringW  methodName) ;
+
+/// @brief Method BroadcastMessage, addr 0xb5e01e8, size 0xc, virtual false, abstract: false, final false
+inline void BroadcastMessage(::StringW  methodName, ::UnityEngine::SendMessageOptions  options) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method BroadcastMessage, addr 0xb5e1964, size 0x8, virtual false, abstract: false, final false
+inline void BroadcastMessage(::StringW  methodName, ::System::Object*  parameter) ;
+
+/// [FreeFunction(Name = "Scripting::BroadcastScriptingMessage", HasExplicitThis = true)]
+/// @brief Method BroadcastMessage, addr 0xb5e01f4, size 0x1b8, virtual false, abstract: false, final false
+inline void BroadcastMessage(::StringW  methodName, /* [DefaultValue("null")] */ ::System::Object*  parameter, /* [DefaultValue("SendMessageOptions.RequireReceiver")] */ ::UnityEngine::SendMessageOptions  options) ;
+
+/// @brief Method BroadcastMessage_Injected, addr 0xb5e1908, size 0x5c, virtual false, abstract: false, final false
+static inline void BroadcastMessage_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  methodName, /* [DefaultValue("null")] */ ::System::Object*  parameter, /* [DefaultValue("SendMessageOptions.RequireReceiver")] */ ::UnityEngine::SendMessageOptions  options) ;
+
+/// @brief Method CompareTag, addr 0xb5dcb70, size 0x4, virtual false, abstract: false, final false
+inline bool CompareTag(::StringW  tag) ;
+
+/// @brief Method CompareTag, addr 0xb5e1528, size 0x8, virtual false, abstract: false, final false
+inline bool CompareTag(::UnityEngine::TagHandle  tag) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::CompareTagHandle", HasExplicitThis = true)]
+/// @brief Method CompareTagHandle_Internal, addr 0xb5e1530, size 0x88, virtual false, abstract: false, final false
+inline bool CompareTagHandle_Internal(::UnityEngine::TagHandle  tag) ;
+
+/// @brief Method CompareTagHandle_Internal_Injected, addr 0xb5e15fc, size 0x44, virtual false, abstract: false, final false
+static inline bool CompareTagHandle_Internal_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::TagHandle>  tag) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::CompareTag", HasExplicitThis = true)]
+/// @brief Method CompareTag_Internal, addr 0xb5e137c, size 0x1ac, virtual false, abstract: false, final false
+inline bool CompareTag_Internal(::StringW  tag) ;
+
+/// @brief Method CompareTag_Internal_Injected, addr 0xb5e15b8, size 0x44, virtual false, abstract: false, final false
+static inline bool CompareTag_Internal_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  tag) ;
+
+/// [FreeFunction("GameObjectBindings::CreatePrimitive")]
+/// @brief Method CreatePrimitive, addr 0xb5dee74, size 0x6c, virtual false, abstract: false, final false
+static inline ::UnityW<::UnityEngine::GameObject> CreatePrimitive(::UnityEngine::PrimitiveType  type) ;
+
+/// @brief Method CreatePrimitive_Injected, addr 0xb5deee0, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr CreatePrimitive_Injected(::UnityEngine::PrimitiveType  type) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::Find")]
+/// @brief Method Find, addr 0xb5e1cc0, size 0x1fc, virtual false, abstract: false, final false
+static inline ::UnityW<::UnityEngine::GameObject> Find(::StringW  name) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::FindGameObjectWithTag", ThrowsException = true)]
+/// @brief Method FindGameObjectWithTag, addr 0xb5dfaac, size 0x1fc, virtual false, abstract: false, final false
+static inline ::UnityW<::UnityEngine::GameObject> FindGameObjectWithTag(::StringW  tag) ;
+
+/// @brief Method FindGameObjectWithTag_Injected, addr 0xb5e1640, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr FindGameObjectWithTag_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  tag) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::FindGameObjectsWithTag", ThrowsException = true)]
+/// @brief Method FindGameObjectsWithTag, addr 0xb5e167c, size 0x170, virtual false, abstract: false, final false
+static inline ::ArrayW<::UnityW<::UnityEngine::GameObject>> FindGameObjectsWithTag(::StringW  tag) ;
+
+/// @brief Method FindGameObjectsWithTag, addr 0xb5dfe5c, size 0x4, virtual false, abstract: false, final false
+static inline void FindGameObjectsWithTag(::StringW  tag, ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::GameObject>>*  results) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::FindGameObjectsWithTagForListInternal", ThrowsException = true)]
+/// @brief Method FindGameObjectsWithTagForListInternal, addr 0xb5dfca8, size 0x170, virtual false, abstract: false, final false
+static inline void FindGameObjectsWithTagForListInternal(::StringW  tag, ::System::Object*  results) ;
+
+/// @brief Method FindGameObjectsWithTagForListInternal_Injected, addr 0xb5dfe18, size 0x44, virtual false, abstract: false, final false
+static inline void FindGameObjectsWithTagForListInternal_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  tag, ::System::Object*  results) ;
+
+/// @brief Method FindGameObjectsWithTag_Injected, addr 0xb5e17ec, size 0x3c, virtual false, abstract: false, final false
+static inline ::ArrayW<::UnityW<::UnityEngine::GameObject>> FindGameObjectsWithTag_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  tag) ;
+
+/// @brief Method FindWithTag, addr 0xb5dfaa8, size 0x4, virtual false, abstract: false, final false
+static inline ::UnityW<::UnityEngine::GameObject> FindWithTag(::StringW  tag) ;
+
+/// @brief Method Find_Injected, addr 0xb5e1ebc, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr Find_Injected(::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name) ;
+
+/// @brief Method GetComponent, addr 0xb5df51c, size 0x4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponent(::StringW  type) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::GetComponentFromType", HasExplicitThis = true, ThrowsException = true)]
+/// [TypeInferenceRule((UnityEngineInternal.TypeInferenceRules)0)]
+/// @brief Method GetComponent, addr 0xb5dc2c8, size 0xa4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponent(::System::Type*  type) ;
+
+/// @brief Method GetComponent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline T GetComponent() ;
+
+/// @brief Method GetComponentAtIndex, addr 0xb5e0890, size 0x90, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponentAtIndex(int32_t  index) ;
+
+/// @brief Method GetComponentAtIndex, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::type_constraint<T, ::UnityEngine::Component*>)
+inline T GetComponentAtIndex(int32_t  index) ;
+
+/// [FreeFunction(Name = "Scripting::GetScriptingWrapperOfComponentOfGameObject", HasExplicitThis = true)]
+/// @brief Method GetComponentByName, addr 0xb5df044, size 0x218, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponentByName(::StringW  type) ;
+
+/// [FreeFunction(Name = "Scripting::GetScriptingWrapperOfComponentOfGameObjectWithCase", HasExplicitThis = true)]
+/// @brief Method GetComponentByNameWithCase, addr 0xb5df2a0, size 0x228, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponentByNameWithCase(::StringW  type, bool  caseSensitive) ;
+
+/// @brief Method GetComponentByNameWithCase_Injected, addr 0xb5df4c8, size 0x54, virtual false, abstract: false, final false
+static inline ::System::IntPtr GetComponentByNameWithCase_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  type, bool  caseSensitive) ;
+
+/// @brief Method GetComponentByName_Injected, addr 0xb5df25c, size 0x44, virtual false, abstract: false, final false
+static inline ::System::IntPtr GetComponentByName_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  type) ;
+
+/// @brief Method GetComponentCount, addr 0xb5e06f4, size 0x78, virtual false, abstract: false, final false
+inline int32_t GetComponentCount() ;
+
+/// @brief Method GetComponentCount_Injected, addr 0xb5e076c, size 0x3c, virtual false, abstract: false, final false
+static inline int32_t GetComponentCount_Injected(::System::IntPtr  _unity_self) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::GetComponentFastPath", HasExplicitThis = true, ThrowsException = true)]
+/// @brief Method GetComponentFastPath, addr 0xb5def60, size 0x90, virtual false, abstract: false, final false
+inline void GetComponentFastPath(::System::Type*  type, ::System::IntPtr  oneFurtherThanResultValue) ;
+
+/// @brief Method GetComponentFastPath_Injected, addr 0xb5deff0, size 0x54, virtual false, abstract: false, final false
+static inline void GetComponentFastPath_Injected(::System::IntPtr  _unity_self, ::System::Type*  type, ::System::IntPtr  oneFurtherThanResultValue) ;
+
+/// [TypeInferenceRule((UnityEngineInternal.TypeInferenceRules)0)]
+/// @brief Method GetComponentInChildren, addr 0xb5df574, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponentInChildren(::System::Type*  type) ;
+
+/// [TypeInferenceRule((UnityEngineInternal.TypeInferenceRules)0)]
+/// [FreeFunction(Name = "GameObjectBindings::GetComponentInChildren", HasExplicitThis = true, ThrowsException = true)]
+/// @brief Method GetComponentInChildren, addr 0xb5dc538, size 0xac, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponentInChildren(::System::Type*  type, bool  includeInactive) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method GetComponentInChildren, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline T GetComponentInChildren() ;
+
+/// @brief Method GetComponentInChildren, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline T GetComponentInChildren(/* [DefaultValue("false")] */ bool  includeInactive) ;
+
+/// @brief Method GetComponentInChildren_Injected, addr 0xb5df520, size 0x54, virtual false, abstract: false, final false
+static inline ::System::IntPtr GetComponentInChildren_Injected(::System::IntPtr  _unity_self, ::System::Type*  type, bool  includeInactive) ;
+
+/// [TypeInferenceRule((UnityEngineInternal.TypeInferenceRules)0)]
+/// @brief Method GetComponentInParent, addr 0xb5df5d0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponentInParent(::System::Type*  type) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::GetComponentInParent", HasExplicitThis = true, ThrowsException = true)]
+/// [TypeInferenceRule((UnityEngineInternal.TypeInferenceRules)0)]
+/// @brief Method GetComponentInParent, addr 0xb5dc614, size 0xac, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> GetComponentInParent(::System::Type*  type, bool  includeInactive) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method GetComponentInParent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline T GetComponentInParent() ;
+
+/// @brief Method GetComponentInParent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline T GetComponentInParent(/* [DefaultValue("false")] */ bool  includeInactive) ;
+
+/// @brief Method GetComponentInParent_Injected, addr 0xb5df57c, size 0x54, virtual false, abstract: false, final false
+static inline ::System::IntPtr GetComponentInParent_Injected(::System::IntPtr  _unity_self, ::System::Type*  type, bool  includeInactive) ;
+
+/// @brief Method GetComponentIndex, addr 0xb5e0920, size 0xb4, virtual false, abstract: false, final false
+inline int32_t GetComponentIndex(::UnityEngine::Component*  component) ;
+
+/// @brief Method GetComponentIndex_Injected, addr 0xb5e09d4, size 0x44, virtual false, abstract: false, final false
+static inline int32_t GetComponentIndex_Injected(::System::IntPtr  _unity_self, ::System::IntPtr  component) ;
+
+/// @brief Method GetComponent_Injected, addr 0xb5def1c, size 0x44, virtual false, abstract: false, final false
+static inline ::System::IntPtr GetComponent_Injected(::System::IntPtr  _unity_self, ::System::Type*  type) ;
+
+/// @brief Method GetComponents, addr 0xb5dc6e0, size 0x88, virtual false, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::Component>> GetComponents(::System::Type*  type) ;
+
+/// @brief Method GetComponents, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline ::ArrayW<T> GetComponents() ;
+
+/// @brief Method GetComponents, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline void GetComponents(::System::Collections::Generic::List_1<T>*  results) ;
+
+/// @brief Method GetComponents, addr 0xb5df71c, size 0x18, virtual false, abstract: false, final false
+inline void GetComponents(::System::Type*  type, ::System::Collections::Generic::List_1<::UnityW<::UnityEngine::Component>>*  results) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method GetComponentsInChildren, addr 0xb5df734, size 0x8, virtual false, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::Component>> GetComponentsInChildren(::System::Type*  type) ;
+
+/// @brief Method GetComponentsInChildren, addr 0xb5df73c, size 0x94, virtual false, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::Component>> GetComponentsInChildren(::System::Type*  type, /* [DefaultValue("false")] */ bool  includeInactive) ;
+
+/// @brief Method GetComponentsInChildren, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline ::ArrayW<T> GetComponentsInChildren() ;
+
+/// @brief Method GetComponentsInChildren, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline ::ArrayW<T> GetComponentsInChildren(bool  includeInactive) ;
+
+/// @brief Method GetComponentsInChildren, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline void GetComponentsInChildren(bool  includeInactive, ::System::Collections::Generic::List_1<T>*  results) ;
+
+/// @brief Method GetComponentsInChildren, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline void GetComponentsInChildren(::System::Collections::Generic::List_1<T>*  results) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method GetComponentsInParent, addr 0xb5df7d0, size 0x8, virtual false, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::Component>> GetComponentsInParent(::System::Type*  type) ;
+
+/// @brief Method GetComponentsInParent, addr 0xb5df7d8, size 0x94, virtual false, abstract: false, final false
+inline ::ArrayW<::UnityW<::UnityEngine::Component>> GetComponentsInParent(::System::Type*  type, /* [DefaultValue("false")] */ bool  includeInactive) ;
+
+/// @brief Method GetComponentsInParent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline ::ArrayW<T> GetComponentsInParent() ;
+
+/// @brief Method GetComponentsInParent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline ::ArrayW<T> GetComponentsInParent(bool  includeInactive) ;
+
+/// @brief Method GetComponentsInParent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline void GetComponentsInParent(bool  includeInactive, ::System::Collections::Generic::List_1<T>*  results) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::GetComponentsInternal", HasExplicitThis = true, ThrowsException = true)]
+/// @brief Method GetComponentsInternal, addr 0xb5df5d8, size 0xc0, virtual false, abstract: false, final false
+inline ::System::Array* GetComponentsInternal(::System::Type*  type, bool  useSearchTypeAsArrayReturnType, bool  recursive, bool  includeInactive, bool  reverse, ::System::Object*  resultList) ;
+
+/// @brief Method GetComponentsInternal_Injected, addr 0xb5df698, size 0x84, virtual false, abstract: false, final false
+static inline ::System::Array* GetComponentsInternal_Injected(::System::IntPtr  _unity_self, ::System::Type*  type, bool  useSearchTypeAsArrayReturnType, bool  recursive, bool  includeInactive, bool  reverse, ::System::Object*  resultList) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::GetSceneByInstanceID")]
+/// @brief Method GetScene, addr 0xb5e23c0, size 0x4c, virtual false, abstract: false, final false
+static inline ::UnityEngine::SceneManagement::Scene GetScene(int32_t  instanceID) ;
+
+/// @brief Method GetScene_Injected, addr 0xb5e240c, size 0x44, virtual false, abstract: false, final false
+static inline void GetScene_Injected(int32_t  instanceID, ::by_ref<::UnityEngine::SceneManagement::Scene>  ret) ;
+
+/// @brief Method InstantiateGameObjects, addr 0xb5e21f4, size 0x1cc, virtual false, abstract: false, final false
+static inline void InstantiateGameObjects(int32_t  sourceInstanceID, int32_t  count, ::Unity::Collections::NativeArray_1<int32_t>  newInstanceIDs, ::Unity::Collections::NativeArray_1<int32_t>  newTransformInstanceIDs, ::UnityEngine::SceneManagement::Scene  destinationScene) ;
+
+/// [FreeFunction("GameObjectBindings::InstantiateGameObjectsByInstanceID")]
+/// @brief Method InstantiateGameObjects, addr 0xb5e2118, size 0x70, virtual false, abstract: false, final false
+static inline void InstantiateGameObjects(int32_t  sourceInstanceID, ::System::IntPtr  newInstanceIDs, ::System::IntPtr  newTransformInstanceIDs, int32_t  count, ::UnityEngine::SceneManagement::Scene  destinationScene) ;
+
+/// @brief Method InstantiateGameObjects_Injected, addr 0xb5e2188, size 0x6c, virtual false, abstract: false, final false
+static inline void InstantiateGameObjects_Injected(int32_t  sourceInstanceID, ::System::IntPtr  newInstanceIDs, ::System::IntPtr  newTransformInstanceIDs, int32_t  count, ::by_ref<::UnityEngine::SceneManagement::Scene>  destinationScene) ;
+
+/// [FreeFunction(Name = "MonoAddComponentWithType", HasExplicitThis = true)]
+/// @brief Method Internal_AddComponentWithType, addr 0xb5e0608, size 0xa4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> Internal_AddComponentWithType(::System::Type*  componentType) ;
+
+/// @brief Method Internal_AddComponentWithType_Injected, addr 0xb5e06ac, size 0x44, virtual false, abstract: false, final false
+static inline ::System::IntPtr Internal_AddComponentWithType_Injected(::System::IntPtr  _unity_self, ::System::Type*  componentType) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::Internal_CreateGameObject")]
+/// @brief Method Internal_CreateGameObject, addr 0xb5e19e8, size 0x170, virtual false, abstract: false, final false
+static inline void Internal_CreateGameObject(/* [Writable] */ ::UnityEngine::GameObject*  self, ::StringW  name) ;
+
+/// @brief Method Internal_CreateGameObject_Injected, addr 0xb5e1c7c, size 0x44, virtual false, abstract: false, final false
+static inline void Internal_CreateGameObject_Injected(/* [Writable] */ ::UnityEngine::GameObject*  self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  name) ;
+
+static inline ::UnityEngine::GameObject* New_ctor() ;
+
+static inline ::UnityEngine::GameObject* New_ctor(::StringW  name) ;
+
+static inline ::UnityEngine::GameObject* New_ctor(::StringW  name, /* [ParamArray] */ ::ArrayW<::System::Type*>  components) ;
+
+/// [NativeName("QueryComponentAtIndex<Unity::Component>")]
+/// @brief Method QueryComponentAtIndex, addr 0xb5e07a8, size 0xa4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> QueryComponentAtIndex(int32_t  index) ;
+
+/// @brief Method QueryComponentAtIndex_Injected, addr 0xb5e084c, size 0x44, virtual false, abstract: false, final false
+static inline ::System::IntPtr QueryComponentAtIndex_Injected(::System::IntPtr  _unity_self, int32_t  index) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method SendMessage, addr 0xb5e18fc, size 0xc, virtual false, abstract: false, final false
+inline void SendMessage(::StringW  methodName) ;
+
+/// @brief Method SendMessage, addr 0xb5e0024, size 0xc, virtual false, abstract: false, final false
+inline void SendMessage(::StringW  methodName, ::UnityEngine::SendMessageOptions  options) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method SendMessage, addr 0xb5e18f4, size 0x8, virtual false, abstract: false, final false
+inline void SendMessage(::StringW  methodName, ::System::Object*  value) ;
+
+/// [FreeFunction(Name = "Scripting::SendScriptingMessage", HasExplicitThis = true)]
+/// @brief Method SendMessage, addr 0xb5e0030, size 0x1b8, virtual false, abstract: false, final false
+inline void SendMessage(::StringW  methodName, /* [DefaultValue("null")] */ ::System::Object*  value, /* [DefaultValue("SendMessageOptions.RequireReceiver")] */ ::UnityEngine::SendMessageOptions  options) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method SendMessageUpwards, addr 0xb5e188c, size 0xc, virtual false, abstract: false, final false
+inline void SendMessageUpwards(::StringW  methodName) ;
+
+/// @brief Method SendMessageUpwards, addr 0xb5dfe60, size 0xc, virtual false, abstract: false, final false
+inline void SendMessageUpwards(::StringW  methodName, ::UnityEngine::SendMessageOptions  options) ;
+
+/// [ExcludeFromDocs]
+/// @brief Method SendMessageUpwards, addr 0xb5e1884, size 0x8, virtual false, abstract: false, final false
+inline void SendMessageUpwards(::StringW  methodName, ::System::Object*  value) ;
+
+/// [FreeFunction(Name = "Scripting::SendScriptingMessageUpwards", HasExplicitThis = true)]
+/// @brief Method SendMessageUpwards, addr 0xb5dfe6c, size 0x1b8, virtual false, abstract: false, final false
+inline void SendMessageUpwards(::StringW  methodName, /* [DefaultValue("null")] */ ::System::Object*  value, /* [DefaultValue("SendMessageOptions.RequireReceiver")] */ ::UnityEngine::SendMessageOptions  options) ;
+
+/// @brief Method SendMessageUpwards_Injected, addr 0xb5e1828, size 0x5c, virtual false, abstract: false, final false
+static inline void SendMessageUpwards_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  methodName, /* [DefaultValue("null")] */ ::System::Object*  value, /* [DefaultValue("SendMessageOptions.RequireReceiver")] */ ::UnityEngine::SendMessageOptions  options) ;
+
+/// @brief Method SendMessage_Injected, addr 0xb5e1898, size 0x5c, virtual false, abstract: false, final false
+static inline void SendMessage_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  methodName, /* [DefaultValue("null")] */ ::System::Object*  value, /* [DefaultValue("SendMessageOptions.RequireReceiver")] */ ::UnityEngine::SendMessageOptions  options) ;
+
+/// [NativeMethod(Name = "SetSelfActive")]
+/// @brief Method SetActive, addr 0xb5e0dd8, size 0x80, virtual false, abstract: false, final false
+inline void SetActive(bool  value) ;
+
+/// [Obsolete("gameObject.SetActiveRecursively() is obsolete. Use GameObject.SetActive(), which is now inherited by children.")]
+/// [NativeMethod(Name = "SetActiveRecursivelyDeprecated")]
+/// @brief Method SetActiveRecursively, addr 0xb5e1004, size 0x80, virtual false, abstract: false, final false
+inline void SetActiveRecursively(bool  state) ;
+
+/// @brief Method SetActiveRecursively_Injected, addr 0xb5e1084, size 0x44, virtual false, abstract: false, final false
+static inline void SetActiveRecursively_Injected(::System::IntPtr  _unity_self, bool  state) ;
+
+/// @brief Method SetActive_Injected, addr 0xb5e0e58, size 0x44, virtual false, abstract: false, final false
+static inline void SetActive_Injected(::System::IntPtr  _unity_self, bool  value) ;
+
+/// @brief Method SetGameObjectsActive, addr 0xb5e2064, size 0xb4, virtual false, abstract: false, final false
+static inline void SetGameObjectsActive(::System::ReadOnlySpan_1<int32_t>  instanceIDs, bool  active) ;
+
+/// @brief Method SetGameObjectsActive, addr 0xb5e1f4c, size 0x118, virtual false, abstract: false, final false
+static inline void SetGameObjectsActive(::Unity::Collections::NativeArray_1<int32_t>  instanceIDs, bool  active) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::SetGameObjectsActiveByInstanceID")]
+/// @brief Method SetGameObjectsActive, addr 0xb5e1ef8, size 0x54, virtual false, abstract: false, final false
+static inline void SetGameObjectsActive(::System::IntPtr  instanceIds, int32_t  instanceCount, bool  active) ;
+
+/// @brief Method TryGetComponent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline bool TryGetComponent(::by_ref<T>  component) ;
+
+/// @brief Method TryGetComponent, addr 0xb5dc480, size 0x88, virtual false, abstract: false, final false
+inline bool TryGetComponent(::System::Type*  type, ::by_ref<::UnityEngine::Component*>  component) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::TryGetComponentFastPath", HasExplicitThis = true, ThrowsException = true)]
+/// @brief Method TryGetComponentFastPath, addr 0xb5df9c4, size 0x90, virtual false, abstract: false, final false
+inline void TryGetComponentFastPath(::System::Type*  type, ::System::IntPtr  oneFurtherThanResultValue) ;
+
+/// @brief Method TryGetComponentFastPath_Injected, addr 0xb5dfa54, size 0x54, virtual false, abstract: false, final false
+static inline void TryGetComponentFastPath_Injected(::System::IntPtr  _unity_self, ::System::Type*  type, ::System::IntPtr  oneFurtherThanResultValue) ;
+
+/// [FreeFunction(Name = "GameObjectBindings::TryGetComponentFromType", HasExplicitThis = true, ThrowsException = true)]
+/// [TypeInferenceRule((UnityEngineInternal.TypeInferenceRules)0)]
+/// @brief Method TryGetComponentInternal, addr 0xb5df86c, size 0xa4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Component> TryGetComponentInternal(::System::Type*  type) ;
+
+/// @brief Method TryGetComponentInternal_Injected, addr 0xb5df980, size 0x44, virtual false, abstract: false, final false
+static inline ::System::IntPtr TryGetComponentInternal_Injected(::System::IntPtr  _unity_self, ::System::Type*  type) ;
+
+/// @brief Method .ctor, addr 0xb5e1b58, size 0x64, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xb5e1978, size 0x70, virtual false, abstract: false, final false
+inline void _ctor(::StringW  name) ;
+
+/// @brief Method .ctor, addr 0xb5e1bbc, size 0xc0, virtual false, abstract: false, final false
+inline void _ctor(::StringW  name, /* [ParamArray] */ ::ArrayW<::System::Type*>  components) ;
+
+/// [NativeMethod(Name = "IsActive")]
+/// @brief Method get_active, addr 0xb5e0c60, size 0x78, virtual false, abstract: false, final false
+inline bool get_active() ;
+
+/// [NativeMethod(Name = "IsActive")]
+/// @brief Method get_activeInHierarchy, addr 0xb5e0f50, size 0x78, virtual false, abstract: false, final false
+inline bool get_activeInHierarchy() ;
+
+/// @brief Method get_activeInHierarchy_Injected, addr 0xb5e0fc8, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_activeInHierarchy_Injected(::System::IntPtr  _unity_self) ;
+
+/// [NativeMethod(Name = "IsSelfActive")]
+/// @brief Method get_activeSelf, addr 0xb5e0e9c, size 0x78, virtual false, abstract: false, final false
+inline bool get_activeSelf() ;
+
+/// @brief Method get_activeSelf_Injected, addr 0xb5e0f14, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_activeSelf_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_active_Injected, addr 0xb5e0cd8, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_active_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_gameObject, addr 0xb5e25d0, size 0x4, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::GameObject> get_gameObject() ;
+
+/// [NativeMethod(Name = "GetIsStaticDeprecated")]
+/// @brief Method get_isStatic, addr 0xb5e10c8, size 0x78, virtual false, abstract: false, final false
+inline bool get_isStatic() ;
+
+/// [NativeMethod(Name = "IsStaticBatchable")]
+/// @brief Method get_isStaticBatchable, addr 0xb5e1240, size 0x78, virtual false, abstract: false, final false
+inline bool get_isStaticBatchable() ;
+
+/// @brief Method get_isStaticBatchable_Injected, addr 0xb5e12b8, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_isStaticBatchable_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_isStatic_Injected, addr 0xb5e1140, size 0x3c, virtual false, abstract: false, final false
+static inline bool get_isStatic_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_layer, addr 0xb5e0ae8, size 0x78, virtual false, abstract: false, final false
+inline int32_t get_layer() ;
+
+/// @brief Method get_layer_Injected, addr 0xb5e0b60, size 0x3c, virtual false, abstract: false, final false
+static inline int32_t get_layer_Injected(::System::IntPtr  _unity_self) ;
+
+/// [FreeFunction("GameObjectBindings::GetScene", HasExplicitThis = true)]
+/// @brief Method get_scene, addr 0xb5e2450, size 0x88, virtual false, abstract: false, final false
+inline ::UnityEngine::SceneManagement::Scene get_scene() ;
+
+/// [FreeFunction(Name = "GameObjectBindings::GetSceneCullingMask", HasExplicitThis = true)]
+/// @brief Method get_sceneCullingMask, addr 0xb5e251c, size 0x78, virtual false, abstract: false, final false
+inline uint64_t get_sceneCullingMask() ;
+
+/// @brief Method get_sceneCullingMask_Injected, addr 0xb5e2594, size 0x3c, virtual false, abstract: false, final false
+static inline uint64_t get_sceneCullingMask_Injected(::System::IntPtr  _unity_self) ;
+
+/// @brief Method get_scene_Injected, addr 0xb5e24d8, size 0x44, virtual false, abstract: false, final false
+static inline void get_scene_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::SceneManagement::Scene>  ret) ;
+
+/// [FreeFunction("GameObjectBindings::GetTag", HasExplicitThis = true)]
+/// @brief Method get_tag, addr 0xb5dc868, size 0x12c, virtual false, abstract: false, final false
+inline ::StringW get_tag() ;
+
+/// @brief Method get_tag_Injected, addr 0xb5e12f4, size 0x44, virtual false, abstract: false, final false
+static inline void get_tag_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  ret) ;
+
+/// [FreeFunction("GameObjectBindings::GetTransform", HasExplicitThis = true)]
+/// @brief Method get_transform, addr 0xb5e0a18, size 0x94, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::Transform> get_transform() ;
+
+/// @brief Method get_transform_Injected, addr 0xb5e0aac, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr get_transform_Injected(::System::IntPtr  _unity_self) ;
+
+/// [NativeMethod(Name = "SetSelfActive")]
+/// @brief Method set_active, addr 0xb5e0d14, size 0x80, virtual false, abstract: false, final false
+inline void set_active(bool  value) ;
+
+/// @brief Method set_active_Injected, addr 0xb5e0d94, size 0x44, virtual false, abstract: false, final false
+static inline void set_active_Injected(::System::IntPtr  _unity_self, bool  value) ;
+
+/// [NativeMethod(Name = "SetIsStaticDeprecated")]
+/// @brief Method set_isStatic, addr 0xb5e117c, size 0x80, virtual false, abstract: false, final false
+inline void set_isStatic(bool  value) ;
+
+/// @brief Method set_isStatic_Injected, addr 0xb5e11fc, size 0x44, virtual false, abstract: false, final false
+static inline void set_isStatic_Injected(::System::IntPtr  _unity_self, bool  value) ;
+
+/// @brief Method set_layer, addr 0xb5e0b9c, size 0x80, virtual false, abstract: false, final false
+inline void set_layer(int32_t  value) ;
+
+/// @brief Method set_layer_Injected, addr 0xb5e0c1c, size 0x44, virtual false, abstract: false, final false
+static inline void set_layer_Injected(::System::IntPtr  _unity_self, int32_t  value) ;
+
+/// [FreeFunction("GameObjectBindings::SetTag", HasExplicitThis = true)]
+/// @brief Method set_tag, addr 0xb5dc9b4, size 0x19c, virtual false, abstract: false, final false
+inline void set_tag(::StringW  value) ;
+
+/// @brief Method set_tag_Injected, addr 0xb5e1338, size 0x44, virtual false, abstract: false, final false
+static inline void set_tag_Injected(::System::IntPtr  _unity_self, ::by_ref<::UnityEngine::Bindings::ManagedSpanWrapper>  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr GameObject() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "GameObject", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+GameObject(GameObject && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "GameObject", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+GameObject(GameObject const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15080};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::GameObject) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine

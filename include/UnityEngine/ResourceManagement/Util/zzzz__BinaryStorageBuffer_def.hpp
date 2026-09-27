@@ -1,0 +1,1036 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/Util/BinaryStorageBuffer.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "UnityEngine/ResourceManagement/Util/zzzz__LRUCache_2_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(BinaryStorageBuffer)
+namespace GlobalNamespace {
+struct BinaryStorageBuffer_DynamicString;
+}
+namespace GlobalNamespace {
+struct BinaryStorageBuffer_ObjectTypeData;
+}
+namespace GlobalNamespace {
+struct BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap;
+}
+namespace GlobalNamespace {
+struct TypeSerializer_BinaryStorageBuffer_Data;
+}
+namespace GlobalNamespace {
+struct Writer_BinaryStorageBuffer_StringParts;
+}
+namespace System::Collections::Generic {
+template<typename TKey,typename TValue>
+class Dictionary_2;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace System::IO {
+class Stream;
+}
+namespace System::Text {
+class Encoding;
+}
+namespace System::Text {
+class StringBuilder;
+}
+namespace System {
+template<typename T1,typename T2,typename T3,typename T4>
+class Action_4;
+}
+namespace System {
+class Object;
+}
+namespace System {
+template<typename T>
+struct Span_1;
+}
+namespace System {
+class Type;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_BuiltinTypesSerializer;
+}
+namespace UnityEngine::ResourceManagement::Util {
+template<typename T>
+class BinaryStorageBuffer_ISerializationAdapter_1;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_ISerializationAdapter;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_Reader;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_TypeSerializer;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_Writer;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class Reader_BinaryStorageBuffer_StringCreationState;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class Writer_BinaryStorageBuffer_Chunk;
+}
+namespace UnityEngine {
+struct Hash128;
+}
+// Forward declare root types
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_BuiltinTypesSerializer;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_ISerializationAdapter;
+}
+namespace UnityEngine::ResourceManagement::Util {
+template<typename T>
+class BinaryStorageBuffer_ISerializationAdapter_1;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_Reader;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_TypeSerializer;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BinaryStorageBuffer_Writer;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class Reader_BinaryStorageBuffer_StringCreationState;
+}
+namespace UnityEngine::ResourceManagement::Util {
+class Writer_BinaryStorageBuffer_Chunk;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer*);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer*);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*);
+MARK_GEN_REF_T_PTR(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader*);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer*);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer*);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0*);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState*);
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/BuiltinTypesSerializer");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/ISerializationAdapter");
+DEFINE_IL2CPP_GEN_CLASS_PTR(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/ISerializationAdapter`1");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/Reader");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/TypeSerializer");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/Writer");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/BuiltinTypesSerializer/<>c__DisplayClass4_0");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/Reader/StringCreationState");
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk*, "UnityEngine.ResourceManagement.Util", "BinaryStorageBuffer/Writer/Chunk");
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer
+class CORDL_TYPE BinaryStorageBuffer : public ::System::Object {
+public:
+// Declarations
+using DynamicString = ::GlobalNamespace::BinaryStorageBuffer_DynamicString;
+
+using ObjectTypeData = ::GlobalNamespace::BinaryStorageBuffer_ObjectTypeData;
+
+using BuiltinTypesSerializer = ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer;
+
+using ISerializationAdapter = ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter;
+
+template<typename T>
+using ISerializationAdapter_1 = ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<T>;
+
+using Reader = ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader;
+
+using TypeSerializer = ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer;
+
+using Writer = ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer;
+
+/// @brief Method AddSerializationAdapter, addr 0xb2f5934, size 0x5b8, virtual false, abstract: false, final false
+static inline void AddSerializationAdapter(::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  serializationAdapters, ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*  adapter, bool  forceOverride) ;
+
+/// @brief Method ComputeHash, addr 0xb2f591c, size 0x18, virtual false, abstract: false, final false
+static inline void ComputeHash(void*  pData, uint64_t  size, ::UnityEngine::Hash128*  hash) ;
+
+/// @brief Method GetSerializationAdapter, addr 0xb2f5eec, size 0x240, virtual false, abstract: false, final false
+static inline bool GetSerializationAdapter(::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  serializationAdapters, ::System::Type*  t, ::by_ref<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapter) ;
+
+static inline ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb2f612c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BinaryStorageBuffer() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BinaryStorageBuffer(BinaryStorageBuffer && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BinaryStorageBuffer(BinaryStorageBuffer const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28567};
+
+/// @brief Field kClearFlagsMask offset 0xffffffff size 0x4
+static constexpr uint32_t  kClearFlagsMask{static_cast<uint32_t>(0x3fffffffu)};
+
+/// @brief Field kDynamicStringFlag offset 0xffffffff size 0x4
+static constexpr uint32_t  kDynamicStringFlag{static_cast<uint32_t>(0x40000000u)};
+
+/// @brief Field kUnicodeStringFlag offset 0xffffffff size 0x4
+static constexpr uint32_t  kUnicodeStringFlag{static_cast<uint32_t>(0x80000000u)};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/Writer
+class CORDL_TYPE BinaryStorageBuffer_Writer : public ::System::Object {
+public:
+// Declarations
+using StringParts = ::GlobalNamespace::Writer_BinaryStorageBuffer_StringParts;
+
+using Chunk = ::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk;
+
+ __declspec(property(get=get_Length)) uint32_t  Length;
+
+/// @brief Field chunks, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_chunks, put=__cordl_internal_set_chunks)) ::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk*>*  chunks;
+
+/// @brief Field defaulChunkSize, offset 0x14, size 0x4 
+ __declspec(property(get=__cordl_internal_get_defaulChunkSize, put=__cordl_internal_set_defaulChunkSize)) uint32_t  defaulChunkSize;
+
+/// @brief Field existingValues, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_existingValues, put=__cordl_internal_set_existingValues)) ::System::Collections::Generic::Dictionary_2<::UnityEngine::Hash128,uint32_t>*  existingValues;
+
+/// @brief Field serializationAdapters, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_serializationAdapters, put=__cordl_internal_set_serializationAdapters)) ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  serializationAdapters;
+
+/// @brief Field totalBytes, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get_totalBytes, put=__cordl_internal_set_totalBytes)) uint32_t  totalBytes;
+
+/// @brief Method ComputeStringSize, addr 0xb2f93ac, size 0x54, virtual false, abstract: false, final false
+static inline uint32_t ComputeStringSize(::StringW  str, ::by_ref<bool>  isUnicode) ;
+
+/// @brief Method FindChunkWithSpace, addr 0xb2f85a4, size 0x1b4, virtual false, abstract: false, final false
+inline ::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk* FindChunkWithSpace(uint32_t  length) ;
+
+/// @brief Method IsUnicode, addr 0xb2f9308, size 0x6c, virtual false, abstract: false, final false
+static inline bool IsUnicode(::StringW  str) ;
+
+static inline ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer* New_ctor(int32_t  chunkSize, /* [ParamArray] */ ::ArrayW<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapters) ;
+
+/// @brief Method RecurseDynamicStringParts, addr 0xb2f9400, size 0x234, virtual false, abstract: false, final false
+inline uint32_t RecurseDynamicStringParts(::ArrayW<::GlobalNamespace::Writer_BinaryStorageBuffer_StringParts>  parts, int32_t  index, char16_t  sep, uint32_t  minSize) ;
+
+/// @brief Method Reserve, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Reserve() ;
+
+/// @brief Method Reserve, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Reserve(uint32_t  count) ;
+
+/// @brief Method ReserveInternal, addr 0xb2f8904, size 0x58, virtual false, abstract: false, final false
+inline uint32_t ReserveInternal(uint32_t  dataSize, bool  prefixSize) ;
+
+/// @brief Method SerializeToByteArray, addr 0xb2f8f78, size 0x22c, virtual false, abstract: false, final false
+inline ::ArrayW<uint8_t> SerializeToByteArray() ;
+
+/// @brief Method SerializeToStream, addr 0xb2f91a4, size 0x164, virtual false, abstract: false, final false
+inline uint32_t SerializeToStream(::System::IO::Stream*  str) ;
+
+/// @brief Method Write, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Write(uint32_t  offset, /* [IsReadOnly] */ ::by_ref<T>  val) ;
+
+/// @brief Method Write, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Write(uint32_t  offset, T  val) ;
+
+/// @brief Method Write, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Write(uint32_t  offset, ::ArrayW<T>  values, bool  hashElements) ;
+
+/// @brief Method Write, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Write(/* [IsReadOnly] */ ::by_ref<T>  val) ;
+
+/// @brief Method Write, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Write(T  val) ;
+
+/// @brief Method Write, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline uint32_t Write(::ArrayW<T>  values, bool  hashElements) ;
+
+/// @brief Method WriteAutoEncodedString, addr 0xb2f8eac, size 0x70, virtual false, abstract: false, final false
+inline uint32_t WriteAutoEncodedString(::StringW  str) ;
+
+/// @brief Method WriteDynamicString, addr 0xb2f8d0c, size 0x1a0, virtual false, abstract: false, final false
+inline uint32_t WriteDynamicString(::StringW  str, char16_t  sep) ;
+
+/// @brief Method WriteInternal, addr 0xb2f8758, size 0x1ac, virtual false, abstract: false, final false
+inline uint32_t WriteInternal(void*  pData, uint32_t  dataSize, bool  prefixSize) ;
+
+/// @brief Method WriteInternal, addr 0xb2f895c, size 0x268, virtual false, abstract: false, final false
+inline void WriteInternal(uint32_t  id, void*  pData, uint32_t  dataSize, bool  prefixSize) ;
+
+/// @brief Method WriteObject, addr 0xb2f8bc4, size 0x148, virtual false, abstract: false, final false
+inline uint32_t WriteObject(::System::Object*  obj, bool  serializeTypeData) ;
+
+/// @brief Method WriteObjects, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline uint32_t WriteObjects(::System::Collections::Generic::IEnumerable_1<T>*  objs, bool  serizalizeTypeData) ;
+
+/// @brief Method WriteString, addr 0xb2f6a80, size 0x1c, virtual false, abstract: false, final false
+inline uint32_t WriteString(::StringW  str, char16_t  sep) ;
+
+/// @brief Method WriteStringInternal, addr 0xb2f8f1c, size 0x5c, virtual false, abstract: false, final false
+inline uint32_t WriteStringInternal(::StringW  val, ::System::Text::Encoding*  enc) ;
+
+/// @brief Method WriteUnicodeString, addr 0xb2f9374, size 0x38, virtual false, abstract: false, final false
+inline uint32_t WriteUnicodeString(::StringW  str) ;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk*>* const& __cordl_internal_get_chunks() const;
+
+constexpr ::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk*>*& __cordl_internal_get_chunks() ;
+
+constexpr uint32_t const& __cordl_internal_get_defaulChunkSize() const;
+
+constexpr uint32_t& __cordl_internal_get_defaulChunkSize() ;
+
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::Hash128,uint32_t>* const& __cordl_internal_get_existingValues() const;
+
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::Hash128,uint32_t>*& __cordl_internal_get_existingValues() ;
+
+constexpr ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>* const& __cordl_internal_get_serializationAdapters() const;
+
+constexpr ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*& __cordl_internal_get_serializationAdapters() ;
+
+constexpr uint32_t const& __cordl_internal_get_totalBytes() const;
+
+constexpr uint32_t& __cordl_internal_get_totalBytes() ;
+
+constexpr void __cordl_internal_set_chunks(::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk*>*  value) ;
+
+constexpr void __cordl_internal_set_defaulChunkSize(uint32_t  value) ;
+
+constexpr void __cordl_internal_set_existingValues(::System::Collections::Generic::Dictionary_2<::UnityEngine::Hash128,uint32_t>*  value) ;
+
+constexpr void __cordl_internal_set_serializationAdapters(::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  value) ;
+
+constexpr void __cordl_internal_set_totalBytes(uint32_t  value) ;
+
+/// @brief Method .ctor, addr 0xb2f82d8, size 0x2c4, virtual false, abstract: false, final false
+inline void _ctor(int32_t  chunkSize, /* [ParamArray] */ ::ArrayW<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapters) ;
+
+/// @brief Method get_Length, addr 0xb2f82d0, size 0x8, virtual false, abstract: false, final false
+inline uint32_t get_Length() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BinaryStorageBuffer_Writer() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_Writer", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BinaryStorageBuffer_Writer(BinaryStorageBuffer_Writer && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_Writer", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BinaryStorageBuffer_Writer(BinaryStorageBuffer_Writer const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28566};
+
+/// @brief Field totalBytes, offset: 0x10, size: 0x4, def value: None
+ uint32_t  ___totalBytes;
+
+/// @brief Field defaulChunkSize, offset: 0x14, size: 0x4, def value: None
+ uint32_t  ___defaulChunkSize;
+
+/// @brief Field chunks, offset: 0x18, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk*>*  ___chunks;
+
+/// @brief Field existingValues, offset: 0x20, size: 0x8, def value: None
+ ::System::Collections::Generic::Dictionary_2<::UnityEngine::Hash128,uint32_t>*  ___existingValues;
+
+/// @brief Field serializationAdapters, offset: 0x28, size: 0x8, def value: None
+ ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  ___serializationAdapters;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer, ___totalBytes) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer, ___defaulChunkSize) == 0x14, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer, ___chunks) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer, ___existingValues) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer, ___serializationAdapters) == 0x28, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer) == 0x30, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/Writer/Chunk
+class CORDL_TYPE Writer_BinaryStorageBuffer_Chunk : public ::System::Object {
+public:
+// Declarations
+/// @brief Field data, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_data, put=__cordl_internal_set_data)) ::ArrayW<uint8_t>  data;
+
+/// @brief Field position, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get_position, put=__cordl_internal_set_position)) uint32_t  position;
+
+static inline ::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk* New_ctor() ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_data() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_data() ;
+
+constexpr uint32_t const& __cordl_internal_get_position() const;
+
+constexpr uint32_t& __cordl_internal_get_position() ;
+
+constexpr void __cordl_internal_set_data(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_position(uint32_t  value) ;
+
+/// @brief Method .ctor, addr 0xb2f859c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Writer_BinaryStorageBuffer_Chunk() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Writer_BinaryStorageBuffer_Chunk", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Writer_BinaryStorageBuffer_Chunk(Writer_BinaryStorageBuffer_Chunk && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Writer_BinaryStorageBuffer_Chunk", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Writer_BinaryStorageBuffer_Chunk(Writer_BinaryStorageBuffer_Chunk const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28564};
+
+/// @brief Field position, offset: 0x10, size: 0x4, def value: None
+ uint32_t  ___position;
+
+/// @brief Field data, offset: 0x18, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___data;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk, ___position) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk, ___data) == 0x18, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk) == 0x20, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies System.Object, UnityEngine.ResourceManagement.Util.LRUCache`2<TKey, TValue>
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/Reader
+class CORDL_TYPE BinaryStorageBuffer_Reader : public ::System::Object {
+public:
+// Declarations
+using StringCreationState = ::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState;
+
+/// @brief Field m_Adapters, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Adapters, put=__cordl_internal_set_m_Adapters)) ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  m_Adapters;
+
+/// @brief Field m_Buffer, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_Buffer, put=__cordl_internal_set_m_Buffer)) ::ArrayW<uint8_t>  m_Buffer;
+
+/// @brief Field m_Cache, offset 0x20, size 0x20 
+ __declspec(property(get=__cordl_internal_get_m_Cache, put=__cordl_internal_set_m_Cache)) ::UnityEngine::ResourceManagement::Util::LRUCache_2<uint32_t,::System::Object*>  m_Cache;
+
+/// @brief Field m_MinCachedObjectSize, offset 0x40, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_MinCachedObjectSize, put=__cordl_internal_set_m_MinCachedObjectSize)) uint32_t  m_MinCachedObjectSize;
+
+/// @brief Field stringBuilder, offset 0x48, size 0x8 
+ __declspec(property(get=__cordl_internal_get_stringBuilder, put=__cordl_internal_set_stringBuilder)) ::System::Text::StringBuilder*  stringBuilder;
+
+/// @brief Field stringCreationState, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_stringCreationState, put=setStaticF_stringCreationState)) ::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState*  stringCreationState;
+
+/// @brief Method AddSerializationAdapter, addr 0xb2f7070, size 0xc, virtual false, abstract: false, final false
+inline void AddSerializationAdapter(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*  a) ;
+
+/// @brief Method ComputeStringLength, addr 0xb2f7dd4, size 0x20, virtual false, abstract: false, final false
+inline int32_t ComputeStringLength(uint32_t  id, char16_t  sep) ;
+
+/// @brief Method GetAutoEncodedStringLength, addr 0xb2f7df4, size 0x48, virtual false, abstract: false, final false
+inline int32_t GetAutoEncodedStringLength(uint32_t  id) ;
+
+/// @brief Method GetBuffer, addr 0xb2f70c8, size 0x8, virtual false, abstract: false, final false
+inline ::ArrayW<uint8_t> GetBuffer() ;
+
+/// @brief Method GetCacheStats, addr 0xb2f6dd0, size 0x14, virtual false, abstract: false, final false
+inline void GetCacheStats(::by_ref<int32_t>  reqCount, ::by_ref<int32_t>  reqHits) ;
+
+/// @brief Method GetDynamicStringLength, addr 0xb2f7e3c, size 0xb8, virtual false, abstract: false, final false
+inline int32_t GetDynamicStringLength(uint32_t  id, char16_t  sep) ;
+
+/// @brief Method GetStringLengthInternal, addr 0xb2f7ef4, size 0x1a0, virtual false, abstract: false, final false
+inline int32_t GetStringLengthInternal(uint32_t  offset, ::System::Text::Encoding*  enc) ;
+
+/// @brief Method Init, addr 0xb2f6e6c, size 0x204, virtual false, abstract: false, final false
+inline void Init(::ArrayW<uint8_t>  data, int32_t  maxCachedObjects, uint32_t  minCachedObjSize, /* [ParamArray] */ ::ArrayW<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapters) ;
+
+static inline ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader* New_ctor(::ArrayW<uint8_t>  data, int32_t  maxCachedObjects, uint32_t  minCachedObjSize, /* [ParamArray] */ ::ArrayW<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapters) ;
+
+static inline ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader* New_ctor(::System::IO::Stream*  inputStream, uint32_t  bufferSize, int32_t  maxCachedObjects, uint32_t  minCachedObjSize, /* [ParamArray] */ ::ArrayW<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapters) ;
+
+/// @brief Method ProcessObjectArray, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T,typename C>
+inline uint32_t ProcessObjectArray(uint32_t  id, ::by_ref<uint32_t>  size, C  context, ::System::Action_4<T,C,int32_t,int32_t>*  procFunc, bool  cacheValues) ;
+
+/// @brief Method ReadAutoEncodedString, addr 0xb2f7954, size 0x64, virtual false, abstract: false, final false
+inline ::StringW ReadAutoEncodedString(uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValue) ;
+
+/// @brief Method ReadDynamicString, addr 0xb2f79b8, size 0x1dc, virtual false, abstract: false, final false
+inline ::StringW ReadDynamicString(uint32_t  id, ::by_ref<uint32_t>  size, char16_t  sep, bool  cacheValue) ;
+
+/// @brief Method ReadObject, addr 0xb2f743c, size 0xe8, virtual false, abstract: false, final false
+inline ::System::Object* ReadObject(uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValue) ;
+
+/// @brief Method ReadObject, addr 0xb2f7720, size 0x234, virtual false, abstract: false, final false
+inline ::System::Object* ReadObject(::System::Type*  t, uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValue) ;
+
+/// @brief Method ReadObject, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline T ReadObject(uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValue) ;
+
+/// @brief Method ReadObjectArray, addr 0xb2f724c, size 0x1f0, virtual false, abstract: false, final false
+inline ::ArrayW<::System::Object*> ReadObjectArray(uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValues, bool  cacheFullArray) ;
+
+/// @brief Method ReadObjectArray, addr 0xb2f7524, size 0x1fc, virtual false, abstract: false, final false
+inline ::ArrayW<::System::Object*> ReadObjectArray(::System::Type*  t, uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValues, bool  cacheFullArray) ;
+
+/// @brief Method ReadObjectArray, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline ::ArrayW<T> ReadObjectArray(uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValues, bool  cacheFullArray) ;
+
+/// @brief Method ReadObjectArray, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline uint32_t ReadObjectArray(::by_ref<::System::Collections::Generic::List_1<T>*>  results, uint32_t  id, ::by_ref<uint32_t>  size, bool  cacheValues) ;
+
+/// @brief Method ReadString, addr 0xb2f6428, size 0xd0, virtual false, abstract: false, final false
+inline ::StringW ReadString(uint32_t  id, ::by_ref<uint32_t>  size, char16_t  sep, bool  cacheValue) ;
+
+/// @brief Method ReadStringInternal, addr 0xb2f7b94, size 0x240, virtual false, abstract: false, final false
+inline ::StringW ReadStringInternal(uint32_t  offset, ::by_ref<uint32_t>  size, ::System::Text::Encoding*  enc, bool  cacheValue) ;
+
+/// @brief Method ReadValue, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline T ReadValue(uint32_t  id, ::by_ref<uint32_t>  size) ;
+
+/// @brief Method ReadValueArray, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline ::ArrayW<T> ReadValueArray(uint32_t  id, ::by_ref<uint32_t>  readSize, bool  cacheValue) ;
+
+/// @brief Method ResetCache, addr 0xb2f6de4, size 0x88, virtual false, abstract: false, final false
+inline void ResetCache(int32_t  maxCachedObjects, uint32_t  minCachedObjSize) ;
+
+/// @brief Method TryGetCachedValue, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+inline bool TryGetCachedValue(uint32_t  offset, ::by_ref<T>  val) ;
+
+/// @brief Method TryGetCachedValue, addr 0xb2f71b8, size 0x94, virtual false, abstract: false, final false
+inline bool TryGetCachedValue(::System::Type*  t, uint32_t  offset, ::by_ref<::System::Object*>  val) ;
+
+/// [CompilerGenerated]
+/// @brief Method <ReadDynamicString>b__33_0, addr 0xb2f8118, size 0x1b8, virtual false, abstract: false, final false
+inline void _ReadDynamicString_b__33_0(::System::Span_1<char16_t>  chars, ::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState*  state) ;
+
+constexpr ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>* const& __cordl_internal_get_m_Adapters() const;
+
+constexpr ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*& __cordl_internal_get_m_Adapters() ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_m_Buffer() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_m_Buffer() ;
+
+constexpr ::UnityEngine::ResourceManagement::Util::LRUCache_2<uint32_t,::System::Object*> const& __cordl_internal_get_m_Cache() const;
+
+constexpr ::UnityEngine::ResourceManagement::Util::LRUCache_2<uint32_t,::System::Object*>& __cordl_internal_get_m_Cache() ;
+
+constexpr uint32_t const& __cordl_internal_get_m_MinCachedObjectSize() const;
+
+constexpr uint32_t& __cordl_internal_get_m_MinCachedObjectSize() ;
+
+constexpr ::System::Text::StringBuilder* const& __cordl_internal_get_stringBuilder() const;
+
+constexpr ::System::Text::StringBuilder*& __cordl_internal_get_stringBuilder() ;
+
+constexpr void __cordl_internal_set_m_Adapters(::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  value) ;
+
+constexpr void __cordl_internal_set_m_Buffer(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_m_Cache(::UnityEngine::ResourceManagement::Util::LRUCache_2<uint32_t,::System::Object*>  value) ;
+
+constexpr void __cordl_internal_set_m_MinCachedObjectSize(uint32_t  value) ;
+
+constexpr void __cordl_internal_set_stringBuilder(::System::Text::StringBuilder*  value) ;
+
+/// @brief Method .ctor, addr 0xb2f707c, size 0x4c, virtual false, abstract: false, final false
+inline void _ctor(::ArrayW<uint8_t>  data, int32_t  maxCachedObjects, uint32_t  minCachedObjSize, /* [ParamArray] */ ::ArrayW<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapters) ;
+
+/// @brief Method .ctor, addr 0xb2f70d0, size 0xe8, virtual false, abstract: false, final false
+inline void _ctor(::System::IO::Stream*  inputStream, uint32_t  bufferSize, int32_t  maxCachedObjects, uint32_t  minCachedObjSize, /* [ParamArray] */ ::ArrayW<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>  adapters) ;
+
+static inline ::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState* getStaticF_stringCreationState() ;
+
+static inline void setStaticF_stringCreationState(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BinaryStorageBuffer_Reader() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_Reader", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BinaryStorageBuffer_Reader(BinaryStorageBuffer_Reader && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_Reader", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BinaryStorageBuffer_Reader(BinaryStorageBuffer_Reader const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28563};
+
+/// @brief Field m_Buffer, offset: 0x10, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___m_Buffer;
+
+/// @brief Field m_Adapters, offset: 0x18, size: 0x8, def value: None
+ ::System::Collections::Generic::Dictionary_2<::System::Type*,::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  ___m_Adapters;
+
+/// @brief Field m_Cache, offset: 0x20, size: 0x20, def value: None
+ ::UnityEngine::ResourceManagement::Util::LRUCache_2<uint32_t,::System::Object*>  ___m_Cache;
+
+/// @brief Field m_MinCachedObjectSize, offset: 0x40, size: 0x4, def value: None
+ uint32_t  ___m_MinCachedObjectSize;
+
+/// @brief Field stringBuilder, offset: 0x48, size: 0x8, def value: None
+ ::System::Text::StringBuilder*  ___stringBuilder;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader, ___m_Buffer) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader, ___m_Adapters) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader, ___m_Cache) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader, ___m_MinCachedObjectSize) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader, ___stringBuilder) == 0x48, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader) == 0x50, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/Reader/StringCreationState
+class CORDL_TYPE Reader_BinaryStorageBuffer_StringCreationState : public ::System::Object {
+public:
+// Declarations
+/// @brief Field id, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get_id, put=__cordl_internal_set_id)) uint32_t  id;
+
+/// @brief Field length, offset 0x18, size 0x4 
+ __declspec(property(get=__cordl_internal_get_length, put=__cordl_internal_set_length)) int32_t  length;
+
+/// @brief Field sep, offset 0x14, size 0x2 
+ __declspec(property(get=__cordl_internal_get_sep, put=__cordl_internal_set_sep)) char16_t  sep;
+
+/// @brief Field size, offset 0x1c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_size, put=__cordl_internal_set_size)) uint32_t  size;
+
+static inline ::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState* New_ctor() ;
+
+constexpr uint32_t const& __cordl_internal_get_id() const;
+
+constexpr uint32_t& __cordl_internal_get_id() ;
+
+constexpr int32_t const& __cordl_internal_get_length() const;
+
+constexpr int32_t& __cordl_internal_get_length() ;
+
+constexpr char16_t const& __cordl_internal_get_sep() const;
+
+constexpr char16_t& __cordl_internal_get_sep() ;
+
+constexpr uint32_t const& __cordl_internal_get_size() const;
+
+constexpr uint32_t& __cordl_internal_get_size() ;
+
+constexpr void __cordl_internal_set_id(uint32_t  value) ;
+
+constexpr void __cordl_internal_set_length(int32_t  value) ;
+
+constexpr void __cordl_internal_set_sep(char16_t  value) ;
+
+constexpr void __cordl_internal_set_size(uint32_t  value) ;
+
+/// @brief Method .ctor, addr 0xb2f8110, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Reader_BinaryStorageBuffer_StringCreationState() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Reader_BinaryStorageBuffer_StringCreationState", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Reader_BinaryStorageBuffer_StringCreationState(Reader_BinaryStorageBuffer_StringCreationState && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Reader_BinaryStorageBuffer_StringCreationState", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Reader_BinaryStorageBuffer_StringCreationState(Reader_BinaryStorageBuffer_StringCreationState const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28562};
+
+/// @brief Field id, offset: 0x10, size: 0x4, def value: None
+ uint32_t  ___id;
+
+/// @brief Field sep, offset: 0x14, size: 0x2, def value: None
+ char16_t  ___sep;
+
+/// @brief Field length, offset: 0x18, size: 0x4, def value: None
+ int32_t  ___length;
+
+/// @brief Field size, offset: 0x1c, size: 0x4, def value: None
+ uint32_t  ___size;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState, ___id) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState, ___sep) == 0x14, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState, ___length) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState, ___size) == 0x1c, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState) == 0x20, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies 
+namespace UnityEngine::ResourceManagement::Util {
+// cpp template
+template<typename T>
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/ISerializationAdapter`1<T>
+class CORDL_TYPE BinaryStorageBuffer_ISerializationAdapter_1 {
+public:
+// Declarations
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*() noexcept;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter() noexcept;
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_ISerializationAdapter_1", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BinaryStorageBuffer_ISerializationAdapter_1(BinaryStorageBuffer_ISerializationAdapter_1 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28561};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies 
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/ISerializationAdapter
+class CORDL_TYPE BinaryStorageBuffer_ISerializationAdapter {
+public:
+// Declarations
+ __declspec(property(get=get_Dependencies)) ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  Dependencies;
+
+/// @brief Method Deserialize, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::System::Object* Deserialize(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader*  reader, ::System::Type*  t, uint32_t  offset, ::by_ref<uint32_t>  size) ;
+
+/// @brief Method Serialize, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline uint32_t Serialize(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer*  writer, ::System::Object*  val) ;
+
+/// @brief Method get_Dependencies, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>* get_Dependencies() ;
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_ISerializationAdapter", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BinaryStorageBuffer_ISerializationAdapter(BinaryStorageBuffer_ISerializationAdapter const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28560};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/TypeSerializer
+class CORDL_TYPE BinaryStorageBuffer_TypeSerializer : public ::System::Object {
+public:
+// Declarations
+using Data = ::GlobalNamespace::TypeSerializer_BinaryStorageBuffer_Data;
+
+ __declspec(property(get=get_Dependencies)) ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  Dependencies;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*() noexcept;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::System::Type*>"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::System::Type*>*() noexcept;
+
+/// @brief Method Deserialize, addr 0xb2f6abc, size 0x1ec, virtual true, abstract: false, final true
+inline ::System::Object* Deserialize(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader*  reader, ::System::Type*  type, uint32_t  offset, ::by_ref<uint32_t>  size) ;
+
+static inline ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer* New_ctor() ;
+
+/// @brief Method Serialize, addr 0xb2f6ca8, size 0x120, virtual true, abstract: false, final true
+inline uint32_t Serialize(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer*  writer, ::System::Object*  val) ;
+
+/// @brief Method .ctor, addr 0xb2f6dc8, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_Dependencies, addr 0xb2f6ab4, size 0x8, virtual true, abstract: false, final true
+inline ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>* get_Dependencies() ;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter() noexcept;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::System::Type*>"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::System::Type*>* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter_1___System__Type__() noexcept;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BinaryStorageBuffer_TypeSerializer() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_TypeSerializer", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BinaryStorageBuffer_TypeSerializer(BinaryStorageBuffer_TypeSerializer && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_TypeSerializer", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BinaryStorageBuffer_TypeSerializer(BinaryStorageBuffer_TypeSerializer const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28557};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/BuiltinTypesSerializer
+class CORDL_TYPE BinaryStorageBuffer_BuiltinTypesSerializer : public ::System::Object {
+public:
+// Declarations
+using ObjectToStringRemap = ::GlobalNamespace::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap;
+
+using __c__DisplayClass4_0 = ::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0;
+
+ __declspec(property(get=get_Dependencies)) ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>*  Dependencies;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*() noexcept;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::StringW>"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::StringW>*() noexcept;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::UnityEngine::Hash128>"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::UnityEngine::Hash128>*() noexcept;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<bool>"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<bool>*() noexcept;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int32_t>"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int32_t>*() noexcept;
+
+/// @brief Convert operator to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int64_t>"
+constexpr operator  ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int64_t>*() noexcept;
+
+/// @brief Method Deserialize, addr 0xb2f613c, size 0x2ec, virtual true, abstract: false, final true
+inline ::System::Object* Deserialize(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader*  reader, ::System::Type*  t, uint32_t  offset, ::by_ref<uint32_t>  size) ;
+
+/// @brief Method FindBestSeparator, addr 0xb2f64f8, size 0x1cc, virtual false, abstract: false, final false
+inline char16_t FindBestSeparator(::StringW  str, /* [ParamArray] */ ::ArrayW<char16_t>  seps) ;
+
+static inline ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer* New_ctor() ;
+
+/// @brief Method Serialize, addr 0xb2f66cc, size 0x3b4, virtual true, abstract: false, final true
+inline uint32_t Serialize(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer*  writer, ::System::Object*  val) ;
+
+/// @brief Method .ctor, addr 0xb2f6a9c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_Dependencies, addr 0xb2f6134, size 0x8, virtual true, abstract: false, final true
+inline ::System::Collections::Generic::IEnumerable_1<::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter*>* get_Dependencies() ;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter() noexcept;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::StringW>"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::StringW>* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter_1___StringW_() noexcept;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::UnityEngine::Hash128>"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<::UnityEngine::Hash128>* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter_1___UnityEngine__Hash128_() noexcept;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<bool>"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<bool>* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter_1_bool_() noexcept;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int32_t>"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int32_t>* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter_1_int32_t_() noexcept;
+
+/// @brief Convert to "::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int64_t>"
+constexpr ::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<int64_t>* i___UnityEngine__ResourceManagement__Util__BinaryStorageBuffer_ISerializationAdapter_1_int64_t_() noexcept;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BinaryStorageBuffer_BuiltinTypesSerializer() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_BuiltinTypesSerializer", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BinaryStorageBuffer_BuiltinTypesSerializer(BinaryStorageBuffer_BuiltinTypesSerializer && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BinaryStorageBuffer_BuiltinTypesSerializer", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BinaryStorageBuffer_BuiltinTypesSerializer(BinaryStorageBuffer_BuiltinTypesSerializer const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28555};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util
+// [CompilerGenerated]
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.BinaryStorageBuffer/BuiltinTypesSerializer/<>c__DisplayClass4_0
+class CORDL_TYPE BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0 : public ::System::Object {
+public:
+// Declarations
+/// @brief Field s, offset 0x10, size 0x2 
+ __declspec(property(get=__cordl_internal_get_s, put=__cordl_internal_set_s)) char16_t  s;
+
+static inline ::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0* New_ctor() ;
+
+/// @brief Method <FindBestSeparator>b__0, addr 0xb2f6aa4, size 0x10, virtual false, abstract: false, final false
+inline bool _FindBestSeparator_b__0(char16_t  c) ;
+
+constexpr char16_t const& __cordl_internal_get_s() const;
+
+constexpr char16_t& __cordl_internal_get_s() ;
+
+constexpr void __cordl_internal_set_s(char16_t  value) ;
+
+/// @brief Method .ctor, addr 0xb2f66c4, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0(BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0 && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0(BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28554};
+
+/// @brief Field s, offset: 0x10, size: 0x2, def value: None
+ char16_t  ___s;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0, ___s) == 0x10, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util

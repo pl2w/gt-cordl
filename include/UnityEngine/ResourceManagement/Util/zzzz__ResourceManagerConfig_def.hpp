@@ -1,0 +1,95 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/Util/ResourceManagerConfig.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(ResourceManagerConfig)
+namespace System::Collections {
+class IList;
+}
+namespace System {
+class Array;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+namespace UnityEngine {
+class Object;
+}
+// Forward declare root types
+namespace UnityEngine::ResourceManagement::Util {
+class ResourceManagerConfig;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourceManagement::Util::ResourceManagerConfig*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::Util::ResourceManagerConfig*, "UnityEngine.ResourceManagement.Util", "ResourceManagerConfig");
+// Dependencies System.Object
+namespace UnityEngine::ResourceManagement::Util {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.Util.ResourceManagerConfig
+class CORDL_TYPE ResourceManagerConfig : public ::System::Object {
+public:
+// Declarations
+/// @brief Method CreateArrayResult, addr 0xb2fc89c, size 0x190, virtual false, abstract: false, final false
+static inline ::System::Array* CreateArrayResult(::System::Type*  type, ::ArrayW<::UnityEngine::Object*>  allAssets) ;
+
+/// @brief Method CreateArrayResult, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename TObject>
+requires(::cordl_internals::reference_type_constraint<TObject>)
+static inline TObject CreateArrayResult(::ArrayW<::UnityEngine::Object*>  allAssets) ;
+
+/// @brief Method CreateListResult, addr 0xb2fca2c, size 0x1c0, virtual false, abstract: false, final false
+static inline ::System::Collections::IList* CreateListResult(::System::Type*  type, ::ArrayW<::UnityEngine::Object*>  allAssets) ;
+
+/// @brief Method CreateListResult, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename TObject>
+static inline TObject CreateListResult(::ArrayW<::UnityEngine::Object*>  allAssets) ;
+
+/// @brief Method ExtractKeyAndSubKey, addr 0xb2fc56c, size 0xe8, virtual false, abstract: false, final false
+static inline bool ExtractKeyAndSubKey(::System::Object*  keyObj, ::by_ref<::StringW>  mainKey, ::by_ref<::StringW>  subKey) ;
+
+/// @brief Method IsInstance, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T1,typename T2>
+static inline bool IsInstance() ;
+
+/// @brief Method IsPathRemote, addr 0xb2fc654, size 0x64, virtual false, abstract: false, final false
+static inline bool IsPathRemote(::StringW  path) ;
+
+/// @brief Method PlatformCanLoadLocallyFromUrlPath, addr 0xb2fc778, size 0x124, virtual false, abstract: false, final false
+static inline bool PlatformCanLoadLocallyFromUrlPath() ;
+
+/// @brief Method ShouldPathUseWebRequest, addr 0xb2fc6fc, size 0x7c, virtual false, abstract: false, final false
+static inline bool ShouldPathUseWebRequest(::StringW  path) ;
+
+/// @brief Method StripQueryParameters, addr 0xb2fc6b8, size 0x44, virtual false, abstract: false, final false
+static inline ::StringW StripQueryParameters(::StringW  path) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ResourceManagerConfig() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourceManagerConfig", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ResourceManagerConfig(ResourceManagerConfig && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ResourceManagerConfig", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ResourceManagerConfig(ResourceManagerConfig const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28593};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::ResourceManagement::Util::ResourceManagerConfig) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::ResourceManagement::Util

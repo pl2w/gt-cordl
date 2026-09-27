@@ -1,0 +1,276 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVROverlayCanvasSettings.hpp"
+#include "GlobalNamespace/zzzz__OVRRuntimeAssetsBase_impl.hpp"
+#include "GlobalNamespace/zzzz__OVROverlayCanvasSettings_def.hpp"
+#include "GlobalNamespace/zzzz__OVROverlayCanvas_DrawMode_def.hpp"
+#include "UnityEngine/zzzz__Shader_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.get_Instance
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::GlobalNamespace::OVROverlayCanvasSettings> (*)()>(&::GlobalNamespace::OVROverlayCanvasSettings::get_Instance)> {
+  constexpr static std::size_t size = 0xac;
+  constexpr static std::size_t addrs = 0xa60007c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"get_Instance", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.GetOverlayCanvasSettings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::GlobalNamespace::OVROverlayCanvasSettings> (*)()>(&::GlobalNamespace::OVROverlayCanvasSettings::GetOverlayCanvasSettings)> {
+  constexpr static std::size_t size = 0x128;
+  constexpr static std::size_t addrs = 0xa604bf4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"GetOverlayCanvasSettings", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.ApplyGlobalSettings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVROverlayCanvasSettings::*)()>(&::GlobalNamespace::OVROverlayCanvasSettings::ApplyGlobalSettings)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa601794;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"ApplyGlobalSettings", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.GetShader
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Shader> (::GlobalNamespace::OVROverlayCanvasSettings::*)(::GlobalNamespace::OVROverlayCanvas_DrawMode)>(&::GlobalNamespace::OVROverlayCanvasSettings::GetShader)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xa6016f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"GetShader", {}, {::i2c::type_of<::GlobalNamespace::OVROverlayCanvas_DrawMode>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.UsingBuiltInRenderPipeline
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)()>(&::GlobalNamespace::OVROverlayCanvasSettings::UsingBuiltInRenderPipeline)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xa604de4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"UsingBuiltInRenderPipeline", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.EnsureShaderInitialized
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::by_ref<::UnityEngine::Shader*>, ::StringW, ::StringW)>(&::GlobalNamespace::OVROverlayCanvasSettings::EnsureShaderInitialized)> {
+  constexpr static std::size_t size = 0x170;
+  constexpr static std::size_t addrs = 0xa604e70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"EnsureShaderInitialized", {}, {::i2c::type_of<::by_ref<::UnityEngine::Shader*>>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.EnsureInitialized
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVROverlayCanvasSettings::*)()>(&::GlobalNamespace::OVROverlayCanvasSettings::EnsureInitialized)> {
+  constexpr static std::size_t size = 0xc8;
+  constexpr static std::size_t addrs = 0xa604d1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"EnsureInitialized", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings.OnValidate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVROverlayCanvasSettings::*)()>(&::GlobalNamespace::OVROverlayCanvasSettings::OnValidate)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa604fe0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"OnValidate", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVROverlayCanvasSettings._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVROverlayCanvasSettings::*)()>(&::GlobalNamespace::OVROverlayCanvasSettings::_ctor)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xa604fe4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityW<::UnityEngine::Shader>& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get__transparentImposterShader()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____transparentImposterShader;
+}
+constexpr ::UnityW<::UnityEngine::Shader> const& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get__transparentImposterShader() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____transparentImposterShader;
+}
+constexpr void GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_set__transparentImposterShader(::UnityW<::UnityEngine::Shader>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____transparentImposterShader = value;
+}
+constexpr ::UnityW<::UnityEngine::Shader>& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get__opaqueImposterShader()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____opaqueImposterShader;
+}
+constexpr ::UnityW<::UnityEngine::Shader> const& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get__opaqueImposterShader() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____opaqueImposterShader;
+}
+constexpr void GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_set__opaqueImposterShader(::UnityW<::UnityEngine::Shader>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____opaqueImposterShader = value;
+}
+constexpr int32_t& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get_MaxSimultaneousCanvases()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___MaxSimultaneousCanvases;
+}
+constexpr int32_t const& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get_MaxSimultaneousCanvases() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___MaxSimultaneousCanvases;
+}
+constexpr void GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_set_MaxSimultaneousCanvases(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___MaxSimultaneousCanvases = value;
+}
+constexpr int32_t& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get_CanvasRenderLayer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___CanvasRenderLayer;
+}
+constexpr int32_t const& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get_CanvasRenderLayer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___CanvasRenderLayer;
+}
+constexpr void GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_set_CanvasRenderLayer(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___CanvasRenderLayer = value;
+}
+constexpr int32_t& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get_CanvasLayer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___CanvasLayer;
+}
+constexpr int32_t const& GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_get_CanvasLayer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___CanvasLayer;
+}
+constexpr void GlobalNamespace::OVROverlayCanvasSettings::__cordl_internal_set_CanvasLayer(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___CanvasLayer = value;
+}
+inline void GlobalNamespace::OVROverlayCanvasSettings::setStaticF__instance(::UnityW<::GlobalNamespace::OVROverlayCanvasSettings>  value)  {
+::cordl_internals::setStaticField<::UnityW<::GlobalNamespace::OVROverlayCanvasSettings>, "_instance", ::GlobalNamespace::OVROverlayCanvasSettings*>(std::forward<::UnityW<::GlobalNamespace::OVROverlayCanvasSettings>>(value));
+}
+inline ::UnityW<::GlobalNamespace::OVROverlayCanvasSettings> GlobalNamespace::OVROverlayCanvasSettings::getStaticF__instance()  {
+return ::cordl_internals::getStaticField<::UnityW<::GlobalNamespace::OVROverlayCanvasSettings>, "_instance", ::GlobalNamespace::OVROverlayCanvasSettings*>();
+}
+inline ::UnityW<::GlobalNamespace::OVROverlayCanvasSettings> GlobalNamespace::OVROverlayCanvasSettings::get_Instance()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"get_Instance", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::GlobalNamespace::OVROverlayCanvasSettings>>(nullptr, ___internal_method);
+}
+inline ::UnityW<::GlobalNamespace::OVROverlayCanvasSettings> GlobalNamespace::OVROverlayCanvasSettings::GetOverlayCanvasSettings()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"GetOverlayCanvasSettings", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::GlobalNamespace::OVROverlayCanvasSettings>>(nullptr, ___internal_method);
+}
+inline void GlobalNamespace::OVROverlayCanvasSettings::ApplyGlobalSettings()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"ApplyGlobalSettings", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::Shader> GlobalNamespace::OVROverlayCanvasSettings::GetShader(::GlobalNamespace::OVROverlayCanvas_DrawMode  drawMode)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"GetShader", {}, {::i2c::type_of<::GlobalNamespace::OVROverlayCanvas_DrawMode>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Shader>>(this, ___internal_method, drawMode);
+}
+inline bool GlobalNamespace::OVROverlayCanvasSettings::UsingBuiltInRenderPipeline()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"UsingBuiltInRenderPipeline", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method);
+}
+inline void GlobalNamespace::OVROverlayCanvasSettings::EnsureShaderInitialized(::by_ref<::UnityEngine::Shader*>  shader, ::StringW  shaderName, ::StringW  replaceShaderName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"EnsureShaderInitialized", {}, {::i2c::type_of<::by_ref<::UnityEngine::Shader*>>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, shader, shaderName, replaceShaderName);
+}
+inline void GlobalNamespace::OVROverlayCanvasSettings::EnsureInitialized()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"EnsureInitialized", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVROverlayCanvasSettings::OnValidate()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {"OnValidate", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVROverlayCanvasSettings::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVROverlayCanvasSettings*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVROverlayCanvasSettings* GlobalNamespace::OVROverlayCanvasSettings::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVROverlayCanvasSettings*>());
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVROverlayCanvasSettings::OVROverlayCanvasSettings()   {
+}

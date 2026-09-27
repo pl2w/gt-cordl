@@ -1,0 +1,479 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/XR/OpenXR/Features/Interactions/MicrosoftHandInteraction.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/InputSystem/XR/zzzz__XRController_def.hpp"
+#include "UnityEngine/XR/OpenXR/Features/zzzz__OpenXRInteractionFeature_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(MicrosoftHandInteraction)
+namespace UnityEngine::InputSystem::Controls {
+class AxisControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class ButtonControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class IntegerControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class QuaternionControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class Vector3Control;
+}
+namespace UnityEngine::InputSystem::XR {
+class PoseControl;
+}
+namespace UnityEngine::XR::OpenXR::Features::Interactions {
+class MicrosoftHandInteraction_HoloLensHand;
+}
+// Forward declare root types
+namespace UnityEngine::XR::OpenXR::Features::Interactions {
+class MicrosoftHandInteraction;
+}
+namespace UnityEngine::XR::OpenXR::Features::Interactions {
+class MicrosoftHandInteraction_HoloLensHand;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction*);
+MARK_REF_T(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction*, "UnityEngine.XR.OpenXR.Features.Interactions", "MicrosoftHandInteraction");
+DEFINE_IL2CPP_CLASS(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand*, "UnityEngine.XR.OpenXR.Features.Interactions", "MicrosoftHandInteraction/HoloLensHand");
+// Dependencies UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+namespace UnityEngine::XR::OpenXR::Features::Interactions {
+// Is value type: false
+// CS Name: UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftHandInteraction
+class CORDL_TYPE MicrosoftHandInteraction : public ::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature {
+public:
+// Declarations
+using HoloLensHand = ::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand;
+
+/// @brief Method GetDeviceLayoutName, addr 0xb50ca78, size 0x40, virtual true, abstract: false, final false
+inline ::StringW GetDeviceLayoutName() ;
+
+static inline ::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction* New_ctor() ;
+
+/// @brief Method RegisterActionMapsWithRuntime, addr 0xb50cab8, size 0x11b0, virtual true, abstract: false, final false
+inline void RegisterActionMapsWithRuntime() ;
+
+/// @brief Method RegisterDeviceLayout, addr 0xb50c8b0, size 0x160, virtual true, abstract: false, final false
+inline void RegisterDeviceLayout() ;
+
+/// @brief Method UnregisterDeviceLayout, addr 0xb50ca10, size 0x68, virtual true, abstract: false, final false
+inline void UnregisterDeviceLayout() ;
+
+/// @brief Method .ctor, addr 0xb50dc68, size 0x58, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MicrosoftHandInteraction() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MicrosoftHandInteraction", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MicrosoftHandInteraction(MicrosoftHandInteraction && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MicrosoftHandInteraction", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MicrosoftHandInteraction(MicrosoftHandInteraction const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27362};
+
+/// @brief Field aim offset 0xffffffff size 0x8
+static constexpr ::ConstString  aim{u"/input/aim/pose"};
+
+/// @brief Field extensionString offset 0xffffffff size 0x8
+static constexpr ::ConstString  extensionString{u"XR_MSFT_hand_interaction"};
+
+/// @brief Field featureId offset 0xffffffff size 0x8
+static constexpr ::ConstString  featureId{u"com.unity.openxr.feature.input.handtracking"};
+
+/// @brief Field grip offset 0xffffffff size 0x8
+static constexpr ::ConstString  grip{u"/input/grip/pose"};
+
+/// @brief Field kDeviceLocalizedName offset 0xffffffff size 0x8
+static constexpr ::ConstString  kDeviceLocalizedName{u"HoloLens Hand OpenXR"};
+
+/// @brief Field profile offset 0xffffffff size 0x8
+static constexpr ::ConstString  profile{u"/interaction_profiles/microsoft/hand_interaction"};
+
+/// @brief Field select offset 0xffffffff size 0x8
+static constexpr ::ConstString  select{u"/input/select/value"};
+
+/// @brief Field squeeze offset 0xffffffff size 0x8
+static constexpr ::ConstString  squeeze{u"/input/squeeze/value"};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction) == 0x50, "Size mismatch!");
+
+} // namespace end def UnityEngine::XR::OpenXR::Features::Interactions
+// [Preserve]
+// [InputControlLayout(displayName = "Hololens Hand (OpenXR)", commonUsages = new[] { "LeftHand", "RightHand" })]
+// Dependencies UnityEngine.InputSystem.XR.XRController
+namespace UnityEngine::XR::OpenXR::Features::Interactions {
+// Is value type: false
+// CS Name: UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftHandInteraction/HoloLensHand
+class CORDL_TYPE MicrosoftHandInteraction_HoloLensHand : public ::UnityEngine::InputSystem::XR::XRController {
+public:
+// Declarations
+/// @brief Field <devicePose>k__BackingField, offset 0x1c8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__devicePose_k__BackingField, put=__cordl_internal_set__devicePose_k__BackingField)) ::UnityEngine::InputSystem::XR::PoseControl*  _devicePose_k__BackingField;
+
+/// @brief Field <devicePosition>k__BackingField, offset 0x1e8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__devicePosition_k__BackingField, put=__cordl_internal_set__devicePosition_k__BackingField)) ::UnityEngine::InputSystem::Controls::Vector3Control*  _devicePosition_k__BackingField;
+
+/// @brief Field <deviceRotation>k__BackingField, offset 0x1f0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__deviceRotation_k__BackingField, put=__cordl_internal_set__deviceRotation_k__BackingField)) ::UnityEngine::InputSystem::Controls::QuaternionControl*  _deviceRotation_k__BackingField;
+
+/// @brief Field <isTracked>k__BackingField, offset 0x1d8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__isTracked_k__BackingField, put=__cordl_internal_set__isTracked_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _isTracked_k__BackingField;
+
+/// @brief Field <pointerPosition>k__BackingField, offset 0x1f8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__pointerPosition_k__BackingField, put=__cordl_internal_set__pointerPosition_k__BackingField)) ::UnityEngine::InputSystem::Controls::Vector3Control*  _pointerPosition_k__BackingField;
+
+/// @brief Field <pointerRotation>k__BackingField, offset 0x200, size 0x8 
+ __declspec(property(get=__cordl_internal_get__pointerRotation_k__BackingField, put=__cordl_internal_set__pointerRotation_k__BackingField)) ::UnityEngine::InputSystem::Controls::QuaternionControl*  _pointerRotation_k__BackingField;
+
+/// @brief Field <pointer>k__BackingField, offset 0x1d0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__pointer_k__BackingField, put=__cordl_internal_set__pointer_k__BackingField)) ::UnityEngine::InputSystem::XR::PoseControl*  _pointer_k__BackingField;
+
+/// @brief Field <selectPressed>k__BackingField, offset 0x1b0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__selectPressed_k__BackingField, put=__cordl_internal_set__selectPressed_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _selectPressed_k__BackingField;
+
+/// @brief Field <select>k__BackingField, offset 0x1a8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__select_k__BackingField, put=__cordl_internal_set__select_k__BackingField)) ::UnityEngine::InputSystem::Controls::AxisControl*  _select_k__BackingField;
+
+/// @brief Field <squeezePressed>k__BackingField, offset 0x1c0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__squeezePressed_k__BackingField, put=__cordl_internal_set__squeezePressed_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _squeezePressed_k__BackingField;
+
+/// @brief Field <squeeze>k__BackingField, offset 0x1b8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__squeeze_k__BackingField, put=__cordl_internal_set__squeeze_k__BackingField)) ::UnityEngine::InputSystem::Controls::AxisControl*  _squeeze_k__BackingField;
+
+/// @brief Field <trackingState>k__BackingField, offset 0x1e0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__trackingState_k__BackingField, put=__cordl_internal_set__trackingState_k__BackingField)) ::UnityEngine::InputSystem::Controls::IntegerControl*  _trackingState_k__BackingField;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 0, alias = "device", usage = "Device")]
+ __declspec(property(get=get_devicePose, put=set_devicePose)) ::UnityEngine::InputSystem::XR::PoseControl*  devicePose;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 20, alias = "gripPosition")]
+ __declspec(property(get=get_devicePosition, put=set_devicePosition)) ::UnityEngine::InputSystem::Controls::Vector3Control*  devicePosition;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 32, alias = "gripOrientation")]
+ __declspec(property(get=get_deviceRotation, put=set_deviceRotation)) ::UnityEngine::InputSystem::Controls::QuaternionControl*  deviceRotation;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 132)]
+ __declspec(property(get=get_isTracked, put=set_isTracked)) ::UnityEngine::InputSystem::Controls::ButtonControl*  isTracked;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 0, usage = "Pointer")]
+ __declspec(property(get=get_pointer, put=set_pointer)) ::UnityEngine::InputSystem::XR::PoseControl*  pointer;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 80)]
+ __declspec(property(get=get_pointerPosition, put=set_pointerPosition)) ::UnityEngine::InputSystem::Controls::Vector3Control*  pointerPosition;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 92, alias = "pointerOrientation")]
+ __declspec(property(get=get_pointerRotation, put=set_pointerRotation)) ::UnityEngine::InputSystem::Controls::QuaternionControl*  pointerRotation;
+
+/// [Preserve]
+/// @brief [InputControl(usage = "PrimaryAxis")]
+ __declspec(property(get=get_select, put=set_select)) ::UnityEngine::InputSystem::Controls::AxisControl*  select;
+
+/// [Preserve]
+/// @brief [InputControl(aliases = new[] { "Primary", "selectbutton" }, usages = new[] { "PrimaryButton" })]
+ __declspec(property(get=get_selectPressed, put=set_selectPressed)) ::UnityEngine::InputSystem::Controls::ButtonControl*  selectPressed;
+
+/// [Preserve]
+/// @brief [InputControl(alias = "Secondary", usage = "Grip")]
+ __declspec(property(get=get_squeeze, put=set_squeeze)) ::UnityEngine::InputSystem::Controls::AxisControl*  squeeze;
+
+/// [Preserve]
+/// @brief [InputControl(aliases = new[] { "GripButton", "squeezeClicked" }, usages = new[] { "GripButton" })]
+ __declspec(property(get=get_squeezePressed, put=set_squeezePressed)) ::UnityEngine::InputSystem::Controls::ButtonControl*  squeezePressed;
+
+/// [Preserve]
+/// @brief [InputControl(offset = 136)]
+ __declspec(property(get=get_trackingState, put=set_trackingState)) ::UnityEngine::InputSystem::Controls::IntegerControl*  trackingState;
+
+/// @brief Method FinishSetup, addr 0xb50dde0, size 0x33c, virtual true, abstract: false, final false
+inline void FinishSetup() ;
+
+static inline ::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand* New_ctor() ;
+
+constexpr ::UnityEngine::InputSystem::XR::PoseControl* const& __cordl_internal_get__devicePose_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::XR::PoseControl*& __cordl_internal_get__devicePose_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control* const& __cordl_internal_get__devicePosition_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control*& __cordl_internal_get__devicePosition_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl* const& __cordl_internal_get__deviceRotation_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl*& __cordl_internal_get__deviceRotation_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__isTracked_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__isTracked_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control* const& __cordl_internal_get__pointerPosition_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control*& __cordl_internal_get__pointerPosition_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl* const& __cordl_internal_get__pointerRotation_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl*& __cordl_internal_get__pointerRotation_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::XR::PoseControl* const& __cordl_internal_get__pointer_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::XR::PoseControl*& __cordl_internal_get__pointer_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__selectPressed_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__selectPressed_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl* const& __cordl_internal_get__select_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl*& __cordl_internal_get__select_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__squeezePressed_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__squeezePressed_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl* const& __cordl_internal_get__squeeze_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::AxisControl*& __cordl_internal_get__squeeze_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl* const& __cordl_internal_get__trackingState_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl*& __cordl_internal_get__trackingState_k__BackingField() ;
+
+constexpr void __cordl_internal_set__devicePose_k__BackingField(::UnityEngine::InputSystem::XR::PoseControl*  value) ;
+
+constexpr void __cordl_internal_set__devicePosition_k__BackingField(::UnityEngine::InputSystem::Controls::Vector3Control*  value) ;
+
+constexpr void __cordl_internal_set__deviceRotation_k__BackingField(::UnityEngine::InputSystem::Controls::QuaternionControl*  value) ;
+
+constexpr void __cordl_internal_set__isTracked_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__pointerPosition_k__BackingField(::UnityEngine::InputSystem::Controls::Vector3Control*  value) ;
+
+constexpr void __cordl_internal_set__pointerRotation_k__BackingField(::UnityEngine::InputSystem::Controls::QuaternionControl*  value) ;
+
+constexpr void __cordl_internal_set__pointer_k__BackingField(::UnityEngine::InputSystem::XR::PoseControl*  value) ;
+
+constexpr void __cordl_internal_set__selectPressed_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__select_k__BackingField(::UnityEngine::InputSystem::Controls::AxisControl*  value) ;
+
+constexpr void __cordl_internal_set__squeezePressed_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__squeeze_k__BackingField(::UnityEngine::InputSystem::Controls::AxisControl*  value) ;
+
+constexpr void __cordl_internal_set__trackingState_k__BackingField(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+/// @brief Method .ctor, addr 0xb50e11c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_devicePose, addr 0xb50dd20, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::XR::PoseControl* get_devicePose() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_devicePosition, addr 0xb50dd80, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::Vector3Control* get_devicePosition() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_deviceRotation, addr 0xb50dd98, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::QuaternionControl* get_deviceRotation() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_isTracked, addr 0xb50dd50, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_isTracked() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_pointer, addr 0xb50dd38, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::XR::PoseControl* get_pointer() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_pointerPosition, addr 0xb50ddb0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::Vector3Control* get_pointerPosition() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_pointerRotation, addr 0xb50ddc8, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::QuaternionControl* get_pointerRotation() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_select, addr 0xb50dcc0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::AxisControl* get_select() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_selectPressed, addr 0xb50dcd8, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_selectPressed() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_squeeze, addr 0xb50dcf0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::AxisControl* get_squeeze() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_squeezePressed, addr 0xb50dd08, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_squeezePressed() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_trackingState, addr 0xb50dd68, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::IntegerControl* get_trackingState() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_devicePose, addr 0xb50dd28, size 0x10, virtual false, abstract: false, final false
+inline void set_devicePose(::UnityEngine::InputSystem::XR::PoseControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_devicePosition, addr 0xb50dd88, size 0x10, virtual false, abstract: false, final false
+inline void set_devicePosition(::UnityEngine::InputSystem::Controls::Vector3Control*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_deviceRotation, addr 0xb50dda0, size 0x10, virtual false, abstract: false, final false
+inline void set_deviceRotation(::UnityEngine::InputSystem::Controls::QuaternionControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_isTracked, addr 0xb50dd58, size 0x10, virtual false, abstract: false, final false
+inline void set_isTracked(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_pointer, addr 0xb50dd40, size 0x10, virtual false, abstract: false, final false
+inline void set_pointer(::UnityEngine::InputSystem::XR::PoseControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_pointerPosition, addr 0xb50ddb8, size 0x10, virtual false, abstract: false, final false
+inline void set_pointerPosition(::UnityEngine::InputSystem::Controls::Vector3Control*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_pointerRotation, addr 0xb50ddd0, size 0x10, virtual false, abstract: false, final false
+inline void set_pointerRotation(::UnityEngine::InputSystem::Controls::QuaternionControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_select, addr 0xb50dcc8, size 0x10, virtual false, abstract: false, final false
+inline void set_select(::UnityEngine::InputSystem::Controls::AxisControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_selectPressed, addr 0xb50dce0, size 0x10, virtual false, abstract: false, final false
+inline void set_selectPressed(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_squeeze, addr 0xb50dcf8, size 0x10, virtual false, abstract: false, final false
+inline void set_squeeze(::UnityEngine::InputSystem::Controls::AxisControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_squeezePressed, addr 0xb50dd10, size 0x10, virtual false, abstract: false, final false
+inline void set_squeezePressed(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_trackingState, addr 0xb50dd70, size 0x10, virtual false, abstract: false, final false
+inline void set_trackingState(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MicrosoftHandInteraction_HoloLensHand() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MicrosoftHandInteraction_HoloLensHand", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MicrosoftHandInteraction_HoloLensHand(MicrosoftHandInteraction_HoloLensHand && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MicrosoftHandInteraction_HoloLensHand", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MicrosoftHandInteraction_HoloLensHand(MicrosoftHandInteraction_HoloLensHand const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27361};
+
+/// [CompilerGenerated]
+/// @brief Field <select>k__BackingField, offset: 0x1a8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::AxisControl*  ____select_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <selectPressed>k__BackingField, offset: 0x1b0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____selectPressed_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <squeeze>k__BackingField, offset: 0x1b8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::AxisControl*  ____squeeze_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <squeezePressed>k__BackingField, offset: 0x1c0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____squeezePressed_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <devicePose>k__BackingField, offset: 0x1c8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::XR::PoseControl*  ____devicePose_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <pointer>k__BackingField, offset: 0x1d0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::XR::PoseControl*  ____pointer_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <isTracked>k__BackingField, offset: 0x1d8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____isTracked_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <trackingState>k__BackingField, offset: 0x1e0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::IntegerControl*  ____trackingState_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <devicePosition>k__BackingField, offset: 0x1e8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::Vector3Control*  ____devicePosition_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <deviceRotation>k__BackingField, offset: 0x1f0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::QuaternionControl*  ____deviceRotation_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <pointerPosition>k__BackingField, offset: 0x1f8, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::Vector3Control*  ____pointerPosition_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <pointerRotation>k__BackingField, offset: 0x200, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::QuaternionControl*  ____pointerRotation_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____select_k__BackingField) == 0x1a8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____selectPressed_k__BackingField) == 0x1b0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____squeeze_k__BackingField) == 0x1b8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____squeezePressed_k__BackingField) == 0x1c0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____devicePose_k__BackingField) == 0x1c8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____pointer_k__BackingField) == 0x1d0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____isTracked_k__BackingField) == 0x1d8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____trackingState_k__BackingField) == 0x1e0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____devicePosition_k__BackingField) == 0x1e8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____deviceRotation_k__BackingField) == 0x1f0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____pointerPosition_k__BackingField) == 0x1f8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand, ____pointerRotation_k__BackingField) == 0x200, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::XR::OpenXR::Features::Interactions::MicrosoftHandInteraction_HoloLensHand) == 0x208, "Size mismatch!");
+
+} // namespace end def UnityEngine::XR::OpenXR::Features::Interactions

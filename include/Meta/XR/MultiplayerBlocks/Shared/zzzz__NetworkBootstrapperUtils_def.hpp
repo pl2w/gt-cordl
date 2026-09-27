@@ -1,0 +1,71 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/MultiplayerBlocks/Shared/NetworkBootstrapperUtils.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(NetworkBootstrapperUtils)
+namespace Meta::XR::MultiplayerBlocks::Colocation {
+struct ColocationFailedReason;
+}
+namespace Meta::XR::MultiplayerBlocks::Colocation {
+class INetworkData;
+}
+namespace Meta::XR::MultiplayerBlocks::Colocation {
+class INetworkMessenger;
+}
+namespace Meta::XR::MultiplayerBlocks::Shared {
+struct NetworkBootstrapperParams;
+}
+namespace Meta::XR::MultiplayerBlocks::Shared {
+struct PlatformInfo;
+}
+namespace UnityEngine {
+class GameObject;
+}
+// Forward declare root types
+namespace Meta::XR::MultiplayerBlocks::Shared {
+class NetworkBootstrapperUtils;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::MultiplayerBlocks::Shared::NetworkBootstrapperUtils*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::MultiplayerBlocks::Shared::NetworkBootstrapperUtils*, "Meta.XR.MultiplayerBlocks.Shared", "NetworkBootstrapperUtils");
+// Dependencies System.Object
+namespace Meta::XR::MultiplayerBlocks::Shared {
+// Is value type: false
+// CS Name: Meta.XR.MultiplayerBlocks.Shared.NetworkBootstrapperUtils
+class CORDL_TYPE NetworkBootstrapperUtils : public ::System::Object {
+public:
+// Declarations
+/// @brief Method OnColocationFailed, addr 0x9f6a7e0, size 0x84, virtual false, abstract: false, final false
+static inline void OnColocationFailed(::Meta::XR::MultiplayerBlocks::Colocation::ColocationFailedReason  e) ;
+
+/// @brief Method SetEntitlementIds, addr 0x9f69fd4, size 0x44, virtual false, abstract: false, final false
+static inline void SetEntitlementIds(::Meta::XR::MultiplayerBlocks::Shared::PlatformInfo  info, ::by_ref<::Meta::XR::MultiplayerBlocks::Shared::NetworkBootstrapperParams>  param) ;
+
+/// @brief Method SetUpAndStartAutomaticColocation, addr 0x9f6a018, size 0x45c, virtual false, abstract: false, final false
+static inline void SetUpAndStartAutomaticColocation(::by_ref<::Meta::XR::MultiplayerBlocks::Shared::NetworkBootstrapperParams>  param, ::UnityEngine::GameObject*  anchorPrefab, ::Meta::XR::MultiplayerBlocks::Colocation::INetworkData*  networkData, ::Meta::XR::MultiplayerBlocks::Colocation::INetworkMessenger*  networkMessenger) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr NetworkBootstrapperUtils() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "NetworkBootstrapperUtils", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+NetworkBootstrapperUtils(NetworkBootstrapperUtils && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "NetworkBootstrapperUtils", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+NetworkBootstrapperUtils(NetworkBootstrapperUtils const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30620};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::MultiplayerBlocks::Shared::NetworkBootstrapperUtils) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::MultiplayerBlocks::Shared

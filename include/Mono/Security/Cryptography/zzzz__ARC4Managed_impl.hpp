@@ -1,0 +1,484 @@
+#pragma once
+// IWYU pragma private; include "Mono/Security/Cryptography/ARC4Managed.hpp"
+#include "Mono/Security/Cryptography/zzzz__RC4_impl.hpp"
+#include "Mono/Security/Cryptography/zzzz__ARC4Managed_def.hpp"
+#include "System/Security/Cryptography/zzzz__ICryptoTransform_def.hpp"
+#include "System/zzzz__IDisposable_def.hpp"
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::_ctor)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xa0fd8ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.Finalize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::Finalize)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xa0fd9d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.Dispose
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)(bool)>(&::Mono::Security::Cryptography::ARC4Managed::Dispose)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xa0fda60;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.get_Key
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<uint8_t> (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::get_Key)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xa0fdb2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 12}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.set_Key
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>)>(&::Mono::Security::Cryptography::ARC4Managed::set_Key)> {
+  constexpr static std::size_t size = 0xfc;
+  constexpr static std::size_t addrs = 0xa0fdbc0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.get_CanReuseTransform
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::get_CanReuseTransform)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0fdd9c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_CanReuseTransform", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.CreateEncryptor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Security::Cryptography::ICryptoTransform* (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>, ::ArrayW<uint8_t>)>(&::Mono::Security::Cryptography::ARC4Managed::CreateEncryptor)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xa0fdda4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 23}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.CreateDecryptor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Security::Cryptography::ICryptoTransform* (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>, ::ArrayW<uint8_t>)>(&::Mono::Security::Cryptography::ARC4Managed::CreateDecryptor)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xa0fddc8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 25}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.GenerateIV
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::GenerateIV)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa0fddf8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 27}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.GenerateKey
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::GenerateKey)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xa0fde54;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                    {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 26}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.get_CanTransformMultipleBlocks
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::get_CanTransformMultipleBlocks)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0fdeec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_CanTransformMultipleBlocks", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.get_InputBlockSize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::get_InputBlockSize)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0fdef4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_InputBlockSize", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.get_OutputBlockSize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::Mono::Security::Cryptography::ARC4Managed::*)()>(&::Mono::Security::Cryptography::ARC4Managed::get_OutputBlockSize)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa0fdefc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_OutputBlockSize", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.KeySetup
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>)>(&::Mono::Security::Cryptography::ARC4Managed::KeySetup)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xa0fdcbc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"KeySetup", {}, {::i2c::type_of<::ArrayW<uint8_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.CheckInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::Mono::Security::Cryptography::ARC4Managed::CheckInput)> {
+  constexpr static std::size_t size = 0x144;
+  constexpr static std::size_t addrs = 0xa0fdf04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"CheckInput", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.TransformBlock
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::ArrayW<uint8_t>, int32_t)>(&::Mono::Security::Cryptography::ARC4Managed::TransformBlock)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xa0fe048;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"TransformBlock", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.InternalTransformBlock
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>, int32_t, int32_t, ::ArrayW<uint8_t>, int32_t)>(&::Mono::Security::Cryptography::ARC4Managed::InternalTransformBlock)> {
+  constexpr static std::size_t size = 0x138;
+  constexpr static std::size_t addrs = 0xa0fe1ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"InternalTransformBlock", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::Mono::Security::Cryptography::ARC4Managed.TransformFinalBlock
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<uint8_t> (::Mono::Security::Cryptography::ARC4Managed::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::Mono::Security::Cryptography::ARC4Managed::TransformFinalBlock)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xa0fe2e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"TransformFinalBlock", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::ArrayW<uint8_t>& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_key()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___key;
+}
+constexpr ::ArrayW<uint8_t> const& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_key() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___key;
+}
+constexpr void Mono::Security::Cryptography::ARC4Managed::__cordl_internal_set_key(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___key = value;
+}
+constexpr ::ArrayW<uint8_t>& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___state;
+}
+constexpr ::ArrayW<uint8_t> const& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___state;
+}
+constexpr void Mono::Security::Cryptography::ARC4Managed::__cordl_internal_set_state(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___state = value;
+}
+constexpr uint8_t& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_x()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___x;
+}
+constexpr uint8_t const& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_x() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___x;
+}
+constexpr void Mono::Security::Cryptography::ARC4Managed::__cordl_internal_set_x(uint8_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___x = value;
+}
+constexpr uint8_t& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_y()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___y;
+}
+constexpr uint8_t const& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_y() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___y;
+}
+constexpr void Mono::Security::Cryptography::ARC4Managed::__cordl_internal_set_y(uint8_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___y = value;
+}
+constexpr bool& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_m_disposed()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_disposed;
+}
+constexpr bool const& Mono::Security::Cryptography::ARC4Managed::__cordl_internal_get_m_disposed() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_disposed;
+}
+constexpr void Mono::Security::Cryptography::ARC4Managed::__cordl_internal_set_m_disposed(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_disposed = value;
+}
+inline void Mono::Security::Cryptography::ARC4Managed::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void Mono::Security::Cryptography::ARC4Managed::Finalize()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void Mono::Security::Cryptography::ARC4Managed::Dispose(bool  disposing)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, disposing);
+}
+inline ::ArrayW<uint8_t> Mono::Security::Cryptography::ARC4Managed::get_Key()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 12}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<uint8_t>>(this, ___internal_method);
+}
+inline void Mono::Security::Cryptography::ARC4Managed::set_Key(::ArrayW<uint8_t>  value)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool Mono::Security::Cryptography::ARC4Managed::get_CanReuseTransform()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_CanReuseTransform", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::System::Security::Cryptography::ICryptoTransform* Mono::Security::Cryptography::ARC4Managed::CreateEncryptor(::ArrayW<uint8_t>  rgbKey, ::ArrayW<uint8_t>  rgvIV)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 23}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Security::Cryptography::ICryptoTransform*>(this, ___internal_method, rgbKey, rgvIV);
+}
+inline ::System::Security::Cryptography::ICryptoTransform* Mono::Security::Cryptography::ARC4Managed::CreateDecryptor(::ArrayW<uint8_t>  rgbKey, ::ArrayW<uint8_t>  rgvIV)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 25}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Security::Cryptography::ICryptoTransform*>(this, ___internal_method, rgbKey, rgvIV);
+}
+inline void Mono::Security::Cryptography::ARC4Managed::GenerateIV()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 27}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void Mono::Security::Cryptography::ARC4Managed::GenerateKey()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(), 26}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool Mono::Security::Cryptography::ARC4Managed::get_CanTransformMultipleBlocks()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_CanTransformMultipleBlocks", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline int32_t Mono::Security::Cryptography::ARC4Managed::get_InputBlockSize()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_InputBlockSize", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline int32_t Mono::Security::Cryptography::ARC4Managed::get_OutputBlockSize()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"get_OutputBlockSize", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline void Mono::Security::Cryptography::ARC4Managed::KeySetup(::ArrayW<uint8_t>  key)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"KeySetup", {}, {::i2c::type_of<::ArrayW<uint8_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, key);
+}
+inline void Mono::Security::Cryptography::ARC4Managed::CheckInput(::ArrayW<uint8_t>  inputBuffer, int32_t  inputOffset, int32_t  inputCount)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"CheckInput", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, inputBuffer, inputOffset, inputCount);
+}
+inline int32_t Mono::Security::Cryptography::ARC4Managed::TransformBlock(::ArrayW<uint8_t>  inputBuffer, int32_t  inputOffset, int32_t  inputCount, ::ArrayW<uint8_t>  outputBuffer, int32_t  outputOffset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"TransformBlock", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset);
+}
+inline int32_t Mono::Security::Cryptography::ARC4Managed::InternalTransformBlock(::ArrayW<uint8_t>  inputBuffer, int32_t  inputOffset, int32_t  inputCount, ::ArrayW<uint8_t>  outputBuffer, int32_t  outputOffset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"InternalTransformBlock", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset);
+}
+inline ::ArrayW<uint8_t> Mono::Security::Cryptography::ARC4Managed::TransformFinalBlock(::ArrayW<uint8_t>  inputBuffer, int32_t  inputOffset, int32_t  inputCount)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Mono::Security::Cryptography::ARC4Managed*>(),
+                        {"TransformFinalBlock", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<uint8_t>>(this, ___internal_method, inputBuffer, inputOffset, inputCount);
+}
+inline ::Mono::Security::Cryptography::ARC4Managed* Mono::Security::Cryptography::ARC4Managed::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Mono::Security::Cryptography::ARC4Managed*>());
+}
+/// @brief Convert operator to "::System::Security::Cryptography::ICryptoTransform"
+constexpr  Mono::Security::Cryptography::ARC4Managed::operator ::System::Security::Cryptography::ICryptoTransform*() noexcept {
+return static_cast<::System::Security::Cryptography::ICryptoTransform*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Security::Cryptography::ICryptoTransform"
+constexpr ::System::Security::Cryptography::ICryptoTransform* Mono::Security::Cryptography::ARC4Managed::i___System__Security__Cryptography__ICryptoTransform() noexcept {
+return static_cast<::System::Security::Cryptography::ICryptoTransform*>(static_cast<void*>(this));
+}
+/// @brief Convert operator to "::System::IDisposable"
+constexpr  Mono::Security::Cryptography::ARC4Managed::operator ::System::IDisposable*() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* Mono::Security::Cryptography::ARC4Managed::i___System__IDisposable() noexcept {
+return static_cast<::System::IDisposable*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::Mono::Security::Cryptography::ARC4Managed::ARC4Managed()   {
+}

@@ -1,0 +1,135 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Assertions/Assert.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(Assert)
+namespace System::Collections::Generic {
+template<typename T>
+class IEqualityComparer_1;
+}
+namespace UnityEngine {
+class Object;
+}
+// Forward declare root types
+namespace UnityEngine::Assertions {
+class _cordl_Assert;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Assertions::_cordl_Assert*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Assertions::_cordl_Assert*, "UnityEngine.Assertions", "Assert");
+// [DebuggerStepThrough]
+// Dependencies System.Object
+namespace UnityEngine::Assertions {
+// Is value type: false
+// CS Name: UnityEngine.Assertions.Assert
+class CORDL_TYPE _cordl_Assert : public ::System::Object {
+public:
+// Declarations
+/// @brief Field raiseExceptions, offset 0xffffffff, size 0x1 
+ __declspec(property(get=getStaticF_raiseExceptions, put=setStaticF_raiseExceptions)) bool  raiseExceptions;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method AreEqual, addr 0xb6046ac, size 0xc8, virtual false, abstract: false, final false
+static inline void AreEqual(::UnityEngine::Object*  expected, ::UnityEngine::Object*  actual, ::StringW  message) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method AreEqual, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline void AreEqual(T  expected, T  actual) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method AreEqual, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline void AreEqual(T  expected, T  actual, ::StringW  message) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method AreEqual, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline void AreEqual(T  expected, T  actual, ::StringW  message, ::System::Collections::Generic::IEqualityComparer_1<T>*  comparer) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method AreEqual, addr 0xb604aa8, size 0x8c, virtual false, abstract: false, final false
+static inline void AreEqual(int32_t  expected, int32_t  actual) ;
+
+/// @brief Method Fail, addr 0xb6042a8, size 0x120, virtual false, abstract: false, final false
+static inline void Fail(::StringW  message, ::StringW  userMessage) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsFalse, addr 0xb6045c8, size 0x68, virtual false, abstract: false, final false
+static inline void IsFalse(bool  condition) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsFalse, addr 0xb604630, size 0x7c, virtual false, abstract: false, final false
+static inline void IsFalse(bool  condition, ::StringW  message) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsNotNull, addr 0xb6049ec, size 0xbc, virtual false, abstract: false, final false
+static inline void IsNotNull(::UnityEngine::Object*  value, ::StringW  message) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsNotNull, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::reference_type_constraint<T>)
+static inline void IsNotNull(T  value) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsNotNull, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::reference_type_constraint<T>)
+static inline void IsNotNull(T  value, ::StringW  message) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsNull, addr 0xb604884, size 0xbc, virtual false, abstract: false, final false
+static inline void IsNull(::UnityEngine::Object*  value, ::StringW  message) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsNull, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::reference_type_constraint<T>)
+static inline void IsNull(T  value) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsNull, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::reference_type_constraint<T>)
+static inline void IsNull(T  value, ::StringW  message) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsTrue, addr 0xb604444, size 0x68, virtual false, abstract: false, final false
+static inline void IsTrue(bool  condition) ;
+
+/// [Conditional("UNITY_ASSERTIONS")]
+/// @brief Method IsTrue, addr 0xb6044ac, size 0x7c, virtual false, abstract: false, final false
+static inline void IsTrue(bool  condition, ::StringW  message) ;
+
+static inline bool getStaticF_raiseExceptions() ;
+
+static inline void setStaticF_raiseExceptions(bool  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr _cordl_Assert() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "_cordl_Assert", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+_cordl_Assert(_cordl_Assert && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "_cordl_Assert", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+_cordl_Assert(_cordl_Assert const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15427};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Assertions::_cordl_Assert) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Assertions

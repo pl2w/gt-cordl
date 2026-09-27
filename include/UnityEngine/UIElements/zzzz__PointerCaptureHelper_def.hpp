@@ -1,0 +1,97 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/PointerCaptureHelper.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(PointerCaptureHelper)
+namespace UnityEngine::UIElements {
+class IEventHandler;
+}
+namespace UnityEngine::UIElements {
+class IPanel;
+}
+namespace UnityEngine::UIElements {
+class IPointerEvent;
+}
+namespace UnityEngine::UIElements {
+class PointerDispatchState;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+class PointerCaptureHelper;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::UIElements::PointerCaptureHelper*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::PointerCaptureHelper*, "UnityEngine.UIElements", "PointerCaptureHelper");
+// [Extension]
+// Dependencies System.Object
+namespace UnityEngine::UIElements {
+// Is value type: false
+// CS Name: UnityEngine.UIElements.PointerCaptureHelper
+class CORDL_TYPE PointerCaptureHelper : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method ActivateCompatibilityMouseEvents, addr 0xb8c1258, size 0xc4, virtual false, abstract: false, final false
+static inline void ActivateCompatibilityMouseEvents(::UnityEngine::UIElements::IPanel*  panel, int32_t  pointerId) ;
+
+/// [Extension]
+/// @brief Method CapturePointer, addr 0xb8bb218, size 0x38, virtual false, abstract: false, final false
+static inline void CapturePointer(::UnityEngine::UIElements::IEventHandler*  handler, int32_t  pointerId) ;
+
+/// [Extension]
+/// @brief Method GetCapturingElement, addr 0xb8c1008, size 0xc8, virtual false, abstract: false, final false
+static inline ::UnityEngine::UIElements::IEventHandler* GetCapturingElement(::UnityEngine::UIElements::IPanel*  panel, int32_t  pointerId) ;
+
+/// @brief Method GetStateFor, addr 0xb8c0c6c, size 0x104, virtual false, abstract: false, final false
+static inline ::UnityEngine::UIElements::PointerDispatchState* GetStateFor(::UnityEngine::UIElements::IEventHandler*  handler) ;
+
+/// [Extension]
+/// @brief Method HasPointerCapture, addr 0xb8bb114, size 0x38, virtual false, abstract: false, final false
+static inline bool HasPointerCapture(::UnityEngine::UIElements::IEventHandler*  handler, int32_t  pointerId) ;
+
+/// [Extension]
+/// @brief Method PreventCompatibilityMouseEvents, addr 0xb8c1350, size 0xc4, virtual false, abstract: false, final false
+static inline void PreventCompatibilityMouseEvents(::UnityEngine::UIElements::IPanel*  panel, int32_t  pointerId) ;
+
+/// [Extension]
+/// @brief Method ProcessPointerCapture, addr 0xb8bb250, size 0xc4, virtual false, abstract: false, final false
+static inline void ProcessPointerCapture(::UnityEngine::UIElements::IPanel*  panel, int32_t  pointerId) ;
+
+/// [Extension]
+/// @brief Method ReleasePointer, addr 0xb8c0f8c, size 0x38, virtual false, abstract: false, final false
+static inline void ReleasePointer(::UnityEngine::UIElements::IEventHandler*  handler, int32_t  pointerId) ;
+
+/// [Extension]
+/// @brief Method ReleasePointer, addr 0xb8c10d0, size 0xc4, virtual false, abstract: false, final false
+static inline void ReleasePointer(::UnityEngine::UIElements::IPanel*  panel, int32_t  pointerId) ;
+
+/// [Extension]
+/// @brief Method ShouldSendCompatibilityMouseEvents, addr 0xb8c1444, size 0x124, virtual false, abstract: false, final false
+static inline bool ShouldSendCompatibilityMouseEvents(::UnityEngine::UIElements::IPanel*  panel, ::UnityEngine::UIElements::IPointerEvent*  evt) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr PointerCaptureHelper() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "PointerCaptureHelper", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+PointerCaptureHelper(PointerCaptureHelper && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "PointerCaptureHelper", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+PointerCaptureHelper(PointerCaptureHelper const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7847};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::UIElements::PointerCaptureHelper) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

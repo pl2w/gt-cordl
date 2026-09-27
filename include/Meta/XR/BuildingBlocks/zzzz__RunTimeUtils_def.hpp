@@ -1,0 +1,59 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/BuildingBlocks/RunTimeUtils.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(RunTimeUtils)
+namespace UnityEngine {
+class MonoBehaviour;
+}
+// Forward declare root types
+namespace Meta::XR::BuildingBlocks {
+class RunTimeUtils;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::BuildingBlocks::RunTimeUtils*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::BuildingBlocks::RunTimeUtils*, "Meta.XR.BuildingBlocks", "RunTimeUtils");
+// [Extension]
+// Dependencies System.Object
+namespace Meta::XR::BuildingBlocks {
+// Is value type: false
+// CS Name: Meta.XR.BuildingBlocks.RunTimeUtils
+class CORDL_TYPE RunTimeUtils : public ::System::Object {
+public:
+// Declarations
+/// @brief Method GenerateRandomString, addr 0x9ec3d14, size 0x1b0, virtual false, abstract: false, final false
+static inline ::StringW GenerateRandomString(int32_t  size, bool  includeLowercase, bool  includeUppercase, bool  includeNumeric, bool  includeSpecial) ;
+
+/// [Extension]
+/// @brief Method GetInterfaceComponent, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+requires(::cordl_internals::reference_type_constraint<T>)
+static inline T GetInterfaceComponent(::UnityEngine::MonoBehaviour*  monoBehaviour) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr RunTimeUtils() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "RunTimeUtils", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+RunTimeUtils(RunTimeUtils && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "RunTimeUtils", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+RunTimeUtils(RunTimeUtils const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{31447};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::BuildingBlocks::RunTimeUtils) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::BuildingBlocks

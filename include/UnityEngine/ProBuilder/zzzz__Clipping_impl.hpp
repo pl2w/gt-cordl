@@ -1,0 +1,53 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/Clipping.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/ProBuilder/zzzz__Clipping_def.hpp"
+#include "UnityEngine/ProBuilder/zzzz__Clipping_OutCode_def.hpp"
+#include "UnityEngine/zzzz__Rect_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Clipping.ComputeOutCode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::Clipping_OutCode (*)(::UnityEngine::Rect, float_t, float_t)>(&::UnityEngine::ProBuilder::Clipping::ComputeOutCode)> {
+  constexpr static std::size_t size = 0x3c;
+  constexpr static std::size_t addrs = 0xb088544;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Clipping*>(),
+                        {"ComputeOutCode", {}, {::i2c::type_of<::UnityEngine::Rect>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::Clipping.RectContainsLineSegment
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::UnityEngine::Rect, float_t, float_t, float_t, float_t)>(&::UnityEngine::ProBuilder::Clipping::RectContainsLineSegment)> {
+  constexpr static std::size_t size = 0x210;
+  constexpr static std::size_t addrs = 0xb088580;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Clipping*>(),
+                        {"RectContainsLineSegment", {}, {::i2c::type_of<::UnityEngine::Rect>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::GlobalNamespace::Clipping_OutCode UnityEngine::ProBuilder::Clipping::ComputeOutCode(::UnityEngine::Rect  rect, float_t  x, float_t  y)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Clipping*>(),
+                        {"ComputeOutCode", {}, {::i2c::type_of<::UnityEngine::Rect>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::Clipping_OutCode>(nullptr, ___internal_method, rect, x, y);
+}
+inline bool UnityEngine::ProBuilder::Clipping::RectContainsLineSegment(::UnityEngine::Rect  rect, float_t  x0, float_t  y0, float_t  x1, float_t  y1)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::Clipping*>(),
+                        {"RectContainsLineSegment", {}, {::i2c::type_of<::UnityEngine::Rect>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>(), ::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, rect, x0, y0, x1, y1);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::Clipping::Clipping()   {
+}

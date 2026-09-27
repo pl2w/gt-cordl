@@ -1,0 +1,60 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/XR/OpenXR/NativeTypes/XrResultExtensions.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(XrResultExtensions)
+namespace UnityEngine::XR::OpenXR::NativeTypes {
+struct XrResult;
+}
+// Forward declare root types
+namespace UnityEngine::XR::OpenXR::NativeTypes {
+class XrResultExtensions;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::XR::OpenXR::NativeTypes::XrResultExtensions*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::XR::OpenXR::NativeTypes::XrResultExtensions*, "UnityEngine.XR.OpenXR.NativeTypes", "XrResultExtensions");
+// [Extension]
+// Dependencies System.Object
+namespace UnityEngine::XR::OpenXR::NativeTypes {
+// Is value type: false
+// CS Name: UnityEngine.XR.OpenXR.NativeTypes.XrResultExtensions
+class CORDL_TYPE XrResultExtensions : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method IsError, addr 0xb4ec26c, size 0x8, virtual false, abstract: false, final false
+static inline bool IsError(::UnityEngine::XR::OpenXR::NativeTypes::XrResult  xrResult) ;
+
+/// [Extension]
+/// @brief Method IsSuccess, addr 0xb4ec254, size 0xc, virtual false, abstract: false, final false
+static inline bool IsSuccess(::UnityEngine::XR::OpenXR::NativeTypes::XrResult  xrResult) ;
+
+/// [Extension]
+/// @brief Method IsUnqualifiedSuccess, addr 0xb4ec260, size 0xc, virtual false, abstract: false, final false
+static inline bool IsUnqualifiedSuccess(::UnityEngine::XR::OpenXR::NativeTypes::XrResult  xrResult) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XrResultExtensions() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XrResultExtensions", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XrResultExtensions(XrResultExtensions && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XrResultExtensions", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XrResultExtensions(XrResultExtensions const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27299};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::XR::OpenXR::NativeTypes::XrResultExtensions) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::XR::OpenXR::NativeTypes

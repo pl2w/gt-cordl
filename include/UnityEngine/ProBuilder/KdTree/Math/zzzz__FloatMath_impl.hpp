@@ -1,0 +1,252 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/KdTree/Math/FloatMath.hpp"
+#include "UnityEngine/ProBuilder/KdTree/Math/zzzz__TypeMath_1_impl.hpp"
+#include "UnityEngine/ProBuilder/KdTree/Math/zzzz__FloatMath_def.hpp"
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.Compare
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)(float_t, float_t)>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::Compare)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xb07c33c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 11}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.AreEqual
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)(float_t, float_t)>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::AreEqual)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb07c35c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 12}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.get_MinValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)()>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_MinValue)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb07c368;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 14}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.get_Zero
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)()>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_Zero)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb07c374;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 15}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.get_NegativeInfinity
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)()>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_NegativeInfinity)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb07c37c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 16}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.get_PositiveInfinity
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)()>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_PositiveInfinity)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xb07c388;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 17}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.Add
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)(float_t, float_t)>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::Add)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb07c394;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 18}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.Subtract
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)(float_t, float_t)>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::Subtract)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb07c39c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 19}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.Multiply
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)(float_t, float_t)>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::Multiply)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb07c3a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 20}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath.DistanceSquaredBetweenPoints
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)(::ArrayW<float_t>, ::ArrayW<float_t>)>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::DistanceSquaredBetweenPoints)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xb07c3ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                    {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 21}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::ProBuilder::KdTree::Math::FloatMath._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::ProBuilder::KdTree::Math::FloatMath::*)()>(&::UnityEngine::ProBuilder::KdTree::Math::FloatMath::_ctor)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xb07c4a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline int32_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::Compare(float_t  a, float_t  b)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 11}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, a, b);
+}
+inline bool UnityEngine::ProBuilder::KdTree::Math::FloatMath::AreEqual(float_t  a, float_t  b)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 12}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, a, b);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_MinValue()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 14}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_Zero()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 15}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_NegativeInfinity()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 16}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::get_PositiveInfinity()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 17}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::Add(float_t  a, float_t  b)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 18}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method, a, b);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::Subtract(float_t  a, float_t  b)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 19}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method, a, b);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::Multiply(float_t  a, float_t  b)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 20}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method, a, b);
+}
+inline float_t UnityEngine::ProBuilder::KdTree::Math::FloatMath::DistanceSquaredBetweenPoints(::ArrayW<float_t>  a, ::ArrayW<float_t>  b)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(), 21}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method, a, b);
+}
+inline void UnityEngine::ProBuilder::KdTree::Math::FloatMath::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::ProBuilder::KdTree::Math::FloatMath* UnityEngine::ProBuilder::KdTree::Math::FloatMath::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::ProBuilder::KdTree::Math::FloatMath*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::ProBuilder::KdTree::Math::FloatMath::FloatMath()   {
+}

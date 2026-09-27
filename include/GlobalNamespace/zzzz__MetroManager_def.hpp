@@ -1,0 +1,104 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/MetroManager.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "GlobalNamespace/zzzz__MetroBlimp_def.hpp"
+#include "GlobalNamespace/zzzz__MetroSpotlight_def.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+CORDL_MODULE_EXPORT(MetroManager)
+namespace UnityEngine {
+class Transform;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class MetroManager;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::MetroManager*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::MetroManager*, "", "MetroManager");
+// Dependencies MetroBlimp, MetroSpotlight, UnityEngine.MonoBehaviour
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: MetroManager
+class CORDL_TYPE MetroManager : public ::UnityEngine::MonoBehaviour {
+public:
+// Declarations
+/// @brief Field _blimps, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__blimps, put=__cordl_internal_set__blimps)) ::ArrayW<::UnityW<::GlobalNamespace::MetroBlimp>>  _blimps;
+
+/// @brief Field _blimpsRotationAnchor, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get__blimpsRotationAnchor, put=__cordl_internal_set__blimpsRotationAnchor)) ::UnityW<::UnityEngine::Transform>  _blimpsRotationAnchor;
+
+/// @brief Field _spotlights, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get__spotlights, put=__cordl_internal_set__spotlights)) ::ArrayW<::UnityW<::GlobalNamespace::MetroSpotlight>>  _spotlights;
+
+static inline ::GlobalNamespace::MetroManager* New_ctor() ;
+
+/// @brief Method Update, addr 0x5d08f98, size 0x9c, virtual false, abstract: false, final false
+inline void Update() ;
+
+constexpr ::ArrayW<::UnityW<::GlobalNamespace::MetroBlimp>> const& __cordl_internal_get__blimps() const;
+
+constexpr ::ArrayW<::UnityW<::GlobalNamespace::MetroBlimp>>& __cordl_internal_get__blimps() ;
+
+constexpr ::UnityW<::UnityEngine::Transform> const& __cordl_internal_get__blimpsRotationAnchor() const;
+
+constexpr ::UnityW<::UnityEngine::Transform>& __cordl_internal_get__blimpsRotationAnchor() ;
+
+constexpr ::ArrayW<::UnityW<::GlobalNamespace::MetroSpotlight>> const& __cordl_internal_get__spotlights() const;
+
+constexpr ::ArrayW<::UnityW<::GlobalNamespace::MetroSpotlight>>& __cordl_internal_get__spotlights() ;
+
+constexpr void __cordl_internal_set__blimps(::ArrayW<::UnityW<::GlobalNamespace::MetroBlimp>>  value) ;
+
+constexpr void __cordl_internal_set__blimpsRotationAnchor(::UnityW<::UnityEngine::Transform>  value) ;
+
+constexpr void __cordl_internal_set__spotlights(::ArrayW<::UnityW<::GlobalNamespace::MetroSpotlight>>  value) ;
+
+/// @brief Method .ctor, addr 0x5d092a8, size 0x9c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MetroManager() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MetroManager", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MetroManager(MetroManager && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MetroManager", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MetroManager(MetroManager const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{447};
+
+/// [SerializeField]
+/// @brief Field _blimps, offset: 0x20, size: 0x8, def value: None
+ ::ArrayW<::UnityW<::GlobalNamespace::MetroBlimp>>  ____blimps;
+
+/// [SerializeField]
+/// @brief Field _spotlights, offset: 0x28, size: 0x8, def value: None
+ ::ArrayW<::UnityW<::GlobalNamespace::MetroSpotlight>>  ____spotlights;
+
+/// [Space]
+/// [SerializeField]
+/// @brief Field _blimpsRotationAnchor, offset: 0x30, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::Transform>  ____blimpsRotationAnchor;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::MetroManager, ____blimps) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::MetroManager, ____spotlights) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::MetroManager, ____blimpsRotationAnchor) == 0x30, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::MetroManager) == 0x38, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

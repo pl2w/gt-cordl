@@ -1,0 +1,80 @@
+#pragma once
+// IWYU pragma private; include "Pathfinding/Poly2Tri/DTSweepEdgeEvent.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(DTSweepEdgeEvent)
+namespace Pathfinding::Poly2Tri {
+class DTSweepConstraint;
+}
+// Forward declare root types
+namespace Pathfinding::Poly2Tri {
+class DTSweepEdgeEvent;
+}
+// Write type traits
+MARK_REF_T(::Pathfinding::Poly2Tri::DTSweepEdgeEvent*);
+DEFINE_IL2CPP_CLASS(::Pathfinding::Poly2Tri::DTSweepEdgeEvent*, "Pathfinding.Poly2Tri", "DTSweepEdgeEvent");
+// Dependencies System.Object
+namespace Pathfinding::Poly2Tri {
+// Is value type: false
+// CS Name: Pathfinding.Poly2Tri.DTSweepEdgeEvent
+class CORDL_TYPE DTSweepEdgeEvent : public ::System::Object {
+public:
+// Declarations
+/// @brief Field ConstrainedEdge, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_ConstrainedEdge, put=__cordl_internal_set_ConstrainedEdge)) ::Pathfinding::Poly2Tri::DTSweepConstraint*  ConstrainedEdge;
+
+/// @brief Field Right, offset 0x18, size 0x1 
+ __declspec(property(get=__cordl_internal_get_Right, put=__cordl_internal_set_Right)) bool  Right;
+
+static inline ::Pathfinding::Poly2Tri::DTSweepEdgeEvent* New_ctor() ;
+
+constexpr ::Pathfinding::Poly2Tri::DTSweepConstraint* const& __cordl_internal_get_ConstrainedEdge() const;
+
+constexpr ::Pathfinding::Poly2Tri::DTSweepConstraint*& __cordl_internal_get_ConstrainedEdge() ;
+
+constexpr bool const& __cordl_internal_get_Right() const;
+
+constexpr bool& __cordl_internal_get_Right() ;
+
+constexpr void __cordl_internal_set_ConstrainedEdge(::Pathfinding::Poly2Tri::DTSweepConstraint*  value) ;
+
+constexpr void __cordl_internal_set_Right(bool  value) ;
+
+/// @brief Method .ctor, addr 0xa6b5c1c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DTSweepEdgeEvent() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DTSweepEdgeEvent", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DTSweepEdgeEvent(DTSweepEdgeEvent && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DTSweepEdgeEvent", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DTSweepEdgeEvent(DTSweepEdgeEvent const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32338};
+
+/// @brief Field ConstrainedEdge, offset: 0x10, size: 0x8, def value: None
+ ::Pathfinding::Poly2Tri::DTSweepConstraint*  ___ConstrainedEdge;
+
+/// @brief Field Right, offset: 0x18, size: 0x1, def value: None
+ bool  ___Right;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Pathfinding::Poly2Tri::DTSweepEdgeEvent, ___ConstrainedEdge) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::Pathfinding::Poly2Tri::DTSweepEdgeEvent, ___Right) == 0x18, "Offset mismatch!");
+
+static_assert(sizeof(::Pathfinding::Poly2Tri::DTSweepEdgeEvent) == 0x20, "Size mismatch!");
+
+} // namespace end def Pathfinding::Poly2Tri

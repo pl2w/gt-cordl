@@ -1,0 +1,91 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/Interop_Error.hpp"
+#include "GlobalNamespace/zzzz__Interop_Error_def.hpp"
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::GlobalNamespace::Interop_Error::Interop_Error(int32_t  value__) noexcept  {
+this->value__ = value__;
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::Interop_Error::Interop_Error()   {
+}
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::SUCCESS{static_cast<int32_t>(0x0)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_E2BIG{static_cast<int32_t>(0x10001)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EACCES{static_cast<int32_t>(0x10002)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EADDRINUSE{static_cast<int32_t>(0x10003)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EADDRNOTAVAIL{static_cast<int32_t>(0x10004)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EAFNOSUPPORT{static_cast<int32_t>(0x10005)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EAGAIN{static_cast<int32_t>(0x10006)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EALREADY{static_cast<int32_t>(0x10007)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EBADF{static_cast<int32_t>(0x10008)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EBADMSG{static_cast<int32_t>(0x10009)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EBUSY{static_cast<int32_t>(0x1000a)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ECANCELED{static_cast<int32_t>(0x1000b)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ECHILD{static_cast<int32_t>(0x1000c)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ECONNABORTED{static_cast<int32_t>(0x1000d)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ECONNREFUSED{static_cast<int32_t>(0x1000e)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ECONNRESET{static_cast<int32_t>(0x1000f)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EDEADLK{static_cast<int32_t>(0x10010)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EDESTADDRREQ{static_cast<int32_t>(0x10011)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EDOM{static_cast<int32_t>(0x10012)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EDQUOT{static_cast<int32_t>(0x10013)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EEXIST{static_cast<int32_t>(0x10014)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EFAULT{static_cast<int32_t>(0x10015)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EFBIG{static_cast<int32_t>(0x10016)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EHOSTUNREACH{static_cast<int32_t>(0x10017)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EIDRM{static_cast<int32_t>(0x10018)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EILSEQ{static_cast<int32_t>(0x10019)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EINPROGRESS{static_cast<int32_t>(0x1001a)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EINTR{static_cast<int32_t>(0x1001b)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EINVAL{static_cast<int32_t>(0x1001c)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EIO{static_cast<int32_t>(0x1001d)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EISCONN{static_cast<int32_t>(0x1001e)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EISDIR{static_cast<int32_t>(0x1001f)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ELOOP{static_cast<int32_t>(0x10020)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EMFILE{static_cast<int32_t>(0x10021)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EMLINK{static_cast<int32_t>(0x10022)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EMSGSIZE{static_cast<int32_t>(0x10023)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EMULTIHOP{static_cast<int32_t>(0x10024)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENAMETOOLONG{static_cast<int32_t>(0x10025)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENETDOWN{static_cast<int32_t>(0x10026)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENETRESET{static_cast<int32_t>(0x10027)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENETUNREACH{static_cast<int32_t>(0x10028)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENFILE{static_cast<int32_t>(0x10029)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOBUFS{static_cast<int32_t>(0x1002a)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENODEV{static_cast<int32_t>(0x1002c)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOENT{static_cast<int32_t>(0x1002d)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOEXEC{static_cast<int32_t>(0x1002e)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOLCK{static_cast<int32_t>(0x1002f)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOLINK{static_cast<int32_t>(0x10030)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOMEM{static_cast<int32_t>(0x10031)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOMSG{static_cast<int32_t>(0x10032)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOPROTOOPT{static_cast<int32_t>(0x10033)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOSPC{static_cast<int32_t>(0x10034)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOSYS{static_cast<int32_t>(0x10037)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOTCONN{static_cast<int32_t>(0x10038)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOTDIR{static_cast<int32_t>(0x10039)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOTEMPTY{static_cast<int32_t>(0x1003a)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOTSOCK{static_cast<int32_t>(0x1003c)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOTSUP{static_cast<int32_t>(0x1003d)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENOTTY{static_cast<int32_t>(0x1003e)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENXIO{static_cast<int32_t>(0x1003f)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EOVERFLOW{static_cast<int32_t>(0x10040)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EPERM{static_cast<int32_t>(0x10042)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EPIPE{static_cast<int32_t>(0x10043)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EPROTO{static_cast<int32_t>(0x10044)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EPROTONOSUPPORT{static_cast<int32_t>(0x10045)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EPROTOTYPE{static_cast<int32_t>(0x10046)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ERANGE{static_cast<int32_t>(0x10047)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EROFS{static_cast<int32_t>(0x10048)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ESPIPE{static_cast<int32_t>(0x10049)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ESRCH{static_cast<int32_t>(0x1004a)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ESTALE{static_cast<int32_t>(0x1004b)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ETIMEDOUT{static_cast<int32_t>(0x1004d)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ETXTBSY{static_cast<int32_t>(0x1004e)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EXDEV{static_cast<int32_t>(0x1004f)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ESOCKTNOSUPPORT{static_cast<int32_t>(0x1005e)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EPFNOSUPPORT{static_cast<int32_t>(0x10060)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ESHUTDOWN{static_cast<int32_t>(0x1006c)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EHOSTDOWN{static_cast<int32_t>(0x10070)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_ENODATA{static_cast<int32_t>(0x10071)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EOPNOTSUPP{static_cast<int32_t>(0x1003d)};
+constexpr ::GlobalNamespace::Interop_Error  GlobalNamespace::Interop_Error::_cordl_EWOULDBLOCK{static_cast<int32_t>(0x10006)};

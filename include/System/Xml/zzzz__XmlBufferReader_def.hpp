@@ -1,0 +1,552 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/XmlBufferReader.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(XmlBufferReader)
+namespace System::IO {
+class Stream;
+}
+namespace System::Xml {
+class IXmlDictionary;
+}
+namespace System::Xml {
+class UniqueId;
+}
+namespace System::Xml {
+struct ValueHandleType;
+}
+namespace System::Xml {
+class ValueHandle;
+}
+namespace System::Xml {
+struct XmlBinaryNodeType;
+}
+namespace System::Xml {
+class XmlBinaryReaderSession;
+}
+namespace System::Xml {
+class XmlDictionaryReader;
+}
+namespace System::Xml {
+class XmlDictionaryString;
+}
+namespace System::Xml {
+class XmlNameTable;
+}
+namespace System {
+struct Decimal;
+}
+namespace System {
+struct Guid;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace System::Xml {
+class XmlBufferReader;
+}
+// Write type traits
+MARK_REF_T(::System::Xml::XmlBufferReader*);
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlBufferReader*, "System.Xml", "XmlBufferReader");
+// Dependencies System.Object
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlBufferReader
+class CORDL_TYPE XmlBufferReader : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Buffer)) ::ArrayW<uint8_t>  Buffer;
+
+ __declspec(property(get=get_EndOfFile)) bool  EndOfFile;
+
+ __declspec(property(get=get_IsStreamed)) bool  IsStreamed;
+
+ __declspec(property(get=get_Offset, put=set_Offset)) int32_t  Offset;
+
+/// @brief Field buffer, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_buffer, put=__cordl_internal_set_buffer)) ::ArrayW<uint8_t>  buffer;
+
+/// @brief Field chars, offset 0x58, size 0x8 
+ __declspec(property(get=__cordl_internal_get_chars, put=__cordl_internal_set_chars)) ::ArrayW<char16_t>  chars;
+
+/// @brief Field dictionary, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_dictionary, put=__cordl_internal_set_dictionary)) ::System::Xml::IXmlDictionary*  dictionary;
+
+/// @brief Field empty, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_empty, put=setStaticF_empty)) ::System::Xml::XmlBufferReader*  empty;
+
+/// @brief Field emptyByteArray, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_emptyByteArray, put=setStaticF_emptyByteArray)) ::ArrayW<uint8_t>  emptyByteArray;
+
+/// @brief Field guid, offset 0x48, size 0x8 
+ __declspec(property(get=__cordl_internal_get_guid, put=__cordl_internal_set_guid)) ::ArrayW<uint8_t>  guid;
+
+/// @brief Field listValue, offset 0x68, size 0x8 
+ __declspec(property(get=__cordl_internal_get_listValue, put=__cordl_internal_set_listValue)) ::System::Xml::ValueHandle*  listValue;
+
+/// @brief Field offset, offset 0x50, size 0x4 
+ __declspec(property(get=__cordl_internal_get_offset, put=__cordl_internal_set_offset)) int32_t  offset;
+
+/// @brief Field offsetMax, offset 0x34, size 0x4 
+ __declspec(property(get=__cordl_internal_get_offsetMax, put=__cordl_internal_set_offsetMax)) int32_t  offsetMax;
+
+/// @brief Field offsetMin, offset 0x30, size 0x4 
+ __declspec(property(get=__cordl_internal_get_offsetMin, put=__cordl_internal_set_offsetMin)) int32_t  offsetMin;
+
+/// @brief Field reader, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_reader, put=__cordl_internal_set_reader)) ::System::Xml::XmlDictionaryReader*  reader;
+
+/// @brief Field session, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_session, put=__cordl_internal_set_session)) ::System::Xml::XmlBinaryReaderSession*  session;
+
+/// @brief Field stream, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_stream, put=__cordl_internal_set_stream)) ::System::IO::Stream*  stream;
+
+/// @brief Field streamBuffer, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_streamBuffer, put=__cordl_internal_set_streamBuffer)) ::ArrayW<uint8_t>  streamBuffer;
+
+/// @brief Field windowOffset, offset 0x60, size 0x4 
+ __declspec(property(get=__cordl_internal_get_windowOffset, put=__cordl_internal_set_windowOffset)) int32_t  windowOffset;
+
+/// @brief Field windowOffsetMax, offset 0x64, size 0x4 
+ __declspec(property(get=__cordl_internal_get_windowOffsetMax, put=__cordl_internal_set_windowOffsetMax)) int32_t  windowOffsetMax;
+
+/// @brief Method Advance, addr 0xaa1c924, size 0x10, virtual false, abstract: false, final false
+inline void Advance(int32_t  count) ;
+
+/// @brief Method Close, addr 0xaa1c6c0, size 0xe0, virtual false, abstract: false, final false
+inline void Close() ;
+
+/// @brief Method Compare, addr 0xaa1e950, size 0xe8, virtual false, abstract: false, final false
+inline int32_t Compare(int32_t  offset1, int32_t  length1, int32_t  offset2, int32_t  length2) ;
+
+/// @brief Method EnsureByte, addr 0xaa1c934, size 0x28, virtual false, abstract: false, final false
+inline void EnsureByte() ;
+
+/// @brief Method EnsureBytes, addr 0xaa1cc3c, size 0x28, virtual false, abstract: false, final false
+inline void EnsureBytes(int32_t  count) ;
+
+/// @brief Method Equals2, addr 0xaa1e36c, size 0x64, virtual false, abstract: false, final false
+inline bool Equals2(int32_t  key1, int32_t  key2, ::System::Xml::XmlBufferReader*  bufferReader2) ;
+
+/// @brief Method Equals2, addr 0xaa1e3d0, size 0x58, virtual false, abstract: false, final false
+inline bool Equals2(int32_t  key1, ::System::Xml::XmlDictionaryString*  xmlString2) ;
+
+/// @brief Method Equals2, addr 0xaa1e428, size 0x88, virtual false, abstract: false, final false
+inline bool Equals2(int32_t  offset1, int32_t  length1, ::ArrayW<uint8_t>  buffer2) ;
+
+/// @brief Method Equals2, addr 0xaa1e4b0, size 0xb0, virtual false, abstract: false, final false
+inline bool Equals2(int32_t  offset1, int32_t  length1, ::System::Xml::XmlBufferReader*  bufferReader2, int32_t  offset2, int32_t  length2) ;
+
+/// @brief Method Equals2, addr 0xaa1e560, size 0x9c, virtual false, abstract: false, final false
+inline bool Equals2(int32_t  offset1, int32_t  length1, int32_t  offset2, int32_t  length2) ;
+
+/// @brief Method Equals2, addr 0xaa1e5fc, size 0x214, virtual false, abstract: false, final false
+inline bool Equals2(int32_t  offset1, int32_t  length1, ::StringW  s2) ;
+
+/// @brief Method GetAmpersandCharEntity, addr 0xaa1dc88, size 0x8c, virtual false, abstract: false, final false
+inline int32_t GetAmpersandCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetApostropheCharEntity, addr 0xaa1dd14, size 0xa8, virtual false, abstract: false, final false
+inline int32_t GetApostropheCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetBase64, addr 0xaa1efec, size 0xc, virtual false, abstract: false, final false
+inline void GetBase64(int32_t  srcOffset, ::ArrayW<uint8_t>  buffer, int32_t  dstOffset, int32_t  count) ;
+
+/// @brief Method GetBuffer, addr 0xaa1c95c, size 0x38, virtual false, abstract: false, final false
+inline ::ArrayW<uint8_t> GetBuffer(int32_t  count, ::by_ref<int32_t>  offset) ;
+
+/// @brief Method GetBuffer, addr 0xaa1c9b4, size 0xb0, virtual false, abstract: false, final false
+inline ::ArrayW<uint8_t> GetBuffer(int32_t  count, ::by_ref<int32_t>  offset, ::by_ref<int32_t>  offsetMax) ;
+
+/// @brief Method GetBuffer, addr 0xaa1cc20, size 0x1c, virtual false, abstract: false, final false
+inline ::ArrayW<uint8_t> GetBuffer(::by_ref<int32_t>  offset, ::by_ref<int32_t>  offsetMax) ;
+
+/// @brief Method GetBufferHard, addr 0xaa1c994, size 0x20, virtual false, abstract: false, final false
+inline ::ArrayW<uint8_t> GetBufferHard(int32_t  count, ::by_ref<int32_t>  offset) ;
+
+/// @brief Method GetByte, addr 0xaa1c890, size 0x48, virtual false, abstract: false, final false
+inline uint8_t GetByte() ;
+
+/// @brief Method GetByte, addr 0xaa1ea38, size 0x30, virtual false, abstract: false, final false
+inline uint8_t GetByte(int32_t  offset) ;
+
+/// @brief Method GetByteHard, addr 0xaa1c8d8, size 0x3c, virtual false, abstract: false, final false
+inline uint8_t GetByteHard() ;
+
+/// @brief Method GetCharBuffer, addr 0xaa1cfdc, size 0x94, virtual false, abstract: false, final false
+inline ::ArrayW<char16_t> GetCharBuffer(int32_t  count) ;
+
+/// @brief Method GetCharEntity, addr 0xaa1d8d4, size 0x164, virtual false, abstract: false, final false
+inline int32_t GetCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetChars, addr 0xaa1d070, size 0x104, virtual false, abstract: false, final false
+inline int32_t GetChars(int32_t  offset, int32_t  length, ::ArrayW<char16_t>  chars) ;
+
+/// @brief Method GetChars, addr 0xaa1d2cc, size 0x11c, virtual false, abstract: false, final false
+inline int32_t GetChars(int32_t  offset, int32_t  length, ::ArrayW<char16_t>  chars, int32_t  charOffset) ;
+
+/// @brief Method GetDecimal, addr 0xaa1ed54, size 0x178, virtual false, abstract: false, final false
+inline ::System::Decimal GetDecimal(int32_t  offset) ;
+
+/// @brief Method GetDecimalCharEntity, addr 0xaa1ddbc, size 0xb4, virtual false, abstract: false, final false
+inline int32_t GetDecimalCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetDictionaryString, addr 0xaa1e03c, size 0xe4, virtual false, abstract: false, final false
+inline ::System::Xml::XmlDictionaryString* GetDictionaryString(int32_t  key) ;
+
+/// @brief Method GetDouble, addr 0xaa1ec5c, size 0xf8, virtual false, abstract: false, final false
+inline double_t GetDouble(int32_t  offset) ;
+
+/// @brief Method GetEscapedChars, addr 0xaa1d660, size 0x258, virtual false, abstract: false, final false
+inline int32_t GetEscapedChars(int32_t  offset, int32_t  length, ::ArrayW<char16_t>  chars) ;
+
+/// @brief Method GetEscapedString, addr 0xaa1da38, size 0x5c, virtual false, abstract: false, final false
+inline ::StringW GetEscapedString(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetEscapedString, addr 0xaa1da94, size 0x6c, virtual false, abstract: false, final false
+inline ::StringW GetEscapedString(int32_t  offset, int32_t  length, ::System::Xml::XmlNameTable*  nameTable) ;
+
+/// @brief Method GetGreaterThanCharEntity, addr 0xaa1db70, size 0x70, virtual false, abstract: false, final false
+inline int32_t GetGreaterThanCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetGuid, addr 0xaa1ef3c, size 0xb0, virtual false, abstract: false, final false
+inline ::System::Guid GetGuid(int32_t  offset) ;
+
+/// @brief Method GetHexCharEntity, addr 0xaa1de70, size 0xd8, virtual false, abstract: false, final false
+inline int32_t GetHexCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetInt16, addr 0xaa1e320, size 0x4c, virtual false, abstract: false, final false
+inline int32_t GetInt16(int32_t  offset) ;
+
+/// @brief Method GetInt32, addr 0xaa1ea7c, size 0x78, virtual false, abstract: false, final false
+inline int32_t GetInt32(int32_t  offset) ;
+
+/// @brief Method GetInt64, addr 0xaa1eaf4, size 0xd8, virtual false, abstract: false, final false
+inline int64_t GetInt64(int32_t  offset) ;
+
+/// @brief Method GetInt8, addr 0xaa1ea68, size 0x14, virtual false, abstract: false, final false
+inline int32_t GetInt8(int32_t  offset) ;
+
+/// @brief Method GetLessThanCharEntity, addr 0xaa1db00, size 0x70, virtual false, abstract: false, final false
+inline int32_t GetLessThanCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetList, addr 0xaa1f01c, size 0x17c, virtual false, abstract: false, final false
+inline ::ArrayW<::System::Object*> GetList(int32_t  offset, int32_t  count) ;
+
+/// @brief Method GetNodeType, addr 0xaa1eff8, size 0x14, virtual false, abstract: false, final false
+inline ::System::Xml::XmlBinaryNodeType GetNodeType() ;
+
+/// @brief Method GetQuoteCharEntity, addr 0xaa1dbe0, size 0xa8, virtual false, abstract: false, final false
+inline int32_t GetQuoteCharEntity(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetRows, addr 0xaa1f7e8, size 0x1d4, virtual false, abstract: false, final false
+inline ::ArrayW<int32_t> GetRows() ;
+
+/// @brief Method GetSingle, addr 0xaa1ebd0, size 0x8c, virtual false, abstract: false, final false
+inline float_t GetSingle(int32_t  offset) ;
+
+/// @brief Method GetString, addr 0xaa1d3e8, size 0x5c, virtual false, abstract: false, final false
+inline ::StringW GetString(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetString, addr 0xaa1d5f4, size 0x6c, virtual false, abstract: false, final false
+inline ::StringW GetString(int32_t  offset, int32_t  length, ::System::Xml::XmlNameTable*  nameTable) ;
+
+/// @brief Method GetUInt64, addr 0xaa1ebcc, size 0x4, virtual false, abstract: false, final false
+inline uint64_t GetUInt64(int32_t  offset) ;
+
+/// @brief Method GetUnicodeString, addr 0xaa1d444, size 0x70, virtual false, abstract: false, final false
+inline ::StringW GetUnicodeString(int32_t  offset, int32_t  length) ;
+
+/// @brief Method GetUniqueId, addr 0xaa1eecc, size 0x70, virtual false, abstract: false, final false
+inline ::System::Xml::UniqueId* GetUniqueId(int32_t  offset) ;
+
+/// @brief Method IsAttrChar, addr 0xaa1d8b8, size 0x1c, virtual false, abstract: false, final false
+inline bool IsAttrChar(int32_t  ch) ;
+
+/// @brief Method IsWhitespaceKey, addr 0xaa1df48, size 0xf4, virtual false, abstract: false, final false
+inline bool IsWhitespaceKey(int32_t  key) ;
+
+/// @brief Method IsWhitespaceUTF8, addr 0xaa1e140, size 0x108, virtual false, abstract: false, final false
+inline bool IsWhitespaceUTF8(int32_t  offset, int32_t  length) ;
+
+/// @brief Method IsWhitespaceUnicode, addr 0xaa1e248, size 0xd8, virtual false, abstract: false, final false
+inline bool IsWhitespaceUnicode(int32_t  offset, int32_t  length) ;
+
+static inline ::System::Xml::XmlBufferReader* New_ctor(::ArrayW<uint8_t>  buffer) ;
+
+static inline ::System::Xml::XmlBufferReader* New_ctor(::System::Xml::XmlDictionaryReader*  reader) ;
+
+/// @brief Method ReadBytes, addr 0xaa1cd44, size 0x50, virtual false, abstract: false, final false
+inline int32_t ReadBytes(int32_t  count) ;
+
+/// @brief Method ReadDictionaryKey, addr 0xaa1f464, size 0x170, virtual false, abstract: false, final false
+inline int32_t ReadDictionaryKey() ;
+
+/// @brief Method ReadInt32, addr 0xaa1cef0, size 0xb0, virtual false, abstract: false, final false
+inline int32_t ReadInt32() ;
+
+/// @brief Method ReadList, addr 0xaa1f68c, size 0xf4, virtual false, abstract: false, final false
+inline void ReadList(::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method ReadMultiByteUInt31, addr 0xaa1cd94, size 0xbc, virtual false, abstract: false, final false
+inline int32_t ReadMultiByteUInt31() ;
+
+/// @brief Method ReadQName, addr 0xaa1f780, size 0x68, virtual false, abstract: false, final false
+inline void ReadQName(::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method ReadUInt16, addr 0xaa1ce74, size 0x7c, virtual false, abstract: false, final false
+inline int32_t ReadUInt16() ;
+
+/// @brief Method ReadUInt31, addr 0xaa1cfa0, size 0x3c, virtual false, abstract: false, final false
+inline int32_t ReadUInt31() ;
+
+/// @brief Method ReadUInt8, addr 0xaa1ce50, size 0x24, virtual false, abstract: false, final false
+inline int32_t ReadUInt8() ;
+
+/// @brief Method ReadUnicodeValue, addr 0xaa1f64c, size 0x40, virtual false, abstract: false, final false
+inline void ReadUnicodeValue(::System::Xml::ValueHandle*  value, int32_t  length) ;
+
+/// @brief Method ReadValue, addr 0xaa1f198, size 0x2cc, virtual false, abstract: false, final false
+inline void ReadValue(::System::Xml::XmlBinaryNodeType  nodeType, ::System::Xml::ValueHandle*  value) ;
+
+/// @brief Method ReadValue, addr 0xaa1f5d4, size 0x78, virtual false, abstract: false, final false
+inline void ReadValue(::System::Xml::ValueHandle*  value, ::System::Xml::ValueHandleType  type, int32_t  length) ;
+
+/// @brief Method SetBuffer, addr 0xaa1c644, size 0x7c, virtual false, abstract: false, final false
+inline void SetBuffer(::System::IO::Stream*  stream, ::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::System::Xml::IXmlDictionary*  dictionary, ::System::Xml::XmlBinaryReaderSession*  session) ;
+
+/// @brief Method SetBuffer, addr 0xaa1c590, size 0xb4, virtual false, abstract: false, final false
+inline void SetBuffer(::System::IO::Stream*  stream, ::System::Xml::IXmlDictionary*  dictionary, ::System::Xml::XmlBinaryReaderSession*  session) ;
+
+/// @brief Method SetWindow, addr 0xaa1cc64, size 0xd0, virtual false, abstract: false, final false
+inline void SetWindow(int32_t  windowOffset, int32_t  windowLength) ;
+
+/// @brief Method SkipByte, addr 0xaa1c914, size 0x10, virtual false, abstract: false, final false
+inline void SkipByte() ;
+
+/// @brief Method SkipNodeType, addr 0xaa1f00c, size 0x10, virtual false, abstract: false, final false
+inline void SkipNodeType() ;
+
+/// @brief Method TryEnsureByte, addr 0xaa1c7d0, size 0xc0, virtual false, abstract: false, final false
+inline bool TryEnsureByte() ;
+
+/// @brief Method TryEnsureBytes, addr 0xaa1ca64, size 0x1bc, virtual false, abstract: false, final false
+inline bool TryEnsureBytes(int32_t  count) ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_buffer() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_buffer() ;
+
+constexpr ::ArrayW<char16_t> const& __cordl_internal_get_chars() const;
+
+constexpr ::ArrayW<char16_t>& __cordl_internal_get_chars() ;
+
+constexpr ::System::Xml::IXmlDictionary* const& __cordl_internal_get_dictionary() const;
+
+constexpr ::System::Xml::IXmlDictionary*& __cordl_internal_get_dictionary() ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_guid() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_guid() ;
+
+constexpr ::System::Xml::ValueHandle* const& __cordl_internal_get_listValue() const;
+
+constexpr ::System::Xml::ValueHandle*& __cordl_internal_get_listValue() ;
+
+constexpr int32_t const& __cordl_internal_get_offset() const;
+
+constexpr int32_t& __cordl_internal_get_offset() ;
+
+constexpr int32_t const& __cordl_internal_get_offsetMax() const;
+
+constexpr int32_t& __cordl_internal_get_offsetMax() ;
+
+constexpr int32_t const& __cordl_internal_get_offsetMin() const;
+
+constexpr int32_t& __cordl_internal_get_offsetMin() ;
+
+constexpr ::System::Xml::XmlDictionaryReader* const& __cordl_internal_get_reader() const;
+
+constexpr ::System::Xml::XmlDictionaryReader*& __cordl_internal_get_reader() ;
+
+constexpr ::System::Xml::XmlBinaryReaderSession* const& __cordl_internal_get_session() const;
+
+constexpr ::System::Xml::XmlBinaryReaderSession*& __cordl_internal_get_session() ;
+
+constexpr ::System::IO::Stream* const& __cordl_internal_get_stream() const;
+
+constexpr ::System::IO::Stream*& __cordl_internal_get_stream() ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_streamBuffer() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_streamBuffer() ;
+
+constexpr int32_t const& __cordl_internal_get_windowOffset() const;
+
+constexpr int32_t& __cordl_internal_get_windowOffset() ;
+
+constexpr int32_t const& __cordl_internal_get_windowOffsetMax() const;
+
+constexpr int32_t& __cordl_internal_get_windowOffsetMax() ;
+
+constexpr void __cordl_internal_set_buffer(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_chars(::ArrayW<char16_t>  value) ;
+
+constexpr void __cordl_internal_set_dictionary(::System::Xml::IXmlDictionary*  value) ;
+
+constexpr void __cordl_internal_set_guid(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_listValue(::System::Xml::ValueHandle*  value) ;
+
+constexpr void __cordl_internal_set_offset(int32_t  value) ;
+
+constexpr void __cordl_internal_set_offsetMax(int32_t  value) ;
+
+constexpr void __cordl_internal_set_offsetMin(int32_t  value) ;
+
+constexpr void __cordl_internal_set_reader(::System::Xml::XmlDictionaryReader*  value) ;
+
+constexpr void __cordl_internal_set_session(::System::Xml::XmlBinaryReaderSession*  value) ;
+
+constexpr void __cordl_internal_set_stream(::System::IO::Stream*  value) ;
+
+constexpr void __cordl_internal_set_streamBuffer(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_windowOffset(int32_t  value) ;
+
+constexpr void __cordl_internal_set_windowOffsetMax(int32_t  value) ;
+
+/// @brief Method .ctor, addr 0xaa1c4e0, size 0x40, virtual false, abstract: false, final false
+inline void _ctor(::ArrayW<uint8_t>  buffer) ;
+
+/// @brief Method .ctor, addr 0xaa1c4b0, size 0x30, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlDictionaryReader*  reader) ;
+
+static inline ::System::Xml::XmlBufferReader* getStaticF_empty() ;
+
+static inline ::ArrayW<uint8_t> getStaticF_emptyByteArray() ;
+
+/// @brief Method get_Buffer, addr 0xaa1c578, size 0x8, virtual false, abstract: false, final false
+inline ::ArrayW<uint8_t> get_Buffer() ;
+
+/// @brief Method get_Empty, addr 0xaa1c520, size 0x58, virtual false, abstract: false, final false
+static inline ::System::Xml::XmlBufferReader* get_Empty() ;
+
+/// @brief Method get_EndOfFile, addr 0xaa1c7a0, size 0x30, virtual false, abstract: false, final false
+inline bool get_EndOfFile() ;
+
+/// @brief Method get_IsStreamed, addr 0xaa1c580, size 0x10, virtual false, abstract: false, final false
+inline bool get_IsStreamed() ;
+
+/// @brief Method get_Offset, addr 0xaa1cd34, size 0x8, virtual false, abstract: false, final false
+inline int32_t get_Offset() ;
+
+static inline void setStaticF_empty(::System::Xml::XmlBufferReader*  value) ;
+
+static inline void setStaticF_emptyByteArray(::ArrayW<uint8_t>  value) ;
+
+/// @brief Method set_Offset, addr 0xaa1cd3c, size 0x8, virtual false, abstract: false, final false
+inline void set_Offset(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlBufferReader() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBufferReader", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlBufferReader(XmlBufferReader && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlBufferReader", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlBufferReader(XmlBufferReader const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24447};
+
+/// @brief Field reader, offset: 0x10, size: 0x8, def value: None
+ ::System::Xml::XmlDictionaryReader*  ___reader;
+
+/// @brief Field stream, offset: 0x18, size: 0x8, def value: None
+ ::System::IO::Stream*  ___stream;
+
+/// @brief Field streamBuffer, offset: 0x20, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___streamBuffer;
+
+/// @brief Field buffer, offset: 0x28, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___buffer;
+
+/// @brief Field offsetMin, offset: 0x30, size: 0x4, def value: None
+ int32_t  ___offsetMin;
+
+/// @brief Field offsetMax, offset: 0x34, size: 0x4, def value: None
+ int32_t  ___offsetMax;
+
+/// @brief Field dictionary, offset: 0x38, size: 0x8, def value: None
+ ::System::Xml::IXmlDictionary*  ___dictionary;
+
+/// @brief Field session, offset: 0x40, size: 0x8, def value: None
+ ::System::Xml::XmlBinaryReaderSession*  ___session;
+
+/// @brief Field guid, offset: 0x48, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___guid;
+
+/// @brief Field offset, offset: 0x50, size: 0x4, def value: None
+ int32_t  ___offset;
+
+/// @brief Field chars, offset: 0x58, size: 0x8, def value: None
+ ::ArrayW<char16_t>  ___chars;
+
+/// @brief Field windowOffset, offset: 0x60, size: 0x4, def value: None
+ int32_t  ___windowOffset;
+
+/// @brief Field windowOffsetMax, offset: 0x64, size: 0x4, def value: None
+ int32_t  ___windowOffsetMax;
+
+/// @brief Field listValue, offset: 0x68, size: 0x8, def value: None
+ ::System::Xml::ValueHandle*  ___listValue;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___reader) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___stream) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___streamBuffer) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___buffer) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___offsetMin) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___offsetMax) == 0x34, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___dictionary) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___session) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___guid) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___offset) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___chars) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___windowOffset) == 0x60, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___windowOffsetMax) == 0x64, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::XmlBufferReader, ___listValue) == 0x68, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlBufferReader) == 0x70, "Size mismatch!");
+
+} // namespace end def System::Xml

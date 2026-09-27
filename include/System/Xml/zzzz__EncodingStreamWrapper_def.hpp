@@ -1,0 +1,439 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/EncodingStreamWrapper.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/IO/zzzz__Stream_def.hpp"
+#include "System/Xml/zzzz__EncodingStreamWrapper_SupportedEncoding_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(EncodingStreamWrapper)
+namespace GlobalNamespace {
+struct EncodingStreamWrapper_SupportedEncoding;
+}
+namespace System::IO {
+struct SeekOrigin;
+}
+namespace System::IO {
+class Stream;
+}
+namespace System::Text {
+class Decoder;
+}
+namespace System::Text {
+class Encoder;
+}
+namespace System::Text {
+class Encoding;
+}
+namespace System::Text {
+class UTF8Encoding;
+}
+namespace System::Text {
+class UnicodeEncoding;
+}
+// Forward declare root types
+namespace System::Xml {
+class EncodingStreamWrapper;
+}
+// Write type traits
+MARK_REF_T(::System::Xml::EncodingStreamWrapper*);
+DEFINE_IL2CPP_CLASS(::System::Xml::EncodingStreamWrapper*, "System.Xml", "EncodingStreamWrapper");
+// Dependencies System.IO.Stream, System.Xml.EncodingStreamWrapper::SupportedEncoding
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.EncodingStreamWrapper
+class CORDL_TYPE EncodingStreamWrapper : public ::System::IO::Stream {
+public:
+// Declarations
+using SupportedEncoding = ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding;
+
+ __declspec(property(get=get_CanRead)) bool  CanRead;
+
+ __declspec(property(get=get_CanSeek)) bool  CanSeek;
+
+ __declspec(property(get=get_CanTimeout)) bool  CanTimeout;
+
+ __declspec(property(get=get_CanWrite)) bool  CanWrite;
+
+ __declspec(property(get=get_Length)) int64_t  Length;
+
+ __declspec(property(get=get_Position, put=set_Position)) int64_t  Position;
+
+ __declspec(property(get=get_ReadTimeout, put=set_ReadTimeout)) int32_t  ReadTimeout;
+
+/// @brief Field SafeBEUTF16, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_SafeBEUTF16, put=setStaticF_SafeBEUTF16)) ::System::Text::UnicodeEncoding*  SafeBEUTF16;
+
+/// @brief Field SafeUTF16, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_SafeUTF16, put=setStaticF_SafeUTF16)) ::System::Text::UnicodeEncoding*  SafeUTF16;
+
+/// @brief Field SafeUTF8, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_SafeUTF8, put=setStaticF_SafeUTF8)) ::System::Text::UTF8Encoding*  SafeUTF8;
+
+/// @brief Field ValidatingBEUTF16, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_ValidatingBEUTF16, put=setStaticF_ValidatingBEUTF16)) ::System::Text::UnicodeEncoding*  ValidatingBEUTF16;
+
+/// @brief Field ValidatingUTF16, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_ValidatingUTF16, put=setStaticF_ValidatingUTF16)) ::System::Text::UnicodeEncoding*  ValidatingUTF16;
+
+/// @brief Field ValidatingUTF8, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_ValidatingUTF8, put=setStaticF_ValidatingUTF8)) ::System::Text::UTF8Encoding*  ValidatingUTF8;
+
+ __declspec(property(get=get_WriteTimeout, put=set_WriteTimeout)) int32_t  WriteTimeout;
+
+/// @brief Field byteBuffer, offset 0x70, size 0x8 
+ __declspec(property(get=__cordl_internal_get_byteBuffer, put=__cordl_internal_set_byteBuffer)) ::ArrayW<uint8_t>  byteBuffer;
+
+/// @brief Field byteCount, offset 0x6c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_byteCount, put=__cordl_internal_set_byteCount)) int32_t  byteCount;
+
+/// @brief Field byteOffset, offset 0x68, size 0x4 
+ __declspec(property(get=__cordl_internal_get_byteOffset, put=__cordl_internal_set_byteOffset)) int32_t  byteOffset;
+
+/// @brief Field bytes, offset 0x60, size 0x8 
+ __declspec(property(get=__cordl_internal_get_bytes, put=__cordl_internal_set_bytes)) ::ArrayW<uint8_t>  bytes;
+
+/// @brief Field chars, offset 0x58, size 0x8 
+ __declspec(property(get=__cordl_internal_get_chars, put=__cordl_internal_set_chars)) ::ArrayW<char16_t>  chars;
+
+/// @brief Field dec, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_dec, put=__cordl_internal_set_dec)) ::System::Text::Decoder*  dec;
+
+/// @brief Field enc, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_enc, put=__cordl_internal_set_enc)) ::System::Text::Encoder*  enc;
+
+/// @brief Field encoding, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_encoding, put=__cordl_internal_set_encoding)) ::System::Text::Encoding*  encoding;
+
+/// @brief Field encodingAttr, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_encodingAttr, put=setStaticF_encodingAttr)) ::ArrayW<uint8_t>  encodingAttr;
+
+/// @brief Field encodingCode, offset 0x28, size 0x4 
+ __declspec(property(get=__cordl_internal_get_encodingCode, put=__cordl_internal_set_encodingCode)) ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  encodingCode;
+
+/// @brief Field encodingUTF8, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_encodingUTF8, put=setStaticF_encodingUTF8)) ::ArrayW<uint8_t>  encodingUTF8;
+
+/// @brief Field encodingUnicode, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_encodingUnicode, put=setStaticF_encodingUnicode)) ::ArrayW<uint8_t>  encodingUnicode;
+
+/// @brief Field encodingUnicodeBE, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_encodingUnicodeBE, put=setStaticF_encodingUnicodeBE)) ::ArrayW<uint8_t>  encodingUnicodeBE;
+
+/// @brief Field encodingUnicodeLE, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_encodingUnicodeLE, put=setStaticF_encodingUnicodeLE)) ::ArrayW<uint8_t>  encodingUnicodeLE;
+
+/// @brief Field isReading, offset 0x48, size 0x1 
+ __declspec(property(get=__cordl_internal_get_isReading, put=__cordl_internal_set_isReading)) bool  isReading;
+
+/// @brief Field stream, offset 0x50, size 0x8 
+ __declspec(property(get=__cordl_internal_get_stream, put=__cordl_internal_set_stream)) ::System::IO::Stream*  stream;
+
+/// @brief Method CheckUTF8DeclarationEncoding, addr 0xaa056f8, size 0x610, virtual false, abstract: false, final false
+static inline void CheckUTF8DeclarationEncoding(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count, ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  e, ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  expectedEnc) ;
+
+/// @brief Method CleanupCharBreak, addr 0xaa05df8, size 0x1c8, virtual false, abstract: false, final false
+inline void CleanupCharBreak() ;
+
+/// @brief Method Close, addr 0xaa069b4, size 0x44, virtual true, abstract: false, final false
+inline void Close() ;
+
+/// @brief Method Compare, addr 0xaa065e8, size 0x7c, virtual false, abstract: false, final false
+static inline bool Compare(::ArrayW<uint8_t>  key, ::ArrayW<uint8_t>  buffer, int32_t  offset) ;
+
+/// @brief Method CompareCaseInsensitive, addr 0xaa06664, size 0x138, virtual false, abstract: false, final false
+static inline bool CompareCaseInsensitive(::ArrayW<uint8_t>  key, ::ArrayW<uint8_t>  buffer, int32_t  offset) ;
+
+/// @brief Method EnsureBuffers, addr 0xaa05d08, size 0x74, virtual false, abstract: false, final false
+inline void EnsureBuffers() ;
+
+/// @brief Method EnsureByteBuffer, addr 0xaa0655c, size 0x6c, virtual false, abstract: false, final false
+inline void EnsureByteBuffer() ;
+
+/// @brief Method FillBuffer, addr 0xaa05688, size 0x70, virtual false, abstract: false, final false
+inline void FillBuffer(int32_t  count) ;
+
+/// @brief Method Flush, addr 0xaa069f8, size 0x20, virtual true, abstract: false, final false
+inline void Flush() ;
+
+/// @brief Method GetEncoding, addr 0xaa05fc0, size 0x124, virtual false, abstract: false, final false
+static inline ::System::Text::Encoding* GetEncoding(::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  e) ;
+
+/// @brief Method GetEncodingName, addr 0xaa060e4, size 0xc8, virtual false, abstract: false, final false
+static inline ::StringW GetEncodingName(::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  enc) ;
+
+/// @brief Method GetSupportedEncoding, addr 0xaa05180, size 0x1cc, virtual false, abstract: false, final false
+static inline ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding GetSupportedEncoding(::System::Text::Encoding*  encoding) ;
+
+/// @brief Method IsWhitespace, addr 0xaa065c8, size 0x20, virtual false, abstract: false, final false
+static inline bool IsWhitespace(uint8_t  ch) ;
+
+static inline ::System::Xml::EncodingStreamWrapper* New_ctor(::System::IO::Stream*  stream, ::System::Text::Encoding*  encoding) ;
+
+static inline ::System::Xml::EncodingStreamWrapper* New_ctor(::System::IO::Stream*  stream, ::System::Text::Encoding*  encoding, bool  emitBOM) ;
+
+/// @brief Method Read, addr 0xaa06a9c, size 0x260, virtual true, abstract: false, final false
+inline int32_t Read(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count) ;
+
+/// @brief Method ReadBOMEncoding, addr 0xaa063d4, size 0x188, virtual false, abstract: false, final false
+static inline ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding ReadBOMEncoding(uint8_t  b1, uint8_t  b2, uint8_t  b3, uint8_t  b4, bool  notOutOfBand, ::by_ref<int32_t>  preserve) ;
+
+/// @brief Method ReadBOMEncoding, addr 0xaa0534c, size 0x248, virtual false, abstract: false, final false
+inline ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding ReadBOMEncoding(bool  notOutOfBand) ;
+
+/// @brief Method ReadByte, addr 0xaa06a18, size 0x84, virtual true, abstract: false, final false
+inline int32_t ReadByte() ;
+
+/// @brief Method Seek, addr 0xaa06cfc, size 0x48, virtual true, abstract: false, final false
+inline int64_t Seek(int64_t  offset, ::System::IO::SeekOrigin  origin) ;
+
+/// @brief Method SetLength, addr 0xaa06f74, size 0x48, virtual true, abstract: false, final false
+inline void SetLength(int64_t  value) ;
+
+/// @brief Method SetReadDocumentEncoding, addr 0xaa05d7c, size 0x7c, virtual false, abstract: false, final false
+inline void SetReadDocumentEncoding(::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  e) ;
+
+/// @brief Method ThrowEncodingMismatch, addr 0xaa0679c, size 0xc8, virtual false, abstract: false, final false
+static inline void ThrowEncodingMismatch(::StringW  declEnc, ::StringW  docEnc) ;
+
+/// @brief Method ThrowEncodingMismatch, addr 0xaa06864, size 0x60, virtual false, abstract: false, final false
+static inline void ThrowEncodingMismatch(::StringW  declEnc, ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  enc) ;
+
+/// @brief Method ThrowExpectedEncodingMismatch, addr 0xaa05594, size 0xf4, virtual false, abstract: false, final false
+static inline void ThrowExpectedEncodingMismatch(::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  expEnc, ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  actualEnc) ;
+
+/// @brief Method Write, addr 0xaa06da8, size 0x114, virtual true, abstract: false, final false
+inline void Write(::ArrayW<uint8_t>  buffer, int32_t  offset, int32_t  count) ;
+
+/// @brief Method WriteByte, addr 0xaa06d44, size 0x64, virtual true, abstract: false, final false
+inline void WriteByte(uint8_t  b) ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_byteBuffer() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_byteBuffer() ;
+
+constexpr int32_t const& __cordl_internal_get_byteCount() const;
+
+constexpr int32_t& __cordl_internal_get_byteCount() ;
+
+constexpr int32_t const& __cordl_internal_get_byteOffset() const;
+
+constexpr int32_t& __cordl_internal_get_byteOffset() ;
+
+constexpr ::ArrayW<uint8_t> const& __cordl_internal_get_bytes() const;
+
+constexpr ::ArrayW<uint8_t>& __cordl_internal_get_bytes() ;
+
+constexpr ::ArrayW<char16_t> const& __cordl_internal_get_chars() const;
+
+constexpr ::ArrayW<char16_t>& __cordl_internal_get_chars() ;
+
+constexpr ::System::Text::Decoder* const& __cordl_internal_get_dec() const;
+
+constexpr ::System::Text::Decoder*& __cordl_internal_get_dec() ;
+
+constexpr ::System::Text::Encoder* const& __cordl_internal_get_enc() const;
+
+constexpr ::System::Text::Encoder*& __cordl_internal_get_enc() ;
+
+constexpr ::System::Text::Encoding* const& __cordl_internal_get_encoding() const;
+
+constexpr ::System::Text::Encoding*& __cordl_internal_get_encoding() ;
+
+constexpr ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding const& __cordl_internal_get_encodingCode() const;
+
+constexpr ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding& __cordl_internal_get_encodingCode() ;
+
+constexpr bool const& __cordl_internal_get_isReading() const;
+
+constexpr bool& __cordl_internal_get_isReading() ;
+
+constexpr ::System::IO::Stream* const& __cordl_internal_get_stream() const;
+
+constexpr ::System::IO::Stream*& __cordl_internal_get_stream() ;
+
+constexpr void __cordl_internal_set_byteBuffer(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_byteCount(int32_t  value) ;
+
+constexpr void __cordl_internal_set_byteOffset(int32_t  value) ;
+
+constexpr void __cordl_internal_set_bytes(::ArrayW<uint8_t>  value) ;
+
+constexpr void __cordl_internal_set_chars(::ArrayW<char16_t>  value) ;
+
+constexpr void __cordl_internal_set_dec(::System::Text::Decoder*  value) ;
+
+constexpr void __cordl_internal_set_enc(::System::Text::Encoder*  value) ;
+
+constexpr void __cordl_internal_set_encoding(::System::Text::Encoding*  value) ;
+
+constexpr void __cordl_internal_set_encodingCode(::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  value) ;
+
+constexpr void __cordl_internal_set_isReading(bool  value) ;
+
+constexpr void __cordl_internal_set_stream(::System::IO::Stream*  value) ;
+
+/// @brief Method .ctor, addr 0xaa04cfc, size 0x484, virtual false, abstract: false, final false
+inline void _ctor(::System::IO::Stream*  stream, ::System::Text::Encoding*  encoding) ;
+
+/// @brief Method .ctor, addr 0xaa061ac, size 0x228, virtual false, abstract: false, final false
+inline void _ctor(::System::IO::Stream*  stream, ::System::Text::Encoding*  encoding, bool  emitBOM) ;
+
+static inline ::System::Text::UnicodeEncoding* getStaticF_SafeBEUTF16() ;
+
+static inline ::System::Text::UnicodeEncoding* getStaticF_SafeUTF16() ;
+
+static inline ::System::Text::UTF8Encoding* getStaticF_SafeUTF8() ;
+
+static inline ::System::Text::UnicodeEncoding* getStaticF_ValidatingBEUTF16() ;
+
+static inline ::System::Text::UnicodeEncoding* getStaticF_ValidatingUTF16() ;
+
+static inline ::System::Text::UTF8Encoding* getStaticF_ValidatingUTF8() ;
+
+static inline ::ArrayW<uint8_t> getStaticF_encodingAttr() ;
+
+static inline ::ArrayW<uint8_t> getStaticF_encodingUTF8() ;
+
+static inline ::ArrayW<uint8_t> getStaticF_encodingUnicode() ;
+
+static inline ::ArrayW<uint8_t> getStaticF_encodingUnicodeBE() ;
+
+static inline ::ArrayW<uint8_t> getStaticF_encodingUnicodeLE() ;
+
+/// @brief Method get_CanRead, addr 0xaa068c4, size 0x2c, virtual true, abstract: false, final false
+inline bool get_CanRead() ;
+
+/// @brief Method get_CanSeek, addr 0xaa068f0, size 0x8, virtual true, abstract: false, final false
+inline bool get_CanSeek() ;
+
+/// @brief Method get_CanTimeout, addr 0xaa06ebc, size 0x1c, virtual true, abstract: false, final false
+inline bool get_CanTimeout() ;
+
+/// @brief Method get_CanWrite, addr 0xaa068f8, size 0x2c, virtual true, abstract: false, final false
+inline bool get_CanWrite() ;
+
+/// @brief Method get_Length, addr 0xaa06ed8, size 0x1c, virtual true, abstract: false, final false
+inline int64_t get_Length() ;
+
+/// @brief Method get_Position, addr 0xaa06924, size 0x48, virtual true, abstract: false, final false
+inline int64_t get_Position() ;
+
+/// @brief Method get_ReadTimeout, addr 0xaa06ef4, size 0x20, virtual true, abstract: false, final false
+inline int32_t get_ReadTimeout() ;
+
+/// @brief Method get_WriteTimeout, addr 0xaa06f34, size 0x20, virtual true, abstract: false, final false
+inline int32_t get_WriteTimeout() ;
+
+static inline void setStaticF_SafeBEUTF16(::System::Text::UnicodeEncoding*  value) ;
+
+static inline void setStaticF_SafeUTF16(::System::Text::UnicodeEncoding*  value) ;
+
+static inline void setStaticF_SafeUTF8(::System::Text::UTF8Encoding*  value) ;
+
+static inline void setStaticF_ValidatingBEUTF16(::System::Text::UnicodeEncoding*  value) ;
+
+static inline void setStaticF_ValidatingUTF16(::System::Text::UnicodeEncoding*  value) ;
+
+static inline void setStaticF_ValidatingUTF8(::System::Text::UTF8Encoding*  value) ;
+
+static inline void setStaticF_encodingAttr(::ArrayW<uint8_t>  value) ;
+
+static inline void setStaticF_encodingUTF8(::ArrayW<uint8_t>  value) ;
+
+static inline void setStaticF_encodingUnicode(::ArrayW<uint8_t>  value) ;
+
+static inline void setStaticF_encodingUnicodeBE(::ArrayW<uint8_t>  value) ;
+
+static inline void setStaticF_encodingUnicodeLE(::ArrayW<uint8_t>  value) ;
+
+/// @brief Method set_Position, addr 0xaa0696c, size 0x48, virtual true, abstract: false, final false
+inline void set_Position(int64_t  value) ;
+
+/// @brief Method set_ReadTimeout, addr 0xaa06f14, size 0x20, virtual true, abstract: false, final false
+inline void set_ReadTimeout(int32_t  value) ;
+
+/// @brief Method set_WriteTimeout, addr 0xaa06f54, size 0x20, virtual true, abstract: false, final false
+inline void set_WriteTimeout(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr EncodingStreamWrapper() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "EncodingStreamWrapper", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+EncodingStreamWrapper(EncodingStreamWrapper && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "EncodingStreamWrapper", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+EncodingStreamWrapper(EncodingStreamWrapper const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24407};
+
+/// @brief Field encodingCode, offset: 0x28, size: 0x4, def value: None
+ ::GlobalNamespace::EncodingStreamWrapper_SupportedEncoding  ___encodingCode;
+
+/// @brief Field encoding, offset: 0x30, size: 0x8, def value: None
+ ::System::Text::Encoding*  ___encoding;
+
+/// @brief Field enc, offset: 0x38, size: 0x8, def value: None
+ ::System::Text::Encoder*  ___enc;
+
+/// @brief Field dec, offset: 0x40, size: 0x8, def value: None
+ ::System::Text::Decoder*  ___dec;
+
+/// @brief Field isReading, offset: 0x48, size: 0x1, def value: None
+ bool  ___isReading;
+
+/// @brief Field stream, offset: 0x50, size: 0x8, def value: None
+ ::System::IO::Stream*  ___stream;
+
+/// @brief Field chars, offset: 0x58, size: 0x8, def value: None
+ ::ArrayW<char16_t>  ___chars;
+
+/// @brief Field bytes, offset: 0x60, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___bytes;
+
+/// @brief Field byteOffset, offset: 0x68, size: 0x4, def value: None
+ int32_t  ___byteOffset;
+
+/// @brief Field byteCount, offset: 0x6c, size: 0x4, def value: None
+ int32_t  ___byteCount;
+
+/// @brief Field byteBuffer, offset: 0x70, size: 0x8, def value: None
+ ::ArrayW<uint8_t>  ___byteBuffer;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___encodingCode) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___encoding) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___enc) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___dec) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___isReading) == 0x48, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___stream) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___chars) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___bytes) == 0x60, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___byteOffset) == 0x68, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___byteCount) == 0x6c, "Offset mismatch!");
+
+static_assert(offsetof(::System::Xml::EncodingStreamWrapper, ___byteBuffer) == 0x70, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::EncodingStreamWrapper) == 0x78, "Size mismatch!");
+
+} // namespace end def System::Xml

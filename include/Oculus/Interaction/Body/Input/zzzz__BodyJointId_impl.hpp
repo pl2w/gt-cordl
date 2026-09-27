@@ -1,0 +1,97 @@
+#pragma once
+// IWYU pragma private; include "Oculus/Interaction/Body/Input/BodyJointId.hpp"
+#include "Oculus/Interaction/Body/Input/zzzz__BodyJointId_def.hpp"
+// Ctor Parameters [CppParam { name: "value__", ty: "int32_t", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId::BodyJointId(int32_t  value__) noexcept  {
+this->value__ = value__;
+}
+// Ctor Parameters []
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId::BodyJointId()   {
+}
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Invalid{static_cast<int32_t>(0xffffffff)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_Start{static_cast<int32_t>(0x0)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_Root{static_cast<int32_t>(0x0)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_Hips{static_cast<int32_t>(0x1)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_SpineLower{static_cast<int32_t>(0x2)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_SpineMiddle{static_cast<int32_t>(0x3)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_SpineUpper{static_cast<int32_t>(0x4)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_Chest{static_cast<int32_t>(0x5)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_Neck{static_cast<int32_t>(0x6)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_Head{static_cast<int32_t>(0x7)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftShoulder{static_cast<int32_t>(0x8)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftScapula{static_cast<int32_t>(0x9)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftArmUpper{static_cast<int32_t>(0xa)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftArmLower{static_cast<int32_t>(0xb)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandWristTwist{static_cast<int32_t>(0xc)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightShoulder{static_cast<int32_t>(0xd)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightScapula{static_cast<int32_t>(0xe)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightArmUpper{static_cast<int32_t>(0xf)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightArmLower{static_cast<int32_t>(0x10)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandWristTwist{static_cast<int32_t>(0x11)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandPalm{static_cast<int32_t>(0x12)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandWrist{static_cast<int32_t>(0x13)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandThumbMetacarpal{static_cast<int32_t>(0x14)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandThumbProximal{static_cast<int32_t>(0x15)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandThumbDistal{static_cast<int32_t>(0x16)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandThumbTip{static_cast<int32_t>(0x17)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandIndexMetacarpal{static_cast<int32_t>(0x18)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandIndexProximal{static_cast<int32_t>(0x19)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandIndexIntermediate{static_cast<int32_t>(0x1a)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandIndexDistal{static_cast<int32_t>(0x1b)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandIndexTip{static_cast<int32_t>(0x1c)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandMiddleMetacarpal{static_cast<int32_t>(0x1d)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandMiddleProximal{static_cast<int32_t>(0x1e)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandMiddleIntermediate{static_cast<int32_t>(0x1f)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandMiddleDistal{static_cast<int32_t>(0x20)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandMiddleTip{static_cast<int32_t>(0x21)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandRingMetacarpal{static_cast<int32_t>(0x22)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandRingProximal{static_cast<int32_t>(0x23)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandRingIntermediate{static_cast<int32_t>(0x24)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandRingDistal{static_cast<int32_t>(0x25)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandRingTip{static_cast<int32_t>(0x26)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandLittleMetacarpal{static_cast<int32_t>(0x27)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandLittleProximal{static_cast<int32_t>(0x28)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandLittleIntermediate{static_cast<int32_t>(0x29)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandLittleDistal{static_cast<int32_t>(0x2a)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftHandLittleTip{static_cast<int32_t>(0x2b)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandPalm{static_cast<int32_t>(0x2c)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandWrist{static_cast<int32_t>(0x2d)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandThumbMetacarpal{static_cast<int32_t>(0x2e)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandThumbProximal{static_cast<int32_t>(0x2f)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandThumbDistal{static_cast<int32_t>(0x30)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandThumbTip{static_cast<int32_t>(0x31)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandIndexMetacarpal{static_cast<int32_t>(0x32)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandIndexProximal{static_cast<int32_t>(0x33)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandIndexIntermediate{static_cast<int32_t>(0x34)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandIndexDistal{static_cast<int32_t>(0x35)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandIndexTip{static_cast<int32_t>(0x36)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandMiddleMetacarpal{static_cast<int32_t>(0x37)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandMiddleProximal{static_cast<int32_t>(0x38)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandMiddleIntermediate{static_cast<int32_t>(0x39)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandMiddleDistal{static_cast<int32_t>(0x3a)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandMiddleTip{static_cast<int32_t>(0x3b)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandRingMetacarpal{static_cast<int32_t>(0x3c)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandRingProximal{static_cast<int32_t>(0x3d)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandRingIntermediate{static_cast<int32_t>(0x3e)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandRingDistal{static_cast<int32_t>(0x3f)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandRingTip{static_cast<int32_t>(0x40)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandLittleMetacarpal{static_cast<int32_t>(0x41)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandLittleProximal{static_cast<int32_t>(0x42)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandLittleIntermediate{static_cast<int32_t>(0x43)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandLittleDistal{static_cast<int32_t>(0x44)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightHandLittleTip{static_cast<int32_t>(0x45)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftLegUpper{static_cast<int32_t>(0x46)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftLegLower{static_cast<int32_t>(0x47)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftFootAnkleTwist{static_cast<int32_t>(0x48)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftFootAnkle{static_cast<int32_t>(0x49)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftFootSubtalar{static_cast<int32_t>(0x4a)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftFootTransverse{static_cast<int32_t>(0x4b)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_LeftFootBall{static_cast<int32_t>(0x4c)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightLegUpper{static_cast<int32_t>(0x4d)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightLegLower{static_cast<int32_t>(0x4e)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightFootAnkleTwist{static_cast<int32_t>(0x4f)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightFootAnkle{static_cast<int32_t>(0x50)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightFootSubtalar{static_cast<int32_t>(0x51)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightFootTransverse{static_cast<int32_t>(0x52)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_RightFootBall{static_cast<int32_t>(0x53)};
+constexpr ::Oculus::Interaction::Body::Input::BodyJointId  Oculus::Interaction::Body::Input::BodyJointId::Body_End{static_cast<int32_t>(0x54)};

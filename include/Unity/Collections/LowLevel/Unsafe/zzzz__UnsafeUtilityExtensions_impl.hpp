@@ -1,0 +1,33 @@
+#pragma once
+// IWYU pragma private; include "Unity/Collections/LowLevel/Unsafe/UnsafeUtilityExtensions.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Unity/Collections/LowLevel/Unsafe/zzzz__UnsafeUtilityExtensions_def.hpp"
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline void* Unity::Collections::LowLevel::Unsafe::UnsafeUtilityExtensions::AddressOf(/* [IsReadOnly] */ ::by_ref<T>  value)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::Unity::Collections::LowLevel::Unsafe::UnsafeUtilityExtensions*>(),
+                    {"AddressOf", {::i2c::class_of<T>()}, {::i2c::type_of<::by_ref<T>>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<T>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<void*>(nullptr, ___internal_method, value);
+}
+template<typename T>
+requires(::cordl_internals::value_type_constraint<T> && ::cordl_internals::default_constructor_constraint<T>)
+inline ::by_ref<T> Unity::Collections::LowLevel::Unsafe::UnsafeUtilityExtensions::AsRef(/* [IsReadOnly] */ ::by_ref<T>  value)  {
+static auto* ___internal_method_base = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                    ::i2c::class_of<::Unity::Collections::LowLevel::Unsafe::UnsafeUtilityExtensions*>(),
+                    {"AsRef", {::i2c::class_of<T>()}, {::i2c::type_of<::by_ref<T>>()}}
+                )));
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::make_generic(
+                    ___internal_method_base,
+                    {::i2c::class_of<T>()}
+                )));
+return ::cordl_internals::RunMethodRethrow<::by_ref<T>>(nullptr, ___internal_method, value);
+}
+// Ctor Parameters []
+constexpr ::Unity::Collections::LowLevel::Unsafe::UnsafeUtilityExtensions::UnsafeUtilityExtensions()   {
+}

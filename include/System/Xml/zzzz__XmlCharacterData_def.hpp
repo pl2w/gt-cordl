@@ -1,0 +1,103 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/XmlCharacterData.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Xml/zzzz__XmlLinkedNode_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(XmlCharacterData)
+namespace System::Xml::XPath {
+struct XPathNodeType;
+}
+namespace System::Xml {
+class XmlDocument;
+}
+namespace System::Xml {
+class XmlNode;
+}
+// Forward declare root types
+namespace System::Xml {
+class XmlCharacterData;
+}
+// Write type traits
+MARK_REF_T(::System::Xml::XmlCharacterData*);
+DEFINE_IL2CPP_CLASS(::System::Xml::XmlCharacterData*, "System.Xml", "XmlCharacterData");
+// Dependencies System.Xml.XmlLinkedNode
+namespace System::Xml {
+// Is value type: false
+// CS Name: System.Xml.XmlCharacterData
+class CORDL_TYPE XmlCharacterData : public ::System::Xml::XmlLinkedNode {
+public:
+// Declarations
+ __declspec(property(get=get_Data, put=set_Data)) ::StringW  Data;
+
+ __declspec(property(get=get_InnerText, put=set_InnerText)) ::StringW  InnerText;
+
+ __declspec(property(get=get_Value, put=set_Value)) ::StringW  Value;
+
+/// @brief Field data, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_data, put=__cordl_internal_set_data)) ::StringW  data;
+
+/// @brief Method CheckOnData, addr 0xabcd698, size 0x3c, virtual false, abstract: false, final false
+inline bool CheckOnData(::StringW  data) ;
+
+/// @brief Method DecideXPNodeTypeForTextNodes, addr 0xabcd6d4, size 0xd8, virtual false, abstract: false, final false
+inline bool DecideXPNodeTypeForTextNodes(::System::Xml::XmlNode*  node, ::by_ref<::System::Xml::XPath::XPathNodeType>  xnt) ;
+
+static inline ::System::Xml::XmlCharacterData* New_ctor(::StringW  data, ::System::Xml::XmlDocument*  doc) ;
+
+constexpr ::StringW const& __cordl_internal_get_data() const;
+
+constexpr ::StringW& __cordl_internal_get_data() ;
+
+constexpr void __cordl_internal_set_data(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0xabcd350, size 0x40, virtual false, abstract: false, final false
+inline void _ctor(::StringW  data, ::System::Xml::XmlDocument*  doc) ;
+
+/// @brief Method get_Data, addr 0xabcd5b0, size 0x24, virtual true, abstract: false, final false
+inline ::StringW get_Data() ;
+
+/// @brief Method get_InnerText, addr 0xabcd598, size 0xc, virtual true, abstract: false, final false
+inline ::StringW get_InnerText() ;
+
+/// @brief Method get_Value, addr 0xabcd578, size 0x10, virtual true, abstract: false, final false
+inline ::StringW get_Value() ;
+
+/// @brief Method set_Data, addr 0xabcd5d4, size 0xc4, virtual true, abstract: false, final false
+inline void set_Data(::StringW  value) ;
+
+/// @brief Method set_InnerText, addr 0xabcd5a4, size 0xc, virtual true, abstract: false, final false
+inline void set_InnerText(::StringW  value) ;
+
+/// @brief Method set_Value, addr 0xabcd588, size 0x10, virtual true, abstract: false, final false
+inline void set_Value(::StringW  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlCharacterData() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlCharacterData", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlCharacterData(XmlCharacterData && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlCharacterData", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlCharacterData(XmlCharacterData const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14110};
+
+/// @brief Field data, offset: 0x20, size: 0x8, def value: None
+ ::StringW  ___data;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Xml::XmlCharacterData, ___data) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::System::Xml::XmlCharacterData) == 0x28, "Size mismatch!");
+
+} // namespace end def System::Xml

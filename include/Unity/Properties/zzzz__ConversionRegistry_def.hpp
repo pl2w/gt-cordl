@@ -1,0 +1,159 @@
+#pragma once
+// IWYU pragma private; include "Unity/Properties/ConversionRegistry.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(ConversionRegistry)
+namespace GlobalNamespace {
+struct ConversionRegistry_ConverterKey;
+}
+namespace System::Collections::Generic {
+template<typename TKey,typename TValue>
+class Dictionary_2;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IEqualityComparer_1;
+}
+namespace System {
+class Delegate;
+}
+namespace System {
+class Type;
+}
+namespace Unity::Properties {
+class ConversionRegistry_ConverterKeyComparer;
+}
+// Forward declare root types
+namespace Unity::Properties {
+class ConversionRegistry_ConverterKeyComparer;
+}
+namespace Unity::Properties {
+struct ConversionRegistry;
+}
+// Write type traits
+MARK_REF_T(::Unity::Properties::ConversionRegistry_ConverterKeyComparer*);
+MARK_VAL_T(::Unity::Properties::ConversionRegistry);
+DEFINE_IL2CPP_CLASS(::Unity::Properties::ConversionRegistry_ConverterKeyComparer*, "Unity.Properties", "ConversionRegistry/ConverterKeyComparer");
+DEFINE_IL2CPP_CLASS(::Unity::Properties::ConversionRegistry, "Unity.Properties", "ConversionRegistry");
+// [VisibleToOtherModules(new[] { "UnityEngine.UIElementsModule" })]
+// [IsReadOnly]
+// Dependencies 
+namespace Unity::Properties {
+// Is value type: true
+// CS Name: Unity.Properties.ConversionRegistry
+struct CORDL_TYPE ConversionRegistry {
+public:
+// Declarations
+using ConverterKey = ::GlobalNamespace::ConversionRegistry_ConverterKey;
+
+using ConverterKeyComparer = ::Unity::Properties::ConversionRegistry_ConverterKeyComparer;
+
+/// @brief Field Comparer, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_Comparer, put=setStaticF_Comparer)) ::Unity::Properties::ConversionRegistry_ConverterKeyComparer*  Comparer;
+
+/// @brief Convert operator to "::System::Collections::Generic::IEqualityComparer_1<::Unity::Properties::ConversionRegistry>"
+constexpr operator  ::System::Collections::Generic::IEqualityComparer_1<::Unity::Properties::ConversionRegistry>*() ;
+
+/// @brief Method Create, addr 0xb69858c, size 0xb4, virtual false, abstract: false, final false
+static inline ::Unity::Properties::ConversionRegistry Create() ;
+
+/// @brief Method Equals, addr 0xb69889c, size 0xc, virtual true, abstract: false, final true
+inline bool Equals(::Unity::Properties::ConversionRegistry  x, ::Unity::Properties::ConversionRegistry  y) ;
+
+/// @brief Method GetConverter, addr 0xb69875c, size 0xa8, virtual false, abstract: false, final false
+inline ::System::Delegate* GetConverter(::System::Type*  source, ::System::Type*  destination) ;
+
+/// @brief Method GetHashCode, addr 0xb6988a8, size 0x20, virtual true, abstract: false, final true
+inline int32_t GetHashCode(::Unity::Properties::ConversionRegistry  obj) ;
+
+/// @brief Method Register, addr 0xb698640, size 0xec, virtual false, abstract: false, final false
+inline void Register(::System::Type*  source, ::System::Type*  destination, ::System::Delegate*  converter) ;
+
+/// @brief Method TryGetConverter, addr 0xb698804, size 0x98, virtual false, abstract: false, final false
+inline bool TryGetConverter(::System::Type*  source, ::System::Type*  destination, ::by_ref<::System::Delegate*>  converter) ;
+
+/// @brief Method .ctor, addr 0xb698584, size 0x8, virtual false, abstract: false, final false
+inline void _ctor(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::ConversionRegistry_ConverterKey,::System::Delegate*>*  storage) ;
+
+static inline ::Unity::Properties::ConversionRegistry_ConverterKeyComparer* getStaticF_Comparer() ;
+
+/// @brief Convert to "::System::Collections::Generic::IEqualityComparer_1<::Unity::Properties::ConversionRegistry>"
+constexpr ::System::Collections::Generic::IEqualityComparer_1<::Unity::Properties::ConversionRegistry>* i___System__Collections__Generic__IEqualityComparer_1___Unity__Properties__ConversionRegistry_() ;
+
+static inline void setStaticF_Comparer(::Unity::Properties::ConversionRegistry_ConverterKeyComparer*  value) ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr ConversionRegistry() ;
+
+// Ctor Parameters [CppParam { name: "m_Converters", ty: "::System::Collections::Generic::Dictionary_2<::GlobalNamespace::ConversionRegistry_ConverterKey,::System::Delegate*>*", modifiers: "", def_value: None, comment: None }]
+constexpr ConversionRegistry(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::ConversionRegistry_ConverterKey,::System::Delegate*>*  m_Converters) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{29508};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x8};
+
+/// @brief Field m_Converters, offset: 0x0, size: 0x8, def value: None
+ ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::ConversionRegistry_ConverterKey,::System::Delegate*>*  m_Converters;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::Unity::Properties::ConversionRegistry, m_Converters) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::Unity::Properties::ConversionRegistry) == 0x8, "Size mismatch!");
+
+} // namespace end def Unity::Properties
+// Dependencies System.Object
+namespace Unity::Properties {
+// Is value type: false
+// CS Name: Unity.Properties.ConversionRegistry/ConverterKeyComparer
+class CORDL_TYPE ConversionRegistry_ConverterKeyComparer : public ::System::Object {
+public:
+// Declarations
+/// @brief Convert operator to "::System::Collections::Generic::IEqualityComparer_1<::GlobalNamespace::ConversionRegistry_ConverterKey>"
+constexpr operator  ::System::Collections::Generic::IEqualityComparer_1<::GlobalNamespace::ConversionRegistry_ConverterKey>*() noexcept;
+
+/// @brief Method Equals, addr 0xb69894c, size 0x88, virtual true, abstract: false, final true
+inline bool Equals(::GlobalNamespace::ConversionRegistry_ConverterKey  x, ::GlobalNamespace::ConversionRegistry_ConverterKey  y) ;
+
+/// @brief Method GetHashCode, addr 0xb6989d4, size 0xb4, virtual true, abstract: false, final true
+inline int32_t GetHashCode(::GlobalNamespace::ConversionRegistry_ConverterKey  obj) ;
+
+static inline ::Unity::Properties::ConversionRegistry_ConverterKeyComparer* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb698944, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Convert to "::System::Collections::Generic::IEqualityComparer_1<::GlobalNamespace::ConversionRegistry_ConverterKey>"
+constexpr ::System::Collections::Generic::IEqualityComparer_1<::GlobalNamespace::ConversionRegistry_ConverterKey>* i___System__Collections__Generic__IEqualityComparer_1___GlobalNamespace__ConversionRegistry_ConverterKey_() noexcept;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ConversionRegistry_ConverterKeyComparer() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ConversionRegistry_ConverterKeyComparer", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ConversionRegistry_ConverterKeyComparer(ConversionRegistry_ConverterKeyComparer && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ConversionRegistry_ConverterKeyComparer", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ConversionRegistry_ConverterKeyComparer(ConversionRegistry_ConverterKeyComparer const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{29506};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Unity::Properties::ConversionRegistry_ConverterKeyComparer) == 0x10, "Size mismatch!");
+
+} // namespace end def Unity::Properties

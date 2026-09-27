@@ -1,0 +1,93 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/BindingInfo.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/UIElements/zzzz__BindingId_def.hpp"
+#include <cstddef>
+CORDL_MODULE_EXPORT(BindingInfo)
+namespace Unity::Properties {
+struct PropertyPath;
+}
+namespace UnityEngine::UIElements {
+struct BindingId;
+}
+namespace UnityEngine::UIElements {
+class Binding;
+}
+namespace UnityEngine::UIElements {
+class DataBindingManager_BindingData;
+}
+namespace UnityEngine::UIElements {
+class VisualElement;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+struct BindingInfo;
+}
+// Write type traits
+MARK_VAL_T(::UnityEngine::UIElements::BindingInfo);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::BindingInfo, "UnityEngine.UIElements", "BindingInfo");
+// [IsReadOnly]
+// Dependencies UnityEngine.UIElements.BindingId
+namespace UnityEngine::UIElements {
+// Is value type: true
+// CS Name: UnityEngine.UIElements.BindingInfo
+struct CORDL_TYPE BindingInfo {
+public:
+// Declarations
+ __declspec(property(get=get_binding)) ::UnityEngine::UIElements::Binding*  binding;
+
+/// @brief Method FromBindingData, addr 0xb72ad64, size 0x94, virtual false, abstract: false, final false
+static inline ::UnityEngine::UIElements::BindingInfo FromBindingData(/* [IsReadOnly] */ ::by_ref<::UnityEngine::UIElements::DataBindingManager_BindingData*>  bindingData) ;
+
+/// @brief Method FromRequest, addr 0xb72ac6c, size 0xf8, virtual false, abstract: false, final false
+static inline ::UnityEngine::UIElements::BindingInfo FromRequest(::UnityEngine::UIElements::VisualElement*  target, /* [IsReadOnly] */ ::by_ref<::Unity::Properties::PropertyPath>  targetPath, ::UnityEngine::UIElements::Binding*  binding) ;
+
+/// @brief Method .ctor, addr 0xb72ac10, size 0x5c, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::UIElements::VisualElement*  targetElement, /* [IsReadOnly] */ ::by_ref<::UnityEngine::UIElements::BindingId>  bindingId, ::UnityEngine::UIElements::Binding*  binding) ;
+
+/// [CompilerGenerated]
+/// @brief Method get_binding, addr 0xb72ac08, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::UIElements::Binding* get_binding() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr BindingInfo() ;
+
+// Ctor Parameters [CppParam { name: "_targetElement_k__BackingField", ty: "::UnityEngine::UIElements::VisualElement*", modifiers: "", def_value: None, comment: None }, CppParam { name: "_bindingId_k__BackingField", ty: "::UnityEngine::UIElements::BindingId", modifiers: "", def_value: None, comment: None }, CppParam { name: "_binding_k__BackingField", ty: "::UnityEngine::UIElements::Binding*", modifiers: "", def_value: None, comment: None }]
+constexpr BindingInfo(::UnityEngine::UIElements::VisualElement*  _targetElement_k__BackingField, ::UnityEngine::UIElements::BindingId  _bindingId_k__BackingField, ::UnityEngine::UIElements::Binding*  _binding_k__BackingField) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7211};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0xa8};
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <targetElement>k__BackingField, offset: 0x0, size: 0x8, def value: None
+ ::UnityEngine::UIElements::VisualElement*  _targetElement_k__BackingField;
+
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// [CompilerGenerated]
+/// @brief Field <bindingId>k__BackingField, offset: 0x8, size: 0x98, def value: None
+ ::UnityEngine::UIElements::BindingId  _bindingId_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <binding>k__BackingField, offset: 0xa0, size: 0x8, def value: None
+ ::UnityEngine::UIElements::Binding*  _binding_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::UIElements::BindingInfo, _targetElement_k__BackingField) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::BindingInfo, _bindingId_k__BackingField) == 0x8, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::BindingInfo, _binding_k__BackingField) == 0xa0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::UIElements::BindingInfo) == 0xa8, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

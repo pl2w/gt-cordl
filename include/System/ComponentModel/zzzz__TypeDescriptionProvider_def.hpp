@@ -1,0 +1,187 @@
+#pragma once
+// IWYU pragma private; include "System/ComponentModel/TypeDescriptionProvider.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/ComponentModel/zzzz__CustomTypeDescriptor_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(TypeDescriptionProvider)
+namespace System::Collections {
+class IDictionary;
+}
+namespace System::ComponentModel {
+class ICustomTypeDescriptor;
+}
+namespace System::ComponentModel {
+class IExtenderProvider;
+}
+namespace System::ComponentModel {
+class TypeDescriptionProvider_EmptyCustomTypeDescriptor;
+}
+namespace System {
+class IServiceProvider;
+}
+namespace System {
+class Object;
+}
+namespace System {
+class Type;
+}
+// Forward declare root types
+namespace System::ComponentModel {
+class TypeDescriptionProvider;
+}
+namespace System::ComponentModel {
+class TypeDescriptionProvider_EmptyCustomTypeDescriptor;
+}
+// Write type traits
+MARK_REF_T(::System::ComponentModel::TypeDescriptionProvider*);
+MARK_REF_T(::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor*);
+DEFINE_IL2CPP_CLASS(::System::ComponentModel::TypeDescriptionProvider*, "System.ComponentModel", "TypeDescriptionProvider");
+DEFINE_IL2CPP_CLASS(::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor*, "System.ComponentModel", "TypeDescriptionProvider/EmptyCustomTypeDescriptor");
+// Dependencies System.Object
+namespace System::ComponentModel {
+// Is value type: false
+// CS Name: System.ComponentModel.TypeDescriptionProvider
+class CORDL_TYPE TypeDescriptionProvider : public ::System::Object {
+public:
+// Declarations
+using EmptyCustomTypeDescriptor = ::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor;
+
+/// @brief Field _emptyDescriptor, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get__emptyDescriptor, put=__cordl_internal_set__emptyDescriptor)) ::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor*  _emptyDescriptor;
+
+/// @brief Field _parent, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get__parent, put=__cordl_internal_set__parent)) ::System::ComponentModel::TypeDescriptionProvider*  _parent;
+
+/// @brief Method CreateInstance, addr 0xad6aa28, size 0xc0, virtual true, abstract: false, final false
+inline ::System::Object* CreateInstance(::System::IServiceProvider*  provider, ::System::Type*  objectType, ::ArrayW<::System::Type*>  argTypes, ::ArrayW<::System::Object*>  args) ;
+
+/// @brief Method GetCache, addr 0xad6aae8, size 0x18, virtual true, abstract: false, final false
+inline ::System::Collections::IDictionary* GetCache(::System::Object*  instance) ;
+
+/// @brief Method GetExtendedTypeDescriptor, addr 0xad6ab00, size 0x94, virtual true, abstract: false, final false
+inline ::System::ComponentModel::ICustomTypeDescriptor* GetExtendedTypeDescriptor(::System::Object*  instance) ;
+
+/// @brief Method GetExtenderProviders, addr 0xad6ab9c, size 0x108, virtual true, abstract: false, final false
+inline ::ArrayW<::System::ComponentModel::IExtenderProvider*> GetExtenderProviders(::System::Object*  instance) ;
+
+/// @brief Method GetFullComponentName, addr 0xad6aca4, size 0xd4, virtual true, abstract: false, final false
+inline ::StringW GetFullComponentName(::System::Object*  component) ;
+
+/// @brief Method GetReflectionType, addr 0xad6ae10, size 0x88, virtual false, abstract: false, final false
+inline ::System::Type* GetReflectionType(::System::Object*  instance) ;
+
+/// @brief Method GetReflectionType, addr 0xad6ae00, size 0x10, virtual false, abstract: false, final false
+inline ::System::Type* GetReflectionType(::System::Type*  objectType) ;
+
+/// @brief Method GetReflectionType, addr 0xad6ae98, size 0x1c, virtual true, abstract: false, final false
+inline ::System::Type* GetReflectionType(::System::Type*  objectType, ::System::Object*  instance) ;
+
+/// @brief Method GetRuntimeType, addr 0xad6aeb4, size 0x144, virtual true, abstract: false, final false
+inline ::System::Type* GetRuntimeType(::System::Type*  reflectionType) ;
+
+/// @brief Method GetTypeDescriptor, addr 0xad6ad78, size 0x88, virtual false, abstract: false, final false
+inline ::System::ComponentModel::ICustomTypeDescriptor* GetTypeDescriptor(::System::Object*  instance) ;
+
+/// @brief Method GetTypeDescriptor, addr 0xad6aff8, size 0x10, virtual false, abstract: false, final false
+inline ::System::ComponentModel::ICustomTypeDescriptor* GetTypeDescriptor(::System::Type*  objectType) ;
+
+/// @brief Method GetTypeDescriptor, addr 0xad6b008, size 0xa8, virtual true, abstract: false, final false
+inline ::System::ComponentModel::ICustomTypeDescriptor* GetTypeDescriptor(::System::Type*  objectType, ::System::Object*  instance) ;
+
+/// @brief Method IsSupportedType, addr 0xad6b0b0, size 0xb8, virtual true, abstract: false, final false
+inline bool IsSupportedType(::System::Type*  type) ;
+
+static inline ::System::ComponentModel::TypeDescriptionProvider* New_ctor() ;
+
+static inline ::System::ComponentModel::TypeDescriptionProvider* New_ctor(::System::ComponentModel::TypeDescriptionProvider*  parent) ;
+
+constexpr ::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor* const& __cordl_internal_get__emptyDescriptor() const;
+
+constexpr ::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor*& __cordl_internal_get__emptyDescriptor() ;
+
+constexpr ::System::ComponentModel::TypeDescriptionProvider* const& __cordl_internal_get__parent() const;
+
+constexpr ::System::ComponentModel::TypeDescriptionProvider*& __cordl_internal_get__parent() ;
+
+constexpr void __cordl_internal_set__emptyDescriptor(::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor*  value) ;
+
+constexpr void __cordl_internal_set__parent(::System::ComponentModel::TypeDescriptionProvider*  value) ;
+
+/// @brief Method .ctor, addr 0xad6a9f0, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xad6a9f8, size 0x30, virtual false, abstract: false, final false
+inline void _ctor(::System::ComponentModel::TypeDescriptionProvider*  parent) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr TypeDescriptionProvider() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "TypeDescriptionProvider", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+TypeDescriptionProvider(TypeDescriptionProvider && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "TypeDescriptionProvider", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+TypeDescriptionProvider(TypeDescriptionProvider const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10236};
+
+/// @brief Field _parent, offset: 0x10, size: 0x8, def value: None
+ ::System::ComponentModel::TypeDescriptionProvider*  ____parent;
+
+/// @brief Field _emptyDescriptor, offset: 0x18, size: 0x8, def value: None
+ ::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor*  ____emptyDescriptor;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::ComponentModel::TypeDescriptionProvider, ____parent) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::ComponentModel::TypeDescriptionProvider, ____emptyDescriptor) == 0x18, "Offset mismatch!");
+
+static_assert(sizeof(::System::ComponentModel::TypeDescriptionProvider) == 0x20, "Size mismatch!");
+
+} // namespace end def System::ComponentModel
+// Dependencies System.ComponentModel.CustomTypeDescriptor
+namespace System::ComponentModel {
+// Is value type: false
+// CS Name: System.ComponentModel.TypeDescriptionProvider/EmptyCustomTypeDescriptor
+class CORDL_TYPE TypeDescriptionProvider_EmptyCustomTypeDescriptor : public ::System::ComponentModel::CustomTypeDescriptor {
+public:
+// Declarations
+static inline ::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xad6ab94, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr TypeDescriptionProvider_EmptyCustomTypeDescriptor() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "TypeDescriptionProvider_EmptyCustomTypeDescriptor", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+TypeDescriptionProvider_EmptyCustomTypeDescriptor(TypeDescriptionProvider_EmptyCustomTypeDescriptor && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "TypeDescriptionProvider_EmptyCustomTypeDescriptor", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+TypeDescriptionProvider_EmptyCustomTypeDescriptor(TypeDescriptionProvider_EmptyCustomTypeDescriptor const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10235};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor) == 0x18, "Size mismatch!");
+
+} // namespace end def System::ComponentModel

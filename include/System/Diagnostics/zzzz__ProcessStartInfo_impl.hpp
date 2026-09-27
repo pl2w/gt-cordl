@@ -1,0 +1,889 @@
+#pragma once
+// IWYU pragma private; include "System/Diagnostics/ProcessStartInfo.hpp"
+#include "System/Diagnostics/zzzz__ProcessWindowStyle_impl.hpp"
+#include "System/zzzz__IntPtr_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/Diagnostics/zzzz__ProcessStartInfo_def.hpp"
+#include "System/Collections/Generic/zzzz__IDictionary_2_def.hpp"
+#include "System/Collections/ObjectModel/zzzz__Collection_1_def.hpp"
+#include "System/Collections/Specialized/zzzz__StringDictionary_def.hpp"
+#include "System/Diagnostics/zzzz__ProcessWindowStyle_def.hpp"
+#include "System/Diagnostics/zzzz__Process_def.hpp"
+#include "System/Security/zzzz__SecureString_def.hpp"
+#include "System/Text/zzzz__Encoding_def.hpp"
+#include "System/zzzz__WeakReference_def.hpp"
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::_ctor)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xad2e950;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(::System::Diagnostics::Process*)>(&::System::Diagnostics::ProcessStartInfo::_ctor)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xad2b794;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Diagnostics::Process*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_ArgumentList
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::ObjectModel::Collection_1<::StringW>* (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_ArgumentList)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xad2e860;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_ArgumentList", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_Arguments
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_Arguments)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xad2e8e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_Arguments", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.set_Arguments
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(::StringW)>(&::System::Diagnostics::ProcessStartInfo::set_Arguments)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e960;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_Arguments", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_EnvironmentVariables
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Specialized::StringDictionary* (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_EnvironmentVariables)> {
+  constexpr static std::size_t size = 0x4dc;
+  constexpr static std::size_t addrs = 0xad2e384;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_EnvironmentVariables", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_RedirectStandardInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_RedirectStandardInput)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e968;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_RedirectStandardInput", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.set_RedirectStandardInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(bool)>(&::System::Diagnostics::ProcessStartInfo::set_RedirectStandardInput)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e970;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_RedirectStandardInput", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_RedirectStandardOutput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_RedirectStandardOutput)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e978;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_RedirectStandardOutput", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.set_RedirectStandardOutput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(bool)>(&::System::Diagnostics::ProcessStartInfo::set_RedirectStandardOutput)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e980;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_RedirectStandardOutput", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_RedirectStandardError
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_RedirectStandardError)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e988;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_RedirectStandardError", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.set_RedirectStandardError
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(bool)>(&::System::Diagnostics::ProcessStartInfo::set_RedirectStandardError)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e990;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_RedirectStandardError", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_StandardErrorEncoding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Text::Encoding* (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_StandardErrorEncoding)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e998;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_StandardErrorEncoding", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_StandardOutputEncoding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Text::Encoding* (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_StandardOutputEncoding)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e9a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_StandardOutputEncoding", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_UseShellExecute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_UseShellExecute)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e9a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_UseShellExecute", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.set_UseShellExecute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(bool)>(&::System::Diagnostics::ProcessStartInfo::set_UseShellExecute)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e9b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_UseShellExecute", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_UserName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_UserName)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xad2e0a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_UserName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_Password
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Security::SecureString* (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_Password)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e9b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_Password", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_Domain
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_Domain)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xad2e92c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_Domain", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_LoadUserProfile
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_LoadUserProfile)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e9c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_LoadUserProfile", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_FileName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_FileName)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xad2c694;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_FileName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.set_FileName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(::StringW)>(&::System::Diagnostics::ProcessStartInfo::set_FileName)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2e9c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_FileName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_WorkingDirectory
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_WorkingDirectory)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xad2e908;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_WorkingDirectory", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.set_WindowStyle
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Diagnostics::ProcessStartInfo::*)(::System::Diagnostics::ProcessWindowStyle)>(&::System::Diagnostics::ProcessStartInfo::set_WindowStyle)> {
+  constexpr static std::size_t size = 0x150;
+  constexpr static std::size_t addrs = 0xad2e9d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_WindowStyle", {}, {::i2c::type_of<::System::Diagnostics::ProcessWindowStyle>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_HaveEnvVars
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_HaveEnvVars)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xad2e374;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_HaveEnvVars", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Diagnostics::ProcessStartInfo.get_StandardInputEncoding
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Text::Encoding* (::System::Diagnostics::ProcessStartInfo::*)()>(&::System::Diagnostics::ProcessStartInfo::get_StandardInputEncoding)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xad2eb20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_StandardInputEncoding", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_fileName()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___fileName;
+}
+constexpr ::StringW const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_fileName() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___fileName;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_fileName(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___fileName = value;
+}
+constexpr ::StringW& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_arguments()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___arguments;
+}
+constexpr ::StringW const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_arguments() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___arguments;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_arguments(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___arguments = value;
+}
+constexpr ::StringW& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_directory()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___directory;
+}
+constexpr ::StringW const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_directory() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___directory;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_directory(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___directory = value;
+}
+constexpr ::StringW& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_verb()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___verb;
+}
+constexpr ::StringW const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_verb() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___verb;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_verb(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___verb = value;
+}
+constexpr ::System::Diagnostics::ProcessWindowStyle& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_windowStyle()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___windowStyle;
+}
+constexpr ::System::Diagnostics::ProcessWindowStyle const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_windowStyle() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___windowStyle;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_windowStyle(::System::Diagnostics::ProcessWindowStyle  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___windowStyle = value;
+}
+constexpr bool& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_errorDialog()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___errorDialog;
+}
+constexpr bool const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_errorDialog() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___errorDialog;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_errorDialog(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___errorDialog = value;
+}
+constexpr ::System::IntPtr& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_errorDialogParentHandle()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___errorDialogParentHandle;
+}
+constexpr ::System::IntPtr const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_errorDialogParentHandle() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___errorDialogParentHandle;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_errorDialogParentHandle(::System::IntPtr  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___errorDialogParentHandle = value;
+}
+constexpr bool& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_useShellExecute()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___useShellExecute;
+}
+constexpr bool const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_useShellExecute() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___useShellExecute;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_useShellExecute(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___useShellExecute = value;
+}
+constexpr ::StringW& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_userName()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___userName;
+}
+constexpr ::StringW const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_userName() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___userName;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_userName(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___userName = value;
+}
+constexpr ::StringW& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_domain()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___domain;
+}
+constexpr ::StringW const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_domain() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___domain;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_domain(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___domain = value;
+}
+constexpr ::System::Security::SecureString*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_password()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___password;
+}
+constexpr ::System::Security::SecureString* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_password() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___password;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_password(::System::Security::SecureString*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___password = value;
+}
+constexpr ::StringW& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_passwordInClearText()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___passwordInClearText;
+}
+constexpr ::StringW const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_passwordInClearText() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___passwordInClearText;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_passwordInClearText(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___passwordInClearText = value;
+}
+constexpr bool& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_loadUserProfile()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___loadUserProfile;
+}
+constexpr bool const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_loadUserProfile() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___loadUserProfile;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_loadUserProfile(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___loadUserProfile = value;
+}
+constexpr bool& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_redirectStandardInput()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___redirectStandardInput;
+}
+constexpr bool const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_redirectStandardInput() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___redirectStandardInput;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_redirectStandardInput(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___redirectStandardInput = value;
+}
+constexpr bool& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_redirectStandardOutput()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___redirectStandardOutput;
+}
+constexpr bool const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_redirectStandardOutput() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___redirectStandardOutput;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_redirectStandardOutput(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___redirectStandardOutput = value;
+}
+constexpr bool& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_redirectStandardError()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___redirectStandardError;
+}
+constexpr bool const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_redirectStandardError() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___redirectStandardError;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_redirectStandardError(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___redirectStandardError = value;
+}
+constexpr ::System::Text::Encoding*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_standardOutputEncoding()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___standardOutputEncoding;
+}
+constexpr ::System::Text::Encoding* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_standardOutputEncoding() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___standardOutputEncoding;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_standardOutputEncoding(::System::Text::Encoding*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___standardOutputEncoding = value;
+}
+constexpr ::System::Text::Encoding*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_standardErrorEncoding()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___standardErrorEncoding;
+}
+constexpr ::System::Text::Encoding* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_standardErrorEncoding() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___standardErrorEncoding;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_standardErrorEncoding(::System::Text::Encoding*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___standardErrorEncoding = value;
+}
+constexpr bool& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_createNoWindow()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___createNoWindow;
+}
+constexpr bool const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_createNoWindow() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___createNoWindow;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_createNoWindow(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___createNoWindow = value;
+}
+constexpr ::System::WeakReference*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_weakParentProcess()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___weakParentProcess;
+}
+constexpr ::System::WeakReference* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_weakParentProcess() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___weakParentProcess;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_weakParentProcess(::System::WeakReference*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___weakParentProcess = value;
+}
+constexpr ::System::Collections::Specialized::StringDictionary*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_environmentVariables()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___environmentVariables;
+}
+constexpr ::System::Collections::Specialized::StringDictionary* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_environmentVariables() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___environmentVariables;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_environmentVariables(::System::Collections::Specialized::StringDictionary*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___environmentVariables = value;
+}
+constexpr ::System::Collections::ObjectModel::Collection_1<::StringW>*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get__argumentList()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____argumentList;
+}
+constexpr ::System::Collections::ObjectModel::Collection_1<::StringW>* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get__argumentList() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____argumentList;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set__argumentList(::System::Collections::ObjectModel::Collection_1<::StringW>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____argumentList = value;
+}
+constexpr ::System::Collections::Generic::IDictionary_2<::StringW,::StringW>*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_environment()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___environment;
+}
+constexpr ::System::Collections::Generic::IDictionary_2<::StringW,::StringW>* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get_environment() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___environment;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set_environment(::System::Collections::Generic::IDictionary_2<::StringW,::StringW>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___environment = value;
+}
+constexpr ::System::Text::Encoding*& System::Diagnostics::ProcessStartInfo::__cordl_internal_get__StandardInputEncoding_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____StandardInputEncoding_k__BackingField;
+}
+constexpr ::System::Text::Encoding* const& System::Diagnostics::ProcessStartInfo::__cordl_internal_get__StandardInputEncoding_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____StandardInputEncoding_k__BackingField;
+}
+constexpr void System::Diagnostics::ProcessStartInfo::__cordl_internal_set__StandardInputEncoding_k__BackingField(::System::Text::Encoding*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____StandardInputEncoding_k__BackingField = value;
+}
+inline void System::Diagnostics::ProcessStartInfo::setStaticF_empty(::ArrayW<::StringW>  value)  {
+::cordl_internals::setStaticField<::ArrayW<::StringW>, "empty", ::System::Diagnostics::ProcessStartInfo*>(std::forward<::ArrayW<::StringW>>(value));
+}
+inline ::ArrayW<::StringW> System::Diagnostics::ProcessStartInfo::getStaticF_empty()  {
+return ::cordl_internals::getStaticField<::ArrayW<::StringW>, "empty", ::System::Diagnostics::ProcessStartInfo*>();
+}
+inline void System::Diagnostics::ProcessStartInfo::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::_ctor(::System::Diagnostics::Process*  parent)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::Diagnostics::Process*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, parent);
+}
+inline ::System::Collections::ObjectModel::Collection_1<::StringW>* System::Diagnostics::ProcessStartInfo::get_ArgumentList()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_ArgumentList", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::ObjectModel::Collection_1<::StringW>*>(this, ___internal_method);
+}
+inline ::StringW System::Diagnostics::ProcessStartInfo::get_Arguments()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_Arguments", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::set_Arguments(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_Arguments", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Collections::Specialized::StringDictionary* System::Diagnostics::ProcessStartInfo::get_EnvironmentVariables()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_EnvironmentVariables", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Specialized::StringDictionary*>(this, ___internal_method);
+}
+inline bool System::Diagnostics::ProcessStartInfo::get_RedirectStandardInput()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_RedirectStandardInput", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::set_RedirectStandardInput(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_RedirectStandardInput", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool System::Diagnostics::ProcessStartInfo::get_RedirectStandardOutput()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_RedirectStandardOutput", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::set_RedirectStandardOutput(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_RedirectStandardOutput", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool System::Diagnostics::ProcessStartInfo::get_RedirectStandardError()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_RedirectStandardError", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::set_RedirectStandardError(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_RedirectStandardError", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::System::Text::Encoding* System::Diagnostics::ProcessStartInfo::get_StandardErrorEncoding()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_StandardErrorEncoding", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Text::Encoding*>(this, ___internal_method);
+}
+inline ::System::Text::Encoding* System::Diagnostics::ProcessStartInfo::get_StandardOutputEncoding()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_StandardOutputEncoding", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Text::Encoding*>(this, ___internal_method);
+}
+inline bool System::Diagnostics::ProcessStartInfo::get_UseShellExecute()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_UseShellExecute", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::set_UseShellExecute(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_UseShellExecute", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::StringW System::Diagnostics::ProcessStartInfo::get_UserName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_UserName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::System::Security::SecureString* System::Diagnostics::ProcessStartInfo::get_Password()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_Password", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Security::SecureString*>(this, ___internal_method);
+}
+inline ::StringW System::Diagnostics::ProcessStartInfo::get_Domain()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_Domain", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline bool System::Diagnostics::ProcessStartInfo::get_LoadUserProfile()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_LoadUserProfile", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::StringW System::Diagnostics::ProcessStartInfo::get_FileName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_FileName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::set_FileName(::StringW  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_FileName", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::StringW System::Diagnostics::ProcessStartInfo::get_WorkingDirectory()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_WorkingDirectory", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void System::Diagnostics::ProcessStartInfo::set_WindowStyle(::System::Diagnostics::ProcessWindowStyle  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"set_WindowStyle", {}, {::i2c::type_of<::System::Diagnostics::ProcessWindowStyle>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool System::Diagnostics::ProcessStartInfo::get_HaveEnvVars()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_HaveEnvVars", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::System::Text::Encoding* System::Diagnostics::ProcessStartInfo::get_StandardInputEncoding()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Diagnostics::ProcessStartInfo*>(),
+                        {"get_StandardInputEncoding", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Text::Encoding*>(this, ___internal_method);
+}
+inline ::System::Diagnostics::ProcessStartInfo* System::Diagnostics::ProcessStartInfo::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Diagnostics::ProcessStartInfo*>());
+}
+inline ::System::Diagnostics::ProcessStartInfo* System::Diagnostics::ProcessStartInfo::New_ctor(::System::Diagnostics::Process*  parent)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Diagnostics::ProcessStartInfo*>(parent));
+}
+// Ctor Parameters []
+constexpr ::System::Diagnostics::ProcessStartInfo::ProcessStartInfo()   {
+}

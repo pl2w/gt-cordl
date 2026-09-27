@@ -1,0 +1,52 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/ObjectExtensions.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(ObjectExtensions)
+namespace UnityEngine {
+class Object;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class ObjectExtensions;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::ObjectExtensions*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::ObjectExtensions*, "", "ObjectExtensions");
+// [Extension]
+// Dependencies System.Object
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: ObjectExtensions
+class CORDL_TYPE ObjectExtensions : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method Destroy, addr 0x567438c, size 0x58, virtual false, abstract: false, final false
+static inline void Destroy(::UnityEngine::Object*  target) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr ObjectExtensions() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "ObjectExtensions", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+ObjectExtensions(ObjectExtensions && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "ObjectExtensions", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+ObjectExtensions(ObjectExtensions const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{825};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::ObjectExtensions) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

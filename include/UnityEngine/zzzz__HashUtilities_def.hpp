@@ -1,0 +1,62 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/HashUtilities.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+CORDL_MODULE_EXPORT(HashUtilities)
+namespace UnityEngine {
+struct Hash128;
+}
+namespace UnityEngine {
+struct Matrix4x4;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+// Forward declare root types
+namespace UnityEngine {
+class HashUtilities;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::HashUtilities*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::HashUtilities*, "UnityEngine", "HashUtilities");
+// Dependencies System.Object
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.HashUtilities
+class CORDL_TYPE HashUtilities : public ::System::Object {
+public:
+// Declarations
+/// @brief Method AppendHash, addr 0xb5c40b4, size 0xc, virtual false, abstract: false, final false
+static inline void AppendHash(::by_ref<::UnityEngine::Hash128>  inHash, ::by_ref<::UnityEngine::Hash128>  outHash) ;
+
+/// @brief Method QuantisedMatrixHash, addr 0xb5c4100, size 0xd0, virtual false, abstract: false, final false
+static inline void QuantisedMatrixHash(::by_ref<::UnityEngine::Matrix4x4>  value, ::by_ref<::UnityEngine::Hash128>  hash) ;
+
+/// @brief Method QuantisedVectorHash, addr 0xb5c42bc, size 0x120, virtual false, abstract: false, final false
+static inline void QuantisedVectorHash(::by_ref<::UnityEngine::Vector3>  value, ::by_ref<::UnityEngine::Hash128>  hash) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr HashUtilities() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "HashUtilities", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+HashUtilities(HashUtilities && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "HashUtilities", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+HashUtilities(HashUtilities const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{14962};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::HashUtilities) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine

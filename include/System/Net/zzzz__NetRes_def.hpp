@@ -1,0 +1,71 @@
+#pragma once
+// IWYU pragma private; include "System/Net/NetRes.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(NetRes)
+namespace System::Net {
+struct FtpStatusCode;
+}
+namespace System::Net {
+struct HttpStatusCode;
+}
+namespace System::Net {
+struct WebExceptionStatus;
+}
+// Forward declare root types
+namespace System::Net {
+class NetRes;
+}
+// Write type traits
+MARK_REF_T(::System::Net::NetRes*);
+DEFINE_IL2CPP_CLASS(::System::Net::NetRes*, "System.Net", "NetRes");
+// Dependencies System.Object
+namespace System::Net {
+// Is value type: false
+// CS Name: System.Net.NetRes
+class CORDL_TYPE NetRes : public ::System::Object {
+public:
+// Declarations
+/// @brief Method GetWebStatusCodeString, addr 0xac7319c, size 0x1fc, virtual false, abstract: false, final false
+static inline ::StringW GetWebStatusCodeString(::System::Net::FtpStatusCode  statusCode, ::StringW  statusDescription) ;
+
+/// @brief Method GetWebStatusCodeString, addr 0xac72fa0, size 0x1fc, virtual false, abstract: false, final false
+static inline ::StringW GetWebStatusCodeString(::System::Net::HttpStatusCode  statusCode, ::StringW  statusDescription) ;
+
+/// @brief Method GetWebStatusString, addr 0xac72e80, size 0xc0, virtual false, abstract: false, final false
+static inline ::StringW GetWebStatusString(::StringW  Res, ::System::Net::WebExceptionStatus  Status) ;
+
+/// @brief Method GetWebStatusString, addr 0xac72f40, size 0x60, virtual false, abstract: false, final false
+static inline ::StringW GetWebStatusString(::System::Net::WebExceptionStatus  Status) ;
+
+static inline ::System::Net::NetRes* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xac72e78, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr NetRes() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "NetRes", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+NetRes(NetRes && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "NetRes", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+NetRes(NetRes const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{10594};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Net::NetRes) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Net

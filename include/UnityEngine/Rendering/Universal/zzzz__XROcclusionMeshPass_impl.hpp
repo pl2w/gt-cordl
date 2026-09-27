@@ -1,0 +1,273 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/Universal/XROcclusionMeshPass.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/Rendering/RenderGraphModule/zzzz__TextureHandle_impl.hpp"
+#include "UnityEngine/Rendering/Universal/zzzz__ScriptableRenderPass_impl.hpp"
+#include "UnityEngine/Rendering/Universal/zzzz__XROcclusionMeshPass_def.hpp"
+#include "UnityEngine/Experimental/Rendering/zzzz__XRPass_def.hpp"
+#include "UnityEngine/Rendering/RenderGraphModule/zzzz__BaseRenderFunc_2_def.hpp"
+#include "UnityEngine/Rendering/RenderGraphModule/zzzz__RasterGraphContext_def.hpp"
+#include "UnityEngine/Rendering/RenderGraphModule/zzzz__RenderGraph_def.hpp"
+#include "UnityEngine/Rendering/RenderGraphModule/zzzz__TextureHandle_def.hpp"
+#include "UnityEngine/Rendering/Universal/zzzz__RenderPassEvent_def.hpp"
+#include "UnityEngine/Rendering/Universal/zzzz__RenderingData_def.hpp"
+#include "UnityEngine/Rendering/Universal/zzzz__XROcclusionMeshPass_def.hpp"
+#include "UnityEngine/Rendering/zzzz__ContextContainer_def.hpp"
+#include "UnityEngine/Rendering/zzzz__RasterCommandBuffer_def.hpp"
+#include "UnityEngine/Rendering/zzzz__ScriptableRenderContext_def.hpp"
+//  Writing Method size for method: ::UnityEngine::Rendering::Universal::XROcclusionMeshPass._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::Universal::XROcclusionMeshPass::*)(::UnityEngine::Rendering::Universal::RenderPassEvent)>(&::UnityEngine::Rendering::Universal::XROcclusionMeshPass::_ctor)> {
+  constexpr static std::size_t size = 0xf8;
+  constexpr static std::size_t addrs = 0xb287554;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Rendering::Universal::RenderPassEvent>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::Universal::XROcclusionMeshPass.ExecutePass
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::Rendering::RasterCommandBuffer*, ::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*)>(&::UnityEngine::Rendering::Universal::XROcclusionMeshPass::ExecutePass)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xb287654;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(),
+                        {"ExecutePass", {}, {::i2c::type_of<::UnityEngine::Rendering::RasterCommandBuffer*>(), ::i2c::type_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::Universal::XROcclusionMeshPass.Execute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::Universal::XROcclusionMeshPass::*)(::UnityEngine::Rendering::ScriptableRenderContext, ::by_ref<::UnityEngine::Rendering::Universal::RenderingData>)>(&::UnityEngine::Rendering::Universal::XROcclusionMeshPass::Execute)> {
+  constexpr static std::size_t size = 0x104;
+  constexpr static std::size_t addrs = 0xb2876e0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(),
+                    {::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(), 10}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::Universal::XROcclusionMeshPass.Render
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::Universal::XROcclusionMeshPass::*)(::UnityEngine::Rendering::RenderGraphModule::RenderGraph*, ::UnityEngine::Rendering::ContextContainer*, ::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>, ::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>)>(&::UnityEngine::Rendering::Universal::XROcclusionMeshPass::Render)> {
+  constexpr static std::size_t size = 0x624;
+  constexpr static std::size_t addrs = 0xb2877e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(),
+                        {"Render", {}, {::i2c::type_of<::UnityEngine::Rendering::RenderGraphModule::RenderGraph*>(), ::i2c::type_of<::UnityEngine::Rendering::ContextContainer*>(), ::i2c::type_of<::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>>(), ::i2c::type_of<::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*& UnityEngine::Rendering::Universal::XROcclusionMeshPass::__cordl_internal_get_m_PassData()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PassData;
+}
+constexpr ::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData* const& UnityEngine::Rendering::Universal::XROcclusionMeshPass::__cordl_internal_get_m_PassData() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PassData;
+}
+constexpr void UnityEngine::Rendering::Universal::XROcclusionMeshPass::__cordl_internal_set_m_PassData(::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_PassData = value;
+}
+constexpr bool& UnityEngine::Rendering::Universal::XROcclusionMeshPass::__cordl_internal_get_m_IsActiveTargetBackBuffer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IsActiveTargetBackBuffer;
+}
+constexpr bool const& UnityEngine::Rendering::Universal::XROcclusionMeshPass::__cordl_internal_get_m_IsActiveTargetBackBuffer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IsActiveTargetBackBuffer;
+}
+constexpr void UnityEngine::Rendering::Universal::XROcclusionMeshPass::__cordl_internal_set_m_IsActiveTargetBackBuffer(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_IsActiveTargetBackBuffer = value;
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass::_ctor(::UnityEngine::Rendering::Universal::RenderPassEvent  evt)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Rendering::Universal::RenderPassEvent>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, evt);
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass::ExecutePass(::UnityEngine::Rendering::RasterCommandBuffer*  cmd, ::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*  data)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(),
+                        {"ExecutePass", {}, {::i2c::type_of<::UnityEngine::Rendering::RasterCommandBuffer*>(), ::i2c::type_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, cmd, data);
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass::Execute(::UnityEngine::Rendering::ScriptableRenderContext  context, ::by_ref<::UnityEngine::Rendering::Universal::RenderingData>  renderingData)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(), 10}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, context, renderingData);
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass::Render(::UnityEngine::Rendering::RenderGraphModule::RenderGraph*  renderGraph, ::UnityEngine::Rendering::ContextContainer*  frameData, /* [IsReadOnly] */ ::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>  cameraColorAttachment, /* [IsReadOnly] */ ::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>  cameraDepthAttachment)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(),
+                        {"Render", {}, {::i2c::type_of<::UnityEngine::Rendering::RenderGraphModule::RenderGraph*>(), ::i2c::type_of<::UnityEngine::Rendering::ContextContainer*>(), ::i2c::type_of<::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>>(), ::i2c::type_of<::by_ref<::UnityEngine::Rendering::RenderGraphModule::TextureHandle>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, renderGraph, frameData, cameraColorAttachment, cameraDepthAttachment);
+}
+inline ::UnityEngine::Rendering::Universal::XROcclusionMeshPass* UnityEngine::Rendering::Universal::XROcclusionMeshPass::New_ctor(::UnityEngine::Rendering::Universal::RenderPassEvent  evt)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::Rendering::Universal::XROcclusionMeshPass*>(evt));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Rendering::Universal::XROcclusionMeshPass::XROcclusionMeshPass()   {
+}
+//  Writing Method size for method: ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::*)()>(&::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb287e70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c._Render_b__6_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::*)(::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*, ::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext)>(&::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::_Render_b__6_0)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb287e78;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>(),
+                        {"<Render>b__6_0", {}, {::i2c::type_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*>(), ::i2c::type_of<::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::setStaticF___9(::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*, "<>9", ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>(std::forward<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>(value));
+}
+inline ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c* UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::getStaticF___9()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*, "<>9", ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>();
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::setStaticF___9__6_0(::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>*, "<>9__6_0", ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>(std::forward<::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>*>(value));
+}
+inline ::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>* UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::getStaticF___9__6_0()  {
+return ::cordl_internals::getStaticField<::UnityEngine::Rendering::RenderGraphModule::BaseRenderFunc_2<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*,::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>*, "<>9__6_0", ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>();
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::_Render_b__6_0(::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*  data, ::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>(),
+                        {"<Render>b__6_0", {}, {::i2c::type_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*>(), ::i2c::type_of<::UnityEngine::Rendering::RenderGraphModule::RasterGraphContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, data, context);
+}
+inline ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c* UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Rendering::Universal::XROcclusionMeshPass___c::XROcclusionMeshPass___c()   {
+}
+//  Writing Method size for method: ::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::*)()>(&::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb28764c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::Experimental::Rendering::XRPass*& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_xr()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xr;
+}
+constexpr ::UnityEngine::Experimental::Rendering::XRPass* const& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_xr() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xr;
+}
+constexpr void UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_set_xr(::UnityEngine::Experimental::Rendering::XRPass*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___xr = value;
+}
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_cameraColorAttachment()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___cameraColorAttachment;
+}
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_cameraColorAttachment() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___cameraColorAttachment;
+}
+constexpr void UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_set_cameraColorAttachment(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___cameraColorAttachment = value;
+}
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_cameraDepthAttachment()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___cameraDepthAttachment;
+}
+constexpr ::UnityEngine::Rendering::RenderGraphModule::TextureHandle const& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_cameraDepthAttachment() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___cameraDepthAttachment;
+}
+constexpr void UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_set_cameraDepthAttachment(::UnityEngine::Rendering::RenderGraphModule::TextureHandle  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___cameraDepthAttachment = value;
+}
+constexpr bool& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_isActiveTargetBackBuffer()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___isActiveTargetBackBuffer;
+}
+constexpr bool const& UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_get_isActiveTargetBackBuffer() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___isActiveTargetBackBuffer;
+}
+constexpr void UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::__cordl_internal_set_isActiveTargetBackBuffer(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___isActiveTargetBackBuffer = value;
+}
+inline void UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData* UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::Rendering::Universal::XROcclusionMeshPass_PassData::XROcclusionMeshPass_PassData()   {
+}

@@ -1,0 +1,221 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRFace.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__MonoBehaviour_def.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(OVRFace)
+namespace GlobalNamespace {
+struct OVRFaceExpressions_FaceExpression;
+}
+namespace GlobalNamespace {
+class OVRFaceExpressions;
+}
+namespace GlobalNamespace {
+class OVRFace_IMeshWeightsProvider;
+}
+namespace UnityEngine {
+class GameObject;
+}
+namespace UnityEngine {
+class SkinnedMeshRenderer;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class OVRFace;
+}
+namespace GlobalNamespace {
+class OVRFace_IMeshWeightsProvider;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::OVRFace*);
+MARK_REF_T(::GlobalNamespace::OVRFace_IMeshWeightsProvider*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OVRFace*, "", "OVRFace");
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OVRFace_IMeshWeightsProvider*, "", "OVRFace/IMeshWeightsProvider");
+// [RequireComponent(typeof(UnityEngine.SkinnedMeshRenderer))]
+// [HelpURL("https://developer.oculus.com/documentation/unity/move-face-tracking/")]
+// [Feature((Meta.XR.Util.Feature)3)]
+// Dependencies UnityEngine.MonoBehaviour
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OVRFace
+class CORDL_TYPE OVRFace : public ::UnityEngine::MonoBehaviour {
+public:
+// Declarations
+using IMeshWeightsProvider = ::GlobalNamespace::OVRFace_IMeshWeightsProvider;
+
+ __declspec(property(get=get_BlendShapeStrengthMultiplier, put=set_BlendShapeStrengthMultiplier)) float_t  BlendShapeStrengthMultiplier;
+
+ __declspec(property(get=get_FaceExpressions, put=set_FaceExpressions)) ::UnityW<::GlobalNamespace::OVRFaceExpressions>  FaceExpressions;
+
+ __declspec(property(get=get_SkinnedMesh)) ::UnityW<::UnityEngine::SkinnedMeshRenderer>  SkinnedMesh;
+
+/// @brief Field _blendShapeStrengthMultiplier, offset 0x28, size 0x4 
+ __declspec(property(get=__cordl_internal_get__blendShapeStrengthMultiplier, put=__cordl_internal_set__blendShapeStrengthMultiplier)) float_t  _blendShapeStrengthMultiplier;
+
+/// @brief Field _faceExpressions, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__faceExpressions, put=__cordl_internal_set__faceExpressions)) ::UnityW<::GlobalNamespace::OVRFaceExpressions>  _faceExpressions;
+
+/// @brief Field _meshWeightsProvider, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get__meshWeightsProvider, put=__cordl_internal_set__meshWeightsProvider)) ::GlobalNamespace::OVRFace_IMeshWeightsProvider*  _meshWeightsProvider;
+
+/// @brief Field _meshWeightsProviderObject, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get__meshWeightsProviderObject, put=__cordl_internal_set__meshWeightsProviderObject)) ::UnityW<::UnityEngine::GameObject>  _meshWeightsProviderObject;
+
+/// @brief Field _skinnedMeshRenderer, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get__skinnedMeshRenderer, put=__cordl_internal_set__skinnedMeshRenderer)) ::UnityW<::UnityEngine::SkinnedMeshRenderer>  _skinnedMeshRenderer;
+
+/// @brief Method Awake, addr 0xa55dd74, size 0x180, virtual true, abstract: false, final false
+inline void Awake() ;
+
+/// @brief Method GetFaceExpression, addr 0xa55e15c, size 0x8, virtual true, abstract: false, final false
+inline ::GlobalNamespace::OVRFaceExpressions_FaceExpression GetFaceExpression(int32_t  blendShapeIndex) ;
+
+/// @brief Method GetWeightValue, addr 0xa55e164, size 0x118, virtual true, abstract: false, final false
+inline bool GetWeightValue(int32_t  blendShapeIndex, ::by_ref<float_t>  weightValue) ;
+
+static inline ::GlobalNamespace::OVRFace* New_ctor() ;
+
+/// @brief Method OnEnable, addr 0xa55def4, size 0xe0, virtual false, abstract: false, final false
+inline void OnEnable() ;
+
+/// @brief Method RetrieveSkinnedMeshRenderer, addr 0xa55dcd4, size 0x48, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::SkinnedMeshRenderer> RetrieveSkinnedMeshRenderer() ;
+
+/// @brief Method SearchFaceExpressions, addr 0xa55dd1c, size 0x58, virtual false, abstract: false, final false
+inline ::UnityW<::GlobalNamespace::OVRFaceExpressions> SearchFaceExpressions() ;
+
+/// @brief Method Start, addr 0xa55d0c4, size 0x98, virtual true, abstract: false, final false
+inline void Start() ;
+
+/// @brief Method Update, addr 0xa55dfd4, size 0x188, virtual true, abstract: false, final false
+inline void Update() ;
+
+constexpr float_t const& __cordl_internal_get__blendShapeStrengthMultiplier() const;
+
+constexpr float_t& __cordl_internal_get__blendShapeStrengthMultiplier() ;
+
+constexpr ::UnityW<::GlobalNamespace::OVRFaceExpressions> const& __cordl_internal_get__faceExpressions() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVRFaceExpressions>& __cordl_internal_get__faceExpressions() ;
+
+constexpr ::GlobalNamespace::OVRFace_IMeshWeightsProvider* const& __cordl_internal_get__meshWeightsProvider() const;
+
+constexpr ::GlobalNamespace::OVRFace_IMeshWeightsProvider*& __cordl_internal_get__meshWeightsProvider() ;
+
+constexpr ::UnityW<::UnityEngine::GameObject> const& __cordl_internal_get__meshWeightsProviderObject() const;
+
+constexpr ::UnityW<::UnityEngine::GameObject>& __cordl_internal_get__meshWeightsProviderObject() ;
+
+constexpr ::UnityW<::UnityEngine::SkinnedMeshRenderer> const& __cordl_internal_get__skinnedMeshRenderer() const;
+
+constexpr ::UnityW<::UnityEngine::SkinnedMeshRenderer>& __cordl_internal_get__skinnedMeshRenderer() ;
+
+constexpr void __cordl_internal_set__blendShapeStrengthMultiplier(float_t  value) ;
+
+constexpr void __cordl_internal_set__faceExpressions(::UnityW<::GlobalNamespace::OVRFaceExpressions>  value) ;
+
+constexpr void __cordl_internal_set__meshWeightsProvider(::GlobalNamespace::OVRFace_IMeshWeightsProvider*  value) ;
+
+constexpr void __cordl_internal_set__meshWeightsProviderObject(::UnityW<::UnityEngine::GameObject>  value) ;
+
+constexpr void __cordl_internal_set__skinnedMeshRenderer(::UnityW<::UnityEngine::SkinnedMeshRenderer>  value) ;
+
+/// @brief Method .ctor, addr 0xa55d2bc, size 0x10, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_BlendShapeStrengthMultiplier, addr 0xa55dcbc, size 0x8, virtual false, abstract: false, final false
+inline float_t get_BlendShapeStrengthMultiplier() ;
+
+/// @brief Method get_FaceExpressions, addr 0xa55dcac, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::GlobalNamespace::OVRFaceExpressions> get_FaceExpressions() ;
+
+/// @brief Method get_SkinnedMesh, addr 0xa55dccc, size 0x8, virtual false, abstract: false, final false
+inline ::UnityW<::UnityEngine::SkinnedMeshRenderer> get_SkinnedMesh() ;
+
+/// @brief Method set_BlendShapeStrengthMultiplier, addr 0xa55dcc4, size 0x8, virtual false, abstract: false, final false
+inline void set_BlendShapeStrengthMultiplier(float_t  value) ;
+
+/// @brief Method set_FaceExpressions, addr 0xa55dcb4, size 0x8, virtual false, abstract: false, final false
+inline void set_FaceExpressions(::GlobalNamespace::OVRFaceExpressions*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OVRFace() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRFace", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OVRFace(OVRFace && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRFace", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OVRFace(OVRFace const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{11796};
+
+/// [SerializeField]
+/// [Tooltip("The OVRFaceExpressions Component to fetch the Face Tracking weights from that are to be applied")]
+/// @brief Field _faceExpressions, offset: 0x20, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVRFaceExpressions>  ____faceExpressions;
+
+/// [SerializeField]
+/// [Tooltip("A multiplier to the weights read from the OVRFaceExpressions to exaggerate facial expressions")]
+/// @brief Field _blendShapeStrengthMultiplier, offset: 0x28, size: 0x4, def value: None
+ float_t  ____blendShapeStrengthMultiplier;
+
+/// [SerializeField]
+/// [Tooltip("Optional component that contains IMeshWeightsProvider.")]
+/// @brief Field _meshWeightsProviderObject, offset: 0x30, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::GameObject>  ____meshWeightsProviderObject;
+
+/// @brief Field _skinnedMeshRenderer, offset: 0x38, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::SkinnedMeshRenderer>  ____skinnedMeshRenderer;
+
+/// @brief Field _meshWeightsProvider, offset: 0x40, size: 0x8, def value: None
+ ::GlobalNamespace::OVRFace_IMeshWeightsProvider*  ____meshWeightsProvider;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::OVRFace, ____faceExpressions) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRFace, ____blendShapeStrengthMultiplier) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRFace, ____meshWeightsProviderObject) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRFace, ____skinnedMeshRenderer) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRFace, ____meshWeightsProvider) == 0x40, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::OVRFace) == 0x48, "Size mismatch!");
+
+} // namespace end def GlobalNamespace
+// Dependencies 
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OVRFace/IMeshWeightsProvider
+class CORDL_TYPE OVRFace_IMeshWeightsProvider {
+public:
+// Declarations
+/// @brief Method GetWeightValue, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline bool GetWeightValue(int32_t  blendshapeIndex, ::by_ref<float_t>  weightValue) ;
+
+/// @brief Method UpdateWeights, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void UpdateWeights(::GlobalNamespace::OVRFaceExpressions*  faceExpressions) ;
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRFace_IMeshWeightsProvider", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OVRFace_IMeshWeightsProvider(OVRFace_IMeshWeightsProvider const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{11795};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def GlobalNamespace

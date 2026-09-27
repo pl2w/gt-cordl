@@ -1,0 +1,135 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/Hammersley.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(Hammersley)
+namespace GlobalNamespace {
+struct Hammersley_Hammersley2dSeq16;
+}
+namespace GlobalNamespace {
+struct Hammersley_Hammersley2dSeq256;
+}
+namespace GlobalNamespace {
+struct Hammersley_Hammersley2dSeq32;
+}
+namespace GlobalNamespace {
+struct Hammersley_Hammersley2dSeq64;
+}
+namespace UnityEngine::Rendering {
+class CommandBuffer;
+}
+namespace UnityEngine {
+class ComputeShader;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering {
+class Hammersley;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::Hammersley*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::Hammersley*, "UnityEngine.Rendering", "Hammersley");
+// Dependencies System.Object
+namespace UnityEngine::Rendering {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.Hammersley
+class CORDL_TYPE Hammersley : public ::System::Object {
+public:
+// Declarations
+using Hammersley2dSeq16 = ::GlobalNamespace::Hammersley_Hammersley2dSeq16;
+
+using Hammersley2dSeq256 = ::GlobalNamespace::Hammersley_Hammersley2dSeq256;
+
+using Hammersley2dSeq32 = ::GlobalNamespace::Hammersley_Hammersley2dSeq32;
+
+using Hammersley2dSeq64 = ::GlobalNamespace::Hammersley_Hammersley2dSeq64;
+
+/// @brief Field k_Hammersley2dSeq16, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_Hammersley2dSeq16, put=setStaticF_k_Hammersley2dSeq16)) ::ArrayW<float_t>  k_Hammersley2dSeq16;
+
+/// @brief Field k_Hammersley2dSeq256, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_Hammersley2dSeq256, put=setStaticF_k_Hammersley2dSeq256)) ::ArrayW<float_t>  k_Hammersley2dSeq256;
+
+/// @brief Field k_Hammersley2dSeq32, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_Hammersley2dSeq32, put=setStaticF_k_Hammersley2dSeq32)) ::ArrayW<float_t>  k_Hammersley2dSeq32;
+
+/// @brief Field k_Hammersley2dSeq64, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_k_Hammersley2dSeq64, put=setStaticF_k_Hammersley2dSeq64)) ::ArrayW<float_t>  k_Hammersley2dSeq64;
+
+/// @brief Field s_hammersley2DSeq16Id, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_s_hammersley2DSeq16Id, put=setStaticF_s_hammersley2DSeq16Id)) int32_t  s_hammersley2DSeq16Id;
+
+/// @brief Field s_hammersley2DSeq256Id, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_s_hammersley2DSeq256Id, put=setStaticF_s_hammersley2DSeq256Id)) int32_t  s_hammersley2DSeq256Id;
+
+/// @brief Field s_hammersley2DSeq32Id, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_s_hammersley2DSeq32Id, put=setStaticF_s_hammersley2DSeq32Id)) int32_t  s_hammersley2DSeq32Id;
+
+/// @brief Field s_hammersley2DSeq64Id, offset 0xffffffff, size 0x4 
+ __declspec(property(get=getStaticF_s_hammersley2DSeq64Id, put=setStaticF_s_hammersley2DSeq64Id)) int32_t  s_hammersley2DSeq64Id;
+
+/// @brief Method BindConstants, addr 0xb1746e4, size 0x154, virtual false, abstract: false, final false
+static inline void BindConstants(::UnityEngine::Rendering::CommandBuffer*  cmd, ::UnityEngine::ComputeShader*  cs) ;
+
+/// @brief Method Initialize, addr 0xb174328, size 0x3bc, virtual false, abstract: false, final false
+static inline void Initialize() ;
+
+static inline ::ArrayW<float_t> getStaticF_k_Hammersley2dSeq16() ;
+
+static inline ::ArrayW<float_t> getStaticF_k_Hammersley2dSeq256() ;
+
+static inline ::ArrayW<float_t> getStaticF_k_Hammersley2dSeq32() ;
+
+static inline ::ArrayW<float_t> getStaticF_k_Hammersley2dSeq64() ;
+
+static inline int32_t getStaticF_s_hammersley2DSeq16Id() ;
+
+static inline int32_t getStaticF_s_hammersley2DSeq256Id() ;
+
+static inline int32_t getStaticF_s_hammersley2DSeq32Id() ;
+
+static inline int32_t getStaticF_s_hammersley2DSeq64Id() ;
+
+static inline void setStaticF_k_Hammersley2dSeq16(::ArrayW<float_t>  value) ;
+
+static inline void setStaticF_k_Hammersley2dSeq256(::ArrayW<float_t>  value) ;
+
+static inline void setStaticF_k_Hammersley2dSeq32(::ArrayW<float_t>  value) ;
+
+static inline void setStaticF_k_Hammersley2dSeq64(::ArrayW<float_t>  value) ;
+
+static inline void setStaticF_s_hammersley2DSeq16Id(int32_t  value) ;
+
+static inline void setStaticF_s_hammersley2DSeq256Id(int32_t  value) ;
+
+static inline void setStaticF_s_hammersley2DSeq32Id(int32_t  value) ;
+
+static inline void setStaticF_s_hammersley2DSeq64Id(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Hammersley() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Hammersley", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Hammersley(Hammersley && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Hammersley", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Hammersley(Hammersley const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{16938};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Rendering::Hammersley) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

@@ -1,0 +1,43 @@
+#pragma once
+// IWYU pragma private; include "Fusion/IBeforeUpdateRemotePrefabs.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(IBeforeUpdateRemotePrefabs)
+namespace Fusion {
+class IPublicFacingInterface;
+}
+// Forward declare root types
+namespace Fusion {
+class IBeforeUpdateRemotePrefabs;
+}
+// Write type traits
+MARK_REF_T(::Fusion::IBeforeUpdateRemotePrefabs*);
+DEFINE_IL2CPP_CLASS(::Fusion::IBeforeUpdateRemotePrefabs*, "Fusion", "IBeforeUpdateRemotePrefabs");
+// Dependencies 
+namespace Fusion {
+// Is value type: false
+// CS Name: Fusion.IBeforeUpdateRemotePrefabs
+class CORDL_TYPE IBeforeUpdateRemotePrefabs {
+public:
+// Declarations
+/// @brief Convert operator to "::Fusion::IPublicFacingInterface"
+constexpr operator  ::Fusion::IPublicFacingInterface*() noexcept;
+
+/// @brief Method BeforeUpdateRemotePrefabs, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void BeforeUpdateRemotePrefabs() ;
+
+/// @brief Convert to "::Fusion::IPublicFacingInterface"
+constexpr ::Fusion::IPublicFacingInterface* i___Fusion__IPublicFacingInterface() noexcept;
+
+// Ctor Parameters [CppParam { name: "", ty: "IBeforeUpdateRemotePrefabs", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IBeforeUpdateRemotePrefabs(IBeforeUpdateRemotePrefabs const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{18876};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def Fusion

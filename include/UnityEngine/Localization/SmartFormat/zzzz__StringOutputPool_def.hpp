@@ -1,0 +1,131 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Localization/SmartFormat/StringOutputPool.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(StringOutputPool)
+namespace UnityEngine::Localization::SmartFormat::Core::Output {
+class StringOutput;
+}
+namespace UnityEngine::Localization::SmartFormat {
+class StringOutputPool___c;
+}
+namespace UnityEngine::Pool {
+template<typename T>
+class ObjectPool_1;
+}
+namespace UnityEngine::Pool {
+template<typename T>
+struct PooledObject_1;
+}
+// Forward declare root types
+namespace UnityEngine::Localization::SmartFormat {
+class StringOutputPool;
+}
+namespace UnityEngine::Localization::SmartFormat {
+class StringOutputPool___c;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Localization::SmartFormat::StringOutputPool*);
+MARK_REF_T(::UnityEngine::Localization::SmartFormat::StringOutputPool___c*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Localization::SmartFormat::StringOutputPool*, "UnityEngine.Localization.SmartFormat", "StringOutputPool");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Localization::SmartFormat::StringOutputPool___c*, "UnityEngine.Localization.SmartFormat", "StringOutputPool/<>c");
+// Dependencies System.Object
+namespace UnityEngine::Localization::SmartFormat {
+// Is value type: false
+// CS Name: UnityEngine.Localization.SmartFormat.StringOutputPool
+class CORDL_TYPE StringOutputPool : public ::System::Object {
+public:
+// Declarations
+using __c = ::UnityEngine::Localization::SmartFormat::StringOutputPool___c;
+
+/// @brief Field s_Pool, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF_s_Pool, put=setStaticF_s_Pool)) ::UnityEngine::Pool::ObjectPool_1<::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput*>*  s_Pool;
+
+/// @brief Method Get, addr 0xb02f434, size 0x98, virtual false, abstract: false, final false
+static inline ::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput* Get(int32_t  capacity) ;
+
+/// @brief Method Get, addr 0xb02943c, size 0xb4, virtual false, abstract: false, final false
+static inline ::UnityEngine::Pool::PooledObject_1<::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput*> Get(int32_t  capacity, ::by_ref<::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput*>  value) ;
+
+/// @brief Method Release, addr 0xb02f4cc, size 0x80, virtual false, abstract: false, final false
+static inline void Release(::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput*  toRelease) ;
+
+static inline ::UnityEngine::Pool::ObjectPool_1<::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput*>* getStaticF_s_Pool() ;
+
+static inline void setStaticF_s_Pool(::UnityEngine::Pool::ObjectPool_1<::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput*>*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr StringOutputPool() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "StringOutputPool", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+StringOutputPool(StringOutputPool && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "StringOutputPool", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+StringOutputPool(StringOutputPool const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{25152};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Localization::SmartFormat::StringOutputPool) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Localization::SmartFormat
+// [CompilerGenerated]
+// Dependencies System.Object
+namespace UnityEngine::Localization::SmartFormat {
+// Is value type: false
+// CS Name: UnityEngine.Localization.SmartFormat.StringOutputPool/<>c
+class CORDL_TYPE StringOutputPool___c : public ::System::Object {
+public:
+// Declarations
+/// @brief Field <>9, offset 0xffffffff, size 0x8 
+ __declspec(property(get=getStaticF___9, put=setStaticF___9)) ::UnityEngine::Localization::SmartFormat::StringOutputPool___c*  __9;
+
+static inline ::UnityEngine::Localization::SmartFormat::StringOutputPool___c* New_ctor() ;
+
+/// @brief Method <.cctor>b__4_0, addr 0xb02f750, size 0x54, virtual false, abstract: false, final false
+inline ::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput* __cctor_b__4_0() ;
+
+/// @brief Method <.cctor>b__4_1, addr 0xb02f7a4, size 0x18, virtual false, abstract: false, final false
+inline void __cctor_b__4_1(::UnityEngine::Localization::SmartFormat::Core::Output::StringOutput*  so) ;
+
+/// @brief Method .ctor, addr 0xb02f748, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+static inline ::UnityEngine::Localization::SmartFormat::StringOutputPool___c* getStaticF___9() ;
+
+static inline void setStaticF___9(::UnityEngine::Localization::SmartFormat::StringOutputPool___c*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr StringOutputPool___c() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "StringOutputPool___c", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+StringOutputPool___c(StringOutputPool___c && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "StringOutputPool___c", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+StringOutputPool___c(StringOutputPool___c const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{25151};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Localization::SmartFormat::StringOutputPool___c) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Localization::SmartFormat

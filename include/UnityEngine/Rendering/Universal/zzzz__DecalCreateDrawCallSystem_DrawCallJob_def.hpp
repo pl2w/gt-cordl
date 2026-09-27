@@ -1,0 +1,189 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/Universal/DecalCreateDrawCallSystem_DrawCallJob.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Unity/Collections/zzzz__NativeArray_1_def.hpp"
+#include "Unity/Mathematics/zzzz__float2_def.hpp"
+#include "Unity/Mathematics/zzzz__float4_def.hpp"
+#include "Unity/Mathematics/zzzz__float4x4_def.hpp"
+#include "UnityEngine/Rendering/Universal/zzzz__DecalSubDrawCall_def.hpp"
+#include "UnityEngine/zzzz__BoundingSphere_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+#include <cmath>
+#include <cstddef>
+#include <cstdint>
+CORDL_MODULE_EXPORT(DecalCreateDrawCallSystem_DrawCallJob)
+namespace Unity::Jobs {
+class IJob;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+struct DecalCreateDrawCallSystem_DrawCallJob;
+}
+// Write type traits
+MARK_VAL_T(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, "UnityEngine.Rendering.Universal", "DecalCreateDrawCallSystem/DrawCallJob");
+// [BurstCompile]
+// Dependencies Unity.Collections.NativeArray`1<T>, Unity.Mathematics.float2, Unity.Mathematics.float4, Unity.Mathematics.float4x4, UnityEngine.BoundingSphere, UnityEngine.Rendering.Universal.DecalSubDrawCall, UnityEngine.Vector3
+namespace GlobalNamespace {
+// Is value type: true
+// CS Name: UnityEngine.Rendering.Universal.DecalCreateDrawCallSystem/DrawCallJob
+struct CORDL_TYPE DecalCreateDrawCallSystem_DrawCallJob {
+public:
+// Declarations
+/// @brief Convert operator to "::Unity::Jobs::IJob"
+constexpr operator  ::Unity::Jobs::IJob*() ;
+
+/// @brief Method Execute, addr 0xb234600, size 0x2fc, virtual true, abstract: false, final true
+inline void Execute() ;
+
+/// @brief Convert to "::Unity::Jobs::IJob"
+constexpr ::Unity::Jobs::IJob* i___Unity__Jobs__IJob() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr DecalCreateDrawCallSystem_DrawCallJob() ;
+
+// Ctor Parameters [CppParam { name: "decalToWorlds", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>", modifiers: "", def_value: None, comment: None }, CppParam { name: "normalToWorlds", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>", modifiers: "", def_value: None, comment: None }, CppParam { name: "sizeOffsets", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>", modifiers: "", def_value: None, comment: None }, CppParam { name: "drawDistances", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float2>", modifiers: "", def_value: None, comment: None }, CppParam { name: "angleFades", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float2>", modifiers: "", def_value: None, comment: None }, CppParam { name: "uvScaleBiases", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4>", modifiers: "", def_value: None, comment: None }, CppParam { name: "layerMasks", ty: "::Unity::Collections::NativeArray_1<int32_t>", modifiers: "", def_value: None, comment: None }, CppParam { name: "sceneLayerMasks", ty: "::Unity::Collections::NativeArray_1<uint64_t>", modifiers: "", def_value: None, comment: None }, CppParam { name: "fadeFactors", ty: "::Unity::Collections::NativeArray_1<float_t>", modifiers: "", def_value: None, comment: None }, CppParam { name: "boundingSpheres", ty: "::Unity::Collections::NativeArray_1<::UnityEngine::BoundingSphere>", modifiers: "", def_value: None, comment: None }, CppParam { name: "renderingLayerMasks", ty: "::Unity::Collections::NativeArray_1<uint32_t>", modifiers: "", def_value: None, comment: None }, CppParam { name: "cameraPosition", ty: "::UnityEngine::Vector3", modifiers: "", def_value: None, comment: None }, CppParam { name: "sceneCullingMask", ty: "uint64_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "cullingMask", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "visibleDecalIndices", ty: "::Unity::Collections::NativeArray_1<int32_t>", modifiers: "", def_value: None, comment: None }, CppParam { name: "visibleDecalCount", ty: "int32_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "maxDrawDistance", ty: "float_t", modifiers: "", def_value: None, comment: None }, CppParam { name: "decalToWorldsDraw", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>", modifiers: "", def_value: None, comment: None }, CppParam { name: "normalToDecalsDraw", ty: "::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>", modifiers: "", def_value: None, comment: None }, CppParam { name: "renderingLayerMasksDraw", ty: "::Unity::Collections::NativeArray_1<float_t>", modifiers: "", def_value: None, comment: None }, CppParam { name: "subCalls", ty: "::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::Universal::DecalSubDrawCall>", modifiers: "", def_value: None, comment: None }, CppParam { name: "subCallCount", ty: "::Unity::Collections::NativeArray_1<int32_t>", modifiers: "", def_value: None, comment: None }]
+constexpr DecalCreateDrawCallSystem_DrawCallJob(::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  decalToWorlds, ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  normalToWorlds, ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  sizeOffsets, ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float2>  drawDistances, ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float2>  angleFades, ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4>  uvScaleBiases, ::Unity::Collections::NativeArray_1<int32_t>  layerMasks, ::Unity::Collections::NativeArray_1<uint64_t>  sceneLayerMasks, ::Unity::Collections::NativeArray_1<float_t>  fadeFactors, ::Unity::Collections::NativeArray_1<::UnityEngine::BoundingSphere>  boundingSpheres, ::Unity::Collections::NativeArray_1<uint32_t>  renderingLayerMasks, ::UnityEngine::Vector3  cameraPosition, uint64_t  sceneCullingMask, int32_t  cullingMask, ::Unity::Collections::NativeArray_1<int32_t>  visibleDecalIndices, int32_t  visibleDecalCount, float_t  maxDrawDistance, ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  decalToWorldsDraw, ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  normalToDecalsDraw, ::Unity::Collections::NativeArray_1<float_t>  renderingLayerMasksDraw, ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::Universal::DecalSubDrawCall>  subCalls, ::Unity::Collections::NativeArray_1<int32_t>  subCallCount) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{18334};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x138};
+
+/// [ReadOnly]
+/// @brief Field decalToWorlds, offset: 0x0, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  decalToWorlds;
+
+/// [ReadOnly]
+/// @brief Field normalToWorlds, offset: 0x10, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  normalToWorlds;
+
+/// [ReadOnly]
+/// @brief Field sizeOffsets, offset: 0x20, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  sizeOffsets;
+
+/// [ReadOnly]
+/// @brief Field drawDistances, offset: 0x30, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float2>  drawDistances;
+
+/// [ReadOnly]
+/// @brief Field angleFades, offset: 0x40, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float2>  angleFades;
+
+/// [ReadOnly]
+/// @brief Field uvScaleBiases, offset: 0x50, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4>  uvScaleBiases;
+
+/// [ReadOnly]
+/// @brief Field layerMasks, offset: 0x60, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<int32_t>  layerMasks;
+
+/// [ReadOnly]
+/// @brief Field sceneLayerMasks, offset: 0x70, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<uint64_t>  sceneLayerMasks;
+
+/// [ReadOnly]
+/// @brief Field fadeFactors, offset: 0x80, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<float_t>  fadeFactors;
+
+/// [ReadOnly]
+/// @brief Field boundingSpheres, offset: 0x90, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::UnityEngine::BoundingSphere>  boundingSpheres;
+
+/// [ReadOnly]
+/// @brief Field renderingLayerMasks, offset: 0xa0, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<uint32_t>  renderingLayerMasks;
+
+/// @brief Field cameraPosition, offset: 0xb0, size: 0xc, def value: None
+ ::UnityEngine::Vector3  cameraPosition;
+
+/// @brief Field sceneCullingMask, offset: 0xc0, size: 0x8, def value: None
+ uint64_t  sceneCullingMask;
+
+/// @brief Field cullingMask, offset: 0xc8, size: 0x4, def value: None
+ int32_t  cullingMask;
+
+/// [ReadOnly]
+/// @brief Field visibleDecalIndices, offset: 0xd0, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<int32_t>  visibleDecalIndices;
+
+/// @brief Field visibleDecalCount, offset: 0xe0, size: 0x4, def value: None
+ int32_t  visibleDecalCount;
+
+/// @brief Field maxDrawDistance, offset: 0xe4, size: 0x4, def value: None
+ float_t  maxDrawDistance;
+
+/// [WriteOnly]
+/// @brief Field decalToWorldsDraw, offset: 0xe8, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  decalToWorldsDraw;
+
+/// [WriteOnly]
+/// @brief Field normalToDecalsDraw, offset: 0xf8, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::Unity::Mathematics::float4x4>  normalToDecalsDraw;
+
+/// [WriteOnly]
+/// @brief Field renderingLayerMasksDraw, offset: 0x108, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<float_t>  renderingLayerMasksDraw;
+
+/// [WriteOnly]
+/// @brief Field subCalls, offset: 0x118, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::Universal::DecalSubDrawCall>  subCalls;
+
+/// [WriteOnly]
+/// @brief Field subCallCount, offset: 0x128, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<int32_t>  subCallCount;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, decalToWorlds) == 0x0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, normalToWorlds) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, sizeOffsets) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, drawDistances) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, angleFades) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, uvScaleBiases) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, layerMasks) == 0x60, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, sceneLayerMasks) == 0x70, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, fadeFactors) == 0x80, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, boundingSpheres) == 0x90, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, renderingLayerMasks) == 0xa0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, cameraPosition) == 0xb0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, sceneCullingMask) == 0xc0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, cullingMask) == 0xc8, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, visibleDecalIndices) == 0xd0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, visibleDecalCount) == 0xe0, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, maxDrawDistance) == 0xe4, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, decalToWorldsDraw) == 0xe8, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, normalToDecalsDraw) == 0xf8, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, renderingLayerMasksDraw) == 0x108, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, subCalls) == 0x118, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob, subCallCount) == 0x128, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::DecalCreateDrawCallSystem_DrawCallJob) == 0x138, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

@@ -1,0 +1,172 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/DefaultDragAndDropClient.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/UIElements/zzzz__DragAndDropData_def.hpp"
+#include "UnityEngine/UIElements/zzzz__DragVisualMode_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(DefaultDragAndDropClient)
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerable_1;
+}
+namespace System::Collections {
+class Hashtable;
+}
+namespace System {
+class Object;
+}
+namespace UnityEngine::UIElements {
+class DragAndDropData;
+}
+namespace UnityEngine::UIElements {
+struct DragVisualMode;
+}
+namespace UnityEngine::UIElements {
+class IDragAndDrop;
+}
+namespace UnityEngine::UIElements {
+class Label;
+}
+namespace UnityEngine::UIElements {
+struct StartDragArgs;
+}
+namespace UnityEngine {
+class Object;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+class DefaultDragAndDropClient;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::UIElements::DefaultDragAndDropClient*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::DefaultDragAndDropClient*, "UnityEngine.UIElements", "DefaultDragAndDropClient");
+// Dependencies UnityEngine.UIElements.DragAndDropData, UnityEngine.UIElements.DragVisualMode
+namespace UnityEngine::UIElements {
+// Is value type: false
+// CS Name: UnityEngine.UIElements.DefaultDragAndDropClient
+class CORDL_TYPE DefaultDragAndDropClient : public ::UnityEngine::UIElements::DragAndDropData {
+public:
+// Declarations
+ __declspec(property(get=get_data)) ::UnityEngine::UIElements::DragAndDropData*  data;
+
+/// @brief Field m_DraggedInfoLabel, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_DraggedInfoLabel, put=__cordl_internal_set_m_DraggedInfoLabel)) ::UnityEngine::UIElements::Label*  m_DraggedInfoLabel;
+
+/// @brief Field m_GenericData, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_GenericData, put=__cordl_internal_set_m_GenericData)) ::System::Collections::Hashtable*  m_GenericData;
+
+/// @brief Field m_UnityObjectReferences, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_m_UnityObjectReferences, put=__cordl_internal_set_m_UnityObjectReferences)) ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*  m_UnityObjectReferences;
+
+/// @brief Field m_VisualMode, offset 0x28, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_VisualMode, put=__cordl_internal_set_m_VisualMode)) ::UnityEngine::UIElements::DragVisualMode  m_VisualMode;
+
+ __declspec(property(get=get_source)) ::System::Object*  source;
+
+/// @brief Convert operator to "::UnityEngine::UIElements::IDragAndDrop"
+constexpr operator  ::UnityEngine::UIElements::IDragAndDrop*() noexcept;
+
+/// @brief Method AcceptDrag, addr 0xb881a64, size 0x4, virtual true, abstract: false, final true
+inline void AcceptDrag() ;
+
+/// @brief Method DragCleanup, addr 0xb881a70, size 0x70, virtual true, abstract: false, final true
+inline void DragCleanup() ;
+
+/// @brief Method GetGenericData, addr 0xb8811e4, size 0x64, virtual true, abstract: false, final false
+inline ::System::Object* GetGenericData(::StringW  key) ;
+
+static inline ::UnityEngine::UIElements::DefaultDragAndDropClient* New_ctor() ;
+
+/// @brief Method SetVisualMode, addr 0xb881a68, size 0x8, virtual true, abstract: false, final true
+inline void SetVisualMode(::UnityEngine::UIElements::DragVisualMode  mode) ;
+
+/// @brief Method StartDrag, addr 0xb881248, size 0x690, virtual true, abstract: false, final true
+inline void StartDrag(::UnityEngine::UIElements::StartDragArgs  args, ::UnityEngine::Vector3  pointerPosition) ;
+
+/// @brief Method UpdateDrag, addr 0xb8818d8, size 0x18c, virtual true, abstract: false, final true
+inline void UpdateDrag(::UnityEngine::Vector3  pointerPosition) ;
+
+constexpr ::UnityEngine::UIElements::Label* const& __cordl_internal_get_m_DraggedInfoLabel() const;
+
+constexpr ::UnityEngine::UIElements::Label*& __cordl_internal_get_m_DraggedInfoLabel() ;
+
+constexpr ::System::Collections::Hashtable* const& __cordl_internal_get_m_GenericData() const;
+
+constexpr ::System::Collections::Hashtable*& __cordl_internal_get_m_GenericData() ;
+
+constexpr ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>* const& __cordl_internal_get_m_UnityObjectReferences() const;
+
+constexpr ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*& __cordl_internal_get_m_UnityObjectReferences() ;
+
+constexpr ::UnityEngine::UIElements::DragVisualMode const& __cordl_internal_get_m_VisualMode() const;
+
+constexpr ::UnityEngine::UIElements::DragVisualMode& __cordl_internal_get_m_VisualMode() ;
+
+constexpr void __cordl_internal_set_m_DraggedInfoLabel(::UnityEngine::UIElements::Label*  value) ;
+
+constexpr void __cordl_internal_set_m_GenericData(::System::Collections::Hashtable*  value) ;
+
+constexpr void __cordl_internal_set_m_UnityObjectReferences(::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*  value) ;
+
+constexpr void __cordl_internal_set_m_VisualMode(::UnityEngine::UIElements::DragVisualMode  value) ;
+
+/// @brief Method .ctor, addr 0xb881128, size 0x6c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_data, addr 0xb881ae0, size 0x4, virtual true, abstract: false, final true
+inline ::UnityEngine::UIElements::DragAndDropData* get_data() ;
+
+/// @brief Method get_source, addr 0xb881194, size 0x50, virtual true, abstract: false, final false
+inline ::System::Object* get_source() ;
+
+/// @brief Convert to "::UnityEngine::UIElements::IDragAndDrop"
+constexpr ::UnityEngine::UIElements::IDragAndDrop* i___UnityEngine__UIElements__IDragAndDrop() noexcept;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DefaultDragAndDropClient() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DefaultDragAndDropClient", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DefaultDragAndDropClient(DefaultDragAndDropClient && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DefaultDragAndDropClient", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DefaultDragAndDropClient(DefaultDragAndDropClient const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7539};
+
+/// @brief Field m_GenericData, offset: 0x18, size: 0x8, def value: None
+ ::System::Collections::Hashtable*  ___m_GenericData;
+
+/// @brief Field m_DraggedInfoLabel, offset: 0x20, size: 0x8, def value: None
+ ::UnityEngine::UIElements::Label*  ___m_DraggedInfoLabel;
+
+/// @brief Field m_VisualMode, offset: 0x28, size: 0x4, def value: None
+ ::UnityEngine::UIElements::DragVisualMode  ___m_VisualMode;
+
+/// @brief Field m_UnityObjectReferences, offset: 0x30, size: 0x8, def value: None
+ ::System::Collections::Generic::IEnumerable_1<::UnityW<::UnityEngine::Object>>*  ___m_UnityObjectReferences;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::UIElements::DefaultDragAndDropClient, ___m_GenericData) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::DefaultDragAndDropClient, ___m_DraggedInfoLabel) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::DefaultDragAndDropClient, ___m_VisualMode) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::UIElements::DefaultDragAndDropClient, ___m_UnityObjectReferences) == 0x30, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::UIElements::DefaultDragAndDropClient) == 0x38, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

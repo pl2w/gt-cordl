@@ -1,0 +1,101 @@
+#pragma once
+// IWYU pragma private; include "System/Net/Http/Headers/HttpContentHeaders.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Net/Http/Headers/zzzz__HttpHeaders_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(HttpContentHeaders)
+namespace System::Net::Http::Headers {
+class ContentDispositionHeaderValue;
+}
+namespace System::Net::Http::Headers {
+class MediaTypeHeaderValue;
+}
+namespace System::Net::Http {
+class HttpContent;
+}
+namespace System {
+template<typename T>
+struct Nullable_1;
+}
+// Forward declare root types
+namespace System::Net::Http::Headers {
+class HttpContentHeaders;
+}
+// Write type traits
+MARK_REF_T(::System::Net::Http::Headers::HttpContentHeaders*);
+DEFINE_IL2CPP_CLASS(::System::Net::Http::Headers::HttpContentHeaders*, "System.Net.Http.Headers", "HttpContentHeaders");
+// Dependencies System.Net.Http.Headers.HttpHeaders
+namespace System::Net::Http::Headers {
+// Is value type: false
+// CS Name: System.Net.Http.Headers.HttpContentHeaders
+class CORDL_TYPE HttpContentHeaders : public ::System::Net::Http::Headers::HttpHeaders {
+public:
+// Declarations
+ __declspec(property(get=get_ContentDisposition, put=set_ContentDisposition)) ::System::Net::Http::Headers::ContentDispositionHeaderValue*  ContentDisposition;
+
+ __declspec(property(get=get_ContentLength)) ::System::Nullable_1<int64_t>  ContentLength;
+
+ __declspec(property(get=get_ContentType, put=set_ContentType)) ::System::Net::Http::Headers::MediaTypeHeaderValue*  ContentType;
+
+/// @brief Field content, offset 0x40, size 0x8 
+ __declspec(property(get=__cordl_internal_get_content, put=__cordl_internal_set_content)) ::System::Net::Http::HttpContent*  content;
+
+static inline ::System::Net::Http::Headers::HttpContentHeaders* New_ctor(::System::Net::Http::HttpContent*  content) ;
+
+constexpr ::System::Net::Http::HttpContent* const& __cordl_internal_get_content() const;
+
+constexpr ::System::Net::Http::HttpContent*& __cordl_internal_get_content() ;
+
+constexpr void __cordl_internal_set_content(::System::Net::Http::HttpContent*  value) ;
+
+/// @brief Method .ctor, addr 0xa9e0358, size 0x78, virtual false, abstract: false, final false
+inline void _ctor(::System::Net::Http::HttpContent*  content) ;
+
+/// @brief Method get_ContentDisposition, addr 0xa9e4dd4, size 0x68, virtual false, abstract: false, final false
+inline ::System::Net::Http::Headers::ContentDispositionHeaderValue* get_ContentDisposition() ;
+
+/// @brief Method get_ContentLength, addr 0xa9de0f8, size 0x128, virtual false, abstract: false, final false
+inline ::System::Nullable_1<int64_t> get_ContentLength() ;
+
+/// @brief Method get_ContentType, addr 0xa9e1a78, size 0x68, virtual false, abstract: false, final false
+inline ::System::Net::Http::Headers::MediaTypeHeaderValue* get_ContentType() ;
+
+/// @brief Method set_ContentDisposition, addr 0xa9e4fa0, size 0x74, virtual false, abstract: false, final false
+inline void set_ContentDisposition(::System::Net::Http::Headers::ContentDispositionHeaderValue*  value) ;
+
+/// @brief Method set_ContentType, addr 0xa9df088, size 0x74, virtual false, abstract: false, final false
+inline void set_ContentType(::System::Net::Http::Headers::MediaTypeHeaderValue*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr HttpContentHeaders() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "HttpContentHeaders", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+HttpContentHeaders(HttpContentHeaders && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "HttpContentHeaders", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+HttpContentHeaders(HttpContentHeaders const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30748};
+
+/// @brief Size padding 0x28 - 0x48 = 0x20, packed as 0x20
+ uint8_t  _cordl_size_padding[0x20];
+
+/// @brief Field content, offset: 0x40, size: 0x8, def value: None
+ ::System::Net::Http::HttpContent*  ___content;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Net::Http::Headers::HttpContentHeaders, ___content) == 0x40, "Offset mismatch!");
+
+static_assert(sizeof(::System::Net::Http::Headers::HttpContentHeaders) == 0x28, "Size mismatch!");
+
+} // namespace end def System::Net::Http::Headers

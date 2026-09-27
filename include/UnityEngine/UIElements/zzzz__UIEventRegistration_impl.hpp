@@ -1,0 +1,338 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/UIEventRegistration.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/UIElements/zzzz__UIEventRegistration_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/zzzz__Exception_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+#include "UnityEngine/UIElements/zzzz__IUIElementsUtility_def.hpp"
+#include "UnityEngine/UIElements/zzzz__UIEventRegistration_def.hpp"
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration.RegisterUIElementSystem
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::UIElements::IUIElementsUtility*)>(&::UnityEngine::UIElements::UIEventRegistration::RegisterUIElementSystem)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xb7af128;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"RegisterUIElementSystem", {}, {::i2c::type_of<::UnityEngine::UIElements::IUIElementsUtility*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration.TakeCapture
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)()>(&::UnityEngine::UIElements::UIEventRegistration::TakeCapture)> {
+  constexpr static std::size_t size = 0x1c4;
+  constexpr static std::size_t addrs = 0xb7af1ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"TakeCapture", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration.ReleaseCapture
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)()>(&::UnityEngine::UIElements::UIEventRegistration::ReleaseCapture)> {
+  constexpr static std::size_t size = 0x1c8;
+  constexpr static std::size_t addrs = 0xb7af370;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"ReleaseCapture", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration.EndContainerGUIFromException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::System::Exception*)>(&::UnityEngine::UIElements::UIEventRegistration::EndContainerGUIFromException)> {
+  constexpr static std::size_t size = 0x224;
+  constexpr static std::size_t addrs = 0xb7af538;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"EndContainerGUIFromException", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration.ProcessEvent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(int32_t, ::System::IntPtr)>(&::UnityEngine::UIElements::UIEventRegistration::ProcessEvent)> {
+  constexpr static std::size_t size = 0x20c;
+  constexpr static std::size_t addrs = 0xb7af75c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"ProcessEvent", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration.CleanupRoots
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)()>(&::UnityEngine::UIElements::UIEventRegistration::CleanupRoots)> {
+  constexpr static std::size_t size = 0x1c8;
+  constexpr static std::size_t addrs = 0xb7af968;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"CleanupRoots", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration.MakeCurrentIMGUIContainerDirty
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)()>(&::UnityEngine::UIElements::UIEventRegistration::MakeCurrentIMGUIContainerDirty)> {
+  constexpr static std::size_t size = 0x1c8;
+  constexpr static std::size_t addrs = 0xb7afb30;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"MakeCurrentIMGUIContainerDirty", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::UIElements::UIEventRegistration::setStaticF_s_Utilities(::System::Collections::Generic::List_1<::UnityEngine::UIElements::IUIElementsUtility*>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::UnityEngine::UIElements::IUIElementsUtility*>*, "s_Utilities", ::UnityEngine::UIElements::UIEventRegistration*>(std::forward<::System::Collections::Generic::List_1<::UnityEngine::UIElements::IUIElementsUtility*>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::UnityEngine::UIElements::IUIElementsUtility*>* UnityEngine::UIElements::UIEventRegistration::getStaticF_s_Utilities()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::UnityEngine::UIElements::IUIElementsUtility*>*, "s_Utilities", ::UnityEngine::UIElements::UIEventRegistration*>();
+}
+inline void UnityEngine::UIElements::UIEventRegistration::RegisterUIElementSystem(::UnityEngine::UIElements::IUIElementsUtility*  utility)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"RegisterUIElementSystem", {}, {::i2c::type_of<::UnityEngine::UIElements::IUIElementsUtility*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, utility);
+}
+inline void UnityEngine::UIElements::UIEventRegistration::TakeCapture()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"TakeCapture", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIEventRegistration::ReleaseCapture()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"ReleaseCapture", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method);
+}
+inline bool UnityEngine::UIElements::UIEventRegistration::EndContainerGUIFromException(::System::Exception*  exception)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"EndContainerGUIFromException", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, exception);
+}
+inline bool UnityEngine::UIElements::UIEventRegistration::ProcessEvent(int32_t  instanceID, ::System::IntPtr  nativeEventPtr)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"ProcessEvent", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, instanceID, nativeEventPtr);
+}
+inline void UnityEngine::UIElements::UIEventRegistration::CleanupRoots()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"CleanupRoots", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIEventRegistration::MakeCurrentIMGUIContainerDirty()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration*>(),
+                        {"MakeCurrentIMGUIContainerDirty", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method);
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::UIEventRegistration::UIEventRegistration()   {
+}
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration___c._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIEventRegistration___c::*)()>(&::UnityEngine::UIElements::UIEventRegistration___c::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xb7afd60;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration___c.__cctor_b__1_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIEventRegistration___c::*)()>(&::UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_0)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb7afd68;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_0", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration___c.__cctor_b__1_1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIEventRegistration___c::*)()>(&::UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_1)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb7afdb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_1", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration___c.__cctor_b__1_2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::UIEventRegistration___c::*)(int32_t, ::System::IntPtr)>(&::UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_2)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xb7afe00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_2", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration___c.__cctor_b__1_3
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIEventRegistration___c::*)()>(&::UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_3)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb7afe64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_3", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration___c.__cctor_b__1_4
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::UIElements::UIEventRegistration___c::*)(::System::Exception*)>(&::UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_4)> {
+  constexpr static std::size_t size = 0x54;
+  constexpr static std::size_t addrs = 0xb7afeb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_4", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::UIElements::UIEventRegistration___c.__cctor_b__1_5
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::UIElements::UIEventRegistration___c::*)()>(&::UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_5)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xb7aff04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_5", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::UIElements::UIEventRegistration___c::setStaticF___9(::UnityEngine::UIElements::UIEventRegistration___c*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::UIElements::UIEventRegistration___c*, "<>9", ::UnityEngine::UIElements::UIEventRegistration___c*>(std::forward<::UnityEngine::UIElements::UIEventRegistration___c*>(value));
+}
+inline ::UnityEngine::UIElements::UIEventRegistration___c* UnityEngine::UIElements::UIEventRegistration___c::getStaticF___9()  {
+return ::cordl_internals::getStaticField<::UnityEngine::UIElements::UIEventRegistration___c*, "<>9", ::UnityEngine::UIElements::UIEventRegistration___c*>();
+}
+inline void UnityEngine::UIElements::UIEventRegistration___c::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_0()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_0", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_1()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_1", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_2(int32_t  i, ::System::IntPtr  ptr)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_2", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, i, ptr);
+}
+inline void UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_3()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_3", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_4(::System::Exception*  exception)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_4", {}, {::i2c::type_of<::System::Exception*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, exception);
+}
+inline void UnityEngine::UIElements::UIEventRegistration___c::__cctor_b__1_5()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::UIElements::UIEventRegistration___c*>(),
+                        {"<.cctor>b__1_5", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::UIElements::UIEventRegistration___c* UnityEngine::UIElements::UIEventRegistration___c::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::UIElements::UIEventRegistration___c*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::UIElements::UIEventRegistration___c::UIEventRegistration___c()   {
+}

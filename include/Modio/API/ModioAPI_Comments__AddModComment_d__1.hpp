@@ -1,0 +1,7 @@
+#pragma once
+// IWYU pragma: begin_exports
+#include "Modio/API/zzzz__ModioAPI_Comments__AddModComment_d__1_def.hpp"
+#ifndef CORDL_NO_IMPL_INCLUDE
+#include "Modio/API/zzzz__ModioAPI_Comments__AddModComment_d__1_impl.hpp"
+#endif
+// IWYU pragma: end_exports

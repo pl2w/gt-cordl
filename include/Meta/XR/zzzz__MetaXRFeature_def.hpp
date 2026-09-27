@@ -1,0 +1,92 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/MetaXRFeature.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/XR/OpenXR/Features/zzzz__OpenXRFeature_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(MetaXRFeature)
+namespace System {
+struct IntPtr;
+}
+// Forward declare root types
+namespace Meta::XR {
+class MetaXRFeature;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::MetaXRFeature*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::MetaXRFeature*, "Meta.XR", "MetaXRFeature");
+// Dependencies UnityEngine.XR.OpenXR.Features.OpenXRFeature
+namespace Meta::XR {
+// Is value type: false
+// CS Name: Meta.XR.MetaXRFeature
+class CORDL_TYPE MetaXRFeature : public ::UnityEngine::XR::OpenXR::Features::OpenXRFeature {
+public:
+// Declarations
+ __declspec(property(get=get_userPresent)) bool  userPresent;
+
+/// @brief Method HookGetInstanceProcAddr, addr 0xa5b6d2c, size 0x14c, virtual true, abstract: false, final false
+inline ::System::IntPtr HookGetInstanceProcAddr(::System::IntPtr  func) ;
+
+static inline ::Meta::XR::MetaXRFeature* New_ctor() ;
+
+/// @brief Method OnAppSpaceChange, addr 0xa5b7298, size 0xc4, virtual true, abstract: false, final false
+inline void OnAppSpaceChange(uint64_t  xrSpace) ;
+
+/// @brief Method OnInstanceCreate, addr 0xa5b6e78, size 0x2b0, virtual true, abstract: false, final false
+inline bool OnInstanceCreate(uint64_t  xrInstance) ;
+
+/// @brief Method OnInstanceDestroy, addr 0xa5b7128, size 0xb8, virtual true, abstract: false, final false
+inline void OnInstanceDestroy(uint64_t  xrInstance) ;
+
+/// @brief Method OnSessionBegin, addr 0xa5b743c, size 0xb8, virtual true, abstract: false, final false
+inline void OnSessionBegin(uint64_t  xrSession) ;
+
+/// @brief Method OnSessionCreate, addr 0xa5b71e0, size 0xb8, virtual true, abstract: false, final false
+inline void OnSessionCreate(uint64_t  xrSession) ;
+
+/// @brief Method OnSessionDestroy, addr 0xa5b7664, size 0xb8, virtual true, abstract: false, final false
+inline void OnSessionDestroy(uint64_t  xrSession) ;
+
+/// @brief Method OnSessionEnd, addr 0xa5b74f4, size 0xb8, virtual true, abstract: false, final false
+inline void OnSessionEnd(uint64_t  xrSession) ;
+
+/// @brief Method OnSessionExiting, addr 0xa5b75ac, size 0xb8, virtual true, abstract: false, final false
+inline void OnSessionExiting(uint64_t  xrSession) ;
+
+/// @brief Method OnSessionStateChange, addr 0xa5b735c, size 0xe0, virtual true, abstract: false, final false
+inline void OnSessionStateChange(int32_t  oldState, int32_t  newState) ;
+
+/// @brief Method .ctor, addr 0xa5b771c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_userPresent, addr 0xa5b6ca8, size 0x84, virtual false, abstract: false, final false
+inline bool get_userPresent() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr MetaXRFeature() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "MetaXRFeature", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+MetaXRFeature(MetaXRFeature && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "MetaXRFeature", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+MetaXRFeature(MetaXRFeature const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13287};
+
+/// @brief Field featureId offset 0xffffffff size 0x8
+static constexpr ::ConstString  featureId{u"com.meta.openxr.feature.metaxr"};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::MetaXRFeature) == 0x50, "Size mismatch!");
+
+} // namespace end def Meta::XR

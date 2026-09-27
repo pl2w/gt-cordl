@@ -1,0 +1,101 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputForUI/EventSanitizer.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstddef>
+CORDL_MODULE_EXPORT(EventSanitizer)
+namespace UnityEngine::InputForUI {
+class EventSanitizer_IEventSanitizer;
+}
+namespace UnityEngine::InputForUI {
+struct Event;
+}
+// Forward declare root types
+namespace UnityEngine::InputForUI {
+class EventSanitizer_IEventSanitizer;
+}
+namespace UnityEngine::InputForUI {
+struct EventSanitizer;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputForUI::EventSanitizer_IEventSanitizer*);
+MARK_VAL_T(::UnityEngine::InputForUI::EventSanitizer);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputForUI::EventSanitizer_IEventSanitizer*, "UnityEngine.InputForUI", "EventSanitizer/IEventSanitizer");
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputForUI::EventSanitizer, "UnityEngine.InputForUI", "EventSanitizer");
+// Dependencies UnityEngine.InputForUI.EventSanitizer::IEventSanitizer
+namespace UnityEngine::InputForUI {
+// Is value type: true
+// CS Name: UnityEngine.InputForUI.EventSanitizer
+struct CORDL_TYPE EventSanitizer {
+public:
+// Declarations
+using IEventSanitizer = ::UnityEngine::InputForUI::EventSanitizer_IEventSanitizer;
+
+/// @brief Method AfterProviderUpdate, addr 0xb660d08, size 0xf8, virtual false, abstract: false, final false
+inline void AfterProviderUpdate() ;
+
+/// @brief Method BeforeProviderUpdate, addr 0xb660c10, size 0xf8, virtual false, abstract: false, final false
+inline void BeforeProviderUpdate() ;
+
+/// @brief Method Inspect, addr 0xb66079c, size 0x100, virtual false, abstract: false, final false
+inline void Inspect(/* [IsReadOnly] */ ::by_ref<::UnityEngine::InputForUI::Event>  ev) ;
+
+/// @brief Method Reset, addr 0xb66089c, size 0x114, virtual false, abstract: false, final false
+inline void Reset() ;
+
+// Ctor Parameters []
+// @brief default ctor
+constexpr EventSanitizer() ;
+
+// Ctor Parameters [CppParam { name: "_sanitizers", ty: "::ArrayW<::UnityEngine::InputForUI::EventSanitizer_IEventSanitizer*>", modifiers: "", def_value: None, comment: None }]
+constexpr EventSanitizer(::ArrayW<::UnityEngine::InputForUI::EventSanitizer_IEventSanitizer*>  _sanitizers) noexcept;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{31896};
+
+/// @brief The size of the true value type
+static constexpr auto  __IL2CPP_VALUE_TYPE_SIZE{0x8};
+
+/// @brief Field _sanitizers, offset: 0x0, size: 0x8, def value: None
+ ::ArrayW<::UnityEngine::InputForUI::EventSanitizer_IEventSanitizer*>  _sanitizers;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = true;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::InputForUI::EventSanitizer, _sanitizers) == 0x0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::InputForUI::EventSanitizer) == 0x8, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputForUI
+// Dependencies 
+namespace UnityEngine::InputForUI {
+// Is value type: false
+// CS Name: UnityEngine.InputForUI.EventSanitizer/IEventSanitizer
+class CORDL_TYPE EventSanitizer_IEventSanitizer {
+public:
+// Declarations
+/// @brief Method AfterProviderUpdate, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void AfterProviderUpdate() ;
+
+/// @brief Method BeforeProviderUpdate, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void BeforeProviderUpdate() ;
+
+/// @brief Method Inspect, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void Inspect(/* [IsReadOnly] */ ::by_ref<::UnityEngine::InputForUI::Event>  ev) ;
+
+/// @brief Method Reset, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void Reset() ;
+
+// Ctor Parameters [CppParam { name: "", ty: "EventSanitizer_IEventSanitizer", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+EventSanitizer_IEventSanitizer(EventSanitizer_IEventSanitizer const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{31895};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::InputForUI

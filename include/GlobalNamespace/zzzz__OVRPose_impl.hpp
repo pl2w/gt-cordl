@@ -1,0 +1,257 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRPose.hpp"
+#include "UnityEngine/zzzz__Quaternion_impl.hpp"
+#include "UnityEngine/zzzz__Vector3_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRPose_def.hpp"
+#include "GlobalNamespace/zzzz__OVRPlugin_Posef_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.get_identity
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPose (*)()>(&::GlobalNamespace::OVRPose::get_identity)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xa575488;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"get_identity", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.Equals
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::GlobalNamespace::OVRPose::*)(::System::Object*)>(&::GlobalNamespace::OVRPose::Equals)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xa58301c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRPose>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.GetHashCode
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::GlobalNamespace::OVRPose::*)()>(&::GlobalNamespace::OVRPose::GetHashCode)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xa583188;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRPose>(), 2}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.op_Equality
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::GlobalNamespace::OVRPose, ::GlobalNamespace::OVRPose)>(&::GlobalNamespace::OVRPose::op_Equality)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xa583108;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"op_Equality", {}, {::i2c::type_of<::GlobalNamespace::OVRPose>(), ::i2c::type_of<::GlobalNamespace::OVRPose>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.op_Inequality
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::GlobalNamespace::OVRPose, ::GlobalNamespace::OVRPose)>(&::GlobalNamespace::OVRPose::op_Inequality)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xa583230;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"op_Inequality", {}, {::i2c::type_of<::GlobalNamespace::OVRPose>(), ::i2c::type_of<::GlobalNamespace::OVRPose>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.op_Multiply
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPose (*)(::GlobalNamespace::OVRPose, ::GlobalNamespace::OVRPose)>(&::GlobalNamespace::OVRPose::op_Multiply)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xa57da28;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"op_Multiply", {}, {::i2c::type_of<::GlobalNamespace::OVRPose>(), ::i2c::type_of<::GlobalNamespace::OVRPose>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.Inverse
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPose (::GlobalNamespace::OVRPose::*)()>(&::GlobalNamespace::OVRPose::Inverse)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xa575a10;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"Inverse", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.flipZ
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPose (::GlobalNamespace::OVRPose::*)()>(&::GlobalNamespace::OVRPose::flipZ)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xa5832b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"flipZ", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.ToPosef_Legacy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPlugin_Posef (::GlobalNamespace::OVRPose::*)()>(&::GlobalNamespace::OVRPose::ToPosef_Legacy)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xa5832dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"ToPosef_Legacy", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.ToPosef
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPlugin_Posef (::GlobalNamespace::OVRPose::*)()>(&::GlobalNamespace::OVRPose::ToPosef)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xa5832f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"ToPosef", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRPose.Rotate180AlongX
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRPose (::GlobalNamespace::OVRPose::*)()>(&::GlobalNamespace::OVRPose::Rotate180AlongX)> {
+  constexpr static std::size_t size = 0x10c;
+  constexpr static std::size_t addrs = 0xa583324;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"Rotate180AlongX", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline ::GlobalNamespace::OVRPose GlobalNamespace::OVRPose::get_identity()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"get_identity", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPose>(nullptr, ___internal_method);
+}
+inline bool GlobalNamespace::OVRPose::Equals(::System::Object*  obj)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRPose>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(*this, ___internal_method, obj);
+}
+inline int32_t GlobalNamespace::OVRPose::GetHashCode()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRPose>(), 2}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(*this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRPose::op_Equality(::GlobalNamespace::OVRPose  x, ::GlobalNamespace::OVRPose  y)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"op_Equality", {}, {::i2c::type_of<::GlobalNamespace::OVRPose>(), ::i2c::type_of<::GlobalNamespace::OVRPose>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, x, y);
+}
+inline bool GlobalNamespace::OVRPose::op_Inequality(::GlobalNamespace::OVRPose  x, ::GlobalNamespace::OVRPose  y)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"op_Inequality", {}, {::i2c::type_of<::GlobalNamespace::OVRPose>(), ::i2c::type_of<::GlobalNamespace::OVRPose>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, x, y);
+}
+inline ::GlobalNamespace::OVRPose GlobalNamespace::OVRPose::op_Multiply(::GlobalNamespace::OVRPose  lhs, ::GlobalNamespace::OVRPose  rhs)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"op_Multiply", {}, {::i2c::type_of<::GlobalNamespace::OVRPose>(), ::i2c::type_of<::GlobalNamespace::OVRPose>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPose>(nullptr, ___internal_method, lhs, rhs);
+}
+inline ::GlobalNamespace::OVRPose GlobalNamespace::OVRPose::Inverse()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"Inverse", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPose>(*this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRPose GlobalNamespace::OVRPose::flipZ()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"flipZ", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPose>(*this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRPlugin_Posef GlobalNamespace::OVRPose::ToPosef_Legacy()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"ToPosef_Legacy", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPlugin_Posef>(*this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRPlugin_Posef GlobalNamespace::OVRPose::ToPosef()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"ToPosef", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPlugin_Posef>(*this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRPose GlobalNamespace::OVRPose::Rotate180AlongX()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRPose>(),
+                        {"Rotate180AlongX", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRPose>(*this, ___internal_method);
+}
+// Ctor Parameters [CppParam { name: "position", ty: "::UnityEngine::Vector3", modifiers: "", def_value: Some("{}"), comment: None }, CppParam { name: "orientation", ty: "::UnityEngine::Quaternion", modifiers: "", def_value: Some("{}"), comment: None }]
+constexpr ::GlobalNamespace::OVRPose::OVRPose(::UnityEngine::Vector3  position, ::UnityEngine::Quaternion  orientation) noexcept  {
+this->position = position;
+this->orientation = orientation;
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRPose::OVRPose()   {
+}

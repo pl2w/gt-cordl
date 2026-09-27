@@ -1,0 +1,1294 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/XR/TrackedPoseDriver.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__TrackedPoseDriver_TrackingStates_impl.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__TrackedPoseDriver_TrackingType_impl.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__TrackedPoseDriver_UpdateType_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionProperty_impl.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "UnityEngine/zzzz__Quaternion_impl.hpp"
+#include "UnityEngine/zzzz__Vector3_impl.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__TrackedPoseDriver_def.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__TrackedPoseDriver_TrackingStates_def.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__TrackedPoseDriver_TrackingType_def.hpp"
+#include "UnityEngine/InputSystem/XR/zzzz__TrackedPoseDriver_UpdateType_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputActionProperty_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputAction_CallbackContext_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputAction_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputDeviceChange_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputDevice_def.hpp"
+#include "UnityEngine/zzzz__Camera_def.hpp"
+#include "UnityEngine/zzzz__ISerializationCallbackReceiver_def.hpp"
+#include "UnityEngine/zzzz__Quaternion_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_trackingType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::TrackedPoseDriver_TrackingType (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_trackingType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafc6cc4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_trackingType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_trackingType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::TrackedPoseDriver_TrackingType)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_trackingType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafc6ccc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_trackingType", {}, {::i2c::type_of<::GlobalNamespace::TrackedPoseDriver_TrackingType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_updateType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::TrackedPoseDriver_UpdateType (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_updateType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafc6cd4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_updateType", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_updateType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::TrackedPoseDriver_UpdateType)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_updateType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafc6cdc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_updateType", {}, {::i2c::type_of<::GlobalNamespace::TrackedPoseDriver_UpdateType>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_ignoreTrackingState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_ignoreTrackingState)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafc6ce4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_ignoreTrackingState", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_ignoreTrackingState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(bool)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_ignoreTrackingState)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafc6cec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_ignoreTrackingState", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_positionInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionProperty (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_positionInput)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xafc6cf4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_positionInput", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_positionInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::UnityEngine::InputSystem::InputActionProperty)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_positionInput)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xafc6d08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_positionInput", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionProperty>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_rotationInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionProperty (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_rotationInput)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xafc70a0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_rotationInput", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_rotationInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::UnityEngine::InputSystem::InputActionProperty)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_rotationInput)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xafc70b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_rotationInput", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionProperty>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_trackingStateInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputActionProperty (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_trackingStateInput)> {
+  constexpr static std::size_t size = 0x14;
+  constexpr static std::size_t addrs = 0xafc744c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_trackingStateInput", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_trackingStateInput
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::UnityEngine::InputSystem::InputActionProperty)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_trackingStateInput)> {
+  constexpr static std::size_t size = 0xcc;
+  constexpr static std::size_t addrs = 0xafc7460;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_trackingStateInput", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionProperty>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.BindActions
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::BindActions)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xafc77f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindActions", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.UnbindActions
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindActions)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xafc7818;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindActions", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.BindPosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::BindPosition)> {
+  constexpr static std::size_t size = 0x18c;
+  constexpr static std::size_t addrs = 0xafc6f14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindPosition", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.BindRotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::BindRotation)> {
+  constexpr static std::size_t size = 0x18c;
+  constexpr static std::size_t addrs = 0xafc72c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindRotation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.BindTrackingState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::BindTrackingState)> {
+  constexpr static std::size_t size = 0x18c;
+  constexpr static std::size_t addrs = 0xafc766c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindTrackingState", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.RenameAndEnable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::InputSystem::InputAction*, ::StringW)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::RenameAndEnable)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xafc7838;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"RenameAndEnable", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.UnbindPosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindPosition)> {
+  constexpr static std::size_t size = 0x140;
+  constexpr static std::size_t addrs = 0xafc6dd4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindPosition", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.UnbindRotation
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindRotation)> {
+  constexpr static std::size_t size = 0x140;
+  constexpr static std::size_t addrs = 0xafc7180;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindRotation", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.UnbindTrackingState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindTrackingState)> {
+  constexpr static std::size_t size = 0x140;
+  constexpr static std::size_t addrs = 0xafc752c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindTrackingState", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnPositionPerformed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::InputAction_CallbackContext)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnPositionPerformed)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xafc7860;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnPositionPerformed", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnPositionCanceled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::InputAction_CallbackContext)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnPositionCanceled)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xafc78c0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnPositionCanceled", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnRotationPerformed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::InputAction_CallbackContext)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnRotationPerformed)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xafc7918;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnRotationPerformed", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnRotationCanceled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::InputAction_CallbackContext)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnRotationCanceled)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xafc7978;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnRotationCanceled", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnTrackingStatePerformed
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::InputAction_CallbackContext)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnTrackingStatePerformed)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xafc79c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnTrackingStatePerformed", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnTrackingStateCanceled
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::GlobalNamespace::InputAction_CallbackContext)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnTrackingStateCanceled)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafc7a24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnTrackingStateCanceled", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.Reset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::Reset)> {
+  constexpr static std::size_t size = 0x1f8;
+  constexpr static std::size_t addrs = 0xafc7a2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"Reset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.Awake
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::Awake)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xafc7c24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 6}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnEnable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnEnable)> {
+  constexpr static std::size_t size = 0x110;
+  constexpr static std::size_t addrs = 0xafc7cd0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnEnable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnDisable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnDisable)> {
+  constexpr static std::size_t size = 0x104;
+  constexpr static std::size_t addrs = 0xafc7de0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnDisable", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnDestroy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnDestroy)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xafc7ee4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 7}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.UpdateCallback
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::UpdateCallback)> {
+  constexpr static std::size_t size = 0x16c;
+  constexpr static std::size_t addrs = 0xafc7f0c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UpdateCallback", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnDeviceChanged
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::UnityEngine::InputSystem::InputDevice*, ::UnityEngine::InputSystem::InputDeviceChange)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnDeviceChanged)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xafc81d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnDeviceChanged", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDeviceChange>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.ReadTrackingStateWithoutTrackingAction
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::ReadTrackingStateWithoutTrackingAction)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xafc81e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"ReadTrackingStateWithoutTrackingAction", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.ReadTrackingState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::ReadTrackingState)> {
+  constexpr static std::size_t size = 0xa0;
+  constexpr static std::size_t addrs = 0xafc8134;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"ReadTrackingState", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnUpdate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnUpdate)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xafc8258;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 8}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.OnBeforeRender
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::OnBeforeRender)> {
+  constexpr static std::size_t size = 0x20;
+  constexpr static std::size_t addrs = 0xafc8274;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 9}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.PerformUpdate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::PerformUpdate)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xafc8294;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 10}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.SetLocalTransform
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::UnityEngine::Vector3, ::UnityEngine::Quaternion)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::SetLocalTransform)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xafc82b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 11}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.HasStereoCamera
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::by_ref<::UnityEngine::Camera*>)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::HasStereoCamera)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xafc7c4c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"HasStereoCamera", {}, {::i2c::type_of<::by_ref<::UnityEngine::Camera*>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.HasResolvedControl
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::UnityEngine::InputSystem::InputAction*)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::HasResolvedControl)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xafc8078;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"HasResolvedControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_positionAction
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputAction* (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_positionAction)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xafc840c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_positionAction", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_positionAction
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::UnityEngine::InputSystem::InputAction*)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_positionAction)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xafc8418;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_positionAction", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.get_rotationAction
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::InputSystem::InputAction* (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::get_rotationAction)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xafc8460;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_rotationAction", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.set_rotationAction
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)(::UnityEngine::InputSystem::InputAction*)>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::set_rotationAction)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xafc846c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_rotationAction", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xafc84b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver.UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize)> {
+  constexpr static std::size_t size = 0xb8;
+  constexpr static std::size_t addrs = 0xafc84b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::XR::TrackedPoseDriver._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::XR::TrackedPoseDriver::*)()>(&::UnityEngine::InputSystem::XR::TrackedPoseDriver::_ctor)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xafc8570;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::GlobalNamespace::TrackedPoseDriver_TrackingType& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_TrackingType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TrackingType;
+}
+constexpr ::GlobalNamespace::TrackedPoseDriver_TrackingType const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_TrackingType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TrackingType;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_TrackingType(::GlobalNamespace::TrackedPoseDriver_TrackingType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_TrackingType = value;
+}
+constexpr ::GlobalNamespace::TrackedPoseDriver_UpdateType& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_UpdateType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_UpdateType;
+}
+constexpr ::GlobalNamespace::TrackedPoseDriver_UpdateType const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_UpdateType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_UpdateType;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_UpdateType(::GlobalNamespace::TrackedPoseDriver_UpdateType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_UpdateType = value;
+}
+constexpr bool& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_IgnoreTrackingState()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IgnoreTrackingState;
+}
+constexpr bool const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_IgnoreTrackingState() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IgnoreTrackingState;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_IgnoreTrackingState(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_IgnoreTrackingState = value;
+}
+constexpr ::UnityEngine::InputSystem::InputActionProperty& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_PositionInput()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PositionInput;
+}
+constexpr ::UnityEngine::InputSystem::InputActionProperty const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_PositionInput() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PositionInput;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_PositionInput(::UnityEngine::InputSystem::InputActionProperty  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_PositionInput = value;
+}
+constexpr ::UnityEngine::InputSystem::InputActionProperty& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_RotationInput()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RotationInput;
+}
+constexpr ::UnityEngine::InputSystem::InputActionProperty const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_RotationInput() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RotationInput;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_RotationInput(::UnityEngine::InputSystem::InputActionProperty  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_RotationInput = value;
+}
+constexpr ::UnityEngine::InputSystem::InputActionProperty& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_TrackingStateInput()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TrackingStateInput;
+}
+constexpr ::UnityEngine::InputSystem::InputActionProperty const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_TrackingStateInput() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TrackingStateInput;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_TrackingStateInput(::UnityEngine::InputSystem::InputActionProperty  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_TrackingStateInput = value;
+}
+constexpr ::UnityEngine::Vector3& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_CurrentPosition()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CurrentPosition;
+}
+constexpr ::UnityEngine::Vector3 const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_CurrentPosition() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CurrentPosition;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_CurrentPosition(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CurrentPosition = value;
+}
+constexpr ::UnityEngine::Quaternion& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_CurrentRotation()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CurrentRotation;
+}
+constexpr ::UnityEngine::Quaternion const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_CurrentRotation() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CurrentRotation;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_CurrentRotation(::UnityEngine::Quaternion  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CurrentRotation = value;
+}
+constexpr ::GlobalNamespace::TrackedPoseDriver_TrackingStates& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_CurrentTrackingState()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CurrentTrackingState;
+}
+constexpr ::GlobalNamespace::TrackedPoseDriver_TrackingStates const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_CurrentTrackingState() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CurrentTrackingState;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_CurrentTrackingState(::GlobalNamespace::TrackedPoseDriver_TrackingStates  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CurrentTrackingState = value;
+}
+constexpr bool& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_RotationBound()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RotationBound;
+}
+constexpr bool const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_RotationBound() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RotationBound;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_RotationBound(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_RotationBound = value;
+}
+constexpr bool& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_PositionBound()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PositionBound;
+}
+constexpr bool const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_PositionBound() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PositionBound;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_PositionBound(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_PositionBound = value;
+}
+constexpr bool& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_TrackingStateBound()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TrackingStateBound;
+}
+constexpr bool const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_TrackingStateBound() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_TrackingStateBound;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_TrackingStateBound(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_TrackingStateBound = value;
+}
+constexpr bool& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_IsFirstUpdate()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IsFirstUpdate;
+}
+constexpr bool const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_IsFirstUpdate() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IsFirstUpdate;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_IsFirstUpdate(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_IsFirstUpdate = value;
+}
+constexpr ::UnityEngine::InputSystem::InputAction*& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_PositionAction()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PositionAction;
+}
+constexpr ::UnityEngine::InputSystem::InputAction* const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_PositionAction() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_PositionAction;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_PositionAction(::UnityEngine::InputSystem::InputAction*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_PositionAction = value;
+}
+constexpr ::UnityEngine::InputSystem::InputAction*& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_RotationAction()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RotationAction;
+}
+constexpr ::UnityEngine::InputSystem::InputAction* const& UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_get_m_RotationAction() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RotationAction;
+}
+constexpr void UnityEngine::InputSystem::XR::TrackedPoseDriver::__cordl_internal_set_m_RotationAction(::UnityEngine::InputSystem::InputAction*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_RotationAction = value;
+}
+inline ::GlobalNamespace::TrackedPoseDriver_TrackingType UnityEngine::InputSystem::XR::TrackedPoseDriver::get_trackingType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_trackingType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::TrackedPoseDriver_TrackingType>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_trackingType(::GlobalNamespace::TrackedPoseDriver_TrackingType  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_trackingType", {}, {::i2c::type_of<::GlobalNamespace::TrackedPoseDriver_TrackingType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::GlobalNamespace::TrackedPoseDriver_UpdateType UnityEngine::InputSystem::XR::TrackedPoseDriver::get_updateType()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_updateType", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::TrackedPoseDriver_UpdateType>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_updateType(::GlobalNamespace::TrackedPoseDriver_UpdateType  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_updateType", {}, {::i2c::type_of<::GlobalNamespace::TrackedPoseDriver_UpdateType>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::InputSystem::XR::TrackedPoseDriver::get_ignoreTrackingState()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_ignoreTrackingState", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_ignoreTrackingState(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_ignoreTrackingState", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::InputActionProperty UnityEngine::InputSystem::XR::TrackedPoseDriver::get_positionInput()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_positionInput", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionProperty>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_positionInput(::UnityEngine::InputSystem::InputActionProperty  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_positionInput", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionProperty>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::InputActionProperty UnityEngine::InputSystem::XR::TrackedPoseDriver::get_rotationInput()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_rotationInput", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionProperty>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_rotationInput(::UnityEngine::InputSystem::InputActionProperty  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_rotationInput", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionProperty>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::InputActionProperty UnityEngine::InputSystem::XR::TrackedPoseDriver::get_trackingStateInput()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_trackingStateInput", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputActionProperty>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_trackingStateInput(::UnityEngine::InputSystem::InputActionProperty  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_trackingStateInput", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputActionProperty>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::BindActions()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindActions", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindActions()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindActions", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::BindPosition()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindPosition", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::BindRotation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindRotation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::BindTrackingState()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"BindTrackingState", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::RenameAndEnable(::UnityEngine::InputSystem::InputAction*  action, ::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"RenameAndEnable", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, action, name);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindPosition()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindPosition", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindRotation()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindRotation", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::UnbindTrackingState()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnbindTrackingState", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnPositionPerformed(::GlobalNamespace::InputAction_CallbackContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnPositionPerformed", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, context);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnPositionCanceled(::GlobalNamespace::InputAction_CallbackContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnPositionCanceled", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, context);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnRotationPerformed(::GlobalNamespace::InputAction_CallbackContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnRotationPerformed", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, context);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnRotationCanceled(::GlobalNamespace::InputAction_CallbackContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnRotationCanceled", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, context);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnTrackingStatePerformed(::GlobalNamespace::InputAction_CallbackContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnTrackingStatePerformed", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, context);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnTrackingStateCanceled(::GlobalNamespace::InputAction_CallbackContext  context)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnTrackingStateCanceled", {}, {::i2c::type_of<::GlobalNamespace::InputAction_CallbackContext>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, context);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::Reset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"Reset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::Awake()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 6}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnEnable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnEnable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnDisable()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnDisable", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnDestroy()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 7}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::UpdateCallback()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UpdateCallback", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnDeviceChanged(::UnityEngine::InputSystem::InputDevice*  inputDevice, ::UnityEngine::InputSystem::InputDeviceChange  inputDeviceChange)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"OnDeviceChanged", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputDevice*>(), ::i2c::type_of<::UnityEngine::InputSystem::InputDeviceChange>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, inputDevice, inputDeviceChange);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::ReadTrackingStateWithoutTrackingAction()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"ReadTrackingStateWithoutTrackingAction", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::ReadTrackingState()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"ReadTrackingState", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnUpdate()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 8}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::OnBeforeRender()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 9}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::PerformUpdate()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 10}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::SetLocalTransform(::UnityEngine::Vector3  newPosition, ::UnityEngine::Quaternion  newRotation)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(), 11}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, newPosition, newRotation);
+}
+inline bool UnityEngine::InputSystem::XR::TrackedPoseDriver::HasStereoCamera(::by_ref<::UnityEngine::Camera*>  cameraComponent)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"HasStereoCamera", {}, {::i2c::type_of<::by_ref<::UnityEngine::Camera*>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, cameraComponent);
+}
+inline bool UnityEngine::InputSystem::XR::TrackedPoseDriver::HasResolvedControl(::UnityEngine::InputSystem::InputAction*  action)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"HasResolvedControl", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, action);
+}
+inline ::UnityEngine::InputSystem::InputAction* UnityEngine::InputSystem::XR::TrackedPoseDriver::get_positionAction()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_positionAction", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputAction*>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_positionAction(::UnityEngine::InputSystem::InputAction*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_positionAction", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline ::UnityEngine::InputSystem::InputAction* UnityEngine::InputSystem::XR::TrackedPoseDriver::get_rotationAction()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"get_rotationAction", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::InputSystem::InputAction*>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::set_rotationAction(::UnityEngine::InputSystem::InputAction*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"set_rotationAction", {}, {::i2c::type_of<::UnityEngine::InputSystem::InputAction*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {"UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::XR::TrackedPoseDriver::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::XR::TrackedPoseDriver* UnityEngine::InputSystem::XR::TrackedPoseDriver::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::XR::TrackedPoseDriver*>());
+}
+/// @brief Convert operator to "::UnityEngine::ISerializationCallbackReceiver"
+constexpr  UnityEngine::InputSystem::XR::TrackedPoseDriver::operator ::UnityEngine::ISerializationCallbackReceiver*() noexcept {
+return static_cast<::UnityEngine::ISerializationCallbackReceiver*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::UnityEngine::ISerializationCallbackReceiver"
+constexpr ::UnityEngine::ISerializationCallbackReceiver* UnityEngine::InputSystem::XR::TrackedPoseDriver::i___UnityEngine__ISerializationCallbackReceiver() noexcept {
+return static_cast<::UnityEngine::ISerializationCallbackReceiver*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::XR::TrackedPoseDriver::TrackedPoseDriver()   {
+}

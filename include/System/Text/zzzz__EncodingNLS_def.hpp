@@ -1,0 +1,97 @@
+#pragma once
+// IWYU pragma private; include "System/Text/EncodingNLS.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/Text/zzzz__Encoding_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(EncodingNLS)
+namespace System::Text {
+class Decoder;
+}
+namespace System::Text {
+class Encoder;
+}
+// Forward declare root types
+namespace System::Text {
+class EncodingNLS;
+}
+// Write type traits
+MARK_REF_T(::System::Text::EncodingNLS*);
+DEFINE_IL2CPP_CLASS(::System::Text::EncodingNLS*, "System.Text", "EncodingNLS");
+// Dependencies System.Text.Encoding
+namespace System::Text {
+// Is value type: false
+// CS Name: System.Text.EncodingNLS
+class CORDL_TYPE EncodingNLS : public ::System::Text::Encoding {
+public:
+// Declarations
+/// @brief Method GetByteCount, addr 0xa13b81c, size 0x188, virtual true, abstract: false, final false
+inline int32_t GetByteCount(::ArrayW<char16_t>  chars, int32_t  index, int32_t  count) ;
+
+/// @brief Method GetByteCount, addr 0xa13ba30, size 0xd0, virtual true, abstract: false, final false
+inline int32_t GetByteCount(char16_t*  chars, int32_t  count) ;
+
+/// @brief Method GetByteCount, addr 0xa13b9a4, size 0x8c, virtual true, abstract: false, final false
+inline int32_t GetByteCount(::StringW  s) ;
+
+/// @brief Method GetBytes, addr 0xa13bd48, size 0x274, virtual true, abstract: false, final false
+inline int32_t GetBytes(::ArrayW<char16_t>  chars, int32_t  charIndex, int32_t  charCount, ::ArrayW<uint8_t>  bytes, int32_t  byteIndex) ;
+
+/// @brief Method GetBytes, addr 0xa13bfbc, size 0xf8, virtual true, abstract: false, final false
+inline int32_t GetBytes(char16_t*  chars, int32_t  charCount, uint8_t*  bytes, int32_t  byteCount) ;
+
+/// @brief Method GetBytes, addr 0xa13bb00, size 0x248, virtual true, abstract: false, final false
+inline int32_t GetBytes(::StringW  s, int32_t  charIndex, int32_t  charCount, ::ArrayW<uint8_t>  bytes, int32_t  byteIndex) ;
+
+/// @brief Method GetCharCount, addr 0xa13c0b4, size 0x188, virtual true, abstract: false, final false
+inline int32_t GetCharCount(::ArrayW<uint8_t>  bytes, int32_t  index, int32_t  count) ;
+
+/// @brief Method GetCharCount, addr 0xa13c23c, size 0xd0, virtual true, abstract: false, final false
+inline int32_t GetCharCount(uint8_t*  bytes, int32_t  count) ;
+
+/// @brief Method GetChars, addr 0xa13c30c, size 0x278, virtual true, abstract: false, final false
+inline int32_t GetChars(::ArrayW<uint8_t>  bytes, int32_t  byteIndex, int32_t  byteCount, ::ArrayW<char16_t>  chars, int32_t  charIndex) ;
+
+/// @brief Method GetChars, addr 0xa13c584, size 0xf8, virtual true, abstract: false, final false
+inline int32_t GetChars(uint8_t*  bytes, int32_t  byteCount, char16_t*  chars, int32_t  charCount) ;
+
+/// @brief Method GetDecoder, addr 0xa13c810, size 0x58, virtual true, abstract: false, final false
+inline ::System::Text::Decoder* GetDecoder() ;
+
+/// @brief Method GetEncoder, addr 0xa13c868, size 0x58, virtual true, abstract: false, final false
+inline ::System::Text::Encoder* GetEncoder() ;
+
+/// @brief Method GetString, addr 0xa13c67c, size 0x194, virtual true, abstract: false, final false
+inline ::StringW GetString(::ArrayW<uint8_t>  bytes, int32_t  index, int32_t  count) ;
+
+static inline ::System::Text::EncodingNLS* New_ctor(int32_t  codePage) ;
+
+/// @brief Method .ctor, addr 0xa13b814, size 0x8, virtual false, abstract: false, final false
+inline void _ctor(int32_t  codePage) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr EncodingNLS() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "EncodingNLS", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+EncodingNLS(EncodingNLS && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "EncodingNLS", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+EncodingNLS(EncodingNLS const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{5992};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Text::EncodingNLS) == 0x38, "Size mismatch!");
+
+} // namespace end def System::Text

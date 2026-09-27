@@ -1,0 +1,157 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/UserInterface/Generic/Switch.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Meta/XR/ImmersiveDebugger/UserInterface/Generic/zzzz__ButtonWithIcon_def.hpp"
+CORDL_MODULE_EXPORT(Switch)
+namespace Meta::XR::ImmersiveDebugger::Manager {
+class Tweak;
+}
+namespace System {
+template<typename T>
+class Action_1;
+}
+namespace UnityEngine {
+class Texture2D;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger::UserInterface::Generic {
+class Switch;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch*, "Meta.XR.ImmersiveDebugger.UserInterface.Generic", "Switch");
+// Dependencies Meta.XR.ImmersiveDebugger.UserInterface.Generic.ButtonWithIcon
+namespace Meta::XR::ImmersiveDebugger::UserInterface::Generic {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.UserInterface.Generic.Switch
+class CORDL_TYPE Switch : public ::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ButtonWithIcon {
+public:
+// Declarations
+ __declspec(property(get=get_State, put=set_State)) bool  State;
+
+ __declspec(property(get=get_StateChanged, put=set_StateChanged)) ::System::Action_1<bool>*  StateChanged;
+
+ __declspec(property(get=get_Tweak, put=set_Tweak)) ::Meta::XR::ImmersiveDebugger::Manager::Tweak*  Tweak;
+
+/// @brief Field <StateChanged>k__BackingField, offset 0xc0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__StateChanged_k__BackingField, put=__cordl_internal_set__StateChanged_k__BackingField)) ::System::Action_1<bool>*  _StateChanged_k__BackingField;
+
+/// @brief Field <Tweak>k__BackingField, offset 0xb8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__Tweak_k__BackingField, put=__cordl_internal_set__Tweak_k__BackingField)) ::Meta::XR::ImmersiveDebugger::Manager::Tweak*  _Tweak_k__BackingField;
+
+/// @brief Field _toggleIconOff, offset 0xb0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__toggleIconOff, put=__cordl_internal_set__toggleIconOff)) ::UnityW<::UnityEngine::Texture2D>  _toggleIconOff;
+
+/// @brief Field _toggleIconOn, offset 0xa8, size 0x8 
+ __declspec(property(get=__cordl_internal_get__toggleIconOn, put=__cordl_internal_set__toggleIconOn)) ::UnityW<::UnityEngine::Texture2D>  _toggleIconOn;
+
+static inline ::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch* New_ctor() ;
+
+/// @brief Method OnStateChanged, addr 0x9eebd44, size 0x60, virtual false, abstract: false, final false
+inline void OnStateChanged() ;
+
+/// @brief Method SetToggleIcons, addr 0x9eebdfc, size 0x30, virtual false, abstract: false, final false
+inline void SetToggleIcons(::UnityEngine::Texture2D*  onState, ::UnityEngine::Texture2D*  offState) ;
+
+/// @brief Method Start, addr 0x9eebdb4, size 0x48, virtual false, abstract: false, final false
+inline void Start() ;
+
+/// @brief Method UpdateIcon, addr 0x9eebe2c, size 0x168, virtual true, abstract: false, final false
+inline void UpdateIcon() ;
+
+constexpr ::System::Action_1<bool>* const& __cordl_internal_get__StateChanged_k__BackingField() const;
+
+constexpr ::System::Action_1<bool>*& __cordl_internal_get__StateChanged_k__BackingField() ;
+
+constexpr ::Meta::XR::ImmersiveDebugger::Manager::Tweak* const& __cordl_internal_get__Tweak_k__BackingField() const;
+
+constexpr ::Meta::XR::ImmersiveDebugger::Manager::Tweak*& __cordl_internal_get__Tweak_k__BackingField() ;
+
+constexpr ::UnityW<::UnityEngine::Texture2D> const& __cordl_internal_get__toggleIconOff() const;
+
+constexpr ::UnityW<::UnityEngine::Texture2D>& __cordl_internal_get__toggleIconOff() ;
+
+constexpr ::UnityW<::UnityEngine::Texture2D> const& __cordl_internal_get__toggleIconOn() const;
+
+constexpr ::UnityW<::UnityEngine::Texture2D>& __cordl_internal_get__toggleIconOn() ;
+
+constexpr void __cordl_internal_set__StateChanged_k__BackingField(::System::Action_1<bool>*  value) ;
+
+constexpr void __cordl_internal_set__Tweak_k__BackingField(::Meta::XR::ImmersiveDebugger::Manager::Tweak*  value) ;
+
+constexpr void __cordl_internal_set__toggleIconOff(::UnityW<::UnityEngine::Texture2D>  value) ;
+
+constexpr void __cordl_internal_set__toggleIconOn(::UnityW<::UnityEngine::Texture2D>  value) ;
+
+/// @brief Method .ctor, addr 0x9eebf94, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_State, addr 0x9eebc64, size 0xa4, virtual false, abstract: false, final false
+inline bool get_State() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_StateChanged, addr 0x9eebda4, size 0x8, virtual false, abstract: false, final false
+inline ::System::Action_1<bool>* get_StateChanged() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_Tweak, addr 0x9eebc54, size 0x8, virtual false, abstract: false, final false
+inline ::Meta::XR::ImmersiveDebugger::Manager::Tweak* get_Tweak() ;
+
+/// @brief Method set_State, addr 0x9eebd08, size 0x3c, virtual false, abstract: false, final false
+inline void set_State(bool  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_StateChanged, addr 0x9eebdac, size 0x8, virtual false, abstract: false, final false
+inline void set_StateChanged(::System::Action_1<bool>*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_Tweak, addr 0x9eebc5c, size 0x8, virtual false, abstract: false, final false
+inline void set_Tweak(::Meta::XR::ImmersiveDebugger::Manager::Tweak*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Switch() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Switch", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Switch(Switch && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Switch", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Switch(Switch const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27470};
+
+/// @brief Field _toggleIconOn, offset: 0xa8, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::Texture2D>  ____toggleIconOn;
+
+/// @brief Field _toggleIconOff, offset: 0xb0, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::Texture2D>  ____toggleIconOff;
+
+/// [CompilerGenerated]
+/// @brief Field <Tweak>k__BackingField, offset: 0xb8, size: 0x8, def value: None
+ ::Meta::XR::ImmersiveDebugger::Manager::Tweak*  ____Tweak_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <StateChanged>k__BackingField, offset: 0xc0, size: 0x8, def value: None
+ ::System::Action_1<bool>*  ____StateChanged_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch, ____toggleIconOn) == 0xa8, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch, ____toggleIconOff) == 0xb0, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch, ____Tweak_k__BackingField) == 0xb8, "Offset mismatch!");
+
+static_assert(offsetof(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch, ____StateChanged_k__BackingField) == 0xc0, "Offset mismatch!");
+
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Switch) == 0xc8, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger::UserInterface::Generic

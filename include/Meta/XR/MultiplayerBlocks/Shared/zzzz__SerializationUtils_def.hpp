@@ -1,0 +1,61 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/MultiplayerBlocks/Shared/SerializationUtils.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(SerializationUtils)
+// Forward declare root types
+namespace Meta::XR::MultiplayerBlocks::Shared {
+class SerializationUtils;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::MultiplayerBlocks::Shared::SerializationUtils*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::MultiplayerBlocks::Shared::SerializationUtils*, "Meta.XR.MultiplayerBlocks.Shared", "SerializationUtils");
+// Dependencies System.Object
+namespace Meta::XR::MultiplayerBlocks::Shared {
+// Is value type: false
+// CS Name: Meta.XR.MultiplayerBlocks.Shared.SerializationUtils
+class CORDL_TYPE SerializationUtils : public ::System::Object {
+public:
+// Declarations
+/// @brief Method Compress, addr 0x9f6c224, size 0x28c, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> Compress(::ArrayW<uint8_t>  data) ;
+
+/// @brief Method Decompress, addr 0x9f6c4b0, size 0x294, virtual false, abstract: false, final false
+static inline ::ArrayW<uint8_t> Decompress(::ArrayW<uint8_t>  data) ;
+
+/// @brief Method DeserializeFromString, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline T DeserializeFromString(::StringW  base64) ;
+
+/// @brief Method SerializeToString, addr 0x0, size 0xffffffffffffffff, virtual false, abstract: false, final false
+template<typename T>
+static inline ::StringW SerializeToString(T  obj) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SerializationUtils() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SerializationUtils", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SerializationUtils(SerializationUtils && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SerializationUtils", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SerializationUtils(SerializationUtils const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{30630};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::MultiplayerBlocks::Shared::SerializationUtils) == 0x10, "Size mismatch!");
+
+} // namespace end def Meta::XR::MultiplayerBlocks::Shared

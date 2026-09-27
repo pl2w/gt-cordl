@@ -1,0 +1,92 @@
+#pragma once
+// IWYU pragma private; include "Meta/XR/ImmersiveDebugger/Hierarchy/SceneRegistry.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "Meta/XR/ImmersiveDebugger/Hierarchy/zzzz__ItemWithChildren_3_def.hpp"
+#include "UnityEngine/SceneManagement/zzzz__Scene_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(SceneRegistry)
+namespace Meta::XR::ImmersiveDebugger::Hierarchy {
+class Item;
+}
+namespace Meta::XR::ImmersiveDebugger::Hierarchy {
+class SceneItem;
+}
+namespace Meta::XR::ImmersiveDebugger::Utils {
+struct InstanceHandle;
+}
+namespace System {
+class Object;
+}
+namespace UnityEngine::SceneManagement {
+struct Scene;
+}
+// Forward declare root types
+namespace Meta::XR::ImmersiveDebugger::Hierarchy {
+class SceneRegistry;
+}
+// Write type traits
+MARK_REF_T(::Meta::XR::ImmersiveDebugger::Hierarchy::SceneRegistry*);
+DEFINE_IL2CPP_CLASS(::Meta::XR::ImmersiveDebugger::Hierarchy::SceneRegistry*, "Meta.XR.ImmersiveDebugger.Hierarchy", "SceneRegistry");
+// Dependencies Meta.XR.ImmersiveDebugger.Hierarchy.ItemWithChildren`3<TargetType, ChildType, ChildTargetType>, UnityEngine.SceneManagement.Scene
+namespace Meta::XR::ImmersiveDebugger::Hierarchy {
+// Is value type: false
+// CS Name: Meta.XR.ImmersiveDebugger.Hierarchy.SceneRegistry
+class CORDL_TYPE SceneRegistry : public ::Meta::XR::ImmersiveDebugger::Hierarchy::ItemWithChildren_3<::System::Object*,::Meta::XR::ImmersiveDebugger::Hierarchy::SceneItem*,::UnityEngine::SceneManagement::Scene> {
+public:
+// Declarations
+ __declspec(property(get=get_Label)) ::StringW  Label;
+
+ __declspec(property(get=get_Valid)) bool  Valid;
+
+/// @brief Method BuildHandle, addr 0x9ef84c4, size 0xc, virtual true, abstract: false, final false
+inline ::Meta::XR::ImmersiveDebugger::Utils::InstanceHandle BuildHandle() ;
+
+/// @brief Method CompareChildren, addr 0x9ef84d0, size 0x10, virtual true, abstract: false, final false
+inline bool CompareChildren(::UnityEngine::SceneManagement::Scene  lhs, ::UnityEngine::SceneManagement::Scene  rhs) ;
+
+/// @brief Method FetchExpectedChildren, addr 0x9ef84f8, size 0xe8, virtual true, abstract: false, final false
+inline ::ArrayW<::UnityEngine::SceneManagement::Scene> FetchExpectedChildren() ;
+
+static inline ::Meta::XR::ImmersiveDebugger::Hierarchy::SceneRegistry* New_ctor() ;
+
+/// @brief Method Register, addr 0x9ef84e4, size 0x4, virtual true, abstract: false, final false
+inline void Register(::Meta::XR::ImmersiveDebugger::Hierarchy::Item*  parent) ;
+
+/// @brief Method Unregister, addr 0x9ef84e0, size 0x4, virtual true, abstract: false, final false
+inline void Unregister() ;
+
+/// @brief Method .ctor, addr 0x9ef85e0, size 0x48, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_Label, addr 0x9ef84e8, size 0x8, virtual true, abstract: false, final false
+inline ::StringW get_Label() ;
+
+/// @brief Method get_Valid, addr 0x9ef84f0, size 0x8, virtual true, abstract: false, final false
+inline bool get_Valid() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr SceneRegistry() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "SceneRegistry", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+SceneRegistry(SceneRegistry && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "SceneRegistry", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+SceneRegistry(SceneRegistry const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27535};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Meta::XR::ImmersiveDebugger::Hierarchy::SceneRegistry) == 0x50, "Size mismatch!");
+
+} // namespace end def Meta::XR::ImmersiveDebugger::Hierarchy

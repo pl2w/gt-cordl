@@ -1,0 +1,54 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/XR/OpenXR/Input/OpenXRDevice.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/InputSystem/zzzz__InputDevice_def.hpp"
+CORDL_MODULE_EXPORT(OpenXRDevice)
+// Forward declare root types
+namespace UnityEngine::XR::OpenXR::Input {
+class OpenXRDevice;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::XR::OpenXR::Input::OpenXRDevice*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::XR::OpenXR::Input::OpenXRDevice*, "UnityEngine.XR.OpenXR.Input", "OpenXRDevice");
+// [Preserve]
+// [InputControlLayout(displayName = "OpenXR Action Map")]
+// Dependencies UnityEngine.InputSystem.InputDevice
+namespace UnityEngine::XR::OpenXR::Input {
+// Is value type: false
+// CS Name: UnityEngine.XR.OpenXR.Input.OpenXRDevice
+class CORDL_TYPE OpenXRDevice : public ::UnityEngine::InputSystem::InputDevice {
+public:
+// Declarations
+/// @brief Method FinishSetup, addr 0xb4ec378, size 0x100, virtual true, abstract: false, final false
+inline void FinishSetup() ;
+
+static inline ::UnityEngine::XR::OpenXR::Input::OpenXRDevice* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xb4ec478, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OpenXRDevice() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OpenXRDevice", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OpenXRDevice(OpenXRDevice && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OpenXRDevice", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OpenXRDevice(OpenXRDevice const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{27315};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::XR::OpenXR::Input::OpenXRDevice) == 0x188, "Size mismatch!");
+
+} // namespace end def UnityEngine::XR::OpenXR::Input

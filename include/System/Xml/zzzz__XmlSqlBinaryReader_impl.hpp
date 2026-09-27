@@ -1,0 +1,3854 @@
+#pragma once
+// IWYU pragma private; include "System/Xml/XmlSqlBinaryReader.hpp"
+#include "System/Xml/zzzz__BinXmlToken_impl.hpp"
+#include "System/Xml/zzzz__DtdProcessing_impl.hpp"
+#include "System/Xml/zzzz__ReadState_impl.hpp"
+#include "System/Xml/zzzz__XmlCharType_impl.hpp"
+#include "System/Xml/zzzz__XmlNodeType_impl.hpp"
+#include "System/Xml/zzzz__XmlReader_impl.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_AttrInfo_impl.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_ElemInfo_impl.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_QName_impl.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_ScanState_impl.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_SymbolTables_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "System/zzzz__Type_impl.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_def.hpp"
+#include "System/Collections/Generic/zzzz__Dictionary_2_def.hpp"
+#include "System/Collections/Generic/zzzz__IDictionary_2_def.hpp"
+#include "System/IO/zzzz__Stream_def.hpp"
+#include "System/Text/zzzz__Encoding_def.hpp"
+#include "System/Xml/Schema/zzzz__XmlTypeCode_def.hpp"
+#include "System/Xml/Schema/zzzz__XmlValueConverter_def.hpp"
+#include "System/Xml/zzzz__BinXmlToken_def.hpp"
+#include "System/Xml/zzzz__IXmlNamespaceResolver_def.hpp"
+#include "System/Xml/zzzz__ReadState_def.hpp"
+#include "System/Xml/zzzz__SecureStringHasher_def.hpp"
+#include "System/Xml/zzzz__XmlNameTable_def.hpp"
+#include "System/Xml/zzzz__XmlNamespaceScope_def.hpp"
+#include "System/Xml/zzzz__XmlNodeType_def.hpp"
+#include "System/Xml/zzzz__XmlReaderSettings_def.hpp"
+#include "System/Xml/zzzz__XmlReader_def.hpp"
+#include "System/Xml/zzzz__XmlSpace_def.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_AttrInfo_def.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_ElemInfo_def.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_QName_def.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_ScanState_def.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_SymbolTables_def.hpp"
+#include "System/Xml/zzzz__XmlSqlBinaryReader_def.hpp"
+#include "System/zzzz__DateTimeOffset_def.hpp"
+#include "System/zzzz__DateTime_def.hpp"
+#include "System/zzzz__Decimal_def.hpp"
+#include "System/zzzz__Exception_def.hpp"
+#include "System/zzzz__Object_def.hpp"
+#include "System/zzzz__Type_def.hpp"
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(::System::IO::Stream*, ::ArrayW<uint8_t>, int32_t, ::StringW, bool, ::System::Xml::XmlReaderSettings*)>(&::System::Xml::XmlSqlBinaryReader::_ctor)> {
+  constexpr static std::size_t size = 0x544;
+  constexpr static std::size_t addrs = 0xaaa00c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Xml::XmlReaderSettings*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_Settings
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlReaderSettings* (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_Settings)> {
+  constexpr static std::size_t size = 0x11c;
+  constexpr static std::size_t addrs = 0xaaa1248;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_NodeType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlNodeType (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_NodeType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaaa1364;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 6}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_LocalName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_LocalName)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaaa136c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 8}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_NamespaceURI
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_NamespaceURI)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaaa1374;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 9}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_Prefix
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_Prefix)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaaa137c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 10}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_Value
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_Value)> {
+  constexpr static std::size_t size = 0x12c;
+  constexpr static std::size_t addrs = 0xaaa1384;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 11}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_Depth
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_Depth)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xaaa20dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 12}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_BaseURI
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_BaseURI)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaaa2178;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 13}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_IsEmptyElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_IsEmptyElement)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xaaa2180;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 14}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_XmlSpace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlSpace (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_XmlSpace)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xaaa21a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 17}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_XmlLang
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_XmlLang)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xaaa2224;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 18}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_ValueType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Type* (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_ValueType)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaaa22b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 20}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_AttributeCount
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_AttributeCount)> {
+  constexpr static std::size_t size = 0x4c;
+  constexpr static std::size_t addrs = 0xaaa22bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 39}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(::StringW, ::StringW)>(&::System::Xml::XmlSqlBinaryReader::GetAttribute)> {
+  constexpr static std::size_t size = 0xd0;
+  constexpr static std::size_t addrs = 0xaaa2308;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 41}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::GetAttribute)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xaaa2464;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 40}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetAttribute)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xaaa25b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 42}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.MoveToAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)(::StringW, ::StringW)>(&::System::Xml::XmlSqlBinaryReader::MoveToAttribute)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaaa2644;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 44}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.MoveToAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::MoveToAttribute)> {
+  constexpr static std::size_t size = 0x7c;
+  constexpr static std::size_t addrs = 0xaaa2820;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 43}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.MoveToAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::MoveToAttribute)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xaaa289c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 45}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.MoveToFirstAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::MoveToFirstAttribute)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xaaa2940;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 46}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.MoveToNextAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::MoveToNextAttribute)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xaaa29b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 47}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.MoveToElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::MoveToElement)> {
+  constexpr static std::size_t size = 0xd0;
+  constexpr static std::size_t addrs = 0xaaa2a34;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 48}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_EOF
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_EOF)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xaaa2b04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 51}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadAttributeValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadAttributeValue)> {
+  constexpr static std::size_t size = 0x180;
+  constexpr static std::size_t addrs = 0xaaa2b14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 49}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.Close
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::Close)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xaaa2e70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 52}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_NameTable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlNameTable* (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_NameTable)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xaaa2f0c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 55}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.LookupNamespace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::LookupNamespace)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xaaa2f14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 56}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ResolveEntity
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ResolveEntity)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xaaa2fd0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 58}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.get_ReadState
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::ReadState (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::get_ReadState)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xaaa3008;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 53}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.Read
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::Read)> {
+  constexpr static std::size_t size = 0x1cc;
+  constexpr static std::size_t addrs = 0xaaa3088;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 50}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.SetupContentAsXXX
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::SetupContentAsXXX)> {
+  constexpr static std::size_t size = 0x1f0;
+  constexpr static std::size_t addrs = 0xaaa3ac4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"SetupContentAsXXX", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.FinishContentAsXXX
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::FinishContentAsXXX)> {
+  constexpr static std::size_t size = 0xc8;
+  constexpr static std::size_t addrs = 0xaaa3cb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FinishContentAsXXX", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsBoolean
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsBoolean)> {
+  constexpr static std::size_t size = 0x460;
+  constexpr static std::size_t addrs = 0xaaa3e00;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 22}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsDateTime
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::DateTime (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsDateTime)> {
+  constexpr static std::size_t size = 0x4f8;
+  constexpr static std::size_t addrs = 0xaaa4260;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 23}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsDouble
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<double_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsDouble)> {
+  constexpr static std::size_t size = 0x4f4;
+  constexpr static std::size_t addrs = 0xaaa4ab8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 24}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsFloat
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsFloat)> {
+  constexpr static std::size_t size = 0x4ec;
+  constexpr static std::size_t addrs = 0xaaa5100;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 25}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsDecimal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Decimal (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsDecimal)> {
+  constexpr static std::size_t size = 0x508;
+  constexpr static std::size_t addrs = 0xaaa55ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 26}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsInt
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsInt)> {
+  constexpr static std::size_t size = 0x524;
+  constexpr static std::size_t addrs = 0xaaa5d50;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 27}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsLong
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsLong)> {
+  constexpr static std::size_t size = 0x4f8;
+  constexpr static std::size_t addrs = 0xaaa64ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 28}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAsObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadContentAsObject)> {
+  constexpr static std::size_t size = 0x358;
+  constexpr static std::size_t addrs = 0xaaa69a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 21}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadContentAs
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::System::Xml::XmlSqlBinaryReader::*)(::System::Type*, ::System::Xml::IXmlNamespaceResolver*)>(&::System::Xml::XmlSqlBinaryReader::ReadContentAs)> {
+  constexpr static std::size_t size = 0x458;
+  constexpr static std::size_t addrs = 0xaaa74a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                    {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 30}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.System_Xml_IXmlNamespaceResolver_GetNamespacesInScope
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IDictionary_2<::StringW,::StringW>* (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::XmlNamespaceScope)>(&::System::Xml::XmlSqlBinaryReader::System_Xml_IXmlNamespaceResolver_GetNamespacesInScope)> {
+  constexpr static std::size_t size = 0x39c;
+  constexpr static std::size_t addrs = 0xaaa80d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", {}, {::i2c::type_of<::System::Xml::XmlNamespaceScope>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.System_Xml_IXmlNamespaceResolver_LookupPrefix
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::System_Xml_IXmlNamespaceResolver_LookupPrefix)> {
+  constexpr static std::size_t size = 0x1a4;
+  constexpr static std::size_t addrs = 0xaaa8470;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"System.Xml.IXmlNamespaceResolver.LookupPrefix", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.VerifyVersion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(int32_t, ::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::VerifyVersion)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xaaa8614;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"VerifyVersion", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.AddInitNamespace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(::StringW, ::StringW)>(&::System::Xml::XmlSqlBinaryReader::AddInitNamespace)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xaaa060c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"AddInitNamespace", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.AddName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::AddName)> {
+  constexpr static std::size_t size = 0x128;
+  constexpr static std::size_t addrs = 0xaaa8690;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"AddName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.AddQName
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::AddQName)> {
+  constexpr static std::size_t size = 0x2a4;
+  constexpr static std::size_t addrs = 0xaaa887c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"AddQName", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.NameFlush
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::NameFlush)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xaaa8bac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NameFlush", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.SkipExtn
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::SkipExtn)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xaaa8bfc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"SkipExtn", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadQNameRef
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadQNameRef)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xaaa8cd4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadQNameRef", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadNameRef
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadNameRef)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xaaa8b20;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadNameRef", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.FillAllowEOF
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::FillAllowEOF)> {
+  constexpr static std::size_t size = 0x234;
+  constexpr static std::size_t addrs = 0xaaa8d60;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FillAllowEOF", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.Fill_
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::Fill_)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xaaa8f94;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"Fill_", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.Fill
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::Fill)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xaaa8cb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"Fill", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadByte
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint8_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadByte)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xaaa9080;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadByte", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadUShort
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint16_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadUShort)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaaa90dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadUShort", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ParseMB32
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ParseMB32)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xaaa8c8c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB32", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ParseMB32_
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(uint8_t)>(&::System::Xml::XmlSqlBinaryReader::ParseMB32_)> {
+  constexpr static std::size_t size = 0x98;
+  constexpr static std::size_t addrs = 0xaaa9150;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB32_", {}, {::i2c::type_of<uint8_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ParseMB32
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::ParseMB32)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xaaa91e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB32", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ParseMB64
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ParseMB64)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xaaa92d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB64", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.PeekToken
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::BinXmlToken (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::PeekToken)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xaaa9300;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PeekToken", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadToken
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::BinXmlToken (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadToken)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xaaa9368;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadToken", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.NextToken2
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::BinXmlToken (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::NextToken2)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xaaa93d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NextToken2", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.NextToken1
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::BinXmlToken (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::NextToken1)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xaaa9450;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NextToken1", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.NextToken
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::BinXmlToken (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::NextToken)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xaaa94c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NextToken", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.PeekNextToken
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::BinXmlToken (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::PeekNextToken)> {
+  constexpr static std::size_t size = 0x28;
+  constexpr static std::size_t addrs = 0xaaa9530;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PeekNextToken", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.RescanNextToken
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::BinXmlToken (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::RescanNextToken)> {
+  constexpr static std::size_t size = 0xf0;
+  constexpr static std::size_t addrs = 0xaaa2c94;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"RescanNextToken", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ParseText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ParseText)> {
+  constexpr static std::size_t size = 0xc4;
+  constexpr static std::size_t addrs = 0xaaa87b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseText", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ScanText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(::by_ref<int32_t>)>(&::System::Xml::XmlSqlBinaryReader::ScanText)> {
+  constexpr static std::size_t size = 0xbc;
+  constexpr static std::size_t addrs = 0xaaa9558;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanText", {}, {::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(int32_t, int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetString)> {
+  constexpr static std::size_t size = 0x164;
+  constexpr static std::size_t addrs = 0xaaa14b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetString", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetStringAligned
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(::ArrayW<uint8_t>, int32_t, int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetStringAligned)> {
+  constexpr static std::size_t size = 0x30;
+  constexpr static std::size_t addrs = 0xaaa9614;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetStringAligned", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetAttributeText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetAttributeText)> {
+  constexpr static std::size_t size = 0x12c;
+  constexpr static std::size_t addrs = 0xaaa1fb0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetAttributeText", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.LocateAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(::StringW, ::StringW)>(&::System::Xml::XmlSqlBinaryReader::LocateAttribute)> {
+  constexpr static std::size_t size = 0x8c;
+  constexpr static std::size_t addrs = 0xaaa23d8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"LocateAttribute", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.LocateAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::LocateAttribute)> {
+  constexpr static std::size_t size = 0xe4;
+  constexpr static std::size_t addrs = 0xaaa24d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"LocateAttribute", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.PositionOnAttribute
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::PositionOnAttribute)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaaa2740;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PositionOnAttribute", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GrowElements
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::GrowElements)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xaaa9644;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GrowElements", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GrowAttributes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::GrowAttributes)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xaaa96d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GrowAttributes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ClearAttributes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ClearAttributes)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xaaa9764;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ClearAttributes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.PushNamespace
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(::StringW, ::StringW, bool)>(&::System::Xml::XmlSqlBinaryReader::PushNamespace)> {
+  constexpr static std::size_t size = 0x230;
+  constexpr static std::size_t addrs = 0xaaa9774;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PushNamespace", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.PopNamespaces
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::XmlSqlBinaryReader_NamespaceDecl*)>(&::System::Xml::XmlSqlBinaryReader::PopNamespaces)> {
+  constexpr static std::size_t size = 0xd0;
+  constexpr static std::size_t addrs = 0xaaa99a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PopNamespaces", {}, {::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GenerateImpliedXmlnsAttrs
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::GenerateImpliedXmlnsAttrs)> {
+  constexpr static std::size_t size = 0x140;
+  constexpr static std::size_t addrs = 0xaaa9a74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GenerateImpliedXmlnsAttrs", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadInit
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)(bool)>(&::System::Xml::XmlSqlBinaryReader::ReadInit)> {
+  constexpr static std::size_t size = 0x4e8;
+  constexpr static std::size_t addrs = 0xaaa3254;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadInit", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ScanAttributes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ScanAttributes)> {
+  constexpr static std::size_t size = 0x4bc;
+  constexpr static std::size_t addrs = 0xaaa9bb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanAttributes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.SimpleCheckForDuplicateAttributes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::SimpleCheckForDuplicateAttributes)> {
+  constexpr static std::size_t size = 0x168;
+  constexpr static std::size_t addrs = 0xaaaa288;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"SimpleCheckForDuplicateAttributes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.HashCheckForDuplicateAttributes
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::HashCheckForDuplicateAttributes)> {
+  constexpr static std::size_t size = 0x264;
+  constexpr static std::size_t addrs = 0xaaaa3f0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"HashCheckForDuplicateAttributes", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.XmlDeclValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::XmlDeclValue)> {
+  constexpr static std::size_t size = 0x140;
+  constexpr static std::size_t addrs = 0xaaa1724;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"XmlDeclValue", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.CDATAValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::CDATAValue)> {
+  constexpr static std::size_t size = 0x110;
+  constexpr static std::size_t addrs = 0xaaa1614;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CDATAValue", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.FinishCDATA
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::FinishCDATA)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xaaaa654;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FinishCDATA", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.FinishEndElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::FinishEndElement)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xaaaa6f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FinishEndElement", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReadDoc
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ReadDoc)> {
+  constexpr static std::size_t size = 0x388;
+  constexpr static std::size_t addrs = 0xaaa373c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadDoc", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::ImplReadData)> {
+  constexpr static std::size_t size = 0x184;
+  constexpr static std::size_t addrs = 0xaaab2b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadData", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadElement)> {
+  constexpr static std::size_t size = 0x290;
+  constexpr static std::size_t addrs = 0xaaaa754;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadElement", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadEndElement
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadEndElement)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaaaa9e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadEndElement", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadDoctype
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadDoctype)> {
+  constexpr static std::size_t size = 0x2cc;
+  constexpr static std::size_t addrs = 0xaaaaac4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadDoctype", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadPI
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadPI)> {
+  constexpr static std::size_t size = 0x6c;
+  constexpr static std::size_t addrs = 0xaaaad90;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadPI", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadComment
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadComment)> {
+  constexpr static std::size_t size = 0x2c;
+  constexpr static std::size_t addrs = 0xaaaadfc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadComment", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadCDATA
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadCDATA)> {
+  constexpr static std::size_t size = 0x34;
+  constexpr static std::size_t addrs = 0xaaaae28;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadCDATA", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadNest
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadNest)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xaaaae5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadNest", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadEndNest
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadEndNest)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xaaaaf04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadEndNest", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ImplReadXmlText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ImplReadXmlText)> {
+  constexpr static std::size_t size = 0x364;
+  constexpr static std::size_t addrs = 0xaaaaf4c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadXmlText", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.UpdateFromTextReader
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::UpdateFromTextReader)> {
+  constexpr static std::size_t size = 0xd8;
+  constexpr static std::size_t addrs = 0xaaab498;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"UpdateFromTextReader", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.UpdateFromTextReader
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::System::Xml::XmlSqlBinaryReader::*)(bool)>(&::System::Xml::XmlSqlBinaryReader::UpdateFromTextReader)> {
+  constexpr static std::size_t size = 0x1c;
+  constexpr static std::size_t addrs = 0xaaa2724;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"UpdateFromTextReader", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.CheckAllowContent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::CheckAllowContent)> {
+  constexpr static std::size_t size = 0x64;
+  constexpr static std::size_t addrs = 0xaaab434;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckAllowContent", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GenerateTokenTypeMap
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::GenerateTokenTypeMap)> {
+  constexpr static std::size_t size = 0xb60;
+  constexpr static std::size_t addrs = 0xaaa06e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GenerateTokenTypeMap", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetValueType
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Type* (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::GetValueType)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xaaa2d90;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetValueType", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ReScanOverValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::ReScanOverValue)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xaaa2d84;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReScanOverValue", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ScanOverValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlNodeType (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken, bool, bool)>(&::System::Xml::XmlSqlBinaryReader::ScanOverValue)> {
+  constexpr static std::size_t size = 0x12c;
+  constexpr static std::size_t addrs = 0xaaaa15c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanOverValue", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<bool>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ScanOverAnyValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlNodeType (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken, bool, bool)>(&::System::Xml::XmlSqlBinaryReader::ScanOverAnyValue)> {
+  constexpr static std::size_t size = 0x38c;
+  constexpr static std::size_t addrs = 0xaaab7d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanOverAnyValue", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<bool>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.CheckText
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlNodeType (::System::Xml::XmlSqlBinaryReader::*)(bool)>(&::System::Xml::XmlSqlBinaryReader::CheckText)> {
+  constexpr static std::size_t size = 0x1c4;
+  constexpr static std::size_t addrs = 0xaaab570;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckText", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.CheckTextIsWS
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::XmlNodeType (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::CheckTextIsWS)> {
+  constexpr static std::size_t size = 0x9c;
+  constexpr static std::size_t addrs = 0xaaab734;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckTextIsWS", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.CheckValueTokenBounds
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::CheckValueTokenBounds)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xaaabc44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckValueTokenBounds", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetXsdKatmaiTokenLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::GetXsdKatmaiTokenLength)> {
+  constexpr static std::size_t size = 0xe8;
+  constexpr static std::size_t addrs = 0xaaabb5c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetXsdKatmaiTokenLength", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.XsdKatmaiTimeScaleToValueLength
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(uint8_t)>(&::System::Xml::XmlSqlBinaryReader::XsdKatmaiTimeScaleToValueLength)> {
+  constexpr static std::size_t size = 0xd4;
+  constexpr static std::size_t addrs = 0xaaabca0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"XsdKatmaiTimeScaleToValueLength", {}, {::i2c::type_of<uint8_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsLong
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ValueAsLong)> {
+  constexpr static std::size_t size = 0x238;
+  constexpr static std::size_t addrs = 0xaaa6274;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsLong", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsULong
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint64_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ValueAsULong)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xaaac084;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsULong", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsDecimal
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Decimal (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ValueAsDecimal)> {
+  constexpr static std::size_t size = 0x25c;
+  constexpr static std::size_t addrs = 0xaaa5af4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDecimal", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsDouble
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<double_t (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ValueAsDouble)> {
+  constexpr static std::size_t size = 0x154;
+  constexpr static std::size_t addrs = 0xaaa4fac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDouble", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsDateTime
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::DateTime (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ValueAsDateTime)> {
+  constexpr static std::size_t size = 0x360;
+  constexpr static std::size_t addrs = 0xaaa4758;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDateTime", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsDateTimeOffset
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::DateTimeOffset (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ValueAsDateTimeOffset)> {
+  constexpr static std::size_t size = 0x110;
+  constexpr static std::size_t addrs = 0xaaac220;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDateTimeOffset", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsDateTimeString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)()>(&::System::Xml::XmlSqlBinaryReader::ValueAsDateTimeString)> {
+  constexpr static std::size_t size = 0x360;
+  constexpr static std::size_t addrs = 0xaaac330;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDateTimeString", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsString
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::ValueAsString)> {
+  constexpr static std::size_t size = 0x74c;
+  constexpr static std::size_t addrs = 0xaaa1864;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsString", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAsObject
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken, bool)>(&::System::Xml::XmlSqlBinaryReader::ValueAsObject)> {
+  constexpr static std::size_t size = 0x7a8;
+  constexpr static std::size_t addrs = 0xaaa6cfc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsObject", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetValueConverter
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Xml::Schema::XmlValueConverter* (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::Schema::XmlTypeCode)>(&::System::Xml::XmlSqlBinaryReader::GetValueConverter)> {
+  constexpr static std::size_t size = 0x68;
+  constexpr static std::size_t addrs = 0xaaac690;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetValueConverter", {}, {::i2c::type_of<::System::Xml::Schema::XmlTypeCode>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ValueAs
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Object* (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken, ::System::Type*, ::System::Xml::IXmlNamespaceResolver*)>(&::System::Xml::XmlSqlBinaryReader::ValueAs)> {
+  constexpr static std::size_t size = 0x7d8;
+  constexpr static std::size_t addrs = 0xaaa78fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAs", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Xml::IXmlNamespaceResolver*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetInt16
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int16_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetInt16)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xaaabd74;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetInt16", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetUInt16
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint16_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetUInt16)> {
+  constexpr static std::size_t size = 0x44;
+  constexpr static std::size_t addrs = 0xaaabefc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetUInt16", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetInt32
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetInt32)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaaabdb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetInt32", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetUInt32
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint32_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetUInt32)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaaabf40;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetUInt32", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetInt64
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int64_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetInt64)> {
+  constexpr static std::size_t size = 0xd0;
+  constexpr static std::size_t addrs = 0xaaabe2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetInt64", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetUInt64
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<uint64_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetUInt64)> {
+  constexpr static std::size_t size = 0xd0;
+  constexpr static std::size_t addrs = 0xaaabfb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetUInt64", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetSingle
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetSingle)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xaaac0d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetSingle", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.GetDouble
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<double_t (::System::Xml::XmlSqlBinaryReader::*)(int32_t)>(&::System::Xml::XmlSqlBinaryReader::GetDouble)> {
+  constexpr static std::size_t size = 0xd4;
+  constexpr static std::size_t addrs = 0xaaac14c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetDouble", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ThrowUnexpectedToken
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (::System::Xml::XmlSqlBinaryReader::*)(::System::Xml::BinXmlToken)>(&::System::Xml::XmlSqlBinaryReader::ThrowUnexpectedToken)> {
+  constexpr static std::size_t size = 0x48;
+  constexpr static std::size_t addrs = 0xaaa8648;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowUnexpectedToken", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ThrowXmlException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::ThrowXmlException)> {
+  constexpr static std::size_t size = 0x74;
+  constexpr static std::size_t addrs = 0xaaa900c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowXmlException", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ThrowXmlException
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (::System::Xml::XmlSqlBinaryReader::*)(::StringW, ::StringW, ::StringW)>(&::System::Xml::XmlSqlBinaryReader::ThrowXmlException)> {
+  constexpr static std::size_t size = 0xec;
+  constexpr static std::size_t addrs = 0xaaaa070;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowXmlException", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader.ThrowNotSupported
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Exception* (::System::Xml::XmlSqlBinaryReader::*)(::StringW)>(&::System::Xml::XmlSqlBinaryReader::ThrowNotSupported)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xaaa3d7c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowNotSupported", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::IO::Stream*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_inStrm()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___inStrm;
+}
+constexpr ::System::IO::Stream* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_inStrm() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___inStrm;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_inStrm(::System::IO::Stream*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___inStrm = value;
+}
+constexpr ::ArrayW<uint8_t>& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_data()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___data;
+}
+constexpr ::ArrayW<uint8_t> const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_data() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___data;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_data(::ArrayW<uint8_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___data = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_pos()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pos;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_pos() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___pos;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_pos(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___pos = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_mark()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mark;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_mark() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mark;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_mark(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___mark = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_end()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___end;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_end() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___end;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_end(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___end = value;
+}
+constexpr int64_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_offset()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___offset;
+}
+constexpr int64_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_offset() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___offset;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_offset(int64_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___offset = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_eof()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___eof;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_eof() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___eof;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_eof(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___eof = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_sniffed()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___sniffed;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_sniffed() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___sniffed;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_sniffed(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___sniffed = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_isEmpty()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___isEmpty;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_isEmpty() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___isEmpty;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_isEmpty(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___isEmpty = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_docState()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___docState;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_docState() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___docState;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_docState(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___docState = value;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_SymbolTables& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_symbolTables()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___symbolTables;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_SymbolTables const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_symbolTables() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___symbolTables;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_symbolTables(::GlobalNamespace::XmlSqlBinaryReader_SymbolTables  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___symbolTables = value;
+}
+constexpr ::System::Xml::XmlNameTable*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xnt()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xnt;
+}
+constexpr ::System::Xml::XmlNameTable* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xnt() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xnt;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_xnt(::System::Xml::XmlNameTable*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___xnt = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xntFromSettings()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xntFromSettings;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xntFromSettings() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xntFromSettings;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_xntFromSettings(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___xntFromSettings = value;
+}
+constexpr ::StringW& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xml()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xml;
+}
+constexpr ::StringW const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xml() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xml;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_xml(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___xml = value;
+}
+constexpr ::StringW& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xmlns()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xmlns;
+}
+constexpr ::StringW const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xmlns() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xmlns;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_xmlns(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___xmlns = value;
+}
+constexpr ::StringW& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_nsxmlns()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___nsxmlns;
+}
+constexpr ::StringW const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_nsxmlns() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___nsxmlns;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_nsxmlns(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___nsxmlns = value;
+}
+constexpr ::StringW& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_baseUri()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___baseUri;
+}
+constexpr ::StringW const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_baseUri() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___baseUri;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_baseUri(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___baseUri = value;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_ScanState& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_state()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___state;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_ScanState const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_state() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___state;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_state(::GlobalNamespace::XmlSqlBinaryReader_ScanState  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___state = value;
+}
+constexpr ::System::Xml::XmlNodeType& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_nodetype()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___nodetype;
+}
+constexpr ::System::Xml::XmlNodeType const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_nodetype() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___nodetype;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_nodetype(::System::Xml::XmlNodeType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___nodetype = value;
+}
+constexpr ::System::Xml::BinXmlToken& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_token()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___token;
+}
+constexpr ::System::Xml::BinXmlToken const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_token() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___token;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_token(::System::Xml::BinXmlToken  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___token = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attrIndex()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attrIndex;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attrIndex() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attrIndex;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_attrIndex(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___attrIndex = value;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_QName& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_qnameOther()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___qnameOther;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_QName const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_qnameOther() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___qnameOther;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_qnameOther(::GlobalNamespace::XmlSqlBinaryReader_QName  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___qnameOther = value;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_QName& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_qnameElement()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___qnameElement;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_QName const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_qnameElement() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___qnameElement;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_qnameElement(::GlobalNamespace::XmlSqlBinaryReader_QName  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___qnameElement = value;
+}
+constexpr ::System::Xml::XmlNodeType& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_parentNodeType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___parentNodeType;
+}
+constexpr ::System::Xml::XmlNodeType const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_parentNodeType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___parentNodeType;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_parentNodeType(::System::Xml::XmlNodeType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___parentNodeType = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::XmlSqlBinaryReader_ElemInfo>& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_elementStack()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___elementStack;
+}
+constexpr ::ArrayW<::GlobalNamespace::XmlSqlBinaryReader_ElemInfo> const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_elementStack() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___elementStack;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_elementStack(::ArrayW<::GlobalNamespace::XmlSqlBinaryReader_ElemInfo>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___elementStack = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_elemDepth()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___elemDepth;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_elemDepth() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___elemDepth;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_elemDepth(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___elemDepth = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::XmlSqlBinaryReader_AttrInfo>& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attributes()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attributes;
+}
+constexpr ::ArrayW<::GlobalNamespace::XmlSqlBinaryReader_AttrInfo> const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attributes() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attributes;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_attributes(::ArrayW<::GlobalNamespace::XmlSqlBinaryReader_AttrInfo>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___attributes = value;
+}
+constexpr ::ArrayW<int32_t>& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attrHashTbl()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attrHashTbl;
+}
+constexpr ::ArrayW<int32_t> const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attrHashTbl() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attrHashTbl;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_attrHashTbl(::ArrayW<int32_t>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___attrHashTbl = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attrCount()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attrCount;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_attrCount() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___attrCount;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_attrCount(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___attrCount = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_posAfterAttrs()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___posAfterAttrs;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_posAfterAttrs() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___posAfterAttrs;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_posAfterAttrs(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___posAfterAttrs = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xmlspacePreserve()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xmlspacePreserve;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xmlspacePreserve() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xmlspacePreserve;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_xmlspacePreserve(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___xmlspacePreserve = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_tokLen()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___tokLen;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_tokLen() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___tokLen;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_tokLen(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___tokLen = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_tokDataPos()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___tokDataPos;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_tokDataPos() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___tokDataPos;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_tokDataPos(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___tokDataPos = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_hasTypedValue()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hasTypedValue;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_hasTypedValue() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hasTypedValue;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_hasTypedValue(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___hasTypedValue = value;
+}
+constexpr ::System::Type*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_valueType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___valueType;
+}
+constexpr ::System::Type* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_valueType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___valueType;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_valueType(::System::Type*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___valueType = value;
+}
+constexpr ::StringW& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_stringValue()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___stringValue;
+}
+constexpr ::StringW const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_stringValue() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___stringValue;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_stringValue(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___stringValue = value;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::StringW,::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_namespaces()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___namespaces;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::StringW,::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_namespaces() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___namespaces;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_namespaces(::System::Collections::Generic::Dictionary_2<::StringW,::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___namespaces = value;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NestedBinXml*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_prevNameInfo()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prevNameInfo;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NestedBinXml* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_prevNameInfo() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prevNameInfo;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_prevNameInfo(::System::Xml::XmlSqlBinaryReader_NestedBinXml*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___prevNameInfo = value;
+}
+constexpr ::System::Xml::XmlReader*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_textXmlReader()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___textXmlReader;
+}
+constexpr ::System::Xml::XmlReader* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_textXmlReader() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___textXmlReader;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_textXmlReader(::System::Xml::XmlReader*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___textXmlReader = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_closeInput()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___closeInput;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_closeInput() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___closeInput;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_closeInput(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___closeInput = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_checkCharacters()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___checkCharacters;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_checkCharacters() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___checkCharacters;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_checkCharacters(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___checkCharacters = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_ignoreWhitespace()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ignoreWhitespace;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_ignoreWhitespace() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ignoreWhitespace;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_ignoreWhitespace(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___ignoreWhitespace = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_ignorePIs()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ignorePIs;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_ignorePIs() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ignorePIs;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_ignorePIs(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___ignorePIs = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_ignoreComments()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ignoreComments;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_ignoreComments() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ignoreComments;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_ignoreComments(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___ignoreComments = value;
+}
+constexpr ::System::Xml::DtdProcessing& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_dtdProcessing()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___dtdProcessing;
+}
+constexpr ::System::Xml::DtdProcessing const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_dtdProcessing() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___dtdProcessing;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_dtdProcessing(::System::Xml::DtdProcessing  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___dtdProcessing = value;
+}
+constexpr ::System::Xml::SecureStringHasher*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_hasher()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hasher;
+}
+constexpr ::System::Xml::SecureStringHasher* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_hasher() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___hasher;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_hasher(::System::Xml::SecureStringHasher*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___hasher = value;
+}
+constexpr ::System::Xml::XmlCharType& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xmlCharType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xmlCharType;
+}
+constexpr ::System::Xml::XmlCharType const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_xmlCharType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___xmlCharType;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_xmlCharType(::System::Xml::XmlCharType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___xmlCharType = value;
+}
+constexpr ::System::Text::Encoding*& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_unicode()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___unicode;
+}
+constexpr ::System::Text::Encoding* const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_unicode() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___unicode;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_unicode(::System::Text::Encoding*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___unicode = value;
+}
+constexpr uint8_t& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_version()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___version;
+}
+constexpr uint8_t const& System::Xml::XmlSqlBinaryReader::__cordl_internal_get_version() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___version;
+}
+constexpr void System::Xml::XmlSqlBinaryReader::__cordl_internal_set_version(uint8_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___version = value;
+}
+inline void System::Xml::XmlSqlBinaryReader::setStaticF_TypeOfObject(::System::Type*  value)  {
+::cordl_internals::setStaticField<::System::Type*, "TypeOfObject", ::System::Xml::XmlSqlBinaryReader*>(std::forward<::System::Type*>(value));
+}
+inline ::System::Type* System::Xml::XmlSqlBinaryReader::getStaticF_TypeOfObject()  {
+return ::cordl_internals::getStaticField<::System::Type*, "TypeOfObject", ::System::Xml::XmlSqlBinaryReader*>();
+}
+inline void System::Xml::XmlSqlBinaryReader::setStaticF_TypeOfString(::System::Type*  value)  {
+::cordl_internals::setStaticField<::System::Type*, "TypeOfString", ::System::Xml::XmlSqlBinaryReader*>(std::forward<::System::Type*>(value));
+}
+inline ::System::Type* System::Xml::XmlSqlBinaryReader::getStaticF_TypeOfString()  {
+return ::cordl_internals::getStaticField<::System::Type*, "TypeOfString", ::System::Xml::XmlSqlBinaryReader*>();
+}
+inline void System::Xml::XmlSqlBinaryReader::setStaticF_TokenTypeMap(::ArrayW<::System::Type*>  value)  {
+::cordl_internals::setStaticField<::ArrayW<::System::Type*>, "TokenTypeMap", ::System::Xml::XmlSqlBinaryReader*>(std::forward<::ArrayW<::System::Type*>>(value));
+}
+inline ::ArrayW<::System::Type*> System::Xml::XmlSqlBinaryReader::getStaticF_TokenTypeMap()  {
+return ::cordl_internals::getStaticField<::ArrayW<::System::Type*>, "TokenTypeMap", ::System::Xml::XmlSqlBinaryReader*>();
+}
+inline void System::Xml::XmlSqlBinaryReader::setStaticF_XsdKatmaiTimeScaleToValueLengthMap(::ArrayW<uint8_t>  value)  {
+::cordl_internals::setStaticField<::ArrayW<uint8_t>, "XsdKatmaiTimeScaleToValueLengthMap", ::System::Xml::XmlSqlBinaryReader*>(std::forward<::ArrayW<uint8_t>>(value));
+}
+inline ::ArrayW<uint8_t> System::Xml::XmlSqlBinaryReader::getStaticF_XsdKatmaiTimeScaleToValueLengthMap()  {
+return ::cordl_internals::getStaticField<::ArrayW<uint8_t>, "XsdKatmaiTimeScaleToValueLengthMap", ::System::Xml::XmlSqlBinaryReader*>();
+}
+inline void System::Xml::XmlSqlBinaryReader::setStaticF_ScanState2ReadState(::ArrayW<::System::Xml::ReadState>  value)  {
+::cordl_internals::setStaticField<::ArrayW<::System::Xml::ReadState>, "ScanState2ReadState", ::System::Xml::XmlSqlBinaryReader*>(std::forward<::ArrayW<::System::Xml::ReadState>>(value));
+}
+inline ::ArrayW<::System::Xml::ReadState> System::Xml::XmlSqlBinaryReader::getStaticF_ScanState2ReadState()  {
+return ::cordl_internals::getStaticField<::ArrayW<::System::Xml::ReadState>, "ScanState2ReadState", ::System::Xml::XmlSqlBinaryReader*>();
+}
+inline void System::Xml::XmlSqlBinaryReader::_ctor(::System::IO::Stream*  stream, ::ArrayW<uint8_t>  data, int32_t  len, ::StringW  baseUri, bool  closeInput, ::System::Xml::XmlReaderSettings*  settings)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IO::Stream*>(), ::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Xml::XmlReaderSettings*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, stream, data, len, baseUri, closeInput, settings);
+}
+inline ::System::Xml::XmlReaderSettings* System::Xml::XmlSqlBinaryReader::get_Settings()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlReaderSettings*>(this, ___internal_method);
+}
+inline ::System::Xml::XmlNodeType System::Xml::XmlSqlBinaryReader::get_NodeType()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 6}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlNodeType>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::get_LocalName()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 8}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::get_NamespaceURI()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 9}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::get_Prefix()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 10}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::get_Value()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 11}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::get_Depth()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 12}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::get_BaseURI()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 13}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::get_IsEmptyElement()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 14}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::System::Xml::XmlSpace System::Xml::XmlSqlBinaryReader::get_XmlSpace()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 17}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlSpace>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::get_XmlLang()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 18}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::System::Type* System::Xml::XmlSqlBinaryReader::get_ValueType()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 20}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Type*>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::get_AttributeCount()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 39}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::GetAttribute(::StringW  name, ::StringW  ns)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 41}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, name, ns);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::GetAttribute(::StringW  name)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 40}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, name);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::GetAttribute(int32_t  i)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 42}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, i);
+}
+inline bool System::Xml::XmlSqlBinaryReader::MoveToAttribute(::StringW  name, ::StringW  ns)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 44}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, name, ns);
+}
+inline bool System::Xml::XmlSqlBinaryReader::MoveToAttribute(::StringW  name)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 43}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, name);
+}
+inline void System::Xml::XmlSqlBinaryReader::MoveToAttribute(int32_t  i)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 45}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, i);
+}
+inline bool System::Xml::XmlSqlBinaryReader::MoveToFirstAttribute()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 46}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::MoveToNextAttribute()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 47}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::MoveToElement()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 48}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::get_EOF()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 51}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::ReadAttributeValue()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 49}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::Close()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 52}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Xml::XmlNameTable* System::Xml::XmlSqlBinaryReader::get_NameTable()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 55}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlNameTable*>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::LookupNamespace(::StringW  prefix)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 56}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, prefix);
+}
+inline void System::Xml::XmlSqlBinaryReader::ResolveEntity()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 58}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Xml::ReadState System::Xml::XmlSqlBinaryReader::get_ReadState()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 53}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::ReadState>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::Read()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 50}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::SetupContentAsXXX(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"SetupContentAsXXX", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, name);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::FinishContentAsXXX(int32_t  origPos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FinishContentAsXXX", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, origPos);
+}
+inline bool System::Xml::XmlSqlBinaryReader::ReadContentAsBoolean()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 22}
+                        )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline ::System::DateTime System::Xml::XmlSqlBinaryReader::ReadContentAsDateTime()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 23}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::DateTime>(this, ___internal_method);
+}
+inline double_t System::Xml::XmlSqlBinaryReader::ReadContentAsDouble()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 24}
+                        )));
+return ::cordl_internals::RunMethodRethrow<double_t>(this, ___internal_method);
+}
+inline float_t System::Xml::XmlSqlBinaryReader::ReadContentAsFloat()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 25}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline ::System::Decimal System::Xml::XmlSqlBinaryReader::ReadContentAsDecimal()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 26}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Decimal>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ReadContentAsInt()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 27}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline int64_t System::Xml::XmlSqlBinaryReader::ReadContentAsLong()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 28}
+                        )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method);
+}
+inline ::System::Object* System::Xml::XmlSqlBinaryReader::ReadContentAsObject()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 21}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method);
+}
+inline ::System::Object* System::Xml::XmlSqlBinaryReader::ReadContentAs(::System::Type*  returnType, ::System::Xml::IXmlNamespaceResolver*  namespaceResolver)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(), 30}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method, returnType, namespaceResolver);
+}
+inline ::System::Collections::Generic::IDictionary_2<::StringW,::StringW>* System::Xml::XmlSqlBinaryReader::System_Xml_IXmlNamespaceResolver_GetNamespacesInScope(::System::Xml::XmlNamespaceScope  scope)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", {}, {::i2c::type_of<::System::Xml::XmlNamespaceScope>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IDictionary_2<::StringW,::StringW>*>(this, ___internal_method, scope);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::System_Xml_IXmlNamespaceResolver_LookupPrefix(::StringW  namespaceName)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"System.Xml.IXmlNamespaceResolver.LookupPrefix", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, namespaceName);
+}
+inline void System::Xml::XmlSqlBinaryReader::VerifyVersion(int32_t  requiredVersion, ::System::Xml::BinXmlToken  token)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"VerifyVersion", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, requiredVersion, token);
+}
+inline void System::Xml::XmlSqlBinaryReader::AddInitNamespace(::StringW  prefix, ::StringW  uri)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"AddInitNamespace", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, uri);
+}
+inline void System::Xml::XmlSqlBinaryReader::AddName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"AddName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::AddQName()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"AddQName", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::NameFlush()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NameFlush", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::SkipExtn()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"SkipExtn", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ReadQNameRef()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadQNameRef", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ReadNameRef()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadNameRef", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::FillAllowEOF()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FillAllowEOF", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::Fill_(int32_t  require)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"Fill_", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, require);
+}
+inline void System::Xml::XmlSqlBinaryReader::Fill(int32_t  require)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"Fill", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, require);
+}
+inline uint8_t System::Xml::XmlSqlBinaryReader::ReadByte()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadByte", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint8_t>(this, ___internal_method);
+}
+inline uint16_t System::Xml::XmlSqlBinaryReader::ReadUShort()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadUShort", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint16_t>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ParseMB32()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB32", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ParseMB32_(uint8_t  b)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB32_", {}, {::i2c::type_of<uint8_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, b);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ParseMB32(int32_t  pos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB32", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, pos);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ParseMB64()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseMB64", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method);
+}
+inline ::System::Xml::BinXmlToken System::Xml::XmlSqlBinaryReader::PeekToken()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PeekToken", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::BinXmlToken>(this, ___internal_method);
+}
+inline ::System::Xml::BinXmlToken System::Xml::XmlSqlBinaryReader::ReadToken()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadToken", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::BinXmlToken>(this, ___internal_method);
+}
+inline ::System::Xml::BinXmlToken System::Xml::XmlSqlBinaryReader::NextToken2(::System::Xml::BinXmlToken  token)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NextToken2", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::BinXmlToken>(this, ___internal_method, token);
+}
+inline ::System::Xml::BinXmlToken System::Xml::XmlSqlBinaryReader::NextToken1()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NextToken1", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::BinXmlToken>(this, ___internal_method);
+}
+inline ::System::Xml::BinXmlToken System::Xml::XmlSqlBinaryReader::NextToken()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"NextToken", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::BinXmlToken>(this, ___internal_method);
+}
+inline ::System::Xml::BinXmlToken System::Xml::XmlSqlBinaryReader::PeekNextToken()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PeekNextToken", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::BinXmlToken>(this, ___internal_method);
+}
+inline ::System::Xml::BinXmlToken System::Xml::XmlSqlBinaryReader::RescanNextToken()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"RescanNextToken", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::BinXmlToken>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::ParseText()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ParseText", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::ScanText(::by_ref<int32_t>  start)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanText", {}, {::i2c::type_of<::by_ref<int32_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, start);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::GetString(int32_t  pos, int32_t  cch)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetString", {}, {::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, pos, cch);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::GetStringAligned(::ArrayW<uint8_t>  data, int32_t  offset, int32_t  cch)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetStringAligned", {}, {::i2c::type_of<::ArrayW<uint8_t>>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, data, offset, cch);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::GetAttributeText(int32_t  i)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetAttributeText", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, i);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::LocateAttribute(::StringW  name, ::StringW  ns)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"LocateAttribute", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, name, ns);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::LocateAttribute(::StringW  name)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"LocateAttribute", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, name);
+}
+inline void System::Xml::XmlSqlBinaryReader::PositionOnAttribute(int32_t  i)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PositionOnAttribute", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, i);
+}
+inline void System::Xml::XmlSqlBinaryReader::GrowElements()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GrowElements", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::GrowAttributes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GrowAttributes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ClearAttributes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ClearAttributes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::PushNamespace(::StringW  prefix, ::StringW  ns, bool  implied)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PushNamespace", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, ns, implied);
+}
+inline void System::Xml::XmlSqlBinaryReader::PopNamespaces(::System::Xml::XmlSqlBinaryReader_NamespaceDecl*  firstInScopeChain)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"PopNamespaces", {}, {::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, firstInScopeChain);
+}
+inline void System::Xml::XmlSqlBinaryReader::GenerateImpliedXmlnsAttrs()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GenerateImpliedXmlnsAttrs", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::ReadInit(bool  skipXmlDecl)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadInit", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, skipXmlDecl);
+}
+inline void System::Xml::XmlSqlBinaryReader::ScanAttributes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanAttributes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::SimpleCheckForDuplicateAttributes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"SimpleCheckForDuplicateAttributes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::HashCheckForDuplicateAttributes()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"HashCheckForDuplicateAttributes", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::XmlDeclValue()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"XmlDeclValue", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::CDATAValue()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CDATAValue", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::FinishCDATA()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FinishCDATA", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::FinishEndElement()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"FinishEndElement", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::ReadDoc()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReadDoc", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadData(::System::Xml::BinXmlToken  tokenType)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadData", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, tokenType);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadElement()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadElement", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadEndElement()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadEndElement", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadDoctype()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadDoctype", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadPI()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadPI", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadComment()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadComment", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadCDATA()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadCDATA", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadNest()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadNest", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadEndNest()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadEndNest", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::ImplReadXmlText()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ImplReadXmlText", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::UpdateFromTextReader()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"UpdateFromTextReader", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool System::Xml::XmlSqlBinaryReader::UpdateFromTextReader(bool  needUpdate)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"UpdateFromTextReader", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, needUpdate);
+}
+inline void System::Xml::XmlSqlBinaryReader::CheckAllowContent()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckAllowContent", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::GenerateTokenTypeMap()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GenerateTokenTypeMap", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::System::Type* System::Xml::XmlSqlBinaryReader::GetValueType(::System::Xml::BinXmlToken  token)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetValueType", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Type*>(this, ___internal_method, token);
+}
+inline void System::Xml::XmlSqlBinaryReader::ReScanOverValue(::System::Xml::BinXmlToken  token)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ReScanOverValue", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, token);
+}
+inline ::System::Xml::XmlNodeType System::Xml::XmlSqlBinaryReader::ScanOverValue(::System::Xml::BinXmlToken  token, bool  attr, bool  checkChars)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanOverValue", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<bool>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlNodeType>(this, ___internal_method, token, attr, checkChars);
+}
+inline ::System::Xml::XmlNodeType System::Xml::XmlSqlBinaryReader::ScanOverAnyValue(::System::Xml::BinXmlToken  token, bool  attr, bool  checkChars)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ScanOverAnyValue", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<bool>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlNodeType>(this, ___internal_method, token, attr, checkChars);
+}
+inline ::System::Xml::XmlNodeType System::Xml::XmlSqlBinaryReader::CheckText(bool  attr)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckText", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlNodeType>(this, ___internal_method, attr);
+}
+inline ::System::Xml::XmlNodeType System::Xml::XmlSqlBinaryReader::CheckTextIsWS()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckTextIsWS", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::XmlNodeType>(this, ___internal_method);
+}
+inline void System::Xml::XmlSqlBinaryReader::CheckValueTokenBounds()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"CheckValueTokenBounds", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::GetXsdKatmaiTokenLength(::System::Xml::BinXmlToken  token)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetXsdKatmaiTokenLength", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, token);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::XsdKatmaiTimeScaleToValueLength(uint8_t  scale)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"XsdKatmaiTimeScaleToValueLength", {}, {::i2c::type_of<uint8_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, scale);
+}
+inline int64_t System::Xml::XmlSqlBinaryReader::ValueAsLong()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsLong", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method);
+}
+inline uint64_t System::Xml::XmlSqlBinaryReader::ValueAsULong()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsULong", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint64_t>(this, ___internal_method);
+}
+inline ::System::Decimal System::Xml::XmlSqlBinaryReader::ValueAsDecimal()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDecimal", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Decimal>(this, ___internal_method);
+}
+inline double_t System::Xml::XmlSqlBinaryReader::ValueAsDouble()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDouble", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<double_t>(this, ___internal_method);
+}
+inline ::System::DateTime System::Xml::XmlSqlBinaryReader::ValueAsDateTime()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDateTime", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::DateTime>(this, ___internal_method);
+}
+inline ::System::DateTimeOffset System::Xml::XmlSqlBinaryReader::ValueAsDateTimeOffset()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDateTimeOffset", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::DateTimeOffset>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::ValueAsDateTimeString()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsDateTimeString", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method);
+}
+inline ::StringW System::Xml::XmlSqlBinaryReader::ValueAsString(::System::Xml::BinXmlToken  token)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsString", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(this, ___internal_method, token);
+}
+inline ::System::Object* System::Xml::XmlSqlBinaryReader::ValueAsObject(::System::Xml::BinXmlToken  token, bool  returnInternalTypes)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAsObject", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method, token, returnInternalTypes);
+}
+inline ::System::Xml::Schema::XmlValueConverter* System::Xml::XmlSqlBinaryReader::GetValueConverter(::System::Xml::Schema::XmlTypeCode  typeCode)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetValueConverter", {}, {::i2c::type_of<::System::Xml::Schema::XmlTypeCode>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Xml::Schema::XmlValueConverter*>(this, ___internal_method, typeCode);
+}
+inline ::System::Object* System::Xml::XmlSqlBinaryReader::ValueAs(::System::Xml::BinXmlToken  token, ::System::Type*  returnType, ::System::Xml::IXmlNamespaceResolver*  namespaceResolver)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ValueAs", {}, {::i2c::type_of<::System::Xml::BinXmlToken>(), ::i2c::type_of<::System::Type*>(), ::i2c::type_of<::System::Xml::IXmlNamespaceResolver*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Object*>(this, ___internal_method, token, returnType, namespaceResolver);
+}
+inline int16_t System::Xml::XmlSqlBinaryReader::GetInt16(int32_t  pos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetInt16", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int16_t>(this, ___internal_method, pos);
+}
+inline uint16_t System::Xml::XmlSqlBinaryReader::GetUInt16(int32_t  pos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetUInt16", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint16_t>(this, ___internal_method, pos);
+}
+inline int32_t System::Xml::XmlSqlBinaryReader::GetInt32(int32_t  pos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetInt32", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, pos);
+}
+inline uint32_t System::Xml::XmlSqlBinaryReader::GetUInt32(int32_t  pos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetUInt32", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint32_t>(this, ___internal_method, pos);
+}
+inline int64_t System::Xml::XmlSqlBinaryReader::GetInt64(int32_t  pos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetInt64", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int64_t>(this, ___internal_method, pos);
+}
+inline uint64_t System::Xml::XmlSqlBinaryReader::GetUInt64(int32_t  pos)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetUInt64", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<uint64_t>(this, ___internal_method, pos);
+}
+inline float_t System::Xml::XmlSqlBinaryReader::GetSingle(int32_t  offset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetSingle", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method, offset);
+}
+inline double_t System::Xml::XmlSqlBinaryReader::GetDouble(int32_t  offset)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"GetDouble", {}, {::i2c::type_of<int32_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<double_t>(this, ___internal_method, offset);
+}
+inline ::System::Exception* System::Xml::XmlSqlBinaryReader::ThrowUnexpectedToken(::System::Xml::BinXmlToken  token)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowUnexpectedToken", {}, {::i2c::type_of<::System::Xml::BinXmlToken>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(this, ___internal_method, token);
+}
+inline ::System::Exception* System::Xml::XmlSqlBinaryReader::ThrowXmlException(::StringW  res)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowXmlException", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(this, ___internal_method, res);
+}
+inline ::System::Exception* System::Xml::XmlSqlBinaryReader::ThrowXmlException(::StringW  res, ::StringW  arg1, ::StringW  arg2)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowXmlException", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(this, ___internal_method, res, arg1, arg2);
+}
+inline ::System::Exception* System::Xml::XmlSqlBinaryReader::ThrowNotSupported(::StringW  res)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader*>(),
+                        {"ThrowNotSupported", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Exception*>(this, ___internal_method, res);
+}
+inline ::System::Xml::XmlSqlBinaryReader* System::Xml::XmlSqlBinaryReader::New_ctor(::System::IO::Stream*  stream, ::ArrayW<uint8_t>  data, int32_t  len, ::StringW  baseUri, bool  closeInput, ::System::Xml::XmlReaderSettings*  settings)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Xml::XmlSqlBinaryReader*>(stream, data, len, baseUri, closeInput, settings));
+}
+/// @brief Convert operator to "::System::Xml::IXmlNamespaceResolver"
+constexpr  System::Xml::XmlSqlBinaryReader::operator ::System::Xml::IXmlNamespaceResolver*() noexcept {
+return static_cast<::System::Xml::IXmlNamespaceResolver*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::System::Xml::IXmlNamespaceResolver"
+constexpr ::System::Xml::IXmlNamespaceResolver* System::Xml::XmlSqlBinaryReader::i___System__Xml__IXmlNamespaceResolver() noexcept {
+return static_cast<::System::Xml::IXmlNamespaceResolver*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::System::Xml::XmlSqlBinaryReader::XmlSqlBinaryReader()   {
+}
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader_NestedBinXml._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader_NestedBinXml::*)(::GlobalNamespace::XmlSqlBinaryReader_SymbolTables, int32_t, ::System::Xml::XmlSqlBinaryReader_NestedBinXml*)>(&::System::Xml::XmlSqlBinaryReader_NestedBinXml::_ctor)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xaab602c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader_NestedBinXml*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::XmlSqlBinaryReader_SymbolTables>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NestedBinXml*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_SymbolTables& System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_get_symbolTables()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___symbolTables;
+}
+constexpr ::GlobalNamespace::XmlSqlBinaryReader_SymbolTables const& System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_get_symbolTables() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___symbolTables;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_set_symbolTables(::GlobalNamespace::XmlSqlBinaryReader_SymbolTables  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___symbolTables = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_get_docState()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___docState;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_get_docState() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___docState;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_set_docState(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___docState = value;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NestedBinXml*& System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_get_next()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___next;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NestedBinXml* const& System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_get_next() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___next;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NestedBinXml::__cordl_internal_set_next(::System::Xml::XmlSqlBinaryReader_NestedBinXml*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___next = value;
+}
+inline void System::Xml::XmlSqlBinaryReader_NestedBinXml::_ctor(::GlobalNamespace::XmlSqlBinaryReader_SymbolTables  symbolTables, int32_t  docState, ::System::Xml::XmlSqlBinaryReader_NestedBinXml*  next)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader_NestedBinXml*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::XmlSqlBinaryReader_SymbolTables>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NestedBinXml*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, symbolTables, docState, next);
+}
+inline ::System::Xml::XmlSqlBinaryReader_NestedBinXml* System::Xml::XmlSqlBinaryReader_NestedBinXml::New_ctor(::GlobalNamespace::XmlSqlBinaryReader_SymbolTables  symbolTables, int32_t  docState, ::System::Xml::XmlSqlBinaryReader_NestedBinXml*  next)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Xml::XmlSqlBinaryReader_NestedBinXml*>(symbolTables, docState, next));
+}
+// Ctor Parameters []
+constexpr ::System::Xml::XmlSqlBinaryReader_NestedBinXml::XmlSqlBinaryReader_NestedBinXml()   {
+}
+//  Writing Method size for method: ::System::Xml::XmlSqlBinaryReader_NamespaceDecl._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::System::Xml::XmlSqlBinaryReader_NamespaceDecl::*)(::StringW, ::StringW, ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*, ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*, int32_t, bool)>(&::System::Xml::XmlSqlBinaryReader_NamespaceDecl::_ctor)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xaab5ec8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>(),
+                        {".ctor", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>(), ::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_prefix()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prefix;
+}
+constexpr ::StringW const& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_prefix() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prefix;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_set_prefix(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___prefix = value;
+}
+constexpr ::StringW& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_uri()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___uri;
+}
+constexpr ::StringW const& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_uri() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___uri;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_set_uri(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___uri = value;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_scopeLink()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___scopeLink;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NamespaceDecl* const& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_scopeLink() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___scopeLink;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_set_scopeLink(::System::Xml::XmlSqlBinaryReader_NamespaceDecl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___scopeLink = value;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_prevLink()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prevLink;
+}
+constexpr ::System::Xml::XmlSqlBinaryReader_NamespaceDecl* const& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_prevLink() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___prevLink;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_set_prevLink(::System::Xml::XmlSqlBinaryReader_NamespaceDecl*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___prevLink = value;
+}
+constexpr int32_t& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_scope()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___scope;
+}
+constexpr int32_t const& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_scope() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___scope;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_set_scope(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___scope = value;
+}
+constexpr bool& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_implied()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___implied;
+}
+constexpr bool const& System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_get_implied() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___implied;
+}
+constexpr void System::Xml::XmlSqlBinaryReader_NamespaceDecl::__cordl_internal_set_implied(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___implied = value;
+}
+inline void System::Xml::XmlSqlBinaryReader_NamespaceDecl::_ctor(::StringW  prefix, ::StringW  nsuri, ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*  nextInScope, ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*  prevDecl, int32_t  scope, bool  implied)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>(),
+                        {".ctor", {}, {::i2c::type_of<::StringW>(), ::i2c::type_of<::StringW>(), ::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>(), ::i2c::type_of<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>(), ::i2c::type_of<int32_t>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, prefix, nsuri, nextInScope, prevDecl, scope, implied);
+}
+inline ::System::Xml::XmlSqlBinaryReader_NamespaceDecl* System::Xml::XmlSqlBinaryReader_NamespaceDecl::New_ctor(::StringW  prefix, ::StringW  nsuri, ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*  nextInScope, ::System::Xml::XmlSqlBinaryReader_NamespaceDecl*  prevDecl, int32_t  scope, bool  implied)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::System::Xml::XmlSqlBinaryReader_NamespaceDecl*>(prefix, nsuri, nextInScope, prevDecl, scope, implied));
+}
+// Ctor Parameters []
+constexpr ::System::Xml::XmlSqlBinaryReader_NamespaceDecl::XmlSqlBinaryReader_NamespaceDecl()   {
+}

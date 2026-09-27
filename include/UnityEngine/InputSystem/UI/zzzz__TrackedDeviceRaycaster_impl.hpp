@@ -1,0 +1,602 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/UI/TrackedDeviceRaycaster.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/EventSystems/zzzz__BaseRaycaster_impl.hpp"
+#include "UnityEngine/InputSystem/Utilities/zzzz__InlinedArray_1_impl.hpp"
+#include "UnityEngine/zzzz__LayerMask_impl.hpp"
+#include "UnityEngine/InputSystem/UI/zzzz__TrackedDeviceRaycaster_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+#include "System/zzzz__Comparison_1_def.hpp"
+#include "UnityEngine/EventSystems/zzzz__PointerEventData_def.hpp"
+#include "UnityEngine/EventSystems/zzzz__RaycastResult_def.hpp"
+#include "UnityEngine/InputSystem/UI/zzzz__ExtendedPointerEventData_def.hpp"
+#include "UnityEngine/InputSystem/UI/zzzz__TrackedDeviceRaycaster_RaycastHitData_def.hpp"
+#include "UnityEngine/InputSystem/UI/zzzz__TrackedDeviceRaycaster_def.hpp"
+#include "UnityEngine/zzzz__Camera_def.hpp"
+#include "UnityEngine/zzzz__Canvas_def.hpp"
+#include "UnityEngine/zzzz__LayerMask_def.hpp"
+#include "UnityEngine/zzzz__Ray_def.hpp"
+#include "UnityEngine/zzzz__RectTransform_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.get_eventCamera
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Camera> (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_eventCamera)> {
+  constexpr static std::size_t size = 0x94;
+  constexpr static std::size_t addrs = 0xafd99b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 18}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.get_blockingMask
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::LayerMask (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_blockingMask)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9ae4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_blockingMask", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.set_blockingMask
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(::UnityEngine::LayerMask)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_blockingMask)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9aec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_blockingMask", {}, {::i2c::type_of<::UnityEngine::LayerMask>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.get_checkFor3DOcclusion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_checkFor3DOcclusion)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9af4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_checkFor3DOcclusion", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.set_checkFor3DOcclusion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(bool)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_checkFor3DOcclusion)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9afc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_checkFor3DOcclusion", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.get_checkFor2DOcclusion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_checkFor2DOcclusion)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9b04;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_checkFor2DOcclusion", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.set_checkFor2DOcclusion
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(bool)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_checkFor2DOcclusion)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9b0c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_checkFor2DOcclusion", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.get_ignoreReversedGraphics
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_ignoreReversedGraphics)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9b14;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_ignoreReversedGraphics", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.set_ignoreReversedGraphics
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(bool)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_ignoreReversedGraphics)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9b1c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_ignoreReversedGraphics", {}, {::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.get_maxDistance
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_maxDistance)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9b24;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_maxDistance", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.set_maxDistance
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(float_t)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_maxDistance)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafd9b2c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_maxDistance", {}, {::i2c::type_of<float_t>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.OnEnable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::OnEnable)> {
+  constexpr static std::size_t size = 0x84;
+  constexpr static std::size_t addrs = 0xafd9b34;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 5}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.OnDisable
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::OnDisable)> {
+  constexpr static std::size_t size = 0xf4;
+  constexpr static std::size_t addrs = 0xafd9bb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 7}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.Raycast
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(::UnityEngine::EventSystems::PointerEventData*, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::Raycast)> {
+  constexpr static std::size_t size = 0xa8;
+  constexpr static std::size_t addrs = 0xafd9cac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 17}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.PerformRaycast
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(::UnityEngine::InputSystem::UI::ExtendedPointerEventData*, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::PerformRaycast)> {
+  constexpr static std::size_t size = 0x644;
+  constexpr static std::size_t addrs = 0xafd2aac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"PerformRaycast", {}, {::i2c::type_of<::UnityEngine::InputSystem::UI::ExtendedPointerEventData*>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.SortedRaycastGraphics
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)(::UnityEngine::Canvas*, ::UnityEngine::Ray, ::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::SortedRaycastGraphics)> {
+  constexpr static std::size_t size = 0x4f8;
+  constexpr static std::size_t addrs = 0xafd9d54;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"SortedRaycastGraphics", {}, {::i2c::type_of<::UnityEngine::Canvas*>(), ::i2c::type_of<::UnityEngine::Ray>(), ::i2c::type_of<::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.RayIntersectsRectTransform
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::UnityEngine::RectTransform*, ::UnityEngine::Ray, ::by_ref<::UnityEngine::Vector3>, ::by_ref<float_t>)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::RayIntersectsRectTransform)> {
+  constexpr static std::size_t size = 0x3d0;
+  constexpr static std::size_t addrs = 0xafda24c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"RayIntersectsRectTransform", {}, {::i2c::type_of<::UnityEngine::RectTransform*>(), ::i2c::type_of<::UnityEngine::Ray>(), ::i2c::type_of<::by_ref<::UnityEngine::Vector3>>(), ::i2c::type_of<::by_ref<float_t>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster.get_canvas
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Canvas> (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_canvas)> {
+  constexpr static std::size_t size = 0xa0;
+  constexpr static std::size_t addrs = 0xafd9a44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_canvas", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::_ctor)> {
+  constexpr static std::size_t size = 0x90;
+  constexpr static std::size_t addrs = 0xafda670;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_RaycastResultsCache()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RaycastResultsCache;
+}
+constexpr ::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>* const& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_RaycastResultsCache() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_RaycastResultsCache;
+}
+constexpr void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_set_m_RaycastResultsCache(::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_RaycastResultsCache = value;
+}
+constexpr bool& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_IgnoreReversedGraphics()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IgnoreReversedGraphics;
+}
+constexpr bool const& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_IgnoreReversedGraphics() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_IgnoreReversedGraphics;
+}
+constexpr void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_set_m_IgnoreReversedGraphics(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_IgnoreReversedGraphics = value;
+}
+constexpr bool& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_CheckFor2DOcclusion()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CheckFor2DOcclusion;
+}
+constexpr bool const& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_CheckFor2DOcclusion() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CheckFor2DOcclusion;
+}
+constexpr void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_set_m_CheckFor2DOcclusion(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CheckFor2DOcclusion = value;
+}
+constexpr bool& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_CheckFor3DOcclusion()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CheckFor3DOcclusion;
+}
+constexpr bool const& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_CheckFor3DOcclusion() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_CheckFor3DOcclusion;
+}
+constexpr void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_set_m_CheckFor3DOcclusion(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_CheckFor3DOcclusion = value;
+}
+constexpr float_t& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_MaxDistance()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_MaxDistance;
+}
+constexpr float_t const& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_MaxDistance() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_MaxDistance;
+}
+constexpr void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_set_m_MaxDistance(float_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_MaxDistance = value;
+}
+constexpr ::UnityEngine::LayerMask& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_BlockingMask()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_BlockingMask;
+}
+constexpr ::UnityEngine::LayerMask const& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_BlockingMask() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_BlockingMask;
+}
+constexpr void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_set_m_BlockingMask(::UnityEngine::LayerMask  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_BlockingMask = value;
+}
+constexpr ::UnityW<::UnityEngine::Canvas>& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_Canvas()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Canvas;
+}
+constexpr ::UnityW<::UnityEngine::Canvas> const& UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_get_m_Canvas() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___m_Canvas;
+}
+constexpr void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::__cordl_internal_set_m_Canvas(::UnityW<::UnityEngine::Canvas>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___m_Canvas = value;
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::setStaticF_s_Instances(::UnityEngine::InputSystem::Utilities::InlinedArray_1<::UnityW<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster>>  value)  {
+::cordl_internals::setStaticField<::UnityEngine::InputSystem::Utilities::InlinedArray_1<::UnityW<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster>>, "s_Instances", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(std::forward<::UnityEngine::InputSystem::Utilities::InlinedArray_1<::UnityW<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster>>>(value));
+}
+inline ::UnityEngine::InputSystem::Utilities::InlinedArray_1<::UnityW<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster>> UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::getStaticF_s_Instances()  {
+return ::cordl_internals::getStaticField<::UnityEngine::InputSystem::Utilities::InlinedArray_1<::UnityW<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster>>, "s_Instances", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>();
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::setStaticF_s_SortedGraphics(::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*, "s_SortedGraphics", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(std::forward<::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*>(value));
+}
+inline ::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>* UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::getStaticF_s_SortedGraphics()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*, "s_SortedGraphics", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>();
+}
+inline ::UnityW<::UnityEngine::Camera> UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_eventCamera()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 18}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Camera>>(this, ___internal_method);
+}
+inline ::UnityEngine::LayerMask UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_blockingMask()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_blockingMask", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::LayerMask>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_blockingMask(::UnityEngine::LayerMask  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_blockingMask", {}, {::i2c::type_of<::UnityEngine::LayerMask>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_checkFor3DOcclusion()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_checkFor3DOcclusion", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_checkFor3DOcclusion(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_checkFor3DOcclusion", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_checkFor2DOcclusion()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_checkFor2DOcclusion", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_checkFor2DOcclusion(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_checkFor2DOcclusion", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline bool UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_ignoreReversedGraphics()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_ignoreReversedGraphics", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_ignoreReversedGraphics(bool  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_ignoreReversedGraphics", {}, {::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline float_t UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_maxDistance()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_maxDistance", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::set_maxDistance(float_t  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"set_maxDistance", {}, {::i2c::type_of<float_t>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::OnEnable()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 5}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::OnDisable()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 7}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::Raycast(::UnityEngine::EventSystems::PointerEventData*  eventData, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*  resultAppendList)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(), 17}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, eventData, resultAppendList);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::PerformRaycast(::UnityEngine::InputSystem::UI::ExtendedPointerEventData*  eventData, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*  resultAppendList)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"PerformRaycast", {}, {::i2c::type_of<::UnityEngine::InputSystem::UI::ExtendedPointerEventData*>(), ::i2c::type_of<::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, eventData, resultAppendList);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::SortedRaycastGraphics(::UnityEngine::Canvas*  canvas, ::UnityEngine::Ray  ray, ::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*  results)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"SortedRaycastGraphics", {}, {::i2c::type_of<::UnityEngine::Canvas*>(), ::i2c::type_of<::UnityEngine::Ray>(), ::i2c::type_of<::System::Collections::Generic::List_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, canvas, ray, results);
+}
+inline bool UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::RayIntersectsRectTransform(::UnityEngine::RectTransform*  transform, ::UnityEngine::Ray  ray, ::by_ref<::UnityEngine::Vector3>  worldPosition, ::by_ref<float_t>  distance)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"RayIntersectsRectTransform", {}, {::i2c::type_of<::UnityEngine::RectTransform*>(), ::i2c::type_of<::UnityEngine::Ray>(), ::i2c::type_of<::by_ref<::UnityEngine::Vector3>>(), ::i2c::type_of<::by_ref<float_t>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, transform, ray, worldPosition, distance);
+}
+inline ::UnityW<::UnityEngine::Canvas> UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::get_canvas()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {"get_canvas", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Canvas>>(this, ___internal_method);
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster* UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster::TrackedDeviceRaycaster()   {
+}
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::*)()>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xafda81c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c._SortedRaycastGraphics_b__25_0
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<int32_t (::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::*)(::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData, ::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData)>(&::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::_SortedRaycastGraphics_b__25_0)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xafda824;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>(),
+                        {"<SortedRaycastGraphics>b__25_0", {}, {::i2c::type_of<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>(), ::i2c::type_of<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::setStaticF___9(::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*  value)  {
+::cordl_internals::setStaticField<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*, "<>9", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>(std::forward<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>(value));
+}
+inline ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c* UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::getStaticF___9()  {
+return ::cordl_internals::getStaticField<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*, "<>9", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>();
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::setStaticF___9__25_0(::System::Comparison_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*  value)  {
+::cordl_internals::setStaticField<::System::Comparison_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*, "<>9__25_0", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>(std::forward<::System::Comparison_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*>(value));
+}
+inline ::System::Comparison_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>* UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::getStaticF___9__25_0()  {
+return ::cordl_internals::getStaticField<::System::Comparison_1<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>*, "<>9__25_0", ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>();
+}
+inline void UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline int32_t UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::_SortedRaycastGraphics_b__25_0(::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData  g1, ::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData  g2)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>(),
+                        {"<SortedRaycastGraphics>b__25_0", {}, {::i2c::type_of<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>(), ::i2c::type_of<::GlobalNamespace::TrackedDeviceRaycaster_RaycastHitData>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<int32_t>(this, ___internal_method, g1, g2);
+}
+inline ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c* UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c::TrackedDeviceRaycaster___c()   {
+}

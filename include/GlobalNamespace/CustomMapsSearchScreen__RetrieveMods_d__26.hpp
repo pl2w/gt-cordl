@@ -1,0 +1,7 @@
+#pragma once
+// IWYU pragma: begin_exports
+#include "GlobalNamespace/zzzz__CustomMapsSearchScreen__RetrieveMods_d__26_def.hpp"
+#ifndef CORDL_NO_IMPL_INCLUDE
+#include "GlobalNamespace/zzzz__CustomMapsSearchScreen__RetrieveMods_d__26_impl.hpp"
+#endif
+// IWYU pragma: end_exports

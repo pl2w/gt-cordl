@@ -1,0 +1,64 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRKtxTexture.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(OVRKtxTexture)
+namespace GlobalNamespace {
+struct OVRTextureData;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class OVRKtxTexture;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::OVRKtxTexture*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OVRKtxTexture*, "", "OVRKtxTexture");
+// [HelpURL("https://developer.oculus.com/documentation/unity/unity-runtime-controller/#use-apis-in-customized-scripts")]
+// Dependencies System.Object
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OVRKtxTexture
+class CORDL_TYPE OVRKtxTexture : public ::System::Object {
+public:
+// Declarations
+/// @brief Method Load, addr 0xa5cb58c, size 0x260, virtual false, abstract: false, final false
+static inline bool Load(::ArrayW<uint8_t>  data, ::by_ref<::GlobalNamespace::OVRTextureData>  ktxData) ;
+
+static inline ::GlobalNamespace::OVRKtxTexture* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xa5cb7ec, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OVRKtxTexture() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRKtxTexture", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OVRKtxTexture(OVRKtxTexture && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRKtxTexture", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OVRKtxTexture(OVRKtxTexture const& ) = delete;
+
+/// @brief Field KTX_TTF_ASTC_4x4_RGBA offset 0xffffffff size 0x4
+static constexpr uint32_t  KTX_TTF_ASTC_4x4_RGBA{static_cast<uint32_t>(0xau)};
+
+/// @brief Field KTX_TTF_BC7_RGBA offset 0xffffffff size 0x4
+static constexpr uint32_t  KTX_TTF_BC7_RGBA{static_cast<uint32_t>(0x6u)};
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{11969};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::GlobalNamespace::OVRKtxTexture) == 0x10, "Size mismatch!");
+
+} // namespace end def GlobalNamespace

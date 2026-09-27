@@ -1,0 +1,431 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/HableCurve.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cmath>
+CORDL_MODULE_EXPORT(HableCurve)
+namespace GlobalNamespace {
+struct HableCurve_DirectParams;
+}
+namespace UnityEngine::Rendering {
+class HableCurve_Segment;
+}
+namespace UnityEngine::Rendering {
+class HableCurve_Uniforms;
+}
+namespace UnityEngine {
+struct Vector4;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering {
+class HableCurve;
+}
+namespace UnityEngine::Rendering {
+class HableCurve_Segment;
+}
+namespace UnityEngine::Rendering {
+class HableCurve_Uniforms;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::HableCurve*);
+MARK_REF_T(::UnityEngine::Rendering::HableCurve_Segment*);
+MARK_REF_T(::UnityEngine::Rendering::HableCurve_Uniforms*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::HableCurve*, "UnityEngine.Rendering", "HableCurve");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::HableCurve_Segment*, "UnityEngine.Rendering", "HableCurve/Segment");
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::HableCurve_Uniforms*, "UnityEngine.Rendering", "HableCurve/Uniforms");
+// Dependencies System.Object, UnityEngine.Rendering.HableCurve::Segment
+namespace UnityEngine::Rendering {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.HableCurve
+class CORDL_TYPE HableCurve : public ::System::Object {
+public:
+// Declarations
+using DirectParams = ::GlobalNamespace::HableCurve_DirectParams;
+
+using Segment = ::UnityEngine::Rendering::HableCurve_Segment;
+
+using Uniforms = ::UnityEngine::Rendering::HableCurve_Uniforms;
+
+/// @brief Field <inverseWhitePoint>k__BackingField, offset 0x14, size 0x4 
+ __declspec(property(get=__cordl_internal_get__inverseWhitePoint_k__BackingField, put=__cordl_internal_set__inverseWhitePoint_k__BackingField)) float_t  _inverseWhitePoint_k__BackingField;
+
+/// @brief Field <whitePoint>k__BackingField, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get__whitePoint_k__BackingField, put=__cordl_internal_set__whitePoint_k__BackingField)) float_t  _whitePoint_k__BackingField;
+
+/// @brief Field <x0>k__BackingField, offset 0x18, size 0x4 
+ __declspec(property(get=__cordl_internal_get__x0_k__BackingField, put=__cordl_internal_set__x0_k__BackingField)) float_t  _x0_k__BackingField;
+
+/// @brief Field <x1>k__BackingField, offset 0x1c, size 0x4 
+ __declspec(property(get=__cordl_internal_get__x1_k__BackingField, put=__cordl_internal_set__x1_k__BackingField)) float_t  _x1_k__BackingField;
+
+ __declspec(property(get=get_inverseWhitePoint, put=set_inverseWhitePoint)) float_t  inverseWhitePoint;
+
+/// @brief Field segments, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get_segments, put=__cordl_internal_set_segments)) ::ArrayW<::UnityEngine::Rendering::HableCurve_Segment*>  segments;
+
+/// @brief Field uniforms, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get_uniforms, put=__cordl_internal_set_uniforms)) ::UnityEngine::Rendering::HableCurve_Uniforms*  uniforms;
+
+ __declspec(property(get=get_whitePoint, put=set_whitePoint)) float_t  whitePoint;
+
+ __declspec(property(get=get_x0, put=set_x0)) float_t  x0;
+
+ __declspec(property(get=get_x1, put=set_x1)) float_t  x1;
+
+/// @brief Method AsSlopeIntercept, addr 0xb196394, size 0x2c, virtual false, abstract: false, final false
+inline void AsSlopeIntercept(::by_ref<float_t>  m, ::by_ref<float_t>  b, float_t  x0, float_t  x1, float_t  y0, float_t  y1) ;
+
+/// @brief Method Eval, addr 0xb195e8c, size 0xb0, virtual false, abstract: false, final false
+inline float_t Eval(float_t  x) ;
+
+/// @brief Method EvalDerivativeLinearGamma, addr 0xb1963c0, size 0x3c, virtual false, abstract: false, final false
+inline float_t EvalDerivativeLinearGamma(float_t  m, float_t  b, float_t  g, float_t  x) ;
+
+/// @brief Method Init, addr 0xb195f9c, size 0x13c, virtual false, abstract: false, final false
+inline void Init(float_t  toeStrength, float_t  toeLength, float_t  shoulderStrength, float_t  shoulderLength, float_t  shoulderAngle, float_t  gamma) ;
+
+/// @brief Method InitSegments, addr 0xb1960d8, size 0x2bc, virtual false, abstract: false, final false
+inline void InitSegments(::GlobalNamespace::HableCurve_DirectParams  srcParams) ;
+
+static inline ::UnityEngine::Rendering::HableCurve* New_ctor() ;
+
+/// @brief Method SolveAB, addr 0xb1963fc, size 0x50, virtual false, abstract: false, final false
+inline void SolveAB(::by_ref<float_t>  lnA, ::by_ref<float_t>  B, float_t  x0, float_t  y0, float_t  m) ;
+
+constexpr float_t const& __cordl_internal_get__inverseWhitePoint_k__BackingField() const;
+
+constexpr float_t& __cordl_internal_get__inverseWhitePoint_k__BackingField() ;
+
+constexpr float_t const& __cordl_internal_get__whitePoint_k__BackingField() const;
+
+constexpr float_t& __cordl_internal_get__whitePoint_k__BackingField() ;
+
+constexpr float_t const& __cordl_internal_get__x0_k__BackingField() const;
+
+constexpr float_t& __cordl_internal_get__x0_k__BackingField() ;
+
+constexpr float_t const& __cordl_internal_get__x1_k__BackingField() const;
+
+constexpr float_t& __cordl_internal_get__x1_k__BackingField() ;
+
+constexpr ::ArrayW<::UnityEngine::Rendering::HableCurve_Segment*> const& __cordl_internal_get_segments() const;
+
+constexpr ::ArrayW<::UnityEngine::Rendering::HableCurve_Segment*>& __cordl_internal_get_segments() ;
+
+constexpr ::UnityEngine::Rendering::HableCurve_Uniforms* const& __cordl_internal_get_uniforms() const;
+
+constexpr ::UnityEngine::Rendering::HableCurve_Uniforms*& __cordl_internal_get_uniforms() ;
+
+constexpr void __cordl_internal_set__inverseWhitePoint_k__BackingField(float_t  value) ;
+
+constexpr void __cordl_internal_set__whitePoint_k__BackingField(float_t  value) ;
+
+constexpr void __cordl_internal_set__x0_k__BackingField(float_t  value) ;
+
+constexpr void __cordl_internal_set__x1_k__BackingField(float_t  value) ;
+
+constexpr void __cordl_internal_set_segments(::ArrayW<::UnityEngine::Rendering::HableCurve_Segment*>  value) ;
+
+constexpr void __cordl_internal_set_uniforms(::UnityEngine::Rendering::HableCurve_Uniforms*  value) ;
+
+/// @brief Method .ctor, addr 0xb195cfc, size 0x158, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_inverseWhitePoint, addr 0xb195ccc, size 0x8, virtual false, abstract: false, final false
+inline float_t get_inverseWhitePoint() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_whitePoint, addr 0xb195cbc, size 0x8, virtual false, abstract: false, final false
+inline float_t get_whitePoint() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_x0, addr 0xb195cdc, size 0x8, virtual false, abstract: false, final false
+inline float_t get_x0() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_x1, addr 0xb195cec, size 0x8, virtual false, abstract: false, final false
+inline float_t get_x1() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_inverseWhitePoint, addr 0xb195cd4, size 0x8, virtual false, abstract: false, final false
+inline void set_inverseWhitePoint(float_t  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_whitePoint, addr 0xb195cc4, size 0x8, virtual false, abstract: false, final false
+inline void set_whitePoint(float_t  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_x0, addr 0xb195ce4, size 0x8, virtual false, abstract: false, final false
+inline void set_x0(float_t  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_x1, addr 0xb195cf4, size 0x8, virtual false, abstract: false, final false
+inline void set_x1(float_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr HableCurve() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "HableCurve", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+HableCurve(HableCurve && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "HableCurve", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+HableCurve(HableCurve const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{17026};
+
+/// [CompilerGenerated]
+/// @brief Field <whitePoint>k__BackingField, offset: 0x10, size: 0x4, def value: None
+ float_t  ____whitePoint_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <inverseWhitePoint>k__BackingField, offset: 0x14, size: 0x4, def value: None
+ float_t  ____inverseWhitePoint_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <x0>k__BackingField, offset: 0x18, size: 0x4, def value: None
+ float_t  ____x0_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <x1>k__BackingField, offset: 0x1c, size: 0x4, def value: None
+ float_t  ____x1_k__BackingField;
+
+/// @brief Field segments, offset: 0x20, size: 0x8, def value: None
+ ::ArrayW<::UnityEngine::Rendering::HableCurve_Segment*>  ___segments;
+
+/// @brief Field uniforms, offset: 0x28, size: 0x8, def value: None
+ ::UnityEngine::Rendering::HableCurve_Uniforms*  ___uniforms;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve, ____whitePoint_k__BackingField) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve, ____inverseWhitePoint_k__BackingField) == 0x14, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve, ____x0_k__BackingField) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve, ____x1_k__BackingField) == 0x1c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve, ___segments) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve, ___uniforms) == 0x28, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::HableCurve) == 0x30, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering
+// Dependencies System.Object
+namespace UnityEngine::Rendering {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.HableCurve/Uniforms
+class CORDL_TYPE HableCurve_Uniforms : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_curve)) ::UnityEngine::Vector4  curve;
+
+ __declspec(property(get=get_midSegmentA)) ::UnityEngine::Vector4  midSegmentA;
+
+ __declspec(property(get=get_midSegmentB)) ::UnityEngine::Vector4  midSegmentB;
+
+/// @brief Field parent, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_parent, put=__cordl_internal_set_parent)) ::UnityEngine::Rendering::HableCurve*  parent;
+
+ __declspec(property(get=get_shoSegmentA)) ::UnityEngine::Vector4  shoSegmentA;
+
+ __declspec(property(get=get_shoSegmentB)) ::UnityEngine::Vector4  shoSegmentB;
+
+ __declspec(property(get=get_toeSegmentA)) ::UnityEngine::Vector4  toeSegmentA;
+
+ __declspec(property(get=get_toeSegmentB)) ::UnityEngine::Vector4  toeSegmentB;
+
+static inline ::UnityEngine::Rendering::HableCurve_Uniforms* New_ctor(::UnityEngine::Rendering::HableCurve*  parent) ;
+
+constexpr ::UnityEngine::Rendering::HableCurve* const& __cordl_internal_get_parent() const;
+
+constexpr ::UnityEngine::Rendering::HableCurve*& __cordl_internal_get_parent() ;
+
+constexpr void __cordl_internal_set_parent(::UnityEngine::Rendering::HableCurve*  value) ;
+
+/// @brief Method .ctor, addr 0xb195e5c, size 0x30, virtual false, abstract: false, final false
+inline void _ctor(::UnityEngine::Rendering::HableCurve*  parent) ;
+
+/// @brief Method get_curve, addr 0xb19644c, size 0x20, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 get_curve() ;
+
+/// @brief Method get_midSegmentA, addr 0xb1964e8, size 0x40, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 get_midSegmentA() ;
+
+/// @brief Method get_midSegmentB, addr 0xb196528, size 0x44, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 get_midSegmentB() ;
+
+/// @brief Method get_shoSegmentA, addr 0xb19656c, size 0x40, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 get_shoSegmentA() ;
+
+/// @brief Method get_shoSegmentB, addr 0xb1965ac, size 0x44, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 get_shoSegmentB() ;
+
+/// @brief Method get_toeSegmentA, addr 0xb19646c, size 0x3c, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 get_toeSegmentA() ;
+
+/// @brief Method get_toeSegmentB, addr 0xb1964a8, size 0x40, virtual false, abstract: false, final false
+inline ::UnityEngine::Vector4 get_toeSegmentB() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr HableCurve_Uniforms() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "HableCurve_Uniforms", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+HableCurve_Uniforms(HableCurve_Uniforms && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "HableCurve_Uniforms", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+HableCurve_Uniforms(HableCurve_Uniforms const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{17025};
+
+/// @brief Field parent, offset: 0x10, size: 0x8, def value: None
+ ::UnityEngine::Rendering::HableCurve*  ___parent;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve_Uniforms, ___parent) == 0x10, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::HableCurve_Uniforms) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering
+// Dependencies System.Object
+namespace UnityEngine::Rendering {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.HableCurve/Segment
+class CORDL_TYPE HableCurve_Segment : public ::System::Object {
+public:
+// Declarations
+/// @brief Field B, offset 0x24, size 0x4 
+ __declspec(property(get=__cordl_internal_get_B, put=__cordl_internal_set_B)) float_t  B;
+
+/// @brief Field lnA, offset 0x20, size 0x4 
+ __declspec(property(get=__cordl_internal_get_lnA, put=__cordl_internal_set_lnA)) float_t  lnA;
+
+/// @brief Field offsetX, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get_offsetX, put=__cordl_internal_set_offsetX)) float_t  offsetX;
+
+/// @brief Field offsetY, offset 0x14, size 0x4 
+ __declspec(property(get=__cordl_internal_get_offsetY, put=__cordl_internal_set_offsetY)) float_t  offsetY;
+
+/// @brief Field scaleX, offset 0x18, size 0x4 
+ __declspec(property(get=__cordl_internal_get_scaleX, put=__cordl_internal_set_scaleX)) float_t  scaleX;
+
+/// @brief Field scaleY, offset 0x1c, size 0x4 
+ __declspec(property(get=__cordl_internal_get_scaleY, put=__cordl_internal_set_scaleY)) float_t  scaleY;
+
+/// @brief Method Eval, addr 0xb195f3c, size 0x60, virtual false, abstract: false, final false
+inline float_t Eval(float_t  x) ;
+
+static inline ::UnityEngine::Rendering::HableCurve_Segment* New_ctor() ;
+
+constexpr float_t const& __cordl_internal_get_B() const;
+
+constexpr float_t& __cordl_internal_get_B() ;
+
+constexpr float_t const& __cordl_internal_get_lnA() const;
+
+constexpr float_t& __cordl_internal_get_lnA() ;
+
+constexpr float_t const& __cordl_internal_get_offsetX() const;
+
+constexpr float_t& __cordl_internal_get_offsetX() ;
+
+constexpr float_t const& __cordl_internal_get_offsetY() const;
+
+constexpr float_t& __cordl_internal_get_offsetY() ;
+
+constexpr float_t const& __cordl_internal_get_scaleX() const;
+
+constexpr float_t& __cordl_internal_get_scaleX() ;
+
+constexpr float_t const& __cordl_internal_get_scaleY() const;
+
+constexpr float_t& __cordl_internal_get_scaleY() ;
+
+constexpr void __cordl_internal_set_B(float_t  value) ;
+
+constexpr void __cordl_internal_set_lnA(float_t  value) ;
+
+constexpr void __cordl_internal_set_offsetX(float_t  value) ;
+
+constexpr void __cordl_internal_set_offsetY(float_t  value) ;
+
+constexpr void __cordl_internal_set_scaleX(float_t  value) ;
+
+constexpr void __cordl_internal_set_scaleY(float_t  value) ;
+
+/// @brief Method .ctor, addr 0xb195e54, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr HableCurve_Segment() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "HableCurve_Segment", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+HableCurve_Segment(HableCurve_Segment && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "HableCurve_Segment", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+HableCurve_Segment(HableCurve_Segment const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{17023};
+
+/// @brief Field offsetX, offset: 0x10, size: 0x4, def value: None
+ float_t  ___offsetX;
+
+/// @brief Field offsetY, offset: 0x14, size: 0x4, def value: None
+ float_t  ___offsetY;
+
+/// @brief Field scaleX, offset: 0x18, size: 0x4, def value: None
+ float_t  ___scaleX;
+
+/// @brief Field scaleY, offset: 0x1c, size: 0x4, def value: None
+ float_t  ___scaleY;
+
+/// @brief Field lnA, offset: 0x20, size: 0x4, def value: None
+ float_t  ___lnA;
+
+/// @brief Field B, offset: 0x24, size: 0x4, def value: None
+ float_t  ___B;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve_Segment, ___offsetX) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve_Segment, ___offsetY) == 0x14, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve_Segment, ___scaleX) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve_Segment, ___scaleY) == 0x1c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve_Segment, ___lnA) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::Rendering::HableCurve_Segment, ___B) == 0x24, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::Rendering::HableCurve_Segment) == 0x28, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

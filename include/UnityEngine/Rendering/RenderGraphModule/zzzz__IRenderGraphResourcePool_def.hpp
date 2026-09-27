@@ -1,0 +1,65 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/RenderGraphModule/IRenderGraphResourcePool.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(IRenderGraphResourcePool)
+namespace UnityEngine::Rendering::RenderGraphModule {
+class RenderGraphLogger;
+}
+// Forward declare root types
+namespace UnityEngine::Rendering::RenderGraphModule {
+class IRenderGraphResourcePool;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::RenderGraphModule::IRenderGraphResourcePool*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::RenderGraphModule::IRenderGraphResourcePool*, "UnityEngine.Rendering.RenderGraphModule", "IRenderGraphResourcePool");
+// Dependencies System.Object
+namespace UnityEngine::Rendering::RenderGraphModule {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.RenderGraphModule.IRenderGraphResourcePool
+class CORDL_TYPE IRenderGraphResourcePool : public ::System::Object {
+public:
+// Declarations
+/// @brief Method CheckFrameAllocation, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void CheckFrameAllocation(bool  onException, int32_t  frameIndex) ;
+
+/// @brief Method Cleanup, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void Cleanup() ;
+
+/// @brief Method LogResources, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void LogResources(::UnityEngine::Rendering::RenderGraphModule::RenderGraphLogger*  logger) ;
+
+static inline ::UnityEngine::Rendering::RenderGraphModule::IRenderGraphResourcePool* New_ctor() ;
+
+/// @brief Method PurgeUnusedResources, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline void PurgeUnusedResources(int32_t  currentFrameIndex) ;
+
+/// @brief Method .ctor, addr 0xb1bba34, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr IRenderGraphResourcePool() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "IRenderGraphResourcePool", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+IRenderGraphResourcePool(IRenderGraphResourcePool && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "IRenderGraphResourcePool", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IRenderGraphResourcePool(IRenderGraphResourcePool const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{17184};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Rendering::RenderGraphModule::IRenderGraphResourcePool) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering::RenderGraphModule

@@ -1,0 +1,181 @@
+#pragma once
+// IWYU pragma private; include "Newtonsoft/Json/Converters/XmlNodeWrapper.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(XmlNodeWrapper)
+namespace Newtonsoft::Json::Converters {
+class IXmlNode;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class List_1;
+}
+namespace System::Xml {
+struct XmlNodeType;
+}
+namespace System::Xml {
+class XmlNode;
+}
+namespace System {
+class Object;
+}
+// Forward declare root types
+namespace Newtonsoft::Json::Converters {
+class XmlNodeWrapper;
+}
+// Write type traits
+MARK_REF_T(::Newtonsoft::Json::Converters::XmlNodeWrapper*);
+DEFINE_IL2CPP_CLASS(::Newtonsoft::Json::Converters::XmlNodeWrapper*, "Newtonsoft.Json.Converters", "XmlNodeWrapper");
+// [NullableContext(2)]
+// [Nullable(0)]
+// Dependencies System.Object
+namespace Newtonsoft::Json::Converters {
+// Is value type: false
+// CS Name: Newtonsoft.Json.Converters.XmlNodeWrapper
+class CORDL_TYPE XmlNodeWrapper : public ::System::Object {
+public:
+// Declarations
+/// @brief [Nullable(1)]
+ __declspec(property(get=get_Attributes)) ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  Attributes;
+
+/// @brief [Nullable(1)]
+ __declspec(property(get=get_ChildNodes)) ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  ChildNodes;
+
+ __declspec(property(get=get_HasAttributes)) bool  HasAttributes;
+
+ __declspec(property(get=get_LocalName)) ::StringW  LocalName;
+
+ __declspec(property(get=get_NamespaceUri)) ::StringW  NamespaceUri;
+
+ __declspec(property(get=get_NodeType)) ::System::Xml::XmlNodeType  NodeType;
+
+ __declspec(property(get=get_ParentNode)) ::Newtonsoft::Json::Converters::IXmlNode*  ParentNode;
+
+ __declspec(property(get=get_Value, put=set_Value)) ::StringW  Value;
+
+ __declspec(property(get=get_WrappedNode)) ::System::Object*  WrappedNode;
+
+/// @brief Field _attributes, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get__attributes, put=__cordl_internal_set__attributes)) ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  _attributes;
+
+/// @brief Field _childNodes, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get__childNodes, put=__cordl_internal_set__childNodes)) ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  _childNodes;
+
+/// @brief Field _node, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get__node, put=__cordl_internal_set__node)) ::System::Xml::XmlNode*  _node;
+
+/// @brief Convert operator to "::Newtonsoft::Json::Converters::IXmlNode"
+constexpr operator  ::Newtonsoft::Json::Converters::IXmlNode*() noexcept;
+
+/// [NullableContext(1)]
+/// @brief Method AppendChild, addr 0xa3f37d8, size 0xc0, virtual true, abstract: false, final true
+inline ::Newtonsoft::Json::Converters::IXmlNode* AppendChild(::Newtonsoft::Json::Converters::IXmlNode*  newChild) ;
+
+/// @brief [NullableContext(1)]
+static inline ::Newtonsoft::Json::Converters::XmlNodeWrapper* New_ctor(::System::Xml::XmlNode*  node) ;
+
+/// [NullableContext(1)]
+/// @brief Method WrapNode, addr 0xa3f3080, size 0x1e4, virtual false, abstract: false, final false
+static inline ::Newtonsoft::Json::Converters::IXmlNode* WrapNode(::System::Xml::XmlNode*  node) ;
+
+constexpr ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>* const& __cordl_internal_get__attributes() const;
+
+constexpr ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& __cordl_internal_get__attributes() ;
+
+constexpr ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>* const& __cordl_internal_get__childNodes() const;
+
+constexpr ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& __cordl_internal_get__childNodes() ;
+
+constexpr ::System::Xml::XmlNode* const& __cordl_internal_get__node() const;
+
+constexpr ::System::Xml::XmlNode*& __cordl_internal_get__node() ;
+
+constexpr void __cordl_internal_set__attributes(::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  value) ;
+
+constexpr void __cordl_internal_set__childNodes(::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  value) ;
+
+constexpr void __cordl_internal_set__node(::System::Xml::XmlNode*  value) ;
+
+/// [NullableContext(1)]
+/// @brief Method .ctor, addr 0xa3f2150, size 0x30, virtual false, abstract: false, final false
+inline void _ctor(::System::Xml::XmlNode*  node) ;
+
+/// [NullableContext(1)]
+/// @brief Method get_Attributes, addr 0xa3f3264, size 0x400, virtual true, abstract: false, final true
+inline ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>* get_Attributes() ;
+
+/// [NullableContext(1)]
+/// @brief Method get_ChildNodes, addr 0xa3f2c78, size 0x408, virtual true, abstract: false, final true
+inline ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>* get_ChildNodes() ;
+
+/// @brief Method get_HasAttributes, addr 0xa3f3664, size 0xb0, virtual false, abstract: false, final false
+inline bool get_HasAttributes() ;
+
+/// @brief Method get_LocalName, addr 0xa3f2c58, size 0x20, virtual true, abstract: false, final false
+inline ::StringW get_LocalName() ;
+
+/// @brief Method get_NamespaceUri, addr 0xa3f3898, size 0x20, virtual true, abstract: false, final true
+inline ::StringW get_NamespaceUri() ;
+
+/// @brief Method get_NodeType, addr 0xa3f2c3c, size 0x1c, virtual true, abstract: false, final true
+inline ::System::Xml::XmlNodeType get_NodeType() ;
+
+/// @brief Method get_ParentNode, addr 0xa3f3714, size 0xa8, virtual true, abstract: false, final true
+inline ::Newtonsoft::Json::Converters::IXmlNode* get_ParentNode() ;
+
+/// @brief Method get_Value, addr 0xa3f37bc, size 0x1c, virtual true, abstract: false, final true
+inline ::StringW get_Value() ;
+
+/// @brief Method get_WrappedNode, addr 0xa3f2c34, size 0x8, virtual true, abstract: false, final true
+inline ::System::Object* get_WrappedNode() ;
+
+/// @brief Convert to "::Newtonsoft::Json::Converters::IXmlNode"
+constexpr ::Newtonsoft::Json::Converters::IXmlNode* i___Newtonsoft__Json__Converters__IXmlNode() noexcept;
+
+/// @brief Method set_Value, addr 0xa3f28c0, size 0x1c, virtual true, abstract: false, final true
+inline void set_Value(::StringW  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr XmlNodeWrapper() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlNodeWrapper", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+XmlNodeWrapper(XmlNodeWrapper && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "XmlNodeWrapper", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+XmlNodeWrapper(XmlNodeWrapper const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{23372};
+
+/// [Nullable(1)]
+/// @brief Field _node, offset: 0x10, size: 0x8, def value: None
+ ::System::Xml::XmlNode*  ____node;
+
+/// [Nullable(new[] { 2, 1 })]
+/// @brief Field _childNodes, offset: 0x18, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  ____childNodes;
+
+/// [Nullable(new[] { 2, 1 })]
+/// @brief Field _attributes, offset: 0x20, size: 0x8, def value: None
+ ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*  ____attributes;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Newtonsoft::Json::Converters::XmlNodeWrapper, ____node) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::Newtonsoft::Json::Converters::XmlNodeWrapper, ____childNodes) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::Newtonsoft::Json::Converters::XmlNodeWrapper, ____attributes) == 0x20, "Offset mismatch!");
+
+static_assert(sizeof(::Newtonsoft::Json::Converters::XmlNodeWrapper) == 0x28, "Size mismatch!");
+
+} // namespace end def Newtonsoft::Json::Converters

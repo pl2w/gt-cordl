@@ -1,0 +1,170 @@
+#pragma once
+// IWYU pragma private; include "PlayFab/ClientModels/LoginWithPSNRequest.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "PlayFab/SharedModels/zzzz__PlayFabRequestCommon_def.hpp"
+#include "System/zzzz__Nullable_1_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(LoginWithPSNRequest)
+namespace PlayFab::ClientModels {
+class GetPlayerCombinedInfoRequestParams;
+}
+// Forward declare root types
+namespace PlayFab::ClientModels {
+class LoginWithPSNRequest;
+}
+// Write type traits
+MARK_REF_T(::PlayFab::ClientModels::LoginWithPSNRequest*);
+DEFINE_IL2CPP_CLASS(::PlayFab::ClientModels::LoginWithPSNRequest*, "PlayFab.ClientModels", "LoginWithPSNRequest");
+// Dependencies PlayFab.SharedModels.PlayFabRequestCommon, System.Nullable`1<T>
+namespace PlayFab::ClientModels {
+// Is value type: false
+// CS Name: PlayFab.ClientModels.LoginWithPSNRequest
+class CORDL_TYPE LoginWithPSNRequest : public ::PlayFab::SharedModels::PlayFabRequestCommon {
+public:
+// Declarations
+/// @brief Field AuthCode, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_AuthCode, put=__cordl_internal_set_AuthCode)) ::StringW  AuthCode;
+
+/// @brief Field CreateAccount, offset 0x20, size 0x10 
+ __declspec(property(get=__cordl_internal_get_CreateAccount, put=__cordl_internal_set_CreateAccount)) ::System::Nullable_1<bool>  CreateAccount;
+
+/// @brief Field EncryptedRequest, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get_EncryptedRequest, put=__cordl_internal_set_EncryptedRequest)) ::StringW  EncryptedRequest;
+
+/// @brief Field InfoRequestParameters, offset 0x38, size 0x8 
+ __declspec(property(get=__cordl_internal_get_InfoRequestParameters, put=__cordl_internal_set_InfoRequestParameters)) ::PlayFab::ClientModels::GetPlayerCombinedInfoRequestParams*  InfoRequestParameters;
+
+/// @brief Field IssuerId, offset 0x40, size 0x10 
+ __declspec(property(get=__cordl_internal_get_IssuerId, put=__cordl_internal_set_IssuerId)) ::System::Nullable_1<int32_t>  IssuerId;
+
+/// @brief Field PlayerSecret, offset 0x50, size 0x8 
+ __declspec(property(get=__cordl_internal_get_PlayerSecret, put=__cordl_internal_set_PlayerSecret)) ::StringW  PlayerSecret;
+
+/// @brief Field RedirectUri, offset 0x58, size 0x8 
+ __declspec(property(get=__cordl_internal_get_RedirectUri, put=__cordl_internal_set_RedirectUri)) ::StringW  RedirectUri;
+
+/// @brief Field TitleId, offset 0x60, size 0x8 
+ __declspec(property(get=__cordl_internal_get_TitleId, put=__cordl_internal_set_TitleId)) ::StringW  TitleId;
+
+static inline ::PlayFab::ClientModels::LoginWithPSNRequest* New_ctor() ;
+
+constexpr ::StringW const& __cordl_internal_get_AuthCode() const;
+
+constexpr ::StringW& __cordl_internal_get_AuthCode() ;
+
+constexpr ::System::Nullable_1<bool> const& __cordl_internal_get_CreateAccount() const;
+
+constexpr ::System::Nullable_1<bool>& __cordl_internal_get_CreateAccount() ;
+
+constexpr ::StringW const& __cordl_internal_get_EncryptedRequest() const;
+
+constexpr ::StringW& __cordl_internal_get_EncryptedRequest() ;
+
+constexpr ::PlayFab::ClientModels::GetPlayerCombinedInfoRequestParams* const& __cordl_internal_get_InfoRequestParameters() const;
+
+constexpr ::PlayFab::ClientModels::GetPlayerCombinedInfoRequestParams*& __cordl_internal_get_InfoRequestParameters() ;
+
+constexpr ::System::Nullable_1<int32_t> const& __cordl_internal_get_IssuerId() const;
+
+constexpr ::System::Nullable_1<int32_t>& __cordl_internal_get_IssuerId() ;
+
+constexpr ::StringW const& __cordl_internal_get_PlayerSecret() const;
+
+constexpr ::StringW& __cordl_internal_get_PlayerSecret() ;
+
+constexpr ::StringW const& __cordl_internal_get_RedirectUri() const;
+
+constexpr ::StringW& __cordl_internal_get_RedirectUri() ;
+
+constexpr ::StringW const& __cordl_internal_get_TitleId() const;
+
+constexpr ::StringW& __cordl_internal_get_TitleId() ;
+
+constexpr void __cordl_internal_set_AuthCode(::StringW  value) ;
+
+constexpr void __cordl_internal_set_CreateAccount(::System::Nullable_1<bool>  value) ;
+
+constexpr void __cordl_internal_set_EncryptedRequest(::StringW  value) ;
+
+constexpr void __cordl_internal_set_InfoRequestParameters(::PlayFab::ClientModels::GetPlayerCombinedInfoRequestParams*  value) ;
+
+constexpr void __cordl_internal_set_IssuerId(::System::Nullable_1<int32_t>  value) ;
+
+constexpr void __cordl_internal_set_PlayerSecret(::StringW  value) ;
+
+constexpr void __cordl_internal_set_RedirectUri(::StringW  value) ;
+
+constexpr void __cordl_internal_set_TitleId(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0xa84e078, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr LoginWithPSNRequest() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "LoginWithPSNRequest", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+LoginWithPSNRequest(LoginWithPSNRequest && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "LoginWithPSNRequest", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+LoginWithPSNRequest(LoginWithPSNRequest const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{20159};
+
+/// @brief Field AuthCode, offset: 0x18, size: 0x8, def value: None
+ ::StringW  ___AuthCode;
+
+/// @brief Field CreateAccount, offset: 0x20, size: 0x10, def value: None
+ ::System::Nullable_1<bool>  ___CreateAccount;
+
+/// @brief Field EncryptedRequest, offset: 0x30, size: 0x8, def value: None
+ ::StringW  ___EncryptedRequest;
+
+/// @brief Field InfoRequestParameters, offset: 0x38, size: 0x8, def value: None
+ ::PlayFab::ClientModels::GetPlayerCombinedInfoRequestParams*  ___InfoRequestParameters;
+
+/// @brief Field IssuerId, offset: 0x40, size: 0x10, def value: None
+ ::System::Nullable_1<int32_t>  ___IssuerId;
+
+/// @brief Field PlayerSecret, offset: 0x50, size: 0x8, def value: None
+ ::StringW  ___PlayerSecret;
+
+/// @brief Field RedirectUri, offset: 0x58, size: 0x8, def value: None
+ ::StringW  ___RedirectUri;
+
+/// @brief Size padding 0x58 - 0x68 = 0x10, packed as 0x10
+ uint8_t  _cordl_size_padding[0x10];
+
+/// @brief Field TitleId, offset: 0x60, size: 0x8, def value: None
+ ::StringW  ___TitleId;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___AuthCode) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___CreateAccount) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___EncryptedRequest) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___InfoRequestParameters) == 0x38, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___IssuerId) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___PlayerSecret) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___RedirectUri) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::PlayFab::ClientModels::LoginWithPSNRequest, ___TitleId) == 0x60, "Offset mismatch!");
+
+static_assert(sizeof(::PlayFab::ClientModels::LoginWithPSNRequest) == 0x58, "Size mismatch!");
+
+} // namespace end def PlayFab::ClientModels

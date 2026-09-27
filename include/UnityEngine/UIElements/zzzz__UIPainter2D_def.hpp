@@ -1,0 +1,71 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/UIElements/UIPainter2D.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(UIPainter2D)
+namespace System {
+struct IntPtr;
+}
+namespace UnityEngine::UIElements {
+struct MeshWriteDataInterface;
+}
+// Forward declare root types
+namespace UnityEngine::UIElements {
+class UIPainter2D;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::UIElements::UIPainter2D*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::UIElements::UIPainter2D*, "UnityEngine.UIElements", "UIPainter2D");
+// [NativeHeader("Modules/UIElements/Core/Native/Renderer/UIPainter2D.bindings.h")]
+// Dependencies System.Object
+namespace UnityEngine::UIElements {
+// Is value type: false
+// CS Name: UnityEngine.UIElements.UIPainter2D
+class CORDL_TYPE UIPainter2D : public ::System::Object {
+public:
+// Declarations
+/// @brief Method ClearSnapshots, addr 0xb8bb460, size 0x3c, virtual false, abstract: false, final false
+static inline void ClearSnapshots(::System::IntPtr  handle) ;
+
+/// @brief Method Create, addr 0xb8bb3ac, size 0x3c, virtual false, abstract: false, final false
+static inline ::System::IntPtr Create(bool  computeBBox) ;
+
+/// @brief Method Destroy, addr 0xb8bb3e8, size 0x3c, virtual false, abstract: false, final false
+static inline void Destroy(::System::IntPtr  handle) ;
+
+/// [ThreadSafe]
+/// @brief Method ExecuteSnapshotFromJob, addr 0xb8bb49c, size 0x70, virtual false, abstract: false, final false
+static inline ::UnityEngine::UIElements::MeshWriteDataInterface ExecuteSnapshotFromJob(::System::IntPtr  painterHandle, int32_t  i) ;
+
+/// @brief Method ExecuteSnapshotFromJob_Injected, addr 0xb8bb50c, size 0x54, virtual false, abstract: false, final false
+static inline void ExecuteSnapshotFromJob_Injected(::System::IntPtr  painterHandle, int32_t  i, ::by_ref<::UnityEngine::UIElements::MeshWriteDataInterface>  ret) ;
+
+/// @brief Method Reset, addr 0xb8bb424, size 0x3c, virtual false, abstract: false, final false
+static inline void Reset(::System::IntPtr  handle) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr UIPainter2D() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "UIPainter2D", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+UIPainter2D(UIPainter2D && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "UIPainter2D", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+UIPainter2D(UIPainter2D const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{7818};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::UIElements::UIPainter2D) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::UIElements

@@ -1,0 +1,169 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/TrackedDevice.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/InputSystem/zzzz__InputDevice_def.hpp"
+CORDL_MODULE_EXPORT(TrackedDevice)
+namespace UnityEngine::InputSystem::Controls {
+class ButtonControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class IntegerControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class QuaternionControl;
+}
+namespace UnityEngine::InputSystem::Controls {
+class Vector3Control;
+}
+// Forward declare root types
+namespace UnityEngine::InputSystem {
+class TrackedDevice;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::TrackedDevice*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::TrackedDevice*, "UnityEngine.InputSystem", "TrackedDevice");
+// [InputControlLayout(displayName = "Tracked Device", isGenericTypeOfDevice = true)]
+// Dependencies UnityEngine.InputSystem.InputDevice
+namespace UnityEngine::InputSystem {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.TrackedDevice
+class CORDL_TYPE TrackedDevice : public ::UnityEngine::InputSystem::InputDevice {
+public:
+// Declarations
+/// @brief Field <devicePosition>k__BackingField, offset 0x198, size 0x8 
+ __declspec(property(get=__cordl_internal_get__devicePosition_k__BackingField, put=__cordl_internal_set__devicePosition_k__BackingField)) ::UnityEngine::InputSystem::Controls::Vector3Control*  _devicePosition_k__BackingField;
+
+/// @brief Field <deviceRotation>k__BackingField, offset 0x1a0, size 0x8 
+ __declspec(property(get=__cordl_internal_get__deviceRotation_k__BackingField, put=__cordl_internal_set__deviceRotation_k__BackingField)) ::UnityEngine::InputSystem::Controls::QuaternionControl*  _deviceRotation_k__BackingField;
+
+/// @brief Field <isTracked>k__BackingField, offset 0x190, size 0x8 
+ __declspec(property(get=__cordl_internal_get__isTracked_k__BackingField, put=__cordl_internal_set__isTracked_k__BackingField)) ::UnityEngine::InputSystem::Controls::ButtonControl*  _isTracked_k__BackingField;
+
+/// @brief Field <trackingState>k__BackingField, offset 0x188, size 0x8 
+ __declspec(property(get=__cordl_internal_get__trackingState_k__BackingField, put=__cordl_internal_set__trackingState_k__BackingField)) ::UnityEngine::InputSystem::Controls::IntegerControl*  _trackingState_k__BackingField;
+
+/// @brief [InputControl(noisy = true, dontReset = true)]
+ __declspec(property(get=get_devicePosition, put=set_devicePosition)) ::UnityEngine::InputSystem::Controls::Vector3Control*  devicePosition;
+
+/// @brief [InputControl(noisy = true, dontReset = true)]
+ __declspec(property(get=get_deviceRotation, put=set_deviceRotation)) ::UnityEngine::InputSystem::Controls::QuaternionControl*  deviceRotation;
+
+/// @brief [InputControl(synthetic = true)]
+ __declspec(property(get=get_isTracked, put=set_isTracked)) ::UnityEngine::InputSystem::Controls::ButtonControl*  isTracked;
+
+/// @brief [InputControl(synthetic = true)]
+ __declspec(property(get=get_trackingState, put=set_trackingState)) ::UnityEngine::InputSystem::Controls::IntegerControl*  trackingState;
+
+/// @brief Method FinishSetup, addr 0xafa97d8, size 0x174, virtual true, abstract: false, final false
+inline void FinishSetup() ;
+
+static inline ::UnityEngine::InputSystem::TrackedDevice* New_ctor() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control* const& __cordl_internal_get__devicePosition_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::Vector3Control*& __cordl_internal_get__devicePosition_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl* const& __cordl_internal_get__deviceRotation_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::QuaternionControl*& __cordl_internal_get__deviceRotation_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl* const& __cordl_internal_get__isTracked_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::ButtonControl*& __cordl_internal_get__isTracked_k__BackingField() ;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl* const& __cordl_internal_get__trackingState_k__BackingField() const;
+
+constexpr ::UnityEngine::InputSystem::Controls::IntegerControl*& __cordl_internal_get__trackingState_k__BackingField() ;
+
+constexpr void __cordl_internal_set__devicePosition_k__BackingField(::UnityEngine::InputSystem::Controls::Vector3Control*  value) ;
+
+constexpr void __cordl_internal_set__deviceRotation_k__BackingField(::UnityEngine::InputSystem::Controls::QuaternionControl*  value) ;
+
+constexpr void __cordl_internal_set__isTracked_k__BackingField(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+constexpr void __cordl_internal_set__trackingState_k__BackingField(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+/// @brief Method .ctor, addr 0xafa994c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_devicePosition, addr 0xafa97a8, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::Vector3Control* get_devicePosition() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_deviceRotation, addr 0xafa97c0, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::QuaternionControl* get_deviceRotation() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_isTracked, addr 0xafa9790, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::ButtonControl* get_isTracked() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_trackingState, addr 0xafa9778, size 0x8, virtual false, abstract: false, final false
+inline ::UnityEngine::InputSystem::Controls::IntegerControl* get_trackingState() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_devicePosition, addr 0xafa97b0, size 0x10, virtual false, abstract: false, final false
+inline void set_devicePosition(::UnityEngine::InputSystem::Controls::Vector3Control*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_deviceRotation, addr 0xafa97c8, size 0x10, virtual false, abstract: false, final false
+inline void set_deviceRotation(::UnityEngine::InputSystem::Controls::QuaternionControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_isTracked, addr 0xafa9798, size 0x10, virtual false, abstract: false, final false
+inline void set_isTracked(::UnityEngine::InputSystem::Controls::ButtonControl*  value) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_trackingState, addr 0xafa9780, size 0x10, virtual false, abstract: false, final false
+inline void set_trackingState(::UnityEngine::InputSystem::Controls::IntegerControl*  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr TrackedDevice() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "TrackedDevice", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+TrackedDevice(TrackedDevice && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "TrackedDevice", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+TrackedDevice(TrackedDevice const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13503};
+
+/// [CompilerGenerated]
+/// @brief Field <trackingState>k__BackingField, offset: 0x188, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::IntegerControl*  ____trackingState_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <isTracked>k__BackingField, offset: 0x190, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::ButtonControl*  ____isTracked_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <devicePosition>k__BackingField, offset: 0x198, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::Vector3Control*  ____devicePosition_k__BackingField;
+
+/// [CompilerGenerated]
+/// @brief Field <deviceRotation>k__BackingField, offset: 0x1a0, size: 0x8, def value: None
+ ::UnityEngine::InputSystem::Controls::QuaternionControl*  ____deviceRotation_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::InputSystem::TrackedDevice, ____trackingState_k__BackingField) == 0x188, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::TrackedDevice, ____isTracked_k__BackingField) == 0x190, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::TrackedDevice, ____devicePosition_k__BackingField) == 0x198, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::InputSystem::TrackedDevice, ____deviceRotation_k__BackingField) == 0x1a0, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::InputSystem::TrackedDevice) == 0x1a8, "Size mismatch!");
+
+} // namespace end def UnityEngine::InputSystem

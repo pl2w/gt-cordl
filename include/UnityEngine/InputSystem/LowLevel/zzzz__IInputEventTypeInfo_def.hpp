@@ -1,0 +1,39 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/LowLevel/IInputEventTypeInfo.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(IInputEventTypeInfo)
+namespace UnityEngine::InputSystem::Utilities {
+struct FourCC;
+}
+// Forward declare root types
+namespace UnityEngine::InputSystem::LowLevel {
+class IInputEventTypeInfo;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::InputSystem::LowLevel::IInputEventTypeInfo*, "UnityEngine.InputSystem.LowLevel", "IInputEventTypeInfo");
+// Dependencies 
+namespace UnityEngine::InputSystem::LowLevel {
+// Is value type: false
+// CS Name: UnityEngine.InputSystem.LowLevel.IInputEventTypeInfo
+class CORDL_TYPE IInputEventTypeInfo {
+public:
+// Declarations
+ __declspec(property(get=get_typeStatic)) ::UnityEngine::InputSystem::Utilities::FourCC  typeStatic;
+
+/// @brief Method get_typeStatic, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::UnityEngine::InputSystem::Utilities::FourCC get_typeStatic() ;
+
+// Ctor Parameters [CppParam { name: "", ty: "IInputEventTypeInfo", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IInputEventTypeInfo(IInputEventTypeInfo const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{13749};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::InputSystem::LowLevel

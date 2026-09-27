@@ -1,0 +1,58 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Bindings/VisibleToOtherModulesAttribute.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Attribute_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(VisibleToOtherModulesAttribute)
+// Forward declare root types
+namespace UnityEngine::Bindings {
+class VisibleToOtherModulesAttribute;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Bindings::VisibleToOtherModulesAttribute*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Bindings::VisibleToOtherModulesAttribute*, "UnityEngine.Bindings", "VisibleToOtherModulesAttribute");
+// [VisibleToOtherModules]
+// [AttributeUsage((System.AttributeTargets)5628, Inherited = false)]
+// Dependencies System.Attribute
+namespace UnityEngine::Bindings {
+// Is value type: false
+// CS Name: UnityEngine.Bindings.VisibleToOtherModulesAttribute
+class CORDL_TYPE VisibleToOtherModulesAttribute : public ::System::Attribute {
+public:
+// Declarations
+static inline ::UnityEngine::Bindings::VisibleToOtherModulesAttribute* New_ctor() ;
+
+static inline ::UnityEngine::Bindings::VisibleToOtherModulesAttribute* New_ctor(/* [ParamArray] */ ::ArrayW<::StringW>  modules) ;
+
+/// @brief Method .ctor, addr 0xb6ac110, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xb6ac118, size 0x8, virtual false, abstract: false, final false
+inline void _ctor(/* [ParamArray] */ ::ArrayW<::StringW>  modules) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr VisibleToOtherModulesAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "VisibleToOtherModulesAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+VisibleToOtherModulesAttribute(VisibleToOtherModulesAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "VisibleToOtherModulesAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+VisibleToOtherModulesAttribute(VisibleToOtherModulesAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{32744};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Bindings::VisibleToOtherModulesAttribute) == 0x10, "Size mismatch!");
+
+} // namespace end def UnityEngine::Bindings

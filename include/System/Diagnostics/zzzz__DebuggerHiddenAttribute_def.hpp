@@ -1,0 +1,51 @@
+#pragma once
+// IWYU pragma private; include "System/Diagnostics/DebuggerHiddenAttribute.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Attribute_def.hpp"
+CORDL_MODULE_EXPORT(DebuggerHiddenAttribute)
+// Forward declare root types
+namespace System::Diagnostics {
+class DebuggerHiddenAttribute;
+}
+// Write type traits
+MARK_REF_T(::System::Diagnostics::DebuggerHiddenAttribute*);
+DEFINE_IL2CPP_CLASS(::System::Diagnostics::DebuggerHiddenAttribute*, "System.Diagnostics", "DebuggerHiddenAttribute");
+// [AttributeUsage((System.AttributeTargets)224, Inherited = false)]
+// [ComVisible(true)]
+// Dependencies System.Attribute
+namespace System::Diagnostics {
+// Is value type: false
+// CS Name: System.Diagnostics.DebuggerHiddenAttribute
+class CORDL_TYPE DebuggerHiddenAttribute : public ::System::Attribute {
+public:
+// Declarations
+static inline ::System::Diagnostics::DebuggerHiddenAttribute* New_ctor() ;
+
+/// @brief Method .ctor, addr 0xa25e288, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr DebuggerHiddenAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "DebuggerHiddenAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+DebuggerHiddenAttribute(DebuggerHiddenAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "DebuggerHiddenAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+DebuggerHiddenAttribute(DebuggerHiddenAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6782};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::Diagnostics::DebuggerHiddenAttribute) == 0x10, "Size mismatch!");
+
+} // namespace end def System::Diagnostics

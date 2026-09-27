@@ -1,0 +1,37 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ResourceManagement/ResourceProviders/IAssetBundleResource.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(IAssetBundleResource)
+namespace UnityEngine {
+class AssetBundle;
+}
+// Forward declare root types
+namespace UnityEngine::ResourceManagement::ResourceProviders {
+class IAssetBundleResource;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource*, "UnityEngine.ResourceManagement.ResourceProviders", "IAssetBundleResource");
+// Dependencies 
+namespace UnityEngine::ResourceManagement::ResourceProviders {
+// Is value type: false
+// CS Name: UnityEngine.ResourceManagement.ResourceProviders.IAssetBundleResource
+class CORDL_TYPE IAssetBundleResource {
+public:
+// Declarations
+/// @brief Method GetAssetBundle, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::UnityW<::UnityEngine::AssetBundle> GetAssetBundle() ;
+
+// Ctor Parameters [CppParam { name: "", ty: "IAssetBundleResource", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+IAssetBundleResource(IAssetBundleResource const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28599};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::ResourceManagement::ResourceProviders

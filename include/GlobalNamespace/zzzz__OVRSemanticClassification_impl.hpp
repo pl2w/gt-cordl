@@ -1,0 +1,165 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRSemanticClassification.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRSemanticClassification_def.hpp"
+#include "GlobalNamespace/zzzz__IOVRSceneComponent_def.hpp"
+#include "System/Collections/Generic/zzzz__IReadOnlyList_1_def.hpp"
+#include "System/Collections/Generic/zzzz__List_1_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRSemanticClassification.get_Labels
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::IReadOnlyList_1<::StringW>* (::GlobalNamespace::OVRSemanticClassification::*)()>(&::GlobalNamespace::OVRSemanticClassification::get_Labels)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa63d3b0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"get_Labels", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSemanticClassification.Contains
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::GlobalNamespace::OVRSemanticClassification::*)(::StringW)>(&::GlobalNamespace::OVRSemanticClassification::Contains)> {
+  constexpr static std::size_t size = 0x144;
+  constexpr static std::size_t addrs = 0xa63d3b8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"Contains", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSemanticClassification.Awake
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSemanticClassification::*)()>(&::GlobalNamespace::OVRSemanticClassification::Awake)> {
+  constexpr static std::size_t size = 0xd0;
+  constexpr static std::size_t addrs = 0xa63d4fc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"Awake", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSemanticClassification.IOVRSceneComponent_Initialize
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSemanticClassification::*)()>(&::GlobalNamespace::OVRSemanticClassification::IOVRSceneComponent_Initialize)> {
+  constexpr static std::size_t size = 0x120;
+  constexpr static std::size_t addrs = 0xa63d5cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"IOVRSceneComponent.Initialize", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSemanticClassification.ValidateAndUpgradeLabels
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::StringW (*)(::StringW)>(&::GlobalNamespace::OVRSemanticClassification::ValidateAndUpgradeLabels)> {
+  constexpr static std::size_t size = 0x494;
+  constexpr static std::size_t addrs = 0xa63d6ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"ValidateAndUpgradeLabels", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSemanticClassification._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSemanticClassification::*)()>(&::GlobalNamespace::OVRSemanticClassification::_ctor)> {
+  constexpr static std::size_t size = 0x88;
+  constexpr static std::size_t addrs = 0xa63db80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::Collections::Generic::List_1<::StringW>*& GlobalNamespace::OVRSemanticClassification::__cordl_internal_get__labels()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____labels;
+}
+constexpr ::System::Collections::Generic::List_1<::StringW>* const& GlobalNamespace::OVRSemanticClassification::__cordl_internal_get__labels() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____labels;
+}
+constexpr void GlobalNamespace::OVRSemanticClassification::__cordl_internal_set__labels(::System::Collections::Generic::List_1<::StringW>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____labels = value;
+}
+inline ::System::Collections::Generic::IReadOnlyList_1<::StringW>* GlobalNamespace::OVRSemanticClassification::get_Labels()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"get_Labels", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::IReadOnlyList_1<::StringW>*>(this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRSemanticClassification::Contains(::StringW  label)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"Contains", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method, label);
+}
+inline void GlobalNamespace::OVRSemanticClassification::Awake()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"Awake", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRSemanticClassification::IOVRSceneComponent_Initialize()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"IOVRSceneComponent.Initialize", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::StringW GlobalNamespace::OVRSemanticClassification::ValidateAndUpgradeLabels(::StringW  labels)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {"ValidateAndUpgradeLabels", {}, {::i2c::type_of<::StringW>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::StringW>(nullptr, ___internal_method, labels);
+}
+inline void GlobalNamespace::OVRSemanticClassification::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSemanticClassification*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRSemanticClassification* GlobalNamespace::OVRSemanticClassification::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRSemanticClassification*>());
+}
+/// @brief Convert operator to "::GlobalNamespace::IOVRSceneComponent"
+constexpr  GlobalNamespace::OVRSemanticClassification::operator ::GlobalNamespace::IOVRSceneComponent*() noexcept {
+return static_cast<::GlobalNamespace::IOVRSceneComponent*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::GlobalNamespace::IOVRSceneComponent"
+constexpr ::GlobalNamespace::IOVRSceneComponent* GlobalNamespace::OVRSemanticClassification::i___GlobalNamespace__IOVRSceneComponent() noexcept {
+return static_cast<::GlobalNamespace::IOVRSceneComponent*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRSemanticClassification::OVRSemanticClassification()   {
+}

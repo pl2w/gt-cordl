@@ -1,0 +1,49 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/LowLevel/IInputStateChangeMonitor.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__IInputStateChangeMonitor_def.hpp"
+#include "UnityEngine/InputSystem/LowLevel/zzzz__InputEventPtr_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputControl_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor.NotifyControlStateChanged
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor::*)(::UnityEngine::InputSystem::InputControl*, double_t, ::UnityEngine::InputSystem::LowLevel::InputEventPtr, int64_t)>(&::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor::NotifyControlStateChanged)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor*>(), 0}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor.NotifyTimerExpired
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor::*)(::UnityEngine::InputSystem::InputControl*, double_t, int64_t, int32_t)>(&::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor::NotifyTimerExpired)> {
+  constexpr static std::size_t size = 0xffffffffffffffff;
+  constexpr static std::size_t addrs = 0xffffffffffffffff;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor*>(), 1}
+                ));
+    return ___internal_method;
+  }
+};
+inline void UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor::NotifyControlStateChanged(::UnityEngine::InputSystem::InputControl*  control, double_t  time, ::UnityEngine::InputSystem::LowLevel::InputEventPtr  eventPtr, int64_t  monitorIndex)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor*>(), 0}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, control, time, eventPtr, monitorIndex);
+}
+inline void UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor::NotifyTimerExpired(::UnityEngine::InputSystem::InputControl*  control, double_t  time, int64_t  monitorIndex, int32_t  timerIndex)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor*>(), 1}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, control, time, monitorIndex, timerIndex);
+}

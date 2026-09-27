@@ -1,0 +1,124 @@
+#pragma once
+// IWYU pragma private; include "System/Text/Encoder.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(Encoder)
+namespace System::Text {
+class EncoderFallbackBuffer;
+}
+namespace System::Text {
+class EncoderFallback;
+}
+// Forward declare root types
+namespace System::Text {
+class Encoder;
+}
+// Write type traits
+MARK_REF_T(::System::Text::Encoder*);
+DEFINE_IL2CPP_CLASS(::System::Text::Encoder*, "System.Text", "Encoder");
+// Dependencies System.Object
+namespace System::Text {
+// Is value type: false
+// CS Name: System.Text.Encoder
+class CORDL_TYPE Encoder : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=get_Fallback)) ::System::Text::EncoderFallback*  Fallback;
+
+ __declspec(property(get=get_FallbackBuffer)) ::System::Text::EncoderFallbackBuffer*  FallbackBuffer;
+
+ __declspec(property(get=get_InternalHasFallbackBuffer)) bool  InternalHasFallbackBuffer;
+
+/// @brief Field _fallback, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get__fallback, put=__cordl_internal_set__fallback)) ::System::Text::EncoderFallback*  _fallback;
+
+/// @brief Field _fallbackBuffer, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get__fallbackBuffer, put=__cordl_internal_set__fallbackBuffer)) ::System::Text::EncoderFallbackBuffer*  _fallbackBuffer;
+
+/// @brief Method Convert, addr 0xa138fcc, size 0x2dc, virtual true, abstract: false, final false
+inline void Convert(::ArrayW<char16_t>  chars, int32_t  charIndex, int32_t  charCount, ::ArrayW<uint8_t>  bytes, int32_t  byteIndex, int32_t  byteCount, bool  flush, ::by_ref<int32_t>  charsUsed, ::by_ref<int32_t>  bytesUsed, ::by_ref<bool>  completed) ;
+
+/// [CLSCompliant(false)]
+/// @brief Method Convert, addr 0xa1392a8, size 0x220, virtual true, abstract: false, final false
+inline void Convert(char16_t*  chars, int32_t  charCount, uint8_t*  bytes, int32_t  byteCount, bool  flush, ::by_ref<int32_t>  charsUsed, ::by_ref<int32_t>  bytesUsed, ::by_ref<bool>  completed) ;
+
+/// @brief Method GetByteCount, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline int32_t GetByteCount(::ArrayW<char16_t>  chars, int32_t  index, int32_t  count, bool  flush) ;
+
+/// [CLSCompliant(false)]
+/// @brief Method GetByteCount, addr 0xa138c6c, size 0x15c, virtual true, abstract: false, final false
+inline int32_t GetByteCount(char16_t*  chars, int32_t  count, bool  flush) ;
+
+/// @brief Method GetBytes, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline int32_t GetBytes(::ArrayW<char16_t>  chars, int32_t  charIndex, int32_t  charCount, ::ArrayW<uint8_t>  bytes, int32_t  byteIndex, bool  flush) ;
+
+/// [CLSCompliant(false)]
+/// @brief Method GetBytes, addr 0xa138dc8, size 0x204, virtual true, abstract: false, final false
+inline int32_t GetBytes(char16_t*  chars, int32_t  charCount, uint8_t*  bytes, int32_t  byteCount, bool  flush) ;
+
+static inline ::System::Text::Encoder* New_ctor() ;
+
+/// @brief Method Reset, addr 0xa138b88, size 0xe4, virtual true, abstract: false, final false
+inline void Reset() ;
+
+constexpr ::System::Text::EncoderFallback* const& __cordl_internal_get__fallback() const;
+
+constexpr ::System::Text::EncoderFallback*& __cordl_internal_get__fallback() ;
+
+constexpr ::System::Text::EncoderFallbackBuffer* const& __cordl_internal_get__fallbackBuffer() const;
+
+constexpr ::System::Text::EncoderFallbackBuffer*& __cordl_internal_get__fallbackBuffer() ;
+
+constexpr void __cordl_internal_set__fallback(::System::Text::EncoderFallback*  value) ;
+
+constexpr void __cordl_internal_set__fallbackBuffer(::System::Text::EncoderFallbackBuffer*  value) ;
+
+/// @brief Method .ctor, addr 0xa138a8c, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method get_Fallback, addr 0xa138a94, size 0x8, virtual false, abstract: false, final false
+inline ::System::Text::EncoderFallback* get_Fallback() ;
+
+/// @brief Method get_FallbackBuffer, addr 0xa138a9c, size 0x4c, virtual false, abstract: false, final false
+inline ::System::Text::EncoderFallbackBuffer* get_FallbackBuffer() ;
+
+/// @brief Method get_InternalHasFallbackBuffer, addr 0xa138b78, size 0x10, virtual false, abstract: false, final false
+inline bool get_InternalHasFallbackBuffer() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Encoder() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Encoder", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Encoder(Encoder && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Encoder", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Encoder(Encoder const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{5981};
+
+/// @brief Field _fallback, offset: 0x10, size: 0x8, def value: None
+ ::System::Text::EncoderFallback*  ____fallback;
+
+/// @brief Field _fallbackBuffer, offset: 0x18, size: 0x8, def value: None
+ ::System::Text::EncoderFallbackBuffer*  ____fallbackBuffer;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::System::Text::Encoder, ____fallback) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::System::Text::Encoder, ____fallbackBuffer) == 0x18, "Offset mismatch!");
+
+static_assert(sizeof(::System::Text::Encoder) == 0x20, "Size mismatch!");
+
+} // namespace end def System::Text

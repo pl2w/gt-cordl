@@ -1,0 +1,46 @@
+#pragma once
+// IWYU pragma private; include "Oculus/Platform/Models/PlatformInitialize.hpp"
+#include "Oculus/Platform/zzzz__PlatformInitializeResult_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "Oculus/Platform/Models/zzzz__PlatformInitialize_def.hpp"
+#include "System/zzzz__IntPtr_def.hpp"
+//  Writing Method size for method: ::Oculus::Platform::Models::PlatformInitialize._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::Oculus::Platform::Models::PlatformInitialize::*)(::System::IntPtr)>(&::Oculus::Platform::Models::PlatformInitialize::_ctor)> {
+  constexpr static std::size_t size = 0x78;
+  constexpr static std::size_t addrs = 0xa556950;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::Models::PlatformInitialize*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::Oculus::Platform::PlatformInitializeResult& Oculus::Platform::Models::PlatformInitialize::__cordl_internal_get_Result()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___Result;
+}
+constexpr ::Oculus::Platform::PlatformInitializeResult const& Oculus::Platform::Models::PlatformInitialize::__cordl_internal_get_Result() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___Result;
+}
+constexpr void Oculus::Platform::Models::PlatformInitialize::__cordl_internal_set_Result(::Oculus::Platform::PlatformInitializeResult  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___Result = value;
+}
+inline void Oculus::Platform::Models::PlatformInitialize::_ctor(::System::IntPtr  o)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::Oculus::Platform::Models::PlatformInitialize*>(),
+                        {".ctor", {}, {::i2c::type_of<::System::IntPtr>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, o);
+}
+inline ::Oculus::Platform::Models::PlatformInitialize* Oculus::Platform::Models::PlatformInitialize::New_ctor(::System::IntPtr  o)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::Oculus::Platform::Models::PlatformInitialize*>(o));
+}
+// Ctor Parameters []
+constexpr ::Oculus::Platform::Models::PlatformInitialize::PlatformInitialize()   {
+}

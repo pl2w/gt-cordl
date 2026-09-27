@@ -1,0 +1,125 @@
+#pragma once
+// IWYU pragma private; include "System/IO/FileSystem.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(FileSystem)
+namespace GlobalNamespace {
+struct Interop_ErrorInfo;
+}
+namespace System::IO {
+class DirectoryInfo;
+}
+namespace System::IO {
+struct FileAttributes;
+}
+namespace System {
+struct DateTimeOffset;
+}
+namespace System {
+template<typename T>
+struct ReadOnlySpan_1;
+}
+// Forward declare root types
+namespace System::IO {
+class FileSystem;
+}
+// Write type traits
+MARK_REF_T(::System::IO::FileSystem*);
+DEFINE_IL2CPP_CLASS(::System::IO::FileSystem*, "System.IO", "FileSystem");
+// Dependencies System.Object
+namespace System::IO {
+// Is value type: false
+// CS Name: System.IO.FileSystem
+class CORDL_TYPE FileSystem : public ::System::Object {
+public:
+// Declarations
+/// @brief Method CopyDanglingSymlink, addr 0xa27f368, size 0x168, virtual false, abstract: false, final false
+static inline bool CopyDanglingSymlink(::StringW  sourceFullPath, ::StringW  destFullPath) ;
+
+/// @brief Method CopyFile, addr 0xa27f4d0, size 0x3bc, virtual false, abstract: false, final false
+static inline void CopyFile(::StringW  sourceFullPath, ::StringW  destFullPath, bool  overwrite) ;
+
+/// @brief Method CreateDirectory, addr 0xa27fe04, size 0x5d0, virtual false, abstract: false, final false
+static inline void CreateDirectory(::StringW  fullPath) ;
+
+/// @brief Method DeleteFile, addr 0xa27fb48, size 0x1ac, virtual false, abstract: false, final false
+static inline void DeleteFile(::StringW  fullPath) ;
+
+/// @brief Method DirectoryExists, addr 0xa27f88c, size 0x1c, virtual false, abstract: false, final false
+static inline bool DirectoryExists(::System::ReadOnlySpan_1<char16_t>  fullPath) ;
+
+/// @brief Method DirectoryExists, addr 0xa280478, size 0xc, virtual false, abstract: false, final false
+static inline bool DirectoryExists(::System::ReadOnlySpan_1<char16_t>  fullPath, ::by_ref<::GlobalNamespace::Interop_ErrorInfo>  errorInfo) ;
+
+/// @brief Method FileExists, addr 0xa2803f8, size 0x80, virtual false, abstract: false, final false
+static inline bool FileExists(::System::ReadOnlySpan_1<char16_t>  fullPath) ;
+
+/// @brief Method FileExists, addr 0xa27fcf4, size 0x110, virtual false, abstract: false, final false
+static inline bool FileExists(::System::ReadOnlySpan_1<char16_t>  fullPath, int32_t  fileType, ::by_ref<::GlobalNamespace::Interop_ErrorInfo>  errorInfo) ;
+
+/// @brief Method GetAttributes, addr 0xa280f7c, size 0x94, virtual false, abstract: false, final false
+static inline ::System::IO::FileAttributes GetAttributes(::StringW  fullPath) ;
+
+/// @brief Method GetCreationTime, addr 0xa281094, size 0xac, virtual false, abstract: false, final false
+static inline ::System::DateTimeOffset GetCreationTime(::StringW  fullPath) ;
+
+/// @brief Method GetLastWriteTime, addr 0xa2812e0, size 0xac, virtual false, abstract: false, final false
+static inline ::System::DateTimeOffset GetLastWriteTime(::StringW  fullPath) ;
+
+/// @brief Method LinkOrCopyFile, addr 0xa27f8a8, size 0x188, virtual false, abstract: false, final false
+static inline void LinkOrCopyFile(::StringW  sourceFullPath, ::StringW  destFullPath) ;
+
+/// @brief Method MoveDirectory, addr 0xa280484, size 0x2e8, virtual false, abstract: false, final false
+static inline void MoveDirectory(::StringW  sourceFullPath, ::StringW  destFullPath) ;
+
+/// @brief Method MoveFile, addr 0xa27fa30, size 0x118, virtual false, abstract: false, final false
+static inline void MoveFile(::StringW  sourceFullPath, ::StringW  destFullPath) ;
+
+/// @brief Method RemoveDirectory, addr 0xa280794, size 0xc8, virtual false, abstract: false, final false
+static inline void RemoveDirectory(::StringW  fullPath, bool  recursive) ;
+
+/// @brief Method RemoveDirectoryInternal, addr 0xa28085c, size 0x69c, virtual false, abstract: false, final false
+static inline void RemoveDirectoryInternal(::System::IO::DirectoryInfo*  directory, bool  recursive, bool  throwOnTopLevelDirectoryNotFound) ;
+
+/// @brief Method SetAttributes, addr 0xa281010, size 0x84, virtual false, abstract: false, final false
+static inline void SetAttributes(::StringW  fullPath, ::System::IO::FileAttributes  attributes) ;
+
+/// @brief Method SetCreationTime, addr 0xa281140, size 0xd0, virtual false, abstract: false, final false
+static inline void SetCreationTime(::StringW  fullPath, ::System::DateTimeOffset  time, bool  asDirectory) ;
+
+/// @brief Method SetLastAccessTime, addr 0xa281210, size 0xd0, virtual false, abstract: false, final false
+static inline void SetLastAccessTime(::StringW  fullPath, ::System::DateTimeOffset  time, bool  asDirectory) ;
+
+/// @brief Method SetLastWriteTime, addr 0xa28138c, size 0xd0, virtual false, abstract: false, final false
+static inline void SetLastWriteTime(::StringW  fullPath, ::System::DateTimeOffset  time, bool  asDirectory) ;
+
+/// @brief Method ShouldIgnoreDirectory, addr 0xa280ef8, size 0x84, virtual false, abstract: false, final false
+static inline bool ShouldIgnoreDirectory(::StringW  name) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr FileSystem() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "FileSystem", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+FileSystem(FileSystem && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "FileSystem", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+FileSystem(FileSystem const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{6985};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::System::IO::FileSystem) == 0x10, "Size mismatch!");
+
+} // namespace end def System::IO

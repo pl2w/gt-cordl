@@ -1,0 +1,39 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Timeline/INotificationOptionProvider.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+CORDL_MODULE_EXPORT(INotificationOptionProvider)
+namespace UnityEngine::Timeline {
+struct NotificationFlags;
+}
+// Forward declare root types
+namespace UnityEngine::Timeline {
+class INotificationOptionProvider;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Timeline::INotificationOptionProvider*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Timeline::INotificationOptionProvider*, "UnityEngine.Timeline", "INotificationOptionProvider");
+// Dependencies 
+namespace UnityEngine::Timeline {
+// Is value type: false
+// CS Name: UnityEngine.Timeline.INotificationOptionProvider
+class CORDL_TYPE INotificationOptionProvider {
+public:
+// Declarations
+ __declspec(property(get=get_flags)) ::UnityEngine::Timeline::NotificationFlags  flags;
+
+/// @brief Method get_flags, addr 0x0, size 0xffffffffffffffff, virtual true, abstract: true, final false
+inline ::UnityEngine::Timeline::NotificationFlags get_flags() ;
+
+// Ctor Parameters [CppParam { name: "", ty: "INotificationOptionProvider", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+INotificationOptionProvider(INotificationOptionProvider const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{28738};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+} // namespace end def UnityEngine::Timeline

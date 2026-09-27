@@ -1,0 +1,1913 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRUnityHumanoidSkeletonRetargeter.hpp"
+#include "GlobalNamespace/zzzz__OVRSkeleton_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings_BodySection_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings_BodyTrackingBoneId_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings_FullBodyTrackingBoneId_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_UpdateType_impl.hpp"
+#include "System/zzzz__Nullable_1_impl.hpp"
+#include "System/zzzz__Object_impl.hpp"
+#include "UnityEngine/zzzz__HumanBodyBones_impl.hpp"
+#include "UnityEngine/zzzz__Quaternion_impl.hpp"
+#include "UnityEngine/zzzz__Vector3_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_def.hpp"
+#include "GlobalNamespace/zzzz__OVRBone_def.hpp"
+#include "GlobalNamespace/zzzz__OVRHumanBodyBonesMappingsInterface_def.hpp"
+#include "GlobalNamespace/zzzz__OVRSkeleton_BoneId_def.hpp"
+#include "GlobalNamespace/zzzz__OVRSkeleton_def.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings_BodySection_def.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings_BodyTrackingBoneId_def.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings_FullBodyTrackingBoneId_def.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_UpdateType_def.hpp"
+#include "GlobalNamespace/zzzz__OVRUnityHumanoidSkeletonRetargeter_def.hpp"
+#include "System/Collections/Generic/zzzz__Dictionary_2_def.hpp"
+#include "System/Collections/Generic/zzzz__IList_1_def.hpp"
+#include "System/zzzz__Tuple_2_def.hpp"
+#include "UnityEngine/zzzz__Animator_def.hpp"
+#include "UnityEngine/zzzz__GameObject_def.hpp"
+#include "UnityEngine/zzzz__HumanBodyBones_def.hpp"
+#include "UnityEngine/zzzz__Quaternion_def.hpp"
+#include "UnityEngine/zzzz__Transform_def.hpp"
+#include "UnityEngine/zzzz__Vector3_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_SourceSkeletonData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_SourceSkeletonData)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e27c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_SourceSkeletonData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_SourceSkeletonTPoseData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_SourceSkeletonTPoseData)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e284;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_SourceSkeletonTPoseData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_TargetSkeletonData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_TargetSkeletonData)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e28c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_TargetSkeletonData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_AnimatorTargetSkeleton
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Animator> (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_AnimatorTargetSkeleton)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e294;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_AnimatorTargetSkeleton", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_CustomBoneIdToHumanBodyBone
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_CustomBoneIdToHumanBodyBone)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e29c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_CustomBoneIdToHumanBodyBone", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_TargetTPoseRotations
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityEngine::Quaternion>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_TargetTPoseRotations)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e2a4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_TargetTPoseRotations", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::_ctor)> {
+  constexpr static std::size_t size = 0x36c;
+  constexpr static std::size_t addrs = 0xa55e2ac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_Adjustments
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*> (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_Adjustments)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e6c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_Adjustments", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_FullBodySectionsToAlign
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_FullBodySectionsToAlign)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e6cc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_FullBodySectionsToAlign", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_BodySectionsToAlign
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_BodySectionsToAlign)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e6d4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_BodySectionsToAlign", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_FullBodySectionToPosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_FullBodySectionToPosition)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e6dc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_FullBodySectionToPosition", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_BodySectionToPosition
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_BodySectionToPosition)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e6e4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_BodySectionToPosition", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.get_BodyBoneMappingsInterface
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_BodyBoneMappingsInterface)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e6ec;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_BodyBoneMappingsInterface", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.set_BodyBoneMappingsInterface
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)(::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::set_BodyBoneMappingsInterface)> {
+  constexpr static std::size_t size = 0x10;
+  constexpr static std::size_t addrs = 0xa55e6f4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"set_BodyBoneMappingsInterface", {}, {::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.Start
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::Start)> {
+  constexpr static std::size_t size = 0x124;
+  constexpr static std::size_t addrs = 0xa55e704;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(), 6}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.PrecomputeAllRotationTweaks
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::PrecomputeAllRotationTweaks)> {
+  constexpr static std::size_t size = 0x5c;
+  constexpr static std::size_t addrs = 0xa55f24c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"PrecomputeAllRotationTweaks", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.OnValidate
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::OnValidate)> {
+  constexpr static std::size_t size = 0x4;
+  constexpr static std::size_t addrs = 0xa55f414;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(), 11}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.ValidateGameObjectForUnityHumanoidRetargeting
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (*)(::UnityEngine::GameObject*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::ValidateGameObjectForUnityHumanoidRetargeting)> {
+  constexpr static std::size_t size = 0xdc;
+  constexpr static std::size_t addrs = 0xa55e828;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"ValidateGameObjectForUnityHumanoidRetargeting", {}, {::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.StoreTTargetPoseRotations
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::StoreTTargetPoseRotations)> {
+  constexpr static std::size_t size = 0x1a4;
+  constexpr static std::size_t addrs = 0xa55e91c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"StoreTTargetPoseRotations", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.CreateDuplicateTransformHierarchy
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Transform> (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)(::UnityEngine::Transform*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::CreateDuplicateTransformHierarchy)> {
+  constexpr static std::size_t size = 0x3d0;
+  constexpr static std::size_t addrs = 0xa55f418;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"CreateDuplicateTransformHierarchy", {}, {::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.FindHumanBodyBoneFromTransform
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::HumanBodyBones (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)(::UnityEngine::Transform*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::FindHumanBodyBoneFromTransform)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xa55f7e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"FindHumanBodyBoneFromTransform", {}, {::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.AlignHierarchies
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)(::UnityEngine::Transform*, ::UnityEngine::Transform*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::AlignHierarchies)> {
+  constexpr static std::size_t size = 0xe0;
+  constexpr static std::size_t addrs = 0xa55f88c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"AlignHierarchies", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.CreateCustomBoneIdToHumanBodyBoneMapping
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::CreateCustomBoneIdToHumanBodyBoneMapping)> {
+  constexpr static std::size_t size = 0x18;
+  constexpr static std::size_t addrs = 0xa55e904;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"CreateCustomBoneIdToHumanBodyBoneMapping", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.CopyBoneIdToHumanBodyBoneMapping
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::CopyBoneIdToHumanBodyBoneMapping)> {
+  constexpr static std::size_t size = 0x32c;
+  constexpr static std::size_t addrs = 0xa55f96c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"CopyBoneIdToHumanBodyBoneMapping", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.AdjustCustomBoneIdToHumanBodyBoneMapping
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::AdjustCustomBoneIdToHumanBodyBoneMapping)> {
+  constexpr static std::size_t size = 0x114;
+  constexpr static std::size_t addrs = 0xa55fc98;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"AdjustCustomBoneIdToHumanBodyBoneMapping", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.RemoveMappingCorrespondingToHumanBodyBone
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)(::UnityEngine::HumanBodyBones)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::RemoveMappingCorrespondingToHumanBodyBone)> {
+  constexpr static std::size_t size = 0x1b8;
+  constexpr static std::size_t addrs = 0xa55fdac;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"RemoveMappingCorrespondingToHumanBodyBone", {}, {::i2c::type_of<::UnityEngine::HumanBodyBones>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.Update
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::Update)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xa55ff64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                    {::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(), 10}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.ShouldRunUpdateThisFrame
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::ShouldRunUpdateThisFrame)> {
+  constexpr static std::size_t size = 0x38;
+  constexpr static std::size_t addrs = 0xa55ffc4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"ShouldRunUpdateThisFrame", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.RecomputeSkeletalOffsetsIfNecessary
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::RecomputeSkeletalOffsetsIfNecessary)> {
+  constexpr static std::size_t size = 0x24;
+  constexpr static std::size_t addrs = 0xa55fffc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"RecomputeSkeletalOffsetsIfNecessary", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.OffsetComputationNeededThisFrame
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::OffsetComputationNeededThisFrame)> {
+  constexpr static std::size_t size = 0x12c;
+  constexpr static std::size_t addrs = 0xa56083c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"OffsetComputationNeededThisFrame", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.ComputeOffsetsUsingSkeletonComponent
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::ComputeOffsetsUsingSkeletonComponent)> {
+  constexpr static std::size_t size = 0x6e4;
+  constexpr static std::size_t addrs = 0xa560968;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"ComputeOffsetsUsingSkeletonComponent", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.IsBodySectionInArray
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<bool (*)(::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection, ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::IsBodySectionInArray)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xa561208;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"IsBodySectionInArray", {}, {::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>(), ::i2c::type_of<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.AlignTargetWithSource
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::AlignTargetWithSource)> {
+  constexpr static std::size_t size = 0x81c;
+  constexpr static std::size_t addrs = 0xa560020;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"AlignTargetWithSource", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter.FindAdjustment
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::*)(::UnityEngine::HumanBodyBones)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::FindAdjustment)> {
+  constexpr static std::size_t size = 0x60;
+  constexpr static std::size_t addrs = 0xa561268;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"FindAdjustment", {}, {::i2c::type_of<::UnityEngine::HumanBodyBones>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__sourceSkeletonData()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sourceSkeletonData;
+}
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__sourceSkeletonData() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sourceSkeletonData;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__sourceSkeletonData(::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____sourceSkeletonData = value;
+}
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__sourceSkeletonTPoseData()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sourceSkeletonTPoseData;
+}
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__sourceSkeletonTPoseData() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____sourceSkeletonTPoseData;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__sourceSkeletonTPoseData(::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____sourceSkeletonTPoseData = value;
+}
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__targetSkeletonData()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____targetSkeletonData;
+}
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__targetSkeletonData() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____targetSkeletonData;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__targetSkeletonData(::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____targetSkeletonData = value;
+}
+constexpr ::UnityW<::UnityEngine::Animator>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__animatorTargetSkeleton()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____animatorTargetSkeleton;
+}
+constexpr ::UnityW<::UnityEngine::Animator> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__animatorTargetSkeleton() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____animatorTargetSkeleton;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__animatorTargetSkeleton(::UnityW<::UnityEngine::Animator>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____animatorTargetSkeleton = value;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__customBoneIdToHumanBodyBone()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____customBoneIdToHumanBodyBone;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__customBoneIdToHumanBodyBone() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____customBoneIdToHumanBodyBone;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__customBoneIdToHumanBodyBone(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____customBoneIdToHumanBodyBone = value;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityEngine::Quaternion>*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__targetTPoseRotations()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____targetTPoseRotations;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityEngine::Quaternion>* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__targetTPoseRotations() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____targetTPoseRotations;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__targetTPoseRotations(::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityEngine::Quaternion>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____targetTPoseRotations = value;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityW<::UnityEngine::Transform>>*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__targetTPoseTransformDup()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____targetTPoseTransformDup;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityW<::UnityEngine::Transform>>* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__targetTPoseTransformDup() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____targetTPoseTransformDup;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__targetTPoseTransformDup(::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityW<::UnityEngine::Transform>>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____targetTPoseTransformDup = value;
+}
+constexpr int32_t& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__lastSkelChangeCount()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastSkelChangeCount;
+}
+constexpr int32_t const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__lastSkelChangeCount() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastSkelChangeCount;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__lastSkelChangeCount(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____lastSkelChangeCount = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__lastTrackedScale()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastTrackedScale;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__lastTrackedScale() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____lastTrackedScale;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__lastTrackedScale(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____lastTrackedScale = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__adjustments()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____adjustments;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__adjustments() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____adjustments;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__adjustments(::ArrayW<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____adjustments = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__fullBodySectionsToAlign()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____fullBodySectionsToAlign;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__fullBodySectionsToAlign() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____fullBodySectionsToAlign;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__fullBodySectionsToAlign(::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____fullBodySectionsToAlign = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__bodySectionsToAlign()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bodySectionsToAlign;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__bodySectionsToAlign() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bodySectionsToAlign;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__bodySectionsToAlign(::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____bodySectionsToAlign = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__fullBodySectionToPosition()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____fullBodySectionToPosition;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__fullBodySectionToPosition() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____fullBodySectionToPosition;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__fullBodySectionToPosition(::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____fullBodySectionToPosition = value;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__bodySectionToPosition()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bodySectionToPosition;
+}
+constexpr ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__bodySectionToPosition() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bodySectionToPosition;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__bodySectionToPosition(::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____bodySectionToPosition = value;
+}
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_UpdateType& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__updateType()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____updateType;
+}
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_UpdateType const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__updateType() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____updateType;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__updateType(::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_UpdateType  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____updateType = value;
+}
+constexpr ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__bodyBonesMappingInterface()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bodyBonesMappingInterface;
+}
+constexpr ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_get__bodyBonesMappingInterface() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____bodyBonesMappingInterface;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::__cordl_internal_set__bodyBonesMappingInterface(::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____bodyBonesMappingInterface = value;
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_SourceSkeletonData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_SourceSkeletonData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_SourceSkeletonTPoseData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_SourceSkeletonTPoseData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_TargetSkeletonData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_TargetSkeletonData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::Animator> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_AnimatorTargetSkeleton()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_AnimatorTargetSkeleton", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Animator>>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_CustomBoneIdToHumanBodyBone()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_CustomBoneIdToHumanBodyBone", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityEngine::Quaternion>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_TargetTPoseRotations()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_TargetTPoseRotations", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::UnityEngine::Quaternion>*>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::ArrayW<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_Adjustments()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_Adjustments", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>>(this, ___internal_method);
+}
+inline ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_FullBodySectionsToAlign()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_FullBodySectionsToAlign", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>>(this, ___internal_method);
+}
+inline ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_BodySectionsToAlign()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_BodySectionsToAlign", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>>(this, ___internal_method);
+}
+inline ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_FullBodySectionToPosition()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_FullBodySectionToPosition", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>>(this, ___internal_method);
+}
+inline ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_BodySectionToPosition()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_BodySectionToPosition", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::get_BodyBoneMappingsInterface()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"get_BodyBoneMappingsInterface", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::set_BodyBoneMappingsInterface(::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"set_BodyBoneMappingsInterface", {}, {::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::Start()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(), 6}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::PrecomputeAllRotationTweaks()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"PrecomputeAllRotationTweaks", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::OnValidate()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(), 11}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::ValidateGameObjectForUnityHumanoidRetargeting(::UnityEngine::GameObject*  go)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"ValidateGameObjectForUnityHumanoidRetargeting", {}, {::i2c::type_of<::UnityEngine::GameObject*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(nullptr, ___internal_method, go);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::StoreTTargetPoseRotations()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"StoreTTargetPoseRotations", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityW<::UnityEngine::Transform> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::CreateDuplicateTransformHierarchy(::UnityEngine::Transform*  transformFromOriginalHierarchy)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"CreateDuplicateTransformHierarchy", {}, {::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Transform>>(this, ___internal_method, transformFromOriginalHierarchy);
+}
+inline ::UnityEngine::HumanBodyBones GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::FindHumanBodyBoneFromTransform(::UnityEngine::Transform*  candidateTransform)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"FindHumanBodyBoneFromTransform", {}, {::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::HumanBodyBones>(this, ___internal_method, candidateTransform);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::AlignHierarchies(::UnityEngine::Transform*  transformToAlign, ::UnityEngine::Transform*  referenceTransform)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"AlignHierarchies", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, transformToAlign, referenceTransform);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::CreateCustomBoneIdToHumanBodyBoneMapping()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"CreateCustomBoneIdToHumanBodyBoneMapping", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::CopyBoneIdToHumanBodyBoneMapping()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"CopyBoneIdToHumanBodyBoneMapping", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::AdjustCustomBoneIdToHumanBodyBoneMapping()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"AdjustCustomBoneIdToHumanBodyBoneMapping", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::RemoveMappingCorrespondingToHumanBodyBone(::UnityEngine::HumanBodyBones  boneId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"RemoveMappingCorrespondingToHumanBodyBone", {}, {::i2c::type_of<::UnityEngine::HumanBodyBones>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, boneId);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::Update()  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(), 10}
+                        )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::ShouldRunUpdateThisFrame()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"ShouldRunUpdateThisFrame", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::RecomputeSkeletalOffsetsIfNecessary()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"RecomputeSkeletalOffsetsIfNecessary", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::OffsetComputationNeededThisFrame()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"OffsetComputationNeededThisFrame", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::ComputeOffsetsUsingSkeletonComponent()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"ComputeOffsetsUsingSkeletonComponent", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline bool GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::IsBodySectionInArray(::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection  bodySectionToCheck, ::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>  sectionArrayToCheck)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"IsBodySectionInArray", {}, {::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>(), ::i2c::type_of<::ArrayW<::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<bool>(nullptr, ___internal_method, bodySectionToCheck, sectionArrayToCheck);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::AlignTargetWithSource()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"AlignTargetWithSource", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::FindAdjustment(::UnityEngine::HumanBodyBones  boneId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>(),
+                        {"FindAdjustment", {}, {::i2c::type_of<::UnityEngine::HumanBodyBones>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(this, ___internal_method, boneId);
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter*>());
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter::OVRUnityHumanoidSkeletonRetargeter()   {
+}
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment.get_PrecomputedRotationTweaks
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Quaternion (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::get_PrecomputedRotationTweaks)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xa5667a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {"get_PrecomputedRotationTweaks", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment.set_PrecomputedRotationTweaks
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::*)(::UnityEngine::Quaternion)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::set_PrecomputedRotationTweaks)> {
+  constexpr static std::size_t size = 0xc;
+  constexpr static std::size_t addrs = 0xa5667b4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {"set_PrecomputedRotationTweaks", {}, {::i2c::type_of<::UnityEngine::Quaternion>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment.PrecomputeRotationTweaks
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::PrecomputeRotationTweaks)> {
+  constexpr static std::size_t size = 0x16c;
+  constexpr static std::size_t addrs = 0xa55f2a8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {"PrecomputeRotationTweaks", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::_ctor)> {
+  constexpr static std::size_t size = 0xa4;
+  constexpr static std::size_t addrs = 0xa55e618;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityEngine::HumanBodyBones& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_Joint()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___Joint;
+}
+constexpr ::UnityEngine::HumanBodyBones const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_Joint() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___Joint;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_Joint(::UnityEngine::HumanBodyBones  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___Joint = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_PositionChange()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___PositionChange;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_PositionChange() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___PositionChange;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_PositionChange(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___PositionChange = value;
+}
+constexpr ::UnityEngine::Quaternion& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_RotationChange()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___RotationChange;
+}
+constexpr ::UnityEngine::Quaternion const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_RotationChange() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___RotationChange;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_RotationChange(::UnityEngine::Quaternion  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___RotationChange = value;
+}
+constexpr ::ArrayW<::UnityEngine::Quaternion>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_RotationTweaks()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___RotationTweaks;
+}
+constexpr ::ArrayW<::UnityEngine::Quaternion> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_RotationTweaks() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___RotationTweaks;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_RotationTweaks(::ArrayW<::UnityEngine::Quaternion>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___RotationTweaks = value;
+}
+constexpr bool& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_DisableRotationTransform()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___DisableRotationTransform;
+}
+constexpr bool const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_DisableRotationTransform() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___DisableRotationTransform;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_DisableRotationTransform(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___DisableRotationTransform = value;
+}
+constexpr bool& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_DisablePositionTransform()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___DisablePositionTransform;
+}
+constexpr bool const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_DisablePositionTransform() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___DisablePositionTransform;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_DisablePositionTransform(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___DisablePositionTransform = value;
+}
+constexpr ::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_FullBodyTrackingBoneId& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_FullBodyBoneIdOverrideValue()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FullBodyBoneIdOverrideValue;
+}
+constexpr ::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_FullBodyTrackingBoneId const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_FullBodyBoneIdOverrideValue() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FullBodyBoneIdOverrideValue;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_FullBodyBoneIdOverrideValue(::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_FullBodyTrackingBoneId  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___FullBodyBoneIdOverrideValue = value;
+}
+constexpr ::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_BoneIdOverrideValue()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___BoneIdOverrideValue;
+}
+constexpr ::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get_BoneIdOverrideValue() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___BoneIdOverrideValue;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set_BoneIdOverrideValue(::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___BoneIdOverrideValue = value;
+}
+constexpr ::UnityEngine::Quaternion& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get__PrecomputedRotationTweaks_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____PrecomputedRotationTweaks_k__BackingField;
+}
+constexpr ::UnityEngine::Quaternion const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_get__PrecomputedRotationTweaks_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____PrecomputedRotationTweaks_k__BackingField;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::__cordl_internal_set__PrecomputedRotationTweaks_k__BackingField(::UnityEngine::Quaternion  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____PrecomputedRotationTweaks_k__BackingField = value;
+}
+inline ::UnityEngine::Quaternion GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::get_PrecomputedRotationTweaks()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {"get_PrecomputedRotationTweaks", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Quaternion>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::set_PrecomputedRotationTweaks(::UnityEngine::Quaternion  value)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {"set_PrecomputedRotationTweaks", {}, {::i2c::type_of<::UnityEngine::Quaternion>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, value);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::PrecomputeRotationTweaks()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {"PrecomputeRotationTweaks", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment*>());
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment()   {
+}
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.get_BodyToBoneData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::get_BodyToBoneData)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa564958;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"get_BodyToBoneData", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor)> {
+  constexpr static std::size_t size = 0x358;
+  constexpr static std::size_t addrs = 0xa564960;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::UnityEngine::Animator*, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor)> {
+  constexpr static std::size_t size = 0x184;
+  constexpr static std::size_t addrs = 0xa55eac0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Animator*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::GlobalNamespace::OVRSkeleton*, bool, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor)> {
+  constexpr static std::size_t size = 0x1a0;
+  constexpr static std::size_t addrs = 0xa5654c4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::GlobalNamespace::OVRSkeleton*, bool, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, bool, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor)> {
+  constexpr static std::size_t size = 0x1ac;
+  constexpr static std::size_t addrs = 0xa56104c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.BuildBoneDataSkeleton
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::GlobalNamespace::OVRSkeleton*, bool, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildBoneDataSkeleton)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa561200;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildBoneDataSkeleton", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.BuildBoneDataSkeletonFullBody
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::GlobalNamespace::OVRSkeleton*, bool, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildBoneDataSkeletonFullBody)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa5611f8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildBoneDataSkeletonFullBody", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.AssembleSkeleton
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::GlobalNamespace::OVRSkeleton*, bool, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*, bool)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::AssembleSkeleton)> {
+  constexpr static std::size_t size = 0x768;
+  constexpr static std::size_t addrs = 0xa565664;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"AssembleSkeleton", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>(), ::i2c::type_of<bool>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.FindBoneWithBoneId
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::GlobalNamespace::OVRBone* (*)(::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*, ::GlobalNamespace::OVRSkeleton_BoneId)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::FindBoneWithBoneId)> {
+  constexpr static std::size_t size = 0x1ac;
+  constexpr static std::size_t addrs = 0xa565dd4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"FindBoneWithBoneId", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*>(), ::i2c::type_of<::GlobalNamespace::OVRSkeleton_BoneId>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.BuildBoneData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::UnityEngine::Animator*, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildBoneData)> {
+  constexpr static std::size_t size = 0x760;
+  constexpr static std::size_t addrs = 0xa564d64;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildBoneData", {}, {::i2c::type_of<::UnityEngine::Animator*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.BuildCoordinateAxesForAllBones
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildCoordinateAxesForAllBones)> {
+  constexpr static std::size_t size = 0x608;
+  constexpr static std::size_t addrs = 0xa55ec44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildCoordinateAxesForAllBones", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.FixJointPairEndPositionHand
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Vector3 (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::*)(::UnityEngine::Vector3, ::UnityEngine::HumanBodyBones)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::FixJointPairEndPositionHand)> {
+  constexpr static std::size_t size = 0x3dc;
+  constexpr static std::size_t addrs = 0xa566090;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"FixJointPairEndPositionHand", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::HumanBodyBones>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.FindFirstChild
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityW<::UnityEngine::Transform> (*)(::UnityEngine::Transform*, ::UnityEngine::Transform*)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::FindFirstChild)> {
+  constexpr static std::size_t size = 0x110;
+  constexpr static std::size_t addrs = 0xa565f80;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"FindFirstChild", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.CreateQuaternionForBoneDataWithRightVec
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Quaternion (*)(::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::CreateQuaternionForBoneDataWithRightVec)> {
+  constexpr static std::size_t size = 0x1c0;
+  constexpr static std::size_t addrs = 0xa5665e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"CreateQuaternionForBoneDataWithRightVec", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata.CreateQuaternionForBoneData
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Quaternion (*)(::UnityEngine::Vector3, ::UnityEngine::Vector3)>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::CreateQuaternionForBoneData)> {
+  constexpr static std::size_t size = 0x17c;
+  constexpr static std::size_t addrs = 0xa56646c;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"CreateQuaternionForBoneData", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>*& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::__cordl_internal_get__BodyToBoneData_k__BackingField()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____BodyToBoneData_k__BackingField;
+}
+constexpr ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>* const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::__cordl_internal_get__BodyToBoneData_k__BackingField() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____BodyToBoneData_k__BackingField;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::__cordl_internal_set__BodyToBoneData_k__BackingField(::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>*  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____BodyToBoneData_k__BackingField = value;
+}
+constexpr ::ArrayW<::UnityEngine::HumanBodyBones>& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::__cordl_internal_get__boneEnumValues()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____boneEnumValues;
+}
+constexpr ::ArrayW<::UnityEngine::HumanBodyBones> const& GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::__cordl_internal_get__boneEnumValues() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____boneEnumValues;
+}
+constexpr void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::__cordl_internal_set__boneEnumValues(::ArrayW<::UnityEngine::HumanBodyBones>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->____boneEnumValues = value;
+}
+inline ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::get_BodyToBoneData()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"get_BodyToBoneData", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>*>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor(::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*  otherSkeletonMetaData)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, otherSkeletonMetaData);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor(::UnityEngine::Animator*  animator, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::UnityEngine::Animator*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, animator, bodyBonesMappingInterface);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor(::GlobalNamespace::OVRSkeleton*  skeleton, bool  useBindPose, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  customBoneIdToHumanBodyBone, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, skeleton, useBindPose, customBoneIdToHumanBodyBone, bodyBonesMappingInterface);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::_ctor(::GlobalNamespace::OVRSkeleton*  skeleton, bool  useBindPose, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  customBoneIdToHumanBodyBone, bool  useFullBody, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, skeleton, useBindPose, customBoneIdToHumanBodyBone, useFullBody, bodyBonesMappingInterface);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildBoneDataSkeleton(::GlobalNamespace::OVRSkeleton*  skeleton, bool  useBindPose, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  customBoneIdToHumanBodyBone, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildBoneDataSkeleton", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, skeleton, useBindPose, customBoneIdToHumanBodyBone, bodyBonesMappingInterface);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildBoneDataSkeletonFullBody(::GlobalNamespace::OVRSkeleton*  skeleton, bool  useBindPose, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  customBoneIdToHumanBodyBone, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildBoneDataSkeletonFullBody", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, skeleton, useBindPose, customBoneIdToHumanBodyBone, bodyBonesMappingInterface);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::AssembleSkeleton(::GlobalNamespace::OVRSkeleton*  skeleton, bool  useBindPose, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  customBoneIdToHumanBodyBone, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface, bool  useFullBody)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"AssembleSkeleton", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeleton*>(), ::i2c::type_of<bool>(), ::i2c::type_of<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>(), ::i2c::type_of<bool>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, skeleton, useBindPose, customBoneIdToHumanBodyBone, bodyBonesMappingInterface, useFullBody);
+}
+inline ::GlobalNamespace::OVRBone* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::FindBoneWithBoneId(::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*  bones, ::GlobalNamespace::OVRSkeleton_BoneId  boneId)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"FindBoneWithBoneId", {}, {::i2c::type_of<::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*>(), ::i2c::type_of<::GlobalNamespace::OVRSkeleton_BoneId>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::GlobalNamespace::OVRBone*>(nullptr, ___internal_method, bones, boneId);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildBoneData(::UnityEngine::Animator*  animator, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildBoneData", {}, {::i2c::type_of<::UnityEngine::Animator*>(), ::i2c::type_of<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, animator, bodyBonesMappingInterface);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::BuildCoordinateAxesForAllBones()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"BuildCoordinateAxesForAllBones", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::Vector3 GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::FixJointPairEndPositionHand(::UnityEngine::Vector3  jointPairEndPosition, ::UnityEngine::HumanBodyBones  humanBodyBone)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"FixJointPairEndPositionHand", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::HumanBodyBones>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Vector3>(this, ___internal_method, jointPairEndPosition, humanBodyBone);
+}
+inline ::UnityW<::UnityEngine::Transform> GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::FindFirstChild(::UnityEngine::Transform*  startTransform, ::UnityEngine::Transform*  currTransform)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"FindFirstChild", {}, {::i2c::type_of<::UnityEngine::Transform*>(), ::i2c::type_of<::UnityEngine::Transform*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityW<::UnityEngine::Transform>>(nullptr, ___internal_method, startTransform, currTransform);
+}
+inline ::UnityEngine::Quaternion GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::CreateQuaternionForBoneDataWithRightVec(::UnityEngine::Vector3  fromPosition, ::UnityEngine::Vector3  toPosition, ::UnityEngine::Vector3  rightVector)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"CreateQuaternionForBoneDataWithRightVec", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Quaternion>(nullptr, ___internal_method, fromPosition, toPosition, rightVector);
+}
+inline ::UnityEngine::Quaternion GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::CreateQuaternionForBoneData(::UnityEngine::Vector3  fromPosition, ::UnityEngine::Vector3  toPosition)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(),
+                        {"CreateQuaternionForBoneData", {}, {::i2c::type_of<::UnityEngine::Vector3>(), ::i2c::type_of<::UnityEngine::Vector3>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Quaternion>(nullptr, ___internal_method, fromPosition, toPosition);
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::New_ctor(::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*  otherSkeletonMetaData)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(otherSkeletonMetaData));
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::New_ctor(::UnityEngine::Animator*  animator, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(animator, bodyBonesMappingInterface));
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::New_ctor(::GlobalNamespace::OVRSkeleton*  skeleton, bool  useBindPose, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  customBoneIdToHumanBodyBone, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(skeleton, useBindPose, customBoneIdToHumanBodyBone, bodyBonesMappingInterface));
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::New_ctor(::GlobalNamespace::OVRSkeleton*  skeleton, bool  useBindPose, ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  customBoneIdToHumanBodyBone, bool  useFullBody, ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*  bodyBonesMappingInterface)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata*>(skeleton, useBindPose, customBoneIdToHumanBodyBone, useFullBody, bodyBonesMappingInterface));
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata()   {
+}
+//  Writing Method size for method: ::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::*)()>(&::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa565dcc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::*)(::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*)>(&::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::_ctor)> {
+  constexpr static std::size_t size = 0xac;
+  constexpr static std::size_t addrs = 0xa564cb8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>()}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityW<::UnityEngine::Transform>& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_OriginalJoint()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___OriginalJoint;
+}
+constexpr ::UnityW<::UnityEngine::Transform> const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_OriginalJoint() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___OriginalJoint;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_OriginalJoint(::UnityW<::UnityEngine::Transform>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___OriginalJoint = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_FromPosition()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FromPosition;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_FromPosition() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___FromPosition;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_FromPosition(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___FromPosition = value;
+}
+constexpr ::UnityEngine::Vector3& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_ToPosition()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ToPosition;
+}
+constexpr ::UnityEngine::Vector3 const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_ToPosition() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ToPosition;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_ToPosition(::UnityEngine::Vector3  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___ToPosition = value;
+}
+constexpr ::UnityW<::UnityEngine::Transform>& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_JointPairStart()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___JointPairStart;
+}
+constexpr ::UnityW<::UnityEngine::Transform> const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_JointPairStart() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___JointPairStart;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_JointPairStart(::UnityW<::UnityEngine::Transform>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___JointPairStart = value;
+}
+constexpr ::UnityW<::UnityEngine::Transform>& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_JointPairEnd()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___JointPairEnd;
+}
+constexpr ::UnityW<::UnityEngine::Transform> const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_JointPairEnd() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___JointPairEnd;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_JointPairEnd(::UnityW<::UnityEngine::Transform>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___JointPairEnd = value;
+}
+constexpr ::UnityEngine::Quaternion& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_JointPairOrientation()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___JointPairOrientation;
+}
+constexpr ::UnityEngine::Quaternion const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_JointPairOrientation() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___JointPairOrientation;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_JointPairOrientation(::UnityEngine::Quaternion  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___JointPairOrientation = value;
+}
+constexpr ::System::Nullable_1<::UnityEngine::Quaternion>& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_CorrectionQuaternion()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___CorrectionQuaternion;
+}
+constexpr ::System::Nullable_1<::UnityEngine::Quaternion> const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_CorrectionQuaternion() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___CorrectionQuaternion;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_CorrectionQuaternion(::System::Nullable_1<::UnityEngine::Quaternion>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___CorrectionQuaternion = value;
+}
+constexpr ::UnityW<::UnityEngine::Transform>& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_ParentTransform()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ParentTransform;
+}
+constexpr ::UnityW<::UnityEngine::Transform> const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_ParentTransform() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___ParentTransform;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_ParentTransform(::UnityW<::UnityEngine::Transform>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___ParentTransform = value;
+}
+constexpr bool& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_DegenerateJoint()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___DegenerateJoint;
+}
+constexpr bool const& GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_get_DegenerateJoint() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___DegenerateJoint;
+}
+constexpr void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::__cordl_internal_set_DegenerateJoint(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___DegenerateJoint = value;
+}
+inline void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::_ctor(::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*  otherBoneData)  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>(),
+                        {".ctor", {}, {::i2c::type_of<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>()}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method, otherBoneData);
+}
+inline ::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData* GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>());
+}
+inline ::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData* GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::New_ctor(::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*  otherBoneData)  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData*>(otherBoneData));
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData()   {
+}
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings.get_GetBoneToJointPair
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneToJointPair)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa5612c8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneToJointPair", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings.get_GetBoneToBodySection
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneToBodySection)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa561320;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneToBodySection", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings.get_GetFullBodyBoneIdToHumanBodyBone
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetFullBodyBoneIdToHumanBodyBone)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa561378;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetFullBodyBoneIdToHumanBodyBone", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings.get_GetBoneIdToHumanBodyBone
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneIdToHumanBodyBone)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa5613d0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneIdToHumanBodyBone", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings.get_GetFullBodyBoneIdToJointPair
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetFullBodyBoneIdToJointPair)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa561428;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetFullBodyBoneIdToJointPair", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings.get_GetBoneIdToJointPair
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>* (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneIdToJointPair)> {
+  constexpr static std::size_t size = 0x58;
+  constexpr static std::size_t addrs = 0xa561480;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneIdToJointPair", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::*)()>(&::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa55e6bc;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::setStaticF_BoneToJointPair(::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>*, "BoneToJointPair", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(std::forward<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>*>(value));
+}
+inline ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::getStaticF_BoneToJointPair()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>*, "BoneToJointPair", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>();
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::setStaticF_BoneToBodySection(::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>*, "BoneToBodySection", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(std::forward<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>*>(value));
+}
+inline ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::getStaticF_BoneToBodySection()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>*, "BoneToBodySection", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>();
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::setStaticF_FullBodyBoneIdToHumanBodyBone(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, "FullBodyBoneIdToHumanBodyBone", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(std::forward<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(value));
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::getStaticF_FullBodyBoneIdToHumanBodyBone()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, "FullBodyBoneIdToHumanBodyBone", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>();
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::setStaticF_BoneIdToHumanBodyBone(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, "BoneIdToHumanBodyBone", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(std::forward<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(value));
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::getStaticF_BoneIdToHumanBodyBone()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*, "BoneIdToHumanBodyBone", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>();
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::setStaticF_FullBoneIdToJointPair(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*, "FullBoneIdToJointPair", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(std::forward<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*>(value));
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::getStaticF_FullBoneIdToJointPair()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*, "FullBoneIdToJointPair", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>();
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::setStaticF_BoneIdToJointPair(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*  value)  {
+::cordl_internals::setStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*, "BoneIdToJointPair", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(std::forward<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*>(value));
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::getStaticF_BoneIdToJointPair()  {
+return ::cordl_internals::getStaticField<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*, "BoneIdToJointPair", ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>();
+}
+inline ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneToJointPair()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneToJointPair", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::System::Tuple_2<::UnityEngine::HumanBodyBones,::UnityEngine::HumanBodyBones>*>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneToBodySection()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneToBodySection", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::UnityEngine::HumanBodyBones,::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetFullBodyBoneIdToHumanBodyBone()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetFullBodyBoneIdToHumanBodyBone", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneIdToHumanBodyBone()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneIdToHumanBodyBone", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::UnityEngine::HumanBodyBones>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetFullBodyBoneIdToJointPair()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetFullBodyBoneIdToJointPair", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*>(this, ___internal_method);
+}
+inline ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::get_GetBoneIdToJointPair()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {"get_GetBoneIdToJointPair", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRSkeleton_BoneId,::System::Tuple_2<::GlobalNamespace::OVRSkeleton_BoneId,::GlobalNamespace::OVRSkeleton_BoneId>*>*>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings*>());
+}
+/// @brief Convert operator to "::GlobalNamespace::OVRHumanBodyBonesMappingsInterface"
+constexpr  GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::operator ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*() noexcept {
+return static_cast<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>(static_cast<void*>(this));
+}
+/// @brief Convert to "::GlobalNamespace::OVRHumanBodyBonesMappingsInterface"
+constexpr ::GlobalNamespace::OVRHumanBodyBonesMappingsInterface* GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::i___GlobalNamespace__OVRHumanBodyBonesMappingsInterface() noexcept {
+return static_cast<::GlobalNamespace::OVRHumanBodyBonesMappingsInterface*>(static_cast<void*>(this));
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings()   {
+}

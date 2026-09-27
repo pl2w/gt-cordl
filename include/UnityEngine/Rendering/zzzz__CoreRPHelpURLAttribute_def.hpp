@@ -1,0 +1,57 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/Rendering/CoreRPHelpURLAttribute.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/zzzz__HelpURLAttribute_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+CORDL_MODULE_EXPORT(CoreRPHelpURLAttribute)
+// Forward declare root types
+namespace UnityEngine::Rendering {
+class CoreRPHelpURLAttribute;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::Rendering::CoreRPHelpURLAttribute*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::Rendering::CoreRPHelpURLAttribute*, "UnityEngine.Rendering", "CoreRPHelpURLAttribute");
+// [Conditional("UNITY_EDITOR")]
+// [AttributeUsage((System.AttributeTargets)20, AllowMultiple = false)]
+// Dependencies UnityEngine.HelpURLAttribute
+namespace UnityEngine::Rendering {
+// Is value type: false
+// CS Name: UnityEngine.Rendering.CoreRPHelpURLAttribute
+class CORDL_TYPE CoreRPHelpURLAttribute : public ::UnityEngine::HelpURLAttribute {
+public:
+// Declarations
+static inline ::UnityEngine::Rendering::CoreRPHelpURLAttribute* New_ctor(::StringW  pageName, ::StringW  packageName) ;
+
+static inline ::UnityEngine::Rendering::CoreRPHelpURLAttribute* New_ctor(::StringW  pageName, ::StringW  pageHash, ::StringW  packageName) ;
+
+/// @brief Method .ctor, addr 0xb157528, size 0x6c, virtual false, abstract: false, final false
+inline void _ctor(::StringW  pageName, ::StringW  packageName) ;
+
+/// @brief Method .ctor, addr 0xb157774, size 0x24, virtual false, abstract: false, final false
+inline void _ctor(::StringW  pageName, ::StringW  pageHash, ::StringW  packageName) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr CoreRPHelpURLAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "CoreRPHelpURLAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+CoreRPHelpURLAttribute(CoreRPHelpURLAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "CoreRPHelpURLAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+CoreRPHelpURLAttribute(CoreRPHelpURLAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{16787};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::UnityEngine::Rendering::CoreRPHelpURLAttribute) == 0x28, "Size mismatch!");
+
+} // namespace end def UnityEngine::Rendering

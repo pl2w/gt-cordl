@@ -1,0 +1,153 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/InputSystem/Composites/Vector2Composite.hpp"
+#include "UnityEngine/InputSystem/Composites/zzzz__Vector2Composite_Mode_impl.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputBindingComposite_1_impl.hpp"
+#include "UnityEngine/zzzz__Vector2_impl.hpp"
+#include "UnityEngine/InputSystem/Composites/zzzz__Vector2Composite_def.hpp"
+#include "UnityEngine/InputSystem/Composites/zzzz__Vector2Composite_Mode_def.hpp"
+#include "UnityEngine/InputSystem/zzzz__InputBindingCompositeContext_def.hpp"
+#include "UnityEngine/zzzz__Vector2_def.hpp"
+//  Writing Method size for method: ::UnityEngine::InputSystem::Composites::Vector2Composite.ReadValue
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<::UnityEngine::Vector2 (::UnityEngine::InputSystem::Composites::Vector2Composite::*)(::by_ref<::UnityEngine::InputSystem::InputBindingCompositeContext>)>(&::UnityEngine::InputSystem::Composites::Vector2Composite::ReadValue)> {
+  constexpr static std::size_t size = 0x15c;
+  constexpr static std::size_t addrs = 0xaf479e8;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(), 10}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::Composites::Vector2Composite.EvaluateMagnitude
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<float_t (::UnityEngine::InputSystem::Composites::Vector2Composite::*)(::by_ref<::UnityEngine::InputSystem::InputBindingCompositeContext>)>(&::UnityEngine::InputSystem::Composites::Vector2Composite::EvaluateMagnitude)> {
+  constexpr static std::size_t size = 0x70;
+  constexpr static std::size_t addrs = 0xaf47b44;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, ::i2c::find_method(
+                    ::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(),
+                    {::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(), 8}
+                ));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::UnityEngine::InputSystem::Composites::Vector2Composite._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::UnityEngine::InputSystem::Composites::Vector2Composite::*)()>(&::UnityEngine::InputSystem::Composites::Vector2Composite::_ctor)> {
+  constexpr static std::size_t size = 0x50;
+  constexpr static std::size_t addrs = 0xaf47bb4;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr int32_t& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_up()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___up;
+}
+constexpr int32_t const& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_up() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___up;
+}
+constexpr void UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_set_up(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___up = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_down()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___down;
+}
+constexpr int32_t const& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_down() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___down;
+}
+constexpr void UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_set_down(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___down = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_left()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___left;
+}
+constexpr int32_t const& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_left() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___left;
+}
+constexpr void UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_set_left(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___left = value;
+}
+constexpr int32_t& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_right()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___right;
+}
+constexpr int32_t const& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_right() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___right;
+}
+constexpr void UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_set_right(int32_t  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___right = value;
+}
+constexpr bool& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_normalize()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___normalize;
+}
+constexpr bool const& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_normalize() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___normalize;
+}
+constexpr void UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_set_normalize(bool  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___normalize = value;
+}
+constexpr ::GlobalNamespace::Vector2Composite_Mode& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_mode()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mode;
+}
+constexpr ::GlobalNamespace::Vector2Composite_Mode const& UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_get_mode() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___mode;
+}
+constexpr void UnityEngine::InputSystem::Composites::Vector2Composite::__cordl_internal_set_mode(::GlobalNamespace::Vector2Composite_Mode  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___mode = value;
+}
+inline ::UnityEngine::Vector2 UnityEngine::InputSystem::Composites::Vector2Composite::ReadValue(::by_ref<::UnityEngine::InputSystem::InputBindingCompositeContext>  context)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(), 10}
+                        )));
+return ::cordl_internals::RunMethodRethrow<::UnityEngine::Vector2>(this, ___internal_method, context);
+}
+inline float_t UnityEngine::InputSystem::Composites::Vector2Composite::EvaluateMagnitude(::by_ref<::UnityEngine::InputSystem::InputBindingCompositeContext>  context)  {
+auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                            reinterpret_cast<Il2CppObject*>(this)->klass,
+                            {::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(), 8}
+                        )));
+return ::cordl_internals::RunMethodRethrow<float_t>(this, ___internal_method, context);
+}
+inline void UnityEngine::InputSystem::Composites::Vector2Composite::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::UnityEngine::InputSystem::Composites::Vector2Composite*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::UnityEngine::InputSystem::Composites::Vector2Composite* UnityEngine::InputSystem::Composites::Vector2Composite::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::UnityEngine::InputSystem::Composites::Vector2Composite*>());
+}
+// Ctor Parameters []
+constexpr ::UnityEngine::InputSystem::Composites::Vector2Composite::Vector2Composite()   {
+}

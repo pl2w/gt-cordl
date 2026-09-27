@@ -1,0 +1,95 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/PropertyAttribute.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Attribute_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(PropertyAttribute)
+// Forward declare root types
+namespace UnityEngine {
+class PropertyAttribute;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::PropertyAttribute*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::PropertyAttribute*, "UnityEngine", "PropertyAttribute");
+// [AttributeUsage((System.AttributeTargets)384, Inherited = true, AllowMultiple = false)]
+// [UsedByNativeCode]
+// Dependencies System.Attribute
+namespace UnityEngine {
+// Is value type: false
+// CS Name: UnityEngine.PropertyAttribute
+class CORDL_TYPE PropertyAttribute : public ::System::Attribute {
+public:
+// Declarations
+/// @brief Field <applyToCollection>k__BackingField, offset 0x14, size 0x1 
+ __declspec(property(get=__cordl_internal_get__applyToCollection_k__BackingField, put=__cordl_internal_set__applyToCollection_k__BackingField)) bool  _applyToCollection_k__BackingField;
+
+/// @brief Field <order>k__BackingField, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get__order_k__BackingField, put=__cordl_internal_set__order_k__BackingField)) int32_t  _order_k__BackingField;
+
+ __declspec(property(put=set_order)) int32_t  order;
+
+static inline ::UnityEngine::PropertyAttribute* New_ctor() ;
+
+static inline ::UnityEngine::PropertyAttribute* New_ctor(bool  applyToCollection) ;
+
+constexpr bool const& __cordl_internal_get__applyToCollection_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__applyToCollection_k__BackingField() ;
+
+constexpr int32_t const& __cordl_internal_get__order_k__BackingField() const;
+
+constexpr int32_t& __cordl_internal_get__order_k__BackingField() ;
+
+constexpr void __cordl_internal_set__applyToCollection_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__order_k__BackingField(int32_t  value) ;
+
+/// @brief Method .ctor, addr 0xb5d4d00, size 0x1c, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// @brief Method .ctor, addr 0xb5d4d1c, size 0x28, virtual false, abstract: false, final false
+inline void _ctor(bool  applyToCollection) ;
+
+/// [CompilerGenerated]
+/// @brief Method set_order, addr 0xb5d4cf8, size 0x8, virtual false, abstract: false, final false
+inline void set_order(int32_t  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr PropertyAttribute() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "PropertyAttribute", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+PropertyAttribute(PropertyAttribute && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "PropertyAttribute", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+PropertyAttribute(PropertyAttribute const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{15002};
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <order>k__BackingField, offset: 0x10, size: 0x4, def value: None
+ int32_t  ____order_k__BackingField;
+
+/// [CompilerGenerated]
+/// [DebuggerBrowsable((System.Diagnostics.DebuggerBrowsableState)0)]
+/// @brief Field <applyToCollection>k__BackingField, offset: 0x14, size: 0x1, def value: None
+ bool  ____applyToCollection_k__BackingField;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::PropertyAttribute, ____order_k__BackingField) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::PropertyAttribute, ____applyToCollection_k__BackingField) == 0x14, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::PropertyAttribute) == 0x18, "Size mismatch!");
+
+} // namespace end def UnityEngine

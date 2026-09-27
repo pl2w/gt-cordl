@@ -1,0 +1,64 @@
+#pragma once
+// IWYU pragma private; include "Newtonsoft/Json/Utilities/StringReferenceExtensions.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/stringw.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(StringReferenceExtensions)
+namespace Newtonsoft::Json::Utilities {
+struct StringReference;
+}
+// Forward declare root types
+namespace Newtonsoft::Json::Utilities {
+class StringReferenceExtensions;
+}
+// Write type traits
+MARK_REF_T(::Newtonsoft::Json::Utilities::StringReferenceExtensions*);
+DEFINE_IL2CPP_CLASS(::Newtonsoft::Json::Utilities::StringReferenceExtensions*, "Newtonsoft.Json.Utilities", "StringReferenceExtensions");
+// [NullableContext(1)]
+// [Nullable(0)]
+// [Extension]
+// Dependencies System.Object
+namespace Newtonsoft::Json::Utilities {
+// Is value type: false
+// CS Name: Newtonsoft.Json.Utilities.StringReferenceExtensions
+class CORDL_TYPE StringReferenceExtensions : public ::System::Object {
+public:
+// Declarations
+/// [Extension]
+/// @brief Method EndsWith, addr 0xa3983f8, size 0xc4, virtual false, abstract: false, final false
+static inline bool EndsWith(::Newtonsoft::Json::Utilities::StringReference  s, ::StringW  text) ;
+
+/// [Extension]
+/// @brief Method IndexOf, addr 0xa399280, size 0x84, virtual false, abstract: false, final false
+static inline int32_t IndexOf(::Newtonsoft::Json::Utilities::StringReference  s, char16_t  c, int32_t  startIndex, int32_t  length) ;
+
+/// [Extension]
+/// @brief Method StartsWith, addr 0xa398338, size 0xc0, virtual false, abstract: false, final false
+static inline bool StartsWith(::Newtonsoft::Json::Utilities::StringReference  s, ::StringW  text) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr StringReferenceExtensions() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "StringReferenceExtensions", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+StringReferenceExtensions(StringReferenceExtensions && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "StringReferenceExtensions", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+StringReferenceExtensions(StringReferenceExtensions const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{23241};
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(sizeof(::Newtonsoft::Json::Utilities::StringReferenceExtensions) == 0x10, "Size mismatch!");
+
+} // namespace end def Newtonsoft::Json::Utilities

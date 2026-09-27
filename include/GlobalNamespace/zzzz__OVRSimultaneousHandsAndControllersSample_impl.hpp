@@ -1,0 +1,136 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRSimultaneousHandsAndControllersSample.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_impl.hpp"
+#include "GlobalNamespace/zzzz__OVRSimultaneousHandsAndControllersSample_def.hpp"
+#include "UnityEngine/UI/zzzz__Button_def.hpp"
+#include "UnityEngine/UI/zzzz__Text_def.hpp"
+//  Writing Method size for method: ::GlobalNamespace::OVRSimultaneousHandsAndControllersSample.Update
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::*)()>(&::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::Update)> {
+  constexpr static std::size_t size = 0xe8;
+  constexpr static std::size_t addrs = 0xa63dc08;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {"Update", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSimultaneousHandsAndControllersSample.EnableSimultaneousHandsAndControllers
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::*)()>(&::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::EnableSimultaneousHandsAndControllers)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xa63dcf0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {"EnableSimultaneousHandsAndControllers", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSimultaneousHandsAndControllersSample.DisableSimultaneousHandsAndControllers
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::*)()>(&::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::DisableSimultaneousHandsAndControllers)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0xa63dd70;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {"DisableSimultaneousHandsAndControllers", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+//  Writing Method size for method: ::GlobalNamespace::OVRSimultaneousHandsAndControllersSample._ctor
+template<>
+
+struct CORDL_HIDDEN ::i2c::metadata_getter<static_cast<void (::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::*)()>(&::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::_ctor)> {
+  constexpr static std::size_t size = 0x8;
+  constexpr static std::size_t addrs = 0xa63ddf0;
+
+  inline static const ::MethodInfo* method_info() {
+    static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {".ctor", {}, {}}
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::UnityW<::UnityEngine::UI::Button>& GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_get_enableButton()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___enableButton;
+}
+constexpr ::UnityW<::UnityEngine::UI::Button> const& GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_get_enableButton() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___enableButton;
+}
+constexpr void GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_set_enableButton(::UnityW<::UnityEngine::UI::Button>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___enableButton = value;
+}
+constexpr ::UnityW<::UnityEngine::UI::Button>& GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_get_disableButton()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___disableButton;
+}
+constexpr ::UnityW<::UnityEngine::UI::Button> const& GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_get_disableButton() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___disableButton;
+}
+constexpr void GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_set_disableButton(::UnityW<::UnityEngine::UI::Button>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___disableButton = value;
+}
+constexpr ::UnityW<::UnityEngine::UI::Text>& GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_get_displayText()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___displayText;
+}
+constexpr ::UnityW<::UnityEngine::UI::Text> const& GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_get_displayText() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->___displayText;
+}
+constexpr void GlobalNamespace::OVRSimultaneousHandsAndControllersSample::__cordl_internal_set_displayText(::UnityW<::UnityEngine::UI::Text>  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+this->___displayText = value;
+}
+inline void GlobalNamespace::OVRSimultaneousHandsAndControllersSample::Update()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {"Update", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRSimultaneousHandsAndControllersSample::EnableSimultaneousHandsAndControllers()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {"EnableSimultaneousHandsAndControllers", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRSimultaneousHandsAndControllersSample::DisableSimultaneousHandsAndControllers()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {"DisableSimultaneousHandsAndControllers", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline void GlobalNamespace::OVRSimultaneousHandsAndControllersSample::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS(::i2c::no_logger{}, (::i2c::find_method(
+                        ::i2c::class_of<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>(),
+                        {".ctor", {}, {}}
+                    )));
+return ::cordl_internals::RunMethodRethrow<void>(this, ___internal_method);
+}
+inline ::GlobalNamespace::OVRSimultaneousHandsAndControllersSample* GlobalNamespace::OVRSimultaneousHandsAndControllersSample::New_ctor()  {
+return THROW_UNLESS(::i2c::no_logger{}, ::i2c::new_ctor<::GlobalNamespace::OVRSimultaneousHandsAndControllersSample*>());
+}
+// Ctor Parameters []
+constexpr ::GlobalNamespace::OVRSimultaneousHandsAndControllersSample::OVRSimultaneousHandsAndControllersSample()   {
+}

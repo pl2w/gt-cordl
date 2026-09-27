@@ -1,0 +1,161 @@
+#pragma once
+// IWYU pragma private; include "UnityEngine/ProBuilder/Shapes/Arch.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "UnityEngine/ProBuilder/Shapes/zzzz__Shape_def.hpp"
+#include "beatsaber-hook/shared/arrayw.hpp"
+#include <cmath>
+#include <cstdint>
+CORDL_MODULE_EXPORT(Arch)
+namespace UnityEngine::ProBuilder::Shapes {
+class Shape;
+}
+namespace UnityEngine::ProBuilder {
+class ProBuilderMesh;
+}
+namespace UnityEngine {
+struct Bounds;
+}
+namespace UnityEngine {
+struct Quaternion;
+}
+namespace UnityEngine {
+struct Vector2;
+}
+namespace UnityEngine {
+struct Vector3;
+}
+// Forward declare root types
+namespace UnityEngine::ProBuilder::Shapes {
+class Arch;
+}
+// Write type traits
+MARK_REF_T(::UnityEngine::ProBuilder::Shapes::Arch*);
+DEFINE_IL2CPP_CLASS(::UnityEngine::ProBuilder::Shapes::Arch*, "UnityEngine.ProBuilder.Shapes", "Arch");
+// [Shape("Arch")]
+// Dependencies UnityEngine.ProBuilder.Shapes.Shape
+namespace UnityEngine::ProBuilder::Shapes {
+// Is value type: false
+// CS Name: UnityEngine.ProBuilder.Shapes.Arch
+class CORDL_TYPE Arch : public ::UnityEngine::ProBuilder::Shapes::Shape {
+public:
+// Declarations
+/// @brief Field m_ArchDegrees, offset 0x18, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_ArchDegrees, put=__cordl_internal_set_m_ArchDegrees)) float_t  m_ArchDegrees;
+
+/// @brief Field m_EndCaps, offset 0x1c, size 0x1 
+ __declspec(property(get=__cordl_internal_get_m_EndCaps, put=__cordl_internal_set_m_EndCaps)) bool  m_EndCaps;
+
+/// @brief Field m_NumberOfSides, offset 0x14, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_NumberOfSides, put=__cordl_internal_set_m_NumberOfSides)) int32_t  m_NumberOfSides;
+
+/// @brief Field m_Smooth, offset 0x1d, size 0x1 
+ __declspec(property(get=__cordl_internal_get_m_Smooth, put=__cordl_internal_set_m_Smooth)) bool  m_Smooth;
+
+/// @brief Field m_Thickness, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get_m_Thickness, put=__cordl_internal_set_m_Thickness)) float_t  m_Thickness;
+
+/// @brief Method CopyShape, addr 0xb0d12a4, size 0x94, virtual true, abstract: false, final false
+inline void CopyShape(::UnityEngine::ProBuilder::Shapes::Shape*  shape) ;
+
+/// @brief Method GetFace, addr 0xb0d1338, size 0xc4, virtual false, abstract: false, final false
+inline ::ArrayW<::UnityEngine::Vector3> GetFace(::UnityEngine::Vector2  vertex1, ::UnityEngine::Vector2  vertex2, float_t  depth) ;
+
+static inline ::UnityEngine::ProBuilder::Shapes::Arch* New_ctor() ;
+
+/// @brief Method RebuildMesh, addr 0xb0d13fc, size 0xb38, virtual true, abstract: false, final false
+inline ::UnityEngine::Bounds RebuildMesh(::UnityEngine::ProBuilder::ProBuilderMesh*  mesh, ::UnityEngine::Vector3  size, ::UnityEngine::Quaternion  rotation) ;
+
+/// @brief Method SetParametersToBuiltInShape, addr 0xb0d1284, size 0x20, virtual true, abstract: false, final false
+inline void SetParametersToBuiltInShape() ;
+
+constexpr float_t const& __cordl_internal_get_m_ArchDegrees() const;
+
+constexpr float_t& __cordl_internal_get_m_ArchDegrees() ;
+
+constexpr bool const& __cordl_internal_get_m_EndCaps() const;
+
+constexpr bool& __cordl_internal_get_m_EndCaps() ;
+
+constexpr int32_t const& __cordl_internal_get_m_NumberOfSides() const;
+
+constexpr int32_t& __cordl_internal_get_m_NumberOfSides() ;
+
+constexpr bool const& __cordl_internal_get_m_Smooth() const;
+
+constexpr bool& __cordl_internal_get_m_Smooth() ;
+
+constexpr float_t const& __cordl_internal_get_m_Thickness() const;
+
+constexpr float_t& __cordl_internal_get_m_Thickness() ;
+
+constexpr void __cordl_internal_set_m_ArchDegrees(float_t  value) ;
+
+constexpr void __cordl_internal_set_m_EndCaps(bool  value) ;
+
+constexpr void __cordl_internal_set_m_NumberOfSides(int32_t  value) ;
+
+constexpr void __cordl_internal_set_m_Smooth(bool  value) ;
+
+constexpr void __cordl_internal_set_m_Thickness(float_t  value) ;
+
+/// @brief Method .ctor, addr 0xb0d1f34, size 0x28, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr Arch() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "Arch", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+Arch(Arch && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "Arch", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+Arch(Arch const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{24310};
+
+/// [Min(0.01)]
+/// [SerializeField]
+/// @brief Field m_Thickness, offset: 0x10, size: 0x4, def value: None
+ float_t  ___m_Thickness;
+
+/// [Range(2, 200)]
+/// [SerializeField]
+/// @brief Field m_NumberOfSides, offset: 0x14, size: 0x4, def value: None
+ int32_t  ___m_NumberOfSides;
+
+/// [Range(1, 360)]
+/// [SerializeField]
+/// @brief Field m_ArchDegrees, offset: 0x18, size: 0x4, def value: None
+ float_t  ___m_ArchDegrees;
+
+/// [SerializeField]
+/// @brief Field m_EndCaps, offset: 0x1c, size: 0x1, def value: None
+ bool  ___m_EndCaps;
+
+/// [SerializeField]
+/// @brief Field m_Smooth, offset: 0x1d, size: 0x1, def value: None
+ bool  ___m_Smooth;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::UnityEngine::ProBuilder::Shapes::Arch, ___m_Thickness) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ProBuilder::Shapes::Arch, ___m_NumberOfSides) == 0x14, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ProBuilder::Shapes::Arch, ___m_ArchDegrees) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ProBuilder::Shapes::Arch, ___m_EndCaps) == 0x1c, "Offset mismatch!");
+
+static_assert(offsetof(::UnityEngine::ProBuilder::Shapes::Arch, ___m_Smooth) == 0x1d, "Offset mismatch!");
+
+static_assert(sizeof(::UnityEngine::ProBuilder::Shapes::Arch) == 0x20, "Size mismatch!");
+
+} // namespace end def UnityEngine::ProBuilder::Shapes

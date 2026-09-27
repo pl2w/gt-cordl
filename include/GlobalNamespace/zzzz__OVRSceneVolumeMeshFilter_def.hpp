@@ -1,0 +1,387 @@
+#pragma once
+// IWYU pragma private; include "GlobalNamespace/OVRSceneVolumeMeshFilter.hpp"
+#include "beatsaber-hook/shared/types.hpp"
+#include "../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "Unity/Collections/zzzz__NativeArray_1_def.hpp"
+#include "Unity/Jobs/zzzz__JobHandle_def.hpp"
+#include "UnityEngine/zzzz__Mesh_MeshDataArray_def.hpp"
+#include "UnityEngine/zzzz__MonoBehaviour_def.hpp"
+#include <cstdint>
+CORDL_MODULE_EXPORT(OVRSceneVolumeMeshFilter)
+namespace GlobalNamespace {
+class OVRSceneAnchor;
+}
+namespace GlobalNamespace {
+struct OVRSceneVolumeMeshFilter_BakeMeshJob;
+}
+namespace GlobalNamespace {
+struct OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob;
+}
+namespace GlobalNamespace {
+struct OVRSceneVolumeMeshFilter_GetTriangleMeshJob;
+}
+namespace GlobalNamespace {
+struct OVRSceneVolumeMeshFilter_PopulateMeshDataJob;
+}
+namespace GlobalNamespace {
+class OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7;
+}
+namespace System::Collections::Generic {
+template<typename T>
+class IEnumerator_1;
+}
+namespace System::Collections {
+class IEnumerator;
+}
+namespace System {
+class IDisposable;
+}
+namespace System {
+class Object;
+}
+namespace Unity::Jobs {
+struct JobHandle;
+}
+namespace UnityEngine {
+class MeshCollider;
+}
+namespace UnityEngine {
+class MeshFilter;
+}
+namespace UnityEngine {
+class Mesh;
+}
+// Forward declare root types
+namespace GlobalNamespace {
+class OVRSceneVolumeMeshFilter;
+}
+namespace GlobalNamespace {
+class OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7;
+}
+// Write type traits
+MARK_REF_T(::GlobalNamespace::OVRSceneVolumeMeshFilter*);
+MARK_REF_T(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7*);
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OVRSceneVolumeMeshFilter*, "", "OVRSceneVolumeMeshFilter");
+DEFINE_IL2CPP_CLASS(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7*, "", "OVRSceneVolumeMeshFilter/<CreateVolumeMesh>d__7");
+// [HelpURL("https://developer.oculus.com/documentation/unity/unity-scene-use-scene-anchors/#further-scene-model-unity-components")]
+// [RequireComponent(typeof(UnityEngine.MeshFilter))]
+// [Obsolete("OVRSceneManager and associated classes are deprecated (v65), please use MR Utility Kit instead (https://developer.oculus.com/documentation/unity/unity-mr-utility-kit-overview)")]
+// [Feature((Meta.XR.Util.Feature)8)]
+// Dependencies UnityEngine.MonoBehaviour
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OVRSceneVolumeMeshFilter
+class CORDL_TYPE OVRSceneVolumeMeshFilter : public ::UnityEngine::MonoBehaviour {
+public:
+// Declarations
+using BakeMeshJob = ::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob;
+
+using GetTriangleMeshCountsJob = ::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob;
+
+using GetTriangleMeshJob = ::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob;
+
+using PopulateMeshDataJob = ::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob;
+
+using _CreateVolumeMesh_d__7 = ::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7;
+
+ __declspec(property(get=get_IsCompleted, put=set_IsCompleted)) bool  IsCompleted;
+
+/// @brief Field <IsCompleted>k__BackingField, offset 0x20, size 0x1 
+ __declspec(property(get=__cordl_internal_get__IsCompleted_k__BackingField, put=__cordl_internal_set__IsCompleted_k__BackingField)) bool  _IsCompleted_k__BackingField;
+
+/// @brief Field _mesh, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get__mesh, put=__cordl_internal_set__mesh)) ::UnityW<::UnityEngine::Mesh>  _mesh;
+
+/// @brief Field _meshFilter, offset 0x30, size 0x8 
+ __declspec(property(get=__cordl_internal_get__meshFilter, put=__cordl_internal_set__meshFilter)) ::UnityW<::UnityEngine::MeshFilter>  _meshFilter;
+
+/// [IteratorStateMachine(typeof(OVRSceneVolumeMeshFilter::<CreateVolumeMesh>d__7))]
+/// @brief Method CreateVolumeMesh, addr 0xa63c8e4, size 0x6c, virtual false, abstract: false, final false
+inline ::System::Collections::IEnumerator* CreateVolumeMesh() ;
+
+/// @brief Method IsJobDone, addr 0xa63c978, size 0x3c, virtual false, abstract: false, final false
+static inline bool IsJobDone(::Unity::Jobs::JobHandle  job) ;
+
+static inline ::GlobalNamespace::OVRSceneVolumeMeshFilter* New_ctor() ;
+
+/// @brief Method Start, addr 0xa63c7f8, size 0xec, virtual false, abstract: false, final false
+inline void Start() ;
+
+constexpr bool const& __cordl_internal_get__IsCompleted_k__BackingField() const;
+
+constexpr bool& __cordl_internal_get__IsCompleted_k__BackingField() ;
+
+constexpr ::UnityW<::UnityEngine::Mesh> const& __cordl_internal_get__mesh() const;
+
+constexpr ::UnityW<::UnityEngine::Mesh>& __cordl_internal_get__mesh() ;
+
+constexpr ::UnityW<::UnityEngine::MeshFilter> const& __cordl_internal_get__meshFilter() const;
+
+constexpr ::UnityW<::UnityEngine::MeshFilter>& __cordl_internal_get__meshFilter() ;
+
+constexpr void __cordl_internal_set__IsCompleted_k__BackingField(bool  value) ;
+
+constexpr void __cordl_internal_set__mesh(::UnityW<::UnityEngine::Mesh>  value) ;
+
+constexpr void __cordl_internal_set__meshFilter(::UnityW<::UnityEngine::MeshFilter>  value) ;
+
+/// @brief Method .ctor, addr 0xa63c9b4, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+/// [CompilerGenerated]
+/// @brief Method get_IsCompleted, addr 0xa63c7e8, size 0x8, virtual false, abstract: false, final false
+inline bool get_IsCompleted() ;
+
+/// [CompilerGenerated]
+/// @brief Method set_IsCompleted, addr 0xa63c7f0, size 0x8, virtual false, abstract: false, final false
+inline void set_IsCompleted(bool  value) ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OVRSceneVolumeMeshFilter() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneVolumeMeshFilter", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OVRSceneVolumeMeshFilter(OVRSceneVolumeMeshFilter && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneVolumeMeshFilter", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OVRSceneVolumeMeshFilter(OVRSceneVolumeMeshFilter const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{12451};
+
+/// [CompilerGenerated]
+/// @brief Field <IsCompleted>k__BackingField, offset: 0x20, size: 0x1, def value: None
+ bool  ____IsCompleted_k__BackingField;
+
+/// @brief Field _mesh, offset: 0x28, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::Mesh>  ____mesh;
+
+/// @brief Field _meshFilter, offset: 0x30, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::MeshFilter>  ____meshFilter;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter, ____IsCompleted_k__BackingField) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter, ____mesh) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter, ____meshFilter) == 0x30, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::OVRSceneVolumeMeshFilter) == 0x38, "Size mismatch!");
+
+} // namespace end def GlobalNamespace
+// [CompilerGenerated]
+// Dependencies System.Object, Unity.Collections.NativeArray`1<T>, Unity.Jobs.JobHandle, UnityEngine.Mesh::MeshDataArray
+namespace GlobalNamespace {
+// Is value type: false
+// CS Name: OVRSceneVolumeMeshFilter/<CreateVolumeMesh>d__7
+class CORDL_TYPE OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7 : public ::System::Object {
+public:
+// Declarations
+ __declspec(property(get=System_Collections_Generic_IEnumerator_System_Object__get_Current)) ::System::Object*  System_Collections_Generic_IEnumerator_System_Object__Current;
+
+ __declspec(property(get=System_Collections_IEnumerator_get_Current)) ::System::Object*  System_Collections_IEnumerator_Current;
+
+/// @brief Field <>1__state, offset 0x10, size 0x4 
+ __declspec(property(get=__cordl_internal_get___1__state, put=__cordl_internal_set___1__state)) int32_t  __1__state;
+
+/// @brief Field <>2__current, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get___2__current, put=__cordl_internal_set___2__current)) ::System::Object*  __2__current;
+
+/// @brief Field <>4__this, offset 0x20, size 0x8 
+ __declspec(property(get=__cordl_internal_get___4__this, put=__cordl_internal_set___4__this)) ::UnityW<::GlobalNamespace::OVRSceneVolumeMeshFilter>  __4__this;
+
+/// @brief Field <collider>5__5, offset 0x50, size 0x8 
+ __declspec(property(get=__cordl_internal_get__collider_5__5, put=__cordl_internal_set__collider_5__5)) ::UnityW<::UnityEngine::MeshCollider>  _collider_5__5;
+
+/// @brief Field <disposeVerticesJob>5__4, offset 0x40, size 0x10 
+ __declspec(property(get=__cordl_internal_get__disposeVerticesJob_5__4, put=__cordl_internal_set__disposeVerticesJob_5__4)) ::Unity::Jobs::JobHandle  _disposeVerticesJob_5__4;
+
+/// @brief Field <job>5__7, offset 0x68, size 0x10 
+ __declspec(property(get=__cordl_internal_get__job_5__7, put=__cordl_internal_set__job_5__7)) ::Unity::Jobs::JobHandle  _job_5__7;
+
+/// @brief Field <meshCountResults>5__6, offset 0x58, size 0x10 
+ __declspec(property(get=__cordl_internal_get__meshCountResults_5__6, put=__cordl_internal_set__meshCountResults_5__6)) ::Unity::Collections::NativeArray_1<int32_t>  _meshCountResults_5__6;
+
+/// @brief Field <meshDataArray>5__3, offset 0x30, size 0x10 
+ __declspec(property(get=__cordl_internal_get__meshDataArray_5__3, put=__cordl_internal_set__meshDataArray_5__3)) ::GlobalNamespace::Mesh_MeshDataArray  _meshDataArray_5__3;
+
+/// @brief Field <sceneAnchor>5__2, offset 0x28, size 0x8 
+ __declspec(property(get=__cordl_internal_get__sceneAnchor_5__2, put=__cordl_internal_set__sceneAnchor_5__2)) ::UnityW<::GlobalNamespace::OVRSceneAnchor>  _sceneAnchor_5__2;
+
+/// @brief Convert operator to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr operator  ::System::Collections::Generic::IEnumerator_1<::System::Object*>*() noexcept;
+
+/// @brief Convert operator to "::System::Collections::IEnumerator"
+constexpr operator  ::System::Collections::IEnumerator*() noexcept;
+
+/// @brief Convert operator to "::System::IDisposable"
+constexpr operator  ::System::IDisposable*() noexcept;
+
+/// @brief Method MoveNext, addr 0xa63cd74, size 0x5a4, virtual true, abstract: false, final true
+inline bool MoveNext() ;
+
+/// @brief [DebuggerHidden]
+static inline ::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7* New_ctor(int32_t  __1__state) ;
+
+/// [DebuggerHidden]
+/// @brief Method System.Collections.Generic.IEnumerator<System.Object>.get_Current, addr 0xa63d368, size 0x8, virtual true, abstract: false, final true
+inline ::System::Object* System_Collections_Generic_IEnumerator_System_Object__get_Current() ;
+
+/// [DebuggerHidden]
+/// @brief Method System.Collections.IEnumerator.Reset, addr 0xa63d370, size 0x38, virtual true, abstract: false, final true
+inline void System_Collections_IEnumerator_Reset() ;
+
+/// [DebuggerHidden]
+/// @brief Method System.Collections.IEnumerator.get_Current, addr 0xa63d3a8, size 0x8, virtual true, abstract: false, final true
+inline ::System::Object* System_Collections_IEnumerator_get_Current() ;
+
+/// [DebuggerHidden]
+/// @brief Method System.IDisposable.Dispose, addr 0xa63cd58, size 0x1c, virtual true, abstract: false, final true
+inline void System_IDisposable_Dispose() ;
+
+constexpr int32_t const& __cordl_internal_get___1__state() const;
+
+constexpr int32_t& __cordl_internal_get___1__state() ;
+
+constexpr ::System::Object* const& __cordl_internal_get___2__current() const;
+
+constexpr ::System::Object*& __cordl_internal_get___2__current() ;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneVolumeMeshFilter> const& __cordl_internal_get___4__this() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneVolumeMeshFilter>& __cordl_internal_get___4__this() ;
+
+constexpr ::UnityW<::UnityEngine::MeshCollider> const& __cordl_internal_get__collider_5__5() const;
+
+constexpr ::UnityW<::UnityEngine::MeshCollider>& __cordl_internal_get__collider_5__5() ;
+
+constexpr ::Unity::Jobs::JobHandle const& __cordl_internal_get__disposeVerticesJob_5__4() const;
+
+constexpr ::Unity::Jobs::JobHandle& __cordl_internal_get__disposeVerticesJob_5__4() ;
+
+constexpr ::Unity::Jobs::JobHandle const& __cordl_internal_get__job_5__7() const;
+
+constexpr ::Unity::Jobs::JobHandle& __cordl_internal_get__job_5__7() ;
+
+constexpr ::Unity::Collections::NativeArray_1<int32_t> const& __cordl_internal_get__meshCountResults_5__6() const;
+
+constexpr ::Unity::Collections::NativeArray_1<int32_t>& __cordl_internal_get__meshCountResults_5__6() ;
+
+constexpr ::GlobalNamespace::Mesh_MeshDataArray const& __cordl_internal_get__meshDataArray_5__3() const;
+
+constexpr ::GlobalNamespace::Mesh_MeshDataArray& __cordl_internal_get__meshDataArray_5__3() ;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneAnchor> const& __cordl_internal_get__sceneAnchor_5__2() const;
+
+constexpr ::UnityW<::GlobalNamespace::OVRSceneAnchor>& __cordl_internal_get__sceneAnchor_5__2() ;
+
+constexpr void __cordl_internal_set___1__state(int32_t  value) ;
+
+constexpr void __cordl_internal_set___2__current(::System::Object*  value) ;
+
+constexpr void __cordl_internal_set___4__this(::UnityW<::GlobalNamespace::OVRSceneVolumeMeshFilter>  value) ;
+
+constexpr void __cordl_internal_set__collider_5__5(::UnityW<::UnityEngine::MeshCollider>  value) ;
+
+constexpr void __cordl_internal_set__disposeVerticesJob_5__4(::Unity::Jobs::JobHandle  value) ;
+
+constexpr void __cordl_internal_set__job_5__7(::Unity::Jobs::JobHandle  value) ;
+
+constexpr void __cordl_internal_set__meshCountResults_5__6(::Unity::Collections::NativeArray_1<int32_t>  value) ;
+
+constexpr void __cordl_internal_set__meshDataArray_5__3(::GlobalNamespace::Mesh_MeshDataArray  value) ;
+
+constexpr void __cordl_internal_set__sceneAnchor_5__2(::UnityW<::GlobalNamespace::OVRSceneAnchor>  value) ;
+
+/// @brief Method <>m__Finally1, addr 0xa63d318, size 0x50, virtual false, abstract: false, final false
+inline void __m__Finally1() ;
+
+/// [DebuggerHidden]
+/// @brief Method .ctor, addr 0xa63c950, size 0x28, virtual false, abstract: false, final false
+inline void _ctor(int32_t  __1__state) ;
+
+/// @brief Convert to "::System::Collections::Generic::IEnumerator_1<::System::Object*>"
+constexpr ::System::Collections::Generic::IEnumerator_1<::System::Object*>* i___System__Collections__Generic__IEnumerator_1___System__Object__() noexcept;
+
+/// @brief Convert to "::System::Collections::IEnumerator"
+constexpr ::System::Collections::IEnumerator* i___System__Collections__IEnumerator() noexcept;
+
+/// @brief Convert to "::System::IDisposable"
+constexpr ::System::IDisposable* i___System__IDisposable() noexcept;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7", modifiers: "&&", def_value: None, comment: None }]
+// @brief delete move ctor to prevent accidental deref moves
+OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7(OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7 && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7", modifiers: "const&", def_value: None, comment: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7(OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7 const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{12450};
+
+/// @brief Field <>1__state, offset: 0x10, size: 0x4, def value: None
+ int32_t  _____1__state;
+
+/// @brief Field <>2__current, offset: 0x18, size: 0x8, def value: None
+ ::System::Object*  _____2__current;
+
+/// @brief Field <>4__this, offset: 0x20, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVRSceneVolumeMeshFilter>  _____4__this;
+
+/// @brief Field <sceneAnchor>5__2, offset: 0x28, size: 0x8, def value: None
+ ::UnityW<::GlobalNamespace::OVRSceneAnchor>  ____sceneAnchor_5__2;
+
+/// @brief Field <meshDataArray>5__3, offset: 0x30, size: 0x10, def value: None
+ ::GlobalNamespace::Mesh_MeshDataArray  ____meshDataArray_5__3;
+
+/// @brief Field <disposeVerticesJob>5__4, offset: 0x40, size: 0x10, def value: None
+ ::Unity::Jobs::JobHandle  ____disposeVerticesJob_5__4;
+
+/// @brief Field <collider>5__5, offset: 0x50, size: 0x8, def value: None
+ ::UnityW<::UnityEngine::MeshCollider>  ____collider_5__5;
+
+/// @brief Field <meshCountResults>5__6, offset: 0x58, size: 0x10, def value: None
+ ::Unity::Collections::NativeArray_1<int32_t>  ____meshCountResults_5__6;
+
+/// @brief Field <job>5__7, offset: 0x68, size: 0x10, def value: None
+ ::Unity::Jobs::JobHandle  ____job_5__7;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, _____1__state) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, _____2__current) == 0x18, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, _____4__this) == 0x20, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, ____sceneAnchor_5__2) == 0x28, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, ____meshDataArray_5__3) == 0x30, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, ____disposeVerticesJob_5__4) == 0x40, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, ____collider_5__5) == 0x50, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, ____meshCountResults_5__6) == 0x58, "Offset mismatch!");
+
+static_assert(offsetof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7, ____job_5__7) == 0x68, "Offset mismatch!");
+
+static_assert(sizeof(::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7) == 0x78, "Size mismatch!");
+
+} // namespace end def GlobalNamespace
